@@ -228,6 +228,33 @@ public:
 
     // constructors:
 
+    // Class: QFormLayout
+    // Function:
+    // Source:
+    // Static: false
+    // Parameters: 1
+    // preceding Parameters: -1
+
+public:
+    Q_INVOKABLE
+    QFormLayout_Wrapper
+
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 #if 0
 
 #endif

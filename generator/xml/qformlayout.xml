@@ -21,6 +21,13 @@
       <key>FieldRole</key>
       <key>SpanningRole</key>
     </enum>
+    <constructor>
+      <variant>
+        <parameters>
+          <parameter const="false" type="QWidget" modifier="*" name="parent" default="nullptr" />
+        </parameters>
+      </variant>
+    </constructor>
     <function name="setFieldGrowthPolicy">
       <variant return-type="void" access="public">
         <parameters>

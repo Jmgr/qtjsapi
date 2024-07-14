@@ -35,7 +35,37 @@ function QFormLayout() {
 
     } else {
 
-        qWarning("QFormLayout.js: No constructor found for class QFormLayout");
+        if (arguments.length >= 0 &&
+                arguments.length <= 1) {
+
+            self = this;
+            wrapper = new QFormLayout_Wrapper(
+                // RJSApi:
+                handler
+                , arguments[0]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
+            );
+            //wrapper.__WRAPPER__ = true;
+            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+            copyProperties(this, wrapper, QFormLayout);
+
+            //this.setWrapper(this.wrapper);
+
+
+
+            //copyProperties(this, wrapper, QFormLayout);
+        }
+
+
+        else {
+
+            print("QFormLayout(): wrong number / type of arguments");
+
+            console.trace();
+        }
 
     }
 

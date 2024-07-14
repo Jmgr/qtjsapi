@@ -346,6 +346,98 @@ void QFormLayout_Wrapper::initConnections() {
 
 // constructors:
 
+// Class: QFormLayout
+// Function:
+// Source:
+// Static: false
+// Parameters: 1
+// preceding Parameters: -1
+QFormLayout_Wrapper::QFormLayout_Wrapper
+
+(
+
+    // RJSApi:
+    QObject* h
+    ,
+    const QJSValue&
+    a1
+)
+
+    : RJSWrapperObj(*(RJSApi*)h)
+
+{
+
+    //RDebug::incCounter(QString("QFormLayout_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::incCounter(QString("QFormLayout_Wrapper"));
+
+    // check parameter types:
+    if (
+        RJSHelper::is_QWidget_ptr(handler, a1
+                                  , true
+
+                                 )
+
+
+    ) {
+
+        // prepare parameters:
+
+        // convert js parameter to cpp: parent (QWidget)
+
+
+        // pointer:
+        QWidget*
+        a1_cpp;
+
+
+        if (a1.isUndefined()) {
+            a1_cpp = nullptr;
+        }
+        else {
+            a1_cpp = RJSHelper::js2cpp_QWidget_ptr(handler, a1);
+        }
+
+
+        // call function:
+
+        // construct wrapper:
+
+
+        wrapped = new QFormLayout(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
+
+        // signal forwarding:
+        // TODO
+        //connect(wrapped, SIGNAL(triggered(bool)), this, SLOT(triggeredEmitter(bool)));
+        initConnections();
+        return;
+
+
+    }
+
+    // no constructor without arguments defined
+    // allow constructor for prototype objects without args:
+    if (
+        a1.isUndefined()
+
+    ) {
+        wrapped = nullptr;
+        wrappedCreated = false;
+        return;
+    }
+
+
+    qWarning() << "no matching constructor variant found for QFormLayout";
+    wrapped = nullptr;
+    wrappedCreated = false;
+    handler.trace();
+
+}
+
 #if 0
 
 #endif
