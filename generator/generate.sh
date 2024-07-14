@@ -38,41 +38,41 @@ fi
 echo "Generating module $MODULE"
 
 echo "Generating helpers..."
-sh $DIR/xml2type.sh $MODULE
+bash $DIR/xml2type.sh $MODULE
 
 echo "xml2sorted..."
-sh $DIR/xml2sorted.sh
+bash $DIR/xml2sorted.sh
 if [ $? -ne 0 ]; then exit $?; fi
 
 echo "xml2all..."
-sh $DIR/xml2all.sh
+bash $DIR/xml2all.sh
 if [ $? -ne 0 ]; then exit $?; fi
 
 echo "xml2helper (relies on xmlall)..."
-sh $DIR/xml2helper.sh $MODULE
+bash $DIR/xml2helper.sh $MODULE
 
 echo "xml2merged..."
-sh $DIR/xml2merged.sh $MODULE
+bash $DIR/xml2merged.sh $MODULE
 if [ $? -ne 0 ]; then exit $?; fi
 
 echo "xml2unique..."
-sh $DIR/xml2unique.sh
+bash $DIR/xml2unique.sh
 if [ $? -ne 0 ]; then exit $?; fi
 
 echo "xml2addcount..."
-sh $DIR/xml2addcount.sh
+bash $DIR/xml2addcount.sh
 if [ $? -ne 0 ]; then exit $?; fi
 
-sh $DIR/xml2cpp.sh $MODULE
+bash $DIR/xml2cpp.sh $MODULE
 if [ $? -ne 0 ]; then exit $?; fi
 
-sh $DIR/xml2cppbase.sh $MODULE
+bash $DIR/xml2cppbase.sh $MODULE
 if [ $? -ne 0 ]; then exit $?; fi
 
-sh $DIR/xml2js.sh $MODULE
+bash $DIR/xml2js.sh $MODULE
 if [ $? -ne 0 ]; then exit $?; fi
 
-find cpp -size 0 | xargs rm
+find cpp -size 0 -print0 | xargs -r -0 rm
 
 wait
 
@@ -103,10 +103,10 @@ else
     rm new_header_cpp.h
 fi
 
-sh $DIR/generate_CMakeInclude.sh $MODULE
+bash $DIR/generate_CMakeInclude.sh $MODULE
 
 wait
 cd ..
-sh update_qrc.sh $MODULE
+bash update_qrc.sh $MODULE
 
 echo "done"
