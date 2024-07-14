@@ -470,6 +470,16 @@ void RJSApi::init()
     }
 }
 
+void RJSApi::trace()
+{
+    engine->evaluate("console.trace();");
+}
+
+QJSValue RJSApi::getSelf()
+{
+    return engine->evaluate("self");
+}
+
 void RJSApi::registerWrapper(RJSWrapperObj &obj)
 {
     static int counter = 0;

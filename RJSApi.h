@@ -33,13 +33,8 @@ public:
         return tools;
     }
 
-    void trace() {
-        engine->evaluate("console.trace();");
-    }
-
-    QJSValue getSelf() {
-        return engine->evaluate("self");
-    }
+    void trace();
+    QJSValue getSelf();
 
     void registerWrapper(RJSWrapperObj& obj);
 

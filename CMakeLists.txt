@@ -75,5 +75,3 @@ target_link_libraries(qtjsapi PRIVATE
     Qt::UiTools
     Qt::Core5Compat
 )
-
-add_subdirectory(console)
