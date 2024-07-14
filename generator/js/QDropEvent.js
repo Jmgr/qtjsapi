@@ -1,132 +1,130 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QDropEvent() {
-        
+// class constructor:
+function QDropEvent() {
 
-        // should be QDropEvent_BaseJs.call(this, engine):
-        //QDropEvent.prototype = new QDropEvent_BaseJs(engine);
 
-        var wrapper;
+    // should be QDropEvent_BaseJs.call(this, engine):
+    //QDropEvent.prototype = new QDropEvent_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QDropEvent.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QDropEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDropEvent);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QDropEvent);
             //}
-          }
-          else {
+        } else {
             qWarning("QDropEvent.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 5 &&
-          arguments.length <= 6) {
-    
+
+    } else {
+
+        if (arguments.length >= 5 &&
+                arguments.length <= 6) {
+
             self = this;
             wrapper = new QDropEvent_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QDropEvent);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QDropEvent);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QDropEvent);
-  }
 
-  
-  else {
-    
-        print("QDropEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QDropEvent);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QDropEvent(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QDropEvent.prototype = new QDropEvent_BaseJs(engine);
-      //QDropEvent.prototype = new QDropEvent_Wrapper(engine);
-      QDropEvent.prototype = new Object();
-
-      QDropEvent.prototype.toString = function() {
-          //return "QDropEvent [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QDropEvent [JS]";
-        };
-      QDropEvent.getObjectType = function() {
-        return RJSType_QDropEvent.getIdStatic();
-      };
-
-      QDropEvent.prototype.getObjectType = function() {
-        return RJSType_QDropEvent.getIdStatic();
-      };
-
-      QDropEvent.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QDropEvent.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QEvent.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: Type
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QDropEvent.prototype = new QDropEvent_BaseJs(engine);
+//QDropEvent.prototype = new QDropEvent_Wrapper(engine);
+QDropEvent.prototype = new Object();
+
+QDropEvent.prototype.toString = function() {
+    //return "QDropEvent [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QDropEvent [JS]";
+};
+QDropEvent.getObjectType = function() {
+    return RJSType_QDropEvent.getIdStatic();
+};
+
+QDropEvent.prototype.getObjectType = function() {
+    return RJSType_QDropEvent.getIdStatic();
+};
+
+QDropEvent.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QDropEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QDropEvent.None = QDropEvent_Wrapper.None;
 QDropEvent.Timer = QDropEvent_Wrapper.Timer;
 QDropEvent.MouseButtonPress = QDropEvent_Wrapper.MouseButtonPress;
@@ -301,54 +299,53 @@ QDropEvent.User = QDropEvent_Wrapper.User;
 QDropEvent.MaxUser = QDropEvent_Wrapper.MaxUser;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QDropEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QDropEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QDropEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QDropEvent.registerEventType = function()
+
+{
+    //print("JS: QDropEvent.registerEventType");
+
+    if (arguments.length >= 0 &&
+            arguments.length <= 1) {
+
+        // calling static wrapper:
+        return QDropEvent_WrapperSingletonInstance.registerEventType(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QDropEvent);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QDropEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QDropEvent.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QDropEvent.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QDropEvent.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QDropEvent.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

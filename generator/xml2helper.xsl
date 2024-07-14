@@ -68,13 +68,9 @@
       #include &lt;QtCore&gt;
       #include &lt;QtGui&gt;
       #include &lt;QtWidgets&gt;
-      #include &lt;QtXml&gt;
-      #include &lt;QtQuick&gt;
-      #include &lt;QtQuickWidgets&gt;
-      #include &lt;QtPrintSupport&gt;
       #include &lt;QtCore5Compat&gt;
-      #include &lt;QtSvg&gt;
       #include &lt;QtUiTools&gt;
+      #include &lt;QtQml&gt;
 
 
       #include "RJSWrapper.h"
@@ -208,9 +204,7 @@
           static QJSValue cpp2js_QWidget(RJSApi&amp; handler, QWidget* v);
           static QWidget* js2cpp_QWidget_ptr(RJSApi&amp; handler, const QJSValue&amp; v);
           static bool is_QWidget_ptr(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
-         
-          static QJSValue cpp2js_QDomDocument_ParseResult(RJSApi&amp; handler, QDomDocument::ParseResult v);
-         
+                  
           static QJSValue cpp2js_QList_QPair_QString_QString(RJSApi&amp; handler, const QList&lt;QPair&lt;QString,QString&gt; &gt;&amp; v);
           static QList&lt;QPair&lt;QString,QString&gt; &gt; js2cpp_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v);
           static bool is_QList_QPair_QString_QString(RJSApi&amp; handler, const QJSValue&amp; v, bool acceptUndefined = false);
@@ -1403,16 +1397,6 @@
           return fun.call(QJSValueList() &lt;&lt; QJSValue(RJSType_QWidget::getIdStatic())).toBool();
           //return fun.call(RJSType::QWidget_Type);
           //return fun.call().toInt()==RJSType::QWidget_Type;
-      }
-
-      QJSValue RJSHelper::cpp2js_QDomDocument_ParseResult(RJSApi&amp; handler, QDomDocument::ParseResult v) {
-          QJSEngine* engine = handler.getEngine();
-          QJSValue ret = engine->newObject();
-          ret.setProperty("errorColumn", (int)v.errorColumn);
-          ret.setProperty("errorLine", (int)v.errorLine);
-          ret.setProperty("errorMessage", v.errorMessage);
-          ret.setProperty("result", (bool)v);
-          return ret;
       }
 
       QJSValue RJSHelper::cpp2js_QList_QPair_QString_QString(RJSApi&amp; handler, const QList&lt;QPair&lt;QString,QString&gt;&gt;&amp; v) {

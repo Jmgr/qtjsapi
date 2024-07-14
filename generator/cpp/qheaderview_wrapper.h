@@ -1,51 +1,51 @@
 
-  // Auto generated
-  
-    #ifndef QHEADERVIEW_H_WRAPPER
-    #define QHEADERVIEW_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QHEADERVIEW_H_WRAPPER
+#define QHEADERVIEW_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QStyleOptionHeader>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QHeaderView>
-      
-      // wrapped object is QHeaderView_Base class if new object is created: 
-      #include "qheaderview_base.h"
-    
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QHeaderView_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QHeaderView_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QStyleOptionHeader>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QHeaderView>
+
+// wrapped object is QHeaderView_Base class if new object is created:
+#include "qheaderview_base.h"
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QHeaderView_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QHeaderView_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QHeaderView
     // Function: tr
     // Source: QObject
@@ -53,30 +53,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    tr
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: devicePixelRatioFScale
     // Source: QPaintDevice
@@ -84,18 +84,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatioFScale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    devicePixelRatioFScale
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setTabOrder
     // Source: QWidget
@@ -103,26 +103,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabOrder
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabOrder
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: mouseGrabber
     // Source: QWidget
@@ -130,18 +130,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseGrabber
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    mouseGrabber
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: keyboardGrabber
     // Source: QWidget
@@ -149,796 +149,796 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardGrabber
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    keyboardGrabber
+    (
+
+
+    )
+
+    ;
+
 #ifndef QT_NO_DATASTREAM
 
 #endif
 
 
-      private:
-          RJSApi& handler;
-          //static QHeaderView_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QHeaderView
-    class QTJSAPI_EXPORT QHeaderView_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
-    QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     modal READ isModal
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowModality READ windowModality WRITE setWindowModality
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     enabled READ isEnabled WRITE setEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     geometry READ geometry WRITE setGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameGeometry READ frameGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     normalGeometry READ normalGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     x READ x
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     y READ y
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     pos READ pos WRITE move
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameSize READ frameSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     size READ size WRITE resize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     width READ width
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     height READ height
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     rect READ rect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     childrenRect READ childrenRect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     childrenRegion READ childrenRegion
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizePolicy READ sizePolicy WRITE setSizePolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumSize READ minimumSize WRITE setMinimumSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumSize READ maximumSize WRITE setMaximumSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumWidth READ minimumWidth WRITE setMinimumWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumHeight READ minimumHeight WRITE setMinimumHeight
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumWidth READ maximumWidth WRITE setMaximumWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumHeight READ maximumHeight WRITE setMaximumHeight
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizeIncrement READ sizeIncrement WRITE setSizeIncrement
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     baseSize READ baseSize WRITE setBaseSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     palette READ palette WRITE setPalette
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     font READ font WRITE setFont
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     cursor READ cursor WRITE setCursor
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     mouseTracking READ hasMouseTracking WRITE setMouseTracking
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     tabletTracking READ hasTabletTracking WRITE setTabletTracking
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     isActiveWindow READ isActiveWindow
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     focusPolicy READ focusPolicy WRITE setFocusPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     focus READ hasFocus
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     contextMenuPolicy READ contextMenuPolicy WRITE setContextMenuPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     updatesEnabled READ updatesEnabled WRITE setUpdatesEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     visible READ isVisible WRITE setVisible
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimized READ isMinimized
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximized READ isMaximized
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     fullScreen READ isFullScreen
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizeHint READ sizeHint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumSizeHint READ minimumSizeHint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     acceptDrops READ acceptDrops WRITE setAcceptDrops
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowTitle READ windowTitle WRITE setWindowTitle
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowIcon READ windowIcon WRITE setWindowIcon
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowIconText READ windowIconText WRITE setWindowIconText
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowOpacity READ windowOpacity WRITE setWindowOpacity
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowModified READ isWindowModified WRITE setWindowModified
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTip READ toolTip WRITE setToolTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTipDuration READ toolTipDuration WRITE setToolTipDuration
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     statusTip READ statusTip WRITE setStatusTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     whatsThis READ whatsThis WRITE setWhatsThis
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     accessibleName READ accessibleName WRITE setAccessibleName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     accessibleDescription READ accessibleDescription WRITE setAccessibleDescription
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     layoutDirection READ layoutDirection WRITE setLayoutDirection
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoFillBackground READ autoFillBackground WRITE setAutoFillBackground
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     styleSheet READ styleSheet WRITE setStyleSheet
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     locale READ locale WRITE setLocale
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowFilePath READ windowFilePath WRITE setWindowFilePath
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     inputMethodHints READ inputMethodHints WRITE setInputMethodHints
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameRect READ frameRect WRITE setFrameRect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameShadow READ frameShadow WRITE setFrameShadow
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameShape READ frameShape WRITE setFrameShape
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameWidth READ frameWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     lineWidth READ lineWidth WRITE setLineWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     midLineWidth READ midLineWidth WRITE setMidLineWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     editTriggers READ editTriggers WRITE setEditTriggers
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     tabKeyNavigation READ tabKeyNavigation WRITE setTabKeyNavigation
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     showDropIndicator READ showDropIndicator WRITE setDropIndicatorShown
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     dragEnabled READ dragEnabled WRITE setDragEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     dragDropOverwriteMode READ dragDropOverwriteMode WRITE setDragDropOverwriteMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     dragDropMode READ dragDropMode WRITE setDragDropMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     defaultDropAction READ defaultDropAction WRITE setDefaultDropAction
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     alternatingRowColors READ alternatingRowColors WRITE setAlternatingRowColors
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     selectionMode READ selectionMode WRITE setSelectionMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     selectionBehavior READ selectionBehavior WRITE setSelectionBehavior
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     iconSize READ iconSize WRITE setIconSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     textElideMode READ textElideMode WRITE setTextElideMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     verticalScrollMode READ verticalScrollMode WRITE setVerticalScrollMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     horizontalScrollMode READ horizontalScrollMode WRITE setHorizontalScrollMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     showSortIndicator READ isSortIndicatorShown WRITE setSortIndicatorShown
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     highlightSections READ highlightSections WRITE setHighlightSections
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     stretchLastSection READ stretchLastSection WRITE setStretchLastSection
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     cascadingSectionResizes READ cascadingSectionResizes WRITE setCascadingSectionResizes
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     defaultSectionSize READ defaultSectionSize WRITE setDefaultSectionSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumSectionSize READ minimumSectionSize WRITE setMinimumSectionSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumSectionSize READ maximumSectionSize WRITE setMaximumSectionSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     defaultAlignment READ defaultAlignment WRITE setDefaultAlignment
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sortIndicatorClearable READ isSortIndicatorClearable WRITE setSortIndicatorClearable
-  )
-
-
-    private:
-      // disable copy constructor:
-      QHeaderView_Wrapper(const QHeaderView_Wrapper&);
-
-    public:
-      // initialization of QHeaderView:
-      static void init(RJSApi& handler);
-
-      
-        static QHeaderView* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
-
-          // hook for modules to cast from other types to base QHeaderView:
-          for (int i=0; i<basecasters_QHeaderView.length(); i++) {
+private:
+    RJSApi& handler;
+    //static QHeaderView_WrapperSingleton* _singleInstance;
+
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QHeaderView
+class QTJSAPI_EXPORT QHeaderView_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        modal READ isModal
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowModality READ windowModality WRITE setWindowModality
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        enabled READ isEnabled WRITE setEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        geometry READ geometry WRITE setGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameGeometry READ frameGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        normalGeometry READ normalGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        x READ x
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        y READ y
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        pos READ pos WRITE move
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameSize READ frameSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        size READ size WRITE resize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        width READ width
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        height READ height
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        rect READ rect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        childrenRect READ childrenRect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        childrenRegion READ childrenRegion
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizePolicy READ sizePolicy WRITE setSizePolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumSize READ minimumSize WRITE setMinimumSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumSize READ maximumSize WRITE setMaximumSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumWidth READ minimumWidth WRITE setMinimumWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumHeight READ minimumHeight WRITE setMinimumHeight
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumWidth READ maximumWidth WRITE setMaximumWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumHeight READ maximumHeight WRITE setMaximumHeight
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizeIncrement READ sizeIncrement WRITE setSizeIncrement
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        baseSize READ baseSize WRITE setBaseSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        palette READ palette WRITE setPalette
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        font READ font WRITE setFont
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        cursor READ cursor WRITE setCursor
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        mouseTracking READ hasMouseTracking WRITE setMouseTracking
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        tabletTracking READ hasTabletTracking WRITE setTabletTracking
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        isActiveWindow READ isActiveWindow
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        focusPolicy READ focusPolicy WRITE setFocusPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        focus READ hasFocus
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        contextMenuPolicy READ contextMenuPolicy WRITE setContextMenuPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        updatesEnabled READ updatesEnabled WRITE setUpdatesEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        visible READ isVisible WRITE setVisible
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimized READ isMinimized
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximized READ isMaximized
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        fullScreen READ isFullScreen
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizeHint READ sizeHint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumSizeHint READ minimumSizeHint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        acceptDrops READ acceptDrops WRITE setAcceptDrops
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowTitle READ windowTitle WRITE setWindowTitle
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowIcon READ windowIcon WRITE setWindowIcon
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowIconText READ windowIconText WRITE setWindowIconText
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowOpacity READ windowOpacity WRITE setWindowOpacity
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowModified READ isWindowModified WRITE setWindowModified
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTip READ toolTip WRITE setToolTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTipDuration READ toolTipDuration WRITE setToolTipDuration
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        statusTip READ statusTip WRITE setStatusTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        whatsThis READ whatsThis WRITE setWhatsThis
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        accessibleName READ accessibleName WRITE setAccessibleName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        accessibleDescription READ accessibleDescription WRITE setAccessibleDescription
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        layoutDirection READ layoutDirection WRITE setLayoutDirection
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoFillBackground READ autoFillBackground WRITE setAutoFillBackground
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        styleSheet READ styleSheet WRITE setStyleSheet
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        locale READ locale WRITE setLocale
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowFilePath READ windowFilePath WRITE setWindowFilePath
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        inputMethodHints READ inputMethodHints WRITE setInputMethodHints
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameRect READ frameRect WRITE setFrameRect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameShadow READ frameShadow WRITE setFrameShadow
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameShape READ frameShape WRITE setFrameShape
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameWidth READ frameWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        lineWidth READ lineWidth WRITE setLineWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        midLineWidth READ midLineWidth WRITE setMidLineWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoScrollMargin READ autoScrollMargin WRITE setAutoScrollMargin
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        editTriggers READ editTriggers WRITE setEditTriggers
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        tabKeyNavigation READ tabKeyNavigation WRITE setTabKeyNavigation
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        showDropIndicator READ showDropIndicator WRITE setDropIndicatorShown
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        dragEnabled READ dragEnabled WRITE setDragEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        dragDropOverwriteMode READ dragDropOverwriteMode WRITE setDragDropOverwriteMode
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        dragDropMode READ dragDropMode WRITE setDragDropMode
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        defaultDropAction READ defaultDropAction WRITE setDefaultDropAction
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        alternatingRowColors READ alternatingRowColors WRITE setAlternatingRowColors
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        selectionMode READ selectionMode WRITE setSelectionMode
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        selectionBehavior READ selectionBehavior WRITE setSelectionBehavior
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        iconSize READ iconSize WRITE setIconSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        textElideMode READ textElideMode WRITE setTextElideMode
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        verticalScrollMode READ verticalScrollMode WRITE setVerticalScrollMode
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        horizontalScrollMode READ horizontalScrollMode WRITE setHorizontalScrollMode
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        showSortIndicator READ isSortIndicatorShown WRITE setSortIndicatorShown
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        highlightSections READ highlightSections WRITE setHighlightSections
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        stretchLastSection READ stretchLastSection WRITE setStretchLastSection
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        cascadingSectionResizes READ cascadingSectionResizes WRITE setCascadingSectionResizes
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        defaultSectionSize READ defaultSectionSize WRITE setDefaultSectionSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumSectionSize READ minimumSectionSize WRITE setMinimumSectionSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumSectionSize READ maximumSectionSize WRITE setMaximumSectionSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        defaultAlignment READ defaultAlignment WRITE setDefaultAlignment
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sortIndicatorClearable READ isSortIndicatorClearable WRITE setSortIndicatorClearable
+    )
+
+
+private:
+    // disable copy constructor:
+    QHeaderView_Wrapper(const QHeaderView_Wrapper&);
+
+public:
+    // initialization of QHeaderView:
+    static void init(RJSApi& handler);
+
+
+    static QHeaderView* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QHeaderView:
+        for (int i=0; i<basecasters_QHeaderView.length(); i++) {
             RJSBasecaster_QHeaderView* basecaster = basecasters_QHeaderView[i];
             QHeaderView* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QHeaderView:
-          if (t==RJSType_QHeaderView::getIdStatic()) {
+        // object is a pointer to base class QHeaderView:
+        if (t==RJSType_QHeaderView::getIdStatic()) {
             return (QHeaderView*)vp;
-          }
-
-          qWarning() << "QHeaderView_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QHeaderView* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QHeaderView*: wrapper wraps NULL";
-          }
+        qWarning() << "QHeaderView_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QHeaderView* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QHeaderView*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QHeaderView* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QHeaderView*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum Shape {
-    NoFrame = QHeaderView::NoFrame,
-Box = QHeaderView::Box,
-Panel = QHeaderView::Panel,
-WinPanel = QHeaderView::WinPanel,
-HLine = QHeaderView::HLine,
-VLine = QHeaderView::VLine,
-StyledPanel = QHeaderView::StyledPanel,
 
-  };
-  Q_ENUM(Shape)
+        QHeaderView* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QHeaderView*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
 
-  enum Shadow {
-    Plain = QHeaderView::Plain,
-Raised = QHeaderView::Raised,
-Sunken = QHeaderView::Sunken,
+    // enums:
 
-  };
-  Q_ENUM(Shadow)
+    enum Shape {
+        NoFrame = QHeaderView::NoFrame,
+        Box = QHeaderView::Box,
+        Panel = QHeaderView::Panel,
+        WinPanel = QHeaderView::WinPanel,
+        HLine = QHeaderView::HLine,
+        VLine = QHeaderView::VLine,
+        StyledPanel = QHeaderView::StyledPanel,
 
-  enum StyleMask {
-    Shadow_Mask = QHeaderView::Shadow_Mask,
-Shape_Mask = QHeaderView::Shape_Mask,
+    };
+    Q_ENUM(Shape)
 
-  };
-  Q_ENUM(StyleMask)
+    enum Shadow {
+        Plain = QHeaderView::Plain,
+        Raised = QHeaderView::Raised,
+        Sunken = QHeaderView::Sunken,
 
-  enum SizeAdjustPolicy {
-    AdjustIgnored = QHeaderView::AdjustIgnored,
-AdjustToContentsOnFirstShow = QHeaderView::AdjustToContentsOnFirstShow,
-AdjustToContents = QHeaderView::AdjustToContents,
+    };
+    Q_ENUM(Shadow)
 
-  };
-  Q_ENUM(SizeAdjustPolicy)
+    enum StyleMask {
+        Shadow_Mask = QHeaderView::Shadow_Mask,
+        Shape_Mask = QHeaderView::Shape_Mask,
 
-  enum SelectionMode {
-    NoSelection = QHeaderView::NoSelection,
-SingleSelection = QHeaderView::SingleSelection,
-MultiSelection = QHeaderView::MultiSelection,
-ExtendedSelection = QHeaderView::ExtendedSelection,
-ContiguousSelection = QHeaderView::ContiguousSelection,
+    };
+    Q_ENUM(StyleMask)
 
-  };
-  Q_ENUM(SelectionMode)
+    enum SizeAdjustPolicy {
+        AdjustIgnored = QHeaderView::AdjustIgnored,
+        AdjustToContentsOnFirstShow = QHeaderView::AdjustToContentsOnFirstShow,
+        AdjustToContents = QHeaderView::AdjustToContents,
 
-  enum SelectionBehavior {
-    SelectItems = QHeaderView::SelectItems,
-SelectRows = QHeaderView::SelectRows,
-SelectColumns = QHeaderView::SelectColumns,
+    };
+    Q_ENUM(SizeAdjustPolicy)
 
-  };
-  Q_ENUM(SelectionBehavior)
+    enum SelectionMode {
+        NoSelection = QHeaderView::NoSelection,
+        SingleSelection = QHeaderView::SingleSelection,
+        MultiSelection = QHeaderView::MultiSelection,
+        ExtendedSelection = QHeaderView::ExtendedSelection,
+        ContiguousSelection = QHeaderView::ContiguousSelection,
 
-  enum ScrollHint {
-    EnsureVisible = QHeaderView::EnsureVisible,
-PositionAtTop = QHeaderView::PositionAtTop,
-PositionAtBottom = QHeaderView::PositionAtBottom,
-PositionAtCenter = QHeaderView::PositionAtCenter,
+    };
+    Q_ENUM(SelectionMode)
 
-  };
-  Q_ENUM(ScrollHint)
+    enum SelectionBehavior {
+        SelectItems = QHeaderView::SelectItems,
+        SelectRows = QHeaderView::SelectRows,
+        SelectColumns = QHeaderView::SelectColumns,
 
-  enum EditTrigger {
-    NoEditTriggers = QHeaderView::NoEditTriggers,
-CurrentChanged = QHeaderView::CurrentChanged,
-DoubleClicked = QHeaderView::DoubleClicked,
-SelectedClicked = QHeaderView::SelectedClicked,
-EditKeyPressed = QHeaderView::EditKeyPressed,
-AnyKeyPressed = QHeaderView::AnyKeyPressed,
-AllEditTriggers = QHeaderView::AllEditTriggers,
+    };
+    Q_ENUM(SelectionBehavior)
 
-  };
-  Q_ENUM(EditTrigger)
+    enum ScrollHint {
+        EnsureVisible = QHeaderView::EnsureVisible,
+        PositionAtTop = QHeaderView::PositionAtTop,
+        PositionAtBottom = QHeaderView::PositionAtBottom,
+        PositionAtCenter = QHeaderView::PositionAtCenter,
 
-  enum ScrollMode {
-    ScrollPerItem = QHeaderView::ScrollPerItem,
-ScrollPerPixel = QHeaderView::ScrollPerPixel,
+    };
+    Q_ENUM(ScrollHint)
 
-  };
-  Q_ENUM(ScrollMode)
+    enum EditTrigger {
+        NoEditTriggers = QHeaderView::NoEditTriggers,
+        CurrentChanged = QHeaderView::CurrentChanged,
+        DoubleClicked = QHeaderView::DoubleClicked,
+        SelectedClicked = QHeaderView::SelectedClicked,
+        EditKeyPressed = QHeaderView::EditKeyPressed,
+        AnyKeyPressed = QHeaderView::AnyKeyPressed,
+        AllEditTriggers = QHeaderView::AllEditTriggers,
 
-  enum DragDropMode {
-    NoDragDrop = QHeaderView::NoDragDrop,
-DragOnly = QHeaderView::DragOnly,
-DropOnly = QHeaderView::DropOnly,
-DragDrop = QHeaderView::DragDrop,
-InternalMove = QHeaderView::InternalMove,
+    };
+    Q_ENUM(EditTrigger)
 
-  };
-  Q_ENUM(DragDropMode)
+    enum ScrollMode {
+        ScrollPerItem = QHeaderView::ScrollPerItem,
+        ScrollPerPixel = QHeaderView::ScrollPerPixel,
 
-  enum ResizeMode {
-    Interactive = QHeaderView::Interactive,
-Stretch = QHeaderView::Stretch,
-Fixed = QHeaderView::Fixed,
-ResizeToContents = QHeaderView::ResizeToContents,
-Custom = QHeaderView::Custom,
+    };
+    Q_ENUM(ScrollMode)
 
-  };
-  Q_ENUM(ResizeMode)
+    enum DragDropMode {
+        NoDragDrop = QHeaderView::NoDragDrop,
+        DragOnly = QHeaderView::DragOnly,
+        DropOnly = QHeaderView::DropOnly,
+        DragDrop = QHeaderView::DragDrop,
+        InternalMove = QHeaderView::InternalMove,
+
+    };
+    Q_ENUM(DragDropMode)
+
+    enum ResizeMode {
+        Interactive = QHeaderView::Interactive,
+        Stretch = QHeaderView::Stretch,
+        Fixed = QHeaderView::Fixed,
+        ResizeToContents = QHeaderView::ResizeToContents,
+        Custom = QHeaderView::Custom,
+
+    };
+    Q_ENUM(ResizeMode)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QHeaderView_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QHeaderView_Wrapper(RJSApi& h, QHeaderView* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QHeaderView_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QHeaderView_Wrapper(RJSApi& h, QHeaderView* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QHeaderView_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QHeaderView
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QHeaderView_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QHeaderView_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
 #ifndef QT_NO_DATASTREAM
 
 #endif
 
 
     // non-static functions:
-    
+
     // Class: QHeaderView
     // Function: objectName
     // Source: QObject
@@ -946,20 +946,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setObjectName
     // Source: QObject
@@ -967,22 +967,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: isWidgetType
     // Source: QObject
@@ -990,20 +990,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isWindowType
     // Source: QObject
@@ -1011,20 +1011,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: signalsBlocked
     // Source: QObject
@@ -1032,20 +1032,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: blockSignals
     // Source: QObject
@@ -1053,22 +1053,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: findChild
     // Source: QObject
@@ -1076,28 +1076,28 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: children
     // Source: QObject
@@ -1105,20 +1105,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: installEventFilter
     // Source: QObject
@@ -1126,22 +1126,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: removeEventFilter
     // Source: QObject
@@ -1149,22 +1149,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: dumpObjectTree
     // Source: QObject
@@ -1172,18 +1172,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: dumpObjectInfo
     // Source: QObject
@@ -1191,18 +1191,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setProperty
     // Source: QObject
@@ -1210,26 +1210,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: property
     // Source: QObject
@@ -1237,24 +1237,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -1262,20 +1262,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: parent
     // Source: QObject
@@ -1283,20 +1283,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: deleteLater
     // Source: QObject
@@ -1304,18 +1304,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: paintingActive
     // Source: QPaintDevice
@@ -1323,20 +1323,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintingActive
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    paintingActive
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: paintEngine
     // Source: QPaintDevice
@@ -1344,20 +1344,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintEngine
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    paintEngine
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: widthMM
     // Source: QPaintDevice
@@ -1365,20 +1365,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  widthMM
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    widthMM
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: heightMM
     // Source: QPaintDevice
@@ -1386,20 +1386,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  heightMM
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    heightMM
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: logicalDpiX
     // Source: QPaintDevice
@@ -1407,20 +1407,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  logicalDpiX
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    logicalDpiX
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: logicalDpiY
     // Source: QPaintDevice
@@ -1428,20 +1428,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  logicalDpiY
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    logicalDpiY
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: physicalDpiX
     // Source: QPaintDevice
@@ -1449,20 +1449,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  physicalDpiX
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    physicalDpiX
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: physicalDpiY
     // Source: QPaintDevice
@@ -1470,20 +1470,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  physicalDpiY
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    physicalDpiY
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: devicePixelRatio
     // Source: QPaintDevice
@@ -1491,20 +1491,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatio
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    devicePixelRatio
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: devicePixelRatioF
     // Source: QPaintDevice
@@ -1512,20 +1512,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatioF
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    devicePixelRatioF
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: colorCount
     // Source: QPaintDevice
@@ -1533,20 +1533,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  colorCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    colorCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: depth
     // Source: QPaintDevice
@@ -1554,20 +1554,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  depth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    depth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: devType
     // Source: QWidget
@@ -1575,20 +1575,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    devType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: createWinId
     // Source: QWidget
@@ -1596,18 +1596,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  createWinId
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    createWinId
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: isWindow
     // Source: QWidget
@@ -1615,20 +1615,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isModal
     // Source: QWidget
@@ -1636,20 +1636,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isModal
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isModal
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: windowModality
     // Source: QWidget
@@ -1657,20 +1657,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowModality
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowModality
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setWindowModality
     // Source: QWidget
@@ -1678,22 +1678,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowModality
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowModality
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: isEnabled
     // Source: QWidget
@@ -1701,20 +1701,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isEnabledTo
     // Source: QWidget
@@ -1722,24 +1722,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEnabledTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEnabledTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setEnabled
     // Source: QWidget
@@ -1747,22 +1747,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setDisabled
     // Source: QWidget
@@ -1770,22 +1770,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDisabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDisabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setWindowModified
     // Source: QWidget
@@ -1793,22 +1793,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowModified
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: frameGeometry
     // Source: QWidget
@@ -1816,20 +1816,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: geometry
     // Source: QWidget
@@ -1837,20 +1837,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  geometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    geometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: normalGeometry
     // Source: QWidget
@@ -1858,20 +1858,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  normalGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    normalGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: x
     // Source: QWidget
@@ -1879,20 +1879,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  x
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    x
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: y
     // Source: QWidget
@@ -1900,20 +1900,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  y
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    y
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: pos
     // Source: QWidget
@@ -1921,20 +1921,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pos
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pos
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: frameSize
     // Source: QWidget
@@ -1942,20 +1942,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: size
     // Source: QWidget
@@ -1963,20 +1963,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    size
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: width
     // Source: QWidget
@@ -1984,20 +1984,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  width
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    width
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: height
     // Source: QWidget
@@ -2005,20 +2005,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  height
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    height
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: rect
     // Source: QWidget
@@ -2026,20 +2026,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    rect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: childrenRect
     // Source: QWidget
@@ -2047,20 +2047,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childrenRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childrenRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: childrenRegion
     // Source: QWidget
@@ -2068,20 +2068,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childrenRegion
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childrenRegion
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: minimumSize
     // Source: QWidget
@@ -2089,20 +2089,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: maximumSize
     // Source: QWidget
@@ -2110,20 +2110,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: minimumWidth
     // Source: QWidget
@@ -2131,20 +2131,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: minimumHeight
     // Source: QWidget
@@ -2152,20 +2152,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumHeight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: maximumWidth
     // Source: QWidget
@@ -2173,20 +2173,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: maximumHeight
     // Source: QWidget
@@ -2194,20 +2194,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumHeight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setMinimumSize
     // Source: QWidget
@@ -2215,26 +2215,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setMaximumSize
     // Source: QWidget
@@ -2242,26 +2242,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setMinimumWidth
     // Source: QWidget
@@ -2269,22 +2269,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setMinimumHeight
     // Source: QWidget
@@ -2292,22 +2292,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setMaximumWidth
     // Source: QWidget
@@ -2315,22 +2315,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setMaximumHeight
     // Source: QWidget
@@ -2338,22 +2338,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: sizeIncrement
     // Source: QWidget
@@ -2361,20 +2361,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeIncrement
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizeIncrement
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSizeIncrement
     // Source: QWidget
@@ -2382,26 +2382,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizeIncrement
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSizeIncrement
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: baseSize
     // Source: QWidget
@@ -2409,20 +2409,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  baseSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    baseSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setBaseSize
     // Source: QWidget
@@ -2430,26 +2430,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBaseSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBaseSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setFixedSize
     // Source: QWidget
@@ -2457,26 +2457,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setFixedWidth
     // Source: QWidget
@@ -2484,22 +2484,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setFixedHeight
     // Source: QWidget
@@ -2507,22 +2507,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: mapToGlobal
     // Source: QWidget
@@ -2530,24 +2530,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapToGlobal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapToGlobal
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: mapFromGlobal
     // Source: QWidget
@@ -2555,24 +2555,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFromGlobal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFromGlobal
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: mapToParent
     // Source: QWidget
@@ -2580,24 +2580,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapToParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapToParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: mapFromParent
     // Source: QWidget
@@ -2605,24 +2605,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFromParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFromParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: mapTo
     // Source: QWidget
@@ -2630,28 +2630,28 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: mapFrom
     // Source: QWidget
@@ -2659,28 +2659,28 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFrom
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFrom
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: window
     // Source: QWidget
@@ -2688,20 +2688,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  window
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    window
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: nativeParentWidget
     // Source: QWidget
@@ -2709,20 +2709,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nativeParentWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nativeParentWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: topLevelWidget
     // Source: QWidget
@@ -2730,20 +2730,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  topLevelWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    topLevelWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: palette
     // Source: QWidget
@@ -2751,20 +2751,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  palette
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    palette
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setPalette
     // Source: QWidget
@@ -2772,22 +2772,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPalette
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPalette
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setBackgroundRole
     // Source: QWidget
@@ -2795,22 +2795,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBackgroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBackgroundRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: backgroundRole
     // Source: QWidget
@@ -2818,20 +2818,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  backgroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    backgroundRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setForegroundRole
     // Source: QWidget
@@ -2839,22 +2839,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setForegroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setForegroundRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: foregroundRole
     // Source: QWidget
@@ -2862,20 +2862,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  foregroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    foregroundRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: font
     // Source: QWidget
@@ -2883,20 +2883,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  font
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    font
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setFont
     // Source: QWidget
@@ -2904,22 +2904,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFont
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: fontInfo
     // Source: QWidget
@@ -2927,20 +2927,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fontInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fontInfo
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: cursor
     // Source: QWidget
@@ -2948,20 +2948,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cursor
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setCursor
     // Source: QWidget
@@ -2969,22 +2969,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCursor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: unsetCursor
     // Source: QWidget
@@ -2992,18 +2992,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetCursor
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setMouseTracking
     // Source: QWidget
@@ -3011,22 +3011,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMouseTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMouseTracking
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: hasMouseTracking
     // Source: QWidget
@@ -3034,20 +3034,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasMouseTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasMouseTracking
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: underMouse
     // Source: QWidget
@@ -3055,20 +3055,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  underMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    underMouse
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setTabletTracking
     // Source: QWidget
@@ -3076,22 +3076,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabletTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabletTracking
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: hasTabletTracking
     // Source: QWidget
@@ -3099,20 +3099,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasTabletTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasTabletTracking
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setMask
     // Source: QWidget
@@ -3120,22 +3120,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMask
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: mask
     // Source: QWidget
@@ -3143,20 +3143,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mask
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: clearMask
     // Source: QWidget
@@ -3164,18 +3164,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearMask
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: grab
     // Source: QWidget
@@ -3183,22 +3183,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grab
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grab
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: grabGesture
     // Source: QWidget
@@ -3206,26 +3206,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabGesture
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabGesture
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: ungrabGesture
     // Source: QWidget
@@ -3233,22 +3233,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ungrabGesture
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    ungrabGesture
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setWindowTitle
     // Source: QWidget
@@ -3256,22 +3256,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowTitle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setStyleSheet
     // Source: QWidget
@@ -3279,22 +3279,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStyleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStyleSheet
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: styleSheet
     // Source: QWidget
@@ -3302,20 +3302,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  styleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    styleSheet
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: windowTitle
     // Source: QWidget
@@ -3323,20 +3323,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowTitle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setWindowIcon
     // Source: QWidget
@@ -3344,22 +3344,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowIcon
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: windowIcon
     // Source: QWidget
@@ -3367,20 +3367,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowIcon
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setWindowIconText
     // Source: QWidget
@@ -3388,22 +3388,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowIconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowIconText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: windowIconText
     // Source: QWidget
@@ -3411,20 +3411,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowIconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowIconText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setWindowRole
     // Source: QWidget
@@ -3432,22 +3432,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: windowRole
     // Source: QWidget
@@ -3455,20 +3455,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setWindowFilePath
     // Source: QWidget
@@ -3476,22 +3476,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFilePath
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFilePath
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: windowFilePath
     // Source: QWidget
@@ -3499,20 +3499,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowFilePath
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowFilePath
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setWindowOpacity
     // Source: QWidget
@@ -3520,22 +3520,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowOpacity
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowOpacity
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: windowOpacity
     // Source: QWidget
@@ -3543,20 +3543,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowOpacity
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowOpacity
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isWindowModified
     // Source: QWidget
@@ -3564,20 +3564,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowModified
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setToolTip
     // Source: QWidget
@@ -3585,22 +3585,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: toolTip
     // Source: QWidget
@@ -3608,20 +3608,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setToolTipDuration
     // Source: QWidget
@@ -3629,22 +3629,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTipDuration
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTipDuration
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: toolTipDuration
     // Source: QWidget
@@ -3652,20 +3652,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTipDuration
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTipDuration
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setStatusTip
     // Source: QWidget
@@ -3673,22 +3673,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStatusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStatusTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: statusTip
     // Source: QWidget
@@ -3696,20 +3696,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  statusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    statusTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setWhatsThis
     // Source: QWidget
@@ -3717,22 +3717,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWhatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWhatsThis
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: whatsThis
     // Source: QWidget
@@ -3740,20 +3740,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  whatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    whatsThis
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: accessibleName
     // Source: QWidget
@@ -3761,20 +3761,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  accessibleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    accessibleName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setAccessibleName
     // Source: QWidget
@@ -3782,22 +3782,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAccessibleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAccessibleName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: accessibleDescription
     // Source: QWidget
@@ -3805,20 +3805,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  accessibleDescription
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    accessibleDescription
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setAccessibleDescription
     // Source: QWidget
@@ -3826,22 +3826,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAccessibleDescription
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAccessibleDescription
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setLayoutDirection
     // Source: QWidget
@@ -3849,22 +3849,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLayoutDirection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: layoutDirection
     // Source: QWidget
@@ -3872,20 +3872,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    layoutDirection
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: unsetLayoutDirection
     // Source: QWidget
@@ -3893,18 +3893,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetLayoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetLayoutDirection
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setLocale
     // Source: QWidget
@@ -3912,22 +3912,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLocale
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLocale
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: locale
     // Source: QWidget
@@ -3935,20 +3935,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  locale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    locale
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: unsetLocale
     // Source: QWidget
@@ -3956,18 +3956,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetLocale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetLocale
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: isRightToLeft
     // Source: QWidget
@@ -3975,20 +3975,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isRightToLeft
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isRightToLeft
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isLeftToRight
     // Source: QWidget
@@ -3996,20 +3996,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isLeftToRight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isLeftToRight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isActiveWindow
     // Source: QWidget
@@ -4017,20 +4017,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isActiveWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isActiveWindow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: activateWindow
     // Source: QWidget
@@ -4038,18 +4038,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  activateWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    activateWindow
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: clearFocus
     // Source: QWidget
@@ -4057,18 +4057,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearFocus
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setFocus
     // Source: QWidget
@@ -4076,22 +4076,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocus
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: focusPolicy
     // Source: QWidget
@@ -4099,20 +4099,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setFocusPolicy
     // Source: QWidget
@@ -4120,22 +4120,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocusPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocusPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: hasFocus
     // Source: QWidget
@@ -4143,20 +4143,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasFocus
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setFocusProxy
     // Source: QWidget
@@ -4164,22 +4164,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocusProxy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocusProxy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: focusProxy
     // Source: QWidget
@@ -4187,20 +4187,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusProxy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusProxy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: contextMenuPolicy
     // Source: QWidget
@@ -4208,20 +4208,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contextMenuPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contextMenuPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setContextMenuPolicy
     // Source: QWidget
@@ -4229,22 +4229,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setContextMenuPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setContextMenuPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: grabMouse
     // Source: QWidget
@@ -4252,22 +4252,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabMouse
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: releaseMouse
     // Source: QWidget
@@ -4275,18 +4275,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    releaseMouse
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: grabKeyboard
     // Source: QWidget
@@ -4294,18 +4294,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabKeyboard
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    grabKeyboard
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: releaseKeyboard
     // Source: QWidget
@@ -4313,18 +4313,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseKeyboard
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    releaseKeyboard
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: grabShortcut
     // Source: QWidget
@@ -4332,26 +4332,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: releaseShortcut
     // Source: QWidget
@@ -4359,22 +4359,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    releaseShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setShortcutEnabled
     // Source: QWidget
@@ -4382,26 +4382,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setShortcutAutoRepeat
     // Source: QWidget
@@ -4409,26 +4409,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutAutoRepeat
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutAutoRepeat
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: updatesEnabled
     // Source: QWidget
@@ -4436,20 +4436,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  updatesEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    updatesEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setUpdatesEnabled
     // Source: QWidget
@@ -4457,22 +4457,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setUpdatesEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setUpdatesEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: repaint
     // Source: QWidget
@@ -4480,34 +4480,34 @@ Custom = QHeaderView::Custom,
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  repaint
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    repaint
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setHidden
     // Source: QWidget
@@ -4515,22 +4515,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHidden
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: show
     // Source: QWidget
@@ -4538,18 +4538,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  show
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    show
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: hide
     // Source: QWidget
@@ -4557,18 +4557,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hide
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    hide
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: showMinimized
     // Source: QWidget
@@ -4576,18 +4576,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showMinimized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showMinimized
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: showMaximized
     // Source: QWidget
@@ -4595,18 +4595,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showMaximized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showMaximized
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: showFullScreen
     // Source: QWidget
@@ -4614,18 +4614,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showFullScreen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showFullScreen
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: showNormal
     // Source: QWidget
@@ -4633,18 +4633,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showNormal
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showNormal
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: close
     // Source: QWidget
@@ -4652,18 +4652,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  close
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    close
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: raise
     // Source: QWidget
@@ -4671,18 +4671,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  raise
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    raise
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: lower
     // Source: QWidget
@@ -4690,18 +4690,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lower
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    lower
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: stackUnder
     // Source: QWidget
@@ -4709,22 +4709,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  stackUnder
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    stackUnder
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: move
     // Source: QWidget
@@ -4732,26 +4732,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  move
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    move
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: resize
     // Source: QWidget
@@ -4759,26 +4759,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    resize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setGeometry
     // Source: QWidget
@@ -4786,34 +4786,34 @@ Custom = QHeaderView::Custom,
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setGeometry
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: saveGeometry
     // Source: QWidget
@@ -4821,20 +4821,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  saveGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    saveGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: restoreGeometry
     // Source: QWidget
@@ -4842,22 +4842,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  restoreGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    restoreGeometry
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: adjustSize
     // Source: QWidget
@@ -4865,18 +4865,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  adjustSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    adjustSize
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: isVisible
     // Source: QWidget
@@ -4884,20 +4884,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isVisible
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isVisibleTo
     // Source: QWidget
@@ -4905,24 +4905,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isVisibleTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isVisibleTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isHidden
     // Source: QWidget
@@ -4930,20 +4930,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isHidden
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isMinimized
     // Source: QWidget
@@ -4951,20 +4951,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isMinimized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isMinimized
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isMaximized
     // Source: QWidget
@@ -4972,20 +4972,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isMaximized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isMaximized
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isFullScreen
     // Source: QWidget
@@ -4993,20 +4993,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isFullScreen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isFullScreen
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: windowState
     // Source: QWidget
@@ -5014,20 +5014,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowState
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setWindowState
     // Source: QWidget
@@ -5035,22 +5035,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: overrideWindowState
     // Source: QWidget
@@ -5058,22 +5058,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overrideWindowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    overrideWindowState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: sizePolicy
     // Source: QWidget
@@ -5081,20 +5081,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizePolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizePolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSizePolicy
     // Source: QWidget
@@ -5102,26 +5102,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizePolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSizePolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: heightForWidth
     // Source: QWidget
@@ -5129,24 +5129,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  heightForWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    heightForWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: hasHeightForWidth
     // Source: QWidget
@@ -5154,20 +5154,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasHeightForWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasHeightForWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: visibleRegion
     // Source: QWidget
@@ -5175,20 +5175,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  visibleRegion
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    visibleRegion
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setContentsMargins
     // Source: QWidget
@@ -5196,34 +5196,34 @@ Custom = QHeaderView::Custom,
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setContentsMargins
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setContentsMargins
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: contentsMargins
     // Source: QWidget
@@ -5231,20 +5231,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contentsMargins
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contentsMargins
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: contentsRect
     // Source: QWidget
@@ -5252,20 +5252,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contentsRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contentsRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: layout
     // Source: QWidget
@@ -5273,20 +5273,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layout
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    layout
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setLayout
     // Source: QWidget
@@ -5294,22 +5294,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayout
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLayout
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: updateGeometry
     // Source: QWidget
@@ -5317,18 +5317,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  updateGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    updateGeometry
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setParent
     // Source: QWidget
@@ -5336,26 +5336,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: scroll
     // Source: QWidget
@@ -5363,30 +5363,30 @@ Custom = QHeaderView::Custom,
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scroll
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    scroll
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: focusWidget
     // Source: QWidget
@@ -5394,20 +5394,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: nextInFocusChain
     // Source: QWidget
@@ -5415,20 +5415,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nextInFocusChain
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nextInFocusChain
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: previousInFocusChain
     // Source: QWidget
@@ -5436,20 +5436,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  previousInFocusChain
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    previousInFocusChain
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: acceptDrops
     // Source: QWidget
@@ -5457,20 +5457,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  acceptDrops
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    acceptDrops
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setAcceptDrops
     // Source: QWidget
@@ -5478,22 +5478,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAcceptDrops
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAcceptDrops
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: addAction
     // Source: QWidget
@@ -5501,22 +5501,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: addActions
     // Source: QWidget
@@ -5524,22 +5524,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addActions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addActions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: insertActions
     // Source: QWidget
@@ -5547,26 +5547,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertActions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertActions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: insertAction
     // Source: QWidget
@@ -5574,26 +5574,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: removeAction
     // Source: QWidget
@@ -5601,22 +5601,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: actions
     // Source: QWidget
@@ -5624,20 +5624,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  actions
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    actions
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: parentWidget
     // Source: QWidget
@@ -5645,20 +5645,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parentWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parentWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setWindowFlags
     // Source: QWidget
@@ -5666,22 +5666,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: windowFlags
     // Source: QWidget
@@ -5689,20 +5689,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowFlags
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setWindowFlag
     // Source: QWidget
@@ -5710,26 +5710,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFlag
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFlag
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: overrideWindowFlags
     // Source: QWidget
@@ -5737,22 +5737,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overrideWindowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    overrideWindowFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: windowType
     // Source: QWidget
@@ -5760,20 +5760,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: childAt
     // Source: QWidget
@@ -5781,28 +5781,28 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setAttribute
     // Source: QWidget
@@ -5810,26 +5810,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: testAttribute
     // Source: QWidget
@@ -5837,24 +5837,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  testAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    testAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: ensurePolished
     // Source: QWidget
@@ -5862,20 +5862,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ensurePolished
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    ensurePolished
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: isAncestorOf
     // Source: QWidget
@@ -5883,24 +5883,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isAncestorOf
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isAncestorOf
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: autoFillBackground
     // Source: QWidget
@@ -5908,20 +5908,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoFillBackground
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoFillBackground
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setAutoFillBackground
     // Source: QWidget
@@ -5929,22 +5929,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoFillBackground
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoFillBackground
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: customContextMenuRequested
     // Source: QWidget
@@ -5952,20 +5952,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void customContextMenuRequested(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void customContextMenuRequested(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void customContextMenuRequestedEmitter(
-                const QPoint& pos
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void customContextMenuRequestedEmitter(
+        const QPoint& pos
+    );
+
     // Class: QHeaderView
     // Function: inputMethodHints
     // Source: QWidget
@@ -5973,20 +5973,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  inputMethodHints
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    inputMethodHints
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setInputMethodHints
     // Source: QWidget
@@ -5994,22 +5994,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setInputMethodHints
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setInputMethodHints
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: frameStyle
     // Source: QFrame
@@ -6017,20 +6017,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameStyle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameStyle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setFrameStyle
     // Source: QFrame
@@ -6038,22 +6038,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFrameStyle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFrameStyle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: frameWidth
     // Source: QFrame
@@ -6061,20 +6061,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: frameShape
     // Source: QFrame
@@ -6082,20 +6082,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameShape
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameShape
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setFrameShape
     // Source: QFrame
@@ -6103,22 +6103,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFrameShape
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFrameShape
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: frameShadow
     // Source: QFrame
@@ -6126,20 +6126,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameShadow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameShadow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setFrameShadow
     // Source: QFrame
@@ -6147,22 +6147,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFrameShadow
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFrameShadow
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: lineWidth
     // Source: QFrame
@@ -6170,20 +6170,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lineWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    lineWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setLineWidth
     // Source: QFrame
@@ -6191,22 +6191,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLineWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLineWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: midLineWidth
     // Source: QFrame
@@ -6214,20 +6214,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  midLineWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    midLineWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setMidLineWidth
     // Source: QFrame
@@ -6235,22 +6235,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMidLineWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMidLineWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: frameRect
     // Source: QFrame
@@ -6258,20 +6258,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setFrameRect
     // Source: QFrame
@@ -6279,22 +6279,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFrameRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFrameRect
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: verticalScrollBarPolicy
     // Source: QAbstractScrollArea
@@ -6302,20 +6302,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  verticalScrollBarPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    verticalScrollBarPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setVerticalScrollBarPolicy
     // Source: QAbstractScrollArea
@@ -6323,22 +6323,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVerticalScrollBarPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setVerticalScrollBarPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: verticalScrollBar
     // Source: QAbstractScrollArea
@@ -6346,20 +6346,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  verticalScrollBar
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    verticalScrollBar
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setVerticalScrollBar
     // Source: QAbstractScrollArea
@@ -6367,22 +6367,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVerticalScrollBar
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setVerticalScrollBar
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: horizontalScrollBarPolicy
     // Source: QAbstractScrollArea
@@ -6390,20 +6390,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  horizontalScrollBarPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    horizontalScrollBarPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setHorizontalScrollBarPolicy
     // Source: QAbstractScrollArea
@@ -6411,22 +6411,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHorizontalScrollBarPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHorizontalScrollBarPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: horizontalScrollBar
     // Source: QAbstractScrollArea
@@ -6434,20 +6434,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  horizontalScrollBar
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    horizontalScrollBar
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setHorizontalScrollBar
     // Source: QAbstractScrollArea
@@ -6455,22 +6455,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHorizontalScrollBar
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHorizontalScrollBar
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: cornerWidget
     // Source: QAbstractScrollArea
@@ -6478,20 +6478,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cornerWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cornerWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setCornerWidget
     // Source: QAbstractScrollArea
@@ -6499,22 +6499,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCornerWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCornerWidget
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: addScrollBarWidget
     // Source: QAbstractScrollArea
@@ -6522,26 +6522,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addScrollBarWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addScrollBarWidget
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: viewport
     // Source: QAbstractScrollArea
@@ -6549,20 +6549,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  viewport
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    viewport
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setViewport
     // Source: QAbstractScrollArea
@@ -6570,22 +6570,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setViewport
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setViewport
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: maximumViewportSize
     // Source: QAbstractScrollArea
@@ -6593,20 +6593,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumViewportSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumViewportSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: minimumSizeHint
     // Source: QAbstractScrollArea
@@ -6614,20 +6614,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSizeHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumSizeHint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setupViewport
     // Source: QAbstractScrollArea
@@ -6635,22 +6635,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setupViewport
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setupViewport
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: sizeAdjustPolicy
     // Source: QAbstractScrollArea
@@ -6658,20 +6658,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeAdjustPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizeAdjustPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSizeAdjustPolicy
     // Source: QAbstractScrollArea
@@ -6679,22 +6679,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizeAdjustPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSizeAdjustPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setModel
     // Source: QAbstractItemView
@@ -6702,22 +6702,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setModel
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setModel
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: model
     // Source: QAbstractItemView
@@ -6725,20 +6725,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  model
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    model
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSelectionModel
     // Source: QAbstractItemView
@@ -6746,22 +6746,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSelectionModel
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSelectionModel
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: selectionModel
     // Source: QAbstractItemView
@@ -6769,20 +6769,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  selectionModel
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    selectionModel
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setItemDelegate
     // Source: QAbstractItemView
@@ -6790,22 +6790,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setItemDelegate
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setItemDelegate
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setSelectionMode
     // Source: QAbstractItemView
@@ -6813,22 +6813,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSelectionMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSelectionMode
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: selectionMode
     // Source: QAbstractItemView
@@ -6836,20 +6836,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  selectionMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    selectionMode
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSelectionBehavior
     // Source: QAbstractItemView
@@ -6857,22 +6857,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSelectionBehavior
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSelectionBehavior
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: selectionBehavior
     // Source: QAbstractItemView
@@ -6880,20 +6880,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  selectionBehavior
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    selectionBehavior
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: currentIndex
     // Source: QAbstractItemView
@@ -6901,20 +6901,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentIndex
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    currentIndex
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: rootIndex
     // Source: QAbstractItemView
@@ -6922,20 +6922,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rootIndex
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    rootIndex
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setEditTriggers
     // Source: QAbstractItemView
@@ -6943,22 +6943,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setEditTriggers
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setEditTriggers
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: editTriggers
     // Source: QAbstractItemView
@@ -6966,20 +6966,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  editTriggers
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    editTriggers
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setVerticalScrollMode
     // Source: QAbstractItemView
@@ -6987,22 +6987,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVerticalScrollMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setVerticalScrollMode
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: verticalScrollMode
     // Source: QAbstractItemView
@@ -7010,20 +7010,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  verticalScrollMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    verticalScrollMode
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: resetVerticalScrollMode
     // Source: QAbstractItemView
@@ -7031,18 +7031,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resetVerticalScrollMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    resetVerticalScrollMode
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setHorizontalScrollMode
     // Source: QAbstractItemView
@@ -7050,22 +7050,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHorizontalScrollMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHorizontalScrollMode
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: horizontalScrollMode
     // Source: QAbstractItemView
@@ -7073,20 +7073,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  horizontalScrollMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    horizontalScrollMode
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: resetHorizontalScrollMode
     // Source: QAbstractItemView
@@ -7094,18 +7094,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resetHorizontalScrollMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    resetHorizontalScrollMode
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setAutoScroll
     // Source: QAbstractItemView
@@ -7113,22 +7113,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoScroll
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoScroll
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: hasAutoScroll
     // Source: QAbstractItemView
@@ -7136,20 +7136,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasAutoScroll
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasAutoScroll
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setAutoScrollMargin
     // Source: QAbstractItemView
@@ -7157,22 +7157,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoScrollMargin
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoScrollMargin
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: autoScrollMargin
     // Source: QAbstractItemView
@@ -7180,20 +7180,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoScrollMargin
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoScrollMargin
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setTabKeyNavigation
     // Source: QAbstractItemView
@@ -7201,22 +7201,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabKeyNavigation
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabKeyNavigation
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: tabKeyNavigation
     // Source: QAbstractItemView
@@ -7224,20 +7224,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tabKeyNavigation
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    tabKeyNavigation
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setDropIndicatorShown
     // Source: QAbstractItemView
@@ -7245,22 +7245,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDropIndicatorShown
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDropIndicatorShown
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: showDropIndicator
     // Source: QAbstractItemView
@@ -7268,20 +7268,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showDropIndicator
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    showDropIndicator
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setDragEnabled
     // Source: QAbstractItemView
@@ -7289,22 +7289,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDragEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDragEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: dragEnabled
     // Source: QAbstractItemView
@@ -7312,20 +7312,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dragEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dragEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setDragDropOverwriteMode
     // Source: QAbstractItemView
@@ -7333,22 +7333,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDragDropOverwriteMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDragDropOverwriteMode
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: dragDropOverwriteMode
     // Source: QAbstractItemView
@@ -7356,20 +7356,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dragDropOverwriteMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dragDropOverwriteMode
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setDragDropMode
     // Source: QAbstractItemView
@@ -7377,22 +7377,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDragDropMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDragDropMode
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: dragDropMode
     // Source: QAbstractItemView
@@ -7400,20 +7400,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dragDropMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dragDropMode
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setDefaultDropAction
     // Source: QAbstractItemView
@@ -7421,22 +7421,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDefaultDropAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDefaultDropAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: defaultDropAction
     // Source: QAbstractItemView
@@ -7444,20 +7444,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  defaultDropAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    defaultDropAction
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setAlternatingRowColors
     // Source: QAbstractItemView
@@ -7465,22 +7465,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAlternatingRowColors
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAlternatingRowColors
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: alternatingRowColors
     // Source: QAbstractItemView
@@ -7488,20 +7488,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  alternatingRowColors
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    alternatingRowColors
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setIconSize
     // Source: QAbstractItemView
@@ -7509,22 +7509,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIconSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setIconSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: iconSize
     // Source: QAbstractItemView
@@ -7532,20 +7532,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  iconSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    iconSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setTextElideMode
     // Source: QAbstractItemView
@@ -7553,22 +7553,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTextElideMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTextElideMode
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: textElideMode
     // Source: QAbstractItemView
@@ -7576,20 +7576,20 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  textElideMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    textElideMode
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: keyboardSearch
     // Source: QAbstractItemView
@@ -7597,22 +7597,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardSearch
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    keyboardSearch
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: isPersistentEditorOpen
     // Source: QAbstractItemView
@@ -7620,24 +7620,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isPersistentEditorOpen
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isPersistentEditorOpen
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setIndexWidget
     // Source: QAbstractItemView
@@ -7645,26 +7645,26 @@ Custom = QHeaderView::Custom,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIndexWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setIndexWidget
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: indexWidget
     // Source: QAbstractItemView
@@ -7672,24 +7672,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  indexWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    indexWidget
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: inputMethodQuery
     // Source: QAbstractItemView
@@ -7697,24 +7697,24 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  inputMethodQuery
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    inputMethodQuery
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setRootIndex
     // Source: QAbstractItemView
@@ -7722,22 +7722,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setRootIndex
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setRootIndex
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: selectAll
     // Source: QAbstractItemView
@@ -7745,18 +7745,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  selectAll
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    selectAll
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: edit
     // Source: QAbstractItemView
@@ -7764,22 +7764,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  edit
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    edit
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: clearSelection
     // Source: QAbstractItemView
@@ -7787,18 +7787,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearSelection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearSelection
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setCurrentIndex
     // Source: QAbstractItemView
@@ -7806,22 +7806,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentIndex
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCurrentIndex
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: scrollToTop
     // Source: QAbstractItemView
@@ -7829,18 +7829,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scrollToTop
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    scrollToTop
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: scrollToBottom
     // Source: QAbstractItemView
@@ -7848,18 +7848,18 @@ Custom = QHeaderView::Custom,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scrollToBottom
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    scrollToBottom
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: update
     // Source: QAbstractItemView
@@ -7867,22 +7867,22 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  update
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    update
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: doubleClicked
     // Source: QAbstractItemView
@@ -7890,1942 +7890,1942 @@ Custom = QHeaderView::Custom,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void doubleClicked(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void doubleClicked(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void doubleClickedEmitter(
-                const QModelIndex& index
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void doubleClickedEmitter(
+        const QModelIndex& index
+    );
+
     // Class: QHeaderView
     // Function: orientation
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  orientation
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    orientation
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: offset
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  offset
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    offset
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: length
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  length
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    length
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: sizeHint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizeHint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setVisible
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setVisible
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: sectionSizeHint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sectionSizeHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sectionSizeHint
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: visualIndexAt
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  visualIndexAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    visualIndexAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: logicalIndexAt
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  logicalIndexAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    logicalIndexAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: sectionSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sectionSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sectionSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: sectionPosition
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sectionPosition
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sectionPosition
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: sectionViewportPosition
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sectionViewportPosition
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sectionViewportPosition
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: moveSection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  moveSection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    moveSection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: swapSections
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  swapSections
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    swapSections
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: resizeSection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resizeSection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    resizeSection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: isSectionHidden
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSectionHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isSectionHidden
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSectionHidden
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSectionHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSectionHidden
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: hiddenSectionCount
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hiddenSectionCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hiddenSectionCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: hideSection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hideSection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    hideSection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: showSection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showSection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    showSection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: count
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  count
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    count
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: visualIndex
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  visualIndex
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    visualIndex
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: logicalIndex
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  logicalIndex
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    logicalIndex
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSectionsMovable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSectionsMovable
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSectionsMovable
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: sectionsMovable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sectionsMovable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sectionsMovable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setFirstSectionMovable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFirstSectionMovable
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFirstSectionMovable
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: isFirstSectionMovable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isFirstSectionMovable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isFirstSectionMovable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSectionsClickable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSectionsClickable
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSectionsClickable
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: sectionsClickable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sectionsClickable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sectionsClickable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setHighlightSections
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHighlightSections
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHighlightSections
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: highlightSections
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  highlightSections
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    highlightSections
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: sectionResizeMode
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sectionResizeMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sectionResizeMode
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSectionResizeMode
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSectionResizeMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSectionResizeMode
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setResizeContentsPrecision
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setResizeContentsPrecision
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setResizeContentsPrecision
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: resizeContentsPrecision
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resizeContentsPrecision
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    resizeContentsPrecision
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: stretchSectionCount
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  stretchSectionCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    stretchSectionCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSortIndicatorShown
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSortIndicatorShown
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSortIndicatorShown
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: isSortIndicatorShown
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSortIndicatorShown
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isSortIndicatorShown
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSortIndicator
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSortIndicator
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSortIndicator
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: sortIndicatorSection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sortIndicatorSection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sortIndicatorSection
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: sortIndicatorOrder
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sortIndicatorOrder
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sortIndicatorOrder
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setSortIndicatorClearable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSortIndicatorClearable
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSortIndicatorClearable
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: isSortIndicatorClearable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSortIndicatorClearable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isSortIndicatorClearable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: stretchLastSection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  stretchLastSection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    stretchLastSection
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setStretchLastSection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStretchLastSection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStretchLastSection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: cascadingSectionResizes
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cascadingSectionResizes
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cascadingSectionResizes
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setCascadingSectionResizes
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCascadingSectionResizes
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCascadingSectionResizes
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: defaultSectionSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  defaultSectionSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    defaultSectionSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setDefaultSectionSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDefaultSectionSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDefaultSectionSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: resetDefaultSectionSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resetDefaultSectionSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    resetDefaultSectionSize
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: minimumSectionSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSectionSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumSectionSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setMinimumSectionSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumSectionSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumSectionSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: maximumSectionSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumSectionSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumSectionSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setMaximumSectionSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumSectionSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumSectionSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: defaultAlignment
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  defaultAlignment
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    defaultAlignment
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: setDefaultAlignment
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDefaultAlignment
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDefaultAlignment
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: doItemsLayout
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  doItemsLayout
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    doItemsLayout
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: sectionsMoved
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sectionsMoved
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sectionsMoved
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: sectionsHidden
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sectionsHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sectionsHidden
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #ifndef QT_NO_DATASTREAM
 
     // Class: QHeaderView
     // Function: saveState
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  saveState
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    saveState
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QHeaderView
     // Function: restoreState
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  restoreState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    restoreState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 #endif
 
     // Class: QHeaderView
     // Function: reset
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  reset
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    reset
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setOffset
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOffset
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setOffset
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setOffsetToSectionPosition
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOffsetToSectionPosition
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setOffsetToSectionPosition
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: setOffsetToLastSection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOffsetToLastSection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    setOffsetToLastSection
+    (
+
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: headerDataChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  headerDataChanged
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    headerDataChanged
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: sectionMoved
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sectionMoved(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sectionMoved(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sectionMovedEmitter(
-                int logicalIndex, int oldVisualIndex, int newVisualIndex
-              );
-            
+        const QJSValue&
+        a1,
+        const QJSValue&
+        a2,
+        const QJSValue&
+        a3
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sectionMovedEmitter(
+        int logicalIndex, int oldVisualIndex, int newVisualIndex
+    );
+
     // Class: QHeaderView
     // Function: sectionResized
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sectionResized(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sectionResized(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sectionResizedEmitter(
-                int logicalIndex, int oldSize, int newSize
-              );
-            
+        const QJSValue&
+        a1,
+        const QJSValue&
+        a2,
+        const QJSValue&
+        a3
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sectionResizedEmitter(
+        int logicalIndex, int oldSize, int newSize
+    );
+
     // Class: QHeaderView
     // Function: sectionPressed
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sectionPressed(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sectionPressed(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sectionPressedEmitter(
-                int logicalIndex
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sectionPressedEmitter(
+        int logicalIndex
+    );
+
     // Class: QHeaderView
     // Function: sectionClicked
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sectionClicked(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sectionClicked(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sectionClickedEmitter(
-                int logicalIndex
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sectionClickedEmitter(
+        int logicalIndex
+    );
+
     // Class: QHeaderView
     // Function: sectionEntered
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sectionEntered(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sectionEntered(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sectionEnteredEmitter(
-                int logicalIndex
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sectionEnteredEmitter(
+        int logicalIndex
+    );
+
     // Class: QHeaderView
     // Function: sectionDoubleClicked
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sectionDoubleClicked(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sectionDoubleClicked(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sectionDoubleClickedEmitter(
-                int logicalIndex
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sectionDoubleClickedEmitter(
+        int logicalIndex
+    );
+
     // Class: QHeaderView
     // Function: sectionCountChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sectionCountChanged(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sectionCountChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sectionCountChangedEmitter(
-                int oldCount, int newCount
-              );
-            
+        const QJSValue&
+        a1,
+        const QJSValue&
+        a2
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sectionCountChangedEmitter(
+        int oldCount, int newCount
+    );
+
     // Class: QHeaderView
     // Function: sectionHandleDoubleClicked
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sectionHandleDoubleClicked(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sectionHandleDoubleClicked(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sectionHandleDoubleClickedEmitter(
-                int logicalIndex
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sectionHandleDoubleClickedEmitter(
+        int logicalIndex
+    );
+
     // Class: QHeaderView
     // Function: geometriesChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void geometriesChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void geometriesChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void geometriesChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void geometriesChangedEmitter(
+
+    );
+
     // Class: QHeaderView
     // Function: sortIndicatorChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sortIndicatorChanged(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sortIndicatorChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sortIndicatorChangedEmitter(
-                int logicalIndex, Qt::SortOrder order
-              );
-            
+        const QJSValue&
+        a1,
+        const QJSValue&
+        a2
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sortIndicatorChangedEmitter(
+        int logicalIndex, Qt::SortOrder order
+    );
+
     // Class: QHeaderView
     // Function: sortIndicatorClearableChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sortIndicatorClearableChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sortIndicatorClearableChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sortIndicatorClearableChangedEmitter(
-                bool clearable
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sortIndicatorClearableChangedEmitter(
+        bool clearable
+    );
+
     // Class: QHeaderView
     // Function: paintEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    paintEventSuper
+
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QHeaderView
     // Function: mouseMoveEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
+    QJSValue
 
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    mouseMoveEventSuper
 
-  // member functions for static properties, forward to static function
-  
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QHeaderView::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QHeaderView* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QHeaderView::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QHeaderView* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QHeaderView* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QHeaderView* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          QHeaderView_Base* getWrappedBase() {
-            QHeaderView* w = getWrapped();
-            return dynamic_cast<QHeaderView_Base*>(w);
-          }
+        return nullptr;
+    }
 
-          QHeaderView_Base* getWrappedBase() const {
-            QHeaderView* w = getWrapped();
-            return dynamic_cast<QHeaderView_Base*>(w);
-          }
-        
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
+    // get wrapped base object or nullptr:
+    QHeaderView_Base* getWrappedBase() {
+        QHeaderView* w = getWrapped();
+        return dynamic_cast<QHeaderView_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
+    QHeaderView_Base* getWrappedBase() const {
+        QHeaderView* w = getWrapped();
+        return dynamic_cast<QHeaderView_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
-          //void setRecFlag(bool on) const {
-          //  QHeaderView_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
-        private:
-        // wrapped object:
-        QHeaderView* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QHeaderView*> basecasters_QHeaderView;
+    //void setRecFlag(bool on) const {
+    //  QHeaderView_Base* wb = getWrappedBase();
+    //  if (wb) {
+    //    wb->setRecFlag(on);
+    //  }
+    //}
 
-      public:
-        static void registerBasecaster_QHeaderView(RJSBasecaster_QHeaderView* bc) {
-          basecasters_QHeaderView.append(bc);
-        }
-      
-    };
 
-    Q_DECLARE_METATYPE(QHeaderView_Wrapper*)
+private:
+    // wrapped object:
+    QHeaderView* wrapped;
 
-    Q_DECLARE_INTERFACE(QHeaderView_Wrapper, "org.qcad.QHeaderView_Wrapper")
 
-  
-  #endif
-  
+
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QHeaderView*> basecasters_QHeaderView;
+
+public:
+    static void registerBasecaster_QHeaderView(RJSBasecaster_QHeaderView* bc) {
+        basecasters_QHeaderView.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QHeaderView_Wrapper*)
+
+Q_DECLARE_INTERFACE(QHeaderView_Wrapper, "org.qcad.QHeaderView_Wrapper")
+
+
+#endif
+

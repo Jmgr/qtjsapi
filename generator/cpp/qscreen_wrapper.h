@@ -1,57 +1,57 @@
 
-  // Auto generated
-  
-    #ifndef QSCREEN_H_WRAPPER
-    #define QSCREEN_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QSCREEN_H_WRAPPER
+#define QSCREEN_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QWindow>
-      
-        #include <QRect>
-      
-        #include <QPixmap>
-      
-        #include <QDebug>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QScreen>
-      
-      // wrapped object is QScreen_Base class if new object is created: 
-      #include "qscreen_base.h"
-    
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QScreen_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QScreen_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QWindow>
+
+#include <QRect>
+
+#include <QPixmap>
+
+#include <QDebug>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QScreen>
+
+// wrapped object is QScreen_Base class if new object is created:
+#include "qscreen_base.h"
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QScreen_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QScreen_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QScreen
     // Function: tr
     // Source: QObject
@@ -59,132 +59,132 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QScreen_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QScreen
-    class QTJSAPI_EXPORT QScreen_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
     QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
+    tr
+    (
 
 
-    private:
-      // disable copy constructor:
-      QScreen_Wrapper(const QScreen_Wrapper&);
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
 
-    public:
-      // initialization of QScreen:
-      static void init(RJSApi& handler);
+    )
 
-      
-        static QScreen* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+    ;
 
-          // hook for modules to cast from other types to base QScreen:
-          for (int i=0; i<basecasters_QScreen.length(); i++) {
+
+private:
+    RJSApi& handler;
+    //static QScreen_WrapperSingleton* _singleInstance;
+
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QScreen
+class QTJSAPI_EXPORT QScreen_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
+
+
+private:
+    // disable copy constructor:
+    QScreen_Wrapper(const QScreen_Wrapper&);
+
+public:
+    // initialization of QScreen:
+    static void init(RJSApi& handler);
+
+
+    static QScreen* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QScreen:
+        for (int i=0; i<basecasters_QScreen.length(); i++) {
             RJSBasecaster_QScreen* basecaster = basecasters_QScreen[i];
             QScreen* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QScreen:
-          if (t==RJSType_QScreen::getIdStatic()) {
+        // object is a pointer to base class QScreen:
+        if (t==RJSType_QScreen::getIdStatic()) {
             return (QScreen*)vp;
-          }
-
-          qWarning() << "QScreen_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QScreen* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QScreen*: wrapper wraps NULL";
-          }
+        qWarning() << "QScreen_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QScreen* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QScreen*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QScreen* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QScreen*: wrapper wraps NULL";
         }
-      
+
+        QScreen* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QScreen*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QScreen_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QScreen_Wrapper(RJSApi& h, QScreen* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QScreen_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QScreen_Wrapper(RJSApi& h, QScreen* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QScreen_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
 
     // non-static functions:
-    
+
     // Class: QScreen
     // Function: objectName
     // Source: QObject
@@ -192,20 +192,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: setObjectName
     // Source: QObject
@@ -213,22 +213,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QScreen
     // Function: isWidgetType
     // Source: QObject
@@ -236,20 +236,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: isWindowType
     // Source: QObject
@@ -257,20 +257,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: signalsBlocked
     // Source: QObject
@@ -278,20 +278,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: blockSignals
     // Source: QObject
@@ -299,22 +299,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QScreen
     // Function: findChild
     // Source: QObject
@@ -322,28 +322,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: children
     // Source: QObject
@@ -351,20 +351,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: setParent
     // Source: QObject
@@ -372,22 +372,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QScreen
     // Function: installEventFilter
     // Source: QObject
@@ -395,22 +395,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QScreen
     // Function: removeEventFilter
     // Source: QObject
@@ -418,22 +418,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QScreen
     // Function: dumpObjectTree
     // Source: QObject
@@ -441,18 +441,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QScreen
     // Function: dumpObjectInfo
     // Source: QObject
@@ -460,18 +460,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QScreen
     // Function: setProperty
     // Source: QObject
@@ -479,26 +479,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QScreen
     // Function: property
     // Source: QObject
@@ -506,24 +506,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -531,20 +531,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: parent
     // Source: QObject
@@ -552,20 +552,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: deleteLater
     // Source: QObject
@@ -573,1100 +573,1100 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QScreen
     // Function: name
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  name
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    name
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: manufacturer
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  manufacturer
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    manufacturer
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: model
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  model
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    model
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: serialNumber
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  serialNumber
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    serialNumber
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: depth
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  depth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    depth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: size
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    size
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: geometry
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  geometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    geometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: physicalSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  physicalSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    physicalSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: physicalDotsPerInchX
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  physicalDotsPerInchX
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    physicalDotsPerInchX
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: physicalDotsPerInchY
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  physicalDotsPerInchY
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    physicalDotsPerInchY
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: physicalDotsPerInch
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  physicalDotsPerInch
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    physicalDotsPerInch
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: logicalDotsPerInchX
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  logicalDotsPerInchX
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    logicalDotsPerInchX
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: logicalDotsPerInchY
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  logicalDotsPerInchY
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    logicalDotsPerInchY
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: logicalDotsPerInch
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  logicalDotsPerInch
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    logicalDotsPerInch
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: devicePixelRatio
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatio
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    devicePixelRatio
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: availableSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  availableSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    availableSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: availableGeometry
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  availableGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    availableGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: virtualSiblings
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  virtualSiblings
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    virtualSiblings
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: virtualSiblingAt
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  virtualSiblingAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    virtualSiblingAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QScreen
     // Function: virtualSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  virtualSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    virtualSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: virtualGeometry
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  virtualGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    virtualGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: availableVirtualSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  availableVirtualSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    availableVirtualSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: availableVirtualGeometry
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  availableVirtualGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    availableVirtualGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: primaryOrientation
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  primaryOrientation
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    primaryOrientation
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: orientation
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  orientation
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    orientation
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: nativeOrientation
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nativeOrientation
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nativeOrientation
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: angleBetween
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  angleBetween
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    angleBetween
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: transformBetween
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  transformBetween
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    transformBetween
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: mapBetween
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapBetween
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapBetween
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: isPortrait
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isPortrait
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isPortrait
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: isLandscape
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isLandscape
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isLandscape
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: grabWindow
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 5
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a5
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabWindow
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+          ,
+        const QJSValue&
+        a5
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QScreen
     // Function: refreshRate
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  refreshRate
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    refreshRate
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QScreen
     // Function: geometryChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void geometryChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void geometryChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void geometryChangedEmitter(
-                const QRect& geometry
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void geometryChangedEmitter(
+        const QRect& geometry
+    );
+
     // Class: QScreen
     // Function: availableGeometryChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void availableGeometryChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void availableGeometryChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void availableGeometryChangedEmitter(
-                const QRect& geometry
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void availableGeometryChangedEmitter(
+        const QRect& geometry
+    );
+
     // Class: QScreen
     // Function: physicalSizeChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void physicalSizeChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void physicalSizeChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void physicalSizeChangedEmitter(
-                const QSizeF& size
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void physicalSizeChangedEmitter(
+        const QSizeF& size
+    );
+
     // Class: QScreen
     // Function: physicalDotsPerInchChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void physicalDotsPerInchChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void physicalDotsPerInchChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void physicalDotsPerInchChangedEmitter(
-                qreal dpi
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void physicalDotsPerInchChangedEmitter(
+        qreal dpi
+    );
+
     // Class: QScreen
     // Function: logicalDotsPerInchChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void logicalDotsPerInchChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void logicalDotsPerInchChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void logicalDotsPerInchChangedEmitter(
-                qreal dpi
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void logicalDotsPerInchChangedEmitter(
+        qreal dpi
+    );
+
     // Class: QScreen
     // Function: virtualGeometryChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void virtualGeometryChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void virtualGeometryChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void virtualGeometryChangedEmitter(
-                const QRect& rect
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void virtualGeometryChangedEmitter(
+        const QRect& rect
+    );
+
     // Class: QScreen
     // Function: primaryOrientationChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void primaryOrientationChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void primaryOrientationChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void primaryOrientationChangedEmitter(
-                Qt::ScreenOrientation orientation
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void primaryOrientationChangedEmitter(
+        Qt::ScreenOrientation orientation
+    );
+
     // Class: QScreen
     // Function: orientationChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void orientationChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void orientationChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void orientationChangedEmitter(
-                Qt::ScreenOrientation orientation
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void orientationChangedEmitter(
+        Qt::ScreenOrientation orientation
+    );
+
     // Class: QScreen
     // Function: refreshRateChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void refreshRateChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void refreshRateChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void refreshRateChangedEmitter(
-                qreal refreshRate
-              );
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
+        const QJSValue&
+        a1
+    );
 
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
+    // called when signal is emitted from wrapped class:
+public slots:
+    void refreshRateChangedEmitter(
+        qreal refreshRate
+    );
 
-  // member functions for static properties, forward to static function
-  
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
 
+            delete wrapped;
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
-
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QScreen::getIdStatic();
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QScreen* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QScreen::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QScreen* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QScreen* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QScreen* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          QScreen_Base* getWrappedBase() {
-            QScreen* w = getWrapped();
-            return dynamic_cast<QScreen_Base*>(w);
-          }
+        return nullptr;
+    }
 
-          QScreen_Base* getWrappedBase() const {
-            QScreen* w = getWrapped();
-            return dynamic_cast<QScreen_Base*>(w);
-          }
-        
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
+    // get wrapped base object or nullptr:
+    QScreen_Base* getWrappedBase() {
+        QScreen* w = getWrapped();
+        return dynamic_cast<QScreen_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
+    QScreen_Base* getWrappedBase() const {
+        QScreen* w = getWrapped();
+        return dynamic_cast<QScreen_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
-          //void setRecFlag(bool on) const {
-          //  QScreen_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
-        private:
-        // wrapped object:
-        QScreen* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QScreen*> basecasters_QScreen;
+    //void setRecFlag(bool on) const {
+    //  QScreen_Base* wb = getWrappedBase();
+    //  if (wb) {
+    //    wb->setRecFlag(on);
+    //  }
+    //}
 
-      public:
-        static void registerBasecaster_QScreen(RJSBasecaster_QScreen* bc) {
-          basecasters_QScreen.append(bc);
-        }
-      
-    };
 
-    Q_DECLARE_METATYPE(QScreen_Wrapper*)
+private:
+    // wrapped object:
+    QScreen* wrapped;
 
-    Q_DECLARE_INTERFACE(QScreen_Wrapper, "org.qcad.QScreen_Wrapper")
 
-  
-  #endif
-  
+
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QScreen*> basecasters_QScreen;
+
+public:
+    static void registerBasecaster_QScreen(RJSBasecaster_QScreen* bc) {
+        basecasters_QScreen.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QScreen_Wrapper*)
+
+Q_DECLARE_INTERFACE(QScreen_Wrapper, "org.qcad.QScreen_Wrapper")
+
+
+#endif
+

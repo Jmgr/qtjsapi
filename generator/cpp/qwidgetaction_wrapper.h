@@ -1,46 +1,46 @@
 
-  // Auto generated
-  
-    #ifndef QWIDGETACTION_H_WRAPPER
-    #define QWIDGETACTION_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QWIDGETACTION_H_WRAPPER
+#define QWIDGETACTION_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QWidgetAction>
-      
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QWidgetAction_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QWidgetAction_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QWidgetAction>
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QWidgetAction_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QWidgetAction_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QWidgetAction
     // Function: tr
     // Source: QObject
@@ -48,289 +48,289 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QWidgetAction_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QWidgetAction
-    class QTJSAPI_EXPORT QWidgetAction_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
     QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     checkable READ isCheckable WRITE setCheckable
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     checked READ isChecked WRITE setChecked
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     enabled READ isEnabled WRITE setEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     icon READ icon WRITE setIcon
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     text READ text WRITE setText
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     iconText READ iconText WRITE setIconText
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTip READ toolTip WRITE setToolTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     statusTip READ statusTip WRITE setStatusTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     whatsThis READ whatsThis WRITE setWhatsThis
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     font READ font WRITE setFont
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     shortcut READ shortcut WRITE setShortcut
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     shortcutContext READ shortcutContext WRITE setShortcutContext
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoRepeat READ autoRepeat WRITE setAutoRepeat
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     visible READ isVisible WRITE setVisible
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     menuRole READ menuRole WRITE setMenuRole
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     iconVisibleInMenu READ isIconVisibleInMenu WRITE setIconVisibleInMenu
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     shortcutVisibleInContextMenu READ isShortcutVisibleInContextMenu WRITE setShortcutVisibleInContextMenu
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     priority READ priority WRITE setPriority
-  )
+    tr
+    (
 
 
-    private:
-      // disable copy constructor:
-      QWidgetAction_Wrapper(const QWidgetAction_Wrapper&);
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
 
-    public:
-      // initialization of QWidgetAction:
-      static void init(RJSApi& handler);
+    )
 
-      
-        static QWidgetAction* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+    ;
 
-          // hook for modules to cast from other types to base QWidgetAction:
-          for (int i=0; i<basecasters_QWidgetAction.length(); i++) {
+
+private:
+    RJSApi& handler;
+    //static QWidgetAction_WrapperSingleton* _singleInstance;
+
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QWidgetAction
+class QTJSAPI_EXPORT QWidgetAction_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        checkable READ isCheckable WRITE setCheckable
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        checked READ isChecked WRITE setChecked
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        enabled READ isEnabled WRITE setEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        icon READ icon WRITE setIcon
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        text READ text WRITE setText
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        iconText READ iconText WRITE setIconText
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTip READ toolTip WRITE setToolTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        statusTip READ statusTip WRITE setStatusTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        whatsThis READ whatsThis WRITE setWhatsThis
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        font READ font WRITE setFont
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        shortcut READ shortcut WRITE setShortcut
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        shortcutContext READ shortcutContext WRITE setShortcutContext
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoRepeat READ autoRepeat WRITE setAutoRepeat
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        visible READ isVisible WRITE setVisible
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        menuRole READ menuRole WRITE setMenuRole
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        iconVisibleInMenu READ isIconVisibleInMenu WRITE setIconVisibleInMenu
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        shortcutVisibleInContextMenu READ isShortcutVisibleInContextMenu WRITE setShortcutVisibleInContextMenu
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        priority READ priority WRITE setPriority
+    )
+
+
+private:
+    // disable copy constructor:
+    QWidgetAction_Wrapper(const QWidgetAction_Wrapper&);
+
+public:
+    // initialization of QWidgetAction:
+    static void init(RJSApi& handler);
+
+
+    static QWidgetAction* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QWidgetAction:
+        for (int i=0; i<basecasters_QWidgetAction.length(); i++) {
             RJSBasecaster_QWidgetAction* basecaster = basecasters_QWidgetAction[i];
             QWidgetAction* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QWidgetAction:
-          if (t==RJSType_QWidgetAction::getIdStatic()) {
+        // object is a pointer to base class QWidgetAction:
+        if (t==RJSType_QWidgetAction::getIdStatic()) {
             return (QWidgetAction*)vp;
-          }
-
-          qWarning() << "QWidgetAction_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QWidgetAction* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QWidgetAction*: wrapper wraps NULL";
-          }
+        qWarning() << "QWidgetAction_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QWidgetAction* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QWidgetAction*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QWidgetAction* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QWidgetAction*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum MenuRole {
-    NoRole = QWidgetAction::NoRole,
-TextHeuristicRole = QWidgetAction::TextHeuristicRole,
-ApplicationSpecificRole = QWidgetAction::ApplicationSpecificRole,
-AboutQtRole = QWidgetAction::AboutQtRole,
-AboutRole = QWidgetAction::AboutRole,
-PreferencesRole = QWidgetAction::PreferencesRole,
-QuitRole = QWidgetAction::QuitRole,
 
-  };
-  Q_ENUM(MenuRole)
+        QWidgetAction* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QWidgetAction*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
 
-  enum Priority {
-    LowPriority = QWidgetAction::LowPriority,
-NormalPriority = QWidgetAction::NormalPriority,
-HighPriority = QWidgetAction::HighPriority,
+    // enums:
 
-  };
-  Q_ENUM(Priority)
+    enum MenuRole {
+        NoRole = QWidgetAction::NoRole,
+        TextHeuristicRole = QWidgetAction::TextHeuristicRole,
+        ApplicationSpecificRole = QWidgetAction::ApplicationSpecificRole,
+        AboutQtRole = QWidgetAction::AboutQtRole,
+        AboutRole = QWidgetAction::AboutRole,
+        PreferencesRole = QWidgetAction::PreferencesRole,
+        QuitRole = QWidgetAction::QuitRole,
+
+    };
+    Q_ENUM(MenuRole)
+
+    enum Priority {
+        LowPriority = QWidgetAction::LowPriority,
+        NormalPriority = QWidgetAction::NormalPriority,
+        HighPriority = QWidgetAction::HighPriority,
+
+    };
+    Q_ENUM(Priority)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QWidgetAction_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QWidgetAction_Wrapper(RJSApi& h, QWidgetAction* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QWidgetAction_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QWidgetAction_Wrapper(RJSApi& h, QWidgetAction* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QWidgetAction_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QWidgetAction
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QWidgetAction_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QWidgetAction_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QWidgetAction
     // Function: objectName
     // Source: QObject
@@ -338,20 +338,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setObjectName
     // Source: QObject
@@ -359,22 +359,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: isWidgetType
     // Source: QObject
@@ -382,20 +382,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: isWindowType
     // Source: QObject
@@ -403,20 +403,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: signalsBlocked
     // Source: QObject
@@ -424,20 +424,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: blockSignals
     // Source: QObject
@@ -445,22 +445,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: findChild
     // Source: QObject
@@ -468,28 +468,28 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: children
     // Source: QObject
@@ -497,20 +497,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setParent
     // Source: QObject
@@ -518,22 +518,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: installEventFilter
     // Source: QObject
@@ -541,22 +541,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: removeEventFilter
     // Source: QObject
@@ -564,22 +564,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: dumpObjectTree
     // Source: QObject
@@ -587,18 +587,18 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: dumpObjectInfo
     // Source: QObject
@@ -606,18 +606,18 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: setProperty
     // Source: QObject
@@ -625,26 +625,26 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: property
     // Source: QObject
@@ -652,24 +652,24 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -677,20 +677,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: parent
     // Source: QObject
@@ -698,20 +698,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: deleteLater
     // Source: QObject
@@ -719,18 +719,18 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: associatedObjects
     // Source: QAction
@@ -738,20 +738,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  associatedObjects
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    associatedObjects
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setIcon
     // Source: QAction
@@ -759,22 +759,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setIcon
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: icon
     // Source: QAction
@@ -782,20 +782,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  icon
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    icon
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setText
     // Source: QAction
@@ -803,22 +803,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: text
     // Source: QAction
@@ -826,20 +826,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  text
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    text
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setIconText
     // Source: QAction
@@ -847,22 +847,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setIconText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: iconText
     // Source: QAction
@@ -870,20 +870,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  iconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    iconText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setToolTip
     // Source: QAction
@@ -891,22 +891,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: toolTip
     // Source: QAction
@@ -914,20 +914,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setStatusTip
     // Source: QAction
@@ -935,22 +935,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStatusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStatusTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: statusTip
     // Source: QAction
@@ -958,20 +958,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  statusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    statusTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setWhatsThis
     // Source: QAction
@@ -979,22 +979,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWhatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWhatsThis
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: whatsThis
     // Source: QAction
@@ -1002,20 +1002,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  whatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    whatsThis
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setPriority
     // Source: QAction
@@ -1023,22 +1023,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPriority
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPriority
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: priority
     // Source: QAction
@@ -1046,20 +1046,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  priority
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    priority
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: menu
     // Source: QAction
@@ -1067,20 +1067,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  menu
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    menu
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setMenu
     // Source: QAction
@@ -1088,22 +1088,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMenu
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: setSeparator
     // Source: QAction
@@ -1111,22 +1111,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSeparator
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSeparator
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: isSeparator
     // Source: QAction
@@ -1134,20 +1134,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSeparator
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isSeparator
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setShortcut
     // Source: QAction
@@ -1155,22 +1155,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: shortcut
     // Source: QAction
@@ -1178,20 +1178,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  shortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    shortcut
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setShortcuts
     // Source: QAction
@@ -1199,22 +1199,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcuts
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcuts
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: shortcuts
     // Source: QAction
@@ -1222,20 +1222,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  shortcuts
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    shortcuts
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setShortcutContext
     // Source: QAction
@@ -1243,22 +1243,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutContext
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutContext
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: shortcutContext
     // Source: QAction
@@ -1266,20 +1266,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  shortcutContext
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    shortcutContext
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setAutoRepeat
     // Source: QAction
@@ -1287,22 +1287,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoRepeat
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoRepeat
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: autoRepeat
     // Source: QAction
@@ -1310,20 +1310,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoRepeat
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoRepeat
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setFont
     // Source: QAction
@@ -1331,22 +1331,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFont
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: font
     // Source: QAction
@@ -1354,20 +1354,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  font
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    font
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setCheckable
     // Source: QAction
@@ -1375,22 +1375,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCheckable
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCheckable
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: isCheckable
     // Source: QAction
@@ -1398,20 +1398,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isCheckable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isCheckable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: data
     // Source: QAction
@@ -1419,20 +1419,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  data
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    data
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setData
     // Source: QAction
@@ -1440,22 +1440,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setData
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setData
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: isChecked
     // Source: QAction
@@ -1463,20 +1463,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isChecked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isChecked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: isEnabled
     // Source: QAction
@@ -1484,20 +1484,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: isVisible
     // Source: QAction
@@ -1505,20 +1505,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isVisible
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: showStatusText
     // Source: QAction
@@ -1526,22 +1526,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showStatusText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    showStatusText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: setMenuRole
     // Source: QAction
@@ -1549,22 +1549,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMenuRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMenuRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: menuRole
     // Source: QAction
@@ -1572,20 +1572,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  menuRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    menuRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setIconVisibleInMenu
     // Source: QAction
@@ -1593,22 +1593,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIconVisibleInMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setIconVisibleInMenu
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: isIconVisibleInMenu
     // Source: QAction
@@ -1616,20 +1616,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isIconVisibleInMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isIconVisibleInMenu
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: setShortcutVisibleInContextMenu
     // Source: QAction
@@ -1637,22 +1637,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutVisibleInContextMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutVisibleInContextMenu
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: isShortcutVisibleInContextMenu
     // Source: QAction
@@ -1660,20 +1660,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isShortcutVisibleInContextMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isShortcutVisibleInContextMenu
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: trigger
     // Source: QAction
@@ -1681,18 +1681,18 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  trigger
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    trigger
+    (
+
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: hover
     // Source: QAction
@@ -1700,18 +1700,18 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hover
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    hover
+    (
+
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: setChecked
     // Source: QAction
@@ -1719,22 +1719,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setChecked
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setChecked
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: toggle
     // Source: QAction
@@ -1742,18 +1742,18 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toggle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    toggle
+    (
+
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: setEnabled
     // Source: QAction
@@ -1761,22 +1761,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: setDisabled
     // Source: QAction
@@ -1784,22 +1784,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDisabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDisabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: setVisible
     // Source: QAction
@@ -1807,22 +1807,22 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setVisible
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: changed
     // Source: QAction
@@ -1830,18 +1830,18 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void changed(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void changed(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void changedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void changedEmitter(
+
+    );
+
     // Class: QWidgetAction
     // Function: triggered
     // Source: QAction
@@ -1849,20 +1849,20 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void triggered(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void triggered(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void triggeredEmitter(
-                bool checked=false
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void triggeredEmitter(
+        bool checked=false
+    );
+
     // Class: QWidgetAction
     // Function: hovered
     // Source: QAction
@@ -1870,18 +1870,18 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void hovered(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void hovered(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void hoveredEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void hoveredEmitter(
+
+    );
+
     // Class: QWidgetAction
     // Function: toggled
     // Source: QAction
@@ -1889,232 +1889,232 @@ HighPriority = QWidgetAction::HighPriority,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void toggled(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void toggled(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void toggledEmitter(
-                bool a1
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void toggledEmitter(
+        bool a1
+    );
+
     // Class: QWidgetAction
     // Function: setDefaultWidget
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDefaultWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDefaultWidget
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: defaultWidget
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  defaultWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    defaultWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QWidgetAction
     // Function: requestWidget
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  requestWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    requestWidget
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QWidgetAction
     // Function: releaseWidget
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    releaseWidget
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QWidgetAction::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QWidgetAction* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QWidgetAction::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QWidgetAction* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QWidgetAction* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QWidgetAction* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QWidgetAction* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QWidgetAction*> basecasters_QWidgetAction;
 
-      public:
-        static void registerBasecaster_QWidgetAction(RJSBasecaster_QWidgetAction* bc) {
-          basecasters_QWidgetAction.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QWidgetAction* wrapped;
 
-    Q_DECLARE_METATYPE(QWidgetAction_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QWidgetAction_Wrapper, "org.qcad.QWidgetAction_Wrapper")
 
-  
-  #endif
-  
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QWidgetAction*> basecasters_QWidgetAction;
+
+public:
+    static void registerBasecaster_QWidgetAction(RJSBasecaster_QWidgetAction* bc) {
+        basecasters_QWidgetAction.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QWidgetAction_Wrapper*)
+
+Q_DECLARE_INTERFACE(QWidgetAction_Wrapper, "org.qcad.QWidgetAction_Wrapper")
+
+
+#endif
+

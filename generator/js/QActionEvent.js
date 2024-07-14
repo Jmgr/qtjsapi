@@ -1,132 +1,130 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QActionEvent() {
-        
+// class constructor:
+function QActionEvent() {
 
-        // should be QActionEvent_BaseJs.call(this, engine):
-        //QActionEvent.prototype = new QActionEvent_BaseJs(engine);
 
-        var wrapper;
+    // should be QActionEvent_BaseJs.call(this, engine):
+    //QActionEvent.prototype = new QActionEvent_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QActionEvent.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QActionEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QActionEvent);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QActionEvent);
             //}
-          }
-          else {
+        } else {
             qWarning("QActionEvent.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 2 &&
-          arguments.length <= 3) {
-    
+
+    } else {
+
+        if (arguments.length >= 2 &&
+                arguments.length <= 3) {
+
             self = this;
             wrapper = new QActionEvent_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QActionEvent);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QActionEvent);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QActionEvent);
-  }
 
-  
-  else {
-    
-        print("QActionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QActionEvent);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QActionEvent(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QActionEvent.prototype = new QActionEvent_BaseJs(engine);
-      //QActionEvent.prototype = new QActionEvent_Wrapper(engine);
-      QActionEvent.prototype = new Object();
-
-      QActionEvent.prototype.toString = function() {
-          //return "QActionEvent [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QActionEvent [JS]";
-        };
-      QActionEvent.getObjectType = function() {
-        return RJSType_QActionEvent.getIdStatic();
-      };
-
-      QActionEvent.prototype.getObjectType = function() {
-        return RJSType_QActionEvent.getIdStatic();
-      };
-
-      QActionEvent.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QActionEvent.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QEvent.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: Type
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QActionEvent.prototype = new QActionEvent_BaseJs(engine);
+//QActionEvent.prototype = new QActionEvent_Wrapper(engine);
+QActionEvent.prototype = new Object();
+
+QActionEvent.prototype.toString = function() {
+    //return "QActionEvent [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QActionEvent [JS]";
+};
+QActionEvent.getObjectType = function() {
+    return RJSType_QActionEvent.getIdStatic();
+};
+
+QActionEvent.prototype.getObjectType = function() {
+    return RJSType_QActionEvent.getIdStatic();
+};
+
+QActionEvent.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QActionEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QActionEvent.None = QActionEvent_Wrapper.None;
 QActionEvent.Timer = QActionEvent_Wrapper.Timer;
 QActionEvent.MouseButtonPress = QActionEvent_Wrapper.MouseButtonPress;
@@ -301,54 +299,53 @@ QActionEvent.User = QActionEvent_Wrapper.User;
 QActionEvent.MaxUser = QActionEvent_Wrapper.MaxUser;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QActionEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QActionEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QActionEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QActionEvent.registerEventType = function()
+
+{
+    //print("JS: QActionEvent.registerEventType");
+
+    if (arguments.length >= 0 &&
+            arguments.length <= 1) {
+
+        // calling static wrapper:
+        return QActionEvent_WrapperSingletonInstance.registerEventType(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QActionEvent);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QActionEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QActionEvent.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QActionEvent.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QActionEvent.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QActionEvent.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

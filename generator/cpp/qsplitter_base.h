@@ -1,267 +1,266 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QSPLITTER_H_BASE
-  #define QSPLITTER_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QTextStream>
-  
-    #include <QSplitterHandle>
-  
-    #include <QQmlEngine>
+#ifndef QSPLITTER_H_BASE
+#define QSPLITTER_H_BASE
 
-    
-        #include <QSplitter>
-      
-    // Base class for QSplitter
-      class QSplitter_Base : public QSplitter {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QTextStream>
+
+#include <QSplitterHandle>
+
+#include <QQmlEngine>
+
+
+#include <QSplitter>
+
+// Base class for QSplitter
+class QSplitter_Base : public QSplitter {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QSplitter
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: -1
-QSplitter_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          Qt::Orientation a1, QWidget* parent=nullptr
-      )
-      
-        : QSplitter(
-          a1, parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
-  // Class: QSplitter
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: 2
-QSplitter_Base
-        
-      (
+    // Class: QSplitter
+    // Function:
+    // Parameters: 2
+    // preceding Parameters: -1
+    QSplitter_Base
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr
-      )
-      
+    (
+
+
+        RJSApi& _h
+
+        ,
+        Qt::Orientation a1, QWidget* parent=nullptr
+    )
+
         : QSplitter(
-          parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              a1, parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
+    // Class: QSplitter
+    // Function:
+    // Parameters: 1
+    // preceding Parameters: 2
+    QSplitter_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr
+    )
+
+        : QSplitter(
+              parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QSplitter_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void resizeEvent(
-      QResizeEvent* a1
+        QResizeEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void resizeEventPublic(
-      QResizeEvent* a1
+        QResizeEvent* a1
     ) {
-      //qDebug() << "QSplitter_Base::resizeEventPublic()";
-      QSplitter::resizeEvent(
-        a1
-      );
+        //qDebug() << "QSplitter_Base::resizeEventPublic()";
+        QSplitter::resizeEvent(
+            a1
+        );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-    #include <QQmlEngine>
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
 
-    
-        #include <QSplitterHandle>
-      
-    // Base class for QSplitterHandle
-      class QSplitterHandle_Base : public QSplitterHandle {
+public:
+    QJSValue self;
 
-      
-        //Q_OBJECT
-      
+private:
 
-      public:
-    
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#include <QQmlEngine>
+
+
+#include <QSplitterHandle>
+
+// Base class for QSplitterHandle
+class QSplitterHandle_Base : public QSplitterHandle {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QSplitterHandle
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: -1
-QSplitterHandle_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          Qt::Orientation o, QSplitter* parent
-      )
-      
+    // Class: QSplitterHandle
+    // Function:
+    // Parameters: 2
+    // preceding Parameters: -1
+    QSplitterHandle_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        Qt::Orientation o, QSplitter* parent
+    )
+
         : QSplitterHandle(
-          o, parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              o, parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QSplitterHandle_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void paintEvent(
-      QPaintEvent* a1
+        QPaintEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void paintEventPublic(
-      QPaintEvent* a1
+        QPaintEvent* a1
     ) {
-      //qDebug() << "QSplitterHandle_Base::paintEventPublic()";
-      QSplitterHandle::paintEvent(
-        a1
-      );
+        //qDebug() << "QSplitterHandle_Base::paintEventPublic()";
+        QSplitterHandle::paintEvent(
+            a1
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void mouseMoveEvent(
-      QMouseEvent* a1
+        QMouseEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void mouseMoveEventPublic(
-      QMouseEvent* a1
+        QMouseEvent* a1
     ) {
-      //qDebug() << "QSplitterHandle_Base::mouseMoveEventPublic()";
-      QSplitterHandle::mouseMoveEvent(
-        a1
-      );
+        //qDebug() << "QSplitterHandle_Base::mouseMoveEventPublic()";
+        QSplitterHandle::mouseMoveEvent(
+            a1
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void resizeEvent(
-      QResizeEvent* a1
+        QResizeEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void resizeEventPublic(
-      QResizeEvent* a1
+        QResizeEvent* a1
     ) {
-      //qDebug() << "QSplitterHandle_Base::resizeEventPublic()";
-      QSplitterHandle::resizeEvent(
-        a1
-      );
+        //qDebug() << "QSplitterHandle_Base::resizeEventPublic()";
+        QSplitterHandle::resizeEvent(
+            a1
+        );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-  #endif
-  
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

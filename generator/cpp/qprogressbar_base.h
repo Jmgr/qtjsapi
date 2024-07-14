@@ -1,228 +1,227 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QPROGRESSBAR_H_BASE
-  #define QPROGRESSBAR_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QStyleOptionProgressBar>
-  
-    #include <QQmlEngine>
+#ifndef QPROGRESSBAR_H_BASE
+#define QPROGRESSBAR_H_BASE
 
-    
-        #include <QProgressBar>
-      
-    // Base class for QProgressBar
-      class QProgressBar_Base : public QProgressBar {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QStyleOptionProgressBar>
+
+#include <QQmlEngine>
+
+
+#include <QProgressBar>
+
+// Base class for QProgressBar
+class QProgressBar_Base : public QProgressBar {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QProgressBar
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: -1
-QProgressBar_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr
-      )
-      
+    // Class: QProgressBar
+    // Function:
+    // Parameters: 1
+    // preceding Parameters: -1
+    QProgressBar_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr
+    )
+
         : QProgressBar(
-          parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QProgressBar_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void mousePressEvent(
-      QMouseEvent* event
+        QMouseEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void mousePressEventPublic(
-      QMouseEvent* event
+        QMouseEvent* event
     ) {
-      //qDebug() << "QProgressBar_Base::mousePressEventPublic()";
-      QProgressBar::mousePressEvent(
-        event
-      );
+        //qDebug() << "QProgressBar_Base::mousePressEventPublic()";
+        QProgressBar::mousePressEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void mouseReleaseEvent(
-      QMouseEvent* event
+        QMouseEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void mouseReleaseEventPublic(
-      QMouseEvent* event
+        QMouseEvent* event
     ) {
-      //qDebug() << "QProgressBar_Base::mouseReleaseEventPublic()";
-      QProgressBar::mouseReleaseEvent(
-        event
-      );
+        //qDebug() << "QProgressBar_Base::mouseReleaseEventPublic()";
+        QProgressBar::mouseReleaseEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void mouseMoveEvent(
-      QMouseEvent* event
+        QMouseEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void mouseMoveEventPublic(
-      QMouseEvent* event
+        QMouseEvent* event
     ) {
-      //qDebug() << "QProgressBar_Base::mouseMoveEventPublic()";
-      QProgressBar::mouseMoveEvent(
-        event
-      );
+        //qDebug() << "QProgressBar_Base::mouseMoveEventPublic()";
+        QProgressBar::mouseMoveEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void resizeEvent(
-      QResizeEvent* event
+        QResizeEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void resizeEventPublic(
-      QResizeEvent* event
+        QResizeEvent* event
     ) {
-      //qDebug() << "QProgressBar_Base::resizeEventPublic()";
-      QProgressBar::resizeEvent(
-        event
-      );
+        //qDebug() << "QProgressBar_Base::resizeEventPublic()";
+        QProgressBar::resizeEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void actionEvent(
-      QActionEvent* event
+        QActionEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void actionEventPublic(
-      QActionEvent* event
+        QActionEvent* event
     ) {
-      //qDebug() << "QProgressBar_Base::actionEventPublic()";
-      QProgressBar::actionEvent(
-        event
-      );
+        //qDebug() << "QProgressBar_Base::actionEventPublic()";
+        QProgressBar::actionEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     bool event(
-      QEvent* e
+        QEvent* e
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE bool eventPublic(
-      QEvent* e
+        QEvent* e
     ) {
-      //qDebug() << "QProgressBar_Base::eventPublic()";
-      
+        //qDebug() << "QProgressBar_Base::eventPublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QProgressBar::event(
-        e
-      );
+            QProgressBar::event(
+                e
+            );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void paintEvent(
-      QPaintEvent* a1
+        QPaintEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void paintEventPublic(
-      QPaintEvent* a1
+        QPaintEvent* a1
     ) {
-      //qDebug() << "QProgressBar_Base::paintEventPublic()";
-      QProgressBar::paintEvent(
-        a1
-      );
+        //qDebug() << "QProgressBar_Base::paintEventPublic()";
+        QProgressBar::paintEvent(
+            a1
+        );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-  #endif
-  
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

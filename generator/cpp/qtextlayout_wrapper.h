@@ -1,171 +1,171 @@
 
-  // Auto generated
-  
-    #ifndef QTEXTLAYOUT_H_WRAPPER
-    #define QTEXTLAYOUT_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QTEXTLAYOUT_H_WRAPPER
+#define QTEXTLAYOUT_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QFont>
-      
-        #include <QRawFont>
-      
-        #include <QRect>
-      
-        #include <QRegion>
-      
-        #include <QTextFormat>
-      
-        #include <QPalette>
-      
-        #include <QPainter>
-      
-        #include <QPaintDevice>
-      
-        #include <QTextFormat>
-      
-        #include <QTextLine>
-      
-        #include <QTextBlock>
-      
-        #include <QTextOption>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QTextLayout>
-      
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QTextLayout
-    class QTJSAPI_EXPORT QTextLayout_Wrapper : public RJSWrapperObj {
+// include header:
+//#include "header_h.h"
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
+#include "../RJSHelper.h"
 
-    private:
-      // disable copy constructor:
-      QTextLayout_Wrapper(const QTextLayout_Wrapper&);
 
-    public:
-      // initialization of QTextLayout:
-      static void init(RJSApi& handler);
+#include "RJSWrapperObj.h"
 
-      
-        static QTextLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+#include <QFont>
 
-          // hook for modules to cast from other types to base QTextLayout:
-          for (int i=0; i<basecasters_QTextLayout.length(); i++) {
+#include <QRawFont>
+
+#include <QRect>
+
+#include <QRegion>
+
+#include <QTextFormat>
+
+#include <QPalette>
+
+#include <QPainter>
+
+#include <QPaintDevice>
+
+#include <QTextFormat>
+
+#include <QTextLine>
+
+#include <QTextBlock>
+
+#include <QTextOption>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QTextLayout>
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QTextLayout
+class QTJSAPI_EXPORT QTextLayout_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+
+private:
+    // disable copy constructor:
+    QTextLayout_Wrapper(const QTextLayout_Wrapper&);
+
+public:
+    // initialization of QTextLayout:
+    static void init(RJSApi& handler);
+
+
+    static QTextLayout* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QTextLayout:
+        for (int i=0; i<basecasters_QTextLayout.length(); i++) {
             RJSBasecaster_QTextLayout* basecaster = basecasters_QTextLayout[i];
             QTextLayout* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QTextLayout:
-          if (t==RJSType_QTextLayout::getIdStatic()) {
+        // object is a pointer to base class QTextLayout:
+        if (t==RJSType_QTextLayout::getIdStatic()) {
             return (QTextLayout*)vp;
-          }
-
-          qWarning() << "QTextLayout_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QTextLayout* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QTextLayout*: wrapper wraps NULL";
-          }
+        qWarning() << "QTextLayout_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QTextLayout* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QTextLayout*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QTextLayout* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QTextLayout*: wrapper wraps NULL";
         }
-      
+
+        QTextLayout* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QTextLayout*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QTextLayout_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QTextLayout_Wrapper(RJSApi& h, QTextLayout* o, bool wrappedCreated);
-          
-        // special constructor to wrap existing object from shared pointer:
-        
-            //Q_INVOKABLE 
-            QTextLayout_Wrapper(RJSApi& h, QSharedPointer<QTextLayout> o);
-          
 
-      // destructor:
-      
-          virtual ~QTextLayout_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QTextLayout_Wrapper(RJSApi& h, QTextLayout* o, bool wrappedCreated);
+
+    // special constructor to wrap existing object from shared pointer:
+
+    //Q_INVOKABLE
+    QTextLayout_Wrapper(RJSApi& h, QSharedPointer<QTextLayout> o);
+
+
+    // destructor:
+
+    virtual ~QTextLayout_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QTextLayout
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QTextLayout_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QTextLayout_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
 #ifndef QT_NO_RAWFONT
 
 #endif
@@ -176,820 +176,820 @@
 
 
     // non-static functions:
-    
+
     // Class: QTextLayout
     // Function: setFont
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFont
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextLayout
     // Function: font
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  font
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    font
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #ifndef QT_NO_RAWFONT
 
 #endif
 
     // Class: QTextLayout
     // Function: setText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextLayout
     // Function: text
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  text
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    text
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: setPreeditArea
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPreeditArea
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPreeditArea
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextLayout
     // Function: preeditAreaPosition
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  preeditAreaPosition
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    preeditAreaPosition
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: preeditAreaText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  preeditAreaText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    preeditAreaText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: clearFormats
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearFormats
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearFormats
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextLayout
     // Function: setCacheEnabled
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCacheEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCacheEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextLayout
     // Function: cacheEnabled
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cacheEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cacheEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: setCursorMoveStyle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCursorMoveStyle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCursorMoveStyle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextLayout
     // Function: cursorMoveStyle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cursorMoveStyle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cursorMoveStyle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: beginLayout
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  beginLayout
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    beginLayout
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextLayout
     // Function: endLayout
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  endLayout
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    endLayout
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextLayout
     // Function: clearLayout
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearLayout
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearLayout
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextLayout
     // Function: lineCount
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lineCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    lineCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: isValidCursorPosition
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isValidCursorPosition
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isValidCursorPosition
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: nextCursorPosition
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nextCursorPosition
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nextCursorPosition
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: previousCursorPosition
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  previousCursorPosition
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    previousCursorPosition
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: leftCursorPosition
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  leftCursorPosition
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    leftCursorPosition
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: rightCursorPosition
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rightCursorPosition
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    rightCursorPosition
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: drawCursor
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  drawCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    drawCursor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: position
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  position
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    position
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: setPosition
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPosition
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPosition
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextLayout
     // Function: boundingRect
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  boundingRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    boundingRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: minimumWidth
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextLayout
     // Function: maximumWidth
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #if !defined(QT_NO_RAWFONT)
 
 #endif
 
     // Class: QTextLayout
     // Function: setFlags
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-              if (!spWrapped.isNull()) {
-                spWrapped = nullptr;
-              }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    setFlags
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QTextLayout::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
+        if (!spWrapped.isNull()) {
+            spWrapped = nullptr;
         }
 
-        // get wrapped object:
-        QTextLayout* getWrapped() {
-          if (wrapped!=nullptr) {
+    }
+
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QTextLayout::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QTextLayout* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-            else if (!spWrapped.isNull()) {
-              return spWrapped.data();
-            }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QTextLayout* getWrapped() const {
-          if (wrapped!=nullptr) {
+        else if (!spWrapped.isNull()) {
+            return spWrapped.data();
+        }
+
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QTextLayout* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-            else if (!spWrapped.isNull()) {
-              return spWrapped.data();
-            }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        else if (!spWrapped.isNull()) {
+            return spWrapped.data();
+        }
+
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-            else if (!spWrapped.isNull()) {
-              return spWrapped.data();
-            }
-          
-          return nullptr;
         }
 
-        
-        // get wrapped object as QSharedPointer:
-        virtual QSharedPointer<QTextLayout> getWrappedSp() {
-          if (!spWrapped.isNull()) {
+        else if (!spWrapped.isNull()) {
+            return spWrapped.data();
+        }
+
+        return nullptr;
+    }
+
+
+    // get wrapped object as QSharedPointer:
+    virtual QSharedPointer<QTextLayout> getWrappedSp() {
+        if (!spWrapped.isNull()) {
             return spWrapped;
-          }
-          if (wrapped!=nullptr) {
+        }
+        if (wrapped!=nullptr) {
             qWarning() << "wrapper does not wrap a QSharedPointer<QTextLayout> but a regular pointer";
             return QSharedPointer<QTextLayout>();
-          }
-          return QSharedPointer<QTextLayout>();
         }
+        return QSharedPointer<QTextLayout>();
+    }
 
-        bool hasWrappedSp() const {
-          return !spWrapped.isNull() && spWrapped.data()!=nullptr;
-        }
-        
+    bool hasWrappedSp() const {
+        return !spWrapped.isNull() && spWrapped.data()!=nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-            || (!spWrapped.isNull() && spWrapped.data()!=nullptr)
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
+    bool hasWrapped() const {
+        return wrapped!=nullptr
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+               || (!spWrapped.isNull() && spWrapped.data()!=nullptr)
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-            if (!spWrapped.isNull() && spWrapped.data()!=nullptr) {
-              return (unsigned long long int)spWrapped.data();
-            }
-          
-          return (unsigned long long int)0;
         }
 
-        
-
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
-
-        
-
-        private:
-        // wrapped object:
-        QTextLayout* wrapped;
-
-        
-          // wrapped object as shared pointer:
-          QSharedPointer<QTextLayout> spWrapped;
-        
-
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QTextLayout*> basecasters_QTextLayout;
-
-      public:
-        static void registerBasecaster_QTextLayout(RJSBasecaster_QTextLayout* bc) {
-          basecasters_QTextLayout.append(bc);
+        if (!spWrapped.isNull() && spWrapped.data()!=nullptr) {
+            return (unsigned long long int)spWrapped.data();
         }
-      
-    };
 
-    Q_DECLARE_METATYPE(QTextLayout_Wrapper*)
+        return (unsigned long long int)0;
+    }
 
-    Q_DECLARE_INTERFACE(QTextLayout_Wrapper, "org.qcad.QTextLayout_Wrapper")
 
-  
-  #endif
-  
+
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
+
+
+
+private:
+    // wrapped object:
+    QTextLayout* wrapped;
+
+
+    // wrapped object as shared pointer:
+    QSharedPointer<QTextLayout> spWrapped;
+
+
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QTextLayout*> basecasters_QTextLayout;
+
+public:
+    static void registerBasecaster_QTextLayout(RJSBasecaster_QTextLayout* bc) {
+        basecasters_QTextLayout.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QTextLayout_Wrapper*)
+
+Q_DECLARE_INTERFACE(QTextLayout_Wrapper, "org.qcad.QTextLayout_Wrapper")
+
+
+#endif
+

@@ -1,138 +1,136 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QFrame() {
-        
+// class constructor:
+function QFrame() {
 
-        // should be QFrame_BaseJs.call(this, engine):
-        //QFrame.prototype = new QFrame_BaseJs(engine);
 
-        var wrapper;
+    // should be QFrame_BaseJs.call(this, engine):
+    //QFrame.prototype = new QFrame_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QFrame.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QFrame.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFrame);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QFrame);
             //}
-          }
-          else {
+        } else {
             qWarning("QFrame.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 2) {
-    
+
+    } else {
+
+        if (arguments.length >= 0 &&
+                arguments.length <= 2) {
+
             self = this;
             wrapper = new QFrame_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QFrame);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QFrame);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QFrame);
-  }
 
-  
-  else {
-    
-        print("QFrame(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QFrame);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QFrame(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
-  
-          }
-        }
-      }
-
-      //QFrame.prototype = new QFrame_BaseJs(engine);
-      //QFrame.prototype = new QFrame_Wrapper(engine);
-      QFrame.prototype = new Object();
-
-      QFrame.prototype.toString = function() {
-          //return "QFrame [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QFrame [JS]";
-        };
-      QFrame.getObjectType = function() {
-        return RJSType_QFrame.getIdStatic();
-      };
-
-      QFrame.prototype.getObjectType = function() {
-        return RJSType_QFrame.getIdStatic();
-      };
-
-      QFrame.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QFrame.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QObject.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QWidget.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: Shape
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+            this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+
+        }
+    }
+}
+
+//QFrame.prototype = new QFrame_BaseJs(engine);
+//QFrame.prototype = new QFrame_Wrapper(engine);
+QFrame.prototype = new Object();
+
+QFrame.prototype.toString = function() {
+    //return "QFrame [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QFrame [JS]";
+};
+QFrame.getObjectType = function() {
+    return RJSType_QFrame.getIdStatic();
+};
+
+QFrame.prototype.getObjectType = function() {
+    return RJSType_QFrame.getIdStatic();
+};
+
+QFrame.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QFrame.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QObject.getIdStatic()) {
+        return true;
+    }
+
+    if (t===RJSType_QWidget.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Shape
 QFrame.NoFrame = QFrame_Wrapper.NoFrame;
 QFrame.Box = QFrame_Wrapper.Box;
 QFrame.Panel = QFrame_Wrapper.Panel;
@@ -141,148 +139,147 @@ QFrame.HLine = QFrame_Wrapper.HLine;
 QFrame.VLine = QFrame_Wrapper.VLine;
 QFrame.StyledPanel = QFrame_Wrapper.StyledPanel;
 
-  // enum: Shadow
+// enum: Shadow
 QFrame.Plain = QFrame_Wrapper.Plain;
 QFrame.Raised = QFrame_Wrapper.Raised;
 QFrame.Sunken = QFrame_Wrapper.Sunken;
 
-  // enum: StyleMask
+// enum: StyleMask
 QFrame.Shadow_Mask = QFrame_Wrapper.Shadow_Mask;
 QFrame.Shape_Mask = QFrame_Wrapper.Shape_Mask;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QFrame.tr = function() 
-          
-        {
-          //print("JS: QFrame.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QFrame_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
+// static functions:
+
+
+// static function
+QFrame.tr = function()
+
+{
+    //print("JS: QFrame.tr");
+
+    if (arguments.length >= 1 &&
+            arguments.length <= 3) {
+
+        // calling static wrapper:
+        return QFrame_WrapperSingletonInstance.tr(
+                   arguments[0], arguments[1], arguments[2]
+               );
+
 
         //copyProperties(this, wrapper, QFrame);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFrame.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QFrame.setTabOrder = function() 
-          
-        {
-          //print("JS: QFrame.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QFrame_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QFrame.setTabOrder = function()
+
+{
+    //print("JS: QFrame.setTabOrder");
+
+    if (arguments.length == 2) {
+
+        // calling static wrapper:
+        return QFrame_WrapperSingletonInstance.setTabOrder(
+                   arguments[0], arguments[1]
+               );
+
 
         //copyProperties(this, wrapper, QFrame);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFrame.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QFrame.mouseGrabber = function() 
-          
-        {
-          //print("JS: QFrame.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFrame_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QFrame.mouseGrabber = function()
+
+{
+    //print("JS: QFrame.mouseGrabber");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QFrame_WrapperSingletonInstance.mouseGrabber(
+
+               );
+
 
         //copyProperties(this, wrapper, QFrame);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFrame.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QFrame.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QFrame.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFrame_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QFrame.keyboardGrabber = function()
+
+{
+    //print("JS: QFrame.keyboardGrabber");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QFrame_WrapperSingletonInstance.keyboardGrabber(
+
+               );
+
 
         //copyProperties(this, wrapper, QFrame);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFrame.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QFrame.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QFrame.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QFrame.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QFrame.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

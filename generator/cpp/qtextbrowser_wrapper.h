@@ -1,49 +1,49 @@
 
-  // Auto generated
-  
-    #ifndef QTEXTBROWSER_H_WRAPPER
-    #define QTEXTBROWSER_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QTEXTBROWSER_H_WRAPPER
+#define QTEXTBROWSER_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QTextBrowser>
-      
-      // wrapped object is QTextBrowser_Base class if new object is created: 
-      #include "qtextbrowser_base.h"
-    
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QTextBrowser_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QTextBrowser_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QTextBrowser>
+
+// wrapped object is QTextBrowser_Base class if new object is created:
+#include "qtextbrowser_base.h"
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QTextBrowser_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QTextBrowser_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QTextBrowser
     // Function: tr
     // Source: QObject
@@ -51,30 +51,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    tr
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setTabOrder
     // Source: QWidget
@@ -82,26 +82,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabOrder
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabOrder
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: mouseGrabber
     // Source: QWidget
@@ -109,18 +109,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseGrabber
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    mouseGrabber
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: keyboardGrabber
     // Source: QWidget
@@ -128,703 +128,703 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QTextBrowser_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QTextBrowser
-    class QTJSAPI_EXPORT QTextBrowser_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
-    QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     modal READ isModal
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowModality READ windowModality WRITE setWindowModality
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     enabled READ isEnabled WRITE setEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     geometry READ geometry WRITE setGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameGeometry READ frameGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     normalGeometry READ normalGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     x READ x
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     y READ y
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     pos READ pos WRITE move
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameSize READ frameSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     size READ size WRITE resize
-  )
+public:
+    Q_INVOKABLE
 
-  Q_PROPERTY(
-    
-    QJSValue
-     width READ width
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     height READ height
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     rect READ rect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     childrenRect READ childrenRect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     childrenRegion READ childrenRegion
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizePolicy READ sizePolicy WRITE setSizePolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumSize READ minimumSize WRITE setMinimumSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumSize READ maximumSize WRITE setMaximumSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumWidth READ minimumWidth WRITE setMinimumWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumHeight READ minimumHeight WRITE setMinimumHeight
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumWidth READ maximumWidth WRITE setMaximumWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumHeight READ maximumHeight WRITE setMaximumHeight
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizeIncrement READ sizeIncrement WRITE setSizeIncrement
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     baseSize READ baseSize WRITE setBaseSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     palette READ palette WRITE setPalette
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     font READ font WRITE setFont
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     cursor READ cursor WRITE setCursor
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     mouseTracking READ hasMouseTracking WRITE setMouseTracking
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     tabletTracking READ hasTabletTracking WRITE setTabletTracking
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     isActiveWindow READ isActiveWindow
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     focusPolicy READ focusPolicy WRITE setFocusPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     focus READ hasFocus
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     contextMenuPolicy READ contextMenuPolicy WRITE setContextMenuPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     updatesEnabled READ updatesEnabled WRITE setUpdatesEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     visible READ isVisible WRITE setVisible
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimized READ isMinimized
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximized READ isMaximized
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     fullScreen READ isFullScreen
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizeHint READ sizeHint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumSizeHint READ minimumSizeHint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     acceptDrops READ acceptDrops WRITE setAcceptDrops
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowTitle READ windowTitle WRITE setWindowTitle
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowIcon READ windowIcon WRITE setWindowIcon
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowIconText READ windowIconText WRITE setWindowIconText
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowOpacity READ windowOpacity WRITE setWindowOpacity
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowModified READ isWindowModified WRITE setWindowModified
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTip READ toolTip WRITE setToolTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTipDuration READ toolTipDuration WRITE setToolTipDuration
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     statusTip READ statusTip WRITE setStatusTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     whatsThis READ whatsThis WRITE setWhatsThis
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     accessibleName READ accessibleName WRITE setAccessibleName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     accessibleDescription READ accessibleDescription WRITE setAccessibleDescription
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     layoutDirection READ layoutDirection WRITE setLayoutDirection
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoFillBackground READ autoFillBackground WRITE setAutoFillBackground
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     styleSheet READ styleSheet WRITE setStyleSheet
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     locale READ locale WRITE setLocale
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowFilePath READ windowFilePath WRITE setWindowFilePath
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     inputMethodHints READ inputMethodHints WRITE setInputMethodHints
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameRect READ frameRect WRITE setFrameRect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameShadow READ frameShadow WRITE setFrameShadow
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameShape READ frameShape WRITE setFrameShape
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameWidth READ frameWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     lineWidth READ lineWidth WRITE setLineWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     midLineWidth READ midLineWidth WRITE setMidLineWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoFormatting READ autoFormatting WRITE setAutoFormatting
-  )
-
-  Q_PROPERTY(
-    
     QJSValue
-     tabChangesFocus READ tabChangesFocus WRITE setTabChangesFocus
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     documentTitle READ documentTitle WRITE setDocumentTitle
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     undoRedoEnabled READ isUndoRedoEnabled WRITE setUndoRedoEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     lineWrapMode READ lineWrapMode WRITE setLineWrapMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     lineWrapColumnOrWidth READ lineWrapColumnOrWidth WRITE setLineWrapColumnOrWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     readOnly READ isReadOnly WRITE setReadOnly
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     html READ toHtml WRITE setHtml
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     plainText READ toPlainText WRITE setPlainText
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     overwriteMode READ overwriteMode WRITE setOverwriteMode
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     tabStopDistance READ tabStopDistance WRITE setTabStopDistance
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     acceptRichText READ acceptRichText WRITE setAcceptRichText
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     cursorWidth READ cursorWidth WRITE setCursorWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     textInteractionFlags READ textInteractionFlags WRITE setTextInteractionFlags
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     document READ document WRITE setDocument
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     placeholderText READ placeholderText WRITE setPlaceholderText
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sourceType READ sourceType
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     searchPaths READ searchPaths WRITE setSearchPaths
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     openExternalLinks READ openExternalLinks WRITE setOpenExternalLinks
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     openLinks READ openLinks WRITE setOpenLinks
-  )
+    keyboardGrabber
+    (
+
+
+    )
+
+    ;
+
+
+private:
+    RJSApi& handler;
+    //static QTextBrowser_WrapperSingleton* _singleInstance;
+
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QTextBrowser
+class QTJSAPI_EXPORT QTextBrowser_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        modal READ isModal
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowModality READ windowModality WRITE setWindowModality
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        enabled READ isEnabled WRITE setEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        geometry READ geometry WRITE setGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameGeometry READ frameGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        normalGeometry READ normalGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        x READ x
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        y READ y
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        pos READ pos WRITE move
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameSize READ frameSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        size READ size WRITE resize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        width READ width
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        height READ height
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        rect READ rect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        childrenRect READ childrenRect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        childrenRegion READ childrenRegion
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizePolicy READ sizePolicy WRITE setSizePolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumSize READ minimumSize WRITE setMinimumSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumSize READ maximumSize WRITE setMaximumSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumWidth READ minimumWidth WRITE setMinimumWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumHeight READ minimumHeight WRITE setMinimumHeight
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumWidth READ maximumWidth WRITE setMaximumWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumHeight READ maximumHeight WRITE setMaximumHeight
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizeIncrement READ sizeIncrement WRITE setSizeIncrement
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        baseSize READ baseSize WRITE setBaseSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        palette READ palette WRITE setPalette
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        font READ font WRITE setFont
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        cursor READ cursor WRITE setCursor
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        mouseTracking READ hasMouseTracking WRITE setMouseTracking
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        tabletTracking READ hasTabletTracking WRITE setTabletTracking
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        isActiveWindow READ isActiveWindow
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        focusPolicy READ focusPolicy WRITE setFocusPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        focus READ hasFocus
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        contextMenuPolicy READ contextMenuPolicy WRITE setContextMenuPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        updatesEnabled READ updatesEnabled WRITE setUpdatesEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        visible READ isVisible WRITE setVisible
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimized READ isMinimized
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximized READ isMaximized
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        fullScreen READ isFullScreen
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizeHint READ sizeHint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumSizeHint READ minimumSizeHint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        acceptDrops READ acceptDrops WRITE setAcceptDrops
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowTitle READ windowTitle WRITE setWindowTitle
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowIcon READ windowIcon WRITE setWindowIcon
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowIconText READ windowIconText WRITE setWindowIconText
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowOpacity READ windowOpacity WRITE setWindowOpacity
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowModified READ isWindowModified WRITE setWindowModified
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTip READ toolTip WRITE setToolTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTipDuration READ toolTipDuration WRITE setToolTipDuration
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        statusTip READ statusTip WRITE setStatusTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        whatsThis READ whatsThis WRITE setWhatsThis
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        accessibleName READ accessibleName WRITE setAccessibleName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        accessibleDescription READ accessibleDescription WRITE setAccessibleDescription
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        layoutDirection READ layoutDirection WRITE setLayoutDirection
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoFillBackground READ autoFillBackground WRITE setAutoFillBackground
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        styleSheet READ styleSheet WRITE setStyleSheet
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        locale READ locale WRITE setLocale
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowFilePath READ windowFilePath WRITE setWindowFilePath
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        inputMethodHints READ inputMethodHints WRITE setInputMethodHints
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameRect READ frameRect WRITE setFrameRect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameShadow READ frameShadow WRITE setFrameShadow
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameShape READ frameShape WRITE setFrameShape
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameWidth READ frameWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        lineWidth READ lineWidth WRITE setLineWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        midLineWidth READ midLineWidth WRITE setMidLineWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoFormatting READ autoFormatting WRITE setAutoFormatting
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        tabChangesFocus READ tabChangesFocus WRITE setTabChangesFocus
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        documentTitle READ documentTitle WRITE setDocumentTitle
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        undoRedoEnabled READ isUndoRedoEnabled WRITE setUndoRedoEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        lineWrapMode READ lineWrapMode WRITE setLineWrapMode
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        lineWrapColumnOrWidth READ lineWrapColumnOrWidth WRITE setLineWrapColumnOrWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        readOnly READ isReadOnly WRITE setReadOnly
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        html READ toHtml WRITE setHtml
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        plainText READ toPlainText WRITE setPlainText
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        overwriteMode READ overwriteMode WRITE setOverwriteMode
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        tabStopDistance READ tabStopDistance WRITE setTabStopDistance
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        acceptRichText READ acceptRichText WRITE setAcceptRichText
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        cursorWidth READ cursorWidth WRITE setCursorWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        textInteractionFlags READ textInteractionFlags WRITE setTextInteractionFlags
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        document READ document WRITE setDocument
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        placeholderText READ placeholderText WRITE setPlaceholderText
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sourceType READ sourceType
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        searchPaths READ searchPaths WRITE setSearchPaths
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        openExternalLinks READ openExternalLinks WRITE setOpenExternalLinks
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        openLinks READ openLinks WRITE setOpenLinks
+    )
+
+
+private:
+    // disable copy constructor:
+    QTextBrowser_Wrapper(const QTextBrowser_Wrapper&);
+
+public:
+    // initialization of QTextBrowser:
+    static void init(RJSApi& handler);
 
 
-    private:
-      // disable copy constructor:
-      QTextBrowser_Wrapper(const QTextBrowser_Wrapper&);
+    static QTextBrowser* castToBase(void* vp, /*RJSType ID*/ int t) {
 
-    public:
-      // initialization of QTextBrowser:
-      static void init(RJSApi& handler);
+        // check if pointer points to derrived type:
 
-      
-        static QTextBrowser* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
 
-          // hook for modules to cast from other types to base QTextBrowser:
-          for (int i=0; i<basecasters_QTextBrowser.length(); i++) {
+        // hook for modules to cast from other types to base QTextBrowser:
+        for (int i=0; i<basecasters_QTextBrowser.length(); i++) {
             RJSBasecaster_QTextBrowser* basecaster = basecasters_QTextBrowser[i];
             QTextBrowser* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QTextBrowser:
-          if (t==RJSType_QTextBrowser::getIdStatic()) {
+        // object is a pointer to base class QTextBrowser:
+        if (t==RJSType_QTextBrowser::getIdStatic()) {
             return (QTextBrowser*)vp;
-          }
-
-          qWarning() << "QTextBrowser_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QTextBrowser* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QTextBrowser*: wrapper wraps NULL";
-          }
+        qWarning() << "QTextBrowser_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QTextBrowser* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QTextBrowser*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QTextBrowser* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QTextBrowser*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum Shape {
-    NoFrame = QTextBrowser::NoFrame,
-Box = QTextBrowser::Box,
-Panel = QTextBrowser::Panel,
-WinPanel = QTextBrowser::WinPanel,
-HLine = QTextBrowser::HLine,
-VLine = QTextBrowser::VLine,
-StyledPanel = QTextBrowser::StyledPanel,
 
-  };
-  Q_ENUM(Shape)
+        QTextBrowser* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QTextBrowser*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
 
-  enum Shadow {
-    Plain = QTextBrowser::Plain,
-Raised = QTextBrowser::Raised,
-Sunken = QTextBrowser::Sunken,
+    // enums:
 
-  };
-  Q_ENUM(Shadow)
+    enum Shape {
+        NoFrame = QTextBrowser::NoFrame,
+        Box = QTextBrowser::Box,
+        Panel = QTextBrowser::Panel,
+        WinPanel = QTextBrowser::WinPanel,
+        HLine = QTextBrowser::HLine,
+        VLine = QTextBrowser::VLine,
+        StyledPanel = QTextBrowser::StyledPanel,
 
-  enum StyleMask {
-    Shadow_Mask = QTextBrowser::Shadow_Mask,
-Shape_Mask = QTextBrowser::Shape_Mask,
+    };
+    Q_ENUM(Shape)
 
-  };
-  Q_ENUM(StyleMask)
+    enum Shadow {
+        Plain = QTextBrowser::Plain,
+        Raised = QTextBrowser::Raised,
+        Sunken = QTextBrowser::Sunken,
 
-  enum LineWrapMode {
-    NoWrap = QTextBrowser::NoWrap,
-WidgetWidth = QTextBrowser::WidgetWidth,
-FixedPixelWidth = QTextBrowser::FixedPixelWidth,
-FixedColumnWidth = QTextBrowser::FixedColumnWidth,
+    };
+    Q_ENUM(Shadow)
 
-  };
-  Q_ENUM(LineWrapMode)
+    enum StyleMask {
+        Shadow_Mask = QTextBrowser::Shadow_Mask,
+        Shape_Mask = QTextBrowser::Shape_Mask,
 
-  enum AutoFormattingFlag {
-    AutoNone = QTextBrowser::AutoNone,
-AutoBulletList = QTextBrowser::AutoBulletList,
-AutoAll = QTextBrowser::AutoAll,
+    };
+    Q_ENUM(StyleMask)
 
-  };
-  Q_ENUM(AutoFormattingFlag)
+    enum LineWrapMode {
+        NoWrap = QTextBrowser::NoWrap,
+        WidgetWidth = QTextBrowser::WidgetWidth,
+        FixedPixelWidth = QTextBrowser::FixedPixelWidth,
+        FixedColumnWidth = QTextBrowser::FixedColumnWidth,
+
+    };
+    Q_ENUM(LineWrapMode)
+
+    enum AutoFormattingFlag {
+        AutoNone = QTextBrowser::AutoNone,
+        AutoBulletList = QTextBrowser::AutoBulletList,
+        AutoAll = QTextBrowser::AutoAll,
+
+    };
+    Q_ENUM(AutoFormattingFlag)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QTextBrowser_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QTextBrowser_Wrapper(RJSApi& h, QTextBrowser* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QTextBrowser_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QTextBrowser_Wrapper(RJSApi& h, QTextBrowser* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QTextBrowser_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QTextBrowser
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QTextBrowser_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QTextBrowser_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QTextBrowser
     // Function: objectName
     // Source: QObject
@@ -832,20 +832,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setObjectName
     // Source: QObject
@@ -853,22 +853,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: isWidgetType
     // Source: QObject
@@ -876,20 +876,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isWindowType
     // Source: QObject
@@ -897,20 +897,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: signalsBlocked
     // Source: QObject
@@ -918,20 +918,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: blockSignals
     // Source: QObject
@@ -939,22 +939,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: findChild
     // Source: QObject
@@ -962,28 +962,28 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: children
     // Source: QObject
@@ -991,20 +991,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: installEventFilter
     // Source: QObject
@@ -1012,22 +1012,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: removeEventFilter
     // Source: QObject
@@ -1035,22 +1035,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: dumpObjectTree
     // Source: QObject
@@ -1058,18 +1058,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: dumpObjectInfo
     // Source: QObject
@@ -1077,18 +1077,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setProperty
     // Source: QObject
@@ -1096,26 +1096,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: property
     // Source: QObject
@@ -1123,24 +1123,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -1148,20 +1148,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: parent
     // Source: QObject
@@ -1169,20 +1169,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: deleteLater
     // Source: QObject
@@ -1190,18 +1190,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: devType
     // Source: QWidget
@@ -1209,20 +1209,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    devType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: createWinId
     // Source: QWidget
@@ -1230,18 +1230,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  createWinId
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    createWinId
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: isWindow
     // Source: QWidget
@@ -1249,20 +1249,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isModal
     // Source: QWidget
@@ -1270,20 +1270,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isModal
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isModal
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: windowModality
     // Source: QWidget
@@ -1291,20 +1291,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowModality
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowModality
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWindowModality
     // Source: QWidget
@@ -1312,22 +1312,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowModality
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowModality
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: isEnabled
     // Source: QWidget
@@ -1335,20 +1335,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isEnabledTo
     // Source: QWidget
@@ -1356,24 +1356,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEnabledTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEnabledTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setEnabled
     // Source: QWidget
@@ -1381,22 +1381,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setDisabled
     // Source: QWidget
@@ -1404,22 +1404,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDisabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDisabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWindowModified
     // Source: QWidget
@@ -1427,22 +1427,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowModified
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: frameGeometry
     // Source: QWidget
@@ -1450,20 +1450,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: geometry
     // Source: QWidget
@@ -1471,20 +1471,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  geometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    geometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: normalGeometry
     // Source: QWidget
@@ -1492,20 +1492,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  normalGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    normalGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: x
     // Source: QWidget
@@ -1513,20 +1513,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  x
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    x
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: y
     // Source: QWidget
@@ -1534,20 +1534,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  y
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    y
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: pos
     // Source: QWidget
@@ -1555,20 +1555,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pos
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pos
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: frameSize
     // Source: QWidget
@@ -1576,20 +1576,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: size
     // Source: QWidget
@@ -1597,20 +1597,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    size
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: width
     // Source: QWidget
@@ -1618,20 +1618,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  width
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    width
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: height
     // Source: QWidget
@@ -1639,20 +1639,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  height
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    height
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: rect
     // Source: QWidget
@@ -1660,20 +1660,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    rect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: childrenRect
     // Source: QWidget
@@ -1681,20 +1681,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childrenRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childrenRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: childrenRegion
     // Source: QWidget
@@ -1702,20 +1702,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childrenRegion
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childrenRegion
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: minimumSize
     // Source: QWidget
@@ -1723,20 +1723,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: maximumSize
     // Source: QWidget
@@ -1744,20 +1744,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: minimumWidth
     // Source: QWidget
@@ -1765,20 +1765,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: minimumHeight
     // Source: QWidget
@@ -1786,20 +1786,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumHeight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: maximumWidth
     // Source: QWidget
@@ -1807,20 +1807,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: maximumHeight
     // Source: QWidget
@@ -1828,20 +1828,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumHeight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setMinimumSize
     // Source: QWidget
@@ -1849,26 +1849,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setMaximumSize
     // Source: QWidget
@@ -1876,26 +1876,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setMinimumWidth
     // Source: QWidget
@@ -1903,22 +1903,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setMinimumHeight
     // Source: QWidget
@@ -1926,22 +1926,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setMaximumWidth
     // Source: QWidget
@@ -1949,22 +1949,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setMaximumHeight
     // Source: QWidget
@@ -1972,22 +1972,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: sizeIncrement
     // Source: QWidget
@@ -1995,20 +1995,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeIncrement
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizeIncrement
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setSizeIncrement
     // Source: QWidget
@@ -2016,26 +2016,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizeIncrement
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSizeIncrement
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: baseSize
     // Source: QWidget
@@ -2043,20 +2043,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  baseSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    baseSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setBaseSize
     // Source: QWidget
@@ -2064,26 +2064,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBaseSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBaseSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFixedSize
     // Source: QWidget
@@ -2091,26 +2091,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFixedWidth
     // Source: QWidget
@@ -2118,22 +2118,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFixedHeight
     // Source: QWidget
@@ -2141,22 +2141,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: mapToGlobal
     // Source: QWidget
@@ -2164,24 +2164,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapToGlobal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapToGlobal
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: mapFromGlobal
     // Source: QWidget
@@ -2189,24 +2189,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFromGlobal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFromGlobal
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: mapToParent
     // Source: QWidget
@@ -2214,24 +2214,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapToParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapToParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: mapFromParent
     // Source: QWidget
@@ -2239,24 +2239,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFromParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFromParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: mapTo
     // Source: QWidget
@@ -2264,28 +2264,28 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: mapFrom
     // Source: QWidget
@@ -2293,28 +2293,28 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFrom
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFrom
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: window
     // Source: QWidget
@@ -2322,20 +2322,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  window
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    window
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: nativeParentWidget
     // Source: QWidget
@@ -2343,20 +2343,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nativeParentWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nativeParentWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: topLevelWidget
     // Source: QWidget
@@ -2364,20 +2364,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  topLevelWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    topLevelWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: palette
     // Source: QWidget
@@ -2385,20 +2385,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  palette
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    palette
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setPalette
     // Source: QWidget
@@ -2406,22 +2406,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPalette
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPalette
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setBackgroundRole
     // Source: QWidget
@@ -2429,22 +2429,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBackgroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBackgroundRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: backgroundRole
     // Source: QWidget
@@ -2452,20 +2452,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  backgroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    backgroundRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setForegroundRole
     // Source: QWidget
@@ -2473,22 +2473,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setForegroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setForegroundRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: foregroundRole
     // Source: QWidget
@@ -2496,20 +2496,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  foregroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    foregroundRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: font
     // Source: QWidget
@@ -2517,20 +2517,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  font
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    font
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFont
     // Source: QWidget
@@ -2538,22 +2538,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFont
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: fontInfo
     // Source: QWidget
@@ -2561,20 +2561,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fontInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fontInfo
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: cursor
     // Source: QWidget
@@ -2582,20 +2582,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cursor
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setCursor
     // Source: QWidget
@@ -2603,22 +2603,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCursor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: unsetCursor
     // Source: QWidget
@@ -2626,18 +2626,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetCursor
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setMouseTracking
     // Source: QWidget
@@ -2645,22 +2645,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMouseTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMouseTracking
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: hasMouseTracking
     // Source: QWidget
@@ -2668,20 +2668,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasMouseTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasMouseTracking
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: underMouse
     // Source: QWidget
@@ -2689,20 +2689,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  underMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    underMouse
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setTabletTracking
     // Source: QWidget
@@ -2710,22 +2710,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabletTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabletTracking
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: hasTabletTracking
     // Source: QWidget
@@ -2733,20 +2733,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasTabletTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasTabletTracking
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setMask
     // Source: QWidget
@@ -2754,22 +2754,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMask
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: mask
     // Source: QWidget
@@ -2777,20 +2777,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mask
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: clearMask
     // Source: QWidget
@@ -2798,18 +2798,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearMask
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: grab
     // Source: QWidget
@@ -2817,22 +2817,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grab
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grab
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: grabGesture
     // Source: QWidget
@@ -2840,26 +2840,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabGesture
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabGesture
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: ungrabGesture
     // Source: QWidget
@@ -2867,22 +2867,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ungrabGesture
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    ungrabGesture
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWindowTitle
     // Source: QWidget
@@ -2890,22 +2890,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowTitle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setStyleSheet
     // Source: QWidget
@@ -2913,22 +2913,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStyleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStyleSheet
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: styleSheet
     // Source: QWidget
@@ -2936,20 +2936,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  styleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    styleSheet
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: windowTitle
     // Source: QWidget
@@ -2957,20 +2957,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowTitle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWindowIcon
     // Source: QWidget
@@ -2978,22 +2978,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowIcon
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: windowIcon
     // Source: QWidget
@@ -3001,20 +3001,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowIcon
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWindowIconText
     // Source: QWidget
@@ -3022,22 +3022,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowIconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowIconText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: windowIconText
     // Source: QWidget
@@ -3045,20 +3045,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowIconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowIconText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWindowRole
     // Source: QWidget
@@ -3066,22 +3066,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: windowRole
     // Source: QWidget
@@ -3089,20 +3089,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWindowFilePath
     // Source: QWidget
@@ -3110,22 +3110,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFilePath
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFilePath
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: windowFilePath
     // Source: QWidget
@@ -3133,20 +3133,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowFilePath
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowFilePath
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWindowOpacity
     // Source: QWidget
@@ -3154,22 +3154,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowOpacity
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowOpacity
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: windowOpacity
     // Source: QWidget
@@ -3177,20 +3177,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowOpacity
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowOpacity
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isWindowModified
     // Source: QWidget
@@ -3198,20 +3198,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowModified
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setToolTip
     // Source: QWidget
@@ -3219,22 +3219,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: toolTip
     // Source: QWidget
@@ -3242,20 +3242,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setToolTipDuration
     // Source: QWidget
@@ -3263,22 +3263,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTipDuration
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTipDuration
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: toolTipDuration
     // Source: QWidget
@@ -3286,20 +3286,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTipDuration
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTipDuration
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setStatusTip
     // Source: QWidget
@@ -3307,22 +3307,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStatusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStatusTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: statusTip
     // Source: QWidget
@@ -3330,20 +3330,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  statusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    statusTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWhatsThis
     // Source: QWidget
@@ -3351,22 +3351,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWhatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWhatsThis
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: whatsThis
     // Source: QWidget
@@ -3374,20 +3374,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  whatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    whatsThis
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: accessibleName
     // Source: QWidget
@@ -3395,20 +3395,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  accessibleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    accessibleName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setAccessibleName
     // Source: QWidget
@@ -3416,22 +3416,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAccessibleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAccessibleName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: accessibleDescription
     // Source: QWidget
@@ -3439,20 +3439,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  accessibleDescription
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    accessibleDescription
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setAccessibleDescription
     // Source: QWidget
@@ -3460,22 +3460,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAccessibleDescription
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAccessibleDescription
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setLayoutDirection
     // Source: QWidget
@@ -3483,22 +3483,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLayoutDirection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: layoutDirection
     // Source: QWidget
@@ -3506,20 +3506,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    layoutDirection
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: unsetLayoutDirection
     // Source: QWidget
@@ -3527,18 +3527,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetLayoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetLayoutDirection
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setLocale
     // Source: QWidget
@@ -3546,22 +3546,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLocale
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLocale
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: locale
     // Source: QWidget
@@ -3569,20 +3569,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  locale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    locale
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: unsetLocale
     // Source: QWidget
@@ -3590,18 +3590,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetLocale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetLocale
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: isRightToLeft
     // Source: QWidget
@@ -3609,20 +3609,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isRightToLeft
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isRightToLeft
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isLeftToRight
     // Source: QWidget
@@ -3630,20 +3630,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isLeftToRight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isLeftToRight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isActiveWindow
     // Source: QWidget
@@ -3651,20 +3651,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isActiveWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isActiveWindow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: activateWindow
     // Source: QWidget
@@ -3672,18 +3672,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  activateWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    activateWindow
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: clearFocus
     // Source: QWidget
@@ -3691,18 +3691,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearFocus
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFocus
     // Source: QWidget
@@ -3710,22 +3710,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocus
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: focusPolicy
     // Source: QWidget
@@ -3733,20 +3733,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFocusPolicy
     // Source: QWidget
@@ -3754,22 +3754,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocusPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocusPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: hasFocus
     // Source: QWidget
@@ -3777,20 +3777,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasFocus
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFocusProxy
     // Source: QWidget
@@ -3798,22 +3798,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocusProxy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocusProxy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: focusProxy
     // Source: QWidget
@@ -3821,20 +3821,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusProxy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusProxy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: contextMenuPolicy
     // Source: QWidget
@@ -3842,20 +3842,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contextMenuPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contextMenuPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setContextMenuPolicy
     // Source: QWidget
@@ -3863,22 +3863,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setContextMenuPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setContextMenuPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: grabMouse
     // Source: QWidget
@@ -3886,22 +3886,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabMouse
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: releaseMouse
     // Source: QWidget
@@ -3909,18 +3909,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    releaseMouse
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: grabKeyboard
     // Source: QWidget
@@ -3928,18 +3928,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabKeyboard
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    grabKeyboard
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: releaseKeyboard
     // Source: QWidget
@@ -3947,18 +3947,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseKeyboard
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    releaseKeyboard
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: grabShortcut
     // Source: QWidget
@@ -3966,26 +3966,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: releaseShortcut
     // Source: QWidget
@@ -3993,22 +3993,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    releaseShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setShortcutEnabled
     // Source: QWidget
@@ -4016,26 +4016,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setShortcutAutoRepeat
     // Source: QWidget
@@ -4043,26 +4043,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutAutoRepeat
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutAutoRepeat
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: updatesEnabled
     // Source: QWidget
@@ -4070,20 +4070,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  updatesEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    updatesEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setUpdatesEnabled
     // Source: QWidget
@@ -4091,22 +4091,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setUpdatesEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setUpdatesEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: update
     // Source: QWidget
@@ -4114,34 +4114,34 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  update
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    update
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: repaint
     // Source: QWidget
@@ -4149,34 +4149,34 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  repaint
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    repaint
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setVisible
     // Source: QWidget
@@ -4184,22 +4184,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setVisible
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setHidden
     // Source: QWidget
@@ -4207,22 +4207,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHidden
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: show
     // Source: QWidget
@@ -4230,18 +4230,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  show
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    show
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: hide
     // Source: QWidget
@@ -4249,18 +4249,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hide
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    hide
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: showMinimized
     // Source: QWidget
@@ -4268,18 +4268,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showMinimized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showMinimized
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: showMaximized
     // Source: QWidget
@@ -4287,18 +4287,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showMaximized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showMaximized
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: showFullScreen
     // Source: QWidget
@@ -4306,18 +4306,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showFullScreen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showFullScreen
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: showNormal
     // Source: QWidget
@@ -4325,18 +4325,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showNormal
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showNormal
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: close
     // Source: QWidget
@@ -4344,18 +4344,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  close
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    close
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: raise
     // Source: QWidget
@@ -4363,18 +4363,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  raise
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    raise
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: lower
     // Source: QWidget
@@ -4382,18 +4382,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lower
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    lower
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: stackUnder
     // Source: QWidget
@@ -4401,22 +4401,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  stackUnder
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    stackUnder
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: move
     // Source: QWidget
@@ -4424,26 +4424,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  move
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    move
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: resize
     // Source: QWidget
@@ -4451,26 +4451,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    resize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setGeometry
     // Source: QWidget
@@ -4478,34 +4478,34 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setGeometry
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: saveGeometry
     // Source: QWidget
@@ -4513,20 +4513,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  saveGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    saveGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: restoreGeometry
     // Source: QWidget
@@ -4534,22 +4534,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  restoreGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    restoreGeometry
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: adjustSize
     // Source: QWidget
@@ -4557,18 +4557,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  adjustSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    adjustSize
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: isVisible
     // Source: QWidget
@@ -4576,20 +4576,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isVisible
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isVisibleTo
     // Source: QWidget
@@ -4597,24 +4597,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isVisibleTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isVisibleTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isHidden
     // Source: QWidget
@@ -4622,20 +4622,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isHidden
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isMinimized
     // Source: QWidget
@@ -4643,20 +4643,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isMinimized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isMinimized
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isMaximized
     // Source: QWidget
@@ -4664,20 +4664,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isMaximized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isMaximized
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isFullScreen
     // Source: QWidget
@@ -4685,20 +4685,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isFullScreen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isFullScreen
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: windowState
     // Source: QWidget
@@ -4706,20 +4706,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowState
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWindowState
     // Source: QWidget
@@ -4727,22 +4727,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: overrideWindowState
     // Source: QWidget
@@ -4750,22 +4750,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overrideWindowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    overrideWindowState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: minimumSizeHint
     // Source: QWidget
@@ -4773,20 +4773,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSizeHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumSizeHint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: sizePolicy
     // Source: QWidget
@@ -4794,20 +4794,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizePolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizePolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setSizePolicy
     // Source: QWidget
@@ -4815,26 +4815,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizePolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSizePolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: heightForWidth
     // Source: QWidget
@@ -4842,24 +4842,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  heightForWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    heightForWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: hasHeightForWidth
     // Source: QWidget
@@ -4867,20 +4867,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasHeightForWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasHeightForWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: visibleRegion
     // Source: QWidget
@@ -4888,20 +4888,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  visibleRegion
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    visibleRegion
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setContentsMargins
     // Source: QWidget
@@ -4909,34 +4909,34 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setContentsMargins
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setContentsMargins
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: contentsMargins
     // Source: QWidget
@@ -4944,20 +4944,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contentsMargins
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contentsMargins
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: contentsRect
     // Source: QWidget
@@ -4965,20 +4965,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contentsRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contentsRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: layout
     // Source: QWidget
@@ -4986,20 +4986,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layout
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    layout
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setLayout
     // Source: QWidget
@@ -5007,22 +5007,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayout
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLayout
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: updateGeometry
     // Source: QWidget
@@ -5030,18 +5030,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  updateGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    updateGeometry
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setParent
     // Source: QWidget
@@ -5049,26 +5049,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: scroll
     // Source: QWidget
@@ -5076,30 +5076,30 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scroll
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    scroll
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: focusWidget
     // Source: QWidget
@@ -5107,20 +5107,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: nextInFocusChain
     // Source: QWidget
@@ -5128,20 +5128,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nextInFocusChain
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nextInFocusChain
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: previousInFocusChain
     // Source: QWidget
@@ -5149,20 +5149,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  previousInFocusChain
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    previousInFocusChain
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: acceptDrops
     // Source: QWidget
@@ -5170,20 +5170,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  acceptDrops
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    acceptDrops
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setAcceptDrops
     // Source: QWidget
@@ -5191,22 +5191,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAcceptDrops
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAcceptDrops
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: addAction
     // Source: QWidget
@@ -5214,22 +5214,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: addActions
     // Source: QWidget
@@ -5237,22 +5237,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addActions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addActions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: insertActions
     // Source: QWidget
@@ -5260,26 +5260,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertActions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertActions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: insertAction
     // Source: QWidget
@@ -5287,26 +5287,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: removeAction
     // Source: QWidget
@@ -5314,22 +5314,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: actions
     // Source: QWidget
@@ -5337,20 +5337,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  actions
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    actions
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: parentWidget
     // Source: QWidget
@@ -5358,20 +5358,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parentWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parentWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWindowFlags
     // Source: QWidget
@@ -5379,22 +5379,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: windowFlags
     // Source: QWidget
@@ -5402,20 +5402,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowFlags
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWindowFlag
     // Source: QWidget
@@ -5423,26 +5423,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFlag
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFlag
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: overrideWindowFlags
     // Source: QWidget
@@ -5450,22 +5450,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overrideWindowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    overrideWindowFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: windowType
     // Source: QWidget
@@ -5473,20 +5473,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: childAt
     // Source: QWidget
@@ -5494,28 +5494,28 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setAttribute
     // Source: QWidget
@@ -5523,26 +5523,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: testAttribute
     // Source: QWidget
@@ -5550,24 +5550,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  testAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    testAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: ensurePolished
     // Source: QWidget
@@ -5575,20 +5575,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ensurePolished
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    ensurePolished
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isAncestorOf
     // Source: QWidget
@@ -5596,24 +5596,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isAncestorOf
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isAncestorOf
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: autoFillBackground
     // Source: QWidget
@@ -5621,20 +5621,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoFillBackground
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoFillBackground
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setAutoFillBackground
     // Source: QWidget
@@ -5642,22 +5642,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoFillBackground
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoFillBackground
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: customContextMenuRequested
     // Source: QWidget
@@ -5665,20 +5665,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void customContextMenuRequested(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void customContextMenuRequested(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void customContextMenuRequestedEmitter(
-                const QPoint& pos
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void customContextMenuRequestedEmitter(
+        const QPoint& pos
+    );
+
     // Class: QTextBrowser
     // Function: inputMethodHints
     // Source: QWidget
@@ -5686,20 +5686,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  inputMethodHints
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    inputMethodHints
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setInputMethodHints
     // Source: QWidget
@@ -5707,22 +5707,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setInputMethodHints
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setInputMethodHints
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: frameStyle
     // Source: QFrame
@@ -5730,20 +5730,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameStyle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameStyle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFrameStyle
     // Source: QFrame
@@ -5751,22 +5751,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFrameStyle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFrameStyle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: frameWidth
     // Source: QFrame
@@ -5774,20 +5774,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: sizeHint
     // Source: QFrame
@@ -5795,20 +5795,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizeHint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: frameShape
     // Source: QFrame
@@ -5816,20 +5816,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameShape
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameShape
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFrameShape
     // Source: QFrame
@@ -5837,22 +5837,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFrameShape
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFrameShape
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: frameShadow
     // Source: QFrame
@@ -5860,20 +5860,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameShadow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameShadow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFrameShadow
     // Source: QFrame
@@ -5881,22 +5881,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFrameShadow
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFrameShadow
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: lineWidth
     // Source: QFrame
@@ -5904,20 +5904,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lineWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    lineWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setLineWidth
     // Source: QFrame
@@ -5925,22 +5925,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLineWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLineWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: midLineWidth
     // Source: QFrame
@@ -5948,20 +5948,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  midLineWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    midLineWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setMidLineWidth
     // Source: QFrame
@@ -5969,22 +5969,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMidLineWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMidLineWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: frameRect
     // Source: QFrame
@@ -5992,20 +5992,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFrameRect
     // Source: QFrame
@@ -6013,22 +6013,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFrameRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFrameRect
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setDocument
     // Source: QTextEdit
@@ -6036,22 +6036,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDocument
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDocument
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: document
     // Source: QTextEdit
@@ -6059,20 +6059,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  document
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    document
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setPlaceholderText
     // Source: QTextEdit
@@ -6080,22 +6080,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPlaceholderText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPlaceholderText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: placeholderText
     // Source: QTextEdit
@@ -6103,20 +6103,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  placeholderText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    placeholderText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setTextCursor
     // Source: QTextEdit
@@ -6124,22 +6124,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTextCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTextCursor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: textCursor
     // Source: QTextEdit
@@ -6147,20 +6147,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  textCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    textCursor
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isReadOnly
     // Source: QTextEdit
@@ -6168,20 +6168,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isReadOnly
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isReadOnly
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setReadOnly
     // Source: QTextEdit
@@ -6189,22 +6189,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setReadOnly
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setReadOnly
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setTextInteractionFlags
     // Source: QTextEdit
@@ -6212,22 +6212,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTextInteractionFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTextInteractionFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: textInteractionFlags
     // Source: QTextEdit
@@ -6235,20 +6235,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  textInteractionFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    textInteractionFlags
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: fontPointSize
     // Source: QTextEdit
@@ -6256,20 +6256,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fontPointSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fontPointSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: fontFamily
     // Source: QTextEdit
@@ -6277,20 +6277,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fontFamily
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fontFamily
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: fontWeight
     // Source: QTextEdit
@@ -6298,20 +6298,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fontWeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fontWeight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: fontUnderline
     // Source: QTextEdit
@@ -6319,20 +6319,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fontUnderline
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fontUnderline
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: fontItalic
     // Source: QTextEdit
@@ -6340,20 +6340,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fontItalic
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fontItalic
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: textColor
     // Source: QTextEdit
@@ -6361,20 +6361,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  textColor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    textColor
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: textBackgroundColor
     // Source: QTextEdit
@@ -6382,20 +6382,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  textBackgroundColor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    textBackgroundColor
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: currentFont
     // Source: QTextEdit
@@ -6403,20 +6403,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    currentFont
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: alignment
     // Source: QTextEdit
@@ -6424,20 +6424,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  alignment
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    alignment
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: mergeCurrentCharFormat
     // Source: QTextEdit
@@ -6445,22 +6445,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mergeCurrentCharFormat
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    mergeCurrentCharFormat
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setCurrentCharFormat
     // Source: QTextEdit
@@ -6468,22 +6468,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentCharFormat
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCurrentCharFormat
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: currentCharFormat
     // Source: QTextEdit
@@ -6491,20 +6491,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentCharFormat
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    currentCharFormat
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: autoFormatting
     // Source: QTextEdit
@@ -6512,20 +6512,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoFormatting
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoFormatting
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setAutoFormatting
     // Source: QTextEdit
@@ -6533,22 +6533,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoFormatting
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoFormatting
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: tabChangesFocus
     // Source: QTextEdit
@@ -6556,20 +6556,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tabChangesFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    tabChangesFocus
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setTabChangesFocus
     // Source: QTextEdit
@@ -6577,22 +6577,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabChangesFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabChangesFocus
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setDocumentTitle
     // Source: QTextEdit
@@ -6600,22 +6600,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDocumentTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDocumentTitle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: documentTitle
     // Source: QTextEdit
@@ -6623,20 +6623,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  documentTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    documentTitle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isUndoRedoEnabled
     // Source: QTextEdit
@@ -6644,20 +6644,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isUndoRedoEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isUndoRedoEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setUndoRedoEnabled
     // Source: QTextEdit
@@ -6665,22 +6665,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setUndoRedoEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setUndoRedoEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: lineWrapMode
     // Source: QTextEdit
@@ -6688,20 +6688,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lineWrapMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    lineWrapMode
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setLineWrapMode
     // Source: QTextEdit
@@ -6709,22 +6709,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLineWrapMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLineWrapMode
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: lineWrapColumnOrWidth
     // Source: QTextEdit
@@ -6732,20 +6732,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lineWrapColumnOrWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    lineWrapColumnOrWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setLineWrapColumnOrWidth
     // Source: QTextEdit
@@ -6753,22 +6753,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLineWrapColumnOrWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLineWrapColumnOrWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: wordWrapMode
     // Source: QTextEdit
@@ -6776,20 +6776,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  wordWrapMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    wordWrapMode
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setWordWrapMode
     // Source: QTextEdit
@@ -6797,22 +6797,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWordWrapMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWordWrapMode
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: toPlainText
     // Source: QTextEdit
@@ -6820,20 +6820,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toPlainText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toPlainText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: toHtml
     // Source: QTextEdit
@@ -6841,20 +6841,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toHtml
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toHtml
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: ensureCursorVisible
     // Source: QTextEdit
@@ -6862,18 +6862,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ensureCursorVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    ensureCursorVisible
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: createStandardContextMenu
     // Source: QTextEdit
@@ -6881,22 +6881,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  createStandardContextMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    createStandardContextMenu
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: cursorRect
     // Source: QTextEdit
@@ -6904,24 +6904,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cursorRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cursorRect
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: anchorAt
     // Source: QTextEdit
@@ -6929,24 +6929,24 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  anchorAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    anchorAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: overwriteMode
     // Source: QTextEdit
@@ -6954,20 +6954,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overwriteMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    overwriteMode
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setOverwriteMode
     // Source: QTextEdit
@@ -6975,22 +6975,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOverwriteMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setOverwriteMode
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: tabStopDistance
     // Source: QTextEdit
@@ -6998,20 +6998,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tabStopDistance
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    tabStopDistance
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setTabStopDistance
     // Source: QTextEdit
@@ -7019,22 +7019,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabStopDistance
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabStopDistance
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: cursorWidth
     // Source: QTextEdit
@@ -7042,20 +7042,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cursorWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cursorWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setCursorWidth
     // Source: QTextEdit
@@ -7063,22 +7063,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCursorWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCursorWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: acceptRichText
     // Source: QTextEdit
@@ -7086,20 +7086,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  acceptRichText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    acceptRichText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setAcceptRichText
     // Source: QTextEdit
@@ -7107,22 +7107,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAcceptRichText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAcceptRichText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: moveCursor
     // Source: QTextEdit
@@ -7130,26 +7130,26 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  moveCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    moveCursor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: canPaste
     // Source: QTextEdit
@@ -7157,20 +7157,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  canPaste
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    canPaste
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: inputMethodQuery
     // Source: QTextEdit
@@ -7178,28 +7178,28 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  inputMethodQuery
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    inputMethodQuery
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFontPointSize
     // Source: QTextEdit
@@ -7207,22 +7207,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFontPointSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFontPointSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFontFamily
     // Source: QTextEdit
@@ -7230,22 +7230,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFontFamily
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFontFamily
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFontWeight
     // Source: QTextEdit
@@ -7253,22 +7253,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFontWeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFontWeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFontUnderline
     // Source: QTextEdit
@@ -7276,22 +7276,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFontUnderline
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFontUnderline
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setFontItalic
     // Source: QTextEdit
@@ -7299,22 +7299,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFontItalic
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFontItalic
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setTextColor
     // Source: QTextEdit
@@ -7322,22 +7322,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTextColor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTextColor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setTextBackgroundColor
     // Source: QTextEdit
@@ -7345,22 +7345,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTextBackgroundColor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTextBackgroundColor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setCurrentFont
     // Source: QTextEdit
@@ -7368,22 +7368,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCurrentFont
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setAlignment
     // Source: QTextEdit
@@ -7391,22 +7391,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAlignment
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAlignment
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setPlainText
     // Source: QTextEdit
@@ -7414,22 +7414,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPlainText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPlainText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setHtml
     // Source: QTextEdit
@@ -7437,22 +7437,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHtml
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHtml
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setMarkdown
     // Source: QTextEdit
@@ -7460,22 +7460,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMarkdown
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMarkdown
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setText
     // Source: QTextEdit
@@ -7483,22 +7483,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: cut
     // Source: QTextEdit
@@ -7506,18 +7506,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cut
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    cut
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: copy
     // Source: QTextEdit
@@ -7525,18 +7525,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  copy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    copy
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: paste
     // Source: QTextEdit
@@ -7544,18 +7544,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paste
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    paste
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: undo
     // Source: QTextEdit
@@ -7563,18 +7563,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  undo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    undo
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: redo
     // Source: QTextEdit
@@ -7582,18 +7582,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  redo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    redo
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: clear
     // Source: QTextEdit
@@ -7601,18 +7601,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clear
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clear
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: selectAll
     // Source: QTextEdit
@@ -7620,18 +7620,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  selectAll
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    selectAll
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: insertPlainText
     // Source: QTextEdit
@@ -7639,22 +7639,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertPlainText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertPlainText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: insertHtml
     // Source: QTextEdit
@@ -7662,22 +7662,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertHtml
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertHtml
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: append
     // Source: QTextEdit
@@ -7685,22 +7685,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  append
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    append
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: scrollToAnchor
     // Source: QTextEdit
@@ -7708,22 +7708,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scrollToAnchor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    scrollToAnchor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: zoomIn
     // Source: QTextEdit
@@ -7731,22 +7731,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  zoomIn
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    zoomIn
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: zoomOut
     // Source: QTextEdit
@@ -7754,22 +7754,22 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  zoomOut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    zoomOut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: textChanged
     // Source: QTextEdit
@@ -7777,18 +7777,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void textChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void textChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void textChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void textChangedEmitter(
+
+    );
+
     // Class: QTextBrowser
     // Function: undoAvailable
     // Source: QTextEdit
@@ -7796,20 +7796,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void undoAvailable(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void undoAvailable(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void undoAvailableEmitter(
-                bool b
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void undoAvailableEmitter(
+        bool b
+    );
+
     // Class: QTextBrowser
     // Function: redoAvailable
     // Source: QTextEdit
@@ -7817,20 +7817,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void redoAvailable(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void redoAvailable(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void redoAvailableEmitter(
-                bool b
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void redoAvailableEmitter(
+        bool b
+    );
+
     // Class: QTextBrowser
     // Function: currentCharFormatChanged
     // Source: QTextEdit
@@ -7838,20 +7838,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void currentCharFormatChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void currentCharFormatChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void currentCharFormatChangedEmitter(
-                const QTextCharFormat& format
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void currentCharFormatChangedEmitter(
+        const QTextCharFormat& format
+    );
+
     // Class: QTextBrowser
     // Function: copyAvailable
     // Source: QTextEdit
@@ -7859,20 +7859,20 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void copyAvailable(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void copyAvailable(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void copyAvailableEmitter(
-                bool b
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void copyAvailableEmitter(
+        bool b
+    );
+
     // Class: QTextBrowser
     // Function: selectionChanged
     // Source: QTextEdit
@@ -7880,18 +7880,18 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void selectionChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void selectionChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void selectionChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void selectionChangedEmitter(
+
+    );
+
     // Class: QTextBrowser
     // Function: cursorPositionChanged
     // Source: QTextEdit
@@ -7899,791 +7899,791 @@ AutoAll = QTextBrowser::AutoAll,
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void cursorPositionChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void cursorPositionChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void cursorPositionChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void cursorPositionChangedEmitter(
+
+    );
+
     // Class: QTextBrowser
     // Function: source
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  source
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    source
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: sourceType
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sourceType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sourceType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: searchPaths
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  searchPaths
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    searchPaths
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setSearchPaths
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSearchPaths
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSearchPaths
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: loadResource
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  loadResource
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    loadResource
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: isBackwardAvailable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isBackwardAvailable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isBackwardAvailable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: isForwardAvailable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isForwardAvailable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isForwardAvailable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: clearHistory
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearHistory
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearHistory
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: historyTitle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  historyTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    historyTitle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: historyUrl
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  historyUrl
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    historyUrl
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: backwardHistoryCount
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  backwardHistoryCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    backwardHistoryCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: forwardHistoryCount
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  forwardHistoryCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    forwardHistoryCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: openExternalLinks
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  openExternalLinks
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    openExternalLinks
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setOpenExternalLinks
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOpenExternalLinks
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setOpenExternalLinks
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: openLinks
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  openLinks
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    openLinks
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextBrowser
     // Function: setOpenLinks
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOpenLinks
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setOpenLinks
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: setSource
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSource
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSource
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: backward
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  backward
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    backward
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: forward
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  forward
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    forward
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: home
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  home
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    home
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: reload
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  reload
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    reload
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: backwardAvailable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void backwardAvailable(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void backwardAvailable(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void backwardAvailableEmitter(
-                bool a1
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void backwardAvailableEmitter(
+        bool a1
+    );
+
     // Class: QTextBrowser
     // Function: forwardAvailable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void forwardAvailable(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void forwardAvailable(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void forwardAvailableEmitter(
-                bool a1
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void forwardAvailableEmitter(
+        bool a1
+    );
+
     // Class: QTextBrowser
     // Function: historyChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void historyChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void historyChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void historyChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void historyChangedEmitter(
+
+    );
+
     // Class: QTextBrowser
     // Function: sourceChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sourceChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sourceChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sourceChangedEmitter(
-                const QUrl& a1
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sourceChangedEmitter(
+        const QUrl& a1
+    );
+
     // Class: QTextBrowser
     // Function: highlighted
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void highlighted(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void highlighted(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void highlightedEmitter(
-                const QUrl& a1
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void highlightedEmitter(
+        const QUrl& a1
+    );
+
     // Class: QTextBrowser
     // Function: anchorClicked
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void anchorClicked(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void anchorClicked(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void anchorClickedEmitter(
-                const QUrl& a1
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void anchorClickedEmitter(
+        const QUrl& a1
+    );
+
     // Class: QTextBrowser
     // Function: mouseMoveEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    mouseMoveEventSuper
+
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextBrowser
     // Function: paintEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
+    QJSValue
 
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    paintEventSuper
 
-  // member functions for static properties, forward to static function
-  
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QTextBrowser::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QTextBrowser* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QTextBrowser::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QTextBrowser* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QTextBrowser* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QTextBrowser* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          QTextBrowser_Base* getWrappedBase() {
-            QTextBrowser* w = getWrapped();
-            return dynamic_cast<QTextBrowser_Base*>(w);
-          }
+        return nullptr;
+    }
 
-          QTextBrowser_Base* getWrappedBase() const {
-            QTextBrowser* w = getWrapped();
-            return dynamic_cast<QTextBrowser_Base*>(w);
-          }
-        
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
+    // get wrapped base object or nullptr:
+    QTextBrowser_Base* getWrappedBase() {
+        QTextBrowser* w = getWrapped();
+        return dynamic_cast<QTextBrowser_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
+    QTextBrowser_Base* getWrappedBase() const {
+        QTextBrowser* w = getWrapped();
+        return dynamic_cast<QTextBrowser_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
-          //void setRecFlag(bool on) const {
-          //  QTextBrowser_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
-        private:
-        // wrapped object:
-        QTextBrowser* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QTextBrowser*> basecasters_QTextBrowser;
+    //void setRecFlag(bool on) const {
+    //  QTextBrowser_Base* wb = getWrappedBase();
+    //  if (wb) {
+    //    wb->setRecFlag(on);
+    //  }
+    //}
 
-      public:
-        static void registerBasecaster_QTextBrowser(RJSBasecaster_QTextBrowser* bc) {
-          basecasters_QTextBrowser.append(bc);
-        }
-      
-    };
 
-    Q_DECLARE_METATYPE(QTextBrowser_Wrapper*)
+private:
+    // wrapped object:
+    QTextBrowser* wrapped;
 
-    Q_DECLARE_INTERFACE(QTextBrowser_Wrapper, "org.qcad.QTextBrowser_Wrapper")
 
-  
-  #endif
-  
+
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QTextBrowser*> basecasters_QTextBrowser;
+
+public:
+    static void registerBasecaster_QTextBrowser(RJSBasecaster_QTextBrowser* bc) {
+        basecasters_QTextBrowser.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QTextBrowser_Wrapper*)
+
+Q_DECLARE_INTERFACE(QTextBrowser_Wrapper, "org.qcad.QTextBrowser_Wrapper")
+
+
+#endif
+

@@ -1,96 +1,96 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QLINEEDIT_H_BASE
-  #define QLINEEDIT_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QValidator>
-  
-    #include <QMenu>
-  
-    #include <QCompleter>
-  
-    #include <QStyleOptionFrame>
-  
-    #include <QAbstractSpinBox>
-  
-    #include <QDateTimeEdit>
-  
-    #include <QIcon>
-  
-    #include <QToolButton>
-  
-    #include <QQmlEngine>
+#ifndef QLINEEDIT_H_BASE
+#define QLINEEDIT_H_BASE
 
-    
-        #include <QLineEdit>
-      
-    // Base class for QLineEdit
-      class QLineEdit_Base : public QLineEdit {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QValidator>
+
+#include <QMenu>
+
+#include <QCompleter>
+
+#include <QStyleOptionFrame>
+
+#include <QAbstractSpinBox>
+
+#include <QDateTimeEdit>
+
+#include <QIcon>
+
+#include <QToolButton>
+
+#include <QQmlEngine>
+
+
+#include <QLineEdit>
+
+// Base class for QLineEdit
+class QLineEdit_Base : public QLineEdit {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QLineEdit
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: -1
-QLineEdit_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          const QString& a1, QWidget* parent=nullptr
-      )
-      
-        : QLineEdit(
-          a1, parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
-  // Class: QLineEdit
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: 2
-QLineEdit_Base
-        
-      (
+    // Class: QLineEdit
+    // Function:
+    // Parameters: 2
+    // preceding Parameters: -1
+    QLineEdit_Base
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr
-      )
-      
+    (
+
+
+        RJSApi& _h
+
+        ,
+        const QString& a1, QWidget* parent=nullptr
+    )
+
         : QLineEdit(
-          parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              a1, parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
+    // Class: QLineEdit
+    // Function:
+    // Parameters: 1
+    // preceding Parameters: 2
+    QLineEdit_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr
+    )
+
+        : QLineEdit(
+              parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
 #ifndef QT_NO_VALIDATOR
 
 #endif
@@ -134,74 +134,73 @@ QLineEdit_Base
     // destructor:
     virtual ~QLineEdit_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void mouseMoveEvent(
-      QMouseEvent* a1
+        QMouseEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void mouseMoveEventPublic(
-      QMouseEvent* a1
+        QMouseEvent* a1
     ) {
-      //qDebug() << "QLineEdit_Base::mouseMoveEventPublic()";
-      QLineEdit::mouseMoveEvent(
-        a1
-      );
+        //qDebug() << "QLineEdit_Base::mouseMoveEventPublic()";
+        QLineEdit::mouseMoveEvent(
+            a1
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void paintEvent(
-      QPaintEvent* a1
+        QPaintEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void paintEventPublic(
-      QPaintEvent* a1
+        QPaintEvent* a1
     ) {
-      //qDebug() << "QLineEdit_Base::paintEventPublic()";
-      QLineEdit::paintEvent(
-        a1
-      );
+        //qDebug() << "QLineEdit_Base::paintEventPublic()";
+        QLineEdit::paintEvent(
+            a1
+        );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-  #endif
-  
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

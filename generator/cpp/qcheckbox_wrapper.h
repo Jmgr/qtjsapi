@@ -1,51 +1,51 @@
 
-  // Auto generated
-  
-    #ifndef QCHECKBOX_H_WRAPPER
-    #define QCHECKBOX_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QCHECKBOX_H_WRAPPER
+#define QCHECKBOX_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QStyleOptionButton>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QCheckBox>
-      
-      // wrapped object is QCheckBox_Base class if new object is created: 
-      #include "qcheckbox_base.h"
-    
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QCheckBox_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QCheckBox_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QStyleOptionButton>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QCheckBox>
+
+// wrapped object is QCheckBox_Base class if new object is created:
+#include "qcheckbox_base.h"
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QCheckBox_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QCheckBox_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QCheckBox
     // Function: tr
     // Source: QObject
@@ -53,30 +53,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    tr
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setTabOrder
     // Source: QWidget
@@ -84,26 +84,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabOrder
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabOrder
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: mouseGrabber
     // Source: QWidget
@@ -111,18 +111,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseGrabber
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    mouseGrabber
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: keyboardGrabber
     // Source: QWidget
@@ -130,577 +130,577 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardGrabber
-              (
-
-                
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QCheckBox_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QCheckBox
-    class QTJSAPI_EXPORT QCheckBox_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
-    QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     modal READ isModal
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowModality READ windowModality WRITE setWindowModality
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     enabled READ isEnabled WRITE setEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     geometry READ geometry WRITE setGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameGeometry READ frameGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     normalGeometry READ normalGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     x READ x
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     y READ y
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     pos READ pos WRITE move
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameSize READ frameSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     size READ size WRITE resize
-  )
+public:
+    Q_INVOKABLE
 
-  Q_PROPERTY(
-    
-    QJSValue
-     width READ width
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     height READ height
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     rect READ rect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     childrenRect READ childrenRect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     childrenRegion READ childrenRegion
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizePolicy READ sizePolicy WRITE setSizePolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumSize READ minimumSize WRITE setMinimumSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumSize READ maximumSize WRITE setMaximumSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumWidth READ minimumWidth WRITE setMinimumWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumHeight READ minimumHeight WRITE setMinimumHeight
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumWidth READ maximumWidth WRITE setMaximumWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumHeight READ maximumHeight WRITE setMaximumHeight
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizeIncrement READ sizeIncrement WRITE setSizeIncrement
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     baseSize READ baseSize WRITE setBaseSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     palette READ palette WRITE setPalette
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     font READ font WRITE setFont
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     cursor READ cursor WRITE setCursor
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     mouseTracking READ hasMouseTracking WRITE setMouseTracking
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     tabletTracking READ hasTabletTracking WRITE setTabletTracking
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     isActiveWindow READ isActiveWindow
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     focusPolicy READ focusPolicy WRITE setFocusPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     focus READ hasFocus
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     contextMenuPolicy READ contextMenuPolicy WRITE setContextMenuPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     updatesEnabled READ updatesEnabled WRITE setUpdatesEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     visible READ isVisible WRITE setVisible
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimized READ isMinimized
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximized READ isMaximized
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     fullScreen READ isFullScreen
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizeHint READ sizeHint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumSizeHint READ minimumSizeHint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     acceptDrops READ acceptDrops WRITE setAcceptDrops
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowTitle READ windowTitle WRITE setWindowTitle
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowIcon READ windowIcon WRITE setWindowIcon
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowIconText READ windowIconText WRITE setWindowIconText
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowOpacity READ windowOpacity WRITE setWindowOpacity
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowModified READ isWindowModified WRITE setWindowModified
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTip READ toolTip WRITE setToolTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTipDuration READ toolTipDuration WRITE setToolTipDuration
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     statusTip READ statusTip WRITE setStatusTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     whatsThis READ whatsThis WRITE setWhatsThis
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     accessibleName READ accessibleName WRITE setAccessibleName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     accessibleDescription READ accessibleDescription WRITE setAccessibleDescription
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     layoutDirection READ layoutDirection WRITE setLayoutDirection
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoFillBackground READ autoFillBackground WRITE setAutoFillBackground
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     styleSheet READ styleSheet WRITE setStyleSheet
-  )
-
-  Q_PROPERTY(
-    
     QJSValue
-     locale READ locale WRITE setLocale
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowFilePath READ windowFilePath WRITE setWindowFilePath
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     inputMethodHints READ inputMethodHints WRITE setInputMethodHints
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     icon READ icon WRITE setIcon
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     iconSize READ iconSize WRITE setIconSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     shortcut READ shortcut WRITE setShortcut
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     checkable READ isCheckable WRITE setCheckable
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     checked READ isChecked WRITE setChecked
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoRepeat READ autoRepeat WRITE setAutoRepeat
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoExclusive READ autoExclusive WRITE setAutoExclusive
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoRepeatDelay READ autoRepeatDelay WRITE setAutoRepeatDelay
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoRepeatInterval READ autoRepeatInterval WRITE setAutoRepeatInterval
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     down READ isDown WRITE setDown
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     text READ text WRITE setText
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     tristate READ isTristate WRITE setTristate
-  )
+    keyboardGrabber
+    (
+
+
+    )
+
+    ;
+
+
+private:
+    RJSApi& handler;
+    //static QCheckBox_WrapperSingleton* _singleInstance;
+
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QCheckBox
+class QTJSAPI_EXPORT QCheckBox_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        modal READ isModal
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowModality READ windowModality WRITE setWindowModality
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        enabled READ isEnabled WRITE setEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        geometry READ geometry WRITE setGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameGeometry READ frameGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        normalGeometry READ normalGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        x READ x
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        y READ y
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        pos READ pos WRITE move
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameSize READ frameSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        size READ size WRITE resize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        width READ width
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        height READ height
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        rect READ rect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        childrenRect READ childrenRect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        childrenRegion READ childrenRegion
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizePolicy READ sizePolicy WRITE setSizePolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumSize READ minimumSize WRITE setMinimumSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumSize READ maximumSize WRITE setMaximumSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumWidth READ minimumWidth WRITE setMinimumWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumHeight READ minimumHeight WRITE setMinimumHeight
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumWidth READ maximumWidth WRITE setMaximumWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumHeight READ maximumHeight WRITE setMaximumHeight
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizeIncrement READ sizeIncrement WRITE setSizeIncrement
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        baseSize READ baseSize WRITE setBaseSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        palette READ palette WRITE setPalette
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        font READ font WRITE setFont
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        cursor READ cursor WRITE setCursor
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        mouseTracking READ hasMouseTracking WRITE setMouseTracking
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        tabletTracking READ hasTabletTracking WRITE setTabletTracking
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        isActiveWindow READ isActiveWindow
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        focusPolicy READ focusPolicy WRITE setFocusPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        focus READ hasFocus
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        contextMenuPolicy READ contextMenuPolicy WRITE setContextMenuPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        updatesEnabled READ updatesEnabled WRITE setUpdatesEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        visible READ isVisible WRITE setVisible
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimized READ isMinimized
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximized READ isMaximized
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        fullScreen READ isFullScreen
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizeHint READ sizeHint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumSizeHint READ minimumSizeHint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        acceptDrops READ acceptDrops WRITE setAcceptDrops
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowTitle READ windowTitle WRITE setWindowTitle
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowIcon READ windowIcon WRITE setWindowIcon
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowIconText READ windowIconText WRITE setWindowIconText
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowOpacity READ windowOpacity WRITE setWindowOpacity
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowModified READ isWindowModified WRITE setWindowModified
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTip READ toolTip WRITE setToolTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTipDuration READ toolTipDuration WRITE setToolTipDuration
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        statusTip READ statusTip WRITE setStatusTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        whatsThis READ whatsThis WRITE setWhatsThis
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        accessibleName READ accessibleName WRITE setAccessibleName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        accessibleDescription READ accessibleDescription WRITE setAccessibleDescription
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        layoutDirection READ layoutDirection WRITE setLayoutDirection
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoFillBackground READ autoFillBackground WRITE setAutoFillBackground
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        styleSheet READ styleSheet WRITE setStyleSheet
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        locale READ locale WRITE setLocale
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowFilePath READ windowFilePath WRITE setWindowFilePath
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        inputMethodHints READ inputMethodHints WRITE setInputMethodHints
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        icon READ icon WRITE setIcon
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        iconSize READ iconSize WRITE setIconSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        shortcut READ shortcut WRITE setShortcut
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        checkable READ isCheckable WRITE setCheckable
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        checked READ isChecked WRITE setChecked
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoRepeat READ autoRepeat WRITE setAutoRepeat
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoExclusive READ autoExclusive WRITE setAutoExclusive
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoRepeatDelay READ autoRepeatDelay WRITE setAutoRepeatDelay
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoRepeatInterval READ autoRepeatInterval WRITE setAutoRepeatInterval
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        down READ isDown WRITE setDown
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        text READ text WRITE setText
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        tristate READ isTristate WRITE setTristate
+    )
+
+
+private:
+    // disable copy constructor:
+    QCheckBox_Wrapper(const QCheckBox_Wrapper&);
+
+public:
+    // initialization of QCheckBox:
+    static void init(RJSApi& handler);
 
 
-    private:
-      // disable copy constructor:
-      QCheckBox_Wrapper(const QCheckBox_Wrapper&);
+    static QCheckBox* castToBase(void* vp, /*RJSType ID*/ int t) {
 
-    public:
-      // initialization of QCheckBox:
-      static void init(RJSApi& handler);
+        // check if pointer points to derrived type:
 
-      
-        static QCheckBox* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
 
-          // hook for modules to cast from other types to base QCheckBox:
-          for (int i=0; i<basecasters_QCheckBox.length(); i++) {
+        // hook for modules to cast from other types to base QCheckBox:
+        for (int i=0; i<basecasters_QCheckBox.length(); i++) {
             RJSBasecaster_QCheckBox* basecaster = basecasters_QCheckBox[i];
             QCheckBox* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QCheckBox:
-          if (t==RJSType_QCheckBox::getIdStatic()) {
+        // object is a pointer to base class QCheckBox:
+        if (t==RJSType_QCheckBox::getIdStatic()) {
             return (QCheckBox*)vp;
-          }
-
-          qWarning() << "QCheckBox_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QCheckBox* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QCheckBox*: wrapper wraps NULL";
-          }
+        qWarning() << "QCheckBox_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QCheckBox* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QCheckBox*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QCheckBox* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QCheckBox*: wrapper wraps NULL";
         }
-      
+
+        QCheckBox* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QCheckBox*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QCheckBox_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QCheckBox_Wrapper(RJSApi& h, QCheckBox* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QCheckBox_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QCheckBox_Wrapper(RJSApi& h, QCheckBox* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QCheckBox_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QCheckBox
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QCheckBox_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QCheckBox_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QCheckBox
     // Function: objectName
     // Source: QObject
@@ -708,20 +708,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setObjectName
     // Source: QObject
@@ -729,22 +729,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: isWidgetType
     // Source: QObject
@@ -752,20 +752,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isWindowType
     // Source: QObject
@@ -773,20 +773,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: signalsBlocked
     // Source: QObject
@@ -794,20 +794,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: blockSignals
     // Source: QObject
@@ -815,22 +815,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: findChild
     // Source: QObject
@@ -838,28 +838,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: children
     // Source: QObject
@@ -867,20 +867,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: installEventFilter
     // Source: QObject
@@ -888,22 +888,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: removeEventFilter
     // Source: QObject
@@ -911,22 +911,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: dumpObjectTree
     // Source: QObject
@@ -934,18 +934,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: dumpObjectInfo
     // Source: QObject
@@ -953,18 +953,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setProperty
     // Source: QObject
@@ -972,26 +972,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: property
     // Source: QObject
@@ -999,24 +999,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -1024,20 +1024,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: parent
     // Source: QObject
@@ -1045,20 +1045,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: deleteLater
     // Source: QObject
@@ -1066,18 +1066,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: devType
     // Source: QWidget
@@ -1085,20 +1085,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    devType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: createWinId
     // Source: QWidget
@@ -1106,18 +1106,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  createWinId
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    createWinId
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: isWindow
     // Source: QWidget
@@ -1125,20 +1125,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isModal
     // Source: QWidget
@@ -1146,20 +1146,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isModal
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isModal
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: windowModality
     // Source: QWidget
@@ -1167,20 +1167,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowModality
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowModality
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setWindowModality
     // Source: QWidget
@@ -1188,22 +1188,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowModality
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowModality
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: isEnabled
     // Source: QWidget
@@ -1211,20 +1211,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isEnabledTo
     // Source: QWidget
@@ -1232,24 +1232,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEnabledTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEnabledTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setEnabled
     // Source: QWidget
@@ -1257,22 +1257,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setDisabled
     // Source: QWidget
@@ -1280,22 +1280,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDisabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDisabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setWindowModified
     // Source: QWidget
@@ -1303,22 +1303,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowModified
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: frameGeometry
     // Source: QWidget
@@ -1326,20 +1326,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: geometry
     // Source: QWidget
@@ -1347,20 +1347,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  geometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    geometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: normalGeometry
     // Source: QWidget
@@ -1368,20 +1368,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  normalGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    normalGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: x
     // Source: QWidget
@@ -1389,20 +1389,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  x
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    x
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: y
     // Source: QWidget
@@ -1410,20 +1410,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  y
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    y
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: pos
     // Source: QWidget
@@ -1431,20 +1431,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pos
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pos
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: frameSize
     // Source: QWidget
@@ -1452,20 +1452,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: size
     // Source: QWidget
@@ -1473,20 +1473,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    size
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: width
     // Source: QWidget
@@ -1494,20 +1494,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  width
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    width
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: height
     // Source: QWidget
@@ -1515,20 +1515,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  height
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    height
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: rect
     // Source: QWidget
@@ -1536,20 +1536,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    rect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: childrenRect
     // Source: QWidget
@@ -1557,20 +1557,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childrenRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childrenRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: childrenRegion
     // Source: QWidget
@@ -1578,20 +1578,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childrenRegion
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childrenRegion
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: minimumSize
     // Source: QWidget
@@ -1599,20 +1599,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: maximumSize
     // Source: QWidget
@@ -1620,20 +1620,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: minimumWidth
     // Source: QWidget
@@ -1641,20 +1641,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: minimumHeight
     // Source: QWidget
@@ -1662,20 +1662,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumHeight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: maximumWidth
     // Source: QWidget
@@ -1683,20 +1683,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: maximumHeight
     // Source: QWidget
@@ -1704,20 +1704,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumHeight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setMinimumSize
     // Source: QWidget
@@ -1725,26 +1725,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setMaximumSize
     // Source: QWidget
@@ -1752,26 +1752,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setMinimumWidth
     // Source: QWidget
@@ -1779,22 +1779,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setMinimumHeight
     // Source: QWidget
@@ -1802,22 +1802,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setMaximumWidth
     // Source: QWidget
@@ -1825,22 +1825,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setMaximumHeight
     // Source: QWidget
@@ -1848,22 +1848,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: sizeIncrement
     // Source: QWidget
@@ -1871,20 +1871,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeIncrement
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizeIncrement
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setSizeIncrement
     // Source: QWidget
@@ -1892,26 +1892,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizeIncrement
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSizeIncrement
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: baseSize
     // Source: QWidget
@@ -1919,20 +1919,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  baseSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    baseSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setBaseSize
     // Source: QWidget
@@ -1940,26 +1940,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBaseSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBaseSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setFixedSize
     // Source: QWidget
@@ -1967,26 +1967,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setFixedWidth
     // Source: QWidget
@@ -1994,22 +1994,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setFixedHeight
     // Source: QWidget
@@ -2017,22 +2017,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: mapToGlobal
     // Source: QWidget
@@ -2040,24 +2040,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapToGlobal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapToGlobal
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: mapFromGlobal
     // Source: QWidget
@@ -2065,24 +2065,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFromGlobal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFromGlobal
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: mapToParent
     // Source: QWidget
@@ -2090,24 +2090,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapToParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapToParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: mapFromParent
     // Source: QWidget
@@ -2115,24 +2115,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFromParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFromParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: mapTo
     // Source: QWidget
@@ -2140,28 +2140,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: mapFrom
     // Source: QWidget
@@ -2169,28 +2169,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFrom
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFrom
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: window
     // Source: QWidget
@@ -2198,20 +2198,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  window
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    window
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: nativeParentWidget
     // Source: QWidget
@@ -2219,20 +2219,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nativeParentWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nativeParentWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: topLevelWidget
     // Source: QWidget
@@ -2240,20 +2240,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  topLevelWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    topLevelWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: palette
     // Source: QWidget
@@ -2261,20 +2261,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  palette
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    palette
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setPalette
     // Source: QWidget
@@ -2282,22 +2282,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPalette
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPalette
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setBackgroundRole
     // Source: QWidget
@@ -2305,22 +2305,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBackgroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBackgroundRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: backgroundRole
     // Source: QWidget
@@ -2328,20 +2328,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  backgroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    backgroundRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setForegroundRole
     // Source: QWidget
@@ -2349,22 +2349,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setForegroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setForegroundRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: foregroundRole
     // Source: QWidget
@@ -2372,20 +2372,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  foregroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    foregroundRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: font
     // Source: QWidget
@@ -2393,20 +2393,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  font
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    font
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setFont
     // Source: QWidget
@@ -2414,22 +2414,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFont
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: fontInfo
     // Source: QWidget
@@ -2437,20 +2437,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fontInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fontInfo
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: cursor
     // Source: QWidget
@@ -2458,20 +2458,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cursor
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setCursor
     // Source: QWidget
@@ -2479,22 +2479,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCursor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: unsetCursor
     // Source: QWidget
@@ -2502,18 +2502,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetCursor
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setMouseTracking
     // Source: QWidget
@@ -2521,22 +2521,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMouseTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMouseTracking
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: hasMouseTracking
     // Source: QWidget
@@ -2544,20 +2544,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasMouseTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasMouseTracking
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: underMouse
     // Source: QWidget
@@ -2565,20 +2565,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  underMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    underMouse
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setTabletTracking
     // Source: QWidget
@@ -2586,22 +2586,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabletTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabletTracking
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: hasTabletTracking
     // Source: QWidget
@@ -2609,20 +2609,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasTabletTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasTabletTracking
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setMask
     // Source: QWidget
@@ -2630,22 +2630,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMask
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: mask
     // Source: QWidget
@@ -2653,20 +2653,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mask
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: clearMask
     // Source: QWidget
@@ -2674,18 +2674,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearMask
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: grab
     // Source: QWidget
@@ -2693,22 +2693,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grab
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grab
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: grabGesture
     // Source: QWidget
@@ -2716,26 +2716,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabGesture
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabGesture
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: ungrabGesture
     // Source: QWidget
@@ -2743,22 +2743,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ungrabGesture
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    ungrabGesture
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setWindowTitle
     // Source: QWidget
@@ -2766,22 +2766,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowTitle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setStyleSheet
     // Source: QWidget
@@ -2789,22 +2789,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStyleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStyleSheet
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: styleSheet
     // Source: QWidget
@@ -2812,20 +2812,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  styleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    styleSheet
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: windowTitle
     // Source: QWidget
@@ -2833,20 +2833,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowTitle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setWindowIcon
     // Source: QWidget
@@ -2854,22 +2854,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowIcon
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: windowIcon
     // Source: QWidget
@@ -2877,20 +2877,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowIcon
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setWindowIconText
     // Source: QWidget
@@ -2898,22 +2898,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowIconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowIconText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: windowIconText
     // Source: QWidget
@@ -2921,20 +2921,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowIconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowIconText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setWindowRole
     // Source: QWidget
@@ -2942,22 +2942,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: windowRole
     // Source: QWidget
@@ -2965,20 +2965,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setWindowFilePath
     // Source: QWidget
@@ -2986,22 +2986,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFilePath
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFilePath
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: windowFilePath
     // Source: QWidget
@@ -3009,20 +3009,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowFilePath
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowFilePath
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setWindowOpacity
     // Source: QWidget
@@ -3030,22 +3030,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowOpacity
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowOpacity
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: windowOpacity
     // Source: QWidget
@@ -3053,20 +3053,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowOpacity
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowOpacity
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isWindowModified
     // Source: QWidget
@@ -3074,20 +3074,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowModified
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setToolTip
     // Source: QWidget
@@ -3095,22 +3095,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: toolTip
     // Source: QWidget
@@ -3118,20 +3118,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setToolTipDuration
     // Source: QWidget
@@ -3139,22 +3139,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTipDuration
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTipDuration
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: toolTipDuration
     // Source: QWidget
@@ -3162,20 +3162,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTipDuration
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTipDuration
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setStatusTip
     // Source: QWidget
@@ -3183,22 +3183,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStatusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStatusTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: statusTip
     // Source: QWidget
@@ -3206,20 +3206,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  statusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    statusTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setWhatsThis
     // Source: QWidget
@@ -3227,22 +3227,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWhatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWhatsThis
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: whatsThis
     // Source: QWidget
@@ -3250,20 +3250,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  whatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    whatsThis
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: accessibleName
     // Source: QWidget
@@ -3271,20 +3271,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  accessibleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    accessibleName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setAccessibleName
     // Source: QWidget
@@ -3292,22 +3292,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAccessibleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAccessibleName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: accessibleDescription
     // Source: QWidget
@@ -3315,20 +3315,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  accessibleDescription
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    accessibleDescription
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setAccessibleDescription
     // Source: QWidget
@@ -3336,22 +3336,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAccessibleDescription
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAccessibleDescription
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setLayoutDirection
     // Source: QWidget
@@ -3359,22 +3359,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLayoutDirection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: layoutDirection
     // Source: QWidget
@@ -3382,20 +3382,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    layoutDirection
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: unsetLayoutDirection
     // Source: QWidget
@@ -3403,18 +3403,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetLayoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetLayoutDirection
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setLocale
     // Source: QWidget
@@ -3422,22 +3422,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLocale
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLocale
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: locale
     // Source: QWidget
@@ -3445,20 +3445,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  locale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    locale
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: unsetLocale
     // Source: QWidget
@@ -3466,18 +3466,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetLocale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetLocale
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: isRightToLeft
     // Source: QWidget
@@ -3485,20 +3485,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isRightToLeft
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isRightToLeft
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isLeftToRight
     // Source: QWidget
@@ -3506,20 +3506,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isLeftToRight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isLeftToRight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isActiveWindow
     // Source: QWidget
@@ -3527,20 +3527,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isActiveWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isActiveWindow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: activateWindow
     // Source: QWidget
@@ -3548,18 +3548,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  activateWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    activateWindow
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: clearFocus
     // Source: QWidget
@@ -3567,18 +3567,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearFocus
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setFocus
     // Source: QWidget
@@ -3586,22 +3586,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocus
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: focusPolicy
     // Source: QWidget
@@ -3609,20 +3609,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setFocusPolicy
     // Source: QWidget
@@ -3630,22 +3630,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocusPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocusPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: hasFocus
     // Source: QWidget
@@ -3653,20 +3653,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasFocus
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setFocusProxy
     // Source: QWidget
@@ -3674,22 +3674,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocusProxy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocusProxy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: focusProxy
     // Source: QWidget
@@ -3697,20 +3697,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusProxy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusProxy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: contextMenuPolicy
     // Source: QWidget
@@ -3718,20 +3718,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contextMenuPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contextMenuPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setContextMenuPolicy
     // Source: QWidget
@@ -3739,22 +3739,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setContextMenuPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setContextMenuPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: grabMouse
     // Source: QWidget
@@ -3762,22 +3762,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabMouse
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: releaseMouse
     // Source: QWidget
@@ -3785,18 +3785,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    releaseMouse
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: grabKeyboard
     // Source: QWidget
@@ -3804,18 +3804,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabKeyboard
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    grabKeyboard
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: releaseKeyboard
     // Source: QWidget
@@ -3823,18 +3823,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseKeyboard
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    releaseKeyboard
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: grabShortcut
     // Source: QWidget
@@ -3842,26 +3842,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: releaseShortcut
     // Source: QWidget
@@ -3869,22 +3869,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    releaseShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setShortcutEnabled
     // Source: QWidget
@@ -3892,26 +3892,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setShortcutAutoRepeat
     // Source: QWidget
@@ -3919,26 +3919,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutAutoRepeat
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutAutoRepeat
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: updatesEnabled
     // Source: QWidget
@@ -3946,20 +3946,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  updatesEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    updatesEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setUpdatesEnabled
     // Source: QWidget
@@ -3967,22 +3967,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setUpdatesEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setUpdatesEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: update
     // Source: QWidget
@@ -3990,34 +3990,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  update
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    update
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: repaint
     // Source: QWidget
@@ -4025,34 +4025,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  repaint
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    repaint
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setVisible
     // Source: QWidget
@@ -4060,22 +4060,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setVisible
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setHidden
     // Source: QWidget
@@ -4083,22 +4083,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHidden
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: show
     // Source: QWidget
@@ -4106,18 +4106,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  show
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    show
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: hide
     // Source: QWidget
@@ -4125,18 +4125,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hide
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    hide
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: showMinimized
     // Source: QWidget
@@ -4144,18 +4144,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showMinimized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showMinimized
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: showMaximized
     // Source: QWidget
@@ -4163,18 +4163,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showMaximized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showMaximized
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: showFullScreen
     // Source: QWidget
@@ -4182,18 +4182,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showFullScreen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showFullScreen
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: showNormal
     // Source: QWidget
@@ -4201,18 +4201,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showNormal
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showNormal
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: close
     // Source: QWidget
@@ -4220,18 +4220,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  close
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    close
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: raise
     // Source: QWidget
@@ -4239,18 +4239,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  raise
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    raise
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: lower
     // Source: QWidget
@@ -4258,18 +4258,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lower
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    lower
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: stackUnder
     // Source: QWidget
@@ -4277,22 +4277,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  stackUnder
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    stackUnder
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: move
     // Source: QWidget
@@ -4300,26 +4300,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  move
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    move
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: resize
     // Source: QWidget
@@ -4327,26 +4327,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    resize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setGeometry
     // Source: QWidget
@@ -4354,34 +4354,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setGeometry
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: saveGeometry
     // Source: QWidget
@@ -4389,20 +4389,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  saveGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    saveGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: restoreGeometry
     // Source: QWidget
@@ -4410,22 +4410,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  restoreGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    restoreGeometry
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: adjustSize
     // Source: QWidget
@@ -4433,18 +4433,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  adjustSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    adjustSize
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: isVisible
     // Source: QWidget
@@ -4452,20 +4452,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isVisible
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isVisibleTo
     // Source: QWidget
@@ -4473,24 +4473,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isVisibleTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isVisibleTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isHidden
     // Source: QWidget
@@ -4498,20 +4498,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isHidden
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isMinimized
     // Source: QWidget
@@ -4519,20 +4519,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isMinimized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isMinimized
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isMaximized
     // Source: QWidget
@@ -4540,20 +4540,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isMaximized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isMaximized
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isFullScreen
     // Source: QWidget
@@ -4561,20 +4561,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isFullScreen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isFullScreen
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: windowState
     // Source: QWidget
@@ -4582,20 +4582,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowState
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setWindowState
     // Source: QWidget
@@ -4603,22 +4603,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: overrideWindowState
     // Source: QWidget
@@ -4626,22 +4626,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overrideWindowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    overrideWindowState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: sizePolicy
     // Source: QWidget
@@ -4649,20 +4649,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizePolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizePolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setSizePolicy
     // Source: QWidget
@@ -4670,26 +4670,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizePolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSizePolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: heightForWidth
     // Source: QWidget
@@ -4697,24 +4697,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  heightForWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    heightForWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: hasHeightForWidth
     // Source: QWidget
@@ -4722,20 +4722,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasHeightForWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasHeightForWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: visibleRegion
     // Source: QWidget
@@ -4743,20 +4743,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  visibleRegion
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    visibleRegion
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setContentsMargins
     // Source: QWidget
@@ -4764,34 +4764,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setContentsMargins
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setContentsMargins
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: contentsMargins
     // Source: QWidget
@@ -4799,20 +4799,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contentsMargins
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contentsMargins
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: contentsRect
     // Source: QWidget
@@ -4820,20 +4820,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contentsRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contentsRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: layout
     // Source: QWidget
@@ -4841,20 +4841,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layout
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    layout
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setLayout
     // Source: QWidget
@@ -4862,22 +4862,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayout
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLayout
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: updateGeometry
     // Source: QWidget
@@ -4885,18 +4885,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  updateGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    updateGeometry
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setParent
     // Source: QWidget
@@ -4904,26 +4904,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: scroll
     // Source: QWidget
@@ -4931,30 +4931,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scroll
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    scroll
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: focusWidget
     // Source: QWidget
@@ -4962,20 +4962,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: nextInFocusChain
     // Source: QWidget
@@ -4983,20 +4983,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nextInFocusChain
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nextInFocusChain
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: previousInFocusChain
     // Source: QWidget
@@ -5004,20 +5004,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  previousInFocusChain
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    previousInFocusChain
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: acceptDrops
     // Source: QWidget
@@ -5025,20 +5025,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  acceptDrops
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    acceptDrops
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setAcceptDrops
     // Source: QWidget
@@ -5046,22 +5046,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAcceptDrops
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAcceptDrops
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: addAction
     // Source: QWidget
@@ -5069,22 +5069,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: addActions
     // Source: QWidget
@@ -5092,22 +5092,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addActions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addActions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: insertActions
     // Source: QWidget
@@ -5115,26 +5115,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertActions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertActions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: insertAction
     // Source: QWidget
@@ -5142,26 +5142,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: removeAction
     // Source: QWidget
@@ -5169,22 +5169,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: actions
     // Source: QWidget
@@ -5192,20 +5192,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  actions
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    actions
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: parentWidget
     // Source: QWidget
@@ -5213,20 +5213,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parentWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parentWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setWindowFlags
     // Source: QWidget
@@ -5234,22 +5234,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: windowFlags
     // Source: QWidget
@@ -5257,20 +5257,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowFlags
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setWindowFlag
     // Source: QWidget
@@ -5278,26 +5278,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFlag
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFlag
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: overrideWindowFlags
     // Source: QWidget
@@ -5305,22 +5305,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overrideWindowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    overrideWindowFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: windowType
     // Source: QWidget
@@ -5328,20 +5328,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: childAt
     // Source: QWidget
@@ -5349,28 +5349,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setAttribute
     // Source: QWidget
@@ -5378,26 +5378,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: testAttribute
     // Source: QWidget
@@ -5405,24 +5405,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  testAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    testAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: ensurePolished
     // Source: QWidget
@@ -5430,20 +5430,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ensurePolished
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    ensurePolished
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isAncestorOf
     // Source: QWidget
@@ -5451,24 +5451,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isAncestorOf
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isAncestorOf
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: autoFillBackground
     // Source: QWidget
@@ -5476,20 +5476,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoFillBackground
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoFillBackground
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setAutoFillBackground
     // Source: QWidget
@@ -5497,22 +5497,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoFillBackground
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoFillBackground
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: customContextMenuRequested
     // Source: QWidget
@@ -5520,20 +5520,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void customContextMenuRequested(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void customContextMenuRequested(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void customContextMenuRequestedEmitter(
-                const QPoint& pos
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void customContextMenuRequestedEmitter(
+        const QPoint& pos
+    );
+
     // Class: QCheckBox
     // Function: inputMethodQuery
     // Source: QWidget
@@ -5541,24 +5541,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  inputMethodQuery
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    inputMethodQuery
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: inputMethodHints
     // Source: QWidget
@@ -5566,20 +5566,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  inputMethodHints
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    inputMethodHints
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setInputMethodHints
     // Source: QWidget
@@ -5587,22 +5587,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setInputMethodHints
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setInputMethodHints
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setText
     // Source: QAbstractButton
@@ -5610,22 +5610,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: text
     // Source: QAbstractButton
@@ -5633,20 +5633,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  text
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    text
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setIcon
     // Source: QAbstractButton
@@ -5654,22 +5654,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setIcon
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: icon
     // Source: QAbstractButton
@@ -5677,20 +5677,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  icon
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    icon
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: iconSize
     // Source: QAbstractButton
@@ -5698,20 +5698,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  iconSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    iconSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setShortcut
     // Source: QAbstractButton
@@ -5719,22 +5719,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: shortcut
     // Source: QAbstractButton
@@ -5742,20 +5742,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  shortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    shortcut
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setCheckable
     // Source: QAbstractButton
@@ -5763,22 +5763,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCheckable
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCheckable
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: isCheckable
     // Source: QAbstractButton
@@ -5786,20 +5786,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isCheckable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isCheckable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: isChecked
     // Source: QAbstractButton
@@ -5807,20 +5807,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isChecked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isChecked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setDown
     // Source: QAbstractButton
@@ -5828,22 +5828,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDown
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDown
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: isDown
     // Source: QAbstractButton
@@ -5851,20 +5851,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isDown
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isDown
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setAutoRepeat
     // Source: QAbstractButton
@@ -5872,22 +5872,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoRepeat
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoRepeat
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: autoRepeat
     // Source: QAbstractButton
@@ -5895,20 +5895,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoRepeat
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoRepeat
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setAutoRepeatDelay
     // Source: QAbstractButton
@@ -5916,22 +5916,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoRepeatDelay
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoRepeatDelay
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: autoRepeatDelay
     // Source: QAbstractButton
@@ -5939,20 +5939,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoRepeatDelay
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoRepeatDelay
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setAutoRepeatInterval
     // Source: QAbstractButton
@@ -5960,22 +5960,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoRepeatInterval
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoRepeatInterval
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: autoRepeatInterval
     // Source: QAbstractButton
@@ -5983,20 +5983,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoRepeatInterval
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoRepeatInterval
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setAutoExclusive
     // Source: QAbstractButton
@@ -6004,22 +6004,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoExclusive
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoExclusive
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: autoExclusive
     // Source: QAbstractButton
@@ -6027,20 +6027,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoExclusive
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoExclusive
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: group
     // Source: QAbstractButton
@@ -6048,20 +6048,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  group
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    group
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setIconSize
     // Source: QAbstractButton
@@ -6069,22 +6069,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIconSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setIconSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: animateClick
     // Source: QAbstractButton
@@ -6092,18 +6092,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  animateClick
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    animateClick
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: click
     // Source: QAbstractButton
@@ -6111,18 +6111,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  click
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    click
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: toggle
     // Source: QAbstractButton
@@ -6130,18 +6130,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toggle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    toggle
+    (
+
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: setChecked
     // Source: QAbstractButton
@@ -6149,22 +6149,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setChecked
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setChecked
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: pressed
     // Source: QAbstractButton
@@ -6172,18 +6172,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void pressed(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void pressed(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void pressedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void pressedEmitter(
+
+    );
+
     // Class: QCheckBox
     // Function: released
     // Source: QAbstractButton
@@ -6191,18 +6191,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void released(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void released(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void releasedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void releasedEmitter(
+
+    );
+
     // Class: QCheckBox
     // Function: clicked
     // Source: QAbstractButton
@@ -6210,20 +6210,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void clicked(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void clicked(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void clickedEmitter(
-                bool checked=false
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void clickedEmitter(
+        bool checked=false
+    );
+
     // Class: QCheckBox
     // Function: toggled
     // Source: QAbstractButton
@@ -6231,363 +6231,363 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void toggled(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void toggled(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void toggledEmitter(
-                bool checked
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void toggledEmitter(
+        bool checked
+    );
+
     // Class: QCheckBox
     // Function: sizeHint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizeHint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: minimumSizeHint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSizeHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumSizeHint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setTristate
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTristate
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTristate
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: isTristate
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isTristate
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isTristate
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: checkState
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  checkState
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    checkState
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QCheckBox
     // Function: setCheckState
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCheckState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCheckState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: stateChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void stateChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void stateChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void stateChangedEmitter(
-                int a1
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void stateChangedEmitter(
+        int a1
+    );
+
     // Class: QCheckBox
     // Function: paintEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    paintEventSuper
+
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QCheckBox
     // Function: mouseMoveEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
+    QJSValue
 
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    mouseMoveEventSuper
 
-  // member functions for static properties, forward to static function
-  
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QCheckBox::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QCheckBox* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QCheckBox::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QCheckBox* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QCheckBox* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QCheckBox* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          QCheckBox_Base* getWrappedBase() {
-            QCheckBox* w = getWrapped();
-            return dynamic_cast<QCheckBox_Base*>(w);
-          }
+        return nullptr;
+    }
 
-          QCheckBox_Base* getWrappedBase() const {
-            QCheckBox* w = getWrapped();
-            return dynamic_cast<QCheckBox_Base*>(w);
-          }
-        
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
+    // get wrapped base object or nullptr:
+    QCheckBox_Base* getWrappedBase() {
+        QCheckBox* w = getWrapped();
+        return dynamic_cast<QCheckBox_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
+    QCheckBox_Base* getWrappedBase() const {
+        QCheckBox* w = getWrapped();
+        return dynamic_cast<QCheckBox_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
-          //void setRecFlag(bool on) const {
-          //  QCheckBox_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
-        private:
-        // wrapped object:
-        QCheckBox* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QCheckBox*> basecasters_QCheckBox;
+    //void setRecFlag(bool on) const {
+    //  QCheckBox_Base* wb = getWrappedBase();
+    //  if (wb) {
+    //    wb->setRecFlag(on);
+    //  }
+    //}
 
-      public:
-        static void registerBasecaster_QCheckBox(RJSBasecaster_QCheckBox* bc) {
-          basecasters_QCheckBox.append(bc);
-        }
-      
-    };
 
-    Q_DECLARE_METATYPE(QCheckBox_Wrapper*)
+private:
+    // wrapped object:
+    QCheckBox* wrapped;
 
-    Q_DECLARE_INTERFACE(QCheckBox_Wrapper, "org.qcad.QCheckBox_Wrapper")
 
-  
-  #endif
-  
+
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QCheckBox*> basecasters_QCheckBox;
+
+public:
+    static void registerBasecaster_QCheckBox(RJSBasecaster_QCheckBox* bc) {
+        basecasters_QCheckBox.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QCheckBox_Wrapper*)
+
+Q_DECLARE_INTERFACE(QCheckBox_Wrapper, "org.qcad.QCheckBox_Wrapper")
+
+
+#endif
+

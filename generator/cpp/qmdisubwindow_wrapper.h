@@ -1,53 +1,53 @@
 
-  // Auto generated
-  
-    #ifndef QMDISUBWINDOW_H_WRAPPER
-    #define QMDISUBWINDOW_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QMDISUBWINDOW_H_WRAPPER
+#define QMDISUBWINDOW_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QMenu>
-      
-        #include <QMdiArea>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QMdiSubWindow>
-      
-      // wrapped object is QMdiSubWindow_Base class if new object is created: 
-      #include "qmdisubwindow_base.h"
-    
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QMdiSubWindow_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QMdiSubWindow_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QMenu>
+
+#include <QMdiArea>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QMdiSubWindow>
+
+// wrapped object is QMdiSubWindow_Base class if new object is created:
+#include "qmdisubwindow_base.h"
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QMdiSubWindow_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QMdiSubWindow_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QMdiSubWindow
     // Function: tr
     // Source: QObject
@@ -55,30 +55,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    tr
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setTabOrder
     // Source: QWidget
@@ -86,26 +86,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabOrder
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabOrder
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: mouseGrabber
     // Source: QWidget
@@ -113,18 +113,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseGrabber
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    mouseGrabber
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: keyboardGrabber
     // Source: QWidget
@@ -132,18 +132,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardGrabber
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    keyboardGrabber
+    (
+
+
+    )
+
+    ;
+
 #if QT_CONFIG(menu)
 
 #endif
@@ -153,489 +153,489 @@
 #endif
 
 
-      private:
-          RJSApi& handler;
-          //static QMdiSubWindow_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QMdiSubWindow
-    class QTJSAPI_EXPORT QMdiSubWindow_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
-    QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     modal READ isModal
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowModality READ windowModality WRITE setWindowModality
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     enabled READ isEnabled WRITE setEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     geometry READ geometry WRITE setGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameGeometry READ frameGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     normalGeometry READ normalGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     x READ x
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     y READ y
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     pos READ pos WRITE move
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameSize READ frameSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     size READ size WRITE resize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     width READ width
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     height READ height
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     rect READ rect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     childrenRect READ childrenRect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     childrenRegion READ childrenRegion
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizePolicy READ sizePolicy WRITE setSizePolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumSize READ minimumSize WRITE setMinimumSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumSize READ maximumSize WRITE setMaximumSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumWidth READ minimumWidth WRITE setMinimumWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumHeight READ minimumHeight WRITE setMinimumHeight
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumWidth READ maximumWidth WRITE setMaximumWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumHeight READ maximumHeight WRITE setMaximumHeight
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizeIncrement READ sizeIncrement WRITE setSizeIncrement
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     baseSize READ baseSize WRITE setBaseSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     palette READ palette WRITE setPalette
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     font READ font WRITE setFont
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     cursor READ cursor WRITE setCursor
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     mouseTracking READ hasMouseTracking WRITE setMouseTracking
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     tabletTracking READ hasTabletTracking WRITE setTabletTracking
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     isActiveWindow READ isActiveWindow
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     focusPolicy READ focusPolicy WRITE setFocusPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     focus READ hasFocus
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     contextMenuPolicy READ contextMenuPolicy WRITE setContextMenuPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     updatesEnabled READ updatesEnabled WRITE setUpdatesEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     visible READ isVisible WRITE setVisible
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimized READ isMinimized
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximized READ isMaximized
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     fullScreen READ isFullScreen
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizeHint READ sizeHint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumSizeHint READ minimumSizeHint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     acceptDrops READ acceptDrops WRITE setAcceptDrops
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowTitle READ windowTitle WRITE setWindowTitle
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowIcon READ windowIcon WRITE setWindowIcon
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowIconText READ windowIconText WRITE setWindowIconText
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowOpacity READ windowOpacity WRITE setWindowOpacity
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowModified READ isWindowModified WRITE setWindowModified
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTip READ toolTip WRITE setToolTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTipDuration READ toolTipDuration WRITE setToolTipDuration
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     statusTip READ statusTip WRITE setStatusTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     whatsThis READ whatsThis WRITE setWhatsThis
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     accessibleName READ accessibleName WRITE setAccessibleName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     accessibleDescription READ accessibleDescription WRITE setAccessibleDescription
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     layoutDirection READ layoutDirection WRITE setLayoutDirection
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoFillBackground READ autoFillBackground WRITE setAutoFillBackground
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     styleSheet READ styleSheet WRITE setStyleSheet
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     locale READ locale WRITE setLocale
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowFilePath READ windowFilePath WRITE setWindowFilePath
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     inputMethodHints READ inputMethodHints WRITE setInputMethodHints
-  )
-
-
-    private:
-      // disable copy constructor:
-      QMdiSubWindow_Wrapper(const QMdiSubWindow_Wrapper&);
-
-    public:
-      // initialization of QMdiSubWindow:
-      static void init(RJSApi& handler);
-
-      
-        static QMdiSubWindow* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
-
-          // hook for modules to cast from other types to base QMdiSubWindow:
-          for (int i=0; i<basecasters_QMdiSubWindow.length(); i++) {
+private:
+    RJSApi& handler;
+    //static QMdiSubWindow_WrapperSingleton* _singleInstance;
+
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QMdiSubWindow
+class QTJSAPI_EXPORT QMdiSubWindow_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        modal READ isModal
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowModality READ windowModality WRITE setWindowModality
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        enabled READ isEnabled WRITE setEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        geometry READ geometry WRITE setGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameGeometry READ frameGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        normalGeometry READ normalGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        x READ x
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        y READ y
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        pos READ pos WRITE move
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameSize READ frameSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        size READ size WRITE resize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        width READ width
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        height READ height
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        rect READ rect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        childrenRect READ childrenRect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        childrenRegion READ childrenRegion
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizePolicy READ sizePolicy WRITE setSizePolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumSize READ minimumSize WRITE setMinimumSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumSize READ maximumSize WRITE setMaximumSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumWidth READ minimumWidth WRITE setMinimumWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumHeight READ minimumHeight WRITE setMinimumHeight
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumWidth READ maximumWidth WRITE setMaximumWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumHeight READ maximumHeight WRITE setMaximumHeight
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizeIncrement READ sizeIncrement WRITE setSizeIncrement
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        baseSize READ baseSize WRITE setBaseSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        palette READ palette WRITE setPalette
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        font READ font WRITE setFont
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        cursor READ cursor WRITE setCursor
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        mouseTracking READ hasMouseTracking WRITE setMouseTracking
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        tabletTracking READ hasTabletTracking WRITE setTabletTracking
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        isActiveWindow READ isActiveWindow
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        focusPolicy READ focusPolicy WRITE setFocusPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        focus READ hasFocus
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        contextMenuPolicy READ contextMenuPolicy WRITE setContextMenuPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        updatesEnabled READ updatesEnabled WRITE setUpdatesEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        visible READ isVisible WRITE setVisible
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimized READ isMinimized
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximized READ isMaximized
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        fullScreen READ isFullScreen
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizeHint READ sizeHint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumSizeHint READ minimumSizeHint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        acceptDrops READ acceptDrops WRITE setAcceptDrops
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowTitle READ windowTitle WRITE setWindowTitle
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowIcon READ windowIcon WRITE setWindowIcon
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowIconText READ windowIconText WRITE setWindowIconText
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowOpacity READ windowOpacity WRITE setWindowOpacity
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowModified READ isWindowModified WRITE setWindowModified
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTip READ toolTip WRITE setToolTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTipDuration READ toolTipDuration WRITE setToolTipDuration
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        statusTip READ statusTip WRITE setStatusTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        whatsThis READ whatsThis WRITE setWhatsThis
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        accessibleName READ accessibleName WRITE setAccessibleName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        accessibleDescription READ accessibleDescription WRITE setAccessibleDescription
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        layoutDirection READ layoutDirection WRITE setLayoutDirection
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoFillBackground READ autoFillBackground WRITE setAutoFillBackground
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        styleSheet READ styleSheet WRITE setStyleSheet
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        locale READ locale WRITE setLocale
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowFilePath READ windowFilePath WRITE setWindowFilePath
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        inputMethodHints READ inputMethodHints WRITE setInputMethodHints
+    )
+
+
+private:
+    // disable copy constructor:
+    QMdiSubWindow_Wrapper(const QMdiSubWindow_Wrapper&);
+
+public:
+    // initialization of QMdiSubWindow:
+    static void init(RJSApi& handler);
+
+
+    static QMdiSubWindow* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QMdiSubWindow:
+        for (int i=0; i<basecasters_QMdiSubWindow.length(); i++) {
             RJSBasecaster_QMdiSubWindow* basecaster = basecasters_QMdiSubWindow[i];
             QMdiSubWindow* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QMdiSubWindow:
-          if (t==RJSType_QMdiSubWindow::getIdStatic()) {
+        // object is a pointer to base class QMdiSubWindow:
+        if (t==RJSType_QMdiSubWindow::getIdStatic()) {
             return (QMdiSubWindow*)vp;
-          }
-
-          qWarning() << "QMdiSubWindow_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QMdiSubWindow* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QMdiSubWindow*: wrapper wraps NULL";
-          }
+        qWarning() << "QMdiSubWindow_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QMdiSubWindow* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QMdiSubWindow*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QMdiSubWindow* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QMdiSubWindow*: wrapper wraps NULL";
         }
-      
+
+        QMdiSubWindow* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QMdiSubWindow*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QMdiSubWindow_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QMdiSubWindow_Wrapper(RJSApi& h, QMdiSubWindow* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QMdiSubWindow_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QMdiSubWindow_Wrapper(RJSApi& h, QMdiSubWindow* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QMdiSubWindow_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QMdiSubWindow
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QMdiSubWindow_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QMdiSubWindow_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
 #if QT_CONFIG(menu)
 
 #endif
@@ -646,7 +646,7 @@
 
 
     // non-static functions:
-    
+
     // Class: QMdiSubWindow
     // Function: objectName
     // Source: QObject
@@ -654,20 +654,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setObjectName
     // Source: QObject
@@ -675,22 +675,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isWidgetType
     // Source: QObject
@@ -698,20 +698,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isWindowType
     // Source: QObject
@@ -719,20 +719,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: signalsBlocked
     // Source: QObject
@@ -740,20 +740,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: blockSignals
     // Source: QObject
@@ -761,22 +761,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: findChild
     // Source: QObject
@@ -784,28 +784,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: children
     // Source: QObject
@@ -813,20 +813,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: installEventFilter
     // Source: QObject
@@ -834,22 +834,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: removeEventFilter
     // Source: QObject
@@ -857,22 +857,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: dumpObjectTree
     // Source: QObject
@@ -880,18 +880,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: dumpObjectInfo
     // Source: QObject
@@ -899,18 +899,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setProperty
     // Source: QObject
@@ -918,26 +918,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: property
     // Source: QObject
@@ -945,24 +945,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -970,20 +970,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: parent
     // Source: QObject
@@ -991,20 +991,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: deleteLater
     // Source: QObject
@@ -1012,18 +1012,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: devType
     // Source: QWidget
@@ -1031,20 +1031,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    devType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: createWinId
     // Source: QWidget
@@ -1052,18 +1052,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  createWinId
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    createWinId
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isWindow
     // Source: QWidget
@@ -1071,20 +1071,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isModal
     // Source: QWidget
@@ -1092,20 +1092,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isModal
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isModal
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: windowModality
     // Source: QWidget
@@ -1113,20 +1113,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowModality
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowModality
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWindowModality
     // Source: QWidget
@@ -1134,22 +1134,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowModality
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowModality
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isEnabled
     // Source: QWidget
@@ -1157,20 +1157,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isEnabledTo
     // Source: QWidget
@@ -1178,24 +1178,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEnabledTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEnabledTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setEnabled
     // Source: QWidget
@@ -1203,22 +1203,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setDisabled
     // Source: QWidget
@@ -1226,22 +1226,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDisabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDisabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWindowModified
     // Source: QWidget
@@ -1249,22 +1249,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowModified
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: frameGeometry
     // Source: QWidget
@@ -1272,20 +1272,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: geometry
     // Source: QWidget
@@ -1293,20 +1293,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  geometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    geometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: normalGeometry
     // Source: QWidget
@@ -1314,20 +1314,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  normalGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    normalGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: x
     // Source: QWidget
@@ -1335,20 +1335,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  x
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    x
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: y
     // Source: QWidget
@@ -1356,20 +1356,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  y
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    y
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: pos
     // Source: QWidget
@@ -1377,20 +1377,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pos
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pos
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: frameSize
     // Source: QWidget
@@ -1398,20 +1398,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: size
     // Source: QWidget
@@ -1419,20 +1419,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    size
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: width
     // Source: QWidget
@@ -1440,20 +1440,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  width
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    width
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: height
     // Source: QWidget
@@ -1461,20 +1461,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  height
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    height
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: rect
     // Source: QWidget
@@ -1482,20 +1482,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    rect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: childrenRect
     // Source: QWidget
@@ -1503,20 +1503,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childrenRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childrenRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: childrenRegion
     // Source: QWidget
@@ -1524,20 +1524,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childrenRegion
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childrenRegion
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: minimumSize
     // Source: QWidget
@@ -1545,20 +1545,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: maximumSize
     // Source: QWidget
@@ -1566,20 +1566,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: minimumWidth
     // Source: QWidget
@@ -1587,20 +1587,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: minimumHeight
     // Source: QWidget
@@ -1608,20 +1608,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumHeight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: maximumWidth
     // Source: QWidget
@@ -1629,20 +1629,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: maximumHeight
     // Source: QWidget
@@ -1650,20 +1650,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumHeight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setMinimumSize
     // Source: QWidget
@@ -1671,26 +1671,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setMaximumSize
     // Source: QWidget
@@ -1698,26 +1698,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setMinimumWidth
     // Source: QWidget
@@ -1725,22 +1725,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setMinimumHeight
     // Source: QWidget
@@ -1748,22 +1748,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setMaximumWidth
     // Source: QWidget
@@ -1771,22 +1771,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setMaximumHeight
     // Source: QWidget
@@ -1794,22 +1794,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: sizeIncrement
     // Source: QWidget
@@ -1817,20 +1817,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeIncrement
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizeIncrement
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setSizeIncrement
     // Source: QWidget
@@ -1838,26 +1838,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizeIncrement
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSizeIncrement
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: baseSize
     // Source: QWidget
@@ -1865,20 +1865,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  baseSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    baseSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setBaseSize
     // Source: QWidget
@@ -1886,26 +1886,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBaseSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBaseSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setFixedSize
     // Source: QWidget
@@ -1913,26 +1913,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setFixedWidth
     // Source: QWidget
@@ -1940,22 +1940,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setFixedHeight
     // Source: QWidget
@@ -1963,22 +1963,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: mapToGlobal
     // Source: QWidget
@@ -1986,24 +1986,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapToGlobal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapToGlobal
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: mapFromGlobal
     // Source: QWidget
@@ -2011,24 +2011,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFromGlobal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFromGlobal
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: mapToParent
     // Source: QWidget
@@ -2036,24 +2036,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapToParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapToParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: mapFromParent
     // Source: QWidget
@@ -2061,24 +2061,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFromParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFromParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: mapTo
     // Source: QWidget
@@ -2086,28 +2086,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: mapFrom
     // Source: QWidget
@@ -2115,28 +2115,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFrom
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFrom
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: window
     // Source: QWidget
@@ -2144,20 +2144,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  window
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    window
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: nativeParentWidget
     // Source: QWidget
@@ -2165,20 +2165,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nativeParentWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nativeParentWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: topLevelWidget
     // Source: QWidget
@@ -2186,20 +2186,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  topLevelWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    topLevelWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: palette
     // Source: QWidget
@@ -2207,20 +2207,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  palette
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    palette
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setPalette
     // Source: QWidget
@@ -2228,22 +2228,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPalette
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPalette
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setBackgroundRole
     // Source: QWidget
@@ -2251,22 +2251,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBackgroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBackgroundRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: backgroundRole
     // Source: QWidget
@@ -2274,20 +2274,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  backgroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    backgroundRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setForegroundRole
     // Source: QWidget
@@ -2295,22 +2295,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setForegroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setForegroundRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: foregroundRole
     // Source: QWidget
@@ -2318,20 +2318,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  foregroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    foregroundRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: font
     // Source: QWidget
@@ -2339,20 +2339,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  font
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    font
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setFont
     // Source: QWidget
@@ -2360,22 +2360,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFont
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: fontInfo
     // Source: QWidget
@@ -2383,20 +2383,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fontInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fontInfo
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: cursor
     // Source: QWidget
@@ -2404,20 +2404,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cursor
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setCursor
     // Source: QWidget
@@ -2425,22 +2425,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCursor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: unsetCursor
     // Source: QWidget
@@ -2448,18 +2448,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetCursor
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setMouseTracking
     // Source: QWidget
@@ -2467,22 +2467,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMouseTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMouseTracking
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: hasMouseTracking
     // Source: QWidget
@@ -2490,20 +2490,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasMouseTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasMouseTracking
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: underMouse
     // Source: QWidget
@@ -2511,20 +2511,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  underMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    underMouse
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setTabletTracking
     // Source: QWidget
@@ -2532,22 +2532,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabletTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabletTracking
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: hasTabletTracking
     // Source: QWidget
@@ -2555,20 +2555,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasTabletTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasTabletTracking
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setMask
     // Source: QWidget
@@ -2576,22 +2576,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMask
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: mask
     // Source: QWidget
@@ -2599,20 +2599,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mask
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: clearMask
     // Source: QWidget
@@ -2620,18 +2620,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearMask
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: grab
     // Source: QWidget
@@ -2639,22 +2639,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grab
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grab
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: grabGesture
     // Source: QWidget
@@ -2662,26 +2662,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabGesture
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabGesture
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: ungrabGesture
     // Source: QWidget
@@ -2689,22 +2689,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ungrabGesture
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    ungrabGesture
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWindowTitle
     // Source: QWidget
@@ -2712,22 +2712,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowTitle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setStyleSheet
     // Source: QWidget
@@ -2735,22 +2735,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStyleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStyleSheet
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: styleSheet
     // Source: QWidget
@@ -2758,20 +2758,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  styleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    styleSheet
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: windowTitle
     // Source: QWidget
@@ -2779,20 +2779,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowTitle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWindowIcon
     // Source: QWidget
@@ -2800,22 +2800,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowIcon
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: windowIcon
     // Source: QWidget
@@ -2823,20 +2823,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowIcon
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWindowIconText
     // Source: QWidget
@@ -2844,22 +2844,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowIconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowIconText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: windowIconText
     // Source: QWidget
@@ -2867,20 +2867,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowIconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowIconText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWindowRole
     // Source: QWidget
@@ -2888,22 +2888,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: windowRole
     // Source: QWidget
@@ -2911,20 +2911,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWindowFilePath
     // Source: QWidget
@@ -2932,22 +2932,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFilePath
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFilePath
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: windowFilePath
     // Source: QWidget
@@ -2955,20 +2955,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowFilePath
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowFilePath
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWindowOpacity
     // Source: QWidget
@@ -2976,22 +2976,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowOpacity
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowOpacity
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: windowOpacity
     // Source: QWidget
@@ -2999,20 +2999,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowOpacity
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowOpacity
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isWindowModified
     // Source: QWidget
@@ -3020,20 +3020,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowModified
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setToolTip
     // Source: QWidget
@@ -3041,22 +3041,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: toolTip
     // Source: QWidget
@@ -3064,20 +3064,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setToolTipDuration
     // Source: QWidget
@@ -3085,22 +3085,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTipDuration
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTipDuration
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: toolTipDuration
     // Source: QWidget
@@ -3108,20 +3108,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTipDuration
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTipDuration
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setStatusTip
     // Source: QWidget
@@ -3129,22 +3129,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStatusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStatusTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: statusTip
     // Source: QWidget
@@ -3152,20 +3152,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  statusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    statusTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWhatsThis
     // Source: QWidget
@@ -3173,22 +3173,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWhatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWhatsThis
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: whatsThis
     // Source: QWidget
@@ -3196,20 +3196,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  whatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    whatsThis
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: accessibleName
     // Source: QWidget
@@ -3217,20 +3217,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  accessibleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    accessibleName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setAccessibleName
     // Source: QWidget
@@ -3238,22 +3238,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAccessibleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAccessibleName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: accessibleDescription
     // Source: QWidget
@@ -3261,20 +3261,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  accessibleDescription
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    accessibleDescription
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setAccessibleDescription
     // Source: QWidget
@@ -3282,22 +3282,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAccessibleDescription
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAccessibleDescription
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setLayoutDirection
     // Source: QWidget
@@ -3305,22 +3305,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLayoutDirection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: layoutDirection
     // Source: QWidget
@@ -3328,20 +3328,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    layoutDirection
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: unsetLayoutDirection
     // Source: QWidget
@@ -3349,18 +3349,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetLayoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetLayoutDirection
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setLocale
     // Source: QWidget
@@ -3368,22 +3368,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLocale
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLocale
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: locale
     // Source: QWidget
@@ -3391,20 +3391,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  locale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    locale
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: unsetLocale
     // Source: QWidget
@@ -3412,18 +3412,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetLocale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetLocale
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isRightToLeft
     // Source: QWidget
@@ -3431,20 +3431,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isRightToLeft
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isRightToLeft
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isLeftToRight
     // Source: QWidget
@@ -3452,20 +3452,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isLeftToRight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isLeftToRight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isActiveWindow
     // Source: QWidget
@@ -3473,20 +3473,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isActiveWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isActiveWindow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: activateWindow
     // Source: QWidget
@@ -3494,18 +3494,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  activateWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    activateWindow
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: clearFocus
     // Source: QWidget
@@ -3513,18 +3513,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearFocus
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setFocus
     // Source: QWidget
@@ -3532,22 +3532,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocus
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: focusPolicy
     // Source: QWidget
@@ -3555,20 +3555,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setFocusPolicy
     // Source: QWidget
@@ -3576,22 +3576,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocusPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocusPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: hasFocus
     // Source: QWidget
@@ -3599,20 +3599,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasFocus
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setFocusProxy
     // Source: QWidget
@@ -3620,22 +3620,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocusProxy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocusProxy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: focusProxy
     // Source: QWidget
@@ -3643,20 +3643,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusProxy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusProxy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: contextMenuPolicy
     // Source: QWidget
@@ -3664,20 +3664,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contextMenuPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contextMenuPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setContextMenuPolicy
     // Source: QWidget
@@ -3685,22 +3685,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setContextMenuPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setContextMenuPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: grabMouse
     // Source: QWidget
@@ -3708,22 +3708,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabMouse
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: releaseMouse
     // Source: QWidget
@@ -3731,18 +3731,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    releaseMouse
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: grabKeyboard
     // Source: QWidget
@@ -3750,18 +3750,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabKeyboard
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    grabKeyboard
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: releaseKeyboard
     // Source: QWidget
@@ -3769,18 +3769,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseKeyboard
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    releaseKeyboard
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: grabShortcut
     // Source: QWidget
@@ -3788,26 +3788,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: releaseShortcut
     // Source: QWidget
@@ -3815,22 +3815,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    releaseShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setShortcutEnabled
     // Source: QWidget
@@ -3838,26 +3838,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setShortcutAutoRepeat
     // Source: QWidget
@@ -3865,26 +3865,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutAutoRepeat
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutAutoRepeat
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: updatesEnabled
     // Source: QWidget
@@ -3892,20 +3892,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  updatesEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    updatesEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setUpdatesEnabled
     // Source: QWidget
@@ -3913,22 +3913,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setUpdatesEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setUpdatesEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: update
     // Source: QWidget
@@ -3936,34 +3936,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  update
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    update
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: repaint
     // Source: QWidget
@@ -3971,34 +3971,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  repaint
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    repaint
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setVisible
     // Source: QWidget
@@ -4006,22 +4006,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setVisible
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setHidden
     // Source: QWidget
@@ -4029,22 +4029,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHidden
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: show
     // Source: QWidget
@@ -4052,18 +4052,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  show
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    show
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: hide
     // Source: QWidget
@@ -4071,18 +4071,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hide
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    hide
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: showMinimized
     // Source: QWidget
@@ -4090,18 +4090,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showMinimized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showMinimized
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: showMaximized
     // Source: QWidget
@@ -4109,18 +4109,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showMaximized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showMaximized
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: showFullScreen
     // Source: QWidget
@@ -4128,18 +4128,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showFullScreen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showFullScreen
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: showNormal
     // Source: QWidget
@@ -4147,18 +4147,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showNormal
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showNormal
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: close
     // Source: QWidget
@@ -4166,18 +4166,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  close
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    close
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: raise
     // Source: QWidget
@@ -4185,18 +4185,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  raise
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    raise
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: lower
     // Source: QWidget
@@ -4204,18 +4204,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lower
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    lower
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: stackUnder
     // Source: QWidget
@@ -4223,22 +4223,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  stackUnder
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    stackUnder
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: move
     // Source: QWidget
@@ -4246,26 +4246,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  move
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    move
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: resize
     // Source: QWidget
@@ -4273,26 +4273,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    resize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setGeometry
     // Source: QWidget
@@ -4300,34 +4300,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setGeometry
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: saveGeometry
     // Source: QWidget
@@ -4335,20 +4335,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  saveGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    saveGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: restoreGeometry
     // Source: QWidget
@@ -4356,22 +4356,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  restoreGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    restoreGeometry
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: adjustSize
     // Source: QWidget
@@ -4379,18 +4379,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  adjustSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    adjustSize
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isVisible
     // Source: QWidget
@@ -4398,20 +4398,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isVisible
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isVisibleTo
     // Source: QWidget
@@ -4419,24 +4419,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isVisibleTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isVisibleTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isHidden
     // Source: QWidget
@@ -4444,20 +4444,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isHidden
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isMinimized
     // Source: QWidget
@@ -4465,20 +4465,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isMinimized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isMinimized
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isMaximized
     // Source: QWidget
@@ -4486,20 +4486,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isMaximized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isMaximized
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isFullScreen
     // Source: QWidget
@@ -4507,20 +4507,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isFullScreen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isFullScreen
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: windowState
     // Source: QWidget
@@ -4528,20 +4528,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowState
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWindowState
     // Source: QWidget
@@ -4549,22 +4549,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: overrideWindowState
     // Source: QWidget
@@ -4572,22 +4572,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overrideWindowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    overrideWindowState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: sizePolicy
     // Source: QWidget
@@ -4595,20 +4595,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizePolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizePolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setSizePolicy
     // Source: QWidget
@@ -4616,26 +4616,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizePolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSizePolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: heightForWidth
     // Source: QWidget
@@ -4643,24 +4643,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  heightForWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    heightForWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: hasHeightForWidth
     // Source: QWidget
@@ -4668,20 +4668,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasHeightForWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasHeightForWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: visibleRegion
     // Source: QWidget
@@ -4689,20 +4689,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  visibleRegion
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    visibleRegion
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setContentsMargins
     // Source: QWidget
@@ -4710,34 +4710,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setContentsMargins
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setContentsMargins
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: contentsMargins
     // Source: QWidget
@@ -4745,20 +4745,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contentsMargins
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contentsMargins
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: contentsRect
     // Source: QWidget
@@ -4766,20 +4766,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contentsRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contentsRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: layout
     // Source: QWidget
@@ -4787,20 +4787,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layout
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    layout
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setLayout
     // Source: QWidget
@@ -4808,22 +4808,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayout
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLayout
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: updateGeometry
     // Source: QWidget
@@ -4831,18 +4831,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  updateGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    updateGeometry
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setParent
     // Source: QWidget
@@ -4850,26 +4850,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: scroll
     // Source: QWidget
@@ -4877,30 +4877,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scroll
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    scroll
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: focusWidget
     // Source: QWidget
@@ -4908,20 +4908,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: nextInFocusChain
     // Source: QWidget
@@ -4929,20 +4929,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nextInFocusChain
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nextInFocusChain
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: previousInFocusChain
     // Source: QWidget
@@ -4950,20 +4950,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  previousInFocusChain
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    previousInFocusChain
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: acceptDrops
     // Source: QWidget
@@ -4971,20 +4971,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  acceptDrops
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    acceptDrops
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setAcceptDrops
     // Source: QWidget
@@ -4992,22 +4992,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAcceptDrops
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAcceptDrops
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: addAction
     // Source: QWidget
@@ -5015,22 +5015,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: addActions
     // Source: QWidget
@@ -5038,22 +5038,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addActions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addActions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: insertActions
     // Source: QWidget
@@ -5061,26 +5061,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertActions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertActions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: insertAction
     // Source: QWidget
@@ -5088,26 +5088,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: removeAction
     // Source: QWidget
@@ -5115,22 +5115,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: actions
     // Source: QWidget
@@ -5138,20 +5138,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  actions
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    actions
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: parentWidget
     // Source: QWidget
@@ -5159,20 +5159,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parentWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parentWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWindowFlags
     // Source: QWidget
@@ -5180,22 +5180,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: windowFlags
     // Source: QWidget
@@ -5203,20 +5203,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowFlags
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWindowFlag
     // Source: QWidget
@@ -5224,26 +5224,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFlag
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFlag
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: overrideWindowFlags
     // Source: QWidget
@@ -5251,22 +5251,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overrideWindowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    overrideWindowFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: windowType
     // Source: QWidget
@@ -5274,20 +5274,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: childAt
     // Source: QWidget
@@ -5295,28 +5295,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setAttribute
     // Source: QWidget
@@ -5324,26 +5324,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: testAttribute
     // Source: QWidget
@@ -5351,24 +5351,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  testAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    testAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: ensurePolished
     // Source: QWidget
@@ -5376,20 +5376,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ensurePolished
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    ensurePolished
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isAncestorOf
     // Source: QWidget
@@ -5397,24 +5397,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isAncestorOf
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isAncestorOf
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: autoFillBackground
     // Source: QWidget
@@ -5422,20 +5422,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoFillBackground
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoFillBackground
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setAutoFillBackground
     // Source: QWidget
@@ -5443,22 +5443,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoFillBackground
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoFillBackground
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: customContextMenuRequested
     // Source: QWidget
@@ -5466,20 +5466,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void customContextMenuRequested(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void customContextMenuRequested(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void customContextMenuRequestedEmitter(
-                const QPoint& pos
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void customContextMenuRequestedEmitter(
+        const QPoint& pos
+    );
+
     // Class: QMdiSubWindow
     // Function: inputMethodQuery
     // Source: QWidget
@@ -5487,24 +5487,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  inputMethodQuery
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    inputMethodQuery
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: inputMethodHints
     // Source: QWidget
@@ -5512,20 +5512,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  inputMethodHints
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    inputMethodHints
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setInputMethodHints
     // Source: QWidget
@@ -5533,682 +5533,682 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setInputMethodHints
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setInputMethodHints
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: sizeHint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizeHint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: minimumSizeHint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSizeHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumSizeHint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setWidget
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWidget
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: widget
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  widget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    widget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: maximizedButtonsWidget
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximizedButtonsWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximizedButtonsWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: maximizedSystemMenuIconWidget
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximizedSystemMenuIconWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximizedSystemMenuIconWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: isShaded
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isShaded
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isShaded
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setOption
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOption
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setOption
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: testOption
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  testOption
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    testOption
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setKeyboardSingleStep
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setKeyboardSingleStep
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setKeyboardSingleStep
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: keyboardSingleStep
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardSingleStep
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    keyboardSingleStep
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: setKeyboardPageStep
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setKeyboardPageStep
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setKeyboardPageStep
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: keyboardPageStep
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardPageStep
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    keyboardPageStep
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #if QT_CONFIG(menu)
 
     // Class: QMdiSubWindow
     // Function: setSystemMenu
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSystemMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSystemMenu
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: systemMenu
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  systemMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    systemMenu
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #endif
 
     // Class: QMdiSubWindow
     // Function: mdiArea
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mdiArea
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mdiArea
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: windowStateChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void windowStateChanged(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void windowStateChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void windowStateChangedEmitter(
-                Qt::WindowStates oldState, Qt::WindowStates newState
-              );
-            
+        const QJSValue&
+        a1,
+        const QJSValue&
+        a2
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void windowStateChangedEmitter(
+        Qt::WindowStates oldState, Qt::WindowStates newState
+    );
+
     // Class: QMdiSubWindow
     // Function: aboutToActivate
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void aboutToActivate(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void aboutToActivate(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void aboutToActivateEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void aboutToActivateEmitter(
+
+    );
+
 #if QT_CONFIG(menu)
 
     // Class: QMdiSubWindow
     // Function: showSystemMenu
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showSystemMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showSystemMenu
+    (
+
+
+    )
+
+    ;
+
 #endif
 
     // Class: QMdiSubWindow
     // Function: showShaded
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showShaded
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showShaded
+    (
+
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: paintEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    paintEventSuper
+
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: mouseMoveEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    mouseMoveEventSuper
+
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMdiSubWindow
     // Function: resizeEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
+    QJSValue
 
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    resizeEventSuper
 
-  // member functions for static properties, forward to static function
-  
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QMdiSubWindow::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QMdiSubWindow* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QMdiSubWindow::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QMdiSubWindow* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QMdiSubWindow* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QMdiSubWindow* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          QMdiSubWindow_Base* getWrappedBase() {
-            QMdiSubWindow* w = getWrapped();
-            return dynamic_cast<QMdiSubWindow_Base*>(w);
-          }
+        return nullptr;
+    }
 
-          QMdiSubWindow_Base* getWrappedBase() const {
-            QMdiSubWindow* w = getWrapped();
-            return dynamic_cast<QMdiSubWindow_Base*>(w);
-          }
-        
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
+    // get wrapped base object or nullptr:
+    QMdiSubWindow_Base* getWrappedBase() {
+        QMdiSubWindow* w = getWrapped();
+        return dynamic_cast<QMdiSubWindow_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
+    QMdiSubWindow_Base* getWrappedBase() const {
+        QMdiSubWindow* w = getWrapped();
+        return dynamic_cast<QMdiSubWindow_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
-          //void setRecFlag(bool on) const {
-          //  QMdiSubWindow_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
-        private:
-        // wrapped object:
-        QMdiSubWindow* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QMdiSubWindow*> basecasters_QMdiSubWindow;
+    //void setRecFlag(bool on) const {
+    //  QMdiSubWindow_Base* wb = getWrappedBase();
+    //  if (wb) {
+    //    wb->setRecFlag(on);
+    //  }
+    //}
 
-      public:
-        static void registerBasecaster_QMdiSubWindow(RJSBasecaster_QMdiSubWindow* bc) {
-          basecasters_QMdiSubWindow.append(bc);
-        }
-      
-    };
 
-    Q_DECLARE_METATYPE(QMdiSubWindow_Wrapper*)
+private:
+    // wrapped object:
+    QMdiSubWindow* wrapped;
 
-    Q_DECLARE_INTERFACE(QMdiSubWindow_Wrapper, "org.qcad.QMdiSubWindow_Wrapper")
 
-  
-  #endif
-  
+
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QMdiSubWindow*> basecasters_QMdiSubWindow;
+
+public:
+    static void registerBasecaster_QMdiSubWindow(RJSBasecaster_QMdiSubWindow* bc) {
+        basecasters_QMdiSubWindow.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QMdiSubWindow_Wrapper*)
+
+Q_DECLARE_INTERFACE(QMdiSubWindow_Wrapper, "org.qcad.QMdiSubWindow_Wrapper")
+
+
+#endif
+

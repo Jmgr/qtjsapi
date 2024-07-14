@@ -1,5 +1,5 @@
-QCoreApplication.args = function() {
-    if (arguments.length==0) {
+QCoreApplication.args = function () {
+    if (arguments.length == 0) {
         return QCoreApplication_WrapperSingletonInstance.arguments();
     }
     else {
@@ -20,15 +20,7 @@ QDir.separator = QDir.sep();
 Qt.MidButton = Qt.MiddleButton;
 QRegExpValidator = QRegularExpressionValidator;
 
-QDomNode.prototype.save = function(indent) {
-    return tools.saveQNode(this, indent);
-};
-
-QDomElement.prototype.save = function(indent) {
-    return tools.jsQNodeSave(this, indent);
-};
-
-QByteArray.prototype.appendByte = function(c) {
+QByteArray.prototype.appendByte = function (c) {
     return this.append(c);
 };
 
@@ -43,13 +35,13 @@ function parseXml(fileName, handler) {
 }
 
 function inspect(obj, indent) {
-    if (indent==undefined) {
+    if (indent == undefined) {
         indent = 0;
     }
 
     qDebug(" ".repeat(indent) + "obj: " + obj);
     var p = Object.getPrototypeOf(obj);
-    if (p==undefined) {
+    if (p == undefined) {
         return;
     }
 

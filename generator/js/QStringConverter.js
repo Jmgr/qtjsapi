@@ -1,102 +1,100 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QStringConverter() {
-        
+// class constructor:
+function QStringConverter() {
 
-        // should be QStringConverter_BaseJs.call(this, engine):
-        //QStringConverter.prototype = new QStringConverter_BaseJs(engine);
 
-        var wrapper;
+    // should be QStringConverter_BaseJs.call(this, engine):
+    //QStringConverter.prototype = new QStringConverter_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QStringConverter.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QStringConverter.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QStringConverter);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QStringConverter);
             //}
-          }
-          else {
+        } else {
             qWarning("QStringConverter.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
-        }
-        else {
-          
-              qWarning("QStringConverter.js: No constructor found for class QStringConverter");
-            
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+    } else {
+
+        qWarning("QStringConverter.js: No constructor found for class QStringConverter");
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QStringConverter.prototype = new QStringConverter_BaseJs(engine);
-      //QStringConverter.prototype = new QStringConverter_Wrapper(engine);
-      QStringConverter.prototype = new Object();
+//QStringConverter.prototype = new QStringConverter_BaseJs(engine);
+//QStringConverter.prototype = new QStringConverter_Wrapper(engine);
+QStringConverter.prototype = new Object();
 
-      QStringConverter.prototype.toString = function() {
-          //return "QStringConverter [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QStringConverter [JS]";
-        };
-      QStringConverter.getObjectType = function() {
-        return RJSType_QStringConverter.getIdStatic();
-      };
+QStringConverter.prototype.toString = function() {
+    //return "QStringConverter [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QStringConverter [JS]";
+};
+QStringConverter.getObjectType = function() {
+    return RJSType_QStringConverter.getIdStatic();
+};
 
-      QStringConverter.prototype.getObjectType = function() {
-        return RJSType_QStringConverter.getIdStatic();
-      };
+QStringConverter.prototype.getObjectType = function() {
+    return RJSType_QStringConverter.getIdStatic();
+};
 
-      QStringConverter.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QStringConverter.getIdStatic()) {
-          return true;
-        }
-
-        
-          if (t===RJSType_QStringConverterBase.getIdStatic()) {
-            return true;
-          }
-        
-
-        return false;
+QStringConverter.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QStringConverter.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
+    if (t===RJSType_QStringConverterBase.getIdStatic()) {
+        return true;
+    }
 
-      // enum values:
-      
-  // enum: Encoding
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Encoding
 QStringConverter.Utf8 = QStringConverter_Wrapper.Utf8;
 QStringConverter.Utf16 = QStringConverter_Wrapper.Utf16;
 QStringConverter.Utf16LE = QStringConverter_Wrapper.Utf16LE;
@@ -109,53 +107,52 @@ QStringConverter.System = QStringConverter_Wrapper.System;
 QStringConverter.LastEncoding = QStringConverter_Wrapper.LastEncoding;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QStringConverter.nameForEncoding = function() 
-          
-        {
-          //print("JS: QStringConverter.nameForEncoding");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QStringConverter_WrapperSingletonInstance.nameForEncoding(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QStringConverter.nameForEncoding = function()
+
+{
+    //print("JS: QStringConverter.nameForEncoding");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QStringConverter_WrapperSingletonInstance.nameForEncoding(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QStringConverter);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QStringConverter.nameForEncoding(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QStringConverter.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QStringConverter.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QStringConverter.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QStringConverter.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

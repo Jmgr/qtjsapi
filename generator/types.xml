@@ -14,7 +14,6 @@
   <primitive>
     <type flags="true">QAbstractFileIconProvider::Options</type>
     <type flags="true">QAbstractItemView::EditTriggers</type>
-    <type flags="true">QAbstractPrintDialog::PrintDialogOptions</type>
     <type flags="true">QColorDialog::ColorDialogOptions</type>
     <type flags="true">QDialogButtonBox::StandardButtons</type>
     <type flags="true">QDir::Filters</type>
@@ -66,8 +65,6 @@
     <type>QAbstractItemView::ScrollMode</type>
     <type>QAbstractItemView::SelectionBehavior</type>
     <type>QAbstractItemView::SelectionMode</type>
-    <type>QAbstractPrintDialog::PrintDialogOption</type>
-    <type>QAbstractPrintDialog::PrintRange</type>
     <type>QAbstractScrollArea::SizeAdjustPolicy</type>
     <type>QAbstractSlider::SliderAction</type>
     <type>QAbstractSpinBox::StepType</type>
@@ -89,9 +86,6 @@
     <type>QDialogButtonBox::StandardButton</type>
     <type>QDirIterator::IteratorFlag</type>
     <type>QDockWidget::DockWidgetFeature</type>
-    <type>QDomImplementation::InvalidDataPolicy</type>
-    <type>QDomNode::EncodingPolicy</type>
-    <type>QDomNode::NodeType</type>
     <type>QDoubleValidator::Notation</type>
     <type>QEasingCurve::Type</type>
     <type>QEvent::Type</type>
@@ -179,7 +173,6 @@
     <type>QPageSize::PageSizeId</type>
     <type>QPageSize::SizeMatchPolicy</type>
     <type>QPageSize::Unit</type>
-    <type>QPagedPaintDevice::PdfVersion</type>
     <type>QPainter::CompositionMode</type>
     <type>QPainter::PixmapFragmentHint</type>
     <type>QPainter::RenderHint</type>
@@ -189,15 +182,6 @@
     <type>QPalette::ColorRole</type>
     <type>QPinchGesture::ChangeFlag</type>
     <type>QPlainTextEdit::LineWrapMode</type>
-    <type>QPrinter::ColorMode</type>
-    <type>QPrinter::DuplexMode</type>
-    <type>QPrinter::OutputFormat</type>
-    <type>QPrinter::PageOrder</type>
-    <type>QPrinter::PaperSource</type>
-    <type>QPrinter::PrintRange</type>
-    <type>QPrinter::PrinterMode</type>
-    <type>QPrinter::PrinterState</type>
-    <type>QPrinter::Unit</type>
     <type>QProcess::ExitStatus</type>
     <type>QProcess::InputChannelMode</type>
     <type>QProcess::ProcessChannel</type>
@@ -206,10 +190,6 @@
     <type>QProcess::ProcessState</type>
     <type>QProcessEnvironment::Initialization</type>
     <type>QProgressBar::Direction</type>
-    <type>QQuickView::ResizeMode</type>
-    <type>QQuickView::Status</type>
-    <type>QQuickWidget::ResizeMode</type>
-    <type>QQuickWidget::Status</type>
     <type>QRegion::RegionType</type>
     <type>QRegularExpression::MatchOptions</type>
     <type>QRegularExpression::MatchType</type>
@@ -369,23 +349,6 @@
     <type>QDateTime</type>
     <type>QDesktopServices</type>
     <type>QDir</type>
-    <type>QDomAttr</type>
-    <type>QDomCDATASection</type>
-    <type>QDomCharacterData</type>
-    <type>QDomComment</type>
-    <type>QDomDocument</type>
-    <type>QDomDocumentFragment</type>
-    <type>QDomDocumentType</type>
-    <type>QDomElement</type>
-    <type>QDomEntity</type>
-    <type>QDomEntityReference</type>
-    <type>QDomImplementation</type>
-    <type>QDomNamedNodeMap</type>
-    <type>QDomNode</type>
-    <type>QDomNodeList</type>
-    <type>QDomNotation</type>
-    <type>QDomProcessingInstruction</type>
-    <type>QDomText</type>
     <type>QEasingCurve</type>
     <type>QEventPoint</type>
     <type>QFileInfo</type>
@@ -405,7 +368,6 @@
     <type>QMarginsF</type>
     <type>QModelIndex</type>
     <type>QPageLayout</type>
-    <type>QPageRanges</type>
     <type>QPageSize</type>
     <type>QPainterPath</type>
     <type>QPalette</type>
@@ -416,7 +378,6 @@
     <type>QPointF</type>
     <type>QPolygon</type>
     <type>QPolygonF</type>
-    <type>QPrinterInfo</type>
     <type>QProcessEnvironment</type>
     <type>QRadialGradient</type>
     <type>QRect</type>
@@ -473,14 +434,12 @@
     <type>QLayoutItem</type>
     <type>QListWidgetItem</type>
     <type>QMouseEvent</type>
-    <type>QPagedPaintDevice</type>
     <type>QPaintDevice</type>
     <type>QPaintEvent</type>
     <type>QPainter</type>
     <type>QPanGesture</type>
     <type>QPinchGesture</type>
     <type>QPointerEvent</type>
-    <type>QPrinter</type>
     <type>QProcess</type>
     <type>QQmlEngine</type>
     <type>QQmlContext</type>
@@ -524,7 +483,6 @@
     <type>QAbstractItemDelegate</type>
     <type>QAbstractItemModel</type>
     <type>QAbstractItemView</type>
-    <type>QAbstractPrintDialog</type>
     <type>QAbstractScrollArea</type>
     <type>QAbstractSlider</type>
     <type>QAction</type>
@@ -581,12 +539,9 @@
     <type>QMessageBox</type>
     <type>QMimeData</type>
     <type>QPlainTextEdit</type>
-    <type>QPrintDialog</type>
     <type>QProgressBar</type>
     <type>QProgressDialog</type>
     <type>QPushButton</type>
-    <type>QQuickView</type>
-    <type>QQuickWidget</type>
     <type>QRadioButton</type>
     <type>QRegularExpressionValidator</type>
     <type>QScreen</type>
@@ -604,7 +559,6 @@
     <type>QStackedWidget</type>
     <type>QStandardItemModel</type>
     <type>QStatusBar</type>
-    <type>QSvgRenderer</type>
     <type>QTabBar</type>
     <type>QTabWidget</type>
     <type>QTableView</type>
@@ -638,10 +592,6 @@
     <type>QList&lt;QPoint&gt;</type>
     <type>QList&lt;QPointF&gt;</type>
     <type>QList&lt;QPolygonF&gt;</type>
-    <type>QList&lt;QPrinter::ColorMode&gt;</type>
-    <type>QList&lt;QPrinter::DuplexMode&gt;</type>
-    <type>QList&lt;QPrinter::PaperSource&gt;</type>
-    <type>QList&lt;QPrinterInfo&gt;</type>
     <type>QList&lt;QRect&gt;</type>
     <type>QList&lt;QRectF&gt;</type>
     <type>QList&lt;QSize&gt;</type>

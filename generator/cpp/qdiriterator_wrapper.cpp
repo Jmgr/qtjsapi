@@ -1,242 +1,242 @@
 
-  // Auto generated
-  
-  // include header:
-  //#include "qdiriteratorwrapper.h"
-  //#include "header_cpp.h"
-  
-    #include "qdiriterator_wrapper.h"
+// Auto generated
 
-  
-      // list of registered base casters for this wrapper class:
-      QList<RJSBasecaster_QDirIterator*> QDirIterator_Wrapper::basecasters_QDirIterator;
-    
-    // static functions implementation in singleton wrapper:
-    
-    void QDirIterator_Wrapper::init(RJSApi& handler) {
-      
-        //qmlRegisterType<QDirIterator_Wrapper>("org.qcad", 1, 0, "QDirIterator_Wrapper");
-        qmlRegisterInterface<QDirIterator_Wrapper>("QDirIterator_Wrapper", 1);
-      
+// include header:
+//#include "qdiriteratorwrapper.h"
+//#include "header_cpp.h"
 
-      QJSEngine* engine = handler.getEngine();
-
-      
-          // make type scriptable for JS files:
-          QJSValue global = engine->globalObject();
-          RJSType_QDirIterator* t = new RJSType_QDirIterator();
-          global.setProperty("RJSType_QDirIterator", engine->newQObject(t));
-
-          // initialize ID for this type:
-          RJSType_QDirIterator::getIdStatic();
-
-          
-
-      // wrapper:
-      QJSValue mo = engine->newQMetaObject(&QDirIterator_Wrapper::staticMetaObject);
-      engine->globalObject().setProperty("QDirIterator_Wrapper", mo);
+#include "qdiriterator_wrapper.h"
 
 
-      
-        // JS base class:
-        //QJSValue mob = engine->newQMetaObject(&QDirIterator_BaseJs::staticMetaObject);
-        //engine->globalObject().setProperty("QDirIterator_BaseJs", mob);
-      
-      QString fileName = ":generator/js/QDirIterator.js";
-      QFile scriptFile(fileName);
-      if (!scriptFile.open(QIODevice::ReadOnly)) {
+// list of registered base casters for this wrapper class:
+QList<RJSBasecaster_QDirIterator*> QDirIterator_Wrapper::basecasters_QDirIterator;
+
+// static functions implementation in singleton wrapper:
+
+void QDirIterator_Wrapper::init(RJSApi& handler) {
+
+    //qmlRegisterType<QDirIterator_Wrapper>("org.qcad", 1, 0, "QDirIterator_Wrapper");
+    qmlRegisterInterface<QDirIterator_Wrapper>("QDirIterator_Wrapper", 1);
+
+
+    QJSEngine* engine = handler.getEngine();
+
+
+    // make type scriptable for JS files:
+    QJSValue global = engine->globalObject();
+    RJSType_QDirIterator* t = new RJSType_QDirIterator();
+    global.setProperty("RJSType_QDirIterator", engine->newQObject(t));
+
+    // initialize ID for this type:
+    RJSType_QDirIterator::getIdStatic();
+
+
+
+    // wrapper:
+    QJSValue mo = engine->newQMetaObject(&QDirIterator_Wrapper::staticMetaObject);
+    engine->globalObject().setProperty("QDirIterator_Wrapper", mo);
+
+
+
+    // JS base class:
+    //QJSValue mob = engine->newQMetaObject(&QDirIterator_BaseJs::staticMetaObject);
+    //engine->globalObject().setProperty("QDirIterator_BaseJs", mob);
+
+    QString fileName = ":generator/js/QDirIterator.js";
+    QFile scriptFile(fileName);
+    if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
         return;
-      }
-      QTextStream stream(&scriptFile);
-      QString contents = stream.readAll();
-      scriptFile.close();
-
-      qDebug() << "Evaluating file: " << fileName;
-      QJSValue result = engine->evaluate(contents, fileName);
-      if (result.isError()) {
-          qWarning()
-              << "Uncaught exception at line"
-              << result.property("lineNumber").toInt()
-              << ":" << result.toString();
-      }
     }
-  
-    /*
-    // special constructor used as prototype:
-    QDirIterator_Wrapper::QDirIterator_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
-            //setObjectName("QDirIterator_Wrapper");
-            setEngine(e);
+    QTextStream stream(&scriptFile);
+    QString contents = stream.readAll();
+    scriptFile.close();
 
-            // signal forwarding:
-            //initConnections();
-          }
-        
-    */
+    qDebug() << "Evaluating file: " << fileName;
+    QJSValue result = engine->evaluate(contents, fileName);
+    if (result.isError()) {
+        qWarning()
+                << "Uncaught exception at line"
+                << result.property("lineNumber").toInt()
+                << ":" << result.toString();
+    }
+}
 
-    
-      // special constructor to wrap existing object:
-      QDirIterator_Wrapper::QDirIterator_Wrapper(RJSApi& h, QDirIterator* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
-              //RDebug::incCounter(QString("QDirIterator_Wrapper_") + handler.getEngine()->objectName());
-              //RDebug::incCounter(QString("QDirIterator_Wrapper"));
-              //setObjectName("QDirIterator_Wrapper");
-              //setHandler(h);
+/*
+// special constructor used as prototype:
+QDirIterator_Wrapper::QDirIterator_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
+        //setObjectName("QDirIterator_Wrapper");
+        setEngine(e);
 
-              // signal forwarding:
-              initConnections();
-            }
-          
+        // signal forwarding:
+        //initConnections();
+      }
 
-      // destructor:
-      QDirIterator_Wrapper::~QDirIterator_Wrapper() {
-            //RDebug::decCounter(QString("QDirIterator_Wrapper_") + handler.getEngine()->objectName());
-            //RDebug::decCounter(QString("QDirIterator_Wrapper"));
+*/
 
-            //qDebug() << "QDirIterator_Wrapper::~QDirIterator_Wrapper";
 
-            // tell script handler that this wrapper no longer exists:
-            handler.unregisterWrapper(*this);
+// special constructor to wrap existing object:
+QDirIterator_Wrapper::QDirIterator_Wrapper(RJSApi& h, QDirIterator* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+    //RDebug::incCounter(QString("QDirIterator_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::incCounter(QString("QDirIterator_Wrapper"));
+    //setObjectName("QDirIterator_Wrapper");
+    //setHandler(h);
 
-            
-            if (wrappedCreated) {
-              
-                  // delete wrapped object (copyable, JS ownership)
-                  //qDebug() << "deleting instance of QDirIterator";
-                  delete wrapped;
-                
-            }
-            
-          }
-        
-    // initialization of signal forwarding
-    
-        void QDirIterator_Wrapper::initConnections() {
+    // signal forwarding:
+    initConnections();
+}
 
-          //setObjectName("QDirIterator_Wrapper");
 
-          // tell script handler that this wrapper needs to be deleted if the engine is deleted:
-          handler.registerWrapper(*this);
+// destructor:
+QDirIterator_Wrapper::~QDirIterator_Wrapper() {
+    //RDebug::decCounter(QString("QDirIterator_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::decCounter(QString("QDirIterator_Wrapper"));
 
-          
-              // wrapped object is not a QObject:
-              // wrapper is managed by script engine:
-              //QJSEngine::setObjectOwnership(this, QJSEngine::CppOwnership);
-            
+    //qDebug() << "QDirIterator_Wrapper::~QDirIterator_Wrapper";
 
-          if (hasWrapped()) {
-            
-            // set up signal forwarding:
-            
-          }
-        }
-      
+    // tell script handler that this wrapper no longer exists:
+    handler.unregisterWrapper(*this);
 
-  // constructors:
-  
-    // Class: QDirIterator
-    // Function: 
-    // Source: 
-    // Static: false
-    // Parameters: 4
-    // preceding Parameters: -1
+
+    if (wrappedCreated) {
+
+        // delete wrapped object (copyable, JS ownership)
+        //qDebug() << "deleting instance of QDirIterator";
+        delete wrapped;
+
+    }
+
+}
+
+// initialization of signal forwarding
+
+void QDirIterator_Wrapper::initConnections() {
+
+    //setObjectName("QDirIterator_Wrapper");
+
+    // tell script handler that this wrapper needs to be deleted if the engine is deleted:
+    handler.registerWrapper(*this);
+
+
+    // wrapped object is not a QObject:
+    // wrapper is managed by script engine:
+    //QJSEngine::setObjectOwnership(this, QJSEngine::CppOwnership);
+
+
+    if (hasWrapped()) {
+
+        // set up signal forwarding:
+
+    }
+}
+
+
+// constructors:
+
+// Class: QDirIterator
+// Function:
+// Source:
+// Static: false
+// Parameters: 4
+// preceding Parameters: -1
 QDirIterator_Wrapper::QDirIterator_Wrapper
-                
-              (
-                
-                  // RJSApi:
-                  QObject* h
-                  ,
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3, 
-  const QJSValue& 
-  a4
-              ) 
-              
-                : RJSWrapperObj(*(RJSApi*)h)
-              
-              {
-                
-                  //RDebug::incCounter(QString("QDirIterator_Wrapper_") + handler.getEngine()->objectName());
-                  //RDebug::incCounter(QString("QDirIterator_Wrapper"));
-                
-      // check parameter types:
-      if (
+
+(
+
+    // RJSApi:
+    QObject* h
+    ,
+    const QJSValue&
+    a1,
+    const QJSValue&
+    a2,
+    const QJSValue&
+    a3,
+    const QJSValue&
+    a4
+)
+
+    : RJSWrapperObj(*(RJSApi*)h)
+
+{
+
+    //RDebug::incCounter(QString("QDirIterator_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::incCounter(QString("QDirIterator_Wrapper"));
+
+    // check parameter types:
+    if (
         RJSHelper::is_QString(handler, a1
-  )
+                             )
 
-   && RJSHelper::is_QStringList(handler, a2
-  )
+        && RJSHelper::is_QStringList(handler, a2
+                                    )
 
-   && RJSHelper::is_QDir_Filters(handler, a3
-    , true
-  
-  )
+        && RJSHelper::is_QDir_Filters(handler, a3
+                                      , true
 
-   && RJSHelper::is_QDirIterator_IteratorFlags(handler, a4
-    , true
-  
-  )
+                                     )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: path (QString)
-  
-QString a1_cpp;
+        && RJSHelper::is_QDirIterator_IteratorFlags(handler, a4
+                , true
 
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-  // convert js parameter to cpp: nameFilters (QStringList)
-  
-QStringList a2_cpp;
+                                                   )
 
-      a2_cpp = RJSHelper::js2cpp_QStringList(handler, a2);
-        
-  // convert js parameter to cpp: filters (QDir::Filters)
-  
-QDir::Filters a3_cpp;
 
-      
-          if (a3.isUndefined()) {
+    ) {
+
+        // prepare parameters:
+
+        // convert js parameter to cpp: path (QString)
+
+        QString a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+
+        // convert js parameter to cpp: nameFilters (QStringList)
+
+        QStringList a2_cpp;
+
+        a2_cpp = RJSHelper::js2cpp_QStringList(handler, a2);
+
+        // convert js parameter to cpp: filters (QDir::Filters)
+
+        QDir::Filters a3_cpp;
+
+
+        if (a3.isUndefined()) {
             a3_cpp = QDir::NoFilter;
-          }
-          else {
+        }
+        else {
             a3_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a3);
-          }
-        
-  // convert js parameter to cpp: flags (QDirIterator::IteratorFlags)
-  
-QDirIterator::IteratorFlags a4_cpp;
+        }
 
-      
-          if (a4.isUndefined()) {
+        // convert js parameter to cpp: flags (QDirIterator::IteratorFlags)
+
+        QDirIterator::IteratorFlags a4_cpp;
+
+
+        if (a4.isUndefined()) {
             a4_cpp = QDirIterator::NoIteratorFlags;
-          }
-          else {
+        }
+        else {
             a4_cpp = RJSHelper::js2cpp_QDirIterator_IteratorFlags(handler, a4);
-          }
-        
+        }
 
-    // call function:
-    
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QDirIterator(
-                a1_cpp
-    , a2_cpp
-    , a3_cpp
-    , a4_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QDirIterator(
+            a1_cpp
+            , a2_cpp
+            , a3_cpp
+            , a4_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -244,65 +244,65 @@ QDirIterator::IteratorFlags a4_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QString(handler, a1
-  )
+                             )
 
-   && RJSHelper::is_QDir_Filters(handler, a2
-  )
+        && RJSHelper::is_QDir_Filters(handler, a2
+                                     )
 
-   && RJSHelper::is_QDirIterator_IteratorFlags(handler, a3
-    , true
-  
-  )
+        && RJSHelper::is_QDirIterator_IteratorFlags(handler, a3
+                , true
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: path (QString)
-  
-QString a1_cpp;
+                                                   )
 
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
-  // convert js parameter to cpp: filter (QDir::Filters)
-  
-QDir::Filters a2_cpp;
 
-      a2_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a2);
-        
-  // convert js parameter to cpp: flags (QDirIterator::IteratorFlags)
-  
-QDirIterator::IteratorFlags a3_cpp;
+    ) {
 
-      
-          if (a3.isUndefined()) {
+        // prepare parameters:
+
+        // convert js parameter to cpp: path (QString)
+
+        QString a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+
+        // convert js parameter to cpp: filter (QDir::Filters)
+
+        QDir::Filters a2_cpp;
+
+        a2_cpp = RJSHelper::js2cpp_QDir_Filters(handler, a2);
+
+        // convert js parameter to cpp: flags (QDirIterator::IteratorFlags)
+
+        QDirIterator::IteratorFlags a3_cpp;
+
+
+        if (a3.isUndefined()) {
             a3_cpp = QDirIterator::NoIteratorFlags;
-          }
-          else {
+        }
+        else {
             a3_cpp = RJSHelper::js2cpp_QDirIterator_IteratorFlags(handler, a3);
-          }
-        
+        }
 
-    // call function:
-    
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QDirIterator(
-                a1_cpp
-    , a2_cpp
-    , a3_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QDirIterator(
+            a1_cpp
+            , a2_cpp
+            , a3_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -310,55 +310,55 @@ QDirIterator::IteratorFlags a3_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QDir(handler, a1
-  )
+                          )
 
-   && RJSHelper::is_QDirIterator_IteratorFlags(handler, a2
-    , true
-  
-  )
+        && RJSHelper::is_QDirIterator_IteratorFlags(handler, a2
+                , true
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: dir (QDir)
-  
-QDir a1_cpp;
+                                                   )
 
-      a1_cpp = RJSHelper::js2cpp_QDir(handler, a1);
-        
-  // convert js parameter to cpp: flags (QDirIterator::IteratorFlags)
-  
-QDirIterator::IteratorFlags a2_cpp;
 
-      
-          if (a2.isUndefined()) {
+    ) {
+
+        // prepare parameters:
+
+        // convert js parameter to cpp: dir (QDir)
+
+        QDir a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QDir(handler, a1);
+
+        // convert js parameter to cpp: flags (QDirIterator::IteratorFlags)
+
+        QDirIterator::IteratorFlags a2_cpp;
+
+
+        if (a2.isUndefined()) {
             a2_cpp = QDirIterator::NoIteratorFlags;
-          }
-          else {
+        }
+        else {
             a2_cpp = RJSHelper::js2cpp_QDirIterator_IteratorFlags(handler, a2);
-          }
-        
+        }
 
-    // call function:
-    
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QDirIterator(
-                a1_cpp
-    , a2_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QDirIterator(
+            a1_cpp
+            , a2_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -366,433 +366,433 @@ QDirIterator::IteratorFlags a2_cpp;
         initConnections();
         return;
 
-      
-  }
 
-                    // no constructor without arguments defined
-                    // allow constructor for prototype objects without args:
-                    if (
-                      a1.isUndefined()
-   && a2.isUndefined()
-   && a3.isUndefined()
-   && a4.isUndefined()
-  
-                      ) {
-                      wrapped = nullptr;
-                      wrappedCreated = false;
-                      return;
-                    }
-                  
+    }
 
-                  qWarning() << "no matching constructor variant found for QDirIterator";
-                  wrapped = nullptr;
-                  wrappedCreated = false;
-                  handler.trace();
-                
-              }
-            
+    // no constructor without arguments defined
+    // allow constructor for prototype objects without args:
+    if (
+        a1.isUndefined()
+        && a2.isUndefined()
+        && a3.isUndefined()
+        && a4.isUndefined()
 
-    // non-static functions:
-    
-    // Class: QDirIterator
-    // Function: next
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+    ) {
+        wrapped = nullptr;
+        wrappedCreated = false;
+        return;
+    }
 
-                QJSValue 
-              QDirIterator_Wrapper::next
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
 
-    // call function:
-    
-          if (!hasWrapped()) {
+    qWarning() << "no matching constructor variant found for QDirIterator";
+    wrapped = nullptr;
+    wrappedCreated = false;
+    handler.trace();
+
+}
+
+
+// non-static functions:
+
+// Class: QDirIterator
+// Function: next
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QDirIterator_Wrapper::next
+(
+
+)
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDirIterator* w = getWrapped();
-                QString res = 
-                    
-                w->next(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for next";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDirIterator
-    // Function: nextFileInfo
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QDirIterator* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QDirIterator_Wrapper::nextFileInfo
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
+            w->next(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for next";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QDirIterator
+// Function: nextFileInfo
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QDirIterator_Wrapper::nextFileInfo
+(
+
+)
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDirIterator* w = getWrapped();
-                QFileInfo res = 
-                    
-                w->nextFileInfo(
-                  
-                );
-              
-            // return type: QFileInfo
 
-            return RJSHelper::cpp2js_QFileInfo(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for nextFileInfo";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDirIterator
-    // Function: hasNext
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QDirIterator* w = getWrapped();
+        QFileInfo res =
 
-                QJSValue 
-              QDirIterator_Wrapper::hasNext
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->nextFileInfo(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QFileInfo
+
+        return RJSHelper::cpp2js_QFileInfo(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for nextFileInfo";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QDirIterator
+// Function: hasNext
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QDirIterator_Wrapper::hasNext
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDirIterator* w = getWrapped();
-                bool res = 
-                    
-                w->hasNext(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for hasNext";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDirIterator
-    // Function: fileName
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QDirIterator* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QDirIterator_Wrapper::fileName
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->hasNext(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for hasNext";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QDirIterator
+// Function: fileName
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QDirIterator_Wrapper::fileName
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDirIterator* w = getWrapped();
-                QString res = 
-                    
-                w->fileName(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for fileName";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDirIterator
-    // Function: filePath
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QDirIterator* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QDirIterator_Wrapper::filePath
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->fileName(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for fileName";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QDirIterator
+// Function: filePath
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QDirIterator_Wrapper::filePath
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDirIterator* w = getWrapped();
-                QString res = 
-                    
-                w->filePath(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for filePath";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDirIterator
-    // Function: fileInfo
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QDirIterator* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QDirIterator_Wrapper::fileInfo
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->filePath(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for filePath";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QDirIterator
+// Function: fileInfo
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QDirIterator_Wrapper::fileInfo
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDirIterator* w = getWrapped();
-                QFileInfo res = 
-                    
-                w->fileInfo(
-                  
-                );
-              
-            // return type: QFileInfo
 
-            return RJSHelper::cpp2js_QFileInfo(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for fileInfo";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QDirIterator
-    // Function: path
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QDirIterator* w = getWrapped();
+        QFileInfo res =
 
-                QJSValue 
-              QDirIterator_Wrapper::path
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->fileInfo(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QFileInfo
+
+        return RJSHelper::cpp2js_QFileInfo(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for fileInfo";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QDirIterator
+// Function: path
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QDirIterator_Wrapper::path
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QDirIterator* w = getWrapped();
-                QString res = 
-                    
-                w->path(
-                  
-                );
-              
-            // return type: QString
-
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for path";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-
-  // member functions for static properties, forward to static function
-  
+        }
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
+        // non-static member function:
+        // call function of wrapped object:
+
+        // call function of C++ class:
+        QDirIterator* w = getWrapped();
+        QString res =
+
+            w->path(
+
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for path";
+    handler.trace();
+    return QJSValue();
+
+}
+
+
+// member functions for static properties, forward to static function
+
+
+
+// protected overwritten functions / events and their public invokable counterparts:
+

@@ -1,131 +1,129 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QTextFrameFormat() {
-        
+// class constructor:
+function QTextFrameFormat() {
 
-        // should be QTextFrameFormat_BaseJs.call(this, engine):
-        //QTextFrameFormat.prototype = new QTextFrameFormat_BaseJs(engine);
 
-        var wrapper;
+    // should be QTextFrameFormat_BaseJs.call(this, engine):
+    //QTextFrameFormat.prototype = new QTextFrameFormat_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QTextFrameFormat.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QTextFrameFormat.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextFrameFormat);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QTextFrameFormat);
             //}
-          }
-          else {
+        } else {
             qWarning("QTextFrameFormat.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 0) {
-    
+
+    } else {
+
+        if (arguments.length == 0) {
+
             self = this;
             wrapper = new QTextFrameFormat_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QTextFrameFormat);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QTextFrameFormat);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QTextFrameFormat);
-  }
 
-  
-  else {
-    
-        print("QTextFrameFormat(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QTextFrameFormat);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QTextFrameFormat(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QTextFrameFormat.prototype = new QTextFrameFormat_BaseJs(engine);
-      //QTextFrameFormat.prototype = new QTextFrameFormat_Wrapper(engine);
-      QTextFrameFormat.prototype = new Object();
-
-      QTextFrameFormat.prototype.toString = function() {
-          //return "QTextFrameFormat [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QTextFrameFormat [JS]";
-        };
-      QTextFrameFormat.getObjectType = function() {
-        return RJSType_QTextFrameFormat.getIdStatic();
-      };
-
-      QTextFrameFormat.prototype.getObjectType = function() {
-        return RJSType_QTextFrameFormat.getIdStatic();
-      };
-
-      QTextFrameFormat.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QTextFrameFormat.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QTextFormat.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: FormatType
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QTextFrameFormat.prototype = new QTextFrameFormat_BaseJs(engine);
+//QTextFrameFormat.prototype = new QTextFrameFormat_Wrapper(engine);
+QTextFrameFormat.prototype = new Object();
+
+QTextFrameFormat.prototype.toString = function() {
+    //return "QTextFrameFormat [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QTextFrameFormat [JS]";
+};
+QTextFrameFormat.getObjectType = function() {
+    return RJSType_QTextFrameFormat.getIdStatic();
+};
+
+QTextFrameFormat.prototype.getObjectType = function() {
+    return RJSType_QTextFrameFormat.getIdStatic();
+};
+
+QTextFrameFormat.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QTextFrameFormat.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QTextFormat.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: FormatType
 QTextFrameFormat.InvalidFormat = QTextFrameFormat_Wrapper.InvalidFormat;
 QTextFrameFormat.BlockFormat = QTextFrameFormat_Wrapper.BlockFormat;
 QTextFrameFormat.CharFormat = QTextFrameFormat_Wrapper.CharFormat;
@@ -133,7 +131,7 @@ QTextFrameFormat.ListFormat = QTextFrameFormat_Wrapper.ListFormat;
 QTextFrameFormat.FrameFormat = QTextFrameFormat_Wrapper.FrameFormat;
 QTextFrameFormat.UserFormat = QTextFrameFormat_Wrapper.UserFormat;
 
-  // enum: Property
+// enum: Property
 QTextFrameFormat.ObjectIndex = QTextFrameFormat_Wrapper.ObjectIndex;
 QTextFrameFormat.CssFloat = QTextFrameFormat_Wrapper.CssFloat;
 QTextFrameFormat.LayoutDirection = QTextFrameFormat_Wrapper.LayoutDirection;
@@ -245,24 +243,24 @@ QTextFrameFormat.FullWidthSelection = QTextFrameFormat_Wrapper.FullWidthSelectio
 QTextFrameFormat.PageBreakPolicy = QTextFrameFormat_Wrapper.PageBreakPolicy;
 QTextFrameFormat.UserProperty = QTextFrameFormat_Wrapper.UserProperty;
 
-  // enum: ObjectTypes
+// enum: ObjectTypes
 QTextFrameFormat.NoObject = QTextFrameFormat_Wrapper.NoObject;
 QTextFrameFormat.ImageObject = QTextFrameFormat_Wrapper.ImageObject;
 QTextFrameFormat.TableObject = QTextFrameFormat_Wrapper.TableObject;
 QTextFrameFormat.TableCellObject = QTextFrameFormat_Wrapper.TableCellObject;
 QTextFrameFormat.UserObject = QTextFrameFormat_Wrapper.UserObject;
 
-  // enum: PageBreakFlag
+// enum: PageBreakFlag
 QTextFrameFormat.PageBreak_Auto = QTextFrameFormat_Wrapper.PageBreak_Auto;
 QTextFrameFormat.PageBreak_AlwaysBefore = QTextFrameFormat_Wrapper.PageBreak_AlwaysBefore;
 QTextFrameFormat.PageBreak_AlwaysAfter = QTextFrameFormat_Wrapper.PageBreak_AlwaysAfter;
 
-  // enum: Position
+// enum: Position
 QTextFrameFormat.InFlow = QTextFrameFormat_Wrapper.InFlow;
 QTextFrameFormat.FloatLeft = QTextFrameFormat_Wrapper.FloatLeft;
 QTextFrameFormat.FloatRight = QTextFrameFormat_Wrapper.FloatRight;
 
-  // enum: BorderStyle
+// enum: BorderStyle
 QTextFrameFormat.BorderStyle_None = QTextFrameFormat_Wrapper.BorderStyle_None;
 QTextFrameFormat.BorderStyle_Dotted = QTextFrameFormat_Wrapper.BorderStyle_Dotted;
 QTextFrameFormat.BorderStyle_Dashed = QTextFrameFormat_Wrapper.BorderStyle_Dashed;
@@ -276,25 +274,24 @@ QTextFrameFormat.BorderStyle_Inset = QTextFrameFormat_Wrapper.BorderStyle_Inset;
 QTextFrameFormat.BorderStyle_Outset = QTextFrameFormat_Wrapper.BorderStyle_Outset;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QTextFrameFormat.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QTextFrameFormat.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QTextFrameFormat.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QTextFrameFormat.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

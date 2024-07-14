@@ -1,51 +1,51 @@
 
-  // Auto generated
-  
-    #ifndef QMENU_H_WRAPPER
-    #define QMENU_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QMENU_H_WRAPPER
+#define QMENU_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QStyleOptionMenuItem>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QMenu>
-      
-      // wrapped object is QMenu_Base class if new object is created: 
-      #include "qmenu_base.h"
-    
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QMenu_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QMenu_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QStyleOptionMenuItem>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QMenu>
+
+// wrapped object is QMenu_Base class if new object is created:
+#include "qmenu_base.h"
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QMenu_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QMenu_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QMenu
     // Function: tr
     // Source: QObject
@@ -53,30 +53,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    tr
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setTabOrder
     // Source: QWidget
@@ -84,26 +84,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabOrder
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabOrder
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: mouseGrabber
     // Source: QWidget
@@ -111,18 +111,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseGrabber
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    mouseGrabber
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: keyboardGrabber
     // Source: QWidget
@@ -130,53 +130,53 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardGrabber
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    keyboardGrabber
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: exec
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  exec
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    exec
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
 #if defined(Q_OS_MACOS)||defined(Q_CLANG_QDOC)
 
 #endif
@@ -186,519 +186,519 @@
 #endif
 
 
-      private:
-          RJSApi& handler;
-          //static QMenu_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QMenu
-    class QTJSAPI_EXPORT QMenu_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
-    QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     modal READ isModal
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowModality READ windowModality WRITE setWindowModality
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     enabled READ isEnabled WRITE setEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     geometry READ geometry WRITE setGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameGeometry READ frameGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     normalGeometry READ normalGeometry
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     x READ x
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     y READ y
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     pos READ pos WRITE move
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     frameSize READ frameSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     size READ size WRITE resize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     width READ width
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     height READ height
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     rect READ rect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     childrenRect READ childrenRect
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     childrenRegion READ childrenRegion
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizePolicy READ sizePolicy WRITE setSizePolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumSize READ minimumSize WRITE setMinimumSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumSize READ maximumSize WRITE setMaximumSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumWidth READ minimumWidth WRITE setMinimumWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumHeight READ minimumHeight WRITE setMinimumHeight
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumWidth READ maximumWidth WRITE setMaximumWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumHeight READ maximumHeight WRITE setMaximumHeight
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizeIncrement READ sizeIncrement WRITE setSizeIncrement
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     baseSize READ baseSize WRITE setBaseSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     palette READ palette WRITE setPalette
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     font READ font WRITE setFont
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     cursor READ cursor WRITE setCursor
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     mouseTracking READ hasMouseTracking WRITE setMouseTracking
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     tabletTracking READ hasTabletTracking WRITE setTabletTracking
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     isActiveWindow READ isActiveWindow
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     focusPolicy READ focusPolicy WRITE setFocusPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     focus READ hasFocus
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     contextMenuPolicy READ contextMenuPolicy WRITE setContextMenuPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     updatesEnabled READ updatesEnabled WRITE setUpdatesEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     visible READ isVisible WRITE setVisible
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimized READ isMinimized
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximized READ isMaximized
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     fullScreen READ isFullScreen
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     sizeHint READ sizeHint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     minimumSizeHint READ minimumSizeHint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     acceptDrops READ acceptDrops WRITE setAcceptDrops
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowTitle READ windowTitle WRITE setWindowTitle
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowIcon READ windowIcon WRITE setWindowIcon
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowIconText READ windowIconText WRITE setWindowIconText
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowOpacity READ windowOpacity WRITE setWindowOpacity
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowModified READ isWindowModified WRITE setWindowModified
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTip READ toolTip WRITE setToolTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTipDuration READ toolTipDuration WRITE setToolTipDuration
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     statusTip READ statusTip WRITE setStatusTip
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     whatsThis READ whatsThis WRITE setWhatsThis
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     accessibleName READ accessibleName WRITE setAccessibleName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     accessibleDescription READ accessibleDescription WRITE setAccessibleDescription
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     layoutDirection READ layoutDirection WRITE setLayoutDirection
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoFillBackground READ autoFillBackground WRITE setAutoFillBackground
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     styleSheet READ styleSheet WRITE setStyleSheet
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     locale READ locale WRITE setLocale
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     windowFilePath READ windowFilePath WRITE setWindowFilePath
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     inputMethodHints READ inputMethodHints WRITE setInputMethodHints
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     tearOffEnabled READ isTearOffEnabled WRITE setTearOffEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     title READ title WRITE setTitle
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     icon READ icon WRITE setIcon
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     separatorsCollapsible READ separatorsCollapsible WRITE setSeparatorsCollapsible
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     toolTipsVisible READ toolTipsVisible WRITE setToolTipsVisible
-  )
-
-
-    private:
-      // disable copy constructor:
-      QMenu_Wrapper(const QMenu_Wrapper&);
-
-    public:
-      // initialization of QMenu:
-      static void init(RJSApi& handler);
-
-      
-        static QMenu* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
-
-          // hook for modules to cast from other types to base QMenu:
-          for (int i=0; i<basecasters_QMenu.length(); i++) {
+private:
+    RJSApi& handler;
+    //static QMenu_WrapperSingleton* _singleInstance;
+
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QMenu
+class QTJSAPI_EXPORT QMenu_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        modal READ isModal
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowModality READ windowModality WRITE setWindowModality
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        enabled READ isEnabled WRITE setEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        geometry READ geometry WRITE setGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameGeometry READ frameGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        normalGeometry READ normalGeometry
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        x READ x
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        y READ y
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        pos READ pos WRITE move
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        frameSize READ frameSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        size READ size WRITE resize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        width READ width
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        height READ height
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        rect READ rect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        childrenRect READ childrenRect
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        childrenRegion READ childrenRegion
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizePolicy READ sizePolicy WRITE setSizePolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumSize READ minimumSize WRITE setMinimumSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumSize READ maximumSize WRITE setMaximumSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumWidth READ minimumWidth WRITE setMinimumWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumHeight READ minimumHeight WRITE setMinimumHeight
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumWidth READ maximumWidth WRITE setMaximumWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumHeight READ maximumHeight WRITE setMaximumHeight
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizeIncrement READ sizeIncrement WRITE setSizeIncrement
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        baseSize READ baseSize WRITE setBaseSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        palette READ palette WRITE setPalette
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        font READ font WRITE setFont
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        cursor READ cursor WRITE setCursor
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        mouseTracking READ hasMouseTracking WRITE setMouseTracking
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        tabletTracking READ hasTabletTracking WRITE setTabletTracking
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        isActiveWindow READ isActiveWindow
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        focusPolicy READ focusPolicy WRITE setFocusPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        focus READ hasFocus
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        contextMenuPolicy READ contextMenuPolicy WRITE setContextMenuPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        updatesEnabled READ updatesEnabled WRITE setUpdatesEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        visible READ isVisible WRITE setVisible
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimized READ isMinimized
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximized READ isMaximized
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        fullScreen READ isFullScreen
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        sizeHint READ sizeHint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        minimumSizeHint READ minimumSizeHint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        acceptDrops READ acceptDrops WRITE setAcceptDrops
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowTitle READ windowTitle WRITE setWindowTitle
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowIcon READ windowIcon WRITE setWindowIcon
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowIconText READ windowIconText WRITE setWindowIconText
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowOpacity READ windowOpacity WRITE setWindowOpacity
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowModified READ isWindowModified WRITE setWindowModified
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTip READ toolTip WRITE setToolTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTipDuration READ toolTipDuration WRITE setToolTipDuration
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        statusTip READ statusTip WRITE setStatusTip
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        whatsThis READ whatsThis WRITE setWhatsThis
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        accessibleName READ accessibleName WRITE setAccessibleName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        accessibleDescription READ accessibleDescription WRITE setAccessibleDescription
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        layoutDirection READ layoutDirection WRITE setLayoutDirection
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoFillBackground READ autoFillBackground WRITE setAutoFillBackground
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        styleSheet READ styleSheet WRITE setStyleSheet
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        locale READ locale WRITE setLocale
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        windowFilePath READ windowFilePath WRITE setWindowFilePath
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        inputMethodHints READ inputMethodHints WRITE setInputMethodHints
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        tearOffEnabled READ isTearOffEnabled WRITE setTearOffEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        title READ title WRITE setTitle
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        icon READ icon WRITE setIcon
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        separatorsCollapsible READ separatorsCollapsible WRITE setSeparatorsCollapsible
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        toolTipsVisible READ toolTipsVisible WRITE setToolTipsVisible
+    )
+
+
+private:
+    // disable copy constructor:
+    QMenu_Wrapper(const QMenu_Wrapper&);
+
+public:
+    // initialization of QMenu:
+    static void init(RJSApi& handler);
+
+
+    static QMenu* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QMenu:
+        for (int i=0; i<basecasters_QMenu.length(); i++) {
             RJSBasecaster_QMenu* basecaster = basecasters_QMenu[i];
             QMenu* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QMenu:
-          if (t==RJSType_QMenu::getIdStatic()) {
+        // object is a pointer to base class QMenu:
+        if (t==RJSType_QMenu::getIdStatic()) {
             return (QMenu*)vp;
-          }
-
-          qWarning() << "QMenu_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QMenu* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QMenu*: wrapper wraps NULL";
-          }
+        qWarning() << "QMenu_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QMenu* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QMenu*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QMenu* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QMenu*: wrapper wraps NULL";
         }
-      
+
+        QMenu* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QMenu*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QMenu_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QMenu_Wrapper(RJSApi& h, QMenu* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QMenu_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QMenu_Wrapper(RJSApi& h, QMenu* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QMenu_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QMenu
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QMenu_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QMenu_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
 #if defined(Q_OS_MACOS)||defined(Q_CLANG_QDOC)
 
 #endif
@@ -709,7 +709,7 @@
 
 
     // non-static functions:
-    
+
     // Class: QMenu
     // Function: objectName
     // Source: QObject
@@ -717,20 +717,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setObjectName
     // Source: QObject
@@ -738,22 +738,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: isWidgetType
     // Source: QObject
@@ -761,20 +761,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isWindowType
     // Source: QObject
@@ -782,20 +782,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: signalsBlocked
     // Source: QObject
@@ -803,20 +803,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: blockSignals
     // Source: QObject
@@ -824,22 +824,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: findChild
     // Source: QObject
@@ -847,28 +847,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: children
     // Source: QObject
@@ -876,20 +876,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: installEventFilter
     // Source: QObject
@@ -897,22 +897,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: removeEventFilter
     // Source: QObject
@@ -920,22 +920,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: dumpObjectTree
     // Source: QObject
@@ -943,18 +943,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: dumpObjectInfo
     // Source: QObject
@@ -962,18 +962,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setProperty
     // Source: QObject
@@ -981,26 +981,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: property
     // Source: QObject
@@ -1008,24 +1008,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -1033,20 +1033,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: parent
     // Source: QObject
@@ -1054,20 +1054,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: deleteLater
     // Source: QObject
@@ -1075,18 +1075,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: devType
     // Source: QWidget
@@ -1094,20 +1094,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    devType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: createWinId
     // Source: QWidget
@@ -1115,18 +1115,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  createWinId
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    createWinId
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: isWindow
     // Source: QWidget
@@ -1134,20 +1134,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isModal
     // Source: QWidget
@@ -1155,20 +1155,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isModal
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isModal
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: windowModality
     // Source: QWidget
@@ -1176,20 +1176,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowModality
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowModality
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setWindowModality
     // Source: QWidget
@@ -1197,22 +1197,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowModality
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowModality
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: isEnabled
     // Source: QWidget
@@ -1220,20 +1220,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isEnabledTo
     // Source: QWidget
@@ -1241,24 +1241,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEnabledTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEnabledTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setEnabled
     // Source: QWidget
@@ -1266,22 +1266,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setDisabled
     // Source: QWidget
@@ -1289,22 +1289,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDisabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDisabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setWindowModified
     // Source: QWidget
@@ -1312,22 +1312,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowModified
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: frameGeometry
     // Source: QWidget
@@ -1335,20 +1335,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: geometry
     // Source: QWidget
@@ -1356,20 +1356,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  geometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    geometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: normalGeometry
     // Source: QWidget
@@ -1377,20 +1377,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  normalGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    normalGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: x
     // Source: QWidget
@@ -1398,20 +1398,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  x
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    x
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: y
     // Source: QWidget
@@ -1419,20 +1419,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  y
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    y
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: pos
     // Source: QWidget
@@ -1440,20 +1440,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pos
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pos
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: frameSize
     // Source: QWidget
@@ -1461,20 +1461,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  frameSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    frameSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: size
     // Source: QWidget
@@ -1482,20 +1482,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    size
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: width
     // Source: QWidget
@@ -1503,20 +1503,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  width
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    width
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: height
     // Source: QWidget
@@ -1524,20 +1524,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  height
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    height
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: rect
     // Source: QWidget
@@ -1545,20 +1545,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    rect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: childrenRect
     // Source: QWidget
@@ -1566,20 +1566,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childrenRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childrenRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: childrenRegion
     // Source: QWidget
@@ -1587,20 +1587,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childrenRegion
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childrenRegion
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: minimumSize
     // Source: QWidget
@@ -1608,20 +1608,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: maximumSize
     // Source: QWidget
@@ -1629,20 +1629,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: minimumWidth
     // Source: QWidget
@@ -1650,20 +1650,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: minimumHeight
     // Source: QWidget
@@ -1671,20 +1671,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumHeight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: maximumWidth
     // Source: QWidget
@@ -1692,20 +1692,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: maximumHeight
     // Source: QWidget
@@ -1713,20 +1713,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumHeight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setMinimumSize
     // Source: QWidget
@@ -1734,26 +1734,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setMaximumSize
     // Source: QWidget
@@ -1761,26 +1761,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setMinimumWidth
     // Source: QWidget
@@ -1788,22 +1788,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setMinimumHeight
     // Source: QWidget
@@ -1811,22 +1811,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMinimumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMinimumHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setMaximumWidth
     // Source: QWidget
@@ -1834,22 +1834,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setMaximumHeight
     // Source: QWidget
@@ -1857,22 +1857,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: sizeIncrement
     // Source: QWidget
@@ -1880,20 +1880,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeIncrement
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizeIncrement
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setSizeIncrement
     // Source: QWidget
@@ -1901,26 +1901,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizeIncrement
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSizeIncrement
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: baseSize
     // Source: QWidget
@@ -1928,20 +1928,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  baseSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    baseSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setBaseSize
     // Source: QWidget
@@ -1949,26 +1949,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBaseSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBaseSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setFixedSize
     // Source: QWidget
@@ -1976,26 +1976,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setFixedWidth
     // Source: QWidget
@@ -2003,22 +2003,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setFixedHeight
     // Source: QWidget
@@ -2026,22 +2026,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedHeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedHeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: mapToGlobal
     // Source: QWidget
@@ -2049,24 +2049,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapToGlobal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapToGlobal
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: mapFromGlobal
     // Source: QWidget
@@ -2074,24 +2074,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFromGlobal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFromGlobal
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: mapToParent
     // Source: QWidget
@@ -2099,24 +2099,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapToParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapToParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: mapFromParent
     // Source: QWidget
@@ -2124,24 +2124,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFromParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFromParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: mapTo
     // Source: QWidget
@@ -2149,28 +2149,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: mapFrom
     // Source: QWidget
@@ -2178,28 +2178,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mapFrom
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mapFrom
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: window
     // Source: QWidget
@@ -2207,20 +2207,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  window
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    window
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: nativeParentWidget
     // Source: QWidget
@@ -2228,20 +2228,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nativeParentWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nativeParentWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: topLevelWidget
     // Source: QWidget
@@ -2249,20 +2249,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  topLevelWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    topLevelWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: palette
     // Source: QWidget
@@ -2270,20 +2270,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  palette
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    palette
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setPalette
     // Source: QWidget
@@ -2291,22 +2291,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPalette
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPalette
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setBackgroundRole
     // Source: QWidget
@@ -2314,22 +2314,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBackgroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBackgroundRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: backgroundRole
     // Source: QWidget
@@ -2337,20 +2337,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  backgroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    backgroundRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setForegroundRole
     // Source: QWidget
@@ -2358,22 +2358,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setForegroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setForegroundRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: foregroundRole
     // Source: QWidget
@@ -2381,20 +2381,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  foregroundRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    foregroundRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: font
     // Source: QWidget
@@ -2402,20 +2402,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  font
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    font
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setFont
     // Source: QWidget
@@ -2423,22 +2423,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFont
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: fontInfo
     // Source: QWidget
@@ -2446,20 +2446,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fontInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fontInfo
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: cursor
     // Source: QWidget
@@ -2467,20 +2467,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cursor
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setCursor
     // Source: QWidget
@@ -2488,22 +2488,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCursor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: unsetCursor
     // Source: QWidget
@@ -2511,18 +2511,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetCursor
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setMouseTracking
     // Source: QWidget
@@ -2530,22 +2530,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMouseTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMouseTracking
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: hasMouseTracking
     // Source: QWidget
@@ -2553,20 +2553,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasMouseTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasMouseTracking
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: underMouse
     // Source: QWidget
@@ -2574,20 +2574,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  underMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    underMouse
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setTabletTracking
     // Source: QWidget
@@ -2595,22 +2595,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTabletTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTabletTracking
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: hasTabletTracking
     // Source: QWidget
@@ -2618,20 +2618,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasTabletTracking
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasTabletTracking
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setMask
     // Source: QWidget
@@ -2639,22 +2639,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMask
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: mask
     // Source: QWidget
@@ -2662,20 +2662,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mask
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: clearMask
     // Source: QWidget
@@ -2683,18 +2683,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearMask
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: grab
     // Source: QWidget
@@ -2702,22 +2702,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grab
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grab
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: grabGesture
     // Source: QWidget
@@ -2725,26 +2725,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabGesture
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabGesture
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: ungrabGesture
     // Source: QWidget
@@ -2752,22 +2752,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ungrabGesture
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    ungrabGesture
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setWindowTitle
     // Source: QWidget
@@ -2775,22 +2775,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowTitle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setStyleSheet
     // Source: QWidget
@@ -2798,22 +2798,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStyleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStyleSheet
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: styleSheet
     // Source: QWidget
@@ -2821,20 +2821,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  styleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    styleSheet
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: windowTitle
     // Source: QWidget
@@ -2842,20 +2842,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowTitle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setWindowIcon
     // Source: QWidget
@@ -2863,22 +2863,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowIcon
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: windowIcon
     // Source: QWidget
@@ -2886,20 +2886,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowIcon
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setWindowIconText
     // Source: QWidget
@@ -2907,22 +2907,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowIconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowIconText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: windowIconText
     // Source: QWidget
@@ -2930,20 +2930,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowIconText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowIconText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setWindowRole
     // Source: QWidget
@@ -2951,22 +2951,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowRole
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: windowRole
     // Source: QWidget
@@ -2974,20 +2974,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowRole
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowRole
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setWindowFilePath
     // Source: QWidget
@@ -2995,22 +2995,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFilePath
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFilePath
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: windowFilePath
     // Source: QWidget
@@ -3018,20 +3018,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowFilePath
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowFilePath
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setWindowOpacity
     // Source: QWidget
@@ -3039,22 +3039,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowOpacity
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowOpacity
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: windowOpacity
     // Source: QWidget
@@ -3062,20 +3062,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowOpacity
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowOpacity
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isWindowModified
     // Source: QWidget
@@ -3083,20 +3083,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowModified
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setToolTip
     // Source: QWidget
@@ -3104,22 +3104,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: toolTip
     // Source: QWidget
@@ -3127,20 +3127,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setToolTipDuration
     // Source: QWidget
@@ -3148,22 +3148,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTipDuration
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTipDuration
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: toolTipDuration
     // Source: QWidget
@@ -3171,20 +3171,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTipDuration
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTipDuration
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setStatusTip
     // Source: QWidget
@@ -3192,22 +3192,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStatusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStatusTip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: statusTip
     // Source: QWidget
@@ -3215,20 +3215,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  statusTip
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    statusTip
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setWhatsThis
     // Source: QWidget
@@ -3236,22 +3236,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWhatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWhatsThis
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: whatsThis
     // Source: QWidget
@@ -3259,20 +3259,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  whatsThis
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    whatsThis
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: accessibleName
     // Source: QWidget
@@ -3280,20 +3280,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  accessibleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    accessibleName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setAccessibleName
     // Source: QWidget
@@ -3301,22 +3301,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAccessibleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAccessibleName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: accessibleDescription
     // Source: QWidget
@@ -3324,20 +3324,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  accessibleDescription
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    accessibleDescription
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setAccessibleDescription
     // Source: QWidget
@@ -3345,22 +3345,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAccessibleDescription
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAccessibleDescription
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setLayoutDirection
     // Source: QWidget
@@ -3368,22 +3368,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLayoutDirection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: layoutDirection
     // Source: QWidget
@@ -3391,20 +3391,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    layoutDirection
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: unsetLayoutDirection
     // Source: QWidget
@@ -3412,18 +3412,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetLayoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetLayoutDirection
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setLocale
     // Source: QWidget
@@ -3431,22 +3431,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLocale
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLocale
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: locale
     // Source: QWidget
@@ -3454,20 +3454,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  locale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    locale
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: unsetLocale
     // Source: QWidget
@@ -3475,18 +3475,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetLocale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetLocale
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: isRightToLeft
     // Source: QWidget
@@ -3494,20 +3494,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isRightToLeft
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isRightToLeft
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isLeftToRight
     // Source: QWidget
@@ -3515,20 +3515,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isLeftToRight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isLeftToRight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isActiveWindow
     // Source: QWidget
@@ -3536,20 +3536,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isActiveWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isActiveWindow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: activateWindow
     // Source: QWidget
@@ -3557,18 +3557,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  activateWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    activateWindow
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: clearFocus
     // Source: QWidget
@@ -3576,18 +3576,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clearFocus
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setFocus
     // Source: QWidget
@@ -3595,22 +3595,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocus
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: focusPolicy
     // Source: QWidget
@@ -3618,20 +3618,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setFocusPolicy
     // Source: QWidget
@@ -3639,22 +3639,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocusPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocusPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: hasFocus
     // Source: QWidget
@@ -3662,20 +3662,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasFocus
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasFocus
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setFocusProxy
     // Source: QWidget
@@ -3683,22 +3683,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFocusProxy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFocusProxy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: focusProxy
     // Source: QWidget
@@ -3706,20 +3706,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusProxy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusProxy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: contextMenuPolicy
     // Source: QWidget
@@ -3727,20 +3727,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contextMenuPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contextMenuPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setContextMenuPolicy
     // Source: QWidget
@@ -3748,22 +3748,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setContextMenuPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setContextMenuPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: grabMouse
     // Source: QWidget
@@ -3771,22 +3771,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabMouse
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: releaseMouse
     // Source: QWidget
@@ -3794,18 +3794,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseMouse
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    releaseMouse
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: grabKeyboard
     // Source: QWidget
@@ -3813,18 +3813,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabKeyboard
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    grabKeyboard
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: releaseKeyboard
     // Source: QWidget
@@ -3832,18 +3832,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseKeyboard
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    releaseKeyboard
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: grabShortcut
     // Source: QWidget
@@ -3851,26 +3851,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  grabShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    grabShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: releaseShortcut
     // Source: QWidget
@@ -3878,22 +3878,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  releaseShortcut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    releaseShortcut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setShortcutEnabled
     // Source: QWidget
@@ -3901,26 +3901,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setShortcutAutoRepeat
     // Source: QWidget
@@ -3928,26 +3928,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setShortcutAutoRepeat
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setShortcutAutoRepeat
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: updatesEnabled
     // Source: QWidget
@@ -3955,20 +3955,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  updatesEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    updatesEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setUpdatesEnabled
     // Source: QWidget
@@ -3976,22 +3976,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setUpdatesEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setUpdatesEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: update
     // Source: QWidget
@@ -3999,34 +3999,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  update
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    update
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: repaint
     // Source: QWidget
@@ -4034,34 +4034,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  repaint
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    repaint
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setVisible
     // Source: QWidget
@@ -4069,22 +4069,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setVisible
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setHidden
     // Source: QWidget
@@ -4092,22 +4092,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHidden
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: show
     // Source: QWidget
@@ -4115,18 +4115,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  show
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    show
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: hide
     // Source: QWidget
@@ -4134,18 +4134,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hide
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    hide
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: showMinimized
     // Source: QWidget
@@ -4153,18 +4153,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showMinimized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showMinimized
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: showMaximized
     // Source: QWidget
@@ -4172,18 +4172,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showMaximized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showMaximized
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: showFullScreen
     // Source: QWidget
@@ -4191,18 +4191,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showFullScreen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showFullScreen
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: showNormal
     // Source: QWidget
@@ -4210,18 +4210,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showNormal
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    showNormal
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: close
     // Source: QWidget
@@ -4229,18 +4229,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  close
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    close
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: raise
     // Source: QWidget
@@ -4248,18 +4248,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  raise
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    raise
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: lower
     // Source: QWidget
@@ -4267,18 +4267,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lower
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    lower
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: stackUnder
     // Source: QWidget
@@ -4286,22 +4286,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  stackUnder
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    stackUnder
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: move
     // Source: QWidget
@@ -4309,26 +4309,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  move
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    move
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: resize
     // Source: QWidget
@@ -4336,26 +4336,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    resize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setGeometry
     // Source: QWidget
@@ -4363,34 +4363,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setGeometry
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: saveGeometry
     // Source: QWidget
@@ -4398,20 +4398,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  saveGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    saveGeometry
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: restoreGeometry
     // Source: QWidget
@@ -4419,22 +4419,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  restoreGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    restoreGeometry
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: adjustSize
     // Source: QWidget
@@ -4442,18 +4442,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  adjustSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    adjustSize
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: isVisible
     // Source: QWidget
@@ -4461,20 +4461,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isVisible
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isVisibleTo
     // Source: QWidget
@@ -4482,24 +4482,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isVisibleTo
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isVisibleTo
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isHidden
     // Source: QWidget
@@ -4507,20 +4507,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isHidden
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isHidden
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isMinimized
     // Source: QWidget
@@ -4528,20 +4528,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isMinimized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isMinimized
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isMaximized
     // Source: QWidget
@@ -4549,20 +4549,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isMaximized
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isMaximized
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isFullScreen
     // Source: QWidget
@@ -4570,20 +4570,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isFullScreen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isFullScreen
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: windowState
     // Source: QWidget
@@ -4591,20 +4591,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowState
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setWindowState
     // Source: QWidget
@@ -4612,22 +4612,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: overrideWindowState
     // Source: QWidget
@@ -4635,22 +4635,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overrideWindowState
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    overrideWindowState
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: minimumSizeHint
     // Source: QWidget
@@ -4658,20 +4658,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  minimumSizeHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    minimumSizeHint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: sizePolicy
     // Source: QWidget
@@ -4679,20 +4679,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizePolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizePolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setSizePolicy
     // Source: QWidget
@@ -4700,26 +4700,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSizePolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSizePolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: heightForWidth
     // Source: QWidget
@@ -4727,24 +4727,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  heightForWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    heightForWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: hasHeightForWidth
     // Source: QWidget
@@ -4752,20 +4752,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasHeightForWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasHeightForWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: visibleRegion
     // Source: QWidget
@@ -4773,20 +4773,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  visibleRegion
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    visibleRegion
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setContentsMargins
     // Source: QWidget
@@ -4794,34 +4794,34 @@
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setContentsMargins
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setContentsMargins
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: contentsMargins
     // Source: QWidget
@@ -4829,20 +4829,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contentsMargins
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contentsMargins
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: contentsRect
     // Source: QWidget
@@ -4850,20 +4850,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  contentsRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    contentsRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: layout
     // Source: QWidget
@@ -4871,20 +4871,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layout
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    layout
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setLayout
     // Source: QWidget
@@ -4892,22 +4892,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayout
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLayout
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: updateGeometry
     // Source: QWidget
@@ -4915,18 +4915,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  updateGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    updateGeometry
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setParent
     // Source: QWidget
@@ -4934,26 +4934,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: scroll
     // Source: QWidget
@@ -4961,30 +4961,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scroll
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    scroll
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: focusWidget
     // Source: QWidget
@@ -4992,20 +4992,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    focusWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: nextInFocusChain
     // Source: QWidget
@@ -5013,20 +5013,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  nextInFocusChain
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    nextInFocusChain
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: previousInFocusChain
     // Source: QWidget
@@ -5034,20 +5034,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  previousInFocusChain
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    previousInFocusChain
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: acceptDrops
     // Source: QWidget
@@ -5055,20 +5055,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  acceptDrops
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    acceptDrops
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setAcceptDrops
     // Source: QWidget
@@ -5076,22 +5076,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAcceptDrops
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAcceptDrops
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: addActions
     // Source: QWidget
@@ -5099,22 +5099,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addActions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addActions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: insertActions
     // Source: QWidget
@@ -5122,26 +5122,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertActions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertActions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: insertAction
     // Source: QWidget
@@ -5149,26 +5149,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: removeAction
     // Source: QWidget
@@ -5176,22 +5176,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: actions
     // Source: QWidget
@@ -5199,20 +5199,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  actions
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    actions
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: parentWidget
     // Source: QWidget
@@ -5220,20 +5220,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parentWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parentWidget
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setWindowFlags
     // Source: QWidget
@@ -5241,22 +5241,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: windowFlags
     // Source: QWidget
@@ -5264,20 +5264,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowFlags
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setWindowFlag
     // Source: QWidget
@@ -5285,26 +5285,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowFlag
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowFlag
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: overrideWindowFlags
     // Source: QWidget
@@ -5312,22 +5312,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overrideWindowFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    overrideWindowFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: windowType
     // Source: QWidget
@@ -5335,20 +5335,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: childAt
     // Source: QWidget
@@ -5356,28 +5356,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  childAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    childAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setAttribute
     // Source: QWidget
@@ -5385,26 +5385,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: testAttribute
     // Source: QWidget
@@ -5412,24 +5412,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  testAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    testAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: ensurePolished
     // Source: QWidget
@@ -5437,20 +5437,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ensurePolished
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    ensurePolished
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isAncestorOf
     // Source: QWidget
@@ -5458,24 +5458,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isAncestorOf
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isAncestorOf
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: autoFillBackground
     // Source: QWidget
@@ -5483,20 +5483,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoFillBackground
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoFillBackground
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setAutoFillBackground
     // Source: QWidget
@@ -5504,22 +5504,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoFillBackground
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoFillBackground
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: customContextMenuRequested
     // Source: QWidget
@@ -5527,20 +5527,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void customContextMenuRequested(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void customContextMenuRequested(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void customContextMenuRequestedEmitter(
-                const QPoint& pos
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void customContextMenuRequestedEmitter(
+        const QPoint& pos
+    );
+
     // Class: QMenu
     // Function: inputMethodQuery
     // Source: QWidget
@@ -5548,24 +5548,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  inputMethodQuery
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    inputMethodQuery
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: inputMethodHints
     // Source: QWidget
@@ -5573,20 +5573,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  inputMethodHints
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    inputMethodHints
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setInputMethodHints
     // Source: QWidget
@@ -5594,1108 +5594,1108 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setInputMethodHints
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setInputMethodHints
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: addAction
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: resizeEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      resizeEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    resizeEventSuper
+
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: addMenu
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addMenu
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: addSeparator
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addSeparator
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    addSeparator
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: addSection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addSection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addSection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: insertMenu
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertMenu
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: insertSeparator
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertSeparator
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertSeparator
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: insertSection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertSection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertSection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: isEmpty
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEmpty
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEmpty
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: clear
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clear
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clear
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setTearOffEnabled
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTearOffEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTearOffEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: isTearOffEnabled
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isTearOffEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isTearOffEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: isTearOffMenuVisible
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isTearOffMenuVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isTearOffMenuVisible
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: showTearOffMenu
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  showTearOffMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    showTearOffMenu
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: hideTearOffMenu
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hideTearOffMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    hideTearOffMenu
+    (
+
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setDefaultAction
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDefaultAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDefaultAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: defaultAction
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  defaultAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    defaultAction
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setActiveAction
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setActiveAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setActiveAction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: activeAction
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  activeAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    activeAction
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: popup
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  popup
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    popup
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: exec
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: 4
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  exec
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    exec
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: sizeHint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sizeHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sizeHint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: actionGeometry
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  actionGeometry
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    actionGeometry
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: actionAt
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  actionAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    actionAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: menuAction
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  menuAction
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    menuAction
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: title
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  title
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    title
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setTitle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTitle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTitle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: icon
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  icon
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    icon
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setIcon
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setIcon
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: setNoReplayFor
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setNoReplayFor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setNoReplayFor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 #if defined(Q_OS_MACOS)||defined(Q_CLANG_QDOC)
 
     // Class: QMenu
     // Function: setAsDockMenu
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAsDockMenu
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    setAsDockMenu
+    (
+
+
+    )
+
+    ;
+
 #endif
 
     // Class: QMenu
     // Function: separatorsCollapsible
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  separatorsCollapsible
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    separatorsCollapsible
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setSeparatorsCollapsible
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSeparatorsCollapsible
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSeparatorsCollapsible
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: toolTipsVisible
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTipsVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTipsVisible
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QMenu
     // Function: setToolTipsVisible
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setToolTipsVisible
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setToolTipsVisible
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QMenu
     // Function: aboutToShow
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void aboutToShow(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void aboutToShow(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void aboutToShowEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void aboutToShowEmitter(
+
+    );
+
     // Class: QMenu
     // Function: aboutToHide
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void aboutToHide(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void aboutToHide(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void aboutToHideEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void aboutToHideEmitter(
+
+    );
+
     // Class: QMenu
     // Function: triggered
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void triggered(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void triggered(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void triggeredEmitter(
-                QAction* action
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void triggeredEmitter(
+        QAction* action
+    );
+
     // Class: QMenu
     // Function: hovered
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void hovered(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void hovered(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void hoveredEmitter(
-                QAction* action
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void hoveredEmitter(
+        QAction* action
+    );
+
     // Class: QMenu
     // Function: mouseMoveEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      mouseMoveEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    mouseMoveEventSuper
+
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 #if QT_CONFIG(wheelevent)
 
 #endif
 
     // Class: QMenu
     // Function: paintEvent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                   
-                      // function is protected, this function can be called from JS implementation to call implementation of super class: 
-                      paintEventSuper
-                    
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
+    QJSValue
 
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
+    // function is protected, this function can be called from JS implementation to call implementation of super class:
+    paintEventSuper
 
-  // member functions for static properties, forward to static function
-  
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QMenu::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QMenu* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QMenu::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QMenu* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QMenu* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QMenu* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          QMenu_Base* getWrappedBase() {
-            QMenu* w = getWrapped();
-            return dynamic_cast<QMenu_Base*>(w);
-          }
+        return nullptr;
+    }
 
-          QMenu_Base* getWrappedBase() const {
-            QMenu* w = getWrapped();
-            return dynamic_cast<QMenu_Base*>(w);
-          }
-        
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
+    // get wrapped base object or nullptr:
+    QMenu_Base* getWrappedBase() {
+        QMenu* w = getWrapped();
+        return dynamic_cast<QMenu_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
+    QMenu_Base* getWrappedBase() const {
+        QMenu* w = getWrapped();
+        return dynamic_cast<QMenu_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
-          //void setRecFlag(bool on) const {
-          //  QMenu_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
-        private:
-        // wrapped object:
-        QMenu* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QMenu*> basecasters_QMenu;
+    //void setRecFlag(bool on) const {
+    //  QMenu_Base* wb = getWrappedBase();
+    //  if (wb) {
+    //    wb->setRecFlag(on);
+    //  }
+    //}
 
-      public:
-        static void registerBasecaster_QMenu(RJSBasecaster_QMenu* bc) {
-          basecasters_QMenu.append(bc);
-        }
-      
-    };
 
-    Q_DECLARE_METATYPE(QMenu_Wrapper*)
+private:
+    // wrapped object:
+    QMenu* wrapped;
 
-    Q_DECLARE_INTERFACE(QMenu_Wrapper, "org.qcad.QMenu_Wrapper")
 
-  
-  #endif
-  
+
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QMenu*> basecasters_QMenu;
+
+public:
+    static void registerBasecaster_QMenu(RJSBasecaster_QMenu* bc) {
+        basecasters_QMenu.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QMenu_Wrapper*)
+
+Q_DECLARE_INTERFACE(QMenu_Wrapper, "org.qcad.QMenu_Wrapper")
+
+
+#endif
+

@@ -1,179 +1,177 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QTextFormat() {
-        
+// class constructor:
+function QTextFormat() {
 
-        // should be QTextFormat_BaseJs.call(this, engine):
-        //QTextFormat.prototype = new QTextFormat_BaseJs(engine);
 
-        var wrapper;
+    // should be QTextFormat_BaseJs.call(this, engine):
+    //QTextFormat.prototype = new QTextFormat_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QTextFormat.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QTextFormat.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextFormat);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QTextFormat);
             //}
-          }
-          else {
+        } else {
             qWarning("QTextFormat.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 1) {
-    
+
+    } else {
+
+        if (arguments.length == 1) {
+
             self = this;
             wrapper = new QTextFormat_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QTextFormat);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QTextFormat);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QTextFormat);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QTextFormat_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QTextFormat);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QTextFormat);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QTextFormat_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QTextFormat);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QTextFormat);
-  }
-
-  
-  else {
-    
-        print("QTextFormat(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QTextFormat);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length == 1) {
+
+                self = this;
+                wrapper = new QTextFormat_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QTextFormat);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QTextFormat);
+            }
+
+
+            else
+
+                if (arguments.length == 0) {
+
+                    self = this;
+                    wrapper = new QTextFormat_Wrapper(
+                        // RJSApi:
+                        handler
+
+                        ////this.setWrapper(this.wrapper);
+                        //Object.setPrototypeOf(this, wrapper);
+                    );
+                    //wrapper.__WRAPPER__ = true;
+                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                    copyProperties(this, wrapper, QTextFormat);
+
+                    //this.setWrapper(this.wrapper);
+
+
+
+                    //copyProperties(this, wrapper, QTextFormat);
+                }
+
+
+                else {
+
+                    print("QTextFormat(): wrong number / type of arguments");
+
+                    console.trace();
+                }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QTextFormat.prototype = new QTextFormat_BaseJs(engine);
-      //QTextFormat.prototype = new QTextFormat_Wrapper(engine);
-      QTextFormat.prototype = new Object();
+//QTextFormat.prototype = new QTextFormat_BaseJs(engine);
+//QTextFormat.prototype = new QTextFormat_Wrapper(engine);
+QTextFormat.prototype = new Object();
 
-      QTextFormat.prototype.toString = function() {
-          //return "QTextFormat [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QTextFormat [JS]";
-        };
-      QTextFormat.getObjectType = function() {
-        return RJSType_QTextFormat.getIdStatic();
-      };
+QTextFormat.prototype.toString = function() {
+    //return "QTextFormat [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QTextFormat [JS]";
+};
+QTextFormat.getObjectType = function() {
+    return RJSType_QTextFormat.getIdStatic();
+};
 
-      QTextFormat.prototype.getObjectType = function() {
-        return RJSType_QTextFormat.getIdStatic();
-      };
+QTextFormat.prototype.getObjectType = function() {
+    return RJSType_QTextFormat.getIdStatic();
+};
 
-      QTextFormat.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QTextFormat.getIdStatic()) {
-          return true;
-        }
-
-        
-
-        return false;
+QTextFormat.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QTextFormat.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
 
-      // enum values:
-      
-  // enum: FormatType
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: FormatType
 QTextFormat.InvalidFormat = QTextFormat_Wrapper.InvalidFormat;
 QTextFormat.BlockFormat = QTextFormat_Wrapper.BlockFormat;
 QTextFormat.CharFormat = QTextFormat_Wrapper.CharFormat;
@@ -181,7 +179,7 @@ QTextFormat.ListFormat = QTextFormat_Wrapper.ListFormat;
 QTextFormat.FrameFormat = QTextFormat_Wrapper.FrameFormat;
 QTextFormat.UserFormat = QTextFormat_Wrapper.UserFormat;
 
-  // enum: Property
+// enum: Property
 QTextFormat.ObjectIndex = QTextFormat_Wrapper.ObjectIndex;
 QTextFormat.CssFloat = QTextFormat_Wrapper.CssFloat;
 QTextFormat.LayoutDirection = QTextFormat_Wrapper.LayoutDirection;
@@ -293,38 +291,37 @@ QTextFormat.FullWidthSelection = QTextFormat_Wrapper.FullWidthSelection;
 QTextFormat.PageBreakPolicy = QTextFormat_Wrapper.PageBreakPolicy;
 QTextFormat.UserProperty = QTextFormat_Wrapper.UserProperty;
 
-  // enum: ObjectTypes
+// enum: ObjectTypes
 QTextFormat.NoObject = QTextFormat_Wrapper.NoObject;
 QTextFormat.ImageObject = QTextFormat_Wrapper.ImageObject;
 QTextFormat.TableObject = QTextFormat_Wrapper.TableObject;
 QTextFormat.TableCellObject = QTextFormat_Wrapper.TableCellObject;
 QTextFormat.UserObject = QTextFormat_Wrapper.UserObject;
 
-  // enum: PageBreakFlag
+// enum: PageBreakFlag
 QTextFormat.PageBreak_Auto = QTextFormat_Wrapper.PageBreak_Auto;
 QTextFormat.PageBreak_AlwaysBefore = QTextFormat_Wrapper.PageBreak_AlwaysBefore;
 QTextFormat.PageBreak_AlwaysAfter = QTextFormat_Wrapper.PageBreak_AlwaysAfter;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QTextFormat.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QTextFormat.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QTextFormat.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QTextFormat.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

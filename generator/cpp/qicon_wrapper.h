@@ -1,50 +1,50 @@
 
-  // Auto generated
-  
-    #ifndef QICON_H_WRAPPER
-    #define QICON_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QICON_H_WRAPPER
+#define QICON_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QIconEngine>
-      
-        #include <QPainter>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QIcon>
-      
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QIcon_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QIcon_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QIconEngine>
+
+#include <QPainter>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QIcon>
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QIcon_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QIcon_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
 #if QT_DEPRECATED_SINCE(6,0)
 
 #endif
@@ -55,360 +55,360 @@
 
     // Class: QIcon
     // Function: fromTheme
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fromTheme
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    fromTheme
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: hasThemeIcon
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasThemeIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    hasThemeIcon
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: themeSearchPaths
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  themeSearchPaths
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    themeSearchPaths
+    (
+
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: setThemeSearchPaths
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setThemeSearchPaths
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setThemeSearchPaths
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: fallbackSearchPaths
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fallbackSearchPaths
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    fallbackSearchPaths
+    (
+
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: setFallbackSearchPaths
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFallbackSearchPaths
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFallbackSearchPaths
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: themeName
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  themeName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    themeName
+    (
+
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: setThemeName
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setThemeName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setThemeName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: fallbackThemeName
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fallbackThemeName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    fallbackThemeName
+    (
+
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: setFallbackThemeName
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFallbackThemeName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFallbackThemeName
+    (
 
-      private:
-          RJSApi& handler;
-          //static QIcon_WrapperSingleton* _singleInstance;
 
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QIcon
-    class QTJSAPI_EXPORT QIcon_Wrapper : public RJSWrapperObj {
+        const QJSValue&
+        a1
+        = QJSValue()
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
+    )
 
-    private:
-      // disable copy constructor:
-      QIcon_Wrapper(const QIcon_Wrapper&);
+    ;
 
-    public:
-      // initialization of QIcon:
-      static void init(RJSApi& handler);
 
-      
-        static QIcon* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+private:
+    RJSApi& handler;
+    //static QIcon_WrapperSingleton* _singleInstance;
 
-          // hook for modules to cast from other types to base QIcon:
-          for (int i=0; i<basecasters_QIcon.length(); i++) {
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QIcon
+class QTJSAPI_EXPORT QIcon_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+
+private:
+    // disable copy constructor:
+    QIcon_Wrapper(const QIcon_Wrapper&);
+
+public:
+    // initialization of QIcon:
+    static void init(RJSApi& handler);
+
+
+    static QIcon* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QIcon:
+        for (int i=0; i<basecasters_QIcon.length(); i++) {
             RJSBasecaster_QIcon* basecaster = basecasters_QIcon[i];
             QIcon* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QIcon:
-          if (t==RJSType_QIcon::getIdStatic()) {
+        // object is a pointer to base class QIcon:
+        if (t==RJSType_QIcon::getIdStatic()) {
             return (QIcon*)vp;
-          }
-
-          qWarning() << "QIcon_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QIcon* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QIcon*: wrapper wraps NULL";
-          }
+        qWarning() << "QIcon_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QIcon* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QIcon*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QIcon* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QIcon*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum Mode {
-    Normal = QIcon::Normal,
-Disabled = QIcon::Disabled,
-Active = QIcon::Active,
-Selected = QIcon::Selected,
 
-  };
-  Q_ENUM(Mode)
+        QIcon* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QIcon*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
 
-  enum State {
-    On = QIcon::On,
-Off = QIcon::Off,
+    // enums:
 
-  };
-  Q_ENUM(State)
+    enum Mode {
+        Normal = QIcon::Normal,
+        Disabled = QIcon::Disabled,
+        Active = QIcon::Active,
+        Selected = QIcon::Selected,
+
+    };
+    Q_ENUM(Mode)
+
+    enum State {
+        On = QIcon::On,
+        Off = QIcon::Off,
+
+    };
+    Q_ENUM(State)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QIcon_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QIcon_Wrapper(RJSApi& h, QIcon* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QIcon_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QIcon_Wrapper(RJSApi& h, QIcon* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QIcon_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QIcon
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QIcon_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QIcon_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 #if QT_DEPRECATED_SINCE(6,0)
 
 #endif
@@ -419,525 +419,525 @@ Off = QIcon::Off,
 
 
     // non-static functions:
-    
+
     // Class: QIcon
     // Function: swap
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  swap
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    swap
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: pixmap
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pixmap
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pixmap
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
 #if QT_DEPRECATED_SINCE(6,0)
 
 #endif
 
     // Class: QIcon
     // Function: actualSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  actualSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    actualSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
 #if QT_DEPRECATED_SINCE(6,0)
 
 #endif
 
     // Class: QIcon
     // Function: name
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  name
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    name
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QIcon
     // Function: paint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 8
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paint
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a5
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a6
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a7
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a8
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    paint
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+          ,
+        const QJSValue&
+        a5
+        = QJSValue()
+          ,
+        const QJSValue&
+        a6
+        = QJSValue()
+          ,
+        const QJSValue&
+        a7
+        = QJSValue()
+          ,
+        const QJSValue&
+        a8
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QIcon
     // Function: isNull
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isNull
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isNull
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QIcon
     // Function: isDetached
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isDetached
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isDetached
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QIcon
     // Function: detach
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  detach
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    detach
+    (
+
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: cacheKey
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cacheKey
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cacheKey
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QIcon
     // Function: addPixmap
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addPixmap
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addPixmap
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: addFile
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addFile
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addFile
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: availableSizes
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  availableSizes
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    availableSizes
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QIcon
     // Function: setIsMask
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIsMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setIsMask
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QIcon
     // Function: isMask
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    isMask
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+    )
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QIcon::getIdStatic();
+    const
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return false;
-            
-        }
+    }
 
-        // get wrapped object:
-        QIcon* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QIcon::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return false;
+
+    }
+
+    // get wrapped object:
+    QIcon* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QIcon* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QIcon* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QIcon* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QIcon*> basecasters_QIcon;
 
-      public:
-        static void registerBasecaster_QIcon(RJSBasecaster_QIcon* bc) {
-          basecasters_QIcon.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QIcon* wrapped;
 
-    Q_DECLARE_METATYPE(QIcon_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QIcon_Wrapper, "org.qcad.QIcon_Wrapper")
 
-  
-  #endif
-  
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QIcon*> basecasters_QIcon;
+
+public:
+    static void registerBasecaster_QIcon(RJSBasecaster_QIcon* bc) {
+        basecasters_QIcon.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QIcon_Wrapper*)
+
+Q_DECLARE_INTERFACE(QIcon_Wrapper, "org.qcad.QIcon_Wrapper")
+
+
+#endif
+

@@ -1,200 +1,199 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QLAYOUT_H_BASE
-  #define QLAYOUT_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QLayout>
-  
-    #include <QSize>
-  
-    #include <QQmlEngine>
+#ifndef QLAYOUT_H_BASE
+#define QLAYOUT_H_BASE
 
-    
-        #include <QLayout>
-      
-    // Base class for QLayout
-      class QLayout_Base : public QLayout {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QLayout>
+
+#include <QSize>
+
+#include <QQmlEngine>
+
+
+#include <QLayout>
+
+// Base class for QLayout
+class QLayout_Base : public QLayout {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QLayout
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: -1
-QLayout_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr
-      )
-      
+    // Class: QLayout
+    // Function:
+    // Parameters: 1
+    // preceding Parameters: -1
+    QLayout_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr
+    )
+
         : QLayout(
-          parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QLayout_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
 
-      // public virtual overwritten functions / events:
-      
-    public:
+    // protected overwritten functions / events and their public invokable counterparts:
+
+
+    // public virtual overwritten functions / events:
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual QSize sizeHint(
-      
+
     )
-    
-      const
-    
+
+    const
+
     ;
 
-    
-    public:
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual void addItem(
-      QLayoutItem* a1
+        QLayoutItem* a1
     )
-    
+
     ;
 
-    
-    public:
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual QSize minimumSize(
-      
+
     )
-    
-      const
-    
+
+    const
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual QSize minimumSizeSup(
-        
-      )
-      
-        const
-      
-      {
-        
-          return
-        QLayout::minimumSize(
-          
-        );
-      }
-    
-    public:
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual QSize minimumSizeSup(
+
+    )
+
+    const
+
+    {
+
+        return
+            QLayout::minimumSize(
+
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual void setGeometry(
-      const QRect& a1
+        const QRect& a1
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual void setGeometrySup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual void setGeometrySup(
         const QRect& a1
-      )
-      
-      {
+    )
+
+    {
         QLayout::setGeometry(
-          a1
+            a1
         );
-      }
-    
-    public:
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual QLayoutItem* itemAt(
-      int index
+        int index
     )
-    
-      const
-    
+
+    const
+
     ;
 
-    
-    public:
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual QLayoutItem* takeAt(
-      int index
+        int index
     )
-    
+
     ;
 
-    
-    public:
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual int count(
-      
+
     )
-    
-      const
-    
+
+    const
+
     ;
 
-    
 
-      // public pure-virtual functions:
-      
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
+    // public pure-virtual functions:
 
-    public:
-      QJSValue self;
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
 
-    };
-    
-  #endif
-  
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

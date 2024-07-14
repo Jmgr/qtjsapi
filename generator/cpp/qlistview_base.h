@@ -1,57 +1,57 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QLISTVIEW_H_BASE
-  #define QLISTVIEW_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QQmlEngine>
+#ifndef QLISTVIEW_H_BASE
+#define QLISTVIEW_H_BASE
 
-    
-        #include <QListView>
-      
-    // Base class for QListView
-      class QListView_Base : public QListView {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QQmlEngine>
+
+
+#include <QListView>
+
+// Base class for QListView
+class QListView_Base : public QListView {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QListView
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: -1
-QListView_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr
-      )
-      
+    // Class: QListView
+    // Function:
+    // Parameters: 1
+    // preceding Parameters: -1
+    QListView_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr
+    )
+
         : QListView(
-          parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
 #if QT_CONFIG(wheelevent)
 
 #endif
@@ -63,788 +63,787 @@ QListView_Base
     // destructor:
     virtual ~QListView_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void actionEvent(
-      QActionEvent* event
+        QActionEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void actionEventPublic(
-      QActionEvent* event
+        QActionEvent* event
     ) {
-      //qDebug() << "QListView_Base::actionEventPublic()";
-      QListView::actionEvent(
-        event
-      );
+        //qDebug() << "QListView_Base::actionEventPublic()";
+        QListView::actionEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void setViewportMargins(
-      int left, int top, int right, int bottom
+        int left, int top, int right, int bottom
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void setViewportMarginsPublic(
-      int left, int top, int right, int bottom
+        int left, int top, int right, int bottom
     ) {
-      //qDebug() << "QListView_Base::setViewportMarginsPublic()";
-      QListView::setViewportMargins(
-        left, top, right, bottom
-      );
+        //qDebug() << "QListView_Base::setViewportMarginsPublic()";
+        QListView::setViewportMargins(
+            left, top, right, bottom
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void setViewportMargins(
-      const QMargins& margins
+        const QMargins& margins
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void setViewportMarginsPublic(
-      const QMargins& margins
+        const QMargins& margins
     ) {
-      //qDebug() << "QListView_Base::setViewportMarginsPublic()";
-      QListView::setViewportMargins(
-        margins
-      );
+        //qDebug() << "QListView_Base::setViewportMarginsPublic()";
+        QListView::setViewportMargins(
+            margins
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     QMargins viewportMargins(
-      
+
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE QMargins viewportMarginsPublic(
-      
+
     ) {
-      //qDebug() << "QListView_Base::viewportMarginsPublic()";
-      
+        //qDebug() << "QListView_Base::viewportMarginsPublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QListView::viewportMargins(
-        
-      );
+            QListView::viewportMargins(
+
+            );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     bool eventFilter(
-      QObject* a1, QEvent* a2
+        QObject* a1, QEvent* a2
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE bool eventFilterPublic(
-      QObject* a1, QEvent* a2
+        QObject* a1, QEvent* a2
     ) {
-      //qDebug() << "QListView_Base::eventFilterPublic()";
-      
+        //qDebug() << "QListView_Base::eventFilterPublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QListView::eventFilter(
-        a1, a2
-      );
+            QListView::eventFilter(
+                a1, a2
+            );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual bool viewportEvent(
-      QEvent* a1
+        QEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual bool viewportEventPublic(
-      QEvent* a1
+        QEvent* a1
     ) {
-      //qDebug() << "QListView_Base::viewportEventPublic()";
-      
+        //qDebug() << "QListView_Base::viewportEventPublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QListView::viewportEvent(
-        a1
-      );
+            QListView::viewportEvent(
+                a1
+            );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void mousePressEvent(
-      QMouseEvent* a1
+        QMouseEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void mousePressEventPublic(
-      QMouseEvent* a1
+        QMouseEvent* a1
     ) {
-      //qDebug() << "QListView_Base::mousePressEventPublic()";
-      QListView::mousePressEvent(
-        a1
-      );
+        //qDebug() << "QListView_Base::mousePressEventPublic()";
+        QListView::mousePressEvent(
+            a1
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void mouseDoubleClickEvent(
-      QMouseEvent* a1
+        QMouseEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void mouseDoubleClickEventPublic(
-      QMouseEvent* a1
+        QMouseEvent* a1
     ) {
-      //qDebug() << "QListView_Base::mouseDoubleClickEventPublic()";
-      QListView::mouseDoubleClickEvent(
-        a1
-      );
+        //qDebug() << "QListView_Base::mouseDoubleClickEventPublic()";
+        QListView::mouseDoubleClickEvent(
+            a1
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void dragEnterEvent(
-      QDragEnterEvent* a1
+        QDragEnterEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void dragEnterEventPublic(
-      QDragEnterEvent* a1
+        QDragEnterEvent* a1
     ) {
-      //qDebug() << "QListView_Base::dragEnterEventPublic()";
-      QListView::dragEnterEvent(
-        a1
-      );
+        //qDebug() << "QListView_Base::dragEnterEventPublic()";
+        QListView::dragEnterEvent(
+            a1
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void keyPressEvent(
-      QKeyEvent* a1
+        QKeyEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void keyPressEventPublic(
-      QKeyEvent* a1
+        QKeyEvent* a1
     ) {
-      //qDebug() << "QListView_Base::keyPressEventPublic()";
-      QListView::keyPressEvent(
-        a1
-      );
+        //qDebug() << "QListView_Base::keyPressEventPublic()";
+        QListView::keyPressEvent(
+            a1
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void pressed(
-      const QModelIndex& index
+        const QModelIndex& index
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void pressedPublic(
-      const QModelIndex& index
+        const QModelIndex& index
     ) {
-      //qDebug() << "QListView_Base::pressedPublic()";
-      QListView::pressed(
-        index
-      );
+        //qDebug() << "QListView_Base::pressedPublic()";
+        QListView::pressed(
+            index
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void clicked(
-      const QModelIndex& index
+        const QModelIndex& index
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void clickedPublic(
-      const QModelIndex& index
+        const QModelIndex& index
     ) {
-      //qDebug() << "QListView_Base::clickedPublic()";
-      QListView::clicked(
-        index
-      );
+        //qDebug() << "QListView_Base::clickedPublic()";
+        QListView::clicked(
+            index
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void activated(
-      const QModelIndex& index
+        const QModelIndex& index
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void activatedPublic(
-      const QModelIndex& index
+        const QModelIndex& index
     ) {
-      //qDebug() << "QListView_Base::activatedPublic()";
-      QListView::activated(
-        index
-      );
+        //qDebug() << "QListView_Base::activatedPublic()";
+        QListView::activated(
+            index
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void entered(
-      const QModelIndex& index
+        const QModelIndex& index
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void enteredPublic(
-      const QModelIndex& index
+        const QModelIndex& index
     ) {
-      //qDebug() << "QListView_Base::enteredPublic()";
-      QListView::entered(
-        index
-      );
+        //qDebug() << "QListView_Base::enteredPublic()";
+        QListView::entered(
+            index
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void viewportEntered(
-      
+
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void viewportEnteredPublic(
-      
+
     ) {
-      //qDebug() << "QListView_Base::viewportEnteredPublic()";
-      QListView::viewportEntered(
-        
-      );
+        //qDebug() << "QListView_Base::viewportEnteredPublic()";
+        QListView::viewportEntered(
+
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void iconSizeChanged(
-      const QSize& size
+        const QSize& size
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void iconSizeChangedPublic(
-      const QSize& size
+        const QSize& size
     ) {
-      //qDebug() << "QListView_Base::iconSizeChangedPublic()";
-      QListView::iconSizeChanged(
-        size
-      );
+        //qDebug() << "QListView_Base::iconSizeChangedPublic()";
+        QListView::iconSizeChanged(
+            size
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     bool event(
-      QEvent* e
+        QEvent* e
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE bool eventPublic(
-      QEvent* e
+        QEvent* e
     ) {
-      //qDebug() << "QListView_Base::eventPublic()";
-      
+        //qDebug() << "QListView_Base::eventPublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QListView::event(
-        e
-      );
+            QListView::event(
+                e
+            );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void scrollContentsBy(
-      int dx, int dy
+        int dx, int dy
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void scrollContentsByPublic(
-      int dx, int dy
+        int dx, int dy
     ) {
-      //qDebug() << "QListView_Base::scrollContentsByPublic()";
-      QListView::scrollContentsBy(
-        dx, dy
-      );
+        //qDebug() << "QListView_Base::scrollContentsByPublic()";
+        QListView::scrollContentsBy(
+            dx, dy
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void resizeContents(
-      int width, int height
+        int width, int height
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void resizeContentsPublic(
-      int width, int height
+        int width, int height
     ) {
-      //qDebug() << "QListView_Base::resizeContentsPublic()";
-      QListView::resizeContents(
-        width, height
-      );
+        //qDebug() << "QListView_Base::resizeContentsPublic()";
+        QListView::resizeContents(
+            width, height
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     QSize contentsSize(
-      
+
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE QSize contentsSizePublic(
-      
+
     ) {
-      //qDebug() << "QListView_Base::contentsSizePublic()";
-      
+        //qDebug() << "QListView_Base::contentsSizePublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QListView::contentsSize(
-        
-      );
+            QListView::contentsSize(
+
+            );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void dataChanged(
-      const QModelIndex& topLeft, const QModelIndex& bottomRight, const QList<int>& roles=QList<int>()
+        const QModelIndex& topLeft, const QModelIndex& bottomRight, const QList<int>& roles=QList<int>()
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void dataChangedPublic(
-      const QModelIndex& topLeft, const QModelIndex& bottomRight, const QList<int>& roles=QList<int>()
+        const QModelIndex& topLeft, const QModelIndex& bottomRight, const QList<int>& roles=QList<int>()
     ) {
-      //qDebug() << "QListView_Base::dataChangedPublic()";
-      QListView::dataChanged(
-        topLeft, bottomRight, roles
-      );
+        //qDebug() << "QListView_Base::dataChangedPublic()";
+        QListView::dataChanged(
+            topLeft, bottomRight, roles
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void rowsInserted(
-      const QModelIndex& parent, int start, int end
+        const QModelIndex& parent, int start, int end
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void rowsInsertedPublic(
-      const QModelIndex& parent, int start, int end
+        const QModelIndex& parent, int start, int end
     ) {
-      //qDebug() << "QListView_Base::rowsInsertedPublic()";
-      QListView::rowsInserted(
-        parent, start, end
-      );
+        //qDebug() << "QListView_Base::rowsInsertedPublic()";
+        QListView::rowsInserted(
+            parent, start, end
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void rowsAboutToBeRemoved(
-      const QModelIndex& parent, int start, int end
+        const QModelIndex& parent, int start, int end
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void rowsAboutToBeRemovedPublic(
-      const QModelIndex& parent, int start, int end
+        const QModelIndex& parent, int start, int end
     ) {
-      //qDebug() << "QListView_Base::rowsAboutToBeRemovedPublic()";
-      QListView::rowsAboutToBeRemoved(
-        parent, start, end
-      );
+        //qDebug() << "QListView_Base::rowsAboutToBeRemovedPublic()";
+        QListView::rowsAboutToBeRemoved(
+            parent, start, end
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void mouseMoveEvent(
-      QMouseEvent* e
+        QMouseEvent* e
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void mouseMoveEventPublic(
-      QMouseEvent* e
+        QMouseEvent* e
     ) {
-      //qDebug() << "QListView_Base::mouseMoveEventPublic()";
-      QListView::mouseMoveEvent(
-        e
-      );
+        //qDebug() << "QListView_Base::mouseMoveEventPublic()";
+        QListView::mouseMoveEvent(
+            e
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void mouseReleaseEvent(
-      QMouseEvent* e
+        QMouseEvent* e
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void mouseReleaseEventPublic(
-      QMouseEvent* e
+        QMouseEvent* e
     ) {
-      //qDebug() << "QListView_Base::mouseReleaseEventPublic()";
-      QListView::mouseReleaseEvent(
-        e
-      );
+        //qDebug() << "QListView_Base::mouseReleaseEventPublic()";
+        QListView::mouseReleaseEvent(
+            e
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void wheelEvent(
-      QWheelEvent* e
+        QWheelEvent* e
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void wheelEventPublic(
-      QWheelEvent* e
+        QWheelEvent* e
     ) {
-      //qDebug() << "QListView_Base::wheelEventPublic()";
-      QListView::wheelEvent(
-        e
-      );
+        //qDebug() << "QListView_Base::wheelEventPublic()";
+        QListView::wheelEvent(
+            e
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void resizeEvent(
-      QResizeEvent* e
+        QResizeEvent* e
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void resizeEventPublic(
-      QResizeEvent* e
+        QResizeEvent* e
     ) {
-      //qDebug() << "QListView_Base::resizeEventPublic()";
-      QListView::resizeEvent(
-        e
-      );
+        //qDebug() << "QListView_Base::resizeEventPublic()";
+        QListView::resizeEvent(
+            e
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void dropEvent(
-      QDropEvent* e
+        QDropEvent* e
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void dropEventPublic(
-      QDropEvent* e
+        QDropEvent* e
     ) {
-      //qDebug() << "QListView_Base::dropEventPublic()";
-      QListView::dropEvent(
-        e
-      );
+        //qDebug() << "QListView_Base::dropEventPublic()";
+        QListView::dropEvent(
+            e
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void startDrag(
-      Qt::DropActions supportedActions
+        Qt::DropActions supportedActions
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void startDragPublic(
-      Qt::DropActions supportedActions
+        Qt::DropActions supportedActions
     ) {
-      //qDebug() << "QListView_Base::startDragPublic()";
-      QListView::startDrag(
-        supportedActions
-      );
+        //qDebug() << "QListView_Base::startDragPublic()";
+        QListView::startDrag(
+            supportedActions
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void paintEvent(
-      QPaintEvent* e
+        QPaintEvent* e
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void paintEventPublic(
-      QPaintEvent* e
+        QPaintEvent* e
     ) {
-      //qDebug() << "QListView_Base::paintEventPublic()";
-      QListView::paintEvent(
-        e
-      );
+        //qDebug() << "QListView_Base::paintEventPublic()";
+        QListView::paintEvent(
+            e
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     int horizontalOffset(
-      
+
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE int horizontalOffsetPublic(
-      
+
     ) {
-      //qDebug() << "QListView_Base::horizontalOffsetPublic()";
-      
+        //qDebug() << "QListView_Base::horizontalOffsetPublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QListView::horizontalOffset(
-        
-      );
+            QListView::horizontalOffset(
+
+            );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     int verticalOffset(
-      
+
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE int verticalOffsetPublic(
-      
+
     ) {
-      //qDebug() << "QListView_Base::verticalOffsetPublic()";
-      
+        //qDebug() << "QListView_Base::verticalOffsetPublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QListView::verticalOffset(
-        
-      );
+            QListView::verticalOffset(
+
+            );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     QRect rectForIndex(
-      const QModelIndex& index
+        const QModelIndex& index
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE QRect rectForIndexPublic(
-      const QModelIndex& index
+        const QModelIndex& index
     ) {
-      //qDebug() << "QListView_Base::rectForIndexPublic()";
-      
+        //qDebug() << "QListView_Base::rectForIndexPublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QListView::rectForIndex(
-        index
-      );
+            QListView::rectForIndex(
+                index
+            );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void setPositionForIndex(
-      const QPoint& position, const QModelIndex& index
+        const QPoint& position, const QModelIndex& index
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void setPositionForIndexPublic(
-      const QPoint& position, const QModelIndex& index
+        const QPoint& position, const QModelIndex& index
     ) {
-      //qDebug() << "QListView_Base::setPositionForIndexPublic()";
-      QListView::setPositionForIndex(
-        position, index
-      );
+        //qDebug() << "QListView_Base::setPositionForIndexPublic()";
+        QListView::setPositionForIndex(
+            position, index
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void updateGeometries(
-      
+
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void updateGeometriesPublic(
-      
+
     ) {
-      //qDebug() << "QListView_Base::updateGeometriesPublic()";
-      QListView::updateGeometries(
-        
-      );
+        //qDebug() << "QListView_Base::updateGeometriesPublic()";
+        QListView::updateGeometries(
+
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     bool isIndexHidden(
-      const QModelIndex& index
+        const QModelIndex& index
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE bool isIndexHiddenPublic(
-      const QModelIndex& index
+        const QModelIndex& index
     ) {
-      //qDebug() << "QListView_Base::isIndexHiddenPublic()";
-      
+        //qDebug() << "QListView_Base::isIndexHiddenPublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QListView::isIndexHidden(
-        index
-      );
+            QListView::isIndexHidden(
+                index
+            );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void currentChanged(
-      const QModelIndex& current, const QModelIndex& previous
+        const QModelIndex& current, const QModelIndex& previous
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void currentChangedPublic(
-      const QModelIndex& current, const QModelIndex& previous
+        const QModelIndex& current, const QModelIndex& previous
     ) {
-      //qDebug() << "QListView_Base::currentChangedPublic()";
-      QListView::currentChanged(
-        current, previous
-      );
+        //qDebug() << "QListView_Base::currentChangedPublic()";
+        QListView::currentChanged(
+            current, previous
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     QSize viewportSizeHint(
-      
+
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE QSize viewportSizeHintPublic(
-      
+
     ) {
-      //qDebug() << "QListView_Base::viewportSizeHintPublic()";
-      
+        //qDebug() << "QListView_Base::viewportSizeHintPublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QListView::viewportSizeHint(
-        
-      );
+            QListView::viewportSizeHint(
+
+            );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-  #endif
-  
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

@@ -1,296 +1,293 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QTime() {
-        
+// class constructor:
+function QTime() {
 
-        // should be QTime_BaseJs.call(this, engine):
-        //QTime.prototype = new QTime_BaseJs(engine);
 
-        var wrapper;
+    // should be QTime_BaseJs.call(this, engine):
+    //QTime.prototype = new QTime_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QTime.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QTime.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTime);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QTime);
             //}
-          }
-          else {
+        } else {
             qWarning("QTime.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 2 &&
-          arguments.length <= 4) {
-    
+
+    } else {
+
+        if (arguments.length >= 2 &&
+                arguments.length <= 4) {
+
             self = this;
             wrapper = new QTime_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2], arguments[3]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QTime);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QTime);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QTime);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QTime_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QTime);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QTime);
-  }
-
-  
-  else {
-    
-        print("QTime(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QTime);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            if (arguments.length == 0) {
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
+                self = this;
+                wrapper = new QTime_Wrapper(
+                    // RJSApi:
+                    handler
 
-      //QTime.prototype = new QTime_BaseJs(engine);
-      //QTime.prototype = new QTime_Wrapper(engine);
-      QTime.prototype = new Object();
-
-      QTime.getObjectType = function() {
-        return RJSType_QTime.getIdStatic();
-      };
-
-      QTime.prototype.getObjectType = function() {
-        return RJSType_QTime.getIdStatic();
-      };
-
-      QTime.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QTime.getIdStatic()) {
-          return true;
-        }
-
-        
-
-        return false;
-
-
-        
-      };
-
-      // enum values:
-      
-
-      // functions:
-      
-
-      // static functions:
-      
-
-        // static function 
-        QTime.fromMSecsSinceStartOfDay = function() 
-          
-        {
-          //print("JS: QTime.fromMSecsSinceStartOfDay");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QTime_WrapperSingletonInstance.fromMSecsSinceStartOfDay(
-                  arguments[0]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
                 );
-              
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                copyProperties(this, wrapper, QTime);
+
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QTime);
+            }
+
+
+            else {
+
+                print("QTime(): wrong number / type of arguments");
+
+                console.trace();
+            }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QTime.prototype = new QTime_BaseJs(engine);
+//QTime.prototype = new QTime_Wrapper(engine);
+QTime.prototype = new Object();
+
+QTime.getObjectType = function() {
+    return RJSType_QTime.getIdStatic();
+};
+
+QTime.prototype.getObjectType = function() {
+    return RJSType_QTime.getIdStatic();
+};
+
+QTime.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QTime.getIdStatic()) {
+        return true;
+    }
+
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+
+// functions:
+
+
+// static functions:
+
+
+// static function
+QTime.fromMSecsSinceStartOfDay = function()
+
+{
+    //print("JS: QTime.fromMSecsSinceStartOfDay");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QTime_WrapperSingletonInstance.fromMSecsSinceStartOfDay(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QTime);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QTime.fromMSecsSinceStartOfDay(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QTime.currentTime = function() 
-          
-        {
-          //print("JS: QTime.currentTime");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QTime_WrapperSingletonInstance.currentTime(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QTime.currentTime = function()
+
+{
+    //print("JS: QTime.currentTime");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QTime_WrapperSingletonInstance.currentTime(
+
+               );
+
 
         //copyProperties(this, wrapper, QTime);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QTime.currentTime(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QTime.fromString = function() 
-          
-        {
-          //print("JS: QTime.fromString");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 2) {
-    
-                // calling static wrapper:
-                return QTime_WrapperSingletonInstance.fromString(
-                  arguments[0], arguments[1]
-                );
-              
+        console.trace();
+    }
 
-        //copyProperties(this, wrapper, QTime);
-  }
+};
 
-  
-  else 
-  
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QTime_WrapperSingletonInstance.fromString(
-                  arguments[0], arguments[1]
-                );
-              
+
+// static function
+QTime.fromString = function()
+
+{
+    //print("JS: QTime.fromString");
+
+    if (arguments.length >= 1 &&
+            arguments.length <= 2) {
+
+        // calling static wrapper:
+        return QTime_WrapperSingletonInstance.fromString(
+                   arguments[0], arguments[1]
+               );
+
 
         //copyProperties(this, wrapper, QTime);
-  }
+    }
 
-  
-  else {
-    
-        print("QTime.fromString(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QTime.operator_lessthan = function() 
-          
-        {
-          //print("JS: QTime.operator_lessthan");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QTime_WrapperSingletonInstance.operator_lessthan(
-                  arguments[0], arguments[1]
-                );
-              
+    else
+
+        if (arguments.length == 2) {
+
+            // calling static wrapper:
+            return QTime_WrapperSingletonInstance.fromString(
+                       arguments[0], arguments[1]
+                   );
+
+
+            //copyProperties(this, wrapper, QTime);
+        }
+
+
+        else {
+
+            print("QTime.fromString(): wrong number / type of arguments");
+
+            console.trace();
+        }
+
+};
+
+
+// static function
+QTime.operator_lessthan = function()
+
+{
+    //print("JS: QTime.operator_lessthan");
+
+    if (arguments.length == 2) {
+
+        // calling static wrapper:
+        return QTime_WrapperSingletonInstance.operator_lessthan(
+                   arguments[0], arguments[1]
+               );
+
 
         //copyProperties(this, wrapper, QTime);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QTime.operator_lessthan(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QTime.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QTime.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QTime.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QTime.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

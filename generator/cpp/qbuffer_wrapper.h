@@ -1,48 +1,48 @@
 
-  // Auto generated
-  
-    #ifndef QBUFFER_H_WRAPPER
-    #define QBUFFER_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QBUFFER_H_WRAPPER
+#define QBUFFER_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QObject>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QBuffer>
-      
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QBuffer_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QBuffer_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QObject>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QBuffer>
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QBuffer_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QBuffer_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QBuffer
     // Function: tr
     // Source: QObject
@@ -50,30 +50,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    tr
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
 #ifndef QT_NO_QOBJECT
 
 #endif
@@ -89,121 +89,121 @@
 #endif
 
 
-      private:
-          RJSApi& handler;
-          //static QBuffer_WrapperSingleton* _singleInstance;
+private:
+    RJSApi& handler;
+    //static QBuffer_WrapperSingleton* _singleInstance;
 
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QBuffer
-    class QTJSAPI_EXPORT QBuffer_Wrapper : public RJSWrapperObj {
+    // constants:
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
-    QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QBuffer
+class QTJSAPI_EXPORT QBuffer_Wrapper : public RJSWrapperObj {
 
 
-    private:
-      // disable copy constructor:
-      QBuffer_Wrapper(const QBuffer_Wrapper&);
+    Q_OBJECT
+    QML_INTERFACE
 
-    public:
-      // initialization of QBuffer:
-      static void init(RJSApi& handler);
+    Q_PROPERTY(
 
-      
-        static QBuffer* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
 
-          // hook for modules to cast from other types to base QBuffer:
-          for (int i=0; i<basecasters_QBuffer.length(); i++) {
+
+private:
+    // disable copy constructor:
+    QBuffer_Wrapper(const QBuffer_Wrapper&);
+
+public:
+    // initialization of QBuffer:
+    static void init(RJSApi& handler);
+
+
+    static QBuffer* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QBuffer:
+        for (int i=0; i<basecasters_QBuffer.length(); i++) {
             RJSBasecaster_QBuffer* basecaster = basecasters_QBuffer[i];
             QBuffer* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QBuffer:
-          if (t==RJSType_QBuffer::getIdStatic()) {
+        // object is a pointer to base class QBuffer:
+        if (t==RJSType_QBuffer::getIdStatic()) {
             return (QBuffer*)vp;
-          }
-
-          qWarning() << "QBuffer_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QBuffer* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QBuffer*: wrapper wraps NULL";
-          }
+        qWarning() << "QBuffer_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QBuffer* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QBuffer*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QBuffer* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QBuffer*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum OpenModeFlag {
-    NotOpen = QBuffer::NotOpen,
-ReadOnly = QBuffer::ReadOnly,
-WriteOnly = QBuffer::WriteOnly,
-ReadWrite = QBuffer::ReadWrite,
-Append = QBuffer::Append,
-Truncate = QBuffer::Truncate,
-Text = QBuffer::Text,
-Unbuffered = QBuffer::Unbuffered,
-NewOnly = QBuffer::NewOnly,
-ExistingOnly = QBuffer::ExistingOnly,
 
-  };
-  Q_ENUM(OpenModeFlag)
+        QBuffer* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QBuffer*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
+    // enums:
+
+    enum OpenModeFlag {
+        NotOpen = QBuffer::NotOpen,
+        ReadOnly = QBuffer::ReadOnly,
+        WriteOnly = QBuffer::WriteOnly,
+        ReadWrite = QBuffer::ReadWrite,
+        Append = QBuffer::Append,
+        Truncate = QBuffer::Truncate,
+        Text = QBuffer::Text,
+        Unbuffered = QBuffer::Unbuffered,
+        NewOnly = QBuffer::NewOnly,
+        ExistingOnly = QBuffer::ExistingOnly,
+
+    };
+    Q_ENUM(OpenModeFlag)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QBuffer_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QBuffer_Wrapper(RJSApi& h, QBuffer* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QBuffer_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QBuffer_Wrapper(RJSApi& h, QBuffer* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QBuffer_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
 #ifndef QT_NO_QOBJECT
 
 #endif
@@ -211,32 +211,32 @@ ExistingOnly = QBuffer::ExistingOnly,
 #ifndef QT_NO_QOBJECT
 
     // Class: QBuffer
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QBuffer_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QBuffer_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 #else
 
 #endif
@@ -247,7 +247,7 @@ ExistingOnly = QBuffer::ExistingOnly,
 
 
     // non-static functions:
-    
+
     // Class: QBuffer
     // Function: objectName
     // Source: QObject
@@ -255,20 +255,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: setObjectName
     // Source: QObject
@@ -276,22 +276,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: isWidgetType
     // Source: QObject
@@ -299,20 +299,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: isWindowType
     // Source: QObject
@@ -320,20 +320,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: signalsBlocked
     // Source: QObject
@@ -341,20 +341,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: blockSignals
     // Source: QObject
@@ -362,22 +362,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: findChild
     // Source: QObject
@@ -385,28 +385,28 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: children
     // Source: QObject
@@ -414,20 +414,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: setParent
     // Source: QObject
@@ -435,22 +435,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: installEventFilter
     // Source: QObject
@@ -458,22 +458,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: removeEventFilter
     // Source: QObject
@@ -481,22 +481,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: dumpObjectTree
     // Source: QObject
@@ -504,18 +504,18 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: dumpObjectInfo
     // Source: QObject
@@ -523,18 +523,18 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: setProperty
     // Source: QObject
@@ -542,26 +542,26 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: property
     // Source: QObject
@@ -569,24 +569,24 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -594,20 +594,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: parent
     // Source: QObject
@@ -615,20 +615,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: deleteLater
     // Source: QObject
@@ -636,18 +636,18 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: openMode
     // Source: QIODevice
@@ -655,20 +655,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  openMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    openMode
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: setTextModeEnabled
     // Source: QIODevice
@@ -676,22 +676,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTextModeEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTextModeEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: isTextModeEnabled
     // Source: QIODevice
@@ -699,20 +699,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isTextModeEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isTextModeEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: isOpen
     // Source: QIODevice
@@ -720,20 +720,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isOpen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isOpen
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: isReadable
     // Source: QIODevice
@@ -741,20 +741,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isReadable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isReadable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: isWritable
     // Source: QIODevice
@@ -762,20 +762,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWritable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWritable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: isSequential
     // Source: QIODevice
@@ -783,20 +783,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSequential
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isSequential
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: readChannelCount
     // Source: QIODevice
@@ -804,20 +804,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  readChannelCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    readChannelCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: writeChannelCount
     // Source: QIODevice
@@ -825,20 +825,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeChannelCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    writeChannelCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: currentReadChannel
     // Source: QIODevice
@@ -846,20 +846,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentReadChannel
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    currentReadChannel
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: setCurrentReadChannel
     // Source: QIODevice
@@ -867,22 +867,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentReadChannel
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCurrentReadChannel
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: currentWriteChannel
     // Source: QIODevice
@@ -890,20 +890,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentWriteChannel
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    currentWriteChannel
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: setCurrentWriteChannel
     // Source: QIODevice
@@ -911,22 +911,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentWriteChannel
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCurrentWriteChannel
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: reset
     // Source: QIODevice
@@ -934,18 +934,18 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  reset
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    reset
+    (
+
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: bytesAvailable
     // Source: QIODevice
@@ -953,20 +953,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  bytesAvailable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    bytesAvailable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: bytesToWrite
     // Source: QIODevice
@@ -974,20 +974,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  bytesToWrite
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    bytesToWrite
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: readAll
     // Source: QIODevice
@@ -995,18 +995,18 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  readAll
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    readAll
+    (
+
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: startTransaction
     // Source: QIODevice
@@ -1014,18 +1014,18 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  startTransaction
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    startTransaction
+    (
+
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: commitTransaction
     // Source: QIODevice
@@ -1033,18 +1033,18 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  commitTransaction
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    commitTransaction
+    (
+
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: rollbackTransaction
     // Source: QIODevice
@@ -1052,18 +1052,18 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rollbackTransaction
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    rollbackTransaction
+    (
+
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: isTransactionStarted
     // Source: QIODevice
@@ -1071,20 +1071,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isTransactionStarted
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isTransactionStarted
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: write
     // Source: QIODevice
@@ -1092,26 +1092,26 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  write
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    write
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: skip
     // Source: QIODevice
@@ -1119,22 +1119,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  skip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    skip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: waitForReadyRead
     // Source: QIODevice
@@ -1142,22 +1142,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  waitForReadyRead
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    waitForReadyRead
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: waitForBytesWritten
     // Source: QIODevice
@@ -1165,22 +1165,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  waitForBytesWritten
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    waitForBytesWritten
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: ungetChar
     // Source: QIODevice
@@ -1188,22 +1188,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ungetChar
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    ungetChar
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: putChar
     // Source: QIODevice
@@ -1211,22 +1211,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  putChar
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    putChar
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: errorString
     // Source: QIODevice
@@ -1234,20 +1234,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  errorString
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    errorString
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: readyRead
     // Source: QIODevice
@@ -1255,18 +1255,18 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void readyRead(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void readyRead(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void readyReadEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void readyReadEmitter(
+
+    );
+
     // Class: QBuffer
     // Function: channelReadyRead
     // Source: QIODevice
@@ -1274,20 +1274,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void channelReadyRead(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void channelReadyRead(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void channelReadyReadEmitter(
-                int channel
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void channelReadyReadEmitter(
+        int channel
+    );
+
     // Class: QBuffer
     // Function: bytesWritten
     // Source: QIODevice
@@ -1295,20 +1295,20 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void bytesWritten(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void bytesWritten(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void bytesWrittenEmitter(
-                qint64 bytes
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void bytesWrittenEmitter(
+        qint64 bytes
+    );
+
     // Class: QBuffer
     // Function: channelBytesWritten
     // Source: QIODevice
@@ -1316,22 +1316,22 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 2
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void channelBytesWritten(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void channelBytesWritten(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void channelBytesWrittenEmitter(
-                int channel, qint64 bytes
-              );
-            
+        const QJSValue&
+        a1,
+        const QJSValue&
+        a2
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void channelBytesWrittenEmitter(
+        int channel, qint64 bytes
+    );
+
     // Class: QBuffer
     // Function: aboutToClose
     // Source: QIODevice
@@ -1339,18 +1339,18 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void aboutToClose(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void aboutToClose(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void aboutToCloseEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void aboutToCloseEmitter(
+
+    );
+
     // Class: QBuffer
     // Function: readChannelFinished
     // Source: QIODevice
@@ -1358,18 +1358,18 @@ ExistingOnly = QBuffer::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void readChannelFinished(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void readChannelFinished(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void readChannelFinishedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void readChannelFinishedEmitter(
+
+    );
+
 #ifndef QT_NO_QOBJECT
 
 #endif
@@ -1382,346 +1382,346 @@ ExistingOnly = QBuffer::ExistingOnly,
 
     // Class: QBuffer
     // Function: buffer
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  buffer
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    buffer
+    (
+
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: setData
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setData
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setData
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: data
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  data
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    data
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: open
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  open
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    open
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: close
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  close
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    close
+    (
+
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: size
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    size
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: pos
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pos
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pos
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: seek
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  seek
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    seek
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QBuffer
     // Function: atEnd
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  atEnd
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    atEnd
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QBuffer
     // Function: canReadLine
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  canReadLine
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    canReadLine
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #ifndef QT_NO_QOBJECT
 
 #endif
 
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
 
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
+            delete wrapped;
 
-  // member functions for static properties, forward to static function
-  
-
-
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
-
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QBuffer::getIdStatic();
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QBuffer* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QBuffer::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QBuffer* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QBuffer* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QBuffer* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QBuffer* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QBuffer*> basecasters_QBuffer;
 
-      public:
-        static void registerBasecaster_QBuffer(RJSBasecaster_QBuffer* bc) {
-          basecasters_QBuffer.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QBuffer* wrapped;
 
-    Q_DECLARE_METATYPE(QBuffer_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QBuffer_Wrapper, "org.qcad.QBuffer_Wrapper")
 
-  
-  #endif
-  
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QBuffer*> basecasters_QBuffer;
+
+public:
+    static void registerBasecaster_QBuffer(RJSBasecaster_QBuffer* bc) {
+        basecasters_QBuffer.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QBuffer_Wrapper*)
+
+Q_DECLARE_INTERFACE(QBuffer_Wrapper, "org.qcad.QBuffer_Wrapper")
+
+
+#endif
+

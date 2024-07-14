@@ -4,7 +4,7 @@ project(qtjsapiconsole VERSION 1.0 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Network OpenGL Sql Svg Xml PrintSupport Qml UiTools QuickWidgets Core5Compat)
+find_package(Qt6 REQUIRED COMPONENTS Core Widgets Concurrent Gui Qml UiTools Core5Compat)
 qt_standard_project_setup()
 
 if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/../../qcad)
@@ -37,16 +37,9 @@ target_link_libraries(qtjsapiconsole PRIVATE
     Qt::Concurrent
     Qt::Core
     Qt::Gui
-    Qt::Network
-    Qt::OpenGL
     Qt::Qml
-    Qt::Sql
-    Qt::Svg
     Qt::Widgets
-    Qt::Xml
     Qt::UiTools
-    Qt::PrintSupport
     Qt::Core5Compat
-    Qt::QuickWidgets
     qtjsapi
 )

@@ -3,9 +3,6 @@
   <class_decl name="QTextDocument" />
   <class_decl name="QMenu" />
   <class_decl name="QMimeData" />
-  <!--
-  <class_decl name="QPagedPaintDevice" />
-  -->
   <class_decl name="QRegularExpression" />
   <class name="QTextEdit">
     <super_list>
@@ -447,15 +444,6 @@
         <parameters />
       </variant>
     </function>
-    <!--
-    <function name="print">
-      <variant return-type="void" const="true" access="public">
-        <parameters>
-          <parameter const="false" type="QPagedPaintDevice" modifier="*" name="printer" />
-        </parameters>
-      </variant>
-    </function>
-    -->
     <function name="inputMethodQuery">
       <variant return-type="QVariant" const="true" access="public">
         <parameters>

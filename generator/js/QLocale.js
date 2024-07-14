@@ -1,149 +1,147 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QLocale() {
-        
+// class constructor:
+function QLocale() {
 
-        // should be QLocale_BaseJs.call(this, engine):
-        //QLocale.prototype = new QLocale_BaseJs(engine);
 
-        var wrapper;
+    // should be QLocale_BaseJs.call(this, engine):
+    //QLocale.prototype = new QLocale_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QLocale.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QLocale.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QLocale);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QLocale);
             //}
-          }
-          else {
+        } else {
             qWarning("QLocale.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 1) {
-    
+
+    } else {
+
+        if (arguments.length == 1) {
+
             self = this;
             wrapper = new QLocale_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QLocale);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QLocale);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QLocale);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QLocale_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QLocale);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QLocale);
-  }
-
-  
-  else {
-    
-        print("QLocale(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QLocale);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length == 0) {
+
+                self = this;
+                wrapper = new QLocale_Wrapper(
+                    // RJSApi:
+                    handler
+
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QLocale);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QLocale);
+            }
+
+
+            else {
+
+                print("QLocale(): wrong number / type of arguments");
+
+                console.trace();
+            }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QLocale.prototype = new QLocale_BaseJs(engine);
-      //QLocale.prototype = new QLocale_Wrapper(engine);
-      QLocale.prototype = new Object();
+//QLocale.prototype = new QLocale_BaseJs(engine);
+//QLocale.prototype = new QLocale_Wrapper(engine);
+QLocale.prototype = new Object();
 
-      QLocale.getObjectType = function() {
-        return RJSType_QLocale.getIdStatic();
-      };
+QLocale.getObjectType = function() {
+    return RJSType_QLocale.getIdStatic();
+};
 
-      QLocale.prototype.getObjectType = function() {
-        return RJSType_QLocale.getIdStatic();
-      };
+QLocale.prototype.getObjectType = function() {
+    return RJSType_QLocale.getIdStatic();
+};
 
-      QLocale.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QLocale.getIdStatic()) {
-          return true;
-        }
-
-        
-
-        return false;
+QLocale.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QLocale.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
 
-      // enum values:
-      
-  // enum: Language
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Language
 QLocale.AnyLanguage = QLocale_Wrapper.AnyLanguage;
 QLocale.C = QLocale_Wrapper.C;
 QLocale.Abkhazian = QLocale_Wrapper.Abkhazian;
@@ -493,7 +491,7 @@ QLocale.Uigur = QLocale_Wrapper.Uigur;
 QLocale.Walamo = QLocale_Wrapper.Walamo;
 QLocale.LastLanguage = QLocale_Wrapper.LastLanguage;
 
-  // enum: Script
+// enum: Script
 QLocale.AnyScript = QLocale_Wrapper.AnyScript;
 QLocale.AdlamScript = QLocale_Wrapper.AdlamScript;
 QLocale.AhomScript = QLocale_Wrapper.AhomScript;
@@ -643,7 +641,7 @@ QLocale.SimplifiedChineseScript = QLocale_Wrapper.SimplifiedChineseScript;
 QLocale.TraditionalChineseScript = QLocale_Wrapper.TraditionalChineseScript;
 QLocale.LastScript = QLocale_Wrapper.LastScript;
 
-  // enum: Country
+// enum: Country
 QLocale.AnyTerritory = QLocale_Wrapper.AnyTerritory;
 QLocale.Afghanistan = QLocale_Wrapper.Afghanistan;
 QLocale.AlandIslands = QLocale_Wrapper.AlandIslands;
@@ -933,18 +931,18 @@ QLocale.WallisAndFutunaIslands = QLocale_Wrapper.WallisAndFutunaIslands;
 QLocale.LastTerritory = QLocale_Wrapper.LastTerritory;
 QLocale.LastCountry = QLocale_Wrapper.LastCountry;
 
-  // enum: MeasurementSystem
+// enum: MeasurementSystem
 QLocale.MetricSystem = QLocale_Wrapper.MetricSystem;
 QLocale.ImperialUSSystem = QLocale_Wrapper.ImperialUSSystem;
 QLocale.ImperialUKSystem = QLocale_Wrapper.ImperialUKSystem;
 QLocale.ImperialSystem = QLocale_Wrapper.ImperialSystem;
 
-  // enum: FormatType
+// enum: FormatType
 QLocale.LongFormat = QLocale_Wrapper.LongFormat;
 QLocale.ShortFormat = QLocale_Wrapper.ShortFormat;
 QLocale.NarrowFormat = QLocale_Wrapper.NarrowFormat;
 
-  // enum: NumberOption
+// enum: NumberOption
 QLocale.DefaultNumberOptions = QLocale_Wrapper.DefaultNumberOptions;
 QLocale.OmitGroupSeparator = QLocale_Wrapper.OmitGroupSeparator;
 QLocale.RejectGroupSeparator = QLocale_Wrapper.RejectGroupSeparator;
@@ -953,409 +951,408 @@ QLocale.RejectLeadingZeroInExponent = QLocale_Wrapper.RejectLeadingZeroInExponen
 QLocale.IncludeTrailingZeroesAfterDot = QLocale_Wrapper.IncludeTrailingZeroesAfterDot;
 QLocale.RejectTrailingZeroesAfterDot = QLocale_Wrapper.RejectTrailingZeroesAfterDot;
 
-  // enum: FloatingPointPrecisionOption
+// enum: FloatingPointPrecisionOption
 QLocale.FloatingPointShortest = QLocale_Wrapper.FloatingPointShortest;
 
-  // enum: CurrencySymbolFormat
+// enum: CurrencySymbolFormat
 QLocale.CurrencyIsoCode = QLocale_Wrapper.CurrencyIsoCode;
 QLocale.CurrencySymbol = QLocale_Wrapper.CurrencySymbol;
 QLocale.CurrencyDisplayName = QLocale_Wrapper.CurrencyDisplayName;
 
-  // enum: DataSizeFormat
+// enum: DataSizeFormat
 QLocale.DataSizeBase1000 = QLocale_Wrapper.DataSizeBase1000;
 QLocale.DataSizeSIQuantifiers = QLocale_Wrapper.DataSizeSIQuantifiers;
 QLocale.DataSizeIecFormat = QLocale_Wrapper.DataSizeIecFormat;
 QLocale.DataSizeTraditionalFormat = QLocale_Wrapper.DataSizeTraditionalFormat;
 QLocale.DataSizeSIFormat = QLocale_Wrapper.DataSizeSIFormat;
 
-  // enum: QuotationStyle
+// enum: QuotationStyle
 QLocale.StandardQuotation = QLocale_Wrapper.StandardQuotation;
 QLocale.AlternateQuotation = QLocale_Wrapper.AlternateQuotation;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QLocale.languageToCode = function() 
-          
-        {
-          //print("JS: QLocale.languageToCode");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.languageToCode(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QLocale.languageToCode = function()
+
+{
+    //print("JS: QLocale.languageToCode");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.languageToCode(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.languageToCode(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.territoryToCode = function() 
-          
-        {
-          //print("JS: QLocale.territoryToCode");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.territoryToCode(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.territoryToCode = function()
+
+{
+    //print("JS: QLocale.territoryToCode");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.territoryToCode(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.territoryToCode(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.countryToCode = function() 
-          
-        {
-          //print("JS: QLocale.countryToCode");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.countryToCode(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.countryToCode = function()
+
+{
+    //print("JS: QLocale.countryToCode");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.countryToCode(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.countryToCode(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.scriptToCode = function() 
-          
-        {
-          //print("JS: QLocale.scriptToCode");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.scriptToCode(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.scriptToCode = function()
+
+{
+    //print("JS: QLocale.scriptToCode");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.scriptToCode(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.scriptToCode(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.languageToString = function() 
-          
-        {
-          //print("JS: QLocale.languageToString");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.languageToString(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.languageToString = function()
+
+{
+    //print("JS: QLocale.languageToString");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.languageToString(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.languageToString(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.territoryToString = function() 
-          
-        {
-          //print("JS: QLocale.territoryToString");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.territoryToString(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.territoryToString = function()
+
+{
+    //print("JS: QLocale.territoryToString");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.territoryToString(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.territoryToString(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.countryToString = function() 
-          
-        {
-          //print("JS: QLocale.countryToString");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.countryToString(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.countryToString = function()
+
+{
+    //print("JS: QLocale.countryToString");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.countryToString(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.countryToString(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.scriptToString = function() 
-          
-        {
-          //print("JS: QLocale.scriptToString");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.scriptToString(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.scriptToString = function()
+
+{
+    //print("JS: QLocale.scriptToString");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.scriptToString(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.scriptToString(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.setDefault = function() 
-          
-        {
-          //print("JS: QLocale.setDefault");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.setDefault(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.setDefault = function()
+
+{
+    //print("JS: QLocale.setDefault");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.setDefault(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.setDefault(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.c = function() 
-          
-        {
-          //print("JS: QLocale.c");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.c(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.c = function()
+
+{
+    //print("JS: QLocale.c");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.c(
+
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.c(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.system = function() 
-          
-        {
-          //print("JS: QLocale.system");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.system(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.system = function()
+
+{
+    //print("JS: QLocale.system");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.system(
+
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.system(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.matchingLocales = function() 
-          
-        {
-          //print("JS: QLocale.matchingLocales");
-          
-      if (arguments.length == 3) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.matchingLocales(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.matchingLocales = function()
+
+{
+    //print("JS: QLocale.matchingLocales");
+
+    if (arguments.length == 3) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.matchingLocales(
+                   arguments[0], arguments[1], arguments[2]
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.matchingLocales(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QLocale.countriesForLanguage = function() 
-          
-        {
-          //print("JS: QLocale.countriesForLanguage");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QLocale_WrapperSingletonInstance.countriesForLanguage(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QLocale.countriesForLanguage = function()
+
+{
+    //print("JS: QLocale.countriesForLanguage");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QLocale_WrapperSingletonInstance.countriesForLanguage(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QLocale);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QLocale.countriesForLanguage(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QLocale.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QLocale.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QLocale.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QLocale.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

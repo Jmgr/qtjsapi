@@ -1,151 +1,148 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QSwipeGesture() {
-        
+// class constructor:
+function QSwipeGesture() {
 
-        // should be QSwipeGesture_BaseJs.call(this, engine):
-        //QSwipeGesture.prototype = new QSwipeGesture_BaseJs(engine);
 
-        var wrapper;
+    // should be QSwipeGesture_BaseJs.call(this, engine):
+    //QSwipeGesture.prototype = new QSwipeGesture_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QSwipeGesture.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QSwipeGesture.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QSwipeGesture);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QSwipeGesture);
             //}
-          }
-          else {
+        } else {
             qWarning("QSwipeGesture.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
+
+    } else {
+
+        if (arguments.length >= 0 &&
+                arguments.length <= 1) {
+
             self = this;
             wrapper = new QSwipeGesture_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QSwipeGesture);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QSwipeGesture);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QSwipeGesture);
-  }
 
-  
-  else {
-    
-        print("QSwipeGesture(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QSwipeGesture);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QSwipeGesture(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QSwipeGesture.prototype = new QSwipeGesture_BaseJs(engine);
-      //QSwipeGesture.prototype = new QSwipeGesture_Wrapper(engine);
-      QSwipeGesture.prototype = new Object();
-
-      QSwipeGesture.prototype.toString = function() {
-          //return "QSwipeGesture [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QSwipeGesture [JS]";
-        };
-      QSwipeGesture.getObjectType = function() {
-        return RJSType_QSwipeGesture.getIdStatic();
-      };
-
-      QSwipeGesture.prototype.getObjectType = function() {
-        return RJSType_QSwipeGesture.getIdStatic();
-      };
-
-      QSwipeGesture.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QSwipeGesture.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QGesture.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
 
-      // functions:
-      
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
 
-      // static functions:
-      
+        }
+    }
+}
 
-      // constants:
-      
+//QSwipeGesture.prototype = new QSwipeGesture_BaseJs(engine);
+//QSwipeGesture.prototype = new QSwipeGesture_Wrapper(engine);
+QSwipeGesture.prototype = new Object();
 
-      // public static properties without access function:
-      
+QSwipeGesture.prototype.toString = function() {
+    //return "QSwipeGesture [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QSwipeGesture [JS]";
+};
+QSwipeGesture.getObjectType = function() {
+    return RJSType_QSwipeGesture.getIdStatic();
+};
 
-      // copy function:
-      //QSwipeGesture.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+QSwipeGesture.prototype.getObjectType = function() {
+    return RJSType_QSwipeGesture.getIdStatic();
+};
 
-      // destroy function:
-      //QSwipeGesture.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+QSwipeGesture.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QSwipeGesture.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QGesture.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+
+// functions:
+
+
+// static functions:
+
+
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QSwipeGesture.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QSwipeGesture.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

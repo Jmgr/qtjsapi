@@ -1,151 +1,148 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QSpacerItem() {
-        
+// class constructor:
+function QSpacerItem() {
 
-        // should be QSpacerItem_BaseJs.call(this, engine):
-        //QSpacerItem.prototype = new QSpacerItem_BaseJs(engine);
 
-        var wrapper;
+    // should be QSpacerItem_BaseJs.call(this, engine):
+    //QSpacerItem.prototype = new QSpacerItem_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QSpacerItem.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QSpacerItem.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QSpacerItem);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QSpacerItem);
             //}
-          }
-          else {
+        } else {
             qWarning("QSpacerItem.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 2 &&
-          arguments.length <= 4) {
-    
+
+    } else {
+
+        if (arguments.length >= 2 &&
+                arguments.length <= 4) {
+
             self = this;
             wrapper = new QSpacerItem_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2], arguments[3]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QSpacerItem);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QSpacerItem);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QSpacerItem);
-  }
 
-  
-  else {
-    
-        print("QSpacerItem(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QSpacerItem);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QSpacerItem(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QSpacerItem.prototype = new QSpacerItem_BaseJs(engine);
-      //QSpacerItem.prototype = new QSpacerItem_Wrapper(engine);
-      QSpacerItem.prototype = new Object();
-
-      QSpacerItem.prototype.toString = function() {
-          //return "QSpacerItem [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QSpacerItem [JS]";
-        };
-      QSpacerItem.getObjectType = function() {
-        return RJSType_QSpacerItem.getIdStatic();
-      };
-
-      QSpacerItem.prototype.getObjectType = function() {
-        return RJSType_QSpacerItem.getIdStatic();
-      };
-
-      QSpacerItem.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QSpacerItem.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QLayoutItem.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
 
-      // functions:
-      
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
 
-      // static functions:
-      
+        }
+    }
+}
 
-      // constants:
-      
+//QSpacerItem.prototype = new QSpacerItem_BaseJs(engine);
+//QSpacerItem.prototype = new QSpacerItem_Wrapper(engine);
+QSpacerItem.prototype = new Object();
 
-      // public static properties without access function:
-      
+QSpacerItem.prototype.toString = function() {
+    //return "QSpacerItem [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QSpacerItem [JS]";
+};
+QSpacerItem.getObjectType = function() {
+    return RJSType_QSpacerItem.getIdStatic();
+};
 
-      // copy function:
-      //QSpacerItem.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+QSpacerItem.prototype.getObjectType = function() {
+    return RJSType_QSpacerItem.getIdStatic();
+};
 
-      // destroy function:
-      //QSpacerItem.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+QSpacerItem.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QSpacerItem.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QLayoutItem.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+
+// functions:
+
+
+// static functions:
+
+
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QSpacerItem.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QSpacerItem.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

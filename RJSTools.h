@@ -14,41 +14,39 @@
 class RJSWrapperObj;
 class RJSApi;
 
-
 /**
  * Script handler implementation for JS scripts, based on QJSEngine..
  *
  * \ingroup js
  */
-class QTJSAPI_EXPORT RJSTools: public QObject {
-Q_OBJECT
+class QTJSAPI_EXPORT RJSTools : public QObject
+{
+    Q_OBJECT
 
 public:
-    RJSTools(RJSApi& handler);
+    RJSTools(RJSApi &handler);
     virtual ~RJSTools();
 
-    void markIncluded(const QString& className);
-    bool isIncluded(const QString& className);
+    void markIncluded(const QString &className);
+    bool isIncluded(const QString &className);
 
-    Q_INVOKABLE bool include(const QString& fileName, QString trContext = QString(), bool force = false);
-    Q_INVOKABLE bool isDeleted(const QJSValue& obj);
-    Q_INVOKABLE QString download(const QString& url, int timeout);
-    Q_INVOKABLE bool downloadToFile(const QString& url, const QString& path, const QString& fileName, int timeout);
-    Q_INVOKABLE void print(const QJSValue& args);
-    Q_INVOKABLE void debug(const QJSValue& args);
-    Q_INVOKABLE void warning(const QJSValue& args);
-
-    Q_INVOKABLE QString jsQNodeSave(const QJSValue& jsNode, int indent);
+    Q_INVOKABLE bool include(const QString &fileName, QString trContext = QString(), bool force = false);
+    Q_INVOKABLE bool isDeleted(const QJSValue &obj);
+    Q_INVOKABLE QString download(const QString &url, int timeout);
+    Q_INVOKABLE bool downloadToFile(const QString &url, const QString &path, const QString &fileName, int timeout);
+    Q_INVOKABLE void print(const QJSValue &args);
+    Q_INVOKABLE void debug(const QJSValue &args);
+    Q_INVOKABLE void warning(const QJSValue &args);
 
     Q_INVOKABLE bool jsQThreadPoolWaitForDone(int msecs = -1);
-    Q_INVOKABLE bool jsQImageSave(const QJSValue& jsImage, const QString& filePath, const QString& format, int quality);
+    Q_INVOKABLE bool jsQImageSave(const QJSValue &jsImage, const QString &filePath, const QString &format, int quality);
 
 private:
-    RJSApi& handler;
+    RJSApi &handler;
     bool alwaysLoadScripts;
     QThreadPool pool;
 };
 
-Q_DECLARE_METATYPE(RJSTools*)
+Q_DECLARE_METATYPE(RJSTools *)
 
 #endif

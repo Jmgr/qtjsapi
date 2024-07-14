@@ -1,1114 +1,1114 @@
 
-  // Auto generated
-  
-  // include header:
-  //#include "qpaintdevicewrapper.h"
-  //#include "header_cpp.h"
-  
-    #include "qpaintdevice_wrapper.h"
+// Auto generated
 
-  
-      // list of registered base casters for this wrapper class:
-      QList<RJSBasecaster_QPaintDevice*> QPaintDevice_Wrapper::basecasters_QPaintDevice;
-    
-    // static functions implementation in singleton wrapper:
-    
-    // Class: QPaintDevice
-    // Function: devicePixelRatioFScale
-    // Source: 
-    // Static: true
-    // Parameters: 0
-    // preceding Parameters: -1
+// include header:
+//#include "qpaintdevicewrapper.h"
+//#include "header_cpp.h"
 
-                QJSValue 
-              QPaintDevice_WrapperSingleton::devicePixelRatioFScale
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
+#include "qpaintdevice_wrapper.h"
 
-    // call function:
-    
-            // static member function:
-            // call base class static function:
-            qreal res = 
-                
-                // call static member function:
-                QPaintDevice::devicePixelRatioFScale(
-              
+
+// list of registered base casters for this wrapper class:
+QList<RJSBasecaster_QPaintDevice*> QPaintDevice_Wrapper::basecasters_QPaintDevice;
+
+// static functions implementation in singleton wrapper:
+
+// Class: QPaintDevice
+// Function: devicePixelRatioFScale
+// Source:
+// Static: true
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_WrapperSingleton::devicePixelRatioFScale
+(
+
+)
+
+{
+
+    {
+
+
+        // call function:
+
+        // static member function:
+        // call base class static function:
+        qreal res =
+
+            // call static member function:
+            QPaintDevice::devicePixelRatioFScale(
+
             );
-          
-            // return type: qreal
 
-            return RJSHelper::cpp2js_qreal(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // return type: qreal
 
-                  qWarning() << "no matching function variant found for devicePixelRatioFScale";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    void QPaintDevice_Wrapper::init(RJSApi& handler) {
-      
-        //qmlRegisterType<QPaintDevice_Wrapper>("org.qcad", 1, 0, "QPaintDevice_Wrapper");
-        qmlRegisterInterface<QPaintDevice_Wrapper>("QPaintDevice_Wrapper", 1);
-      
+        return RJSHelper::cpp2js_qreal(
+                   handler,
+                   // non-copyable: false
+                   res
 
-      QJSEngine* engine = handler.getEngine();
+               );
 
-      
-          // make type scriptable for JS files:
-          QJSValue global = engine->globalObject();
-          RJSType_QPaintDevice* t = new RJSType_QPaintDevice();
-          global.setProperty("RJSType_QPaintDevice", engine->newQObject(t));
+    }
 
-          // initialize ID for this type:
-          RJSType_QPaintDevice::getIdStatic();
+    qWarning() << "no matching function variant found for devicePixelRatioFScale";
+    handler.trace();
+    return QJSValue();
 
-          
+}
 
-      // wrapper:
-      QJSValue mo = engine->newQMetaObject(&QPaintDevice_Wrapper::staticMetaObject);
-      engine->globalObject().setProperty("QPaintDevice_Wrapper", mo);
+void QPaintDevice_Wrapper::init(RJSApi& handler) {
+
+    //qmlRegisterType<QPaintDevice_Wrapper>("org.qcad", 1, 0, "QPaintDevice_Wrapper");
+    qmlRegisterInterface<QPaintDevice_Wrapper>("QPaintDevice_Wrapper", 1);
 
 
-      
-        // JS base class:
-        //QJSValue mob = engine->newQMetaObject(&QPaintDevice_BaseJs::staticMetaObject);
-        //engine->globalObject().setProperty("QPaintDevice_BaseJs", mob);
-      
-        // singleton wrapper:
-        QJSValue mos = engine->newQMetaObject(&QPaintDevice_WrapperSingleton::staticMetaObject);
-        engine->globalObject().setProperty("QPaintDevice_WrapperSingleton", mos);
+    QJSEngine* engine = handler.getEngine();
 
-        // create instance of singleton wrapper for static functions:
-        QPaintDevice_WrapperSingleton * s = new QPaintDevice_WrapperSingleton(handler);
-        engine->globalObject().setProperty("QPaintDevice_WrapperSingletonInstance", engine->newQObject(s));
-        QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
-      
-      QString fileName = ":generator/js/QPaintDevice.js";
-      QFile scriptFile(fileName);
-      if (!scriptFile.open(QIODevice::ReadOnly)) {
+
+    // make type scriptable for JS files:
+    QJSValue global = engine->globalObject();
+    RJSType_QPaintDevice* t = new RJSType_QPaintDevice();
+    global.setProperty("RJSType_QPaintDevice", engine->newQObject(t));
+
+    // initialize ID for this type:
+    RJSType_QPaintDevice::getIdStatic();
+
+
+
+    // wrapper:
+    QJSValue mo = engine->newQMetaObject(&QPaintDevice_Wrapper::staticMetaObject);
+    engine->globalObject().setProperty("QPaintDevice_Wrapper", mo);
+
+
+
+    // JS base class:
+    //QJSValue mob = engine->newQMetaObject(&QPaintDevice_BaseJs::staticMetaObject);
+    //engine->globalObject().setProperty("QPaintDevice_BaseJs", mob);
+
+    // singleton wrapper:
+    QJSValue mos = engine->newQMetaObject(&QPaintDevice_WrapperSingleton::staticMetaObject);
+    engine->globalObject().setProperty("QPaintDevice_WrapperSingleton", mos);
+
+    // create instance of singleton wrapper for static functions:
+    QPaintDevice_WrapperSingleton * s = new QPaintDevice_WrapperSingleton(handler);
+    engine->globalObject().setProperty("QPaintDevice_WrapperSingletonInstance", engine->newQObject(s));
+    QJSEngine::setObjectOwnership(s, QJSEngine::CppOwnership);
+
+    QString fileName = ":generator/js/QPaintDevice.js";
+    QFile scriptFile(fileName);
+    if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
         return;
-      }
-      QTextStream stream(&scriptFile);
-      QString contents = stream.readAll();
-      scriptFile.close();
-
-      qDebug() << "Evaluating file: " << fileName;
-      QJSValue result = engine->evaluate(contents, fileName);
-      if (result.isError()) {
-          qWarning()
-              << "Uncaught exception at line"
-              << result.property("lineNumber").toInt()
-              << ":" << result.toString();
-      }
     }
-  
-    /*
-    // special constructor used as prototype:
-    QPaintDevice_Wrapper::QPaintDevice_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
-            //setObjectName("QPaintDevice_Wrapper");
-            setEngine(e);
+    QTextStream stream(&scriptFile);
+    QString contents = stream.readAll();
+    scriptFile.close();
 
-            // signal forwarding:
-            //initConnections();
-          }
-        
-    */
+    qDebug() << "Evaluating file: " << fileName;
+    QJSValue result = engine->evaluate(contents, fileName);
+    if (result.isError()) {
+        qWarning()
+                << "Uncaught exception at line"
+                << result.property("lineNumber").toInt()
+                << ":" << result.toString();
+    }
+}
 
-    
-      // special constructor to wrap existing object:
-      QPaintDevice_Wrapper::QPaintDevice_Wrapper(RJSApi& h, QPaintDevice* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
-              //RDebug::incCounter(QString("QPaintDevice_Wrapper_") + handler.getEngine()->objectName());
-              //RDebug::incCounter(QString("QPaintDevice_Wrapper"));
-              //setObjectName("QPaintDevice_Wrapper");
-              //setHandler(h);
+/*
+// special constructor used as prototype:
+QPaintDevice_Wrapper::QPaintDevice_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
+        //setObjectName("QPaintDevice_Wrapper");
+        setEngine(e);
 
-              // signal forwarding:
-              initConnections();
-            }
-          
+        // signal forwarding:
+        //initConnections();
+      }
 
-      // destructor:
-      QPaintDevice_Wrapper::~QPaintDevice_Wrapper() {
-            //RDebug::decCounter(QString("QPaintDevice_Wrapper_") + handler.getEngine()->objectName());
-            //RDebug::decCounter(QString("QPaintDevice_Wrapper"));
+*/
 
-            //qDebug() << "QPaintDevice_Wrapper::~QPaintDevice_Wrapper";
 
-            // tell script handler that this wrapper no longer exists:
-            handler.unregisterWrapper(*this);
+// special constructor to wrap existing object:
+QPaintDevice_Wrapper::QPaintDevice_Wrapper(RJSApi& h, QPaintDevice* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+    //RDebug::incCounter(QString("QPaintDevice_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::incCounter(QString("QPaintDevice_Wrapper"));
+    //setObjectName("QPaintDevice_Wrapper");
+    //setHandler(h);
 
-            
-            if (wrappedCreated) {
-              
-                  // never delete wrapped object (non-copyable, CPP ownership or private destructor)
-                  //qDebug() << "NOT deleting instance of QPaintDevice";
-                
-            }
-            
-          }
-        
-    // initialization of signal forwarding
-    
-        void QPaintDevice_Wrapper::initConnections() {
+    // signal forwarding:
+    initConnections();
+}
 
-          //setObjectName("QPaintDevice_Wrapper");
 
-          // tell script handler that this wrapper needs to be deleted if the engine is deleted:
-          handler.registerWrapper(*this);
+// destructor:
+QPaintDevice_Wrapper::~QPaintDevice_Wrapper() {
+    //RDebug::decCounter(QString("QPaintDevice_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::decCounter(QString("QPaintDevice_Wrapper"));
 
-          
-              // wrapped object is not a QObject:
-              // wrapper is managed by script engine:
-              //QJSEngine::setObjectOwnership(this, QJSEngine::CppOwnership);
-            
+    //qDebug() << "QPaintDevice_Wrapper::~QPaintDevice_Wrapper";
 
-          if (hasWrapped()) {
-            
-            // set up signal forwarding:
-            
-          }
+    // tell script handler that this wrapper no longer exists:
+    handler.unregisterWrapper(*this);
+
+
+    if (wrappedCreated) {
+
+        // never delete wrapped object (non-copyable, CPP ownership or private destructor)
+        //qDebug() << "NOT deleting instance of QPaintDevice";
+
+    }
+
+}
+
+// initialization of signal forwarding
+
+void QPaintDevice_Wrapper::initConnections() {
+
+    //setObjectName("QPaintDevice_Wrapper");
+
+    // tell script handler that this wrapper needs to be deleted if the engine is deleted:
+    handler.registerWrapper(*this);
+
+
+    // wrapped object is not a QObject:
+    // wrapper is managed by script engine:
+    //QJSEngine::setObjectOwnership(this, QJSEngine::CppOwnership);
+
+
+    if (hasWrapped()) {
+
+        // set up signal forwarding:
+
+    }
+}
+
+
+// constructors:
+
+
+// non-static functions:
+
+// Class: QPaintDevice
+// Function: devType
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::devType
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
+            qWarning() << "wrapped is NULL";
+            handler.trace();
+            return QJSValue();
         }
-      
 
-  // constructors:
-  
 
-    // non-static functions:
-    
-    // Class: QPaintDevice
-    // Function: devType
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        //setRecFlag(true);
 
-                QJSValue 
-              QPaintDevice_Wrapper::devType
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // non-static member function:
+        // call function of wrapped object:
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        int res =
+
+            w->devType(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for devType";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: paintingActive
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::paintingActive
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                int res = 
-                    
-                w->devType(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for devType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: paintingActive
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::paintingActive
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        bool res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->paintingActive(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for paintingActive";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: paintEngine
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::paintEngine
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                bool res = 
-                    
-                w->paintingActive(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for paintingActive";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: paintEngine
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::paintEngine
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        QPaintEngine* res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->paintEngine(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: QPaintEngine*
+
+        return RJSHelper::cpp2js_QPaintEngine(
+                   handler,
+                   // non-copyable: true
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for paintEngine";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: width
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::width
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                QPaintEngine* res = 
-                    
-                w->paintEngine(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: QPaintEngine*
 
-            return RJSHelper::cpp2js_QPaintEngine(
-              handler, 
-              // non-copyable: true
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for paintEngine";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: width
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::width
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        int res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->width(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for width";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: height
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::height
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                int res = 
-                    
-                w->width(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for width";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: height
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::height
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        int res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->height(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for height";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: widthMM
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::widthMM
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                int res = 
-                    
-                w->height(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for height";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: widthMM
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::widthMM
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        int res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->widthMM(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for widthMM";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: heightMM
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::heightMM
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                int res = 
-                    
-                w->widthMM(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for widthMM";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: heightMM
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::heightMM
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        int res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->heightMM(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for heightMM";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: logicalDpiX
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::logicalDpiX
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                int res = 
-                    
-                w->heightMM(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for heightMM";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: logicalDpiX
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::logicalDpiX
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        int res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->logicalDpiX(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for logicalDpiX";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: logicalDpiY
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::logicalDpiY
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                int res = 
-                    
-                w->logicalDpiX(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for logicalDpiX";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: logicalDpiY
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::logicalDpiY
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        int res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->logicalDpiY(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for logicalDpiY";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: physicalDpiX
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::physicalDpiX
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                int res = 
-                    
-                w->logicalDpiY(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for logicalDpiY";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: physicalDpiX
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::physicalDpiX
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        int res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->physicalDpiX(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for physicalDpiX";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: physicalDpiY
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::physicalDpiY
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                int res = 
-                    
-                w->physicalDpiX(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for physicalDpiX";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: physicalDpiY
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::physicalDpiY
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        int res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->physicalDpiY(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for physicalDpiY";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: devicePixelRatio
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::devicePixelRatio
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                int res = 
-                    
-                w->physicalDpiY(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for physicalDpiY";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: devicePixelRatio
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::devicePixelRatio
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        qreal res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->devicePixelRatio(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: qreal
+
+        return RJSHelper::cpp2js_qreal(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for devicePixelRatio";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: devicePixelRatioF
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::devicePixelRatioF
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                qreal res = 
-                    
-                w->devicePixelRatio(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: qreal
 
-            return RJSHelper::cpp2js_qreal(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for devicePixelRatio";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: devicePixelRatioF
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::devicePixelRatioF
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        qreal res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->devicePixelRatioF(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: qreal
+
+        return RJSHelper::cpp2js_qreal(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for devicePixelRatioF";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: colorCount
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::colorCount
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                qreal res = 
-                    
-                w->devicePixelRatioF(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: qreal
 
-            return RJSHelper::cpp2js_qreal(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        //setRecFlag(true);
 
-                  qWarning() << "no matching function variant found for devicePixelRatioF";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: colorCount
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QPaintDevice_Wrapper::colorCount
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        int res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->colorCount(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for colorCount";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QPaintDevice
+// Function: depth
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QPaintDevice_Wrapper::depth
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                int res = 
-                    
-                w->colorCount(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for colorCount";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QPaintDevice
-    // Function: depth
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
-
-                QJSValue 
-              QPaintDevice_Wrapper::depth
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
-
-    // call function:
-    
-          if (!hasWrapped()) {
-            qWarning() << "wrapped is NULL";
-            handler.trace();
-            return QJSValue();
-          }
-
-          
-            //setRecFlag(true);
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QPaintDevice* w = getWrapped();
-                int res = 
-                    
-                w->depth(
-                  
-                );
-              
-                //setRecFlag(false);
-              
-            // return type: int
-
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
-
-                  qWarning() << "no matching function variant found for depth";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-
-  // member functions for static properties, forward to static function
-  
+        }
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
+        //setRecFlag(true);
+
+        // non-static member function:
+        // call function of wrapped object:
+
+        // call function of C++ class:
+        QPaintDevice* w = getWrapped();
+        int res =
+
+            w->depth(
+
+            );
+
+        //setRecFlag(false);
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for depth";
+    handler.trace();
+    return QJSValue();
+
+}
+
+
+// member functions for static properties, forward to static function
+
+
+
+// protected overwritten functions / events and their public invokable counterparts:
+

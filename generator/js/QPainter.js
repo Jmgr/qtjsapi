@@ -1,137 +1,135 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QPainter() {
-        
+// class constructor:
+function QPainter() {
 
-        // should be QPainter_BaseJs.call(this, engine):
-        //QPainter.prototype = new QPainter_BaseJs(engine);
 
-        var wrapper;
+    // should be QPainter_BaseJs.call(this, engine):
+    //QPainter.prototype = new QPainter_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QPainter.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QPainter.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPainter);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QPainter);
             //}
-          }
-          else {
+        } else {
             qWarning("QPainter.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 0) {
-    
+
+    } else {
+
+        if (arguments.length == 0) {
+
             self = this;
             wrapper = new QPainter_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QPainter);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QPainter);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QPainter);
-  }
 
-  
-  else {
-    
-        print("QPainter(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QPainter);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QPainter(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QPainter.prototype = new QPainter_BaseJs(engine);
-      //QPainter.prototype = new QPainter_Wrapper(engine);
-      QPainter.prototype = new Object();
-
-      QPainter.prototype.toString = function() {
-          //return "QPainter [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QPainter [JS]";
-        };
-      QPainter.getObjectType = function() {
-        return RJSType_QPainter.getIdStatic();
-      };
-
-      QPainter.prototype.getObjectType = function() {
-        return RJSType_QPainter.getIdStatic();
-      };
-
-      QPainter.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QPainter.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: RenderHint
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QPainter.prototype = new QPainter_BaseJs(engine);
+//QPainter.prototype = new QPainter_Wrapper(engine);
+QPainter.prototype = new Object();
+
+QPainter.prototype.toString = function() {
+    //return "QPainter [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QPainter [JS]";
+};
+QPainter.getObjectType = function() {
+    return RJSType_QPainter.getIdStatic();
+};
+
+QPainter.prototype.getObjectType = function() {
+    return RJSType_QPainter.getIdStatic();
+};
+
+QPainter.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QPainter.getIdStatic()) {
+        return true;
+    }
+
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: RenderHint
 QPainter.Antialiasing = QPainter_Wrapper.Antialiasing;
 QPainter.TextAntialiasing = QPainter_Wrapper.TextAntialiasing;
 QPainter.SmoothPixmapTransform = QPainter_Wrapper.SmoothPixmapTransform;
 QPainter.VerticalSubpixelPositioning = QPainter_Wrapper.VerticalSubpixelPositioning;
 QPainter.LosslessImageRendering = QPainter_Wrapper.LosslessImageRendering;
 
-  // enum: PixmapFragmentHint
+// enum: PixmapFragmentHint
 QPainter.OpaqueHint = QPainter_Wrapper.OpaqueHint;
 
-  // enum: CompositionMode
+// enum: CompositionMode
 QPainter.CompositionMode_SourceOver = QPainter_Wrapper.CompositionMode_SourceOver;
 QPainter.CompositionMode_DestinationOver = QPainter_Wrapper.CompositionMode_DestinationOver;
 QPainter.CompositionMode_Clear = QPainter_Wrapper.CompositionMode_Clear;
@@ -172,25 +170,24 @@ QPainter.RasterOp_SetDestination = QPainter_Wrapper.RasterOp_SetDestination;
 QPainter.RasterOp_NotDestination = QPainter_Wrapper.RasterOp_NotDestination;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QPainter.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QPainter.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QPainter.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QPainter.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

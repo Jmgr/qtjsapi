@@ -1,183 +1,181 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QStringEncoder() {
-        
+// class constructor:
+function QStringEncoder() {
 
-        // should be QStringEncoder_BaseJs.call(this, engine):
-        //QStringEncoder.prototype = new QStringEncoder_BaseJs(engine);
 
-        var wrapper;
+    // should be QStringEncoder_BaseJs.call(this, engine):
+    //QStringEncoder.prototype = new QStringEncoder_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QStringEncoder.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QStringEncoder.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QStringEncoder);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QStringEncoder);
             //}
-          }
-          else {
+        } else {
             qWarning("QStringEncoder.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 1) {
-    
+
+    } else {
+
+        if (arguments.length == 1) {
+
             self = this;
             wrapper = new QStringEncoder_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QStringEncoder);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QStringEncoder);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QStringEncoder);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QStringEncoder_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QStringEncoder);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QStringEncoder);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QStringEncoder_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QStringEncoder);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QStringEncoder);
-  }
-
-  
-  else {
-    
-        print("QStringEncoder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QStringEncoder);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length == 1) {
+
+                self = this;
+                wrapper = new QStringEncoder_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QStringEncoder);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QStringEncoder);
+            }
+
+
+            else
+
+                if (arguments.length == 0) {
+
+                    self = this;
+                    wrapper = new QStringEncoder_Wrapper(
+                        // RJSApi:
+                        handler
+
+                        ////this.setWrapper(this.wrapper);
+                        //Object.setPrototypeOf(this, wrapper);
+                    );
+                    //wrapper.__WRAPPER__ = true;
+                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                    copyProperties(this, wrapper, QStringEncoder);
+
+                    //this.setWrapper(this.wrapper);
+
+
+
+                    //copyProperties(this, wrapper, QStringEncoder);
+                }
+
+
+                else {
+
+                    print("QStringEncoder(): wrong number / type of arguments");
+
+                    console.trace();
+                }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QStringEncoder.prototype = new QStringEncoder_BaseJs(engine);
-      //QStringEncoder.prototype = new QStringEncoder_Wrapper(engine);
-      QStringEncoder.prototype = new Object();
+//QStringEncoder.prototype = new QStringEncoder_BaseJs(engine);
+//QStringEncoder.prototype = new QStringEncoder_Wrapper(engine);
+QStringEncoder.prototype = new Object();
 
-      QStringEncoder.prototype.toString = function() {
-          //return "QStringEncoder [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QStringEncoder [JS]";
-        };
-      QStringEncoder.getObjectType = function() {
-        return RJSType_QStringEncoder.getIdStatic();
-      };
+QStringEncoder.prototype.toString = function() {
+    //return "QStringEncoder [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QStringEncoder [JS]";
+};
+QStringEncoder.getObjectType = function() {
+    return RJSType_QStringEncoder.getIdStatic();
+};
 
-      QStringEncoder.prototype.getObjectType = function() {
-        return RJSType_QStringEncoder.getIdStatic();
-      };
+QStringEncoder.prototype.getObjectType = function() {
+    return RJSType_QStringEncoder.getIdStatic();
+};
 
-      QStringEncoder.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QStringEncoder.getIdStatic()) {
-          return true;
-        }
-
-        
-          if (t===RJSType_QStringConverter.getIdStatic()) {
-            return true;
-          }
-        
-
-        return false;
+QStringEncoder.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QStringEncoder.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
+    if (t===RJSType_QStringConverter.getIdStatic()) {
+        return true;
+    }
 
-      // enum values:
-      
-  // enum: Encoding
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Encoding
 QStringEncoder.Utf8 = QStringEncoder_Wrapper.Utf8;
 QStringEncoder.Utf16 = QStringEncoder_Wrapper.Utf16;
 QStringEncoder.Utf16LE = QStringEncoder_Wrapper.Utf16LE;
@@ -190,53 +188,52 @@ QStringEncoder.System = QStringEncoder_Wrapper.System;
 QStringEncoder.LastEncoding = QStringEncoder_Wrapper.LastEncoding;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QStringEncoder.nameForEncoding = function() 
-          
-        {
-          //print("JS: QStringEncoder.nameForEncoding");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QStringEncoder_WrapperSingletonInstance.nameForEncoding(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QStringEncoder.nameForEncoding = function()
+
+{
+    //print("JS: QStringEncoder.nameForEncoding");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QStringEncoder_WrapperSingletonInstance.nameForEncoding(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QStringEncoder);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QStringEncoder.nameForEncoding(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QStringEncoder.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QStringEncoder.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QStringEncoder.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QStringEncoder.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

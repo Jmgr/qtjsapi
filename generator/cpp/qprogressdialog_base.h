@@ -1,235 +1,234 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QPROGRESSDIALOG_H_BASE
-  #define QPROGRESSDIALOG_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QPushButton>
-  
-    #include <QLabel>
-  
-    #include <QProgressBar>
-  
-    #include <QTimer>
-  
-    #include <QQmlEngine>
+#ifndef QPROGRESSDIALOG_H_BASE
+#define QPROGRESSDIALOG_H_BASE
 
-    
-        #include <QProgressDialog>
-      
-    // Base class for QProgressDialog
-      class QProgressDialog_Base : public QProgressDialog {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QPushButton>
+
+#include <QLabel>
+
+#include <QProgressBar>
+
+#include <QTimer>
+
+#include <QQmlEngine>
+
+
+#include <QProgressDialog>
+
+// Base class for QProgressDialog
+class QProgressDialog_Base : public QProgressDialog {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QProgressDialog
-  // Function: 
-  // Parameters: 6
-  // preceding Parameters: -1
-QProgressDialog_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          const QString& labelText, const QString& cancelButtonText, int minimum, int maximum, QWidget* parent=nullptr, Qt::WindowFlags flags=Qt::WindowFlags()
-      )
-      
-        : QProgressDialog(
-          labelText, cancelButtonText, minimum, maximum, parent, flags
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
-  // Class: QProgressDialog
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: 6
-QProgressDialog_Base
-        
-      (
+    // Class: QProgressDialog
+    // Function:
+    // Parameters: 6
+    // preceding Parameters: -1
+    QProgressDialog_Base
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr, Qt::WindowFlags flags=Qt::WindowFlags()
-      )
-      
+    (
+
+
+        RJSApi& _h
+
+        ,
+        const QString& labelText, const QString& cancelButtonText, int minimum, int maximum, QWidget* parent=nullptr, Qt::WindowFlags flags=Qt::WindowFlags()
+    )
+
         : QProgressDialog(
-          parent, flags
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              labelText, cancelButtonText, minimum, maximum, parent, flags
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
+    // Class: QProgressDialog
+    // Function:
+    // Parameters: 2
+    // preceding Parameters: 6
+    QProgressDialog_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr, Qt::WindowFlags flags=Qt::WindowFlags()
+    )
+
+        : QProgressDialog(
+              parent, flags
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QProgressDialog_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void mousePressEvent(
-      QMouseEvent* event
+        QMouseEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void mousePressEventPublic(
-      QMouseEvent* event
+        QMouseEvent* event
     ) {
-      //qDebug() << "QProgressDialog_Base::mousePressEventPublic()";
-      QProgressDialog::mousePressEvent(
-        event
-      );
+        //qDebug() << "QProgressDialog_Base::mousePressEventPublic()";
+        QProgressDialog::mousePressEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void mouseReleaseEvent(
-      QMouseEvent* event
+        QMouseEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void mouseReleaseEventPublic(
-      QMouseEvent* event
+        QMouseEvent* event
     ) {
-      //qDebug() << "QProgressDialog_Base::mouseReleaseEventPublic()";
-      QProgressDialog::mouseReleaseEvent(
-        event
-      );
+        //qDebug() << "QProgressDialog_Base::mouseReleaseEventPublic()";
+        QProgressDialog::mouseReleaseEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void mouseMoveEvent(
-      QMouseEvent* event
+        QMouseEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void mouseMoveEventPublic(
-      QMouseEvent* event
+        QMouseEvent* event
     ) {
-      //qDebug() << "QProgressDialog_Base::mouseMoveEventPublic()";
-      QProgressDialog::mouseMoveEvent(
-        event
-      );
+        //qDebug() << "QProgressDialog_Base::mouseMoveEventPublic()";
+        QProgressDialog::mouseMoveEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void paintEvent(
-      QPaintEvent* event
+        QPaintEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void paintEventPublic(
-      QPaintEvent* event
+        QPaintEvent* event
     ) {
-      //qDebug() << "QProgressDialog_Base::paintEventPublic()";
-      QProgressDialog::paintEvent(
-        event
-      );
+        //qDebug() << "QProgressDialog_Base::paintEventPublic()";
+        QProgressDialog::paintEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void actionEvent(
-      QActionEvent* event
+        QActionEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void actionEventPublic(
-      QActionEvent* event
+        QActionEvent* event
     ) {
-      //qDebug() << "QProgressDialog_Base::actionEventPublic()";
-      QProgressDialog::actionEvent(
-        event
-      );
+        //qDebug() << "QProgressDialog_Base::actionEventPublic()";
+        QProgressDialog::actionEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void resizeEvent(
-      QResizeEvent* a1
+        QResizeEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void resizeEventPublic(
-      QResizeEvent* a1
+        QResizeEvent* a1
     ) {
-      //qDebug() << "QProgressDialog_Base::resizeEventPublic()";
-      QProgressDialog::resizeEvent(
-        a1
-      );
+        //qDebug() << "QProgressDialog_Base::resizeEventPublic()";
+        QProgressDialog::resizeEvent(
+            a1
+        );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-  #endif
-  
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

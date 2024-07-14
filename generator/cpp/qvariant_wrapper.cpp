@@ -1,18 +1,18 @@
 
-  // Auto generated
-  
-  // include header:
-  //#include "qvariantwrapper.h"
-  //#include "header_cpp.h"
-  
-    #include "qvariant_wrapper.h"
+// Auto generated
 
-  
-      // list of registered base casters for this wrapper class:
-      QList<RJSBasecaster_QVariant*> QVariant_Wrapper::basecasters_QVariant;
-    
-    // static functions implementation in singleton wrapper:
-    
+// include header:
+//#include "qvariantwrapper.h"
+//#include "header_cpp.h"
+
+#include "qvariant_wrapper.h"
+
+
+// list of registered base casters for this wrapper class:
+QList<RJSBasecaster_QVariant*> QVariant_Wrapper::basecasters_QVariant;
+
+// static functions implementation in singleton wrapper:
+
 #ifndef QT_NO_GEOM_VARIANT
 
 #endif
@@ -37,178 +37,178 @@
 
 #endif
 
-    void QVariant_Wrapper::init(RJSApi& handler) {
-      
-        //qmlRegisterType<QVariant_Wrapper>("org.qcad", 1, 0, "QVariant_Wrapper");
-        qmlRegisterInterface<QVariant_Wrapper>("QVariant_Wrapper", 1);
-      
+void QVariant_Wrapper::init(RJSApi& handler) {
 
-      QJSEngine* engine = handler.getEngine();
-
-      
-          // make type scriptable for JS files:
-          QJSValue global = engine->globalObject();
-          RJSType_QVariant* t = new RJSType_QVariant();
-          global.setProperty("RJSType_QVariant", engine->newQObject(t));
-
-          // initialize ID for this type:
-          RJSType_QVariant::getIdStatic();
-
-          
-
-      // wrapper:
-      QJSValue mo = engine->newQMetaObject(&QVariant_Wrapper::staticMetaObject);
-      engine->globalObject().setProperty("QVariant_Wrapper", mo);
+    //qmlRegisterType<QVariant_Wrapper>("org.qcad", 1, 0, "QVariant_Wrapper");
+    qmlRegisterInterface<QVariant_Wrapper>("QVariant_Wrapper", 1);
 
 
-      
-        // JS base class:
-        //QJSValue mob = engine->newQMetaObject(&QVariant_BaseJs::staticMetaObject);
-        //engine->globalObject().setProperty("QVariant_BaseJs", mob);
-      
-      QString fileName = ":generator/js/QVariant.js";
-      QFile scriptFile(fileName);
-      if (!scriptFile.open(QIODevice::ReadOnly)) {
+    QJSEngine* engine = handler.getEngine();
+
+
+    // make type scriptable for JS files:
+    QJSValue global = engine->globalObject();
+    RJSType_QVariant* t = new RJSType_QVariant();
+    global.setProperty("RJSType_QVariant", engine->newQObject(t));
+
+    // initialize ID for this type:
+    RJSType_QVariant::getIdStatic();
+
+
+
+    // wrapper:
+    QJSValue mo = engine->newQMetaObject(&QVariant_Wrapper::staticMetaObject);
+    engine->globalObject().setProperty("QVariant_Wrapper", mo);
+
+
+
+    // JS base class:
+    //QJSValue mob = engine->newQMetaObject(&QVariant_BaseJs::staticMetaObject);
+    //engine->globalObject().setProperty("QVariant_BaseJs", mob);
+
+    QString fileName = ":generator/js/QVariant.js";
+    QFile scriptFile(fileName);
+    if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
         return;
-      }
-      QTextStream stream(&scriptFile);
-      QString contents = stream.readAll();
-      scriptFile.close();
-
-      qDebug() << "Evaluating file: " << fileName;
-      QJSValue result = engine->evaluate(contents, fileName);
-      if (result.isError()) {
-          qWarning()
-              << "Uncaught exception at line"
-              << result.property("lineNumber").toInt()
-              << ":" << result.toString();
-      }
     }
-  
-    /*
-    // special constructor used as prototype:
-    QVariant_Wrapper::QVariant_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
-            //setObjectName("QVariant_Wrapper");
-            setEngine(e);
+    QTextStream stream(&scriptFile);
+    QString contents = stream.readAll();
+    scriptFile.close();
 
-            // signal forwarding:
-            //initConnections();
-          }
-        
-    */
+    qDebug() << "Evaluating file: " << fileName;
+    QJSValue result = engine->evaluate(contents, fileName);
+    if (result.isError()) {
+        qWarning()
+                << "Uncaught exception at line"
+                << result.property("lineNumber").toInt()
+                << ":" << result.toString();
+    }
+}
 
-    
-      // special constructor to wrap existing object:
-      QVariant_Wrapper::QVariant_Wrapper(RJSApi& h, QVariant* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
-              //RDebug::incCounter(QString("QVariant_Wrapper_") + handler.getEngine()->objectName());
-              //RDebug::incCounter(QString("QVariant_Wrapper"));
-              //setObjectName("QVariant_Wrapper");
-              //setHandler(h);
+/*
+// special constructor used as prototype:
+QVariant_Wrapper::QVariant_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
+        //setObjectName("QVariant_Wrapper");
+        setEngine(e);
 
-              // signal forwarding:
-              initConnections();
-            }
-          
+        // signal forwarding:
+        //initConnections();
+      }
 
-      // destructor:
-      QVariant_Wrapper::~QVariant_Wrapper() {
-            //RDebug::decCounter(QString("QVariant_Wrapper_") + handler.getEngine()->objectName());
-            //RDebug::decCounter(QString("QVariant_Wrapper"));
+*/
 
-            //qDebug() << "QVariant_Wrapper::~QVariant_Wrapper";
 
-            // tell script handler that this wrapper no longer exists:
-            handler.unregisterWrapper(*this);
+// special constructor to wrap existing object:
+QVariant_Wrapper::QVariant_Wrapper(RJSApi& h, QVariant* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+    //RDebug::incCounter(QString("QVariant_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::incCounter(QString("QVariant_Wrapper"));
+    //setObjectName("QVariant_Wrapper");
+    //setHandler(h);
 
-            
-            if (wrappedCreated) {
-              
-                  // delete wrapped object (copyable, JS ownership)
-                  //qDebug() << "deleting instance of QVariant";
-                  delete wrapped;
-                
-            }
-            
-          }
-        
-    // initialization of signal forwarding
-    
-        void QVariant_Wrapper::initConnections() {
+    // signal forwarding:
+    initConnections();
+}
 
-          //setObjectName("QVariant_Wrapper");
 
-          // tell script handler that this wrapper needs to be deleted if the engine is deleted:
-          handler.registerWrapper(*this);
+// destructor:
+QVariant_Wrapper::~QVariant_Wrapper() {
+    //RDebug::decCounter(QString("QVariant_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::decCounter(QString("QVariant_Wrapper"));
 
-          
-              // wrapped object is not a QObject:
-              // wrapper is managed by script engine:
-              //QJSEngine::setObjectOwnership(this, QJSEngine::CppOwnership);
-            
+    //qDebug() << "QVariant_Wrapper::~QVariant_Wrapper";
 
-          if (hasWrapped()) {
-            
-            // set up signal forwarding:
-            
-          }
-        }
-      
+    // tell script handler that this wrapper no longer exists:
+    handler.unregisterWrapper(*this);
 
-  // constructors:
-  
-    // Class: QVariant
-    // Function: 
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
+
+    if (wrappedCreated) {
+
+        // delete wrapped object (copyable, JS ownership)
+        //qDebug() << "deleting instance of QVariant";
+        delete wrapped;
+
+    }
+
+}
+
+// initialization of signal forwarding
+
+void QVariant_Wrapper::initConnections() {
+
+    //setObjectName("QVariant_Wrapper");
+
+    // tell script handler that this wrapper needs to be deleted if the engine is deleted:
+    handler.registerWrapper(*this);
+
+
+    // wrapped object is not a QObject:
+    // wrapper is managed by script engine:
+    //QJSEngine::setObjectOwnership(this, QJSEngine::CppOwnership);
+
+
+    if (hasWrapped()) {
+
+        // set up signal forwarding:
+
+    }
+}
+
+
+// constructors:
+
+// Class: QVariant
+// Function:
+// Source:
+// Static: false
+// Parameters: 1
+// preceding Parameters: -1
 QVariant_Wrapper::QVariant_Wrapper
-                
-              (
-                
-                  // RJSApi:
-                  QObject* h
-                  ,
-  const QJSValue& 
-  a1
-              ) 
-              
-                : RJSWrapperObj(*(RJSApi*)h)
-              
-              {
-                
-                  //RDebug::incCounter(QString("QVariant_Wrapper_") + handler.getEngine()->objectName());
-                  //RDebug::incCounter(QString("QVariant_Wrapper"));
-                
-      // check parameter types:
-      if (
+
+(
+
+    // RJSApi:
+    QObject* h
+    ,
+    const QJSValue&
+    a1
+)
+
+    : RJSWrapperObj(*(RJSApi*)h)
+
+{
+
+    //RDebug::incCounter(QString("QVariant_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::incCounter(QString("QVariant_Wrapper"));
+
+    // check parameter types:
+    if (
         RJSHelper::is_QVariant(handler, a1
-  )
+                              )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: other (QVariant)
-  
-QVariant a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QVariant(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: other (QVariant)
+
+        QVariant a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QVariant(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -216,37 +216,37 @@ QVariant a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_int(handler, a1
-  )
+                         )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: i (int)
-  
-int a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_int(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: i (int)
+
+        int a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_int(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -254,37 +254,37 @@ int a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_uint(handler, a1
-  )
+                          )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: ui (uint)
-  
-uint a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_uint(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: ui (uint)
+
+        uint a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_uint(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -292,37 +292,37 @@ uint a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_bool(handler, a1
-  )
+                          )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: b (bool)
-  
-bool a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: b (bool)
+
+        bool a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -330,37 +330,37 @@ bool a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_double(handler, a1
-  )
+                            )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: d (double)
-  
-double a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_double(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: d (double)
+
+        double a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_double(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -368,37 +368,37 @@ double a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_float(handler, a1
-  )
+                           )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: f (float)
-  
-float a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_float(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: f (float)
+
+        float a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_float(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -406,37 +406,37 @@ float a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QByteArray(handler, a1
-  )
+                                )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: bytearray (QByteArray)
-  
-QByteArray a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: bytearray (QByteArray)
+
+        QByteArray a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QByteArray(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -444,37 +444,37 @@ QByteArray a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QString(handler, a1
-  )
+                             )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: string (QString)
-  
-QString a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: string (QString)
+
+        QString a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -482,37 +482,37 @@ QString a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QStringList(handler, a1
-  )
+                                 )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: stringlist (QStringList)
-  
-QStringList a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: stringlist (QStringList)
+
+        QStringList a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QStringList(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -520,37 +520,37 @@ QStringList a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QChar(handler, a1
-  )
+                           )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: qchar (QChar)
-  
-QChar a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QChar(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: qchar (QChar)
+
+        QChar a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QChar(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -558,37 +558,37 @@ QChar a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QDate(handler, a1
-  )
+                           )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: date (QDate)
-  
-QDate a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QDate(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: date (QDate)
+
+        QDate a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QDate(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -596,37 +596,37 @@ QDate a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QTime(handler, a1
-  )
+                           )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: time (QTime)
-  
-QTime a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QTime(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: time (QTime)
+
+        QTime a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QTime(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -634,37 +634,37 @@ QTime a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QDateTime(handler, a1
-  )
+                               )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: datetime (QDateTime)
-  
-QDateTime a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QDateTime(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: datetime (QDateTime)
+
+        QDateTime a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QDateTime(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -672,37 +672,37 @@ QDateTime a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QList_QVariant(handler, a1
-  )
+                                    )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: list (QList<QVariant>)
-  
-QList<QVariant> a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QList_QVariant(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: list (QList<QVariant>)
+
+        QList<QVariant> a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QList_QVariant(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -710,37 +710,37 @@ QList<QVariant> a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QSize(handler, a1
-  )
+                           )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: size (QSize)
-  
-QSize a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: size (QSize)
+
+        QSize a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QSize(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -748,37 +748,37 @@ QSize a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QSizeF(handler, a1
-  )
+                            )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: size (QSizeF)
-  
-QSizeF a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QSizeF(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: size (QSizeF)
+
+        QSizeF a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QSizeF(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -786,37 +786,37 @@ QSizeF a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QPoint(handler, a1
-  )
+                            )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: pt (QPoint)
-  
-QPoint a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: pt (QPoint)
+
+        QPoint a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QPoint(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -824,37 +824,37 @@ QPoint a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QPointF(handler, a1
-  )
+                             )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: pt (QPointF)
-  
-QPointF a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: pt (QPointF)
+
+        QPointF a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QPointF(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -862,37 +862,37 @@ QPointF a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QRect(handler, a1
-  )
+                           )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: rect (QRect)
-  
-QRect a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: rect (QRect)
+
+        QRect a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QRect(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -900,37 +900,37 @@ QRect a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QRectF(handler, a1
-  )
+                            )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: rect (QRectF)
-  
-QRectF a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QRectF(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: rect (QRectF)
+
+        QRectF a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QRectF(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -938,37 +938,37 @@ QRectF a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QLocale(handler, a1
-  )
+                             )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: locale (QLocale)
-  
-QLocale a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QLocale(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: locale (QLocale)
+
+        QLocale a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QLocale(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -976,37 +976,37 @@ QLocale a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QUrl(handler, a1
-  )
+                          )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: url (QUrl)
-  
-QUrl a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QUrl(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: url (QUrl)
+
+        QUrl a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QUrl(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -1014,22 +1014,22 @@ QUrl a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      {
-    
+    }
 
-    // call function:
-    
+    {
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QVariant(
-                
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QVariant(
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -1037,28 +1037,28 @@ QUrl a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-                    // no constructor without arguments defined
-                    // allow constructor for prototype objects without args:
-                    if (
-                      a1.isUndefined()
-  
-                      ) {
-                      wrapped = nullptr;
-                      wrappedCreated = false;
-                      return;
-                    }
-                  
+    }
 
-                  qWarning() << "no matching constructor variant found for QVariant";
-                  wrapped = nullptr;
-                  wrappedCreated = false;
-                  handler.trace();
-                
-              }
-            
+    // no constructor without arguments defined
+    // allow constructor for prototype objects without args:
+    if (
+        a1.isUndefined()
+
+    ) {
+        wrapped = nullptr;
+        wrappedCreated = false;
+        return;
+    }
+
+
+    qWarning() << "no matching constructor variant found for QVariant";
+    wrapped = nullptr;
+    wrappedCreated = false;
+    handler.trace();
+
+}
+
 #ifndef QT_NO_GEOM_VARIANT
 
 #endif
@@ -1084,1652 +1084,1652 @@ QUrl a1_cpp;
 #endif
 
 
-    // non-static functions:
-    
-    // Class: QVariant
-    // Function: swap
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
+// non-static functions:
 
-                QJSValue 
-              QVariant_Wrapper::swap
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
+// Class: QVariant
+// Function: swap
+// Source:
+// Static: false
+// Parameters: 1
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::swap
+(
+
+    const QJSValue&
+    a1
+)
+
+{
+
+    // check parameter types:
+    if (
         RJSHelper::is_QVariant(handler, a1
-  )
+                              )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: other (QVariant)
-  
-QVariant a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QVariant(handler, a1);
-        
+    ) {
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // prepare parameters:
+
+        // convert js parameter to cpp: other (QVariant)
+
+        QVariant a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QVariant(handler, a1);
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                
-                w->swap(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
 
-                  qWarning() << "no matching function variant found for swap";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: userType
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QVariant_Wrapper::userType
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QVariant* w = getWrapped();
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        w->swap(
+            a1_cpp
+
+        );
+
+        return QJSValue();
+
+    }
+
+    qWarning() << "no matching function variant found for swap";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: userType
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::userType
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                int res = 
-                    
-                w->userType(
-                  
-                );
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for userType";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: typeId
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        int res =
 
-                QJSValue 
-              QVariant_Wrapper::typeId
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->userType(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for userType";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: typeId
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::typeId
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                int res = 
-                    
-                w->typeId(
-                  
-                );
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for typeId";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: isValid
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        int res =
 
-                QJSValue 
-              QVariant_Wrapper::isValid
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->typeId(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for typeId";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: isValid
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::isValid
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                bool res = 
-                    
-                w->isValid(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isValid";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: isNull
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QVariant_Wrapper::isNull
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isValid(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isValid";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: isNull
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::isNull
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                bool res = 
-                    
-                w->isNull(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isNull";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: clear
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QVariant_Wrapper::clear
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
+            w->isNull(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isNull";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: clear
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::clear
+(
+
+)
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                
-                w->clear(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
 
-                  qWarning() << "no matching function variant found for clear";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: detach
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QVariant_Wrapper::detach
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QVariant* w = getWrapped();
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        w->clear(
+
+        );
+
+        return QJSValue();
+
+    }
+
+    qWarning() << "no matching function variant found for clear";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: detach
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::detach
+(
+
+)
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                
-                w->detach(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
 
-                  qWarning() << "no matching function variant found for detach";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: isDetached
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QVariant_Wrapper::isDetached
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QVariant* w = getWrapped();
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        w->detach(
+
+        );
+
+        return QJSValue();
+
+    }
+
+    qWarning() << "no matching function variant found for detach";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: isDetached
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::isDetached
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                bool res = 
-                    
-                w->isDetached(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isDetached";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toInt
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QVariant_Wrapper::toInt
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isDetached(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isDetached";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toInt
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toInt
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                int res = 
-                    
-                w->toInt(
-                  
-                );
-              
-            // return type: int
 
-            return RJSHelper::cpp2js_int(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toInt";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toUInt
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        int res =
 
-                QJSValue 
-              QVariant_Wrapper::toUInt
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toInt(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: int
+
+        return RJSHelper::cpp2js_int(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toInt";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toUInt
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toUInt
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                uint res = 
-                    
-                w->toUInt(
-                  
-                );
-              
-            // return type: uint
 
-            return RJSHelper::cpp2js_uint(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toUInt";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toBool
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        uint res =
 
-                QJSValue 
-              QVariant_Wrapper::toBool
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toUInt(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: uint
+
+        return RJSHelper::cpp2js_uint(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toUInt";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toBool
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toBool
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                bool res = 
-                    
-                w->toBool(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toBool";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toDouble
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QVariant_Wrapper::toDouble
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toBool(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toBool";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toDouble
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toDouble
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                double res = 
-                    
-                w->toDouble(
-                  
-                );
-              
-            // return type: double
 
-            return RJSHelper::cpp2js_double(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toDouble";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toFloat
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        double res =
 
-                QJSValue 
-              QVariant_Wrapper::toFloat
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toDouble(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: double
+
+        return RJSHelper::cpp2js_double(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toDouble";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toFloat
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toFloat
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                float res = 
-                    
-                w->toFloat(
-                  
-                );
-              
-            // return type: float
 
-            return RJSHelper::cpp2js_float(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toFloat";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toReal
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        float res =
 
-                QJSValue 
-              QVariant_Wrapper::toReal
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toFloat(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: float
+
+        return RJSHelper::cpp2js_float(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toFloat";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toReal
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toReal
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                qreal res = 
-                    
-                w->toReal(
-                  
-                );
-              
-            // return type: qreal
 
-            return RJSHelper::cpp2js_qreal(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toReal";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toByteArray
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        qreal res =
 
-                QJSValue 
-              QVariant_Wrapper::toByteArray
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toReal(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: qreal
+
+        return RJSHelper::cpp2js_qreal(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toReal";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toByteArray
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toByteArray
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QByteArray res = 
-                    
-                w->toByteArray(
-                  
-                );
-              
-            // return type: QByteArray
 
-            return RJSHelper::cpp2js_QByteArray(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toByteArray";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toString
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QByteArray res =
 
-                QJSValue 
-              QVariant_Wrapper::toString
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toByteArray(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QByteArray
+
+        return RJSHelper::cpp2js_QByteArray(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toByteArray";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toString
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toString
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QString res = 
-                    
-                w->toString(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toString";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toStringList
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QVariant_Wrapper::toStringList
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toString(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toString";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toStringList
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toStringList
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QStringList res = 
-                    
-                w->toStringList(
-                  
-                );
-              
-            // return type: QStringList
 
-            return RJSHelper::cpp2js_QStringList(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toStringList";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toChar
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QStringList res =
 
-                QJSValue 
-              QVariant_Wrapper::toChar
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toStringList(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QStringList
+
+        return RJSHelper::cpp2js_QStringList(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toStringList";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toChar
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toChar
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QChar res = 
-                    
-                w->toChar(
-                  
-                );
-              
-            // return type: QChar
 
-            return RJSHelper::cpp2js_QChar(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toChar";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toDate
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QChar res =
 
-                QJSValue 
-              QVariant_Wrapper::toDate
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toChar(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QChar
+
+        return RJSHelper::cpp2js_QChar(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toChar";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toDate
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toDate
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QDate res = 
-                    
-                w->toDate(
-                  
-                );
-              
-            // return type: QDate
 
-            return RJSHelper::cpp2js_QDate(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toDate";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toTime
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QDate res =
 
-                QJSValue 
-              QVariant_Wrapper::toTime
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toDate(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QDate
+
+        return RJSHelper::cpp2js_QDate(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toDate";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toTime
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toTime
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QTime res = 
-                    
-                w->toTime(
-                  
-                );
-              
-            // return type: QTime
 
-            return RJSHelper::cpp2js_QTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toTime";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toDateTime
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QTime res =
 
-                QJSValue 
-              QVariant_Wrapper::toDateTime
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toTime(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QTime
+
+        return RJSHelper::cpp2js_QTime(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toTime";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toDateTime
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toDateTime
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QDateTime res = 
-                    
-                w->toDateTime(
-                  
-                );
-              
-            // return type: QDateTime
 
-            return RJSHelper::cpp2js_QDateTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toDateTime";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toList
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QDateTime res =
 
-                QJSValue 
-              QVariant_Wrapper::toList
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toDateTime(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QDateTime
+
+        return RJSHelper::cpp2js_QDateTime(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toDateTime";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toList
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toList
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QList<QVariant> res = 
-                    
-                w->toList(
-                  
-                );
-              
-            // return type: QList<QVariant>
 
-            return RJSHelper::cpp2js_QList_QVariant(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toList";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QList<QVariant> res =
+
+            w->toList(
+
+            );
+
+        // return type: QList<QVariant>
+
+        return RJSHelper::cpp2js_QList_QVariant(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toList";
+    handler.trace();
+    return QJSValue();
+
+}
+
 #ifndef QT_NO_GEOM_VARIANT
 
-    // Class: QVariant
-    // Function: toPoint
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+// Class: QVariant
+// Function: toPoint
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
 
-                QJSValue 
-              QVariant_Wrapper::toPoint
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+QJSValue
+QVariant_Wrapper::toPoint
+(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QPoint res = 
-                    
-                w->toPoint(
-                  
-                );
-              
-            // return type: QPoint
 
-            return RJSHelper::cpp2js_QPoint(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toPoint";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toPointF
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QPoint res =
 
-                QJSValue 
-              QVariant_Wrapper::toPointF
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toPoint(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QPoint
+
+        return RJSHelper::cpp2js_QPoint(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toPoint";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toPointF
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toPointF
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QPointF res = 
-                    
-                w->toPointF(
-                  
-                );
-              
-            // return type: QPointF
 
-            return RJSHelper::cpp2js_QPointF(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toPointF";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toRect
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QPointF res =
 
-                QJSValue 
-              QVariant_Wrapper::toRect
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toPointF(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QPointF
+
+        return RJSHelper::cpp2js_QPointF(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toPointF";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toRect
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toRect
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QRect res = 
-                    
-                w->toRect(
-                  
-                );
-              
-            // return type: QRect
 
-            return RJSHelper::cpp2js_QRect(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toRect";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toSize
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QRect res =
 
-                QJSValue 
-              QVariant_Wrapper::toSize
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toRect(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QRect
+
+        return RJSHelper::cpp2js_QRect(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toRect";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toSize
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toSize
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QSize res = 
-                    
-                w->toSize(
-                  
-                );
-              
-            // return type: QSize
 
-            return RJSHelper::cpp2js_QSize(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toSize";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toSizeF
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QSize res =
 
-                QJSValue 
-              QVariant_Wrapper::toSizeF
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toSize(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QSize
+
+        return RJSHelper::cpp2js_QSize(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toSize";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toSizeF
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toSizeF
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QSizeF res = 
-                    
-                w->toSizeF(
-                  
-                );
-              
-            // return type: QSizeF
 
-            return RJSHelper::cpp2js_QSizeF(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toSizeF";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QVariant
-    // Function: toRectF
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QSizeF res =
 
-                QJSValue 
-              QVariant_Wrapper::toRectF
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->toSizeF(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QSizeF
+
+        return RJSHelper::cpp2js_QSizeF(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toSizeF";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QVariant
+// Function: toRectF
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QVariant_Wrapper::toRectF
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QRectF res = 
-                    
-                w->toRectF(
-                  
-                );
-              
-            // return type: QRectF
 
-            return RJSHelper::cpp2js_QRectF(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toRectF";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QRectF res =
+
+            w->toRectF(
+
+            );
+
+        // return type: QRectF
+
+        return RJSHelper::cpp2js_QRectF(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toRectF";
+    handler.trace();
+    return QJSValue();
+
+}
+
 #endif
 
-    // Class: QVariant
-    // Function: toLocale
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+// Class: QVariant
+// Function: toLocale
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
 
-                QJSValue 
-              QVariant_Wrapper::toLocale
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+QJSValue
+QVariant_Wrapper::toLocale
+(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QLocale res = 
-                    
-                w->toLocale(
-                  
-                );
-              
-            // return type: QLocale
 
-            return RJSHelper::cpp2js_QLocale(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toLocale";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QLocale res =
+
+            w->toLocale(
+
+            );
+
+        // return type: QLocale
+
+        return RJSHelper::cpp2js_QLocale(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toLocale";
+    handler.trace();
+    return QJSValue();
+
+}
+
 #if QT_CONFIG(regularexpression)
 
 #endif
@@ -2740,63 +2740,63 @@ QVariant a1_cpp;
 
 #ifndef QT_BOOTSTRAPPED
 
-    // Class: QVariant
-    // Function: toUrl
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+// Class: QVariant
+// Function: toUrl
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
 
-                QJSValue 
-              QVariant_Wrapper::toUrl
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+QJSValue
+QVariant_Wrapper::toUrl
+(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                QUrl res = 
-                    
-                w->toUrl(
-                  
-                );
-              
-            // return type: QUrl
 
-            return RJSHelper::cpp2js_QUrl(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for toUrl";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+        QUrl res =
+
+            w->toUrl(
+
+            );
+
+        // return type: QUrl
+
+        return RJSHelper::cpp2js_QUrl(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for toUrl";
+    handler.trace();
+    return QJSValue();
+
+}
+
 #endif
 
 #if QT_CONFIG(itemmodel)
@@ -2807,115 +2807,115 @@ QVariant a1_cpp;
 
 #endif
 
-    // Class: QVariant
-    // Function: setValue
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
+// Class: QVariant
+// Function: setValue
+// Source:
+// Static: false
+// Parameters: 1
+// preceding Parameters: -1
 
-                QJSValue 
-              QVariant_Wrapper::setValue
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
+QJSValue
+QVariant_Wrapper::setValue
+(
+
+    const QJSValue&
+    a1
+)
+
+{
+
+    // check parameter types:
+    if (
         RJSHelper::is_QVariant(handler, a1
-  )
+                              )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: avalue (QVariant)
-  
-QVariant a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QVariant(handler, a1);
-        
+    ) {
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // prepare parameters:
+
+        // convert js parameter to cpp: avalue (QVariant)
+
+        QVariant a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QVariant(handler, a1);
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                
-                w->setValue(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
 
-      // check parameter types:
-      if (
+        // non-static member function:
+        // call function of wrapped object:
+
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+
+        w->setValue(
+            a1_cpp
+
+        );
+
+        return QJSValue();
+
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QVariant(handler, a1
-  )
+                              )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: avalue (QVariant)
-  
-QVariant a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QVariant(handler, a1);
-        
+    ) {
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // prepare parameters:
+
+        // convert js parameter to cpp: avalue (QVariant)
+
+        QVariant a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QVariant(handler, a1);
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QVariant* w = getWrapped();
-                
-                w->setValue(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setValue";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-
-  // member functions for static properties, forward to static function
-  
+        }
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
+        // non-static member function:
+        // call function of wrapped object:
+
+        // call function of C++ class:
+        QVariant* w = getWrapped();
+
+        w->setValue(
+            a1_cpp
+
+        );
+
+        return QJSValue();
+
+    }
+
+    qWarning() << "no matching function variant found for setValue";
+    handler.trace();
+    return QJSValue();
+
+}
+
+
+// member functions for static properties, forward to static function
+
+
+
+// protected overwritten functions / events and their public invokable counterparts:
+

@@ -1,90 +1,88 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QPLAINTEXTEDIT_H_BASE
-  #define QPLAINTEXTEDIT_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QTextDocument>
-  
-    #include <QMenu>
-  
-    #include <QMimeData>
-  
-    #include <QPagedPaintDevice>
-  
-    #include <QRegularExpression>
-  
-    #include <QQmlEngine>
+#ifndef QPLAINTEXTEDIT_H_BASE
+#define QPLAINTEXTEDIT_H_BASE
 
-    
-        #include <QPlainTextEdit>
-      
-    // Base class for QPlainTextEdit
-      class QPlainTextEdit_Base : public QPlainTextEdit {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QTextDocument>
+
+#include <QMenu>
+
+#include <QMimeData>
+
+#include <QRegularExpression>
+
+#include <QQmlEngine>
+
+
+#include <QPlainTextEdit>
+
+// Base class for QPlainTextEdit
+class QPlainTextEdit_Base : public QPlainTextEdit {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QPlainTextEdit
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: -1
-QPlainTextEdit_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          const QString& text, QWidget* parent=nullptr
-      )
-      
-        : QPlainTextEdit(
-          text, parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
-  // Class: QPlainTextEdit
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: 2
-QPlainTextEdit_Base
-        
-      (
+    // Class: QPlainTextEdit
+    // Function:
+    // Parameters: 2
+    // preceding Parameters: -1
+    QPlainTextEdit_Base
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr
-      )
-      
+    (
+
+
+        RJSApi& _h
+
+        ,
+        const QString& text, QWidget* parent=nullptr
+    )
+
         : QPlainTextEdit(
-          parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              text, parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
+    // Class: QPlainTextEdit
+    // Function:
+    // Parameters: 1
+    // preceding Parameters: 2
+    QPlainTextEdit_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr
+    )
+
+        : QPlainTextEdit(
+              parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
 #if QT_CONFIG(regularexpression)
 
 #endif
@@ -112,93 +110,92 @@ QPlainTextEdit_Base
     // destructor:
     virtual ~QPlainTextEdit_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void resizeEvent(
-      QResizeEvent* e
+        QResizeEvent* e
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void resizeEventPublic(
-      QResizeEvent* e
+        QResizeEvent* e
     ) {
-      //qDebug() << "QPlainTextEdit_Base::resizeEventPublic()";
-      QPlainTextEdit::resizeEvent(
-        e
-      );
+        //qDebug() << "QPlainTextEdit_Base::resizeEventPublic()";
+        QPlainTextEdit::resizeEvent(
+            e
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void paintEvent(
-      QPaintEvent* e
+        QPaintEvent* e
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void paintEventPublic(
-      QPaintEvent* e
+        QPaintEvent* e
     ) {
-      //qDebug() << "QPlainTextEdit_Base::paintEventPublic()";
-      QPlainTextEdit::paintEvent(
-        e
-      );
+        //qDebug() << "QPlainTextEdit_Base::paintEventPublic()";
+        QPlainTextEdit::paintEvent(
+            e
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void mouseMoveEvent(
-      QMouseEvent* e
+        QMouseEvent* e
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void mouseMoveEventPublic(
-      QMouseEvent* e
+        QMouseEvent* e
     ) {
-      //qDebug() << "QPlainTextEdit_Base::mouseMoveEventPublic()";
-      QPlainTextEdit::mouseMoveEvent(
-        e
-      );
+        //qDebug() << "QPlainTextEdit_Base::mouseMoveEventPublic()";
+        QPlainTextEdit::mouseMoveEvent(
+            e
+        );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-  #endif
-  
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

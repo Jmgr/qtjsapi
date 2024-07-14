@@ -45,7 +45,6 @@
 #include "generator/cpp/qframe_wrapper.h"
 #include "generator/cpp/qformlayout_wrapper.h"
 #include "generator/cpp/qsize_wrapper.h"
-#include "generator/cpp/qprinter_wrapper.h"
 #include "generator/cpp/qdialog_wrapper.h"
 #include "generator/cpp/qprogressdialog_wrapper.h"
 #include "generator/cpp/qpagesize_wrapper.h"
@@ -121,7 +120,6 @@
 #include "generator/cpp/qtextedit_wrapper.h"
 #include "generator/cpp/qtextformat_wrapper.h"
 #include "generator/cpp/qtextdocument_wrapper.h"
-#include "generator/cpp/qdom_wrapper.h"
 #include "generator/cpp/qgridlayout_wrapper.h"
 #include "generator/cpp/qpen_wrapper.h"
 #include "generator/cpp/qabstractscrollarea_wrapper.h"
@@ -137,7 +135,6 @@
 #include "generator/cpp/qitemdelegate_wrapper.h"
 #include "generator/cpp/qlistview_wrapper.h"
 #include "generator/cpp/qline_wrapper.h"
-#include "generator/cpp/qprintdialog_wrapper.h"
 #include "generator/cpp/qpainterpath_wrapper.h"
 #include "generator/cpp/qitemselectionmodel_wrapper.h"
 #include "generator/cpp/qtablewidget_wrapper.h"
@@ -153,23 +150,21 @@
 #include "generator/cpp/qsortfilterproxymodel_wrapper.h"
 #include "generator/cpp/qitemdelegate_wrapper.h"
 #include "generator/cpp/qeasingcurve_wrapper.h"
-#include "generator/cpp/qsvgrenderer_wrapper.h"
 #include "generator/cpp/qqmlapplicationengine_wrapper.h"
 #include "generator/cpp/qqmlcontext_wrapper.h"
 #include "generator/cpp/qqmlengine_wrapper.h"
-#include "generator/cpp/qquickview_wrapper.h"
-#include "generator/cpp/qquickwidget_wrapper.h"
 #include "generator/cpp/qgraphicseffect_wrapper.h"
 #include "generator/cpp/qpaintdevice_wrapper.h"
 #include "generator/cpp/qjsengine_wrapper.h"
 #include "generator/cpp/qfilesystemwatcher_wrapper.h"
 
-RJSApi::RJSApi(QJSEngine* engine) : engine(engine) {
+RJSApi::RJSApi(QJSEngine *engine) : engine(engine)
+{
     init();
 }
 
-
-RJSApi::~RJSApi() {
+RJSApi::~RJSApi()
+{
     // collect garbage... (objects are scheduled for removal, not removed):
     qDebug() << "collect garbage...";
     engine->collectGarbage();
@@ -177,32 +172,36 @@ RJSApi::~RJSApi() {
 
     // delete wrappers:
     qDebug() << "deleting wrappers (" + engine->objectName() + "): " << wrappers.size();
-    QSetIterator<RJSWrapperObj*> i(wrappers);
-    while (i.hasNext()) {
-        RJSWrapperObj* wrapper = i.next();
+    QSetIterator<RJSWrapperObj *> i(wrappers);
+    while (i.hasNext())
+    {
+        RJSWrapperObj *wrapper = i.next();
 
-        if (!wrapper->isCppOwnership()) {
+        if (!wrapper->isCppOwnership())
+        {
             continue;
         }
 
-        if (wrappers.size()%1000==0) {
+        if (wrappers.size() % 1000 == 0)
+        {
             qDebug() << "deleting wrappers..." << wrappers.size();
         }
 
-        //qDebug() << "deleting wrapper:" << RJSType::getTypeName(wrapper->getWrappedType());
+        // qDebug() << "deleting wrapper:" << RJSType::getTypeName(wrapper->getWrappedType());
         delete wrapper;
     }
     wrappers.clear();
-    qDebug() << "deleting wrappers: DONE" ;
+    qDebug() << "deleting wrappers: DONE";
 
     qDebug() << "collect garbage...";
     engine->collectGarbage();
     // objects are deleted here:
-    //QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
+    // QCoreApplication::processEvents(QEventLoop::ExcludeUserInputEvents);
     qDebug() << "collect garbage: DONE";
 }
 
-void RJSApi::init() {
+void RJSApi::init()
+{
     static int counter = 0;
 
     engine->setObjectName(QString("E%1").arg(counter++));
@@ -232,16 +231,18 @@ void RJSApi::init() {
     {
         QString fileName = ":copyproperties.js";
         QFile scriptFile(fileName);
-        if (scriptFile.open(QIODevice::ReadOnly)) {
+        if (scriptFile.open(QIODevice::ReadOnly))
+        {
             QTextStream stream(&scriptFile);
             QString contents = stream.readAll();
             scriptFile.close();
             QJSValue result = engine->evaluate(contents, fileName);
-            if (result.isError()) {
+            if (result.isError())
+            {
                 qWarning()
-                        << "Uncaught exception at line"
-                        << result.property("lineNumber").toInt()
-                        << ":" << result.toString();
+                    << "Uncaught exception at line"
+                    << result.property("lineNumber").toInt()
+                    << ":" << result.toString();
             }
         }
     }
@@ -291,7 +292,6 @@ void RJSApi::init() {
     QFormLayout_Wrapper::init(*this);
     QSize_Wrapper::init(*this);
     QSizeF_Wrapper::init(*this);
-    QPrinter_Wrapper::init(*this);
     QDialog_Wrapper::init(*this);
     QProgressDialog_Wrapper::init(*this);
     QPageSize_Wrapper::init(*this);
@@ -387,15 +387,6 @@ void RJSApi::init() {
     QMimeData_Wrapper::init(*this);
     QTextCharFormat_Wrapper::init(*this);
     QTextDocument_Wrapper::init(*this);
-    QDomDocument_Wrapper::init(*this);
-    QDomElement_Wrapper::init(*this);
-    QDomNode_Wrapper::init(*this);
-    QDomNamedNodeMap_Wrapper::init(*this);
-    QDomAttr_Wrapper::init(*this);
-    QDomText_Wrapper::init(*this);
-    QDomNodeList_Wrapper::init(*this);
-    QDomCharacterData_Wrapper::init(*this);
-    QDomCDATASection_Wrapper::init(*this);
     QGridLayout_Wrapper::init(*this);
     QPen_Wrapper::init(*this);
     QKeyCombination_Wrapper::init(*this);
@@ -416,7 +407,6 @@ void RJSApi::init() {
     QStandardItem_Wrapper::init(*this);
     QLine_Wrapper::init(*this);
     QLineF_Wrapper::init(*this);
-    QPrintDialog_Wrapper::init(*this);
     QPainterPath_Wrapper::init(*this);
     QItemSelection_Wrapper::init(*this);
     QItemSelectionModel_Wrapper::init(*this);
@@ -438,7 +428,6 @@ void RJSApi::init() {
     QItemDelegate_Wrapper::init(*this);
     QActionEvent_Wrapper::init(*this);
     QEasingCurve_Wrapper::init(*this);
-    QSvgRenderer_Wrapper::init(*this);
     QStringEncoder_Wrapper::init(*this);
     QStringDecoder_Wrapper::init(*this);
     QXmlStreamReader_Wrapper::init(*this);
@@ -451,65 +440,69 @@ void RJSApi::init() {
     QQmlContext_Wrapper::init(*this);
     QQmlEngine_Wrapper::init(*this);
     QQmlApplicationEngine_Wrapper::init(*this);
-    QQuickWidget_Wrapper::init(*this);
-    QQuickView_Wrapper::init(*this);
-
 
     // set engine property to QQmlApplicationEngine if appropriate
     // to support mixing of QML with QtJSAPI
-    QQmlApplicationEngine* appEngine = dynamic_cast<QQmlApplicationEngine*>(engine);
-    if (appEngine!=NULL) {
-        QQmlApplicationEngine_Wrapper* appEngineWrapper = new QQmlApplicationEngine_Wrapper(*this, appEngine, false);
+    QQmlApplicationEngine *appEngine = dynamic_cast<QQmlApplicationEngine *>(engine);
+    if (appEngine != NULL)
+    {
+        QQmlApplicationEngine_Wrapper *appEngineWrapper = new QQmlApplicationEngine_Wrapper(*this, appEngine, false);
         global.setProperty("engine", engine->newQObject(appEngineWrapper));
     }
-
 
     {
         QString fileName = ":fixes.js";
         QFile scriptFile(fileName);
-        if (scriptFile.open(QIODevice::ReadOnly)) {
+        if (scriptFile.open(QIODevice::ReadOnly))
+        {
             QTextStream stream(&scriptFile);
             QString contents = stream.readAll();
             scriptFile.close();
             QJSValue result = engine->evaluate(contents, fileName);
-            if (result.isError()) {
+            if (result.isError())
+            {
                 qWarning()
-                        << "Uncaught exception at line"
-                        << result.property("lineNumber").toInt()
-                        << ":" << result.toString();
+                    << "Uncaught exception at line"
+                    << result.property("lineNumber").toInt()
+                    << ":" << result.toString();
             }
         }
     }
 }
 
-void RJSApi::registerWrapper(RJSWrapperObj& obj) {
+void RJSApi::registerWrapper(RJSWrapperObj &obj)
+{
     static int counter = 0;
 
     // keep track of CPP owned objects
     // this is important, to make sure forwarded signals are disconnected properly
-    if (!obj.isCppOwnership()) {
+    if (!obj.isCppOwnership())
+    {
         return;
     }
     wrappers.insert(&obj);
 }
 
-void RJSApi::unregisterWrapper(RJSWrapperObj& obj) {
-    if (!obj.isCppOwnership()) {
+void RJSApi::unregisterWrapper(RJSWrapperObj &obj)
+{
+    if (!obj.isCppOwnership())
+    {
         return;
     }
     wrappers.remove(&obj);
 }
 
-
 // Manual implementations of functions that require extra conversion:
 
-QJSValue QImageWriter_WrapperSingleton::supportedImageFormats() {
+QJSValue QImageWriter_WrapperSingleton::supportedImageFormats()
+{
     {
         // call function:
         QList<QByteArray> res = QImageWriter::supportedImageFormats();
 
         QList<QString> res2;
-        for (int i=0; i<res.length(); i++) {
+        for (int i = 0; i < res.length(); i++)
+        {
             res2.append(QString(res[i]));
         }
 
@@ -521,13 +514,15 @@ QJSValue QImageWriter_WrapperSingleton::supportedImageFormats() {
     return QJSValue();
 }
 
-QJSValue QImageReader_WrapperSingleton::supportedImageFormats() {
+QJSValue QImageReader_WrapperSingleton::supportedImageFormats()
+{
     {
         // call function:
         QList<QByteArray> res = QImageReader::supportedImageFormats();
 
         QList<QString> res2;
-        for (int i=0; i<res.length(); i++) {
+        for (int i = 0; i < res.length(); i++)
+        {
             res2.append(QString(res[i]));
         }
 

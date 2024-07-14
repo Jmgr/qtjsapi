@@ -1,90 +1,90 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QFILEDIALOG_H_BASE
-  #define QFILEDIALOG_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QModelIndex>
-  
-    #include <QItemSelection>
-  
-    #include <QAbstractFileIconProvider>
-  
-    #include <QAbstractItemDelegate>
-  
-    #include <QAbstractProxyModel>
-  
-    #include <QQmlEngine>
+#ifndef QFILEDIALOG_H_BASE
+#define QFILEDIALOG_H_BASE
 
-    
-        #include <QFileDialog>
-      
-    // Base class for QFileDialog
-      class QFileDialog_Base : public QFileDialog {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QModelIndex>
+
+#include <QItemSelection>
+
+#include <QAbstractFileIconProvider>
+
+#include <QAbstractItemDelegate>
+
+#include <QAbstractProxyModel>
+
+#include <QQmlEngine>
+
+
+#include <QFileDialog>
+
+// Base class for QFileDialog
+class QFileDialog_Base : public QFileDialog {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QFileDialog
-  // Function: 
-  // Parameters: 4
-  // preceding Parameters: -1
-QFileDialog_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr, const QString& caption=QString(), const QString& directory=QString(), const QString& filter=QString()
-      )
-      
-        : QFileDialog(
-          parent, caption, directory, filter
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
-  // Class: QFileDialog
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: 4
-QFileDialog_Base
-        
-      (
+    // Class: QFileDialog
+    // Function:
+    // Parameters: 4
+    // preceding Parameters: -1
+    QFileDialog_Base
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent, Qt::WindowFlags f
-      )
-      
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr, const QString& caption=QString(), const QString& directory=QString(), const QString& filter=QString()
+    )
+
         : QFileDialog(
-          parent, f
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              parent, caption, directory, filter
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
+    // Class: QFileDialog
+    // Function:
+    // Parameters: 2
+    // preceding Parameters: 4
+    QFileDialog_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent, Qt::WindowFlags f
+    )
+
+        : QFileDialog(
+              parent, f
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
 #if QT_CONFIG(mimetype)
 
 #endif
@@ -96,36 +96,35 @@ QFileDialog_Base
     // destructor:
     virtual ~QFileDialog_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
 
-      // public virtual overwritten functions / events:
-      
+    // protected overwritten functions / events and their public invokable counterparts:
 
-      // public pure-virtual functions:
-      
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
+    // public virtual overwritten functions / events:
 
-    public:
-      QJSValue self;
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
+    // public pure-virtual functions:
 
-    };
-    
-  #endif
-  
+
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

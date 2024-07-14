@@ -1,80 +1,80 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QLABEL_H_BASE
-  #define QLABEL_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QQmlEngine>
+#ifndef QLABEL_H_BASE
+#define QLABEL_H_BASE
 
-    
-        #include <QLabel>
-      
-    // Base class for QLabel
-      class QLabel_Base : public QLabel {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QQmlEngine>
+
+
+#include <QLabel>
+
+// Base class for QLabel
+class QLabel_Base : public QLabel {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QLabel
-  // Function: 
-  // Parameters: 3
-  // preceding Parameters: -1
-QLabel_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          const QString& text, QWidget* parent=nullptr, Qt::WindowFlags f=Qt::WindowFlags()
-      )
-      
-        : QLabel(
-          text, parent, f
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
-  // Class: QLabel
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: 3
-QLabel_Base
-        
-      (
+    // Class: QLabel
+    // Function:
+    // Parameters: 3
+    // preceding Parameters: -1
+    QLabel_Base
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr, Qt::WindowFlags f=Qt::WindowFlags()
-      )
-      
+    (
+
+
+        RJSApi& _h
+
+        ,
+        const QString& text, QWidget* parent=nullptr, Qt::WindowFlags f=Qt::WindowFlags()
+    )
+
         : QLabel(
-          parent, f
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              text, parent, f
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
+    // Class: QLabel
+    // Function:
+    // Parameters: 2
+    // preceding Parameters: 3
+    QLabel_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr, Qt::WindowFlags f=Qt::WindowFlags()
+    )
+
+        : QLabel(
+              parent, f
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
 #if QT_DEPRECATED_SINCE(6,6)
 
 #endif
@@ -118,74 +118,73 @@ QLabel_Base
     // destructor:
     virtual ~QLabel_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void paintEvent(
-      QPaintEvent* a1
+        QPaintEvent* a1
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void paintEventPublic(
-      QPaintEvent* a1
+        QPaintEvent* a1
     ) {
-      //qDebug() << "QLabel_Base::paintEventPublic()";
-      QLabel::paintEvent(
-        a1
-      );
+        //qDebug() << "QLabel_Base::paintEventPublic()";
+        QLabel::paintEvent(
+            a1
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void mouseMoveEvent(
-      QMouseEvent* ev
+        QMouseEvent* ev
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void mouseMoveEventPublic(
-      QMouseEvent* ev
+        QMouseEvent* ev
     ) {
-      //qDebug() << "QLabel_Base::mouseMoveEventPublic()";
-      QLabel::mouseMoveEvent(
-        ev
-      );
+        //qDebug() << "QLabel_Base::mouseMoveEventPublic()";
+        QLabel::mouseMoveEvent(
+            ev
+        );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-  #endif
-  
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

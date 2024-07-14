@@ -1,342 +1,339 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QToolTip() {
-        
+// class constructor:
+function QToolTip() {
 
-        // should be QToolTip_BaseJs.call(this, engine):
-        //QToolTip.prototype = new QToolTip_BaseJs(engine);
 
-        var wrapper;
+    // should be QToolTip_BaseJs.call(this, engine):
+    //QToolTip.prototype = new QToolTip_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QToolTip.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QToolTip.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QToolTip);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QToolTip);
             //}
-          }
-          else {
+        } else {
             qWarning("QToolTip.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
-        }
-        else {
-          
-              qWarning("QToolTip.js: No constructor found for class QToolTip");
-            
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+    } else {
+
+        qWarning("QToolTip.js: No constructor found for class QToolTip");
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QToolTip.prototype = new QToolTip_BaseJs(engine);
-      //QToolTip.prototype = new QToolTip_Wrapper(engine);
-      QToolTip.prototype = new Object();
+//QToolTip.prototype = new QToolTip_BaseJs(engine);
+//QToolTip.prototype = new QToolTip_Wrapper(engine);
+QToolTip.prototype = new Object();
 
-      QToolTip.prototype.toString = function() {
-          //return "QToolTip [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QToolTip [JS]";
-        };
-      QToolTip.getObjectType = function() {
-        return RJSType_QToolTip.getIdStatic();
-      };
+QToolTip.prototype.toString = function() {
+    //return "QToolTip [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QToolTip [JS]";
+};
+QToolTip.getObjectType = function() {
+    return RJSType_QToolTip.getIdStatic();
+};
 
-      QToolTip.prototype.getObjectType = function() {
-        return RJSType_QToolTip.getIdStatic();
-      };
+QToolTip.prototype.getObjectType = function() {
+    return RJSType_QToolTip.getIdStatic();
+};
 
-      QToolTip.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QToolTip.getIdStatic()) {
-          return true;
-        }
-
-        
-
-        return false;
+QToolTip.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QToolTip.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
 
-      // enum values:
-      
+    return false;
 
-      // functions:
-      
 
-      // static functions:
-      
 
-        // static function 
-        QToolTip.showText = function() 
-          
-        {
-          //print("JS: QToolTip.showText");
-          
-      if (arguments.length >= 2 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QToolTip_WrapperSingletonInstance.showText(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
+};
+
+// enum values:
+
+
+// functions:
+
+
+// static functions:
+
+
+// static function
+QToolTip.showText = function()
+
+{
+    //print("JS: QToolTip.showText");
+
+    if (arguments.length >= 2 &&
+            arguments.length <= 3) {
+
+        // calling static wrapper:
+        return QToolTip_WrapperSingletonInstance.showText(
+                   arguments[0], arguments[1], arguments[2]
+               );
+
 
         //copyProperties(this, wrapper, QToolTip);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QToolTip.showText(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QToolTip.hideText = function() 
-          
-        {
-          //print("JS: QToolTip.hideText");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QToolTip_WrapperSingletonInstance.hideText(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QToolTip.hideText = function()
+
+{
+    //print("JS: QToolTip.hideText");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QToolTip_WrapperSingletonInstance.hideText(
+
+               );
+
 
         //copyProperties(this, wrapper, QToolTip);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QToolTip.hideText(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QToolTip.isVisible = function() 
-          
-        {
-          //print("JS: QToolTip.isVisible");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QToolTip_WrapperSingletonInstance.isVisible(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QToolTip.isVisible = function()
+
+{
+    //print("JS: QToolTip.isVisible");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QToolTip_WrapperSingletonInstance.isVisible(
+
+               );
+
 
         //copyProperties(this, wrapper, QToolTip);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QToolTip.isVisible(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QToolTip.text = function() 
-          
-        {
-          //print("JS: QToolTip.text");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QToolTip_WrapperSingletonInstance.text(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QToolTip.text = function()
+
+{
+    //print("JS: QToolTip.text");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QToolTip_WrapperSingletonInstance.text(
+
+               );
+
 
         //copyProperties(this, wrapper, QToolTip);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QToolTip.text(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QToolTip.palette = function() 
-          
-        {
-          //print("JS: QToolTip.palette");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QToolTip_WrapperSingletonInstance.palette(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QToolTip.palette = function()
+
+{
+    //print("JS: QToolTip.palette");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QToolTip_WrapperSingletonInstance.palette(
+
+               );
+
 
         //copyProperties(this, wrapper, QToolTip);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QToolTip.palette(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QToolTip.setPalette = function() 
-          
-        {
-          //print("JS: QToolTip.setPalette");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QToolTip_WrapperSingletonInstance.setPalette(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QToolTip.setPalette = function()
+
+{
+    //print("JS: QToolTip.setPalette");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QToolTip_WrapperSingletonInstance.setPalette(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QToolTip);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QToolTip.setPalette(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QToolTip.font = function() 
-          
-        {
-          //print("JS: QToolTip.font");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QToolTip_WrapperSingletonInstance.font(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QToolTip.font = function()
+
+{
+    //print("JS: QToolTip.font");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QToolTip_WrapperSingletonInstance.font(
+
+               );
+
 
         //copyProperties(this, wrapper, QToolTip);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QToolTip.font(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QToolTip.setFont = function() 
-          
-        {
-          //print("JS: QToolTip.setFont");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QToolTip_WrapperSingletonInstance.setFont(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QToolTip.setFont = function()
+
+{
+    //print("JS: QToolTip.setFont");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QToolTip_WrapperSingletonInstance.setFont(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QToolTip);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QToolTip.setFont(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QToolTip.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QToolTip.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QToolTip.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QToolTip.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

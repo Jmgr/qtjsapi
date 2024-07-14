@@ -1,160 +1,160 @@
 
-  // Auto generated
-  
-    #ifndef QVARIANT_H_WRAPPER
-    #define QVARIANT_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QVARIANT_H_WRAPPER
+#define QVARIANT_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QDate>
-      
-        #include <QDateTime>
-      
-        #include <QLocale>
-      
-        #include <QTransform>
-      
-        #include <QTime>
-      
-        #include <QPoint>
-      
-        #include <QPointF>
-      
-        #include <QSize>
-      
-        #include <QSizeF>
-      
-        #include <QRect>
-      
-        #include <QRectF>
-      
-        #include <QUrl>
-      
-        #include <QVariant>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QVariant>
-      
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QVariant
-    class QTJSAPI_EXPORT QVariant_Wrapper : public RJSWrapperObj {
+// include header:
+//#include "header_h.h"
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
+#include "../RJSHelper.h"
 
-    private:
-      // disable copy constructor:
-      QVariant_Wrapper(const QVariant_Wrapper&);
 
-    public:
-      // initialization of QVariant:
-      static void init(RJSApi& handler);
+#include "RJSWrapperObj.h"
 
-      
-        static QVariant* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+#include <QDate>
 
-          // hook for modules to cast from other types to base QVariant:
-          for (int i=0; i<basecasters_QVariant.length(); i++) {
+#include <QDateTime>
+
+#include <QLocale>
+
+#include <QTransform>
+
+#include <QTime>
+
+#include <QPoint>
+
+#include <QPointF>
+
+#include <QSize>
+
+#include <QSizeF>
+
+#include <QRect>
+
+#include <QRectF>
+
+#include <QUrl>
+
+#include <QVariant>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QVariant>
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QVariant
+class QTJSAPI_EXPORT QVariant_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+
+private:
+    // disable copy constructor:
+    QVariant_Wrapper(const QVariant_Wrapper&);
+
+public:
+    // initialization of QVariant:
+    static void init(RJSApi& handler);
+
+
+    static QVariant* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QVariant:
+        for (int i=0; i<basecasters_QVariant.length(); i++) {
             RJSBasecaster_QVariant* basecaster = basecasters_QVariant[i];
             QVariant* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QVariant:
-          if (t==RJSType_QVariant::getIdStatic()) {
+        // object is a pointer to base class QVariant:
+        if (t==RJSType_QVariant::getIdStatic()) {
             return (QVariant*)vp;
-          }
-
-          qWarning() << "QVariant_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QVariant* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QVariant*: wrapper wraps NULL";
-          }
+        qWarning() << "QVariant_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QVariant* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QVariant*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QVariant* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QVariant*: wrapper wraps NULL";
         }
-      
+
+        QVariant* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QVariant*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QVariant_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QVariant_Wrapper(RJSApi& h, QVariant* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QVariant_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QVariant_Wrapper(RJSApi& h, QVariant* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QVariant_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QVariant
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QVariant_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QVariant_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 #ifndef QT_NO_GEOM_VARIANT
 
 #endif
@@ -181,618 +181,618 @@
 
 
     // non-static functions:
-    
+
     // Class: QVariant
     // Function: swap
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  swap
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    swap
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QVariant
     // Function: userType
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  userType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    userType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: typeId
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  typeId
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    typeId
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: isValid
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isValid
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isValid
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: isNull
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isNull
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isNull
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: clear
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clear
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clear
+    (
+
+
+    )
+
+    ;
+
     // Class: QVariant
     // Function: detach
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  detach
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    detach
+    (
+
+
+    )
+
+    ;
+
     // Class: QVariant
     // Function: isDetached
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isDetached
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isDetached
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toInt
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toInt
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toInt
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toUInt
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toUInt
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toUInt
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toBool
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toBool
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toBool
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toDouble
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toDouble
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toDouble
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toFloat
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toFloat
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toFloat
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toReal
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toReal
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toReal
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toByteArray
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toByteArray
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toByteArray
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toString
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toString
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toString
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toStringList
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toStringList
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toStringList
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toChar
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toChar
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toChar
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toDate
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toDate
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toDate
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toTime
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toTime
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toTime
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toDateTime
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toDateTime
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toDateTime
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toList
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toList
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toList
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #ifndef QT_NO_GEOM_VARIANT
 
     // Class: QVariant
     // Function: toPoint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toPoint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toPoint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toPointF
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toPointF
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toPointF
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toRect
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toRect
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toRect
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toSizeF
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toSizeF
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toSizeF
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QVariant
     // Function: toRectF
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toRectF
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toRectF
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #endif
 
     // Class: QVariant
     // Function: toLocale
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toLocale
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toLocale
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #if QT_CONFIG(regularexpression)
 
 #endif
@@ -805,25 +805,25 @@
 
     // Class: QVariant
     // Function: toUrl
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toUrl
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toUrl
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #endif
 
 #if QT_CONFIG(itemmodel)
@@ -836,149 +836,149 @@
 
     // Class: QVariant
     // Function: setValue
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setValue
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    setValue
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QVariant::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return false;
-            
-        }
+    }
 
-        // get wrapped object:
-        QVariant* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QVariant::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return false;
+
+    }
+
+    // get wrapped object:
+    QVariant* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QVariant* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QVariant* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QVariant* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QVariant*> basecasters_QVariant;
 
-      public:
-        static void registerBasecaster_QVariant(RJSBasecaster_QVariant* bc) {
-          basecasters_QVariant.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QVariant* wrapped;
 
-    Q_DECLARE_METATYPE(QVariant_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QVariant_Wrapper, "org.qcad.QVariant_Wrapper")
 
-  
-  #endif
-  
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QVariant*> basecasters_QVariant;
+
+public:
+    static void registerBasecaster_QVariant(RJSBasecaster_QVariant* bc) {
+        basecasters_QVariant.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QVariant_Wrapper*)
+
+Q_DECLARE_INTERFACE(QVariant_Wrapper, "org.qcad.QVariant_Wrapper")
+
+
+#endif
+

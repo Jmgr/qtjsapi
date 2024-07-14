@@ -1,51 +1,51 @@
 
-  // Auto generated
-  
-    #ifndef QITEMDELEGATE_H_WRAPPER
-    #define QITEMDELEGATE_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QITEMDELEGATE_H_WRAPPER
+#define QITEMDELEGATE_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QItemEditorFactory>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QItemDelegate>
-      
-      // wrapped object is QItemDelegate_Base class if new object is created: 
-      #include "qitemdelegate_base.h"
-    
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QItemDelegate_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QItemDelegate_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QItemEditorFactory>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QItemDelegate>
+
+// wrapped object is QItemDelegate_Base class if new object is created:
+#include "qitemdelegate_base.h"
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QItemDelegate_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QItemDelegate_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QItemDelegate
     // Function: tr
     // Source: QObject
@@ -53,171 +53,171 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QItemDelegate_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QItemDelegate
-    class QTJSAPI_EXPORT QItemDelegate_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
     QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
+    tr
+    (
 
 
-    private:
-      // disable copy constructor:
-      QItemDelegate_Wrapper(const QItemDelegate_Wrapper&);
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
 
-    public:
-      // initialization of QItemDelegate:
-      static void init(RJSApi& handler);
+    )
 
-      
-        static QItemDelegate* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+    ;
 
-          // hook for modules to cast from other types to base QItemDelegate:
-          for (int i=0; i<basecasters_QItemDelegate.length(); i++) {
+
+private:
+    RJSApi& handler;
+    //static QItemDelegate_WrapperSingleton* _singleInstance;
+
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QItemDelegate
+class QTJSAPI_EXPORT QItemDelegate_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
+
+
+private:
+    // disable copy constructor:
+    QItemDelegate_Wrapper(const QItemDelegate_Wrapper&);
+
+public:
+    // initialization of QItemDelegate:
+    static void init(RJSApi& handler);
+
+
+    static QItemDelegate* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QItemDelegate:
+        for (int i=0; i<basecasters_QItemDelegate.length(); i++) {
             RJSBasecaster_QItemDelegate* basecaster = basecasters_QItemDelegate[i];
             QItemDelegate* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QItemDelegate:
-          if (t==RJSType_QItemDelegate::getIdStatic()) {
+        // object is a pointer to base class QItemDelegate:
+        if (t==RJSType_QItemDelegate::getIdStatic()) {
             return (QItemDelegate*)vp;
-          }
-
-          qWarning() << "QItemDelegate_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QItemDelegate* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QItemDelegate*: wrapper wraps NULL";
-          }
+        qWarning() << "QItemDelegate_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QItemDelegate* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QItemDelegate*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QItemDelegate* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QItemDelegate*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum EndEditHint {
-    NoHint = QItemDelegate::NoHint,
-EditNextItem = QItemDelegate::EditNextItem,
-EditPreviousItem = QItemDelegate::EditPreviousItem,
-SubmitModelCache = QItemDelegate::SubmitModelCache,
-RevertModelCache = QItemDelegate::RevertModelCache,
 
-  };
-  Q_ENUM(EndEditHint)
+        QItemDelegate* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QItemDelegate*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
+    // enums:
+
+    enum EndEditHint {
+        NoHint = QItemDelegate::NoHint,
+        EditNextItem = QItemDelegate::EditNextItem,
+        EditPreviousItem = QItemDelegate::EditPreviousItem,
+        SubmitModelCache = QItemDelegate::SubmitModelCache,
+        RevertModelCache = QItemDelegate::RevertModelCache,
+
+    };
+    Q_ENUM(EndEditHint)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QItemDelegate_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QItemDelegate_Wrapper(RJSApi& h, QItemDelegate* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QItemDelegate_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QItemDelegate_Wrapper(RJSApi& h, QItemDelegate* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QItemDelegate_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QItemDelegate
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QItemDelegate_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QItemDelegate_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QItemDelegate
     // Function: objectName
     // Source: QObject
@@ -225,20 +225,20 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: setObjectName
     // Source: QObject
@@ -246,22 +246,22 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QItemDelegate
     // Function: isWidgetType
     // Source: QObject
@@ -269,20 +269,20 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: isWindowType
     // Source: QObject
@@ -290,20 +290,20 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: signalsBlocked
     // Source: QObject
@@ -311,20 +311,20 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: blockSignals
     // Source: QObject
@@ -332,22 +332,22 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QItemDelegate
     // Function: findChild
     // Source: QObject
@@ -355,28 +355,28 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: children
     // Source: QObject
@@ -384,20 +384,20 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: setParent
     // Source: QObject
@@ -405,22 +405,22 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QItemDelegate
     // Function: installEventFilter
     // Source: QObject
@@ -428,22 +428,22 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QItemDelegate
     // Function: removeEventFilter
     // Source: QObject
@@ -451,22 +451,22 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QItemDelegate
     // Function: dumpObjectTree
     // Source: QObject
@@ -474,18 +474,18 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QItemDelegate
     // Function: dumpObjectInfo
     // Source: QObject
@@ -493,18 +493,18 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QItemDelegate
     // Function: setProperty
     // Source: QObject
@@ -512,26 +512,26 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QItemDelegate
     // Function: property
     // Source: QObject
@@ -539,24 +539,24 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -564,20 +564,20 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: parent
     // Source: QObject
@@ -585,20 +585,20 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: deleteLater
     // Source: QObject
@@ -606,18 +606,18 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QItemDelegate
     // Function: destroyEditor
     // Source: QAbstractItemDelegate
@@ -625,28 +625,28 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  destroyEditor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    destroyEditor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: paintingRoles
     // Source: QAbstractItemDelegate
@@ -654,20 +654,20 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  paintingRoles
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    paintingRoles
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: commitData
     // Source: QAbstractItemDelegate
@@ -675,20 +675,20 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void commitData(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void commitData(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void commitDataEmitter(
-                QWidget* editor
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void commitDataEmitter(
+        QWidget* editor
+    );
+
     // Class: QItemDelegate
     // Function: closeEditor
     // Source: QAbstractItemDelegate
@@ -696,22 +696,22 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 2
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void closeEditor(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void closeEditor(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void closeEditorEmitter(
-                QWidget* editor, QAbstractItemDelegate::EndEditHint hint=QAbstractItemDelegate::NoHint
-              );
-            
+        const QJSValue&
+        a1,
+        const QJSValue&
+        a2
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void closeEditorEmitter(
+        QWidget* editor, QAbstractItemDelegate::EndEditHint hint=QAbstractItemDelegate::NoHint
+    );
+
     // Class: QItemDelegate
     // Function: sizeHintChanged
     // Source: QAbstractItemDelegate
@@ -719,266 +719,266 @@ RevertModelCache = QItemDelegate::RevertModelCache,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void sizeHintChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void sizeHintChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void sizeHintChangedEmitter(
-                const QModelIndex& a1
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void sizeHintChangedEmitter(
+        const QModelIndex& a1
+    );
+
     // Class: QItemDelegate
     // Function: hasClipping
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasClipping
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasClipping
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: setClipping
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setClipping
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setClipping
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QItemDelegate
     // Function: setEditorData
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setEditorData
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    setEditorData
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QItemDelegate
     // Function: setModelData
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setModelData
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    setModelData
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QItemDelegate::getIdStatic();
+    )
+
+    const
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QItemDelegate* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QItemDelegate::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QItemDelegate* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QItemDelegate* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QItemDelegate* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          QItemDelegate_Base* getWrappedBase() {
-            QItemDelegate* w = getWrapped();
-            return dynamic_cast<QItemDelegate_Base*>(w);
-          }
+        return nullptr;
+    }
 
-          QItemDelegate_Base* getWrappedBase() const {
-            QItemDelegate* w = getWrapped();
-            return dynamic_cast<QItemDelegate_Base*>(w);
-          }
-        
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
+    // get wrapped base object or nullptr:
+    QItemDelegate_Base* getWrappedBase() {
+        QItemDelegate* w = getWrapped();
+        return dynamic_cast<QItemDelegate_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
+    QItemDelegate_Base* getWrappedBase() const {
+        QItemDelegate* w = getWrapped();
+        return dynamic_cast<QItemDelegate_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
-          //void setRecFlag(bool on) const {
-          //  QItemDelegate_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
-        private:
-        // wrapped object:
-        QItemDelegate* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QItemDelegate*> basecasters_QItemDelegate;
+    //void setRecFlag(bool on) const {
+    //  QItemDelegate_Base* wb = getWrappedBase();
+    //  if (wb) {
+    //    wb->setRecFlag(on);
+    //  }
+    //}
 
-      public:
-        static void registerBasecaster_QItemDelegate(RJSBasecaster_QItemDelegate* bc) {
-          basecasters_QItemDelegate.append(bc);
-        }
-      
-    };
 
-    Q_DECLARE_METATYPE(QItemDelegate_Wrapper*)
+private:
+    // wrapped object:
+    QItemDelegate* wrapped;
 
-    Q_DECLARE_INTERFACE(QItemDelegate_Wrapper, "org.qcad.QItemDelegate_Wrapper")
 
-  
-  #endif
-  
+
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QItemDelegate*> basecasters_QItemDelegate;
+
+public:
+    static void registerBasecaster_QItemDelegate(RJSBasecaster_QItemDelegate* bc) {
+        basecasters_QItemDelegate.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QItemDelegate_Wrapper*)
+
+Q_DECLARE_INTERFACE(QItemDelegate_Wrapper, "org.qcad.QItemDelegate_Wrapper")
+
+
+#endif
+

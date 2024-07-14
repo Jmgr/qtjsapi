@@ -1,131 +1,129 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QTextListFormat() {
-        
+// class constructor:
+function QTextListFormat() {
 
-        // should be QTextListFormat_BaseJs.call(this, engine):
-        //QTextListFormat.prototype = new QTextListFormat_BaseJs(engine);
 
-        var wrapper;
+    // should be QTextListFormat_BaseJs.call(this, engine):
+    //QTextListFormat.prototype = new QTextListFormat_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QTextListFormat.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QTextListFormat.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextListFormat);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QTextListFormat);
             //}
-          }
-          else {
+        } else {
             qWarning("QTextListFormat.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 0) {
-    
+
+    } else {
+
+        if (arguments.length == 0) {
+
             self = this;
             wrapper = new QTextListFormat_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QTextListFormat);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QTextListFormat);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QTextListFormat);
-  }
 
-  
-  else {
-    
-        print("QTextListFormat(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QTextListFormat);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QTextListFormat(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QTextListFormat.prototype = new QTextListFormat_BaseJs(engine);
-      //QTextListFormat.prototype = new QTextListFormat_Wrapper(engine);
-      QTextListFormat.prototype = new Object();
-
-      QTextListFormat.prototype.toString = function() {
-          //return "QTextListFormat [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QTextListFormat [JS]";
-        };
-      QTextListFormat.getObjectType = function() {
-        return RJSType_QTextListFormat.getIdStatic();
-      };
-
-      QTextListFormat.prototype.getObjectType = function() {
-        return RJSType_QTextListFormat.getIdStatic();
-      };
-
-      QTextListFormat.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QTextListFormat.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QTextFormat.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: FormatType
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QTextListFormat.prototype = new QTextListFormat_BaseJs(engine);
+//QTextListFormat.prototype = new QTextListFormat_Wrapper(engine);
+QTextListFormat.prototype = new Object();
+
+QTextListFormat.prototype.toString = function() {
+    //return "QTextListFormat [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QTextListFormat [JS]";
+};
+QTextListFormat.getObjectType = function() {
+    return RJSType_QTextListFormat.getIdStatic();
+};
+
+QTextListFormat.prototype.getObjectType = function() {
+    return RJSType_QTextListFormat.getIdStatic();
+};
+
+QTextListFormat.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QTextListFormat.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QTextFormat.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: FormatType
 QTextListFormat.InvalidFormat = QTextListFormat_Wrapper.InvalidFormat;
 QTextListFormat.BlockFormat = QTextListFormat_Wrapper.BlockFormat;
 QTextListFormat.CharFormat = QTextListFormat_Wrapper.CharFormat;
@@ -133,7 +131,7 @@ QTextListFormat.ListFormat = QTextListFormat_Wrapper.ListFormat;
 QTextListFormat.FrameFormat = QTextListFormat_Wrapper.FrameFormat;
 QTextListFormat.UserFormat = QTextListFormat_Wrapper.UserFormat;
 
-  // enum: Property
+// enum: Property
 QTextListFormat.ObjectIndex = QTextListFormat_Wrapper.ObjectIndex;
 QTextListFormat.CssFloat = QTextListFormat_Wrapper.CssFloat;
 QTextListFormat.LayoutDirection = QTextListFormat_Wrapper.LayoutDirection;
@@ -245,19 +243,19 @@ QTextListFormat.FullWidthSelection = QTextListFormat_Wrapper.FullWidthSelection;
 QTextListFormat.PageBreakPolicy = QTextListFormat_Wrapper.PageBreakPolicy;
 QTextListFormat.UserProperty = QTextListFormat_Wrapper.UserProperty;
 
-  // enum: ObjectTypes
+// enum: ObjectTypes
 QTextListFormat.NoObject = QTextListFormat_Wrapper.NoObject;
 QTextListFormat.ImageObject = QTextListFormat_Wrapper.ImageObject;
 QTextListFormat.TableObject = QTextListFormat_Wrapper.TableObject;
 QTextListFormat.TableCellObject = QTextListFormat_Wrapper.TableCellObject;
 QTextListFormat.UserObject = QTextListFormat_Wrapper.UserObject;
 
-  // enum: PageBreakFlag
+// enum: PageBreakFlag
 QTextListFormat.PageBreak_Auto = QTextListFormat_Wrapper.PageBreak_Auto;
 QTextListFormat.PageBreak_AlwaysBefore = QTextListFormat_Wrapper.PageBreak_AlwaysBefore;
 QTextListFormat.PageBreak_AlwaysAfter = QTextListFormat_Wrapper.PageBreak_AlwaysAfter;
 
-  // enum: Style
+// enum: Style
 QTextListFormat.ListDisc = QTextListFormat_Wrapper.ListDisc;
 QTextListFormat.ListCircle = QTextListFormat_Wrapper.ListCircle;
 QTextListFormat.ListSquare = QTextListFormat_Wrapper.ListSquare;
@@ -269,25 +267,24 @@ QTextListFormat.ListUpperRoman = QTextListFormat_Wrapper.ListUpperRoman;
 QTextListFormat.ListStyleUndefined = QTextListFormat_Wrapper.ListStyleUndefined;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QTextListFormat.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QTextListFormat.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QTextListFormat.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QTextListFormat.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

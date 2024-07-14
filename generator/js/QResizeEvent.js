@@ -1,131 +1,129 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QResizeEvent() {
-        
+// class constructor:
+function QResizeEvent() {
 
-        // should be QResizeEvent_BaseJs.call(this, engine):
-        //QResizeEvent.prototype = new QResizeEvent_BaseJs(engine);
 
-        var wrapper;
+    // should be QResizeEvent_BaseJs.call(this, engine):
+    //QResizeEvent.prototype = new QResizeEvent_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QResizeEvent.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QResizeEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QResizeEvent);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QResizeEvent);
             //}
-          }
-          else {
+        } else {
             qWarning("QResizeEvent.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 2) {
-    
+
+    } else {
+
+        if (arguments.length == 2) {
+
             self = this;
             wrapper = new QResizeEvent_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QResizeEvent);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QResizeEvent);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QResizeEvent);
-  }
 
-  
-  else {
-    
-        print("QResizeEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QResizeEvent);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QResizeEvent(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QResizeEvent.prototype = new QResizeEvent_BaseJs(engine);
-      //QResizeEvent.prototype = new QResizeEvent_Wrapper(engine);
-      QResizeEvent.prototype = new Object();
-
-      QResizeEvent.prototype.toString = function() {
-          //return "QResizeEvent [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QResizeEvent [JS]";
-        };
-      QResizeEvent.getObjectType = function() {
-        return RJSType_QResizeEvent.getIdStatic();
-      };
-
-      QResizeEvent.prototype.getObjectType = function() {
-        return RJSType_QResizeEvent.getIdStatic();
-      };
-
-      QResizeEvent.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QResizeEvent.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QEvent.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: Type
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QResizeEvent.prototype = new QResizeEvent_BaseJs(engine);
+//QResizeEvent.prototype = new QResizeEvent_Wrapper(engine);
+QResizeEvent.prototype = new Object();
+
+QResizeEvent.prototype.toString = function() {
+    //return "QResizeEvent [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QResizeEvent [JS]";
+};
+QResizeEvent.getObjectType = function() {
+    return RJSType_QResizeEvent.getIdStatic();
+};
+
+QResizeEvent.prototype.getObjectType = function() {
+    return RJSType_QResizeEvent.getIdStatic();
+};
+
+QResizeEvent.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QResizeEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QResizeEvent.None = QResizeEvent_Wrapper.None;
 QResizeEvent.Timer = QResizeEvent_Wrapper.Timer;
 QResizeEvent.MouseButtonPress = QResizeEvent_Wrapper.MouseButtonPress;
@@ -300,54 +298,53 @@ QResizeEvent.User = QResizeEvent_Wrapper.User;
 QResizeEvent.MaxUser = QResizeEvent_Wrapper.MaxUser;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QResizeEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QResizeEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QResizeEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QResizeEvent.registerEventType = function()
+
+{
+    //print("JS: QResizeEvent.registerEventType");
+
+    if (arguments.length >= 0 &&
+            arguments.length <= 1) {
+
+        // calling static wrapper:
+        return QResizeEvent_WrapperSingletonInstance.registerEventType(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QResizeEvent);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QResizeEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QResizeEvent.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QResizeEvent.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QResizeEvent.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QResizeEvent.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

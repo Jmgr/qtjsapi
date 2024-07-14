@@ -1,38 +1,37 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QXMLSTREAM_H_BASE
-  #define QXMLSTREAM_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QXmlStreamAttributes>
-  
-    #include <QQmlEngine>
+#ifndef QXMLSTREAM_H_BASE
+#define QXMLSTREAM_H_BASE
 
-    
-        #include <QXmlStreamAttribute>
-      
-    #include <QQmlEngine>
+// include header:
+//#include "header_h.h"
 
-    
-        #include <QXmlStreamAttributes>
-      
-    #include <QQmlEngine>
+#include "../RJSHelper.h"
 
-    
-        #include <QXmlStreamReader>
-      
-    #include <QQmlEngine>
+#include <QXmlStreamAttributes>
 
-    
-        #include <QXmlStreamWriter>
-      
-  #endif
-  
+#include <QQmlEngine>
+
+
+#include <QXmlStreamAttribute>
+
+#include <QQmlEngine>
+
+
+#include <QXmlStreamAttributes>
+
+#include <QQmlEngine>
+
+
+#include <QXmlStreamReader>
+
+#include <QQmlEngine>
+
+
+#include <QXmlStreamWriter>
+
+#endif

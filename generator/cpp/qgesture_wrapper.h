@@ -1,48 +1,48 @@
 
-  // Auto generated
-  
-    #ifndef QGESTURE_H_WRAPPER
-    #define QGESTURE_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QGESTURE_H_WRAPPER
+#define QGESTURE_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QGesture>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QGesture>
-      
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QGesture_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QGesture_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QGesture>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QGesture>
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QGesture_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QGesture_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QGesture
     // Function: tr
     // Source: QObject
@@ -50,201 +50,201 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QGesture_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QGesture
-    class QTJSAPI_EXPORT QGesture_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
     QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     state READ state
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     gestureType READ gestureType
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     gestureCancelPolicy READ gestureCancelPolicy WRITE setGestureCancelPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     hotSpot READ hotSpot WRITE setHotSpot
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     hasHotSpot READ hasHotSpot
-  )
+    tr
+    (
 
 
-    private:
-      // disable copy constructor:
-      QGesture_Wrapper(const QGesture_Wrapper&);
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
 
-    public:
-      // initialization of QGesture:
-      static void init(RJSApi& handler);
+    )
 
-      
-        static QGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
-              if (t==RJSType_QPanGesture::getIdStatic()) {
-                return (QGesture*)(QPanGesture*)vp;
-              }
-              
-              if (t==RJSType_QPinchGesture::getIdStatic()) {
-                return (QGesture*)(QPinchGesture*)vp;
-              }
-              
-              if (t==RJSType_QSwipeGesture::getIdStatic()) {
-                return (QGesture*)(QSwipeGesture*)vp;
-              }
-              
+    ;
 
-          // hook for modules to cast from other types to base QGesture:
-          for (int i=0; i<basecasters_QGesture.length(); i++) {
+
+private:
+    RJSApi& handler;
+    //static QGesture_WrapperSingleton* _singleInstance;
+
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QGesture
+class QTJSAPI_EXPORT QGesture_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        state READ state
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        gestureType READ gestureType
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        gestureCancelPolicy READ gestureCancelPolicy WRITE setGestureCancelPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        hotSpot READ hotSpot WRITE setHotSpot
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        hasHotSpot READ hasHotSpot
+    )
+
+
+private:
+    // disable copy constructor:
+    QGesture_Wrapper(const QGesture_Wrapper&);
+
+public:
+    // initialization of QGesture:
+    static void init(RJSApi& handler);
+
+
+    static QGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+        if (t==RJSType_QPanGesture::getIdStatic()) {
+            return (QGesture*)(QPanGesture*)vp;
+        }
+
+        if (t==RJSType_QPinchGesture::getIdStatic()) {
+            return (QGesture*)(QPinchGesture*)vp;
+        }
+
+        if (t==RJSType_QSwipeGesture::getIdStatic()) {
+            return (QGesture*)(QSwipeGesture*)vp;
+        }
+
+
+        // hook for modules to cast from other types to base QGesture:
+        for (int i=0; i<basecasters_QGesture.length(); i++) {
             RJSBasecaster_QGesture* basecaster = basecasters_QGesture[i];
             QGesture* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QGesture:
-          if (t==RJSType_QGesture::getIdStatic()) {
+        // object is a pointer to base class QGesture:
+        if (t==RJSType_QGesture::getIdStatic()) {
             return (QGesture*)vp;
-          }
-
-          qWarning() << "QGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QGesture* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QGesture*: wrapper wraps NULL";
-          }
+        qWarning() << "QGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QGesture* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QGesture*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QGesture* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QGesture*: wrapper wraps NULL";
         }
-      
+
+        QGesture* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QGesture*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QGesture_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QGesture_Wrapper(RJSApi& h, QGesture* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QGesture_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QGesture_Wrapper(RJSApi& h, QGesture* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QGesture_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QGesture
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QGesture_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QGesture_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QGesture
     // Function: objectName
     // Source: QObject
@@ -252,20 +252,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: setObjectName
     // Source: QObject
@@ -273,22 +273,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: isWidgetType
     // Source: QObject
@@ -296,20 +296,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: isWindowType
     // Source: QObject
@@ -317,20 +317,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: signalsBlocked
     // Source: QObject
@@ -338,20 +338,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: blockSignals
     // Source: QObject
@@ -359,22 +359,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: findChild
     // Source: QObject
@@ -382,28 +382,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: children
     // Source: QObject
@@ -411,20 +411,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: setParent
     // Source: QObject
@@ -432,22 +432,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: installEventFilter
     // Source: QObject
@@ -455,22 +455,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: removeEventFilter
     // Source: QObject
@@ -478,22 +478,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: dumpObjectTree
     // Source: QObject
@@ -501,18 +501,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: dumpObjectInfo
     // Source: QObject
@@ -520,18 +520,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: setProperty
     // Source: QObject
@@ -539,26 +539,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: property
     // Source: QObject
@@ -566,24 +566,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -591,20 +591,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: parent
     // Source: QObject
@@ -612,20 +612,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: deleteLater
     // Source: QObject
@@ -633,485 +633,485 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: gestureType
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  gestureType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    gestureType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: state
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  state
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    state
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: hotSpot
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hotSpot
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: setHotSpot
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHotSpot
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: hasHotSpot
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasHotSpot
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QGesture
     // Function: unsetHotSpot
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetHotSpot
+    (
+
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: setGestureCancelPolicy
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setGestureCancelPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setGestureCancelPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QGesture
     // Function: gestureCancelPolicy
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  gestureCancelPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    gestureCancelPolicy
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+    )
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QGesture::getIdStatic();
+    const
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QGesture* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QGesture::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QGesture* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QGesture* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QGesture* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
-
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
-
-        
-
-        private:
-        // wrapped object:
-        QGesture* wrapped;
-
-        
-
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QGesture*> basecasters_QGesture;
-
-      public:
-        static void registerBasecaster_QGesture(RJSBasecaster_QGesture* bc) {
-          basecasters_QGesture.append(bc);
-        }
-      
-    };
-
-    Q_DECLARE_METATYPE(QGesture_Wrapper*)
-
-    Q_DECLARE_INTERFACE(QGesture_Wrapper, "org.qcad.QGesture_Wrapper")
-
-  
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QPanGesture>
-      
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QPanGesture
-    class QTJSAPI_EXPORT QPanGesture_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
-    QJSValue
-     state READ state
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     gestureType READ gestureType
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     gestureCancelPolicy READ gestureCancelPolicy WRITE setGestureCancelPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     hotSpot READ hotSpot WRITE setHotSpot
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     hasHotSpot READ hasHotSpot
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     lastOffset READ lastOffset WRITE setLastOffset
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     offset READ offset WRITE setOffset
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     delta READ delta
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     acceleration READ acceleration WRITE setAcceleration
-  )
+        return (unsigned long long int)0;
+    }
 
 
-    private:
-      // disable copy constructor:
-      QPanGesture_Wrapper(const QPanGesture_Wrapper&);
 
-    public:
-      // initialization of QPanGesture:
-      static void init(RJSApi& handler);
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-      
-        static QPanGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
 
-          // hook for modules to cast from other types to base QPanGesture:
-          for (int i=0; i<basecasters_QPanGesture.length(); i++) {
+
+private:
+    // wrapped object:
+    QGesture* wrapped;
+
+
+
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QGesture*> basecasters_QGesture;
+
+public:
+    static void registerBasecaster_QGesture(RJSBasecaster_QGesture* bc) {
+        basecasters_QGesture.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QGesture_Wrapper*)
+
+Q_DECLARE_INTERFACE(QGesture_Wrapper, "org.qcad.QGesture_Wrapper")
+
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QPanGesture>
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QPanGesture
+class QTJSAPI_EXPORT QPanGesture_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        state READ state
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        gestureType READ gestureType
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        gestureCancelPolicy READ gestureCancelPolicy WRITE setGestureCancelPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        hotSpot READ hotSpot WRITE setHotSpot
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        hasHotSpot READ hasHotSpot
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        lastOffset READ lastOffset WRITE setLastOffset
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        offset READ offset WRITE setOffset
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        delta READ delta
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        acceleration READ acceleration WRITE setAcceleration
+    )
+
+
+private:
+    // disable copy constructor:
+    QPanGesture_Wrapper(const QPanGesture_Wrapper&);
+
+public:
+    // initialization of QPanGesture:
+    static void init(RJSApi& handler);
+
+
+    static QPanGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QPanGesture:
+        for (int i=0; i<basecasters_QPanGesture.length(); i++) {
             RJSBasecaster_QPanGesture* basecaster = basecasters_QPanGesture[i];
             QPanGesture* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QPanGesture:
-          if (t==RJSType_QPanGesture::getIdStatic()) {
+        // object is a pointer to base class QPanGesture:
+        if (t==RJSType_QPanGesture::getIdStatic()) {
             return (QPanGesture*)vp;
-          }
-
-          qWarning() << "QPanGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QPanGesture* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QPanGesture*: wrapper wraps NULL";
-          }
+        qWarning() << "QPanGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QPanGesture* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QPanGesture*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QPanGesture* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QPanGesture*: wrapper wraps NULL";
         }
-      
+
+        QPanGesture* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QPanGesture*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QPanGesture_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QPanGesture_Wrapper(RJSApi& h, QPanGesture* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QPanGesture_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QPanGesture_Wrapper(RJSApi& h, QPanGesture* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QPanGesture_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QPanGesture
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QPanGesture_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QPanGesture_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QPanGesture
     // Function: gestureType
     // Source: QGesture
@@ -1119,20 +1119,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  gestureType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    gestureType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPanGesture
     // Function: state
     // Source: QGesture
@@ -1140,20 +1140,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  state
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    state
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPanGesture
     // Function: hotSpot
     // Source: QGesture
@@ -1161,20 +1161,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hotSpot
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPanGesture
     // Function: setHotSpot
     // Source: QGesture
@@ -1182,22 +1182,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHotSpot
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPanGesture
     // Function: hasHotSpot
     // Source: QGesture
@@ -1205,20 +1205,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasHotSpot
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPanGesture
     // Function: unsetHotSpot
     // Source: QGesture
@@ -1226,18 +1226,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetHotSpot
+    (
+
+
+    )
+
+    ;
+
     // Class: QPanGesture
     // Function: setGestureCancelPolicy
     // Source: QGesture
@@ -1245,22 +1245,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setGestureCancelPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setGestureCancelPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPanGesture
     // Function: gestureCancelPolicy
     // Source: QGesture
@@ -1268,325 +1268,325 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  gestureCancelPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    gestureCancelPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPanGesture
     // Function: lastOffset
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lastOffset
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    lastOffset
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPanGesture
     // Function: offset
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  offset
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    offset
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPanGesture
     // Function: delta
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  delta
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    delta
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPanGesture
     // Function: acceleration
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  acceleration
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    acceleration
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPanGesture
     // Function: setLastOffset
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLastOffset
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLastOffset
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPanGesture
     // Function: setOffset
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOffset
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setOffset
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPanGesture
     // Function: setAcceleration
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAcceleration
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    setAcceleration
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QPanGesture::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QPanGesture* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QPanGesture::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QPanGesture* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QPanGesture* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QPanGesture* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QPanGesture* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QPanGesture*> basecasters_QPanGesture;
 
-      public:
-        static void registerBasecaster_QPanGesture(RJSBasecaster_QPanGesture* bc) {
-          basecasters_QPanGesture.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QPanGesture* wrapped;
 
-    Q_DECLARE_METATYPE(QPanGesture_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QPanGesture_Wrapper, "org.qcad.QPanGesture_Wrapper")
 
-  
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QPinchGesture>
-      
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QPinchGesture_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+    bool wrappedCreated;
 
-      // constants:
-      
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QPanGesture*> basecasters_QPanGesture;
 
-      // static properties:
-      
+public:
+    static void registerBasecaster_QPanGesture(RJSBasecaster_QPanGesture* bc) {
+        basecasters_QPanGesture.append(bc);
+    }
 
-      public:
-      //Q_INVOKABLE 
-      QPinchGesture_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+};
+
+Q_DECLARE_METATYPE(QPanGesture_Wrapper*)
+
+Q_DECLARE_INTERFACE(QPanGesture_Wrapper, "org.qcad.QPanGesture_Wrapper")
+
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QPinchGesture>
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QPinchGesture_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QPinchGesture_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QPinchGesture
     // Function: tr
     // Source: QObject
@@ -1594,265 +1594,265 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QPinchGesture_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QPinchGesture
-    class QTJSAPI_EXPORT QPinchGesture_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
     QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     state READ state
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     gestureType READ gestureType
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     gestureCancelPolicy READ gestureCancelPolicy WRITE setGestureCancelPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     hotSpot READ hotSpot WRITE setHotSpot
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     hasHotSpot READ hasHotSpot
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     totalChangeFlags READ totalChangeFlags WRITE setTotalChangeFlags
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     changeFlags READ changeFlags WRITE setChangeFlags
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     totalScaleFactor READ totalScaleFactor WRITE setTotalScaleFactor
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     lastScaleFactor READ lastScaleFactor WRITE setLastScaleFactor
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     scaleFactor READ scaleFactor WRITE setScaleFactor
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     totalRotationAngle READ totalRotationAngle WRITE setTotalRotationAngle
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     lastRotationAngle READ lastRotationAngle WRITE setLastRotationAngle
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     rotationAngle READ rotationAngle WRITE setRotationAngle
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     startCenterPoint READ startCenterPoint WRITE setStartCenterPoint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     lastCenterPoint READ lastCenterPoint WRITE setLastCenterPoint
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     centerPoint READ centerPoint WRITE setCenterPoint
-  )
+    tr
+    (
 
 
-    private:
-      // disable copy constructor:
-      QPinchGesture_Wrapper(const QPinchGesture_Wrapper&);
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
 
-    public:
-      // initialization of QPinchGesture:
-      static void init(RJSApi& handler);
+    )
 
-      
-        static QPinchGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+    ;
 
-          // hook for modules to cast from other types to base QPinchGesture:
-          for (int i=0; i<basecasters_QPinchGesture.length(); i++) {
+
+private:
+    RJSApi& handler;
+    //static QPinchGesture_WrapperSingleton* _singleInstance;
+
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QPinchGesture
+class QTJSAPI_EXPORT QPinchGesture_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        state READ state
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        gestureType READ gestureType
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        gestureCancelPolicy READ gestureCancelPolicy WRITE setGestureCancelPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        hotSpot READ hotSpot WRITE setHotSpot
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        hasHotSpot READ hasHotSpot
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        totalChangeFlags READ totalChangeFlags WRITE setTotalChangeFlags
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        changeFlags READ changeFlags WRITE setChangeFlags
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        totalScaleFactor READ totalScaleFactor WRITE setTotalScaleFactor
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        lastScaleFactor READ lastScaleFactor WRITE setLastScaleFactor
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        scaleFactor READ scaleFactor WRITE setScaleFactor
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        totalRotationAngle READ totalRotationAngle WRITE setTotalRotationAngle
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        lastRotationAngle READ lastRotationAngle WRITE setLastRotationAngle
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        rotationAngle READ rotationAngle WRITE setRotationAngle
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        startCenterPoint READ startCenterPoint WRITE setStartCenterPoint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        lastCenterPoint READ lastCenterPoint WRITE setLastCenterPoint
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        centerPoint READ centerPoint WRITE setCenterPoint
+    )
+
+
+private:
+    // disable copy constructor:
+    QPinchGesture_Wrapper(const QPinchGesture_Wrapper&);
+
+public:
+    // initialization of QPinchGesture:
+    static void init(RJSApi& handler);
+
+
+    static QPinchGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QPinchGesture:
+        for (int i=0; i<basecasters_QPinchGesture.length(); i++) {
             RJSBasecaster_QPinchGesture* basecaster = basecasters_QPinchGesture[i];
             QPinchGesture* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QPinchGesture:
-          if (t==RJSType_QPinchGesture::getIdStatic()) {
+        // object is a pointer to base class QPinchGesture:
+        if (t==RJSType_QPinchGesture::getIdStatic()) {
             return (QPinchGesture*)vp;
-          }
-
-          qWarning() << "QPinchGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QPinchGesture* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QPinchGesture*: wrapper wraps NULL";
-          }
+        qWarning() << "QPinchGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QPinchGesture* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QPinchGesture*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QPinchGesture* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QPinchGesture*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum ChangeFlag {
-    ScaleFactorChanged = QPinchGesture::ScaleFactorChanged,
-RotationAngleChanged = QPinchGesture::RotationAngleChanged,
-CenterPointChanged = QPinchGesture::CenterPointChanged,
 
-  };
-  Q_ENUM(ChangeFlag)
+        QPinchGesture* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QPinchGesture*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
+    // enums:
+
+    enum ChangeFlag {
+        ScaleFactorChanged = QPinchGesture::ScaleFactorChanged,
+        RotationAngleChanged = QPinchGesture::RotationAngleChanged,
+        CenterPointChanged = QPinchGesture::CenterPointChanged,
+
+    };
+    Q_ENUM(ChangeFlag)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QPinchGesture_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QPinchGesture_Wrapper(RJSApi& h, QPinchGesture* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QPinchGesture_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QPinchGesture_Wrapper(RJSApi& h, QPinchGesture* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QPinchGesture_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QPinchGesture
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QPinchGesture_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QPinchGesture_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QPinchGesture
     // Function: objectName
     // Source: QObject
@@ -1860,20 +1860,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: setObjectName
     // Source: QObject
@@ -1881,22 +1881,22 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: isWidgetType
     // Source: QObject
@@ -1904,20 +1904,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: isWindowType
     // Source: QObject
@@ -1925,20 +1925,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: signalsBlocked
     // Source: QObject
@@ -1946,20 +1946,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: blockSignals
     // Source: QObject
@@ -1967,22 +1967,22 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: findChild
     // Source: QObject
@@ -1990,28 +1990,28 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: children
     // Source: QObject
@@ -2019,20 +2019,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: setParent
     // Source: QObject
@@ -2040,22 +2040,22 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: installEventFilter
     // Source: QObject
@@ -2063,22 +2063,22 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: removeEventFilter
     // Source: QObject
@@ -2086,22 +2086,22 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: dumpObjectTree
     // Source: QObject
@@ -2109,18 +2109,18 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: dumpObjectInfo
     // Source: QObject
@@ -2128,18 +2128,18 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: setProperty
     // Source: QObject
@@ -2147,26 +2147,26 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: property
     // Source: QObject
@@ -2174,24 +2174,24 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -2199,20 +2199,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: parent
     // Source: QObject
@@ -2220,20 +2220,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: deleteLater
     // Source: QObject
@@ -2241,18 +2241,18 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: gestureType
     // Source: QGesture
@@ -2260,20 +2260,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  gestureType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    gestureType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: state
     // Source: QGesture
@@ -2281,20 +2281,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  state
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    state
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: hotSpot
     // Source: QGesture
@@ -2302,20 +2302,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hotSpot
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: setHotSpot
     // Source: QGesture
@@ -2323,22 +2323,22 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHotSpot
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: hasHotSpot
     // Source: QGesture
@@ -2346,20 +2346,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasHotSpot
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: unsetHotSpot
     // Source: QGesture
@@ -2367,18 +2367,18 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetHotSpot
+    (
+
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: setGestureCancelPolicy
     // Source: QGesture
@@ -2386,22 +2386,22 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setGestureCancelPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setGestureCancelPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: gestureCancelPolicy
     // Source: QGesture
@@ -2409,777 +2409,777 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  gestureCancelPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    gestureCancelPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: totalChangeFlags
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  totalChangeFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    totalChangeFlags
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: setTotalChangeFlags
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTotalChangeFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTotalChangeFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: changeFlags
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  changeFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    changeFlags
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: setChangeFlags
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setChangeFlags
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setChangeFlags
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: startCenterPoint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  startCenterPoint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    startCenterPoint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: lastCenterPoint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lastCenterPoint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    lastCenterPoint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: centerPoint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  centerPoint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    centerPoint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: setStartCenterPoint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStartCenterPoint
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStartCenterPoint
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: setLastCenterPoint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLastCenterPoint
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLastCenterPoint
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: setCenterPoint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCenterPoint
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCenterPoint
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: totalScaleFactor
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  totalScaleFactor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    totalScaleFactor
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: lastScaleFactor
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lastScaleFactor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    lastScaleFactor
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: scaleFactor
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  scaleFactor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    scaleFactor
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: setTotalScaleFactor
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTotalScaleFactor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTotalScaleFactor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: setLastScaleFactor
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLastScaleFactor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLastScaleFactor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: setScaleFactor
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setScaleFactor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setScaleFactor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: totalRotationAngle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  totalRotationAngle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    totalRotationAngle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: lastRotationAngle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lastRotationAngle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    lastRotationAngle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: rotationAngle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rotationAngle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    rotationAngle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPinchGesture
     // Function: setTotalRotationAngle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTotalRotationAngle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTotalRotationAngle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: setLastRotationAngle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLastRotationAngle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLastRotationAngle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPinchGesture
     // Function: setRotationAngle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setRotationAngle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    setRotationAngle
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QPinchGesture::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QPinchGesture* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QPinchGesture::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QPinchGesture* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QPinchGesture* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QPinchGesture* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
-
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
-
-        
-
-        private:
-        // wrapped object:
-        QPinchGesture* wrapped;
-
-        
-
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QPinchGesture*> basecasters_QPinchGesture;
-
-      public:
-        static void registerBasecaster_QPinchGesture(RJSBasecaster_QPinchGesture* bc) {
-          basecasters_QPinchGesture.append(bc);
-        }
-      
-    };
-
-    Q_DECLARE_METATYPE(QPinchGesture_Wrapper*)
-
-    Q_DECLARE_INTERFACE(QPinchGesture_Wrapper, "org.qcad.QPinchGesture_Wrapper")
-
-  
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QSwipeGesture>
-      
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QSwipeGesture
-    class QTJSAPI_EXPORT QSwipeGesture_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
-    QJSValue
-     state READ state
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     gestureType READ gestureType
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     gestureCancelPolicy READ gestureCancelPolicy WRITE setGestureCancelPolicy
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     hotSpot READ hotSpot WRITE setHotSpot
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     hasHotSpot READ hasHotSpot
-  )
+        return (unsigned long long int)0;
+    }
 
 
-    private:
-      // disable copy constructor:
-      QSwipeGesture_Wrapper(const QSwipeGesture_Wrapper&);
 
-    public:
-      // initialization of QSwipeGesture:
-      static void init(RJSApi& handler);
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-      
-        static QSwipeGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
 
-          // hook for modules to cast from other types to base QSwipeGesture:
-          for (int i=0; i<basecasters_QSwipeGesture.length(); i++) {
+
+private:
+    // wrapped object:
+    QPinchGesture* wrapped;
+
+
+
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QPinchGesture*> basecasters_QPinchGesture;
+
+public:
+    static void registerBasecaster_QPinchGesture(RJSBasecaster_QPinchGesture* bc) {
+        basecasters_QPinchGesture.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QPinchGesture_Wrapper*)
+
+Q_DECLARE_INTERFACE(QPinchGesture_Wrapper, "org.qcad.QPinchGesture_Wrapper")
+
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QSwipeGesture>
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QSwipeGesture
+class QTJSAPI_EXPORT QSwipeGesture_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        state READ state
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        gestureType READ gestureType
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        gestureCancelPolicy READ gestureCancelPolicy WRITE setGestureCancelPolicy
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        hotSpot READ hotSpot WRITE setHotSpot
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        hasHotSpot READ hasHotSpot
+    )
+
+
+private:
+    // disable copy constructor:
+    QSwipeGesture_Wrapper(const QSwipeGesture_Wrapper&);
+
+public:
+    // initialization of QSwipeGesture:
+    static void init(RJSApi& handler);
+
+
+    static QSwipeGesture* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QSwipeGesture:
+        for (int i=0; i<basecasters_QSwipeGesture.length(); i++) {
             RJSBasecaster_QSwipeGesture* basecaster = basecasters_QSwipeGesture[i];
             QSwipeGesture* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QSwipeGesture:
-          if (t==RJSType_QSwipeGesture::getIdStatic()) {
+        // object is a pointer to base class QSwipeGesture:
+        if (t==RJSType_QSwipeGesture::getIdStatic()) {
             return (QSwipeGesture*)vp;
-          }
-
-          qWarning() << "QSwipeGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QSwipeGesture* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QSwipeGesture*: wrapper wraps NULL";
-          }
+        qWarning() << "QSwipeGesture_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QSwipeGesture* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QSwipeGesture*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QSwipeGesture* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QSwipeGesture*: wrapper wraps NULL";
         }
-      
+
+        QSwipeGesture* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QSwipeGesture*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QSwipeGesture_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QSwipeGesture_Wrapper(RJSApi& h, QSwipeGesture* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QSwipeGesture_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QSwipeGesture_Wrapper(RJSApi& h, QSwipeGesture* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QSwipeGesture_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QSwipeGesture
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QSwipeGesture_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QSwipeGesture_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QSwipeGesture
     // Function: gestureType
     // Source: QGesture
@@ -3187,20 +3187,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  gestureType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    gestureType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QSwipeGesture
     // Function: state
     // Source: QGesture
@@ -3208,20 +3208,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  state
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    state
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QSwipeGesture
     // Function: hotSpot
     // Source: QGesture
@@ -3229,20 +3229,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hotSpot
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QSwipeGesture
     // Function: setHotSpot
     // Source: QGesture
@@ -3250,22 +3250,22 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHotSpot
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QSwipeGesture
     // Function: hasHotSpot
     // Source: QGesture
@@ -3273,20 +3273,20 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hasHotSpot
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QSwipeGesture
     // Function: unsetHotSpot
     // Source: QGesture
@@ -3294,18 +3294,18 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetHotSpot
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetHotSpot
+    (
+
+
+    )
+
+    ;
+
     // Class: QSwipeGesture
     // Function: setGestureCancelPolicy
     // Source: QGesture
@@ -3313,22 +3313,22 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setGestureCancelPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setGestureCancelPolicy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QSwipeGesture
     // Function: gestureCancelPolicy
     // Source: QGesture
@@ -3336,228 +3336,228 @@ CenterPointChanged = QPinchGesture::CenterPointChanged,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  gestureCancelPolicy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    gestureCancelPolicy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QSwipeGesture
     // Function: horizontalDirection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  horizontalDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    horizontalDirection
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QSwipeGesture
     // Function: verticalDirection
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  verticalDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    verticalDirection
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QSwipeGesture
     // Function: swipeAngle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  swipeAngle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    swipeAngle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QSwipeGesture
     // Function: setSwipeAngle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSwipeAngle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    setSwipeAngle
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QSwipeGesture::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QSwipeGesture* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QSwipeGesture::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QSwipeGesture* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QSwipeGesture* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QSwipeGesture* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QSwipeGesture* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QSwipeGesture*> basecasters_QSwipeGesture;
 
-      public:
-        static void registerBasecaster_QSwipeGesture(RJSBasecaster_QSwipeGesture* bc) {
-          basecasters_QSwipeGesture.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QSwipeGesture* wrapped;
 
-    Q_DECLARE_METATYPE(QSwipeGesture_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QSwipeGesture_Wrapper, "org.qcad.QSwipeGesture_Wrapper")
 
-  
-  #endif
-  
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QSwipeGesture*> basecasters_QSwipeGesture;
+
+public:
+    static void registerBasecaster_QSwipeGesture(RJSBasecaster_QSwipeGesture* bc) {
+        basecasters_QSwipeGesture.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QSwipeGesture_Wrapper*)
+
+Q_DECLARE_INTERFACE(QSwipeGesture_Wrapper, "org.qcad.QSwipeGesture_Wrapper")
+
+
+#endif
+

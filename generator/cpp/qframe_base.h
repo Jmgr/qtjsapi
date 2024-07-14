@@ -1,149 +1,148 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QFRAME_H_BASE
-  #define QFRAME_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QStyleOptionFrame>
-  
-    #include <QQmlEngine>
+#ifndef QFRAME_H_BASE
+#define QFRAME_H_BASE
 
-    
-        #include <QFrame>
-      
-    // Base class for QFrame
-      class QFrame_Base : public QFrame {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QStyleOptionFrame>
+
+#include <QQmlEngine>
+
+
+#include <QFrame>
+
+// Base class for QFrame
+class QFrame_Base : public QFrame {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QFrame
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: -1
-QFrame_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr, Qt::WindowFlags f=Qt::WindowFlags()
-      )
-      
+    // Class: QFrame
+    // Function:
+    // Parameters: 2
+    // preceding Parameters: -1
+    QFrame_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr, Qt::WindowFlags f=Qt::WindowFlags()
+    )
+
         : QFrame(
-          parent, f
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              parent, f
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QFrame_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void paintEvent(
-      QPaintEvent* event
+        QPaintEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void paintEventPublic(
-      QPaintEvent* event
+        QPaintEvent* event
     ) {
-      //qDebug() << "QFrame_Base::paintEventPublic()";
-      QFrame::paintEvent(
-        event
-      );
+        //qDebug() << "QFrame_Base::paintEventPublic()";
+        QFrame::paintEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void mouseMoveEvent(
-      QMouseEvent* event
+        QMouseEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void mouseMoveEventPublic(
-      QMouseEvent* event
+        QMouseEvent* event
     ) {
-      //qDebug() << "QFrame_Base::mouseMoveEventPublic()";
-      QFrame::mouseMoveEvent(
-        event
-      );
+        //qDebug() << "QFrame_Base::mouseMoveEventPublic()";
+        QFrame::mouseMoveEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void resizeEvent(
-      QResizeEvent* event
+        QResizeEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void resizeEventPublic(
-      QResizeEvent* event
+        QResizeEvent* event
     ) {
-      //qDebug() << "QFrame_Base::resizeEventPublic()";
-      QFrame::resizeEvent(
-        event
-      );
+        //qDebug() << "QFrame_Base::resizeEventPublic()";
+        QFrame::resizeEvent(
+            event
+        );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-  #endif
-  
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

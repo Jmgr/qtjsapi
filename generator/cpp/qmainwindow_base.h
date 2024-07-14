@@ -1,44 +1,44 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QMAINWINDOW_H_BASE
-  #define QMAINWINDOW_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QDockWidget>
-  
-    #include <QMenuBar>
-  
-    #include <QStatusBar>
-  
-    #include <QToolBar>
-  
-    #include <QMenu>
-  
-    #include <QQmlEngine>
+#ifndef QMAINWINDOW_H_BASE
+#define QMAINWINDOW_H_BASE
 
-    
-        #include <QMainWindow>
-      
-    // Base class for QMainWindow
-      class QMainWindow_Base : public QMainWindow {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QDockWidget>
+
+#include <QMenuBar>
+
+#include <QStatusBar>
+
+#include <QToolBar>
+
+#include <QMenu>
+
+#include <QQmlEngine>
+
+
+#include <QMainWindow>
+
+// Base class for QMainWindow
+class QMainWindow_Base : public QMainWindow {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
+
 #if QT_CONFIG(dockwidget)
 
 #if QT_CONFIG(tabbar)
@@ -55,29 +55,29 @@
 
 #endif
 
-  // Class: QMainWindow
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: -1
-QMainWindow_Base
-        
-      (
+    // Class: QMainWindow
+    // Function:
+    // Parameters: 2
+    // preceding Parameters: -1
+    QMainWindow_Base
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr, Qt::WindowFlags flags=Qt::WindowFlags()
-      )
-      
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr, Qt::WindowFlags flags=Qt::WindowFlags()
+    )
+
         : QMainWindow(
-          parent, flags
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              parent, flags
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
 #if QT_CONFIG(dockwidget)
 
 #endif
@@ -137,77 +137,76 @@ QMainWindow_Base
     // destructor:
     virtual ~QMainWindow_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void contextMenuEvent(
-      QContextMenuEvent* event
+        QContextMenuEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void contextMenuEventPublic(
-      QContextMenuEvent* event
+        QContextMenuEvent* event
     ) {
-      //qDebug() << "QMainWindow_Base::contextMenuEventPublic()";
-      QMainWindow::contextMenuEvent(
-        event
-      );
+        //qDebug() << "QMainWindow_Base::contextMenuEventPublic()";
+        QMainWindow::contextMenuEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     bool event(
-      QEvent* event
+        QEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE bool eventPublic(
-      QEvent* event
+        QEvent* event
     ) {
-      //qDebug() << "QMainWindow_Base::eventPublic()";
-      
+        //qDebug() << "QMainWindow_Base::eventPublic()";
+
         // TODO: convert return value to QJSValue:
         return
-      QMainWindow::event(
-        event
-      );
+            QMainWindow::event(
+                event
+            );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-  #endif
-  
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

@@ -1,162 +1,160 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QListView() {
-        
+// class constructor:
+function QListView() {
 
-        // should be QListView_BaseJs.call(this, engine):
-        //QListView.prototype = new QListView_BaseJs(engine);
 
-        var wrapper;
+    // should be QListView_BaseJs.call(this, engine):
+    //QListView.prototype = new QListView_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QListView.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QListView.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QListView);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QListView);
             //}
-          }
-          else {
+        } else {
             qWarning("QListView.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
+
+    } else {
+
+        if (arguments.length >= 0 &&
+                arguments.length <= 1) {
+
             self = this;
             wrapper = new QListView_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QListView);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QListView);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QListView);
-  }
 
-  
-  else {
-    
-        print("QListView(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QListView);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QListView(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-    this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
-  
-    this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
-  
-    this["clicked(QModelIndex)"] = Object.getPrototypeOf(this).clicked;
-  
-    this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
-  
-    this["activated(QModelIndex)"] = Object.getPrototypeOf(this).activated;
-  
-    this["entered(QModelIndex)"] = Object.getPrototypeOf(this).entered;
-  
-    this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
-  
-          }
-        }
-      }
-
-      //QListView.prototype = new QListView_BaseJs(engine);
-      //QListView.prototype = new QListView_Wrapper(engine);
-      QListView.prototype = new Object();
-
-      QListView.prototype.toString = function() {
-          //return "QListView [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QListView [JS]";
-        };
-      QListView.getObjectType = function() {
-        return RJSType_QListView.getIdStatic();
-      };
-
-      QListView.prototype.getObjectType = function() {
-        return RJSType_QListView.getIdStatic();
-      };
-
-      QListView.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QListView.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QObject.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QWidget.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QFrame.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QAbstractScrollArea.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QAbstractItemView.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: Shape
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+            this["customContextMenuRequested(QPoint)"] = Object.getPrototypeOf(this).customContextMenuRequested;
+
+            this["pressed(QModelIndex)"] = Object.getPrototypeOf(this).pressed;
+
+            this["clicked(QModelIndex)"] = Object.getPrototypeOf(this).clicked;
+
+            this["doubleClicked(QModelIndex)"] = Object.getPrototypeOf(this).doubleClicked;
+
+            this["activated(QModelIndex)"] = Object.getPrototypeOf(this).activated;
+
+            this["entered(QModelIndex)"] = Object.getPrototypeOf(this).entered;
+
+            this["iconSizeChanged(QSize)"] = Object.getPrototypeOf(this).iconSizeChanged;
+
+        }
+    }
+}
+
+//QListView.prototype = new QListView_BaseJs(engine);
+//QListView.prototype = new QListView_Wrapper(engine);
+QListView.prototype = new Object();
+
+QListView.prototype.toString = function() {
+    //return "QListView [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QListView [JS]";
+};
+QListView.getObjectType = function() {
+    return RJSType_QListView.getIdStatic();
+};
+
+QListView.prototype.getObjectType = function() {
+    return RJSType_QListView.getIdStatic();
+};
+
+QListView.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QListView.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QObject.getIdStatic()) {
+        return true;
+    }
+
+    if (t===RJSType_QWidget.getIdStatic()) {
+        return true;
+    }
+
+    if (t===RJSType_QFrame.getIdStatic()) {
+        return true;
+    }
+
+    if (t===RJSType_QAbstractScrollArea.getIdStatic()) {
+        return true;
+    }
+
+    if (t===RJSType_QAbstractItemView.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Shape
 QListView.NoFrame = QListView_Wrapper.NoFrame;
 QListView.Box = QListView_Wrapper.Box;
 QListView.Panel = QListView_Wrapper.Panel;
@@ -165,39 +163,39 @@ QListView.HLine = QListView_Wrapper.HLine;
 QListView.VLine = QListView_Wrapper.VLine;
 QListView.StyledPanel = QListView_Wrapper.StyledPanel;
 
-  // enum: Shadow
+// enum: Shadow
 QListView.Plain = QListView_Wrapper.Plain;
 QListView.Raised = QListView_Wrapper.Raised;
 QListView.Sunken = QListView_Wrapper.Sunken;
 
-  // enum: StyleMask
+// enum: StyleMask
 QListView.Shadow_Mask = QListView_Wrapper.Shadow_Mask;
 QListView.Shape_Mask = QListView_Wrapper.Shape_Mask;
 
-  // enum: SizeAdjustPolicy
+// enum: SizeAdjustPolicy
 QListView.AdjustIgnored = QListView_Wrapper.AdjustIgnored;
 QListView.AdjustToContentsOnFirstShow = QListView_Wrapper.AdjustToContentsOnFirstShow;
 QListView.AdjustToContents = QListView_Wrapper.AdjustToContents;
 
-  // enum: SelectionMode
+// enum: SelectionMode
 QListView.NoSelection = QListView_Wrapper.NoSelection;
 QListView.SingleSelection = QListView_Wrapper.SingleSelection;
 QListView.MultiSelection = QListView_Wrapper.MultiSelection;
 QListView.ExtendedSelection = QListView_Wrapper.ExtendedSelection;
 QListView.ContiguousSelection = QListView_Wrapper.ContiguousSelection;
 
-  // enum: SelectionBehavior
+// enum: SelectionBehavior
 QListView.SelectItems = QListView_Wrapper.SelectItems;
 QListView.SelectRows = QListView_Wrapper.SelectRows;
 QListView.SelectColumns = QListView_Wrapper.SelectColumns;
 
-  // enum: ScrollHint
+// enum: ScrollHint
 QListView.EnsureVisible = QListView_Wrapper.EnsureVisible;
 QListView.PositionAtTop = QListView_Wrapper.PositionAtTop;
 QListView.PositionAtBottom = QListView_Wrapper.PositionAtBottom;
 QListView.PositionAtCenter = QListView_Wrapper.PositionAtCenter;
 
-  // enum: EditTrigger
+// enum: EditTrigger
 QListView.NoEditTriggers = QListView_Wrapper.NoEditTriggers;
 QListView.CurrentChanged = QListView_Wrapper.CurrentChanged;
 QListView.DoubleClicked = QListView_Wrapper.DoubleClicked;
@@ -206,202 +204,201 @@ QListView.EditKeyPressed = QListView_Wrapper.EditKeyPressed;
 QListView.AnyKeyPressed = QListView_Wrapper.AnyKeyPressed;
 QListView.AllEditTriggers = QListView_Wrapper.AllEditTriggers;
 
-  // enum: ScrollMode
+// enum: ScrollMode
 QListView.ScrollPerItem = QListView_Wrapper.ScrollPerItem;
 QListView.ScrollPerPixel = QListView_Wrapper.ScrollPerPixel;
 
-  // enum: DragDropMode
+// enum: DragDropMode
 QListView.NoDragDrop = QListView_Wrapper.NoDragDrop;
 QListView.DragOnly = QListView_Wrapper.DragOnly;
 QListView.DropOnly = QListView_Wrapper.DropOnly;
 QListView.DragDrop = QListView_Wrapper.DragDrop;
 QListView.InternalMove = QListView_Wrapper.InternalMove;
 
-  // enum: Movement
+// enum: Movement
 QListView.Static = QListView_Wrapper.Static;
 QListView.Free = QListView_Wrapper.Free;
 QListView.Snap = QListView_Wrapper.Snap;
 
-  // enum: Flow
+// enum: Flow
 QListView.LeftToRight = QListView_Wrapper.LeftToRight;
 QListView.TopToBottom = QListView_Wrapper.TopToBottom;
 
-  // enum: ResizeMode
+// enum: ResizeMode
 QListView.Fixed = QListView_Wrapper.Fixed;
 QListView.Adjust = QListView_Wrapper.Adjust;
 
-  // enum: LayoutMode
+// enum: LayoutMode
 QListView.SinglePass = QListView_Wrapper.SinglePass;
 QListView.Batched = QListView_Wrapper.Batched;
 
-  // enum: ViewMode
+// enum: ViewMode
 QListView.ListMode = QListView_Wrapper.ListMode;
 QListView.IconMode = QListView_Wrapper.IconMode;
 
 
-      // functions:
-      
-        // function 
-        QListView.prototype.actionEvent = function() 
-          
-        {
-          //print("JS: QListView.prototype.actionEvent");
-          
-      if (arguments.length == 1) {
-    
-                // calling wrapper:
-                self = this;
-                //return this.wrapper.actionEvent(
-                // call highest level JS implementation:
-                //return this.actionEventBase(
-                return this.actionEventSuper(
-                  arguments[0]
-                );
-              
+// functions:
+
+// function
+QListView.prototype.actionEvent = function()
+
+{
+    //print("JS: QListView.prototype.actionEvent");
+
+    if (arguments.length == 1) {
+
+        // calling wrapper:
+        self = this;
+        //return this.wrapper.actionEvent(
+        // call highest level JS implementation:
+        //return this.actionEventBase(
+        return this.actionEventSuper(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QListView);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QListView.actionEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // static functions:
-      
+        console.trace();
+    }
 
-        // static function 
-        QListView.tr = function() 
-          
-        {
-          //print("JS: QListView.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QListView_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
+};
+
+
+// static functions:
+
+
+// static function
+QListView.tr = function()
+
+{
+    //print("JS: QListView.tr");
+
+    if (arguments.length >= 1 &&
+            arguments.length <= 3) {
+
+        // calling static wrapper:
+        return QListView_WrapperSingletonInstance.tr(
+                   arguments[0], arguments[1], arguments[2]
+               );
+
 
         //copyProperties(this, wrapper, QListView);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QListView.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QListView.setTabOrder = function() 
-          
-        {
-          //print("JS: QListView.setTabOrder");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QListView_WrapperSingletonInstance.setTabOrder(
-                  arguments[0], arguments[1]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QListView.setTabOrder = function()
+
+{
+    //print("JS: QListView.setTabOrder");
+
+    if (arguments.length == 2) {
+
+        // calling static wrapper:
+        return QListView_WrapperSingletonInstance.setTabOrder(
+                   arguments[0], arguments[1]
+               );
+
 
         //copyProperties(this, wrapper, QListView);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QListView.setTabOrder(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QListView.mouseGrabber = function() 
-          
-        {
-          //print("JS: QListView.mouseGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QListView_WrapperSingletonInstance.mouseGrabber(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QListView.mouseGrabber = function()
+
+{
+    //print("JS: QListView.mouseGrabber");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QListView_WrapperSingletonInstance.mouseGrabber(
+
+               );
+
 
         //copyProperties(this, wrapper, QListView);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QListView.mouseGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QListView.keyboardGrabber = function() 
-          
-        {
-          //print("JS: QListView.keyboardGrabber");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QListView_WrapperSingletonInstance.keyboardGrabber(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QListView.keyboardGrabber = function()
+
+{
+    //print("JS: QListView.keyboardGrabber");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QListView_WrapperSingletonInstance.keyboardGrabber(
+
+               );
+
 
         //copyProperties(this, wrapper, QListView);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QListView.keyboardGrabber(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QListView.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QListView.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QListView.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QListView.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

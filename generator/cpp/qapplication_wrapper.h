@@ -1,56 +1,56 @@
 
-  // Auto generated
-  
-    #ifndef QAPPLICATION_H_WRAPPER
-    #define QAPPLICATION_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QAPPLICATION_H_WRAPPER
+#define QAPPLICATION_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QStyle>
-      
-        #include <QEventLoop>
-      
-        #include <QIcon>
-      
-        #include <QLocale>
-      
-        #include <QApplication>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QApplication>
-      
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QApplication_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QApplication_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QStyle>
+
+#include <QEventLoop>
+
+#include <QIcon>
+
+#include <QLocale>
+
+#include <QApplication>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QApplication>
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QApplication_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QApplication_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QApplication
     // Function: tr
     // Source: QObject
@@ -58,30 +58,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    tr
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: arguments
     // Source: QCoreApplication
@@ -89,18 +89,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  arguments
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    arguments
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setAttribute
     // Source: QCoreApplication
@@ -108,26 +108,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: testAttribute
     // Source: QCoreApplication
@@ -135,22 +135,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  testAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    testAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setSetuidAllowed
     // Source: QCoreApplication
@@ -158,22 +158,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSetuidAllowed
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSetuidAllowed
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: isSetuidAllowed
     // Source: QCoreApplication
@@ -181,18 +181,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSetuidAllowed
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    isSetuidAllowed
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: instance
     // Source: QCoreApplication
@@ -200,18 +200,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  instance
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    instance
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: processEvents
     // Source: QCoreApplication
@@ -219,26 +219,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  processEvents
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    processEvents
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: exit
     // Source: QCoreApplication
@@ -246,22 +246,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  exit
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    exit
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: sendEvent
     // Source: QCoreApplication
@@ -269,26 +269,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sendEvent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    sendEvent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: postEvent
     // Source: QCoreApplication
@@ -296,30 +296,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  postEvent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    postEvent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: sendPostedEvents
     // Source: QCoreApplication
@@ -327,26 +327,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sendPostedEvents
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    sendPostedEvents
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: removePostedEvents
     // Source: QCoreApplication
@@ -354,26 +354,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removePostedEvents
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removePostedEvents
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: startingUp
     // Source: QCoreApplication
@@ -381,18 +381,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  startingUp
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    startingUp
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: closingDown
     // Source: QCoreApplication
@@ -400,18 +400,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  closingDown
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    closingDown
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: applicationDirPath
     // Source: QCoreApplication
@@ -419,18 +419,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  applicationDirPath
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    applicationDirPath
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: applicationFilePath
     // Source: QCoreApplication
@@ -438,18 +438,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  applicationFilePath
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    applicationFilePath
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: applicationPid
     // Source: QCoreApplication
@@ -457,18 +457,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  applicationPid
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    applicationPid
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setLibraryPaths
     // Source: QCoreApplication
@@ -476,22 +476,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLibraryPaths
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLibraryPaths
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: libraryPaths
     // Source: QCoreApplication
@@ -499,18 +499,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  libraryPaths
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    libraryPaths
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: addLibraryPath
     // Source: QCoreApplication
@@ -518,22 +518,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addLibraryPath
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addLibraryPath
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: removeLibraryPath
     // Source: QCoreApplication
@@ -541,22 +541,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeLibraryPath
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeLibraryPath
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: installTranslator
     // Source: QCoreApplication
@@ -564,22 +564,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installTranslator
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installTranslator
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: removeTranslator
     // Source: QCoreApplication
@@ -587,22 +587,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeTranslator
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeTranslator
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: quit
     // Source: QCoreApplication
@@ -610,18 +610,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  quit
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    quit
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setApplicationDisplayName
     // Source: QGuiApplication
@@ -629,22 +629,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setApplicationDisplayName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setApplicationDisplayName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: applicationDisplayName
     // Source: QGuiApplication
@@ -652,18 +652,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  applicationDisplayName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    applicationDisplayName
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setDesktopFileName
     // Source: QGuiApplication
@@ -671,22 +671,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDesktopFileName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDesktopFileName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: desktopFileName
     // Source: QGuiApplication
@@ -694,18 +694,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  desktopFileName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    desktopFileName
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setWindowIcon
     // Source: QGuiApplication
@@ -713,22 +713,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWindowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWindowIcon
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: windowIcon
     // Source: QGuiApplication
@@ -736,18 +736,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowIcon
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    windowIcon
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: platformName
     // Source: QGuiApplication
@@ -755,18 +755,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  platformName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    platformName
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: focusObject
     // Source: QGuiApplication
@@ -774,18 +774,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusObject
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    focusObject
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: primaryScreen
     // Source: QGuiApplication
@@ -793,18 +793,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  primaryScreen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    primaryScreen
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: screens
     // Source: QGuiApplication
@@ -812,18 +812,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  screens
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    screens
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: screenAt
     // Source: QGuiApplication
@@ -831,22 +831,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  screenAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    screenAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: overrideCursor
     // Source: QGuiApplication
@@ -854,18 +854,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overrideCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    overrideCursor
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setOverrideCursor
     // Source: QGuiApplication
@@ -873,22 +873,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOverrideCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setOverrideCursor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: changeOverrideCursor
     // Source: QGuiApplication
@@ -896,22 +896,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  changeOverrideCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    changeOverrideCursor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: restoreOverrideCursor
     // Source: QGuiApplication
@@ -919,18 +919,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  restoreOverrideCursor
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    restoreOverrideCursor
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: clipboard
     // Source: QGuiApplication
@@ -938,18 +938,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clipboard
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clipboard
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: keyboardModifiers
     // Source: QGuiApplication
@@ -957,18 +957,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardModifiers
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    keyboardModifiers
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: queryKeyboardModifiers
     // Source: QGuiApplication
@@ -976,18 +976,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  queryKeyboardModifiers
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    queryKeyboardModifiers
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: mouseButtons
     // Source: QGuiApplication
@@ -995,18 +995,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mouseButtons
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    mouseButtons
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setLayoutDirection
     // Source: QGuiApplication
@@ -1014,22 +1014,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLayoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLayoutDirection
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: layoutDirection
     // Source: QGuiApplication
@@ -1037,18 +1037,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  layoutDirection
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    layoutDirection
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: isRightToLeft
     // Source: QGuiApplication
@@ -1056,18 +1056,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isRightToLeft
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    isRightToLeft
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: isLeftToRight
     // Source: QGuiApplication
@@ -1075,18 +1075,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isLeftToRight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    isLeftToRight
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setDesktopSettingsAware
     // Source: QGuiApplication
@@ -1094,22 +1094,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDesktopSettingsAware
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDesktopSettingsAware
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: desktopSettingsAware
     // Source: QGuiApplication
@@ -1117,18 +1117,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  desktopSettingsAware
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    desktopSettingsAware
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setQuitOnLastWindowClosed
     // Source: QGuiApplication
@@ -1136,22 +1136,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setQuitOnLastWindowClosed
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setQuitOnLastWindowClosed
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: quitOnLastWindowClosed
     // Source: QGuiApplication
@@ -1159,18 +1159,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  quitOnLastWindowClosed
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    quitOnLastWindowClosed
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: applicationState
     // Source: QGuiApplication
@@ -1178,18 +1178,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  applicationState
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    applicationState
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: sync
     // Source: QGuiApplication
@@ -1197,18 +1197,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sync
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    sync
+    (
+
+
+    )
+
+    ;
+
 #if QT_CONFIG(wheelevent)
 
 #endif
@@ -1225,639 +1225,639 @@
 
     // Class: QApplication
     // Function: palette
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  palette
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    palette
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setPalette
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPalette
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPalette
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: font
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  font
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    font
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setFont
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFont
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: topLevelWidgets
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  topLevelWidgets
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    topLevelWidgets
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: activePopupWidget
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  activePopupWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    activePopupWidget
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: activeModalWidget
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  activeModalWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    activeModalWidget
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: focusWidget
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  focusWidget
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    focusWidget
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: activeWindow
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  activeWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    activeWindow
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setActiveWindow
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setActiveWindow
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setActiveWindow
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: widgetAt
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  widgetAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    widgetAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: topLevelAt
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  topLevelAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    topLevelAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: beep
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  beep
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    beep
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: alert
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  alert
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    alert
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setCursorFlashTime
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCursorFlashTime
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCursorFlashTime
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: cursorFlashTime
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cursorFlashTime
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    cursorFlashTime
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setDoubleClickInterval
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDoubleClickInterval
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDoubleClickInterval
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: doubleClickInterval
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  doubleClickInterval
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    doubleClickInterval
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setKeyboardInputInterval
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setKeyboardInputInterval
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setKeyboardInputInterval
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: keyboardInputInterval
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  keyboardInputInterval
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    keyboardInputInterval
+    (
+
+
+    )
+
+    ;
+
 #if QT_CONFIG(wheelevent)
 
     // Class: QApplication
     // Function: setWheelScrollLines
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWheelScrollLines
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWheelScrollLines
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: wheelScrollLines
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  wheelScrollLines
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    wheelScrollLines
+    (
+
+
+    )
+
+    ;
+
 #endif
 
     // Class: QApplication
     // Function: setStartDragTime
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStartDragTime
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStartDragTime
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: startDragTime
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  startDragTime
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    startDragTime
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setStartDragDistance
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStartDragDistance
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStartDragDistance
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: startDragDistance
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  startDragDistance
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    startDragDistance
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: exec
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  exec
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    exec
+    (
+
+
+    )
+
+    ;
+
 #ifndef QT_NO_STYLE_STYLESHEET
 
 #endif
 
     // Class: QApplication
     // Function: closeAllWindows
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  closeAllWindows
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    closeAllWindows
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: aboutQt
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  aboutQt
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    aboutQt
+    (
+
+
+    )
+
+    ;
+
 #ifndef QT_NO_SHORTCUT
 
 #endif
@@ -1867,176 +1867,176 @@
 #endif
 
 
-      private:
-          RJSApi& handler;
-          //static QApplication_WrapperSingleton* _singleInstance;
+private:
+    RJSApi& handler;
+    //static QApplication_WrapperSingleton* _singleInstance;
 
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QApplication
-    class QTJSAPI_EXPORT QApplication_Wrapper : public RJSWrapperObj {
+    // constants:
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
-    QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
+};
 
-  Q_PROPERTY(
-    
-    QJSValue
-     applicationName READ applicationName WRITE setApplicationName
-  )
+// static functions implementation in singleton wrapper:
 
-  Q_PROPERTY(
-    
-    QJSValue
-     applicationVersion READ applicationVersion WRITE setApplicationVersion
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     organizationDomain READ organizationDomain WRITE setOrganizationDomain
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     organizationName READ organizationName WRITE setOrganizationName
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     quitLockEnabled READ isQuitLockEnabled WRITE setQuitLockEnabled
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     doubleClickInterval READ doubleClickInterval WRITE setDoubleClickInterval
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     keyboardInputInterval READ keyboardInputInterval WRITE setKeyboardInputInterval
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     wheelScrollLines READ wheelScrollLines WRITE setWheelScrollLines
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     startDragTime READ startDragTime WRITE setStartDragTime
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     startDragDistance READ startDragDistance WRITE setStartDragDistance
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     styleSheet READ styleSheet WRITE setStyleSheet
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     autoSipEnabled READ autoSipEnabled WRITE setAutoSipEnabled
-  )
+// wrapper class for QApplication
+class QTJSAPI_EXPORT QApplication_Wrapper : public RJSWrapperObj {
 
 
-    private:
-      // disable copy constructor:
-      QApplication_Wrapper(const QApplication_Wrapper&);
+    Q_OBJECT
+    QML_INTERFACE
 
-    public:
-      // initialization of QApplication:
-      static void init(RJSApi& handler);
+    Q_PROPERTY(
 
-      
-        static QApplication* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
 
-          // hook for modules to cast from other types to base QApplication:
-          for (int i=0; i<basecasters_QApplication.length(); i++) {
+    Q_PROPERTY(
+
+        QJSValue
+        applicationName READ applicationName WRITE setApplicationName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        applicationVersion READ applicationVersion WRITE setApplicationVersion
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        organizationDomain READ organizationDomain WRITE setOrganizationDomain
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        organizationName READ organizationName WRITE setOrganizationName
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        quitLockEnabled READ isQuitLockEnabled WRITE setQuitLockEnabled
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        doubleClickInterval READ doubleClickInterval WRITE setDoubleClickInterval
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        keyboardInputInterval READ keyboardInputInterval WRITE setKeyboardInputInterval
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        wheelScrollLines READ wheelScrollLines WRITE setWheelScrollLines
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        startDragTime READ startDragTime WRITE setStartDragTime
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        startDragDistance READ startDragDistance WRITE setStartDragDistance
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        styleSheet READ styleSheet WRITE setStyleSheet
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        autoSipEnabled READ autoSipEnabled WRITE setAutoSipEnabled
+    )
+
+
+private:
+    // disable copy constructor:
+    QApplication_Wrapper(const QApplication_Wrapper&);
+
+public:
+    // initialization of QApplication:
+    static void init(RJSApi& handler);
+
+
+    static QApplication* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QApplication:
+        for (int i=0; i<basecasters_QApplication.length(); i++) {
             RJSBasecaster_QApplication* basecaster = basecasters_QApplication[i];
             QApplication* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QApplication:
-          if (t==RJSType_QApplication::getIdStatic()) {
+        // object is a pointer to base class QApplication:
+        if (t==RJSType_QApplication::getIdStatic()) {
             return (QApplication*)vp;
-          }
-
-          qWarning() << "QApplication_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QApplication* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QApplication*: wrapper wraps NULL";
-          }
+        qWarning() << "QApplication_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QApplication* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QApplication*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QApplication* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QApplication*: wrapper wraps NULL";
         }
-      
+
+        QApplication* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QApplication*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QApplication_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QApplication_Wrapper(RJSApi& h, QApplication* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QApplication_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QApplication_Wrapper(RJSApi& h, QApplication* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QApplication_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
 #if QT_CONFIG(wheelevent)
 
 #endif
@@ -2048,40 +2048,40 @@
 #ifdef Q_QDOC
 
     // Class: QApplication
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QApplication_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QApplication_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
 #else
 
 #endif
@@ -2104,7 +2104,7 @@
 
 
     // non-static functions:
-    
+
     // Class: QApplication
     // Function: objectName
     // Source: QObject
@@ -2112,20 +2112,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: setObjectName
     // Source: QObject
@@ -2133,22 +2133,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: isWidgetType
     // Source: QObject
@@ -2156,20 +2156,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: isWindowType
     // Source: QObject
@@ -2177,20 +2177,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: signalsBlocked
     // Source: QObject
@@ -2198,20 +2198,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: blockSignals
     // Source: QObject
@@ -2219,22 +2219,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: findChild
     // Source: QObject
@@ -2242,28 +2242,28 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: children
     // Source: QObject
@@ -2271,20 +2271,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: setParent
     // Source: QObject
@@ -2292,22 +2292,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: installEventFilter
     // Source: QObject
@@ -2315,22 +2315,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: removeEventFilter
     // Source: QObject
@@ -2338,22 +2338,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: dumpObjectTree
     // Source: QObject
@@ -2361,18 +2361,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: dumpObjectInfo
     // Source: QObject
@@ -2380,18 +2380,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setProperty
     // Source: QObject
@@ -2399,26 +2399,26 @@
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: property
     // Source: QObject
@@ -2426,24 +2426,24 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -2451,20 +2451,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: parent
     // Source: QObject
@@ -2472,20 +2472,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: deleteLater
     // Source: QObject
@@ -2493,18 +2493,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setOrganizationDomain
     // Source: QCoreApplication
@@ -2512,22 +2512,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOrganizationDomain
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setOrganizationDomain
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: organizationDomain
     // Source: QCoreApplication
@@ -2535,18 +2535,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  organizationDomain
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    organizationDomain
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setOrganizationName
     // Source: QCoreApplication
@@ -2554,22 +2554,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOrganizationName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setOrganizationName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: organizationName
     // Source: QCoreApplication
@@ -2577,18 +2577,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  organizationName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    organizationName
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setApplicationName
     // Source: QCoreApplication
@@ -2596,22 +2596,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setApplicationName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setApplicationName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: applicationName
     // Source: QCoreApplication
@@ -2619,18 +2619,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  applicationName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    applicationName
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setApplicationVersion
     // Source: QCoreApplication
@@ -2638,22 +2638,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setApplicationVersion
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setApplicationVersion
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: applicationVersion
     // Source: QCoreApplication
@@ -2661,18 +2661,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  applicationVersion
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    applicationVersion
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: isQuitLockEnabled
     // Source: QCoreApplication
@@ -2680,18 +2680,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isQuitLockEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    isQuitLockEnabled
+    (
+
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: setQuitLockEnabled
     // Source: QCoreApplication
@@ -2699,22 +2699,22 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setQuitLockEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setQuitLockEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: organizationNameChanged
     // Source: QCoreApplication
@@ -2722,18 +2722,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void organizationNameChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void organizationNameChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void organizationNameChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void organizationNameChangedEmitter(
+
+    );
+
     // Class: QApplication
     // Function: organizationDomainChanged
     // Source: QCoreApplication
@@ -2741,18 +2741,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void organizationDomainChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void organizationDomainChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void organizationDomainChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void organizationDomainChangedEmitter(
+
+    );
+
     // Class: QApplication
     // Function: applicationNameChanged
     // Source: QCoreApplication
@@ -2760,18 +2760,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void applicationNameChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void applicationNameChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void applicationNameChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void applicationNameChangedEmitter(
+
+    );
+
     // Class: QApplication
     // Function: applicationVersionChanged
     // Source: QCoreApplication
@@ -2779,18 +2779,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void applicationVersionChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void applicationVersionChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void applicationVersionChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void applicationVersionChangedEmitter(
+
+    );
+
     // Class: QApplication
     // Function: devicePixelRatio
     // Source: QGuiApplication
@@ -2798,20 +2798,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  devicePixelRatio
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    devicePixelRatio
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: isSessionRestored
     // Source: QGuiApplication
@@ -2819,20 +2819,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSessionRestored
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isSessionRestored
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: sessionId
     // Source: QGuiApplication
@@ -2840,20 +2840,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sessionId
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sessionId
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: sessionKey
     // Source: QGuiApplication
@@ -2861,20 +2861,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  sessionKey
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    sessionKey
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: isSavingSession
     // Source: QGuiApplication
@@ -2882,20 +2882,20 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSavingSession
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isSavingSession
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QApplication
     // Function: fontDatabaseChanged
     // Source: QGuiApplication
@@ -2903,18 +2903,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void fontDatabaseChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void fontDatabaseChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void fontDatabaseChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void fontDatabaseChangedEmitter(
+
+    );
+
     // Class: QApplication
     // Function: screenAdded
     // Source: QGuiApplication
@@ -2922,20 +2922,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void screenAdded(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void screenAdded(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void screenAddedEmitter(
-                QScreen* screen
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void screenAddedEmitter(
+        QScreen* screen
+    );
+
     // Class: QApplication
     // Function: screenRemoved
     // Source: QGuiApplication
@@ -2943,20 +2943,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void screenRemoved(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void screenRemoved(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void screenRemovedEmitter(
-                QScreen* screen
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void screenRemovedEmitter(
+        QScreen* screen
+    );
+
     // Class: QApplication
     // Function: primaryScreenChanged
     // Source: QGuiApplication
@@ -2964,20 +2964,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void primaryScreenChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void primaryScreenChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void primaryScreenChangedEmitter(
-                QScreen* screen
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void primaryScreenChangedEmitter(
+        QScreen* screen
+    );
+
     // Class: QApplication
     // Function: lastWindowClosed
     // Source: QGuiApplication
@@ -2985,18 +2985,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void lastWindowClosed(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void lastWindowClosed(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void lastWindowClosedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void lastWindowClosedEmitter(
+
+    );
+
     // Class: QApplication
     // Function: focusObjectChanged
     // Source: QGuiApplication
@@ -3004,20 +3004,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void focusObjectChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void focusObjectChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void focusObjectChangedEmitter(
-                QObject* focusObject
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void focusObjectChangedEmitter(
+        QObject* focusObject
+    );
+
     // Class: QApplication
     // Function: applicationStateChanged
     // Source: QGuiApplication
@@ -3025,20 +3025,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void applicationStateChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void applicationStateChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void applicationStateChangedEmitter(
-                Qt::ApplicationState state
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void applicationStateChangedEmitter(
+        Qt::ApplicationState state
+    );
+
     // Class: QApplication
     // Function: layoutDirectionChanged
     // Source: QGuiApplication
@@ -3046,20 +3046,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void layoutDirectionChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void layoutDirectionChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void layoutDirectionChangedEmitter(
-                Qt::LayoutDirection direction
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void layoutDirectionChangedEmitter(
+        Qt::LayoutDirection direction
+    );
+
     // Class: QApplication
     // Function: applicationDisplayNameChanged
     // Source: QGuiApplication
@@ -3067,18 +3067,18 @@
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void applicationDisplayNameChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void applicationDisplayNameChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void applicationDisplayNameChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void applicationDisplayNameChangedEmitter(
+
+    );
+
     // Class: QApplication
     // Function: paletteChanged
     // Source: QGuiApplication
@@ -3086,20 +3086,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void paletteChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void paletteChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void paletteChangedEmitter(
-                const QPalette& pal
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void paletteChangedEmitter(
+        const QPalette& pal
+    );
+
     // Class: QApplication
     // Function: fontChanged
     // Source: QGuiApplication
@@ -3107,20 +3107,20 @@
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void fontChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void fontChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void fontChangedEmitter(
-                const QFont& font
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void fontChangedEmitter(
+        const QFont& font
+    );
+
 #if QT_CONFIG(wheelevent)
 
 #endif
@@ -3141,146 +3141,146 @@
 
     // Class: QApplication
     // Function: notify
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  notify
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    notify
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: focusChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void focusChanged(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void focusChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void focusChangedEmitter(
-                QWidget* old, QWidget* now
-              );
-            
+        const QJSValue&
+        a1,
+        const QJSValue&
+        a2
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void focusChangedEmitter(
+        QWidget* old, QWidget* now
+    );
+
     // Class: QApplication
     // Function: styleSheet
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  styleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    styleSheet
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #ifndef QT_NO_STYLE_STYLESHEET
 
     // Class: QApplication
     // Function: setStyleSheet
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStyleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStyleSheet
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 #endif
 
     // Class: QApplication
     // Function: setAutoSipEnabled
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoSipEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoSipEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QApplication
     // Function: autoSipEnabled
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoSipEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoSipEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #ifndef QT_NO_SHORTCUT
 
 #endif
@@ -3289,198 +3289,198 @@
 
 #endif
 
-  // read static property doubleClickInterval:
-  Q_INVOKABLE QJSValue doubleClickInterval() {
-    return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("doubleClickInterval").call();
+    // read static property doubleClickInterval:
+    Q_INVOKABLE QJSValue doubleClickInterval() {
+        return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("doubleClickInterval").call();
 
-    
-  }
 
-  
+    }
+
+
     // write static property doubleClickInterval:
     Q_INVOKABLE QJSValue setDoubleClickInterval(const QJSValue& arg) {
-      return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("setDoubleClickInterval").call(QJSValueList() << arg);
-      
+        return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("setDoubleClickInterval").call(QJSValueList() << arg);
+
     }
-  
-  // read static property keyboardInputInterval:
-  Q_INVOKABLE QJSValue keyboardInputInterval() {
-    return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("keyboardInputInterval").call();
 
-    
-  }
+    // read static property keyboardInputInterval:
+    Q_INVOKABLE QJSValue keyboardInputInterval() {
+        return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("keyboardInputInterval").call();
 
-  
+
+    }
+
+
     // write static property keyboardInputInterval:
     Q_INVOKABLE QJSValue setKeyboardInputInterval(const QJSValue& arg) {
-      return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("setKeyboardInputInterval").call(QJSValueList() << arg);
-      
+        return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("setKeyboardInputInterval").call(QJSValueList() << arg);
+
     }
-  
-  // read static property wheelScrollLines:
-  Q_INVOKABLE QJSValue wheelScrollLines() {
-    return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("wheelScrollLines").call();
 
-    
-  }
+    // read static property wheelScrollLines:
+    Q_INVOKABLE QJSValue wheelScrollLines() {
+        return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("wheelScrollLines").call();
 
-  
+
+    }
+
+
     // write static property wheelScrollLines:
     Q_INVOKABLE QJSValue setWheelScrollLines(const QJSValue& arg) {
-      return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("setWheelScrollLines").call(QJSValueList() << arg);
-      
+        return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("setWheelScrollLines").call(QJSValueList() << arg);
+
     }
-  
-  // read static property startDragTime:
-  Q_INVOKABLE QJSValue startDragTime() {
-    return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("startDragTime").call();
 
-    
-  }
+    // read static property startDragTime:
+    Q_INVOKABLE QJSValue startDragTime() {
+        return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("startDragTime").call();
 
-  
+
+    }
+
+
     // write static property startDragTime:
     Q_INVOKABLE QJSValue setStartDragTime(const QJSValue& arg) {
-      return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("setStartDragTime").call(QJSValueList() << arg);
-      
+        return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("setStartDragTime").call(QJSValueList() << arg);
+
     }
-  
-  // read static property startDragDistance:
-  Q_INVOKABLE QJSValue startDragDistance() {
-    return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("startDragDistance").call();
 
-    
-  }
+    // read static property startDragDistance:
+    Q_INVOKABLE QJSValue startDragDistance() {
+        return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("startDragDistance").call();
 
-  
+
+    }
+
+
     // write static property startDragDistance:
     Q_INVOKABLE QJSValue setStartDragDistance(const QJSValue& arg) {
-      return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("setStartDragDistance").call(QJSValueList() << arg);
-      
+        return handler.getEngine()->globalObject().property("QApplication_WrapperSingleton").property("setStartDragDistance").call(QJSValueList() << arg);
+
     }
-  
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
 
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
 
-  // member functions for static properties, forward to static function
-  
+            delete wrapped;
 
-
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
-
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QApplication::getIdStatic();
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QApplication* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QApplication::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QApplication* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QApplication* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QApplication* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QApplication* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QApplication*> basecasters_QApplication;
 
-      public:
-        static void registerBasecaster_QApplication(RJSBasecaster_QApplication* bc) {
-          basecasters_QApplication.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QApplication* wrapped;
 
-    Q_DECLARE_METATYPE(QApplication_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QApplication_Wrapper, "org.qcad.QApplication_Wrapper")
 
-  
-  #endif
-  
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QApplication*> basecasters_QApplication;
+
+public:
+    static void registerBasecaster_QApplication(RJSBasecaster_QApplication* bc) {
+        basecasters_QApplication.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QApplication_Wrapper*)
+
+Q_DECLARE_INTERFACE(QApplication_Wrapper, "org.qcad.QApplication_Wrapper")
+
+
+#endif
+

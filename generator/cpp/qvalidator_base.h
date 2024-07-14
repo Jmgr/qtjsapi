@@ -1,36 +1,35 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QVALIDATOR_H_BASE
-  #define QVALIDATOR_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QQmlEngine>
+#ifndef QVALIDATOR_H_BASE
+#define QVALIDATOR_H_BASE
 
-    
-        #include <QValidator>
-      
-    #include <QQmlEngine>
+// include header:
+//#include "header_h.h"
 
-    
-        #include <QIntValidator>
-      
-    #include <QQmlEngine>
+#include "../RJSHelper.h"
 
-    
-        #include <QDoubleValidator>
-      
-    #include <QQmlEngine>
+#include <QQmlEngine>
 
-    
-        #include <QRegularExpressionValidator>
-      
-  #endif
-  
+
+#include <QValidator>
+
+#include <QQmlEngine>
+
+
+#include <QIntValidator>
+
+#include <QQmlEngine>
+
+
+#include <QDoubleValidator>
+
+#include <QQmlEngine>
+
+
+#include <QRegularExpressionValidator>
+
+#endif

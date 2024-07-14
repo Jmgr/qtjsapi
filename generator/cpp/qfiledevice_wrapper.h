@@ -1,48 +1,48 @@
 
-  // Auto generated
-  
-    #ifndef QFILEDEVICE_H_WRAPPER
-    #define QFILEDEVICE_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QFILEDEVICE_H_WRAPPER
+#define QFILEDEVICE_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QDateTime>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QFileDevice>
-      
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QFileDevice_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QFileDevice_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QDateTime>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QFileDevice>
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QFileDevice_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QFileDevice_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QFileDevice
     // Function: tr
     // Source: QObject
@@ -50,153 +50,153 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-
-      private:
-          RJSApi& handler;
-          //static QFileDevice_WrapperSingleton* _singleInstance;
-
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QFileDevice
-    class QTJSAPI_EXPORT QFileDevice_Wrapper : public RJSWrapperObj {
-
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
     QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
+    tr
+    (
 
 
-    private:
-      // disable copy constructor:
-      QFileDevice_Wrapper(const QFileDevice_Wrapper&);
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
 
-    public:
-      // initialization of QFileDevice:
-      static void init(RJSApi& handler);
+    )
 
-      
-        static QFileDevice* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
-              if (t==RJSType_QFile::getIdStatic()) {
-                return (QFileDevice*)(QFile*)vp;
-              }
-              
+    ;
 
-          // hook for modules to cast from other types to base QFileDevice:
-          for (int i=0; i<basecasters_QFileDevice.length(); i++) {
+
+private:
+    RJSApi& handler;
+    //static QFileDevice_WrapperSingleton* _singleInstance;
+
+    // constants:
+
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QFileDevice
+class QTJSAPI_EXPORT QFileDevice_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+    Q_PROPERTY(
+
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
+
+
+private:
+    // disable copy constructor:
+    QFileDevice_Wrapper(const QFileDevice_Wrapper&);
+
+public:
+    // initialization of QFileDevice:
+    static void init(RJSApi& handler);
+
+
+    static QFileDevice* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+        if (t==RJSType_QFile::getIdStatic()) {
+            return (QFileDevice*)(QFile*)vp;
+        }
+
+
+        // hook for modules to cast from other types to base QFileDevice:
+        for (int i=0; i<basecasters_QFileDevice.length(); i++) {
             RJSBasecaster_QFileDevice* basecaster = basecasters_QFileDevice[i];
             QFileDevice* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QFileDevice:
-          if (t==RJSType_QFileDevice::getIdStatic()) {
+        // object is a pointer to base class QFileDevice:
+        if (t==RJSType_QFileDevice::getIdStatic()) {
             return (QFileDevice*)vp;
-          }
-
-          qWarning() << "QFileDevice_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QFileDevice* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QFileDevice*: wrapper wraps NULL";
-          }
+        qWarning() << "QFileDevice_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QFileDevice* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QFileDevice*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QFileDevice* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QFileDevice*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum OpenModeFlag {
-    NotOpen = QFileDevice::NotOpen,
-ReadOnly = QFileDevice::ReadOnly,
-WriteOnly = QFileDevice::WriteOnly,
-ReadWrite = QFileDevice::ReadWrite,
-Append = QFileDevice::Append,
-Truncate = QFileDevice::Truncate,
-Text = QFileDevice::Text,
-Unbuffered = QFileDevice::Unbuffered,
-NewOnly = QFileDevice::NewOnly,
-ExistingOnly = QFileDevice::ExistingOnly,
 
-  };
-  Q_ENUM(OpenModeFlag)
+        QFileDevice* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QFileDevice*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
+    // enums:
+
+    enum OpenModeFlag {
+        NotOpen = QFileDevice::NotOpen,
+        ReadOnly = QFileDevice::ReadOnly,
+        WriteOnly = QFileDevice::WriteOnly,
+        ReadWrite = QFileDevice::ReadWrite,
+        Append = QFileDevice::Append,
+        Truncate = QFileDevice::Truncate,
+        Text = QFileDevice::Text,
+        Unbuffered = QFileDevice::Unbuffered,
+        NewOnly = QFileDevice::NewOnly,
+        ExistingOnly = QFileDevice::ExistingOnly,
+
+    };
+    Q_ENUM(OpenModeFlag)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QFileDevice_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QFileDevice_Wrapper(RJSApi& h, QFileDevice* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QFileDevice_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QFileDevice_Wrapper(RJSApi& h, QFileDevice* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QFileDevice_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
 
     // non-static functions:
-    
+
     // Class: QFileDevice
     // Function: objectName
     // Source: QObject
@@ -204,20 +204,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: setObjectName
     // Source: QObject
@@ -225,22 +225,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: isWidgetType
     // Source: QObject
@@ -248,20 +248,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: isWindowType
     // Source: QObject
@@ -269,20 +269,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: signalsBlocked
     // Source: QObject
@@ -290,20 +290,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: blockSignals
     // Source: QObject
@@ -311,22 +311,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: findChild
     // Source: QObject
@@ -334,28 +334,28 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: children
     // Source: QObject
@@ -363,20 +363,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: setParent
     // Source: QObject
@@ -384,22 +384,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: installEventFilter
     // Source: QObject
@@ -407,22 +407,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: removeEventFilter
     // Source: QObject
@@ -430,22 +430,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: dumpObjectTree
     // Source: QObject
@@ -453,18 +453,18 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: dumpObjectInfo
     // Source: QObject
@@ -472,18 +472,18 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: setProperty
     // Source: QObject
@@ -491,26 +491,26 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: property
     // Source: QObject
@@ -518,24 +518,24 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -543,20 +543,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: parent
     // Source: QObject
@@ -564,20 +564,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: deleteLater
     // Source: QObject
@@ -585,18 +585,18 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: openMode
     // Source: QIODevice
@@ -604,20 +604,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  openMode
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    openMode
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: setTextModeEnabled
     // Source: QIODevice
@@ -625,22 +625,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTextModeEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTextModeEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: isTextModeEnabled
     // Source: QIODevice
@@ -648,20 +648,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isTextModeEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isTextModeEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: isOpen
     // Source: QIODevice
@@ -669,20 +669,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isOpen
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isOpen
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: isReadable
     // Source: QIODevice
@@ -690,20 +690,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isReadable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isReadable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: isWritable
     // Source: QIODevice
@@ -711,20 +711,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWritable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWritable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: readChannelCount
     // Source: QIODevice
@@ -732,20 +732,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  readChannelCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    readChannelCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: writeChannelCount
     // Source: QIODevice
@@ -753,20 +753,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeChannelCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    writeChannelCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: currentReadChannel
     // Source: QIODevice
@@ -774,20 +774,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentReadChannel
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    currentReadChannel
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: setCurrentReadChannel
     // Source: QIODevice
@@ -795,22 +795,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentReadChannel
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCurrentReadChannel
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: currentWriteChannel
     // Source: QIODevice
@@ -818,20 +818,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentWriteChannel
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    currentWriteChannel
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: setCurrentWriteChannel
     // Source: QIODevice
@@ -839,22 +839,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentWriteChannel
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCurrentWriteChannel
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: open
     // Source: QIODevice
@@ -862,22 +862,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  open
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    open
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: reset
     // Source: QIODevice
@@ -885,18 +885,18 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  reset
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    reset
+    (
+
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: bytesAvailable
     // Source: QIODevice
@@ -904,20 +904,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  bytesAvailable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    bytesAvailable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: bytesToWrite
     // Source: QIODevice
@@ -925,20 +925,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  bytesToWrite
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    bytesToWrite
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: readAll
     // Source: QIODevice
@@ -946,18 +946,18 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  readAll
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    readAll
+    (
+
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: canReadLine
     // Source: QIODevice
@@ -965,20 +965,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  canReadLine
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    canReadLine
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: startTransaction
     // Source: QIODevice
@@ -986,18 +986,18 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  startTransaction
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    startTransaction
+    (
+
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: commitTransaction
     // Source: QIODevice
@@ -1005,18 +1005,18 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  commitTransaction
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    commitTransaction
+    (
+
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: rollbackTransaction
     // Source: QIODevice
@@ -1024,18 +1024,18 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  rollbackTransaction
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    rollbackTransaction
+    (
+
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: isTransactionStarted
     // Source: QIODevice
@@ -1043,20 +1043,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isTransactionStarted
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isTransactionStarted
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: write
     // Source: QIODevice
@@ -1064,26 +1064,26 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  write
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    write
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: skip
     // Source: QIODevice
@@ -1091,22 +1091,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  skip
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    skip
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: waitForReadyRead
     // Source: QIODevice
@@ -1114,22 +1114,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  waitForReadyRead
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    waitForReadyRead
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: waitForBytesWritten
     // Source: QIODevice
@@ -1137,22 +1137,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  waitForBytesWritten
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    waitForBytesWritten
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: ungetChar
     // Source: QIODevice
@@ -1160,22 +1160,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  ungetChar
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    ungetChar
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: putChar
     // Source: QIODevice
@@ -1183,22 +1183,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  putChar
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    putChar
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: errorString
     // Source: QIODevice
@@ -1206,20 +1206,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  errorString
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    errorString
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: readyRead
     // Source: QIODevice
@@ -1227,18 +1227,18 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void readyRead(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void readyRead(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void readyReadEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void readyReadEmitter(
+
+    );
+
     // Class: QFileDevice
     // Function: channelReadyRead
     // Source: QIODevice
@@ -1246,20 +1246,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void channelReadyRead(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void channelReadyRead(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void channelReadyReadEmitter(
-                int channel
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void channelReadyReadEmitter(
+        int channel
+    );
+
     // Class: QFileDevice
     // Function: bytesWritten
     // Source: QIODevice
@@ -1267,20 +1267,20 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void bytesWritten(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void bytesWritten(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void bytesWrittenEmitter(
-                qint64 bytes
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void bytesWrittenEmitter(
+        qint64 bytes
+    );
+
     // Class: QFileDevice
     // Function: channelBytesWritten
     // Source: QIODevice
@@ -1288,22 +1288,22 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 2
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void channelBytesWritten(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void channelBytesWritten(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void channelBytesWrittenEmitter(
-                int channel, qint64 bytes
-              );
-            
+        const QJSValue&
+        a1,
+        const QJSValue&
+        a2
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void channelBytesWrittenEmitter(
+        int channel, qint64 bytes
+    );
+
     // Class: QFileDevice
     // Function: aboutToClose
     // Source: QIODevice
@@ -1311,18 +1311,18 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void aboutToClose(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void aboutToClose(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void aboutToCloseEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void aboutToCloseEmitter(
+
+    );
+
     // Class: QFileDevice
     // Function: readChannelFinished
     // Source: QIODevice
@@ -1330,486 +1330,486 @@ ExistingOnly = QFileDevice::ExistingOnly,
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void readChannelFinished(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void readChannelFinished(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void readChannelFinishedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void readChannelFinishedEmitter(
+
+    );
+
     // Class: QFileDevice
     // Function: error
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  error
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    error
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: unsetError
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  unsetError
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    unsetError
+    (
+
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: close
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  close
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    close
+    (
+
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: isSequential
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isSequential
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isSequential
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: handle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  handle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    handle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: fileName
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fileName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fileName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: pos
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pos
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pos
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: seek
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  seek
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    seek
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: atEnd
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  atEnd
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    atEnd
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: flush
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  flush
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    flush
+    (
+
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: size
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    size
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: resize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    resize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: permissions
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  permissions
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    permissions
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: setPermissions
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPermissions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPermissions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFileDevice
     // Function: fileTime
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fileTime
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fileTime
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QFileDevice
     // Function: setFileTime
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFileTime
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    setFileTime
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QFileDevice::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QFileDevice* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QFileDevice::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QFileDevice* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QFileDevice* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QFileDevice* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QFileDevice* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QFileDevice*> basecasters_QFileDevice;
 
-      public:
-        static void registerBasecaster_QFileDevice(RJSBasecaster_QFileDevice* bc) {
-          basecasters_QFileDevice.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QFileDevice* wrapped;
 
-    Q_DECLARE_METATYPE(QFileDevice_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QFileDevice_Wrapper, "org.qcad.QFileDevice_Wrapper")
 
-  
-  #endif
-  
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QFileDevice*> basecasters_QFileDevice;
+
+public:
+    static void registerBasecaster_QFileDevice(RJSBasecaster_QFileDevice* bc) {
+        basecasters_QFileDevice.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QFileDevice_Wrapper*)
+
+Q_DECLARE_INTERFACE(QFileDevice_Wrapper, "org.qcad.QFileDevice_Wrapper")
+
+
+#endif
+

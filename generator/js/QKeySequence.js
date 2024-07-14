@@ -1,234 +1,232 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QKeySequence() {
-        
+// class constructor:
+function QKeySequence() {
 
-        // should be QKeySequence_BaseJs.call(this, engine):
-        //QKeySequence.prototype = new QKeySequence_BaseJs(engine);
 
-        var wrapper;
+    // should be QKeySequence_BaseJs.call(this, engine):
+    //QKeySequence.prototype = new QKeySequence_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QKeySequence.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QKeySequence.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QKeySequence);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QKeySequence);
             //}
-          }
-          else {
+        } else {
             qWarning("QKeySequence.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 4) {
-    
+
+    } else {
+
+        if (arguments.length >= 1 &&
+                arguments.length <= 4) {
+
             self = this;
             wrapper = new QKeySequence_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2], arguments[3]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QKeySequence);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QKeySequence);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QKeySequence);
-  }
 
-  
-  else 
-  
-      if (arguments.length >= 1 &&
-          arguments.length <= 2) {
-    
-            self = this;
-            wrapper = new QKeySequence_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QKeySequence);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QKeySequence);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QKeySequence_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QKeySequence);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QKeySequence);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QKeySequence_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QKeySequence);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QKeySequence);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QKeySequence_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QKeySequence);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QKeySequence);
-  }
-
-  
-  else {
-    
-        print("QKeySequence(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QKeySequence);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length >= 1 &&
+                    arguments.length <= 2) {
+
+                self = this;
+                wrapper = new QKeySequence_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0], arguments[1]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QKeySequence);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QKeySequence);
+            }
+
+
+            else
+
+                if (arguments.length == 1) {
+
+                    self = this;
+                    wrapper = new QKeySequence_Wrapper(
+                        // RJSApi:
+                        handler
+                        , arguments[0]
+                        ////this.setWrapper(this.wrapper);
+                        //Object.setPrototypeOf(this, wrapper);
+                    );
+                    //wrapper.__WRAPPER__ = true;
+                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                    copyProperties(this, wrapper, QKeySequence);
+
+                    //this.setWrapper(this.wrapper);
+
+
+
+                    //copyProperties(this, wrapper, QKeySequence);
+                }
+
+
+                else
+
+                    if (arguments.length == 1) {
+
+                        self = this;
+                        wrapper = new QKeySequence_Wrapper(
+                            // RJSApi:
+                            handler
+                            , arguments[0]
+                            ////this.setWrapper(this.wrapper);
+                            //Object.setPrototypeOf(this, wrapper);
+                        );
+                        //wrapper.__WRAPPER__ = true;
+                        Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                        copyProperties(this, wrapper, QKeySequence);
+
+                        //this.setWrapper(this.wrapper);
+
+
+
+                        //copyProperties(this, wrapper, QKeySequence);
+                    }
+
+
+                    else
+
+                        if (arguments.length == 0) {
+
+                            self = this;
+                            wrapper = new QKeySequence_Wrapper(
+                                // RJSApi:
+                                handler
+
+                                ////this.setWrapper(this.wrapper);
+                                //Object.setPrototypeOf(this, wrapper);
+                            );
+                            //wrapper.__WRAPPER__ = true;
+                            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                            copyProperties(this, wrapper, QKeySequence);
+
+                            //this.setWrapper(this.wrapper);
+
+
+
+                            //copyProperties(this, wrapper, QKeySequence);
+                        }
+
+
+                        else {
+
+                            print("QKeySequence(): wrong number / type of arguments");
+
+                            console.trace();
+                        }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QKeySequence.prototype = new QKeySequence_BaseJs(engine);
-      //QKeySequence.prototype = new QKeySequence_Wrapper(engine);
-      QKeySequence.prototype = new Object();
-
-      
-        // function with alias name in CPP wrapper:
-        QKeySequence.prototype.toString = function() {
-          return this.toStr.apply(this, arguments);
-        }
-      QKeySequence.getObjectType = function() {
-        return RJSType_QKeySequence.getIdStatic();
-      };
-
-      QKeySequence.prototype.getObjectType = function() {
-        return RJSType_QKeySequence.getIdStatic();
-      };
-
-      QKeySequence.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QKeySequence.getIdStatic()) {
-          return true;
-        }
-
-        
-
-        return false;
+//QKeySequence.prototype = new QKeySequence_BaseJs(engine);
+//QKeySequence.prototype = new QKeySequence_Wrapper(engine);
+QKeySequence.prototype = new Object();
 
 
-        
-      };
+// function with alias name in CPP wrapper:
+QKeySequence.prototype.toString = function() {
+    return this.toStr.apply(this, arguments);
+}
+QKeySequence.getObjectType = function() {
+    return RJSType_QKeySequence.getIdStatic();
+};
 
-      // enum values:
-      
-  // enum: StandardKey
+QKeySequence.prototype.getObjectType = function() {
+    return RJSType_QKeySequence.getIdStatic();
+};
+
+QKeySequence.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QKeySequence.getIdStatic()) {
+        return true;
+    }
+
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: StandardKey
 QKeySequence.UnknownKey = QKeySequence_Wrapper.UnknownKey;
 QKeySequence.HelpContents = QKeySequence_Wrapper.HelpContents;
 QKeySequence.WhatsThis = QKeySequence_Wrapper.WhatsThis;
@@ -301,196 +299,195 @@ QKeySequence.DeleteCompleteLine = QKeySequence_Wrapper.DeleteCompleteLine;
 QKeySequence.Backspace = QKeySequence_Wrapper.Backspace;
 QKeySequence.Cancel = QKeySequence_Wrapper.Cancel;
 
-  // enum: SequenceFormat
+// enum: SequenceFormat
 QKeySequence.NativeText = QKeySequence_Wrapper.NativeText;
 QKeySequence.PortableText = QKeySequence_Wrapper.PortableText;
 
-  // enum: SequenceMatch
+// enum: SequenceMatch
 QKeySequence.NoMatch = QKeySequence_Wrapper.NoMatch;
 QKeySequence.PartialMatch = QKeySequence_Wrapper.PartialMatch;
 QKeySequence.ExactMatch = QKeySequence_Wrapper.ExactMatch;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QKeySequence.fromString = function() 
-          
-        {
-          //print("JS: QKeySequence.fromString");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 2) {
-    
-                // calling static wrapper:
-                return QKeySequence_WrapperSingletonInstance.fromString(
-                  arguments[0], arguments[1]
-                );
-              
+// static functions:
+
+
+// static function
+QKeySequence.fromString = function()
+
+{
+    //print("JS: QKeySequence.fromString");
+
+    if (arguments.length >= 1 &&
+            arguments.length <= 2) {
+
+        // calling static wrapper:
+        return QKeySequence_WrapperSingletonInstance.fromString(
+                   arguments[0], arguments[1]
+               );
+
 
         //copyProperties(this, wrapper, QKeySequence);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QKeySequence.fromString(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QKeySequence.listFromString = function() 
-          
-        {
-          //print("JS: QKeySequence.listFromString");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 2) {
-    
-                // calling static wrapper:
-                return QKeySequence_WrapperSingletonInstance.listFromString(
-                  arguments[0], arguments[1]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QKeySequence.listFromString = function()
+
+{
+    //print("JS: QKeySequence.listFromString");
+
+    if (arguments.length >= 1 &&
+            arguments.length <= 2) {
+
+        // calling static wrapper:
+        return QKeySequence_WrapperSingletonInstance.listFromString(
+                   arguments[0], arguments[1]
+               );
+
 
         //copyProperties(this, wrapper, QKeySequence);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QKeySequence.listFromString(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QKeySequence.listToString = function() 
-          
-        {
-          //print("JS: QKeySequence.listToString");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 2) {
-    
-                // calling static wrapper:
-                return QKeySequence_WrapperSingletonInstance.listToString(
-                  arguments[0], arguments[1]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QKeySequence.listToString = function()
+
+{
+    //print("JS: QKeySequence.listToString");
+
+    if (arguments.length >= 1 &&
+            arguments.length <= 2) {
+
+        // calling static wrapper:
+        return QKeySequence_WrapperSingletonInstance.listToString(
+                   arguments[0], arguments[1]
+               );
+
 
         //copyProperties(this, wrapper, QKeySequence);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QKeySequence.listToString(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QKeySequence.mnemonic = function() 
-          
-        {
-          //print("JS: QKeySequence.mnemonic");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QKeySequence_WrapperSingletonInstance.mnemonic(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QKeySequence.mnemonic = function()
+
+{
+    //print("JS: QKeySequence.mnemonic");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QKeySequence_WrapperSingletonInstance.mnemonic(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QKeySequence);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QKeySequence.mnemonic(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QKeySequence.keyBindings = function() 
-          
-        {
-          //print("JS: QKeySequence.keyBindings");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QKeySequence_WrapperSingletonInstance.keyBindings(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QKeySequence.keyBindings = function()
+
+{
+    //print("JS: QKeySequence.keyBindings");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QKeySequence_WrapperSingletonInstance.keyBindings(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QKeySequence);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QKeySequence.keyBindings(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QKeySequence.decodeString = function() 
-          
-        {
-          //print("JS: QKeySequence.decodeString");
-          
-        };
-      
+        console.trace();
+    }
 
-        // static function 
-        QKeySequence.encodeString = function() 
-          
-        {
-          //print("JS: QKeySequence.encodeString");
-          
-        };
-      
+};
 
-      // constants:
-      
 
-      // public static properties without access function:
-      
+// static function
+QKeySequence.decodeString = function()
 
-      // copy function:
-      //QKeySequence.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+{
+    //print("JS: QKeySequence.decodeString");
 
-      // destroy function:
-      //QKeySequence.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+};
+
+
+// static function
+QKeySequence.encodeString = function()
+
+{
+    //print("JS: QKeySequence.encodeString");
+
+};
+
+
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QKeySequence.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QKeySequence.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

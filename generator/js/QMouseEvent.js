@@ -1,195 +1,193 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QMouseEvent() {
-        
+// class constructor:
+function QMouseEvent() {
 
-        // should be QMouseEvent_BaseJs.call(this, engine):
-        //QMouseEvent.prototype = new QMouseEvent_BaseJs(engine);
 
-        var wrapper;
+    // should be QMouseEvent_BaseJs.call(this, engine):
+    //QMouseEvent.prototype = new QMouseEvent_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QMouseEvent.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QMouseEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QMouseEvent);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QMouseEvent);
             //}
-          }
-          else {
+        } else {
             qWarning("QMouseEvent.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 8) {
-    
+
+    } else {
+
+        if (arguments.length == 8) {
+
             self = this;
             wrapper = new QMouseEvent_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5], arguments[6], arguments[7]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5], arguments[6], arguments[7]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QMouseEvent);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QMouseEvent);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QMouseEvent);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 7) {
-    
-            self = this;
-            wrapper = new QMouseEvent_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5], arguments[6]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QMouseEvent);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QMouseEvent);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 6) {
-    
-            self = this;
-            wrapper = new QMouseEvent_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QMouseEvent);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QMouseEvent);
-  }
-
-  
-  else {
-    
-        print("QMouseEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QMouseEvent);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length == 7) {
+
+                self = this;
+                wrapper = new QMouseEvent_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5], arguments[6]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QMouseEvent);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QMouseEvent);
+            }
+
+
+            else
+
+                if (arguments.length == 6) {
+
+                    self = this;
+                    wrapper = new QMouseEvent_Wrapper(
+                        // RJSApi:
+                        handler
+                        , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5]
+                        ////this.setWrapper(this.wrapper);
+                        //Object.setPrototypeOf(this, wrapper);
+                    );
+                    //wrapper.__WRAPPER__ = true;
+                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                    copyProperties(this, wrapper, QMouseEvent);
+
+                    //this.setWrapper(this.wrapper);
+
+
+
+                    //copyProperties(this, wrapper, QMouseEvent);
+                }
+
+
+                else {
+
+                    print("QMouseEvent(): wrong number / type of arguments");
+
+                    console.trace();
+                }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QMouseEvent.prototype = new QMouseEvent_BaseJs(engine);
-      //QMouseEvent.prototype = new QMouseEvent_Wrapper(engine);
-      QMouseEvent.prototype = new Object();
+//QMouseEvent.prototype = new QMouseEvent_BaseJs(engine);
+//QMouseEvent.prototype = new QMouseEvent_Wrapper(engine);
+QMouseEvent.prototype = new Object();
 
-      QMouseEvent.prototype.toString = function() {
-          //return "QMouseEvent [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QMouseEvent [JS]";
-        };
-      QMouseEvent.getObjectType = function() {
-        return RJSType_QMouseEvent.getIdStatic();
-      };
+QMouseEvent.prototype.toString = function() {
+    //return "QMouseEvent [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QMouseEvent [JS]";
+};
+QMouseEvent.getObjectType = function() {
+    return RJSType_QMouseEvent.getIdStatic();
+};
 
-      QMouseEvent.prototype.getObjectType = function() {
-        return RJSType_QMouseEvent.getIdStatic();
-      };
+QMouseEvent.prototype.getObjectType = function() {
+    return RJSType_QMouseEvent.getIdStatic();
+};
 
-      QMouseEvent.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QMouseEvent.getIdStatic()) {
-          return true;
-        }
-
-        
-          if (t===RJSType_QEvent.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QInputEvent.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QPointerEvent.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QSinglePointEvent.getIdStatic()) {
-            return true;
-          }
-        
-
-        return false;
+QMouseEvent.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QMouseEvent.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
+    if (t===RJSType_QEvent.getIdStatic()) {
+        return true;
+    }
 
-      // enum values:
-      
-  // enum: Type
+    if (t===RJSType_QInputEvent.getIdStatic()) {
+        return true;
+    }
+
+    if (t===RJSType_QPointerEvent.getIdStatic()) {
+        return true;
+    }
+
+    if (t===RJSType_QSinglePointEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QMouseEvent.None = QMouseEvent_Wrapper.None;
 QMouseEvent.Timer = QMouseEvent_Wrapper.Timer;
 QMouseEvent.MouseButtonPress = QMouseEvent_Wrapper.MouseButtonPress;
@@ -364,54 +362,53 @@ QMouseEvent.User = QMouseEvent_Wrapper.User;
 QMouseEvent.MaxUser = QMouseEvent_Wrapper.MaxUser;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QMouseEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QMouseEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QMouseEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QMouseEvent.registerEventType = function()
+
+{
+    //print("JS: QMouseEvent.registerEventType");
+
+    if (arguments.length >= 0 &&
+            arguments.length <= 1) {
+
+        // calling static wrapper:
+        return QMouseEvent_WrapperSingletonInstance.registerEventType(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QMouseEvent);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QMouseEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QMouseEvent.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QMouseEvent.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QMouseEvent.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QMouseEvent.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

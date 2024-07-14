@@ -1,233 +1,231 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QPageSize() {
-        
+// class constructor:
+function QPageSize() {
 
-        // should be QPageSize_BaseJs.call(this, engine):
-        //QPageSize.prototype = new QPageSize_BaseJs(engine);
 
-        var wrapper;
+    // should be QPageSize_BaseJs.call(this, engine):
+    //QPageSize.prototype = new QPageSize_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QPageSize.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QPageSize.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPageSize);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QPageSize);
             //}
-          }
-          else {
+        } else {
             qWarning("QPageSize.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
-        }
-        else {
-          
-      if (arguments.length >= 2 &&
-          arguments.length <= 4) {
-    
-            self = this;
-            wrapper = new QPageSize_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QPageSize);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPageSize);
-  }
-
-  
-  else 
-  
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-            self = this;
-            wrapper = new QPageSize_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QPageSize);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPageSize);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QPageSize_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QPageSize);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPageSize);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QPageSize_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QPageSize);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPageSize);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QPageSize_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QPageSize);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPageSize);
-  }
-
-  
-  else {
-    
-        print("QPageSize(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+    } else {
+
+        if (arguments.length >= 2 &&
+                arguments.length <= 4) {
+
+            self = this;
+            wrapper = new QPageSize_Wrapper(
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2], arguments[3]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
+            );
+            //wrapper.__WRAPPER__ = true;
+            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            copyProperties(this, wrapper, QPageSize);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
+            //this.setWrapper(this.wrapper);
 
-      //QPageSize.prototype = new QPageSize_BaseJs(engine);
-      //QPageSize.prototype = new QPageSize_Wrapper(engine);
-      QPageSize.prototype = new Object();
 
-      QPageSize.prototype.toString = function() {
-          //return "QPageSize [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QPageSize [JS]";
-        };
-      QPageSize.getObjectType = function() {
-        return RJSType_QPageSize.getIdStatic();
-      };
 
-      QPageSize.prototype.getObjectType = function() {
-        return RJSType_QPageSize.getIdStatic();
-      };
-
-      QPageSize.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QPageSize.getIdStatic()) {
-          return true;
+            //copyProperties(this, wrapper, QPageSize);
         }
 
-        
 
-        return false;
+        else
+
+            if (arguments.length >= 1 &&
+                    arguments.length <= 3) {
+
+                self = this;
+                wrapper = new QPageSize_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0], arguments[1], arguments[2]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        
-      };
+                copyProperties(this, wrapper, QPageSize);
 
-      // enum values:
-      
-  // enum: PageSizeId
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QPageSize);
+            }
+
+
+            else
+
+                if (arguments.length == 1) {
+
+                    self = this;
+                    wrapper = new QPageSize_Wrapper(
+                        // RJSApi:
+                        handler
+                        , arguments[0]
+                        ////this.setWrapper(this.wrapper);
+                        //Object.setPrototypeOf(this, wrapper);
+                    );
+                    //wrapper.__WRAPPER__ = true;
+                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                    copyProperties(this, wrapper, QPageSize);
+
+                    //this.setWrapper(this.wrapper);
+
+
+
+                    //copyProperties(this, wrapper, QPageSize);
+                }
+
+
+                else
+
+                    if (arguments.length == 1) {
+
+                        self = this;
+                        wrapper = new QPageSize_Wrapper(
+                            // RJSApi:
+                            handler
+                            , arguments[0]
+                            ////this.setWrapper(this.wrapper);
+                            //Object.setPrototypeOf(this, wrapper);
+                        );
+                        //wrapper.__WRAPPER__ = true;
+                        Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                        copyProperties(this, wrapper, QPageSize);
+
+                        //this.setWrapper(this.wrapper);
+
+
+
+                        //copyProperties(this, wrapper, QPageSize);
+                    }
+
+
+                    else
+
+                        if (arguments.length == 0) {
+
+                            self = this;
+                            wrapper = new QPageSize_Wrapper(
+                                // RJSApi:
+                                handler
+
+                                ////this.setWrapper(this.wrapper);
+                                //Object.setPrototypeOf(this, wrapper);
+                            );
+                            //wrapper.__WRAPPER__ = true;
+                            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                            copyProperties(this, wrapper, QPageSize);
+
+                            //this.setWrapper(this.wrapper);
+
+
+
+                            //copyProperties(this, wrapper, QPageSize);
+                        }
+
+
+                        else {
+
+                            print("QPageSize(): wrong number / type of arguments");
+
+                            console.trace();
+                        }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QPageSize.prototype = new QPageSize_BaseJs(engine);
+//QPageSize.prototype = new QPageSize_Wrapper(engine);
+QPageSize.prototype = new Object();
+
+QPageSize.prototype.toString = function() {
+    //return "QPageSize [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QPageSize [JS]";
+};
+QPageSize.getObjectType = function() {
+    return RJSType_QPageSize.getIdStatic();
+};
+
+QPageSize.prototype.getObjectType = function() {
+    return RJSType_QPageSize.getIdStatic();
+};
+
+QPageSize.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QPageSize.getIdStatic()) {
+        return true;
+    }
+
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: PageSizeId
 QPageSize.Letter = QPageSize_Wrapper.Letter;
 QPageSize.Legal = QPageSize_Wrapper.Legal;
 QPageSize.Executive = QPageSize_Wrapper.Executive;
@@ -354,7 +352,7 @@ QPageSize.EnvelopeC5 = QPageSize_Wrapper.EnvelopeC5;
 QPageSize.EnvelopeDL = QPageSize_Wrapper.EnvelopeDL;
 QPageSize.Envelope10 = QPageSize_Wrapper.Envelope10;
 
-  // enum: Unit
+// enum: Unit
 QPageSize.Millimeter = QPageSize_Wrapper.Millimeter;
 QPageSize.Point = QPageSize_Wrapper.Point;
 QPageSize.Inch = QPageSize_Wrapper.Inch;
@@ -362,313 +360,312 @@ QPageSize.Pica = QPageSize_Wrapper.Pica;
 QPageSize.Didot = QPageSize_Wrapper.Didot;
 QPageSize.Cicero = QPageSize_Wrapper.Cicero;
 
-  // enum: SizeMatchPolicy
+// enum: SizeMatchPolicy
 QPageSize.FuzzyMatch = QPageSize_Wrapper.FuzzyMatch;
 QPageSize.FuzzyOrientationMatch = QPageSize_Wrapper.FuzzyOrientationMatch;
 QPageSize.ExactMatch = QPageSize_Wrapper.ExactMatch;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QPageSize.key = function() 
-          
-        {
-          //print("JS: QPageSize.key");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QPageSize_WrapperSingletonInstance.key(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QPageSize.key = function()
+
+{
+    //print("JS: QPageSize.key");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QPageSize_WrapperSingletonInstance.key(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QPageSize);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QPageSize.key(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QPageSize.name = function() 
-          
-        {
-          //print("JS: QPageSize.name");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QPageSize_WrapperSingletonInstance.name(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QPageSize.name = function()
+
+{
+    //print("JS: QPageSize.name");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QPageSize_WrapperSingletonInstance.name(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QPageSize);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QPageSize.name(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QPageSize.id = function() 
-          
-        {
-          //print("JS: QPageSize.id");
-          
-      if (arguments.length >= 2 &&
-          arguments.length <= 3) {
-    
+        console.trace();
+    }
+
+};
+
+
+// static function
+QPageSize.id = function()
+
+{
+    //print("JS: QPageSize.id");
+
+    if (arguments.length >= 2 &&
+            arguments.length <= 3) {
+
+        // calling static wrapper:
+        return QPageSize_WrapperSingletonInstance.id(
+                   arguments[0], arguments[1], arguments[2]
+               );
+
+
+        //copyProperties(this, wrapper, QPageSize);
+    }
+
+
+    else
+
+        if (arguments.length >= 1 &&
+                arguments.length <= 2) {
+
+            // calling static wrapper:
+            return QPageSize_WrapperSingletonInstance.id(
+                       arguments[0], arguments[1]
+                   );
+
+
+            //copyProperties(this, wrapper, QPageSize);
+        }
+
+
+        else
+
+            if (arguments.length == 1) {
+
                 // calling static wrapper:
                 return QPageSize_WrapperSingletonInstance.id(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
+                           arguments[0]
+                       );
+
+
+                //copyProperties(this, wrapper, QPageSize);
+            }
+
+
+            else {
+
+                print("QPageSize.id(): wrong number / type of arguments");
+
+                console.trace();
+            }
+
+};
+
+
+// static function
+QPageSize.windowsId = function()
+
+{
+    //print("JS: QPageSize.windowsId");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QPageSize_WrapperSingletonInstance.windowsId(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QPageSize);
-  }
+    }
 
-  
-  else 
-  
-      if (arguments.length >= 1 &&
-          arguments.length <= 2) {
-    
-                // calling static wrapper:
-                return QPageSize_WrapperSingletonInstance.id(
-                  arguments[0], arguments[1]
-                );
-              
 
-        //copyProperties(this, wrapper, QPageSize);
-  }
+    else {
 
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QPageSize_WrapperSingletonInstance.id(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QPageSize);
-  }
-
-  
-  else {
-    
-        print("QPageSize.id(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
-
-        // static function 
-        QPageSize.windowsId = function() 
-          
-        {
-          //print("JS: QPageSize.windowsId");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QPageSize_WrapperSingletonInstance.windowsId(
-                  arguments[0]
-                );
-              
-
-        //copyProperties(this, wrapper, QPageSize);
-  }
-
-  
-  else {
-    
         print("QPageSize.windowsId(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QPageSize.definitionSize = function() 
-          
-        {
-          //print("JS: QPageSize.definitionSize");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QPageSize_WrapperSingletonInstance.definitionSize(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QPageSize.definitionSize = function()
+
+{
+    //print("JS: QPageSize.definitionSize");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QPageSize_WrapperSingletonInstance.definitionSize(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QPageSize);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QPageSize.definitionSize(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QPageSize.definitionUnits = function() 
-          
-        {
-          //print("JS: QPageSize.definitionUnits");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QPageSize_WrapperSingletonInstance.definitionUnits(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QPageSize.definitionUnits = function()
+
+{
+    //print("JS: QPageSize.definitionUnits");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QPageSize_WrapperSingletonInstance.definitionUnits(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QPageSize);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QPageSize.definitionUnits(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QPageSize.size = function() 
-          
-        {
-          //print("JS: QPageSize.size");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QPageSize_WrapperSingletonInstance.size(
-                  arguments[0], arguments[1]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QPageSize.size = function()
+
+{
+    //print("JS: QPageSize.size");
+
+    if (arguments.length == 2) {
+
+        // calling static wrapper:
+        return QPageSize_WrapperSingletonInstance.size(
+                   arguments[0], arguments[1]
+               );
+
 
         //copyProperties(this, wrapper, QPageSize);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QPageSize.size(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QPageSize.sizePoints = function() 
-          
-        {
-          //print("JS: QPageSize.sizePoints");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QPageSize_WrapperSingletonInstance.sizePoints(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QPageSize.sizePoints = function()
+
+{
+    //print("JS: QPageSize.sizePoints");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QPageSize_WrapperSingletonInstance.sizePoints(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QPageSize);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QPageSize.sizePoints(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QPageSize.sizePixels = function() 
-          
-        {
-          //print("JS: QPageSize.sizePixels");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QPageSize_WrapperSingletonInstance.sizePixels(
-                  arguments[0], arguments[1]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QPageSize.sizePixels = function()
+
+{
+    //print("JS: QPageSize.sizePixels");
+
+    if (arguments.length == 2) {
+
+        // calling static wrapper:
+        return QPageSize_WrapperSingletonInstance.sizePixels(
+                   arguments[0], arguments[1]
+               );
+
 
         //copyProperties(this, wrapper, QPageSize);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QPageSize.sizePixels(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QPageSize.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QPageSize.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QPageSize.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QPageSize.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

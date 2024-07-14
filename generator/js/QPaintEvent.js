@@ -1,157 +1,155 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QPaintEvent() {
-        
+// class constructor:
+function QPaintEvent() {
 
-        // should be QPaintEvent_BaseJs.call(this, engine):
-        //QPaintEvent.prototype = new QPaintEvent_BaseJs(engine);
 
-        var wrapper;
+    // should be QPaintEvent_BaseJs.call(this, engine):
+    //QPaintEvent.prototype = new QPaintEvent_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QPaintEvent.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QPaintEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPaintEvent);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QPaintEvent);
             //}
-          }
-          else {
+        } else {
             qWarning("QPaintEvent.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 1) {
-    
+
+    } else {
+
+        if (arguments.length == 1) {
+
             self = this;
             wrapper = new QPaintEvent_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QPaintEvent);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QPaintEvent);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QPaintEvent);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QPaintEvent_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QPaintEvent);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPaintEvent);
-  }
-
-  
-  else {
-    
-        print("QPaintEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QPaintEvent);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length == 1) {
+
+                self = this;
+                wrapper = new QPaintEvent_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QPaintEvent);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QPaintEvent);
+            }
+
+
+            else {
+
+                print("QPaintEvent(): wrong number / type of arguments");
+
+                console.trace();
+            }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QPaintEvent.prototype = new QPaintEvent_BaseJs(engine);
-      //QPaintEvent.prototype = new QPaintEvent_Wrapper(engine);
-      QPaintEvent.prototype = new Object();
+//QPaintEvent.prototype = new QPaintEvent_BaseJs(engine);
+//QPaintEvent.prototype = new QPaintEvent_Wrapper(engine);
+QPaintEvent.prototype = new Object();
 
-      QPaintEvent.prototype.toString = function() {
-          //return "QPaintEvent [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QPaintEvent [JS]";
-        };
-      QPaintEvent.getObjectType = function() {
-        return RJSType_QPaintEvent.getIdStatic();
-      };
+QPaintEvent.prototype.toString = function() {
+    //return "QPaintEvent [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QPaintEvent [JS]";
+};
+QPaintEvent.getObjectType = function() {
+    return RJSType_QPaintEvent.getIdStatic();
+};
 
-      QPaintEvent.prototype.getObjectType = function() {
-        return RJSType_QPaintEvent.getIdStatic();
-      };
+QPaintEvent.prototype.getObjectType = function() {
+    return RJSType_QPaintEvent.getIdStatic();
+};
 
-      QPaintEvent.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QPaintEvent.getIdStatic()) {
-          return true;
-        }
-
-        
-          if (t===RJSType_QEvent.getIdStatic()) {
-            return true;
-          }
-        
-
-        return false;
+QPaintEvent.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QPaintEvent.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
+    if (t===RJSType_QEvent.getIdStatic()) {
+        return true;
+    }
 
-      // enum values:
-      
-  // enum: Type
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QPaintEvent.None = QPaintEvent_Wrapper.None;
 QPaintEvent.Timer = QPaintEvent_Wrapper.Timer;
 QPaintEvent.MouseButtonPress = QPaintEvent_Wrapper.MouseButtonPress;
@@ -326,54 +324,53 @@ QPaintEvent.User = QPaintEvent_Wrapper.User;
 QPaintEvent.MaxUser = QPaintEvent_Wrapper.MaxUser;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QPaintEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QPaintEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QPaintEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QPaintEvent.registerEventType = function()
+
+{
+    //print("JS: QPaintEvent.registerEventType");
+
+    if (arguments.length >= 0 &&
+            arguments.length <= 1) {
+
+        // calling static wrapper:
+        return QPaintEvent_WrapperSingletonInstance.registerEventType(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QPaintEvent);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QPaintEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QPaintEvent.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QPaintEvent.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QPaintEvent.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QPaintEvent.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

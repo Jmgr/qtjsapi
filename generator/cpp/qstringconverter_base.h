@@ -1,31 +1,30 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QSTRINGCONVERTER_H_BASE
-  #define QSTRINGCONVERTER_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QQmlEngine>
+#ifndef QSTRINGCONVERTER_H_BASE
+#define QSTRINGCONVERTER_H_BASE
 
-    
-        #include <QStringConverter>
-      
-    #include <QQmlEngine>
+// include header:
+//#include "header_h.h"
 
-    
-        #include <QStringEncoder>
-      
-    #include <QQmlEngine>
+#include "../RJSHelper.h"
 
-    
-        #include <QStringDecoder>
-      
-  #endif
-  
+#include <QQmlEngine>
+
+
+#include <QStringConverter>
+
+#include <QQmlEngine>
+
+
+#include <QStringEncoder>
+
+#include <QQmlEngine>
+
+
+#include <QStringDecoder>
+
+#endif

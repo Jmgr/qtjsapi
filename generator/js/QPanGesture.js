@@ -1,151 +1,148 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QPanGesture() {
-        
+// class constructor:
+function QPanGesture() {
 
-        // should be QPanGesture_BaseJs.call(this, engine):
-        //QPanGesture.prototype = new QPanGesture_BaseJs(engine);
 
-        var wrapper;
+    // should be QPanGesture_BaseJs.call(this, engine):
+    //QPanGesture.prototype = new QPanGesture_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QPanGesture.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QPanGesture.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPanGesture);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QPanGesture);
             //}
-          }
-          else {
+        } else {
             qWarning("QPanGesture.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
+
+    } else {
+
+        if (arguments.length >= 0 &&
+                arguments.length <= 1) {
+
             self = this;
             wrapper = new QPanGesture_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QPanGesture);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QPanGesture);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QPanGesture);
-  }
 
-  
-  else {
-    
-        print("QPanGesture(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QPanGesture);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QPanGesture(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QPanGesture.prototype = new QPanGesture_BaseJs(engine);
-      //QPanGesture.prototype = new QPanGesture_Wrapper(engine);
-      QPanGesture.prototype = new Object();
-
-      QPanGesture.prototype.toString = function() {
-          //return "QPanGesture [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QPanGesture [JS]";
-        };
-      QPanGesture.getObjectType = function() {
-        return RJSType_QPanGesture.getIdStatic();
-      };
-
-      QPanGesture.prototype.getObjectType = function() {
-        return RJSType_QPanGesture.getIdStatic();
-      };
-
-      QPanGesture.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QPanGesture.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QGesture.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
 
-      // functions:
-      
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
 
-      // static functions:
-      
+        }
+    }
+}
 
-      // constants:
-      
+//QPanGesture.prototype = new QPanGesture_BaseJs(engine);
+//QPanGesture.prototype = new QPanGesture_Wrapper(engine);
+QPanGesture.prototype = new Object();
 
-      // public static properties without access function:
-      
+QPanGesture.prototype.toString = function() {
+    //return "QPanGesture [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QPanGesture [JS]";
+};
+QPanGesture.getObjectType = function() {
+    return RJSType_QPanGesture.getIdStatic();
+};
 
-      // copy function:
-      //QPanGesture.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+QPanGesture.prototype.getObjectType = function() {
+    return RJSType_QPanGesture.getIdStatic();
+};
 
-      // destroy function:
-      //QPanGesture.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+QPanGesture.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QPanGesture.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QGesture.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+
+// functions:
+
+
+// static functions:
+
+
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QPanGesture.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QPanGesture.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

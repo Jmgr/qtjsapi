@@ -1,77 +1,75 @@
 
-  // Auto generated
-  
-    #ifndef QTEXTDOCUMENT_H_WRAPPER
-    #define QTEXTDOCUMENT_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QTEXTDOCUMENT_H_WRAPPER
+#define QTEXTDOCUMENT_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QTextListFormat>
-      
-        #include <QRect>
-      
-        #include <QPainter>
-      
-        #include <QPagedPaintDevice>
-      
-        #include <QAbstractTextDocumentLayout>
-      
-        #include <QPoint>
-      
-        #include <QTextObject>
-      
-        #include <QTextFormat>
-      
-        #include <QTextFrame>
-      
-        #include <QTextBlock>
-      
-        #include <QVariant>
-      
-        #include <QRectF>
-      
-        #include <QTextOption>
-      
-        #include <QTextCursor>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QTextDocument>
-      
-      // wrapped object is QTextDocument_Base class if new object is created: 
-      #include "qtextdocument_base.h"
-    
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QTextDocument_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QTextDocument_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QTextListFormat>
+
+#include <QRect>
+
+#include <QPainter>
+
+#include <QAbstractTextDocumentLayout>
+
+#include <QPoint>
+
+#include <QTextObject>
+
+#include <QTextFormat>
+
+#include <QTextFrame>
+
+#include <QTextBlock>
+
+#include <QVariant>
+
+#include <QRectF>
+
+#include <QTextOption>
+
+#include <QTextCursor>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QTextDocument>
+
+// wrapped object is QTextDocument_Base class if new object is created:
+#include "qtextdocument_base.h"
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QTextDocument_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QTextDocument_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QTextDocument
     // Function: tr
     // Source: QObject
@@ -79,30 +77,30 @@
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tr
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    tr
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
 #ifndef QT_NO_CSSPARSER
 
 #endif
@@ -127,264 +125,260 @@
 
 #endif
 
-#ifndef QT_NO_PRINTER
-
-#endif
-
 #ifndef QT_NO_CSSPARSER
 
 #endif
 
 
-      private:
-          RJSApi& handler;
-          //static QTextDocument_WrapperSingleton* _singleInstance;
+private:
+    RJSApi& handler;
+    //static QTextDocument_WrapperSingleton* _singleInstance;
 
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QTextDocument
-    class QTJSAPI_EXPORT QTextDocument_Wrapper : public RJSWrapperObj {
+    // constants:
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
-  Q_PROPERTY(
-    
-    QJSValue
-     objectName READ objectName WRITE setObjectName
-  )
+};
 
-  Q_PROPERTY(
-    
-    QJSValue
-     modified READ isModified WRITE setModified
-  )
+// static functions implementation in singleton wrapper:
 
-  Q_PROPERTY(
-    
-    QJSValue
-     pageSize READ pageSize WRITE setPageSize
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     defaultFont READ defaultFont WRITE setDefaultFont
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     useDesignMetrics READ useDesignMetrics WRITE setUseDesignMetrics
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     size READ size
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     textWidth READ textWidth WRITE setTextWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     blockCount READ blockCount
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     indentWidth READ indentWidth WRITE setIndentWidth
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     defaultStyleSheet READ defaultStyleSheet WRITE setDefaultStyleSheet
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     maximumBlockCount READ maximumBlockCount WRITE setMaximumBlockCount
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     documentMargin READ documentMargin WRITE setDocumentMargin
-  )
-
-  Q_PROPERTY(
-    
-    QJSValue
-     baseUrl READ baseUrl WRITE setBaseUrl
-  )
+// wrapper class for QTextDocument
+class QTJSAPI_EXPORT QTextDocument_Wrapper : public RJSWrapperObj {
 
 
-    private:
-      // disable copy constructor:
-      QTextDocument_Wrapper(const QTextDocument_Wrapper&);
+    Q_OBJECT
+    QML_INTERFACE
 
-    public:
-      // initialization of QTextDocument:
-      static void init(RJSApi& handler);
+    Q_PROPERTY(
 
-      
-        static QTextDocument* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+        QJSValue
+        objectName READ objectName WRITE setObjectName
+    )
 
-          // hook for modules to cast from other types to base QTextDocument:
-          for (int i=0; i<basecasters_QTextDocument.length(); i++) {
+    Q_PROPERTY(
+
+        QJSValue
+        modified READ isModified WRITE setModified
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        pageSize READ pageSize WRITE setPageSize
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        defaultFont READ defaultFont WRITE setDefaultFont
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        useDesignMetrics READ useDesignMetrics WRITE setUseDesignMetrics
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        size READ size
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        textWidth READ textWidth WRITE setTextWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        blockCount READ blockCount
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        indentWidth READ indentWidth WRITE setIndentWidth
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        defaultStyleSheet READ defaultStyleSheet WRITE setDefaultStyleSheet
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        maximumBlockCount READ maximumBlockCount WRITE setMaximumBlockCount
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        documentMargin READ documentMargin WRITE setDocumentMargin
+    )
+
+    Q_PROPERTY(
+
+        QJSValue
+        baseUrl READ baseUrl WRITE setBaseUrl
+    )
+
+
+private:
+    // disable copy constructor:
+    QTextDocument_Wrapper(const QTextDocument_Wrapper&);
+
+public:
+    // initialization of QTextDocument:
+    static void init(RJSApi& handler);
+
+
+    static QTextDocument* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QTextDocument:
+        for (int i=0; i<basecasters_QTextDocument.length(); i++) {
             RJSBasecaster_QTextDocument* basecaster = basecasters_QTextDocument[i];
             QTextDocument* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QTextDocument:
-          if (t==RJSType_QTextDocument::getIdStatic()) {
+        // object is a pointer to base class QTextDocument:
+        if (t==RJSType_QTextDocument::getIdStatic()) {
             return (QTextDocument*)vp;
-          }
-
-          qWarning() << "QTextDocument_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QTextDocument* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QTextDocument*: wrapper wraps NULL";
-          }
+        qWarning() << "QTextDocument_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QTextDocument* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QTextDocument*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QTextDocument* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QTextDocument*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum MetaInformation {
-    DocumentTitle = QTextDocument::DocumentTitle,
-DocumentUrl = QTextDocument::DocumentUrl,
 
-  };
-  Q_ENUM(MetaInformation)
+        QTextDocument* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QTextDocument*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
 
-  enum MarkdownFeature {
-    MarkdownNoHTML = QTextDocument::MarkdownNoHTML,
-MarkdownDialectCommonMark = QTextDocument::MarkdownDialectCommonMark,
-MarkdownDialectGitHub = QTextDocument::MarkdownDialectGitHub,
+    // enums:
 
-  };
-  Q_ENUM(MarkdownFeature)
+    enum MetaInformation {
+        DocumentTitle = QTextDocument::DocumentTitle,
+        DocumentUrl = QTextDocument::DocumentUrl,
 
-  enum FindFlag {
-    FindBackward = QTextDocument::FindBackward,
-FindCaseSensitively = QTextDocument::FindCaseSensitively,
-FindWholeWords = QTextDocument::FindWholeWords,
+    };
+    Q_ENUM(MetaInformation)
 
-  };
-  Q_ENUM(FindFlag)
+    enum MarkdownFeature {
+        MarkdownNoHTML = QTextDocument::MarkdownNoHTML,
+        MarkdownDialectCommonMark = QTextDocument::MarkdownDialectCommonMark,
+        MarkdownDialectGitHub = QTextDocument::MarkdownDialectGitHub,
 
-  enum ResourceType {
-    UnknownResource = QTextDocument::UnknownResource,
-HtmlResource = QTextDocument::HtmlResource,
-ImageResource = QTextDocument::ImageResource,
-StyleSheetResource = QTextDocument::StyleSheetResource,
-MarkdownResource = QTextDocument::MarkdownResource,
-UserResource = QTextDocument::UserResource,
+    };
+    Q_ENUM(MarkdownFeature)
 
-  };
-  Q_ENUM(ResourceType)
+    enum FindFlag {
+        FindBackward = QTextDocument::FindBackward,
+        FindCaseSensitively = QTextDocument::FindCaseSensitively,
+        FindWholeWords = QTextDocument::FindWholeWords,
 
-  enum Stacks {
-    UndoStack = QTextDocument::UndoStack,
-RedoStack = QTextDocument::RedoStack,
-UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
+    };
+    Q_ENUM(FindFlag)
 
-  };
-  Q_ENUM(Stacks)
+    enum ResourceType {
+        UnknownResource = QTextDocument::UnknownResource,
+        HtmlResource = QTextDocument::HtmlResource,
+        ImageResource = QTextDocument::ImageResource,
+        StyleSheetResource = QTextDocument::StyleSheetResource,
+        MarkdownResource = QTextDocument::MarkdownResource,
+        UserResource = QTextDocument::UserResource,
+
+    };
+    Q_ENUM(ResourceType)
+
+    enum Stacks {
+        UndoStack = QTextDocument::UndoStack,
+        RedoStack = QTextDocument::RedoStack,
+        UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
+
+    };
+    Q_ENUM(Stacks)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QTextDocument_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QTextDocument_Wrapper(RJSApi& h, QTextDocument* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QTextDocument_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QTextDocument_Wrapper(RJSApi& h, QTextDocument* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QTextDocument_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
 #ifndef QT_NO_CSSPARSER
 
 #endif
 
     // Class: QTextDocument
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QTextDocument_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QTextDocument_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
 #ifndef QT_NO_TEXTHTMLPARSER
 
 #endif
@@ -402,10 +396,6 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
 #endif
 
 #if QT_CONFIG(regularexpression)
-
-#endif
-
-#ifndef QT_NO_PRINTER
 
 #endif
 
@@ -415,7 +405,7 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
 
 
     // non-static functions:
-    
+
     // Class: QTextDocument
     // Function: objectName
     // Source: QObject
@@ -423,20 +413,20 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  objectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    objectName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setObjectName
     // Source: QObject
@@ -444,22 +434,22 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setObjectName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setObjectName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: isWidgetType
     // Source: QObject
@@ -467,20 +457,20 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWidgetType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWidgetType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: isWindowType
     // Source: QObject
@@ -488,20 +478,20 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWindowType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWindowType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: signalsBlocked
     // Source: QObject
@@ -509,20 +499,20 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  signalsBlocked
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    signalsBlocked
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: blockSignals
     // Source: QObject
@@ -530,22 +520,22 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockSignals
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    blockSignals
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: findChild
     // Source: QObject
@@ -553,28 +543,28 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  findChild
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    findChild
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: children
     // Source: QObject
@@ -582,20 +572,20 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  children
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    children
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setParent
     // Source: QObject
@@ -603,22 +593,22 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setParent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setParent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: installEventFilter
     // Source: QObject
@@ -626,22 +616,22 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  installEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    installEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: removeEventFilter
     // Source: QObject
@@ -649,22 +639,22 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeEventFilter
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeEventFilter
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: dumpObjectTree
     // Source: QObject
@@ -672,18 +662,18 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectTree
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectTree
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: dumpObjectInfo
     // Source: QObject
@@ -691,18 +681,18 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dumpObjectInfo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    dumpObjectInfo
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: setProperty
     // Source: QObject
@@ -710,26 +700,26 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setProperty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setProperty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: property
     // Source: QObject
@@ -737,24 +727,24 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  property
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    property
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: dynamicPropertyNames
     // Source: QObject
@@ -762,20 +752,20 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dynamicPropertyNames
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dynamicPropertyNames
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: parent
     // Source: QObject
@@ -783,20 +773,20 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  parent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    parent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: deleteLater
     // Source: QObject
@@ -804,334 +794,334 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  deleteLater
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    deleteLater
+    (
+
+
+    )
+
+    ;
+
 #ifndef QT_NO_CSSPARSER
 
 #endif
 
     // Class: QTextDocument
     // Function: clone
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clone
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    clone
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: isEmpty
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEmpty
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEmpty
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: clear
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clear
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clear
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: setUndoRedoEnabled
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setUndoRedoEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setUndoRedoEnabled
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: isUndoRedoEnabled
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isUndoRedoEnabled
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isUndoRedoEnabled
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: isUndoAvailable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isUndoAvailable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isUndoAvailable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: isRedoAvailable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isRedoAvailable
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isRedoAvailable
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: availableUndoSteps
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  availableUndoSteps
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    availableUndoSteps
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: availableRedoSteps
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  availableRedoSteps
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    availableRedoSteps
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: revision
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  revision
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    revision
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setMetaInformation
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMetaInformation
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMetaInformation
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: metaInformation
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  metaInformation
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    metaInformation
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
 #ifndef QT_NO_TEXTHTMLPARSER
 
     // Class: QTextDocument
     // Function: toHtml
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toHtml
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toHtml
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setHtml
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHtml
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHtml
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 #endif
 
 #if QT_CONFIG(textmarkdownwriter)||QT_CONFIG(textmarkdownreader)
@@ -1142,1527 +1132,1498 @@ UndoAndRedoStacks = QTextDocument::UndoAndRedoStacks,
 
     // Class: QTextDocument
     // Function: toMarkdown
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toMarkdown
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toMarkdown
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
 #endif
 
 #if QT_CONFIG(textmarkdownreader)
 
     // Class: QTextDocument
     // Function: setMarkdown
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMarkdown
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMarkdown
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
 #endif
 
     // Class: QTextDocument
     // Function: toRawText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toRawText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toRawText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: toPlainText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toPlainText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toPlainText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setPlainText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPlainText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPlainText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: characterAt
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  characterAt
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    characterAt
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: find
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  find
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    find
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
 #if QT_CONFIG(regularexpression)
 
 #endif
 
     // Class: QTextDocument
     // Function: setPageSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPageSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPageSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: pageSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pageSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pageSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setDefaultFont
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDefaultFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDefaultFont
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: defaultFont
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  defaultFont
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    defaultFont
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setSuperScriptBaseline
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSuperScriptBaseline
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSuperScriptBaseline
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: superScriptBaseline
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  superScriptBaseline
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    superScriptBaseline
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setSubScriptBaseline
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setSubScriptBaseline
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setSubScriptBaseline
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: subScriptBaseline
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  subScriptBaseline
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    subScriptBaseline
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setBaselineOffset
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBaselineOffset
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBaselineOffset
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: baselineOffset
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  baselineOffset
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    baselineOffset
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: pageCount
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pageCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pageCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: isModified
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
-#ifndef QT_NO_PRINTER
+    QJSValue
+    isModified
+    (
 
-    // Class: QTextDocument
-    // Function: print
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  print
-              (
+    )
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-#endif
+    const
+
+    ;
 
     // Class: QTextDocument
     // Function: resource
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resource
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    resource
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: addResource
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addResource
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addResource
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: allFormats
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  allFormats
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    allFormats
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: markContentsDirty
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  markContentsDirty
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    markContentsDirty
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: setUseDesignMetrics
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setUseDesignMetrics
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setUseDesignMetrics
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: useDesignMetrics
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  useDesignMetrics
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    useDesignMetrics
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: drawContents
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  drawContents
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    drawContents
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: setTextWidth
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setTextWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setTextWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: textWidth
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  textWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    textWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: idealWidth
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  idealWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    idealWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: indentWidth
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  indentWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    indentWidth
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setIndentWidth
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setIndentWidth
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setIndentWidth
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: documentMargin
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  documentMargin
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    documentMargin
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setDocumentMargin
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDocumentMargin
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDocumentMargin
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: adjustSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  adjustSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    adjustSize
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: size
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  size
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    size
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: blockCount
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  blockCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    blockCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: lineCount
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lineCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    lineCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: characterCount
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  characterCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    characterCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #ifndef QT_NO_CSSPARSER
 
     // Class: QTextDocument
     // Function: setDefaultStyleSheet
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDefaultStyleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDefaultStyleSheet
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: defaultStyleSheet
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  defaultStyleSheet
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    defaultStyleSheet
+    (
+
+
+    )
+
+    const
+
+    ;
+
 #endif
 
     // Class: QTextDocument
     // Function: clearUndoRedoStacks
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clearUndoRedoStacks
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    clearUndoRedoStacks
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: maximumBlockCount
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  maximumBlockCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    maximumBlockCount
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setMaximumBlockCount
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setMaximumBlockCount
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setMaximumBlockCount
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: baseUrl
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  baseUrl
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    baseUrl
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setBaseUrl
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBaseUrl
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBaseUrl
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: defaultCursorMoveStyle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  defaultCursorMoveStyle
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    defaultCursorMoveStyle
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QTextDocument
     // Function: setDefaultCursorMoveStyle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDefaultCursorMoveStyle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDefaultCursorMoveStyle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: contentsChange
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void contentsChange(
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2, 
-  const QJSValue& 
-  a3
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void contentsChange(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void contentsChangeEmitter(
-                int from, int charsRemoved, int charsAdded
-              );
-            
+        const QJSValue&
+        a1,
+        const QJSValue&
+        a2,
+        const QJSValue&
+        a3
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void contentsChangeEmitter(
+        int from, int charsRemoved, int charsAdded
+    );
+
     // Class: QTextDocument
     // Function: contentsChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void contentsChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void contentsChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void contentsChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void contentsChangedEmitter(
+
+    );
+
     // Class: QTextDocument
     // Function: undoAvailable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void undoAvailable(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void undoAvailable(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void undoAvailableEmitter(
-                bool a1
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void undoAvailableEmitter(
+        bool a1
+    );
+
     // Class: QTextDocument
     // Function: redoAvailable
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void redoAvailable(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void redoAvailable(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void redoAvailableEmitter(
-                bool a1
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void redoAvailableEmitter(
+        bool a1
+    );
+
     // Class: QTextDocument
     // Function: undoCommandAdded
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void undoCommandAdded(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void undoCommandAdded(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void undoCommandAddedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void undoCommandAddedEmitter(
+
+    );
+
     // Class: QTextDocument
     // Function: modificationChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void modificationChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void modificationChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void modificationChangedEmitter(
-                bool m
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void modificationChangedEmitter(
+        bool m
+    );
+
     // Class: QTextDocument
     // Function: cursorPositionChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void cursorPositionChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void cursorPositionChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void cursorPositionChangedEmitter(
-                const QTextCursor& cursor
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void cursorPositionChangedEmitter(
+        const QTextCursor& cursor
+    );
+
     // Class: QTextDocument
     // Function: blockCountChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void blockCountChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void blockCountChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void blockCountChangedEmitter(
-                int newBlockCount
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void blockCountChangedEmitter(
+        int newBlockCount
+    );
+
     // Class: QTextDocument
     // Function: baseUrlChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void baseUrlChanged(
-                
-  const QJSValue& 
-  a1
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void baseUrlChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void baseUrlChangedEmitter(
-                const QUrl& url
-              );
-            
+        const QJSValue&
+        a1
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void baseUrlChangedEmitter(
+        const QUrl& url
+    );
+
     // Class: QTextDocument
     // Function: documentLayoutChanged
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              // signal forwarded from wrapped class:
-              signals:
-              void documentLayoutChanged(
-                
-              );
+    // signal forwarded from wrapped class:
+signals:
+    void documentLayoutChanged(
 
-              // called when signal is emitted from wrapped class:
-              public slots:
-              void documentLayoutChangedEmitter(
-                
-              );
-            
+    );
+
+    // called when signal is emitted from wrapped class:
+public slots:
+    void documentLayoutChangedEmitter(
+
+    );
+
     // Class: QTextDocument
     // Function: undo
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  undo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    undo
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: redo
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  redo
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    redo
+    (
+
+
+    )
+
+    ;
+
     // Class: QTextDocument
     // Function: setModified
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setModified
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    setModified
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QTextDocument::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QTextDocument* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QTextDocument::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QTextDocument* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QTextDocument* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QTextDocument* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
-          // get wrapped base object or nullptr:
-          QTextDocument_Base* getWrappedBase() {
-            QTextDocument* w = getWrapped();
-            return dynamic_cast<QTextDocument_Base*>(w);
-          }
+        return nullptr;
+    }
 
-          QTextDocument_Base* getWrappedBase() const {
-            QTextDocument* w = getWrapped();
-            return dynamic_cast<QTextDocument_Base*>(w);
-          }
-        
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
+    // get wrapped base object or nullptr:
+    QTextDocument_Base* getWrappedBase() {
+        QTextDocument* w = getWrapped();
+        return dynamic_cast<QTextDocument_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
+    QTextDocument_Base* getWrappedBase() const {
+        QTextDocument* w = getWrapped();
+        return dynamic_cast<QTextDocument_Base*>(w);
+    }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
-          //void setRecFlag(bool on) const {
-          //  QTextDocument_Base* wb = getWrappedBase();
-          //  if (wb) {
-          //    wb->setRecFlag(on);
-          //  }
-          //}
-        
 
-        private:
-        // wrapped object:
-        QTextDocument* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QTextDocument*> basecasters_QTextDocument;
+    //void setRecFlag(bool on) const {
+    //  QTextDocument_Base* wb = getWrappedBase();
+    //  if (wb) {
+    //    wb->setRecFlag(on);
+    //  }
+    //}
 
-      public:
-        static void registerBasecaster_QTextDocument(RJSBasecaster_QTextDocument* bc) {
-          basecasters_QTextDocument.append(bc);
-        }
-      
-    };
 
-    Q_DECLARE_METATYPE(QTextDocument_Wrapper*)
+private:
+    // wrapped object:
+    QTextDocument* wrapped;
 
-    Q_DECLARE_INTERFACE(QTextDocument_Wrapper, "org.qcad.QTextDocument_Wrapper")
 
-  
-  #endif
-  
+
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QTextDocument*> basecasters_QTextDocument;
+
+public:
+    static void registerBasecaster_QTextDocument(RJSBasecaster_QTextDocument* bc) {
+        basecasters_QTextDocument.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QTextDocument_Wrapper*)
+
+Q_DECLARE_INTERFACE(QTextDocument_Wrapper, "org.qcad.QTextDocument_Wrapper")
+
+
+#endif
+

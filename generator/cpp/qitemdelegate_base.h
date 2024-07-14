@@ -1,92 +1,91 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QITEMDELEGATE_H_BASE
-  #define QITEMDELEGATE_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QItemEditorFactory>
-  
-    #include <QQmlEngine>
+#ifndef QITEMDELEGATE_H_BASE
+#define QITEMDELEGATE_H_BASE
 
-    
-        #include <QItemDelegate>
-      
-    // Base class for QItemDelegate
-      class QItemDelegate_Base : public QItemDelegate {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QItemEditorFactory>
+
+#include <QQmlEngine>
+
+
+#include <QItemDelegate>
+
+// Base class for QItemDelegate
+class QItemDelegate_Base : public QItemDelegate {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QItemDelegate
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: -1
-QItemDelegate_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          QObject* parent=nullptr
-      )
-      
+    // Class: QItemDelegate
+    // Function:
+    // Parameters: 1
+    // preceding Parameters: -1
+    QItemDelegate_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QObject* parent=nullptr
+    )
+
         : QItemDelegate(
-          parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QItemDelegate_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
 
-      // public virtual overwritten functions / events:
-      
+    // protected overwritten functions / events and their public invokable counterparts:
 
-      // public pure-virtual functions:
-      
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
+    // public virtual overwritten functions / events:
 
-    public:
-      QJSValue self;
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
+    // public pure-virtual functions:
 
-    };
-    
-  #endif
-  
+
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

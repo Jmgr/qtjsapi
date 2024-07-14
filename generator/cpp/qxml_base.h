@@ -1,758 +1,757 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QXML_H_BASE
-  #define QXML_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QXmlAttributes>
-  
-    #include <QXmlContentHandler>
-  
-    #include <QXmlDefaultHandler>
-  
-    #include <QXmlDTDHandler>
-  
-    #include <QXmlEntityResolver>
-  
-    #include <QXmlErrorHandler>
-  
-    #include <QXmlLexicalHandler>
-  
-    #include <QXmlDeclHandler>
-  
-    #include <QXmlInputSource>
-  
-    #include <QXmlLocator>
-  
-    #include <QXmlParseException>
-  
-    #include <QXmlReader>
-  
-    #include <QXmlSimpleReader>
-  
-    #include <QQmlEngine>
+#ifndef QXML_H_BASE
+#define QXML_H_BASE
 
-    
-        #include <QXmlAttributes>
-      
-    #include <QQmlEngine>
+// include header:
+//#include "header_h.h"
 
-    
-        #include <QXmlInputSource>
-      
-    #include <QQmlEngine>
+#include "../RJSHelper.h"
 
-    
-        #include <QXmlParseException>
-      
-    #include <QQmlEngine>
+#include <QXmlAttributes>
 
-    
-        #include <QXmlReader>
-      
-    #include <QQmlEngine>
+#include <QXmlContentHandler>
 
-    
-        #include <QXmlSimpleReader>
-      
-    #include <QQmlEngine>
+#include <QXmlDefaultHandler>
 
-    
-        #include <QXmlLocator>
-      
-    #include <QQmlEngine>
+#include <QXmlDTDHandler>
 
-    
-        #include <QXmlContentHandler>
-      
-    #include <QQmlEngine>
+#include <QXmlEntityResolver>
 
-    
-        #include <QXmlErrorHandler>
-      
-    #include <QQmlEngine>
+#include <QXmlErrorHandler>
 
-    
-        #include <QXmlDTDHandler>
-      
-    #include <QQmlEngine>
+#include <QXmlLexicalHandler>
 
-    
-        #include <QXmlEntityResolver>
-      
-    #include <QQmlEngine>
+#include <QXmlDeclHandler>
 
-    
-        #include <QXmlLexicalHandler>
-      
-    #include <QQmlEngine>
+#include <QXmlInputSource>
 
-    
-        #include <QXmlDeclHandler>
-      
-    #include <QQmlEngine>
+#include <QXmlLocator>
 
-    
-        #include <QXmlDefaultHandler>
-      
-    // Base class for QXmlDefaultHandler
-      class QXmlDefaultHandler_Base : public QXmlDefaultHandler {
+#include <QXmlParseException>
 
-      
-        //Q_OBJECT
-      
+#include <QXmlReader>
 
-      public:
-    
+#include <QXmlSimpleReader>
+
+#include <QQmlEngine>
+
+
+#include <QXmlAttributes>
+
+#include <QQmlEngine>
+
+
+#include <QXmlInputSource>
+
+#include <QQmlEngine>
+
+
+#include <QXmlParseException>
+
+#include <QQmlEngine>
+
+
+#include <QXmlReader>
+
+#include <QQmlEngine>
+
+
+#include <QXmlSimpleReader>
+
+#include <QQmlEngine>
+
+
+#include <QXmlLocator>
+
+#include <QQmlEngine>
+
+
+#include <QXmlContentHandler>
+
+#include <QQmlEngine>
+
+
+#include <QXmlErrorHandler>
+
+#include <QQmlEngine>
+
+
+#include <QXmlDTDHandler>
+
+#include <QQmlEngine>
+
+
+#include <QXmlEntityResolver>
+
+#include <QQmlEngine>
+
+
+#include <QXmlLexicalHandler>
+
+#include <QQmlEngine>
+
+
+#include <QXmlDeclHandler>
+
+#include <QQmlEngine>
+
+
+#include <QXmlDefaultHandler>
+
+// Base class for QXmlDefaultHandler
+class QXmlDefaultHandler_Base : public QXmlDefaultHandler {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QXmlDefaultHandler
-  // Function: 
-  // Parameters: 0
-  // preceding Parameters: -1
-QXmlDefaultHandler_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-      )
-      
+    // Class: QXmlDefaultHandler
+    // Function:
+    // Parameters: 0
+    // preceding Parameters: -1
+    QXmlDefaultHandler_Base
+
+    (
+
+
+        RJSApi& _h
+
+    )
+
         : QXmlDefaultHandler(
-          
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QXmlDefaultHandler_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
 
-      // public virtual overwritten functions / events:
-      
-    public:
+    // protected overwritten functions / events and their public invokable counterparts:
+
+
+    // public virtual overwritten functions / events:
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual void setDocumentLocator(
-      QXmlLocator* locator
+        QXmlLocator* locator
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual void setDocumentLocatorSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual void setDocumentLocatorSup(
         QXmlLocator* locator
-      )
-      
-      {
+    )
+
+    {
         QXmlDefaultHandler::setDocumentLocator(
-          locator
+            locator
         );
-      }
-    
-    public:
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool startDocument(
-      
+
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool startDocumentSup(
-        
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::startDocument(
-          
-        );
-      }
-    
-    public:
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool startDocumentSup(
+
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::startDocument(
+
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool endDocument(
-      
+
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool endDocumentSup(
-        
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::endDocument(
-          
-        );
-      }
-    
-    public:
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool endDocumentSup(
+
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::endDocument(
+
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool startPrefixMapping(
-      const QString& prefix, const QString& uri
+        const QString& prefix, const QString& uri
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool startPrefixMappingSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool startPrefixMappingSup(
         const QString& prefix, const QString& uri
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::startPrefixMapping(
-          prefix, uri
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::startPrefixMapping(
+                prefix, uri
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool endPrefixMapping(
-      const QString& prefix
+        const QString& prefix
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool endPrefixMappingSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool endPrefixMappingSup(
         const QString& prefix
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::endPrefixMapping(
-          prefix
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::endPrefixMapping(
+                prefix
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool startElement(
-      const QString& namespaceURI, const QString& localName, const QString& qName, const QXmlAttributes& atts
+        const QString& namespaceURI, const QString& localName, const QString& qName, const QXmlAttributes& atts
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool startElementSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool startElementSup(
         const QString& namespaceURI, const QString& localName, const QString& qName, const QXmlAttributes& atts
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::startElement(
-          namespaceURI, localName, qName, atts
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::startElement(
+                namespaceURI, localName, qName, atts
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool endElement(
-      const QString& namespaceURI, const QString& localName, const QString& qName
+        const QString& namespaceURI, const QString& localName, const QString& qName
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool endElementSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool endElementSup(
         const QString& namespaceURI, const QString& localName, const QString& qName
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::endElement(
-          namespaceURI, localName, qName
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::endElement(
+                namespaceURI, localName, qName
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool characters(
-      const QString& ch
+        const QString& ch
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool charactersSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool charactersSup(
         const QString& ch
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::characters(
-          ch
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::characters(
+                ch
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool ignorableWhitespace(
-      const QString& ch
+        const QString& ch
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool ignorableWhitespaceSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool ignorableWhitespaceSup(
         const QString& ch
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::ignorableWhitespace(
-          ch
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::ignorableWhitespace(
+                ch
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool processingInstruction(
-      const QString& target, const QString& data
+        const QString& target, const QString& data
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool processingInstructionSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool processingInstructionSup(
         const QString& target, const QString& data
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::processingInstruction(
-          target, data
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::processingInstruction(
+                target, data
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool skippedEntity(
-      const QString& name
+        const QString& name
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool skippedEntitySup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool skippedEntitySup(
         const QString& name
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::skippedEntity(
-          name
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::skippedEntity(
+                name
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool notationDecl(
-      const QString& name, const QString& publicId, const QString& systemId
+        const QString& name, const QString& publicId, const QString& systemId
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool notationDeclSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool notationDeclSup(
         const QString& name, const QString& publicId, const QString& systemId
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::notationDecl(
-          name, publicId, systemId
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::notationDecl(
+                name, publicId, systemId
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool unparsedEntityDecl(
-      const QString& name, const QString& publicId, const QString& systemId, const QString& notationName
+        const QString& name, const QString& publicId, const QString& systemId, const QString& notationName
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool unparsedEntityDeclSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool unparsedEntityDeclSup(
         const QString& name, const QString& publicId, const QString& systemId, const QString& notationName
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::unparsedEntityDecl(
-          name, publicId, systemId, notationName
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::unparsedEntityDecl(
+                name, publicId, systemId, notationName
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool startDTD(
-      const QString& name, const QString& publicId, const QString& systemId
+        const QString& name, const QString& publicId, const QString& systemId
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool startDTDSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool startDTDSup(
         const QString& name, const QString& publicId, const QString& systemId
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::startDTD(
-          name, publicId, systemId
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::startDTD(
+                name, publicId, systemId
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool endDTD(
-      
+
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool endDTDSup(
-        
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::endDTD(
-          
-        );
-      }
-    
-    public:
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool endDTDSup(
+
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::endDTD(
+
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool startEntity(
-      const QString& name
+        const QString& name
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool startEntitySup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool startEntitySup(
         const QString& name
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::startEntity(
-          name
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::startEntity(
+                name
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool endEntity(
-      const QString& name
+        const QString& name
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool endEntitySup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool endEntitySup(
         const QString& name
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::endEntity(
-          name
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::endEntity(
+                name
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool startCDATA(
-      
+
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool startCDATASup(
-        
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::startCDATA(
-          
-        );
-      }
-    
-    public:
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool startCDATASup(
+
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::startCDATA(
+
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool endCDATA(
-      
+
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool endCDATASup(
-        
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::endCDATA(
-          
-        );
-      }
-    
-    public:
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool endCDATASup(
+
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::endCDATA(
+
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool comment(
-      const QString& ch
+        const QString& ch
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool commentSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool commentSup(
         const QString& ch
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::comment(
-          ch
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::comment(
+                ch
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool attributeDecl(
-      const QString& eName, const QString& aName, const QString& type, const QString& valueDefault, const QString& value
+        const QString& eName, const QString& aName, const QString& type, const QString& valueDefault, const QString& value
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool attributeDeclSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool attributeDeclSup(
         const QString& eName, const QString& aName, const QString& type, const QString& valueDefault, const QString& value
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::attributeDecl(
-          eName, aName, type, valueDefault, value
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::attributeDecl(
+                eName, aName, type, valueDefault, value
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool internalEntityDecl(
-      const QString& name, const QString& value
+        const QString& name, const QString& value
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool internalEntityDeclSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool internalEntityDeclSup(
         const QString& name, const QString& value
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::internalEntityDecl(
-          name, value
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::internalEntityDecl(
+                name, value
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual bool externalEntityDecl(
-      const QString& name, const QString& publicId, const QString& systemId
+        const QString& name, const QString& publicId, const QString& systemId
     )
-    
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual bool externalEntityDeclSup(
+
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual bool externalEntityDeclSup(
         const QString& name, const QString& publicId, const QString& systemId
-      )
-      
-      {
-        
-          return
-        QXmlDefaultHandler::externalEntityDecl(
-          name, publicId, systemId
-        );
-      }
-    
-    public:
+    )
+
+    {
+
+        return
+            QXmlDefaultHandler::externalEntityDecl(
+                name, publicId, systemId
+            );
+    }
+
+public:
     // implementation of virtual public function
     // calls JS implementation if available
     virtual QString errorString(
-      
+
     )
-    
-      const
-    
+
+    const
+
     ;
 
-    
-      // implementation of virtual public function
-      // always calls super implementation
-      virtual QString errorStringSup(
-        
-      )
-      
-        const
-      
-      {
-        
-          return
-        QXmlDefaultHandler::errorString(
-          
-        );
-      }
-    
 
-      // public pure-virtual functions:
-      
-  // TODO: fix (warning)
-  
-  // TODO: fix (error)
-  
-  // TODO: fix (fatalError)
-  
+    // implementation of virtual public function
+    // always calls super implementation
+    virtual QString errorStringSup(
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
+    )
 
-    public:
-      QJSValue self;
+    const
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
+    {
 
-    };
-    
-  #endif
-  
+        return
+            QXmlDefaultHandler::errorString(
+
+            );
+    }
+
+
+    // public pure-virtual functions:
+
+    // TODO: fix (warning)
+
+    // TODO: fix (error)
+
+    // TODO: fix (fatalError)
+
+
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

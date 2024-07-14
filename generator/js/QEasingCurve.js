@@ -1,180 +1,178 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QEasingCurve() {
-        
+// class constructor:
+function QEasingCurve() {
 
-        // should be QEasingCurve_BaseJs.call(this, engine):
-        //QEasingCurve.prototype = new QEasingCurve_BaseJs(engine);
 
-        var wrapper;
+    // should be QEasingCurve_BaseJs.call(this, engine):
+    //QEasingCurve.prototype = new QEasingCurve_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QEasingCurve.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QEasingCurve.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QEasingCurve);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QEasingCurve);
             //}
-          }
-          else {
+        } else {
             qWarning("QEasingCurve.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
+
+    } else {
+
+        if (arguments.length >= 0 &&
+                arguments.length <= 1) {
+
             self = this;
             wrapper = new QEasingCurve_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QEasingCurve);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QEasingCurve);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QEasingCurve);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QEasingCurve_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QEasingCurve);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QEasingCurve);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QEasingCurve_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QEasingCurve);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QEasingCurve);
-  }
-
-  
-  else {
-    
-        print("QEasingCurve(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QEasingCurve);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length == 1) {
+
+                self = this;
+                wrapper = new QEasingCurve_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QEasingCurve);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QEasingCurve);
+            }
+
+
+            else
+
+                if (arguments.length == 1) {
+
+                    self = this;
+                    wrapper = new QEasingCurve_Wrapper(
+                        // RJSApi:
+                        handler
+                        , arguments[0]
+                        ////this.setWrapper(this.wrapper);
+                        //Object.setPrototypeOf(this, wrapper);
+                    );
+                    //wrapper.__WRAPPER__ = true;
+                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                    copyProperties(this, wrapper, QEasingCurve);
+
+                    //this.setWrapper(this.wrapper);
+
+
+
+                    //copyProperties(this, wrapper, QEasingCurve);
+                }
+
+
+                else {
+
+                    print("QEasingCurve(): wrong number / type of arguments");
+
+                    console.trace();
+                }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QEasingCurve.prototype = new QEasingCurve_BaseJs(engine);
-      //QEasingCurve.prototype = new QEasingCurve_Wrapper(engine);
-      QEasingCurve.prototype = new Object();
+//QEasingCurve.prototype = new QEasingCurve_BaseJs(engine);
+//QEasingCurve.prototype = new QEasingCurve_Wrapper(engine);
+QEasingCurve.prototype = new Object();
 
-      QEasingCurve.prototype.toString = function() {
-          //return "QEasingCurve [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QEasingCurve [JS]";
-        };
-      QEasingCurve.getObjectType = function() {
-        return RJSType_QEasingCurve.getIdStatic();
-      };
+QEasingCurve.prototype.toString = function() {
+    //return "QEasingCurve [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QEasingCurve [JS]";
+};
+QEasingCurve.getObjectType = function() {
+    return RJSType_QEasingCurve.getIdStatic();
+};
 
-      QEasingCurve.prototype.getObjectType = function() {
-        return RJSType_QEasingCurve.getIdStatic();
-      };
+QEasingCurve.prototype.getObjectType = function() {
+    return RJSType_QEasingCurve.getIdStatic();
+};
 
-      QEasingCurve.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QEasingCurve.getIdStatic()) {
-          return true;
-        }
-
-        
-
-        return false;
+QEasingCurve.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QEasingCurve.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
 
-      // enum values:
-      
-  // enum: Type
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QEasingCurve.Linear = QEasingCurve_Wrapper.Linear;
 QEasingCurve.InQuad = QEasingCurve_Wrapper.InQuad;
 QEasingCurve.OutQuad = QEasingCurve_Wrapper.OutQuad;
@@ -226,25 +224,24 @@ QEasingCurve.Custom = QEasingCurve_Wrapper.Custom;
 QEasingCurve.NCurveTypes = QEasingCurve_Wrapper.NCurveTypes;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QEasingCurve.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QEasingCurve.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QEasingCurve.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QEasingCurve.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

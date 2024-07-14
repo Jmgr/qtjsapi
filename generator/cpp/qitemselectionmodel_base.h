@@ -1,28 +1,27 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QITEMSELECTIONMODEL_H_BASE
-  #define QITEMSELECTIONMODEL_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QItemSelection>
-  
-    #include <QQmlEngine>
+#ifndef QITEMSELECTIONMODEL_H_BASE
+#define QITEMSELECTIONMODEL_H_BASE
 
-    
-        #include <QItemSelectionModel>
-      
-    #include <QQmlEngine>
+// include header:
+//#include "header_h.h"
 
-    
-        #include <QItemSelection>
-      
-  #endif
-  
+#include "../RJSHelper.h"
+
+#include <QItemSelection>
+
+#include <QQmlEngine>
+
+
+#include <QItemSelectionModel>
+
+#include <QQmlEngine>
+
+
+#include <QItemSelection>
+
+#endif

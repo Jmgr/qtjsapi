@@ -1,277 +1,274 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QPen() {
-        
+// class constructor:
+function QPen() {
 
-        // should be QPen_BaseJs.call(this, engine):
-        //QPen.prototype = new QPen_BaseJs(engine);
 
-        var wrapper;
+    // should be QPen_BaseJs.call(this, engine):
+    //QPen.prototype = new QPen_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QPen.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QPen.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPen);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QPen);
             //}
-          }
-          else {
+        } else {
             qWarning("QPen.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
-        }
-        else {
-          
-      if (arguments.length >= 2 &&
-          arguments.length <= 5) {
-    
-            self = this;
-            wrapper = new QPen_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QPen);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPen);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QPen_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QPen);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPen);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QPen_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QPen);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPen);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QPen_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QPen);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPen);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QPen_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QPen);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPen);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QPen_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QPen);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QPen);
-  }
-
-  
-  else {
-    
-        print("QPen(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+    } else {
+
+        if (arguments.length >= 2 &&
+                arguments.length <= 5) {
+
+            self = this;
+            wrapper = new QPen_Wrapper(
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
+            );
+            //wrapper.__WRAPPER__ = true;
+            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            copyProperties(this, wrapper, QPen);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
+            //this.setWrapper(this.wrapper);
 
-      //QPen.prototype = new QPen_BaseJs(engine);
-      //QPen.prototype = new QPen_Wrapper(engine);
-      QPen.prototype = new Object();
 
-      QPen.prototype.toString = function() {
-          //return "QPen [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QPen [JS]";
-        };
-      QPen.getObjectType = function() {
-        return RJSType_QPen.getIdStatic();
-      };
 
-      QPen.prototype.getObjectType = function() {
-        return RJSType_QPen.getIdStatic();
-      };
-
-      QPen.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QPen.getIdStatic()) {
-          return true;
+            //copyProperties(this, wrapper, QPen);
         }
 
-        
 
-        return false;
+        else
+
+            if (arguments.length == 1) {
+
+                self = this;
+                wrapper = new QPen_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        
-      };
+                copyProperties(this, wrapper, QPen);
 
-      // enum values:
-      
+                //this.setWrapper(this.wrapper);
 
-      // functions:
-      
 
-      // static functions:
-      
 
-      // constants:
-      
+                //copyProperties(this, wrapper, QPen);
+            }
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QPen.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+            else
 
-      // destroy function:
-      //QPen.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+                if (arguments.length == 1) {
+
+                    self = this;
+                    wrapper = new QPen_Wrapper(
+                        // RJSApi:
+                        handler
+                        , arguments[0]
+                        ////this.setWrapper(this.wrapper);
+                        //Object.setPrototypeOf(this, wrapper);
+                    );
+                    //wrapper.__WRAPPER__ = true;
+                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                    copyProperties(this, wrapper, QPen);
+
+                    //this.setWrapper(this.wrapper);
+
+
+
+                    //copyProperties(this, wrapper, QPen);
+                }
+
+
+                else
+
+                    if (arguments.length == 1) {
+
+                        self = this;
+                        wrapper = new QPen_Wrapper(
+                            // RJSApi:
+                            handler
+                            , arguments[0]
+                            ////this.setWrapper(this.wrapper);
+                            //Object.setPrototypeOf(this, wrapper);
+                        );
+                        //wrapper.__WRAPPER__ = true;
+                        Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                        copyProperties(this, wrapper, QPen);
+
+                        //this.setWrapper(this.wrapper);
+
+
+
+                        //copyProperties(this, wrapper, QPen);
+                    }
+
+
+                    else
+
+                        if (arguments.length == 1) {
+
+                            self = this;
+                            wrapper = new QPen_Wrapper(
+                                // RJSApi:
+                                handler
+                                , arguments[0]
+                                ////this.setWrapper(this.wrapper);
+                                //Object.setPrototypeOf(this, wrapper);
+                            );
+                            //wrapper.__WRAPPER__ = true;
+                            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                            copyProperties(this, wrapper, QPen);
+
+                            //this.setWrapper(this.wrapper);
+
+
+
+                            //copyProperties(this, wrapper, QPen);
+                        }
+
+
+                        else
+
+                            if (arguments.length == 0) {
+
+                                self = this;
+                                wrapper = new QPen_Wrapper(
+                                    // RJSApi:
+                                    handler
+
+                                    ////this.setWrapper(this.wrapper);
+                                    //Object.setPrototypeOf(this, wrapper);
+                                );
+                                //wrapper.__WRAPPER__ = true;
+                                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                                copyProperties(this, wrapper, QPen);
+
+                                //this.setWrapper(this.wrapper);
+
+
+
+                                //copyProperties(this, wrapper, QPen);
+                            }
+
+
+                            else {
+
+                                print("QPen(): wrong number / type of arguments");
+
+                                console.trace();
+                            }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QPen.prototype = new QPen_BaseJs(engine);
+//QPen.prototype = new QPen_Wrapper(engine);
+QPen.prototype = new Object();
+
+QPen.prototype.toString = function() {
+    //return "QPen [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QPen [JS]";
+};
+QPen.getObjectType = function() {
+    return RJSType_QPen.getIdStatic();
+};
+
+QPen.prototype.getObjectType = function() {
+    return RJSType_QPen.getIdStatic();
+};
+
+QPen.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QPen.getIdStatic()) {
+        return true;
+    }
+
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+
+// functions:
+
+
+// static functions:
+
+
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QPen.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QPen.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

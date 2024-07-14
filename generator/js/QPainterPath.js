@@ -1,152 +1,149 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QPainterPath() {
-        
+// class constructor:
+function QPainterPath() {
 
-        // should be QPainterPath_BaseJs.call(this, engine):
-        //QPainterPath.prototype = new QPainterPath_BaseJs(engine);
 
-        var wrapper;
+    // should be QPainterPath_BaseJs.call(this, engine):
+    //QPainterPath.prototype = new QPainterPath_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QPainterPath.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QPainterPath.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPainterPath);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QPainterPath);
             //}
-          }
-          else {
+        } else {
             qWarning("QPainterPath.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 0) {
-    
+
+    } else {
+
+        if (arguments.length == 0) {
+
             self = this;
             wrapper = new QPainterPath_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QPainterPath);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QPainterPath);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QPainterPath);
-  }
 
-  
-  else {
-    
-        print("QPainterPath(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QPainterPath);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QPainterPath(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QPainterPath.prototype = new QPainterPath_BaseJs(engine);
-      //QPainterPath.prototype = new QPainterPath_Wrapper(engine);
-      QPainterPath.prototype = new Object();
-
-      QPainterPath.prototype.toString = function() {
-          //return "QPainterPath [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QPainterPath [JS]";
-        };
-      QPainterPath.getObjectType = function() {
-        return RJSType_QPainterPath.getIdStatic();
-      };
-
-      QPainterPath.prototype.getObjectType = function() {
-        return RJSType_QPainterPath.getIdStatic();
-      };
-
-      QPainterPath.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QPainterPath.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: ElementType
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QPainterPath.prototype = new QPainterPath_BaseJs(engine);
+//QPainterPath.prototype = new QPainterPath_Wrapper(engine);
+QPainterPath.prototype = new Object();
+
+QPainterPath.prototype.toString = function() {
+    //return "QPainterPath [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QPainterPath [JS]";
+};
+QPainterPath.getObjectType = function() {
+    return RJSType_QPainterPath.getIdStatic();
+};
+
+QPainterPath.prototype.getObjectType = function() {
+    return RJSType_QPainterPath.getIdStatic();
+};
+
+QPainterPath.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QPainterPath.getIdStatic()) {
+        return true;
+    }
+
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: ElementType
 QPainterPath.MoveToElement = QPainterPath_Wrapper.MoveToElement;
 QPainterPath.LineToElement = QPainterPath_Wrapper.LineToElement;
 QPainterPath.CurveToElement = QPainterPath_Wrapper.CurveToElement;
 QPainterPath.CurveToDataElement = QPainterPath_Wrapper.CurveToDataElement;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QPainterPath.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QPainterPath.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QPainterPath.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QPainterPath.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

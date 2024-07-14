@@ -1,131 +1,129 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QFileIconProvider() {
-        
+// class constructor:
+function QFileIconProvider() {
 
-        // should be QFileIconProvider_BaseJs.call(this, engine):
-        //QFileIconProvider.prototype = new QFileIconProvider_BaseJs(engine);
 
-        var wrapper;
+    // should be QFileIconProvider_BaseJs.call(this, engine):
+    //QFileIconProvider.prototype = new QFileIconProvider_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QFileIconProvider.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QFileIconProvider.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFileIconProvider);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QFileIconProvider);
             //}
-          }
-          else {
+        } else {
             qWarning("QFileIconProvider.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 0) {
-    
+
+    } else {
+
+        if (arguments.length == 0) {
+
             self = this;
             wrapper = new QFileIconProvider_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QFileIconProvider);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QFileIconProvider);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QFileIconProvider);
-  }
 
-  
-  else {
-    
-        print("QFileIconProvider(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QFileIconProvider);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QFileIconProvider(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QFileIconProvider.prototype = new QFileIconProvider_BaseJs(engine);
-      //QFileIconProvider.prototype = new QFileIconProvider_Wrapper(engine);
-      QFileIconProvider.prototype = new Object();
-
-      QFileIconProvider.prototype.toString = function() {
-          //return "QFileIconProvider [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QFileIconProvider [JS]";
-        };
-      QFileIconProvider.getObjectType = function() {
-        return RJSType_QFileIconProvider.getIdStatic();
-      };
-
-      QFileIconProvider.prototype.getObjectType = function() {
-        return RJSType_QFileIconProvider.getIdStatic();
-      };
-
-      QFileIconProvider.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QFileIconProvider.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QAbstractFileIconProvider.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: IconType
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QFileIconProvider.prototype = new QFileIconProvider_BaseJs(engine);
+//QFileIconProvider.prototype = new QFileIconProvider_Wrapper(engine);
+QFileIconProvider.prototype = new Object();
+
+QFileIconProvider.prototype.toString = function() {
+    //return "QFileIconProvider [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QFileIconProvider [JS]";
+};
+QFileIconProvider.getObjectType = function() {
+    return RJSType_QFileIconProvider.getIdStatic();
+};
+
+QFileIconProvider.prototype.getObjectType = function() {
+    return RJSType_QFileIconProvider.getIdStatic();
+};
+
+QFileIconProvider.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QFileIconProvider.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QAbstractFileIconProvider.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: IconType
 QFileIconProvider.Computer = QFileIconProvider_Wrapper.Computer;
 QFileIconProvider.Desktop = QFileIconProvider_Wrapper.Desktop;
 QFileIconProvider.Trashcan = QFileIconProvider_Wrapper.Trashcan;
@@ -134,29 +132,28 @@ QFileIconProvider.Drive = QFileIconProvider_Wrapper.Drive;
 QFileIconProvider.Folder = QFileIconProvider_Wrapper.Folder;
 QFileIconProvider.File = QFileIconProvider_Wrapper.File;
 
-  // enum: Option
+// enum: Option
 QFileIconProvider.DontUseCustomDirectoryIcons = QFileIconProvider_Wrapper.DontUseCustomDirectoryIcons;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QFileIconProvider.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QFileIconProvider.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QFileIconProvider.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QFileIconProvider.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

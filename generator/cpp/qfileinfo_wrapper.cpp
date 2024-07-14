@@ -1,202 +1,202 @@
 
-  // Auto generated
-  
-  // include header:
-  //#include "qfileinfowrapper.h"
-  //#include "header_cpp.h"
-  
-    #include "qfileinfo_wrapper.h"
+// Auto generated
 
-  
-      // list of registered base casters for this wrapper class:
-      QList<RJSBasecaster_QFileInfo*> QFileInfo_Wrapper::basecasters_QFileInfo;
-    
-    // static functions implementation in singleton wrapper:
-    
-    void QFileInfo_Wrapper::init(RJSApi& handler) {
-      
-        //qmlRegisterType<QFileInfo_Wrapper>("org.qcad", 1, 0, "QFileInfo_Wrapper");
-        qmlRegisterInterface<QFileInfo_Wrapper>("QFileInfo_Wrapper", 1);
-      
+// include header:
+//#include "qfileinfowrapper.h"
+//#include "header_cpp.h"
 
-      QJSEngine* engine = handler.getEngine();
-
-      
-          // make type scriptable for JS files:
-          QJSValue global = engine->globalObject();
-          RJSType_QFileInfo* t = new RJSType_QFileInfo();
-          global.setProperty("RJSType_QFileInfo", engine->newQObject(t));
-
-          // initialize ID for this type:
-          RJSType_QFileInfo::getIdStatic();
-
-          
-
-      // wrapper:
-      QJSValue mo = engine->newQMetaObject(&QFileInfo_Wrapper::staticMetaObject);
-      engine->globalObject().setProperty("QFileInfo_Wrapper", mo);
+#include "qfileinfo_wrapper.h"
 
 
-      
-        // JS base class:
-        //QJSValue mob = engine->newQMetaObject(&QFileInfo_BaseJs::staticMetaObject);
-        //engine->globalObject().setProperty("QFileInfo_BaseJs", mob);
-      
-      QString fileName = ":generator/js/QFileInfo.js";
-      QFile scriptFile(fileName);
-      if (!scriptFile.open(QIODevice::ReadOnly)) {
+// list of registered base casters for this wrapper class:
+QList<RJSBasecaster_QFileInfo*> QFileInfo_Wrapper::basecasters_QFileInfo;
+
+// static functions implementation in singleton wrapper:
+
+void QFileInfo_Wrapper::init(RJSApi& handler) {
+
+    //qmlRegisterType<QFileInfo_Wrapper>("org.qcad", 1, 0, "QFileInfo_Wrapper");
+    qmlRegisterInterface<QFileInfo_Wrapper>("QFileInfo_Wrapper", 1);
+
+
+    QJSEngine* engine = handler.getEngine();
+
+
+    // make type scriptable for JS files:
+    QJSValue global = engine->globalObject();
+    RJSType_QFileInfo* t = new RJSType_QFileInfo();
+    global.setProperty("RJSType_QFileInfo", engine->newQObject(t));
+
+    // initialize ID for this type:
+    RJSType_QFileInfo::getIdStatic();
+
+
+
+    // wrapper:
+    QJSValue mo = engine->newQMetaObject(&QFileInfo_Wrapper::staticMetaObject);
+    engine->globalObject().setProperty("QFileInfo_Wrapper", mo);
+
+
+
+    // JS base class:
+    //QJSValue mob = engine->newQMetaObject(&QFileInfo_BaseJs::staticMetaObject);
+    //engine->globalObject().setProperty("QFileInfo_BaseJs", mob);
+
+    QString fileName = ":generator/js/QFileInfo.js";
+    QFile scriptFile(fileName);
+    if (!scriptFile.open(QIODevice::ReadOnly)) {
         qWarning() << "JS script wrapper file not found:" << fileName;
         return;
-      }
-      QTextStream stream(&scriptFile);
-      QString contents = stream.readAll();
-      scriptFile.close();
-
-      qDebug() << "Evaluating file: " << fileName;
-      QJSValue result = engine->evaluate(contents, fileName);
-      if (result.isError()) {
-          qWarning()
-              << "Uncaught exception at line"
-              << result.property("lineNumber").toInt()
-              << ":" << result.toString();
-      }
     }
-  
-    /*
-    // special constructor used as prototype:
-    QFileInfo_Wrapper::QFileInfo_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
-            //setObjectName("QFileInfo_Wrapper");
-            setEngine(e);
+    QTextStream stream(&scriptFile);
+    QString contents = stream.readAll();
+    scriptFile.close();
 
-            // signal forwarding:
-            //initConnections();
-          }
-        
-    */
+    qDebug() << "Evaluating file: " << fileName;
+    QJSValue result = engine->evaluate(contents, fileName);
+    if (result.isError()) {
+        qWarning()
+                << "Uncaught exception at line"
+                << result.property("lineNumber").toInt()
+                << ":" << result.toString();
+    }
+}
 
-    
-      // special constructor to wrap existing object:
-      QFileInfo_Wrapper::QFileInfo_Wrapper(RJSApi& h, QFileInfo* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
-              //RDebug::incCounter(QString("QFileInfo_Wrapper_") + handler.getEngine()->objectName());
-              //RDebug::incCounter(QString("QFileInfo_Wrapper"));
-              //setObjectName("QFileInfo_Wrapper");
-              //setHandler(h);
+/*
+// special constructor used as prototype:
+QFileInfo_Wrapper::QFileInfo_Wrapper(QJSEngine* e) : wrapped(nullptr), wrappedCreated(false) {
+        //setObjectName("QFileInfo_Wrapper");
+        setEngine(e);
 
-              // signal forwarding:
-              initConnections();
-            }
-          
+        // signal forwarding:
+        //initConnections();
+      }
 
-      // destructor:
-      QFileInfo_Wrapper::~QFileInfo_Wrapper() {
-            //RDebug::decCounter(QString("QFileInfo_Wrapper_") + handler.getEngine()->objectName());
-            //RDebug::decCounter(QString("QFileInfo_Wrapper"));
+*/
 
-            //qDebug() << "QFileInfo_Wrapper::~QFileInfo_Wrapper";
 
-            // tell script handler that this wrapper no longer exists:
-            handler.unregisterWrapper(*this);
+// special constructor to wrap existing object:
+QFileInfo_Wrapper::QFileInfo_Wrapper(RJSApi& h, QFileInfo* o, bool wrappedCreated) : RJSWrapperObj(h), wrapped(o), wrappedCreated(wrappedCreated) {
+    //RDebug::incCounter(QString("QFileInfo_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::incCounter(QString("QFileInfo_Wrapper"));
+    //setObjectName("QFileInfo_Wrapper");
+    //setHandler(h);
 
-            
-            if (wrappedCreated) {
-              
-                  // delete wrapped object (copyable, JS ownership)
-                  //qDebug() << "deleting instance of QFileInfo";
-                  delete wrapped;
-                
-            }
-            
-          }
-        
-    // initialization of signal forwarding
-    
-        void QFileInfo_Wrapper::initConnections() {
+    // signal forwarding:
+    initConnections();
+}
 
-          //setObjectName("QFileInfo_Wrapper");
 
-          // tell script handler that this wrapper needs to be deleted if the engine is deleted:
-          handler.registerWrapper(*this);
+// destructor:
+QFileInfo_Wrapper::~QFileInfo_Wrapper() {
+    //RDebug::decCounter(QString("QFileInfo_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::decCounter(QString("QFileInfo_Wrapper"));
 
-          
-              // wrapped object is not a QObject:
-              // wrapper is managed by script engine:
-              //QJSEngine::setObjectOwnership(this, QJSEngine::CppOwnership);
-            
+    //qDebug() << "QFileInfo_Wrapper::~QFileInfo_Wrapper";
 
-          if (hasWrapped()) {
-            
-            // set up signal forwarding:
-            
-          }
-        }
-      
+    // tell script handler that this wrapper no longer exists:
+    handler.unregisterWrapper(*this);
 
-  // constructors:
-  
-    // Class: QFileInfo
-    // Function: 
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
+
+    if (wrappedCreated) {
+
+        // delete wrapped object (copyable, JS ownership)
+        //qDebug() << "deleting instance of QFileInfo";
+        delete wrapped;
+
+    }
+
+}
+
+// initialization of signal forwarding
+
+void QFileInfo_Wrapper::initConnections() {
+
+    //setObjectName("QFileInfo_Wrapper");
+
+    // tell script handler that this wrapper needs to be deleted if the engine is deleted:
+    handler.registerWrapper(*this);
+
+
+    // wrapped object is not a QObject:
+    // wrapper is managed by script engine:
+    //QJSEngine::setObjectOwnership(this, QJSEngine::CppOwnership);
+
+
+    if (hasWrapped()) {
+
+        // set up signal forwarding:
+
+    }
+}
+
+
+// constructors:
+
+// Class: QFileInfo
+// Function:
+// Source:
+// Static: false
+// Parameters: 2
+// preceding Parameters: -1
 QFileInfo_Wrapper::QFileInfo_Wrapper
-                
-              (
-                
-                  // RJSApi:
-                  QObject* h
-                  ,
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-                : RJSWrapperObj(*(RJSApi*)h)
-              
-              {
-                
-                  //RDebug::incCounter(QString("QFileInfo_Wrapper_") + handler.getEngine()->objectName());
-                  //RDebug::incCounter(QString("QFileInfo_Wrapper"));
-                
-      // check parameter types:
-      if (
+
+(
+
+    // RJSApi:
+    QObject* h
+    ,
+    const QJSValue&
+    a1,
+    const QJSValue&
+    a2
+)
+
+    : RJSWrapperObj(*(RJSApi*)h)
+
+{
+
+    //RDebug::incCounter(QString("QFileInfo_Wrapper_") + handler.getEngine()->objectName());
+    //RDebug::incCounter(QString("QFileInfo_Wrapper"));
+
+    // check parameter types:
+    if (
         RJSHelper::is_QDir(handler, a1
-  )
+                          )
 
-   && RJSHelper::is_QString(handler, a2
-  )
+        && RJSHelper::is_QString(handler, a2
+                                )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: dir (QDir)
-  
-QDir a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QDir(handler, a1);
-        
-  // convert js parameter to cpp: file (QString)
-  
-QString a2_cpp;
+    ) {
 
-      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
-        
+        // prepare parameters:
 
-    // call function:
-    
+        // convert js parameter to cpp: dir (QDir)
+
+        QDir a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QDir(handler, a1);
+
+        // convert js parameter to cpp: file (QString)
+
+        QString a2_cpp;
+
+        a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QFileInfo(
-                a1_cpp
-    , a2_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QFileInfo(
+            a1_cpp
+            , a2_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -204,37 +204,37 @@ QString a2_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QString(handler, a1
-  )
+                             )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: file (QString)
-  
-QString a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
+    ) {
 
-    // call function:
-    
+        // prepare parameters:
+
+        // convert js parameter to cpp: file (QString)
+
+        QString a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QFileInfo(
-                a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QFileInfo(
+            a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -242,40 +242,40 @@ QString a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      // check parameter types:
-      if (
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QFile_ptr(handler, a1
-  )
+                               )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: file (QFile)
-  
 
-          // non copyable:
-          QFile*
-         a1_cpp;
+    ) {
 
-      a1_cpp = RJSHelper::js2cpp_QFile_ptr(handler, a1);
-        
+        // prepare parameters:
 
-    // call function:
-    
+        // convert js parameter to cpp: file (QFile)
+
+
+        // non copyable:
+        QFile*
+        a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QFile_ptr(handler, a1);
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QFileInfo(
-                *a1_cpp
-    
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QFileInfo(
+            *a1_cpp
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -283,22 +283,22 @@ QString a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-      {
-    
+    }
 
-    // call function:
-    
+    {
+
+
+        // call function:
+
         // construct wrapper:
 
-        
-            wrapped = new QFileInfo(
-                
-            );
-            wrappedCreated = true;
-          
+
+        wrapped = new QFileInfo(
+
+        );
+        wrappedCreated = true;
+
 
         // signal forwarding:
         // TODO
@@ -306,3018 +306,3018 @@ QString a1_cpp;
         initConnections();
         return;
 
-      
-  }
 
-                    // no constructor without arguments defined
-                    // allow constructor for prototype objects without args:
-                    if (
-                      a1.isUndefined()
-   && a2.isUndefined()
-  
-                      ) {
-                      wrapped = nullptr;
-                      wrappedCreated = false;
-                      return;
-                    }
-                  
+    }
 
-                  qWarning() << "no matching constructor variant found for QFileInfo";
-                  wrapped = nullptr;
-                  wrappedCreated = false;
-                  handler.trace();
-                
-              }
-            
+    // no constructor without arguments defined
+    // allow constructor for prototype objects without args:
+    if (
+        a1.isUndefined()
+        && a2.isUndefined()
 
-    // non-static functions:
-    
-    // Class: QFileInfo
-    // Function: swap
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
+    ) {
+        wrapped = nullptr;
+        wrappedCreated = false;
+        return;
+    }
 
-                QJSValue 
-              QFileInfo_Wrapper::swap
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
+
+    qWarning() << "no matching constructor variant found for QFileInfo";
+    wrapped = nullptr;
+    wrappedCreated = false;
+    handler.trace();
+
+}
+
+
+// non-static functions:
+
+// Class: QFileInfo
+// Function: swap
+// Source:
+// Static: false
+// Parameters: 1
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::swap
+(
+
+    const QJSValue&
+    a1
+)
+
+{
+
+    // check parameter types:
+    if (
         RJSHelper::is_QFileInfo(handler, a1
-  )
+                               )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: other (QFileInfo)
-  
-QFileInfo a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QFileInfo(handler, a1);
-        
+    ) {
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // prepare parameters:
+
+        // convert js parameter to cpp: other (QFileInfo)
+
+        QFileInfo a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QFileInfo(handler, a1);
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                
-                w->swap(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
 
-                  qWarning() << "no matching function variant found for swap";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: setFile
-    // Source: 
-    // Static: false
-    // Parameters: 2
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QFileInfo_Wrapper::setFile
-              (
-                
-  const QJSValue& 
-  a1, 
-  const QJSValue& 
-  a2
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+
+        w->swap(
+            a1_cpp
+
+        );
+
+        return QJSValue();
+
+    }
+
+    qWarning() << "no matching function variant found for swap";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: setFile
+// Source:
+// Static: false
+// Parameters: 2
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::setFile
+(
+
+    const QJSValue&
+    a1,
+    const QJSValue&
+    a2
+)
+
+{
+
+    // check parameter types:
+    if (
         RJSHelper::is_QDir(handler, a1
-  )
+                          )
 
-   && RJSHelper::is_QString(handler, a2
-  )
+        && RJSHelper::is_QString(handler, a2
+                                )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: dir (QDir)
-  
-QDir a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QDir(handler, a1);
-        
-  // convert js parameter to cpp: file (QString)
-  
-QString a2_cpp;
+    ) {
 
-      a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
-        
+        // prepare parameters:
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // convert js parameter to cpp: dir (QDir)
+
+        QDir a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QDir(handler, a1);
+
+        // convert js parameter to cpp: file (QString)
+
+        QString a2_cpp;
+
+        a2_cpp = RJSHelper::js2cpp_QString(handler, a2);
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                
-                w->setFile(
-                  a1_cpp
-    , a2_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
 
-      // check parameter types:
-      if (
+        // non-static member function:
+        // call function of wrapped object:
+
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+
+        w->setFile(
+            a1_cpp
+            , a2_cpp
+
+        );
+
+        return QJSValue();
+
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QString(handler, a1
-  )
+                             )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: file (QString)
-  
-QString a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
+    ) {
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // prepare parameters:
+
+        // convert js parameter to cpp: file (QString)
+
+        QString a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                
-                w->setFile(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
 
-      // check parameter types:
-      if (
+        // non-static member function:
+        // call function of wrapped object:
+
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+
+        w->setFile(
+            a1_cpp
+
+        );
+
+        return QJSValue();
+
+    }
+
+    // check parameter types:
+    if (
         RJSHelper::is_QFile_ptr(handler, a1
-  )
+                               )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: file (QFile)
-  
 
-          // non copyable:
-          QFile*
-         a1_cpp;
+    ) {
 
-      a1_cpp = RJSHelper::js2cpp_QFile_ptr(handler, a1);
-        
+        // prepare parameters:
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // convert js parameter to cpp: file (QFile)
+
+
+        // non copyable:
+        QFile*
+        a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QFile_ptr(handler, a1);
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                
-                w->setFile(
-                  *a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
 
-                  qWarning() << "no matching function variant found for setFile";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: exists
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QFileInfo_Wrapper::exists
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+
+        w->setFile(
+            *a1_cpp
+
+        );
+
+        return QJSValue();
+
+    }
+
+    qWarning() << "no matching function variant found for setFile";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: exists
+// Source:
+// Static: false
+// Parameters: 1
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::exists
+(
+
+    const QJSValue&
+    a1
+)
+
+{
+
+    // check parameter types:
+    if (
         RJSHelper::is_QString(handler, a1
-  )
+                             )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: file (QString)
-  
-QString a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
-        
+    ) {
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // prepare parameters:
+
+        // convert js parameter to cpp: file (QString)
+
+        QString a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QString(handler, a1);
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->exists(
-                  a1_cpp
-    
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-      {
-    
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            w->exists(
+                a1_cpp
+
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->exists(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for exists";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: refresh
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::refresh
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
+            w->exists(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for exists";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: refresh
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::refresh
+(
+
+)
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                
-                w->refresh(
-                  
-                );
-              
-            return QJSValue();
-          
-  }
 
-                  qWarning() << "no matching function variant found for refresh";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: filePath
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // non-static member function:
+        // call function of wrapped object:
 
-                QJSValue 
-              QFileInfo_Wrapper::filePath
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        w->refresh(
+
+        );
+
+        return QJSValue();
+
+    }
+
+    qWarning() << "no matching function variant found for refresh";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: filePath
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::filePath
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->filePath(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for filePath";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: absoluteFilePath
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::absoluteFilePath
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->filePath(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for filePath";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: absoluteFilePath
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::absoluteFilePath
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->absoluteFilePath(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for absoluteFilePath";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: canonicalFilePath
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::canonicalFilePath
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->absoluteFilePath(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for absoluteFilePath";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: canonicalFilePath
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::canonicalFilePath
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->canonicalFilePath(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for canonicalFilePath";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: fileName
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::fileName
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->canonicalFilePath(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for canonicalFilePath";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: fileName
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::fileName
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->fileName(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for fileName";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: baseName
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::baseName
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->fileName(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for fileName";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: baseName
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::baseName
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->baseName(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for baseName";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: completeBaseName
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::completeBaseName
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->baseName(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for baseName";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: completeBaseName
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::completeBaseName
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->completeBaseName(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for completeBaseName";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: suffix
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::suffix
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->completeBaseName(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for completeBaseName";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: suffix
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::suffix
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->suffix(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for suffix";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: bundleName
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::bundleName
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->suffix(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for suffix";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: bundleName
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::bundleName
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->bundleName(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for bundleName";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: completeSuffix
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::completeSuffix
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->bundleName(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for bundleName";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: completeSuffix
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::completeSuffix
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->completeSuffix(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for completeSuffix";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: path
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::path
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->completeSuffix(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for completeSuffix";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: path
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::path
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->path(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for path";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: absolutePath
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::absolutePath
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->path(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for path";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: absolutePath
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::absolutePath
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->absolutePath(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for absolutePath";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: canonicalPath
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::canonicalPath
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->absolutePath(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for absolutePath";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: canonicalPath
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::canonicalPath
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->canonicalPath(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for canonicalPath";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: dir
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::dir
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->canonicalPath(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for canonicalPath";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: dir
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::dir
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QDir res = 
-                    
-                w->dir(
-                  
-                );
-              
-            // return type: QDir
 
-            return RJSHelper::cpp2js_QDir(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for dir";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: absoluteDir
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QDir res =
 
-                QJSValue 
-              QFileInfo_Wrapper::absoluteDir
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->dir(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QDir
+
+        return RJSHelper::cpp2js_QDir(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for dir";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: absoluteDir
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::absoluteDir
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QDir res = 
-                    
-                w->absoluteDir(
-                  
-                );
-              
-            // return type: QDir
 
-            return RJSHelper::cpp2js_QDir(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for absoluteDir";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isReadable
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QDir res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isReadable
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->absoluteDir(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QDir
+
+        return RJSHelper::cpp2js_QDir(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for absoluteDir";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isReadable
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isReadable
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isReadable(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isReadable";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isWritable
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isWritable
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isReadable(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isReadable";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isWritable
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isWritable
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isWritable(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isWritable";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isExecutable
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isExecutable
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isWritable(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isWritable";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isExecutable
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isExecutable
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isExecutable(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isExecutable";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isHidden
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isHidden
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isExecutable(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isExecutable";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isHidden
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isHidden
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isHidden(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isHidden";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isNativePath
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isNativePath
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isHidden(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isHidden";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isNativePath
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isNativePath
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isNativePath(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isNativePath";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isRelative
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isRelative
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isNativePath(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isNativePath";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isRelative
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isRelative
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isRelative(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isRelative";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isAbsolute
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isAbsolute
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isRelative(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isRelative";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isAbsolute
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isAbsolute
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isAbsolute(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isAbsolute";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: makeAbsolute
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::makeAbsolute
-              (
-                
-              ) 
-              
-              {
-                
-      {
-    
+            w->isAbsolute(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isAbsolute";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: makeAbsolute
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::makeAbsolute
+(
+
+)
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->makeAbsolute(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for makeAbsolute";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isFile
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isFile
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->makeAbsolute(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for makeAbsolute";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isFile
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isFile
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isFile(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isFile";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isDir
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isDir
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isFile(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isFile";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isDir
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isDir
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isDir(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isDir";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isSymLink
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isSymLink
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isDir(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isDir";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isSymLink
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isSymLink
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isSymLink(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isSymLink";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isSymbolicLink
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isSymbolicLink
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isSymLink(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isSymLink";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isSymbolicLink
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isSymbolicLink
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isSymbolicLink(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isSymbolicLink";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isShortcut
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isShortcut
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isSymbolicLink(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isSymbolicLink";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isShortcut
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isShortcut
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isShortcut(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isShortcut";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isJunction
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isJunction
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isShortcut(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isShortcut";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isJunction
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isJunction
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isJunction(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isJunction";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isRoot
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isRoot
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isJunction(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isJunction";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isRoot
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isRoot
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isRoot(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isRoot";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: isBundle
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::isBundle
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isRoot(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isRoot";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: isBundle
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::isBundle
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->isBundle(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for isBundle";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: symLinkTarget
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::symLinkTarget
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->isBundle(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for isBundle";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: symLinkTarget
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::symLinkTarget
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->symLinkTarget(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for symLinkTarget";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: owner
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::owner
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->symLinkTarget(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for symLinkTarget";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: owner
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::owner
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->owner(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for owner";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: ownerId
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::ownerId
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->owner(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for owner";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: ownerId
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::ownerId
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                uint res = 
-                    
-                w->ownerId(
-                  
-                );
-              
-            // return type: uint
 
-            return RJSHelper::cpp2js_uint(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for ownerId";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: group
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        uint res =
 
-                QJSValue 
-              QFileInfo_Wrapper::group
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->ownerId(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: uint
+
+        return RJSHelper::cpp2js_uint(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for ownerId";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: group
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::group
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QString res = 
-                    
-                w->group(
-                  
-                );
-              
-            // return type: QString
 
-            return RJSHelper::cpp2js_QString(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for group";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: groupId
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QString res =
 
-                QJSValue 
-              QFileInfo_Wrapper::groupId
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->group(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QString
+
+        return RJSHelper::cpp2js_QString(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for group";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: groupId
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::groupId
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                uint res = 
-                    
-                w->groupId(
-                  
-                );
-              
-            // return type: uint
 
-            return RJSHelper::cpp2js_uint(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for groupId";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: permission
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        uint res =
 
-                QJSValue 
-              QFileInfo_Wrapper::permission
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
+            w->groupId(
+
+            );
+
+        // return type: uint
+
+        return RJSHelper::cpp2js_uint(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for groupId";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: permission
+// Source:
+// Static: false
+// Parameters: 1
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::permission
+(
+
+    const QJSValue&
+    a1
+)
+
+const
+
+{
+
+    // check parameter types:
+    if (
         RJSHelper::is_QFile_Permissions(handler, a1
-  )
+                                       )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: permissions (QFile::Permissions)
-  
-QFile::Permissions a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QFile_Permissions(handler, a1);
-        
+    ) {
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // prepare parameters:
+
+        // convert js parameter to cpp: permissions (QFile::Permissions)
+
+        QFile::Permissions a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QFile_Permissions(handler, a1);
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->permission(
-                  a1_cpp
-    
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for permission";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: permissions
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::permissions
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->permission(
+                a1_cpp
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for permission";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: permissions
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::permissions
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QFile::Permissions res = 
-                    
-                w->permissions(
-                  
-                );
-              
-            // return type: QFile::Permissions
 
-            return RJSHelper::cpp2js_QFile_Permissions(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for permissions";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: size
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QFile::Permissions res =
 
-                QJSValue 
-              QFileInfo_Wrapper::size
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->permissions(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QFile::Permissions
+
+        return RJSHelper::cpp2js_QFile_Permissions(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for permissions";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: size
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::size
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                qint64 res = 
-                    
-                w->size(
-                  
-                );
-              
-            // return type: qint64
 
-            return RJSHelper::cpp2js_qint64(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for size";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: birthTime
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        qint64 res =
 
-                QJSValue 
-              QFileInfo_Wrapper::birthTime
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->size(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: qint64
+
+        return RJSHelper::cpp2js_qint64(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for size";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: birthTime
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::birthTime
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QDateTime res = 
-                    
-                w->birthTime(
-                  
-                );
-              
-            // return type: QDateTime
 
-            return RJSHelper::cpp2js_QDateTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for birthTime";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: metadataChangeTime
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QDateTime res =
 
-                QJSValue 
-              QFileInfo_Wrapper::metadataChangeTime
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->birthTime(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QDateTime
+
+        return RJSHelper::cpp2js_QDateTime(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for birthTime";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: metadataChangeTime
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::metadataChangeTime
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QDateTime res = 
-                    
-                w->metadataChangeTime(
-                  
-                );
-              
-            // return type: QDateTime
 
-            return RJSHelper::cpp2js_QDateTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for metadataChangeTime";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: lastModified
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QDateTime res =
 
-                QJSValue 
-              QFileInfo_Wrapper::lastModified
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->metadataChangeTime(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QDateTime
+
+        return RJSHelper::cpp2js_QDateTime(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for metadataChangeTime";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: lastModified
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::lastModified
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QDateTime res = 
-                    
-                w->lastModified(
-                  
-                );
-              
-            // return type: QDateTime
 
-            return RJSHelper::cpp2js_QDateTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for lastModified";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: lastRead
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QDateTime res =
 
-                QJSValue 
-              QFileInfo_Wrapper::lastRead
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->lastModified(
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QDateTime
+
+        return RJSHelper::cpp2js_QDateTime(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for lastModified";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: lastRead
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::lastRead
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QDateTime res = 
-                    
-                w->lastRead(
-                  
-                );
-              
-            // return type: QDateTime
 
-            return RJSHelper::cpp2js_QDateTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for lastRead";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: fileTime
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QDateTime res =
 
-                QJSValue 
-              QFileInfo_Wrapper::fileTime
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-                const
-              
-              {
-                
-      // check parameter types:
-      if (
+            w->lastRead(
+
+            );
+
+        // return type: QDateTime
+
+        return RJSHelper::cpp2js_QDateTime(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for lastRead";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: fileTime
+// Source:
+// Static: false
+// Parameters: 1
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::fileTime
+(
+
+    const QJSValue&
+    a1
+)
+
+const
+
+{
+
+    // check parameter types:
+    if (
         RJSHelper::is_QFile_FileTime(handler, a1
-  )
+                                    )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: time (QFile::FileTime)
-  
-QFile::FileTime a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_QFile_FileTime(handler, a1);
-        
+    ) {
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // prepare parameters:
+
+        // convert js parameter to cpp: time (QFile::FileTime)
+
+        QFile::FileTime a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_QFile_FileTime(handler, a1);
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                QDateTime res = 
-                    
-                w->fileTime(
-                  a1_cpp
-    
-                );
-              
-            // return type: QDateTime
 
-            return RJSHelper::cpp2js_QDateTime(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for fileTime";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: caching
-    // Source: 
-    // Static: false
-    // Parameters: 0
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        QDateTime res =
 
-                QJSValue 
-              QFileInfo_Wrapper::caching
-              (
-                
-              ) 
-              
-                const
-              
-              {
-                
-      {
-    
+            w->fileTime(
+                a1_cpp
 
-    // call function:
-    
-          if (!hasWrapped()) {
+            );
+
+        // return type: QDateTime
+
+        return RJSHelper::cpp2js_QDateTime(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for fileTime";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: caching
+// Source:
+// Static: false
+// Parameters: 0
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::caching
+(
+
+)
+
+const
+
+{
+
+    {
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
+        }
 
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                bool res = 
-                    
-                w->caching(
-                  
-                );
-              
-            // return type: bool
 
-            return RJSHelper::cpp2js_bool(
-              handler, 
-              // non-copyable: false
-                  res
-                
-              );
-            
-  }
+        // non-static member function:
+        // call function of wrapped object:
 
-                  qWarning() << "no matching function variant found for caching";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-    // Class: QFileInfo
-    // Function: setCaching
-    // Source: 
-    // Static: false
-    // Parameters: 1
-    // preceding Parameters: -1
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+        bool res =
 
-                QJSValue 
-              QFileInfo_Wrapper::setCaching
-              (
-                
-  const QJSValue& 
-  a1
-              ) 
-              
-              {
-                
-      // check parameter types:
-      if (
+            w->caching(
+
+            );
+
+        // return type: bool
+
+        return RJSHelper::cpp2js_bool(
+                   handler,
+                   // non-copyable: false
+                   res
+
+               );
+
+    }
+
+    qWarning() << "no matching function variant found for caching";
+    handler.trace();
+    return QJSValue();
+
+}
+
+// Class: QFileInfo
+// Function: setCaching
+// Source:
+// Static: false
+// Parameters: 1
+// preceding Parameters: -1
+
+QJSValue
+QFileInfo_Wrapper::setCaching
+(
+
+    const QJSValue&
+    a1
+)
+
+{
+
+    // check parameter types:
+    if (
         RJSHelper::is_bool(handler, a1
-  )
+                          )
 
-  
-      ) {
-    
-      // prepare parameters:
-    
-  // convert js parameter to cpp: on (bool)
-  
-bool a1_cpp;
 
-      a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
-        
+    ) {
 
-    // call function:
-    
-          if (!hasWrapped()) {
+        // prepare parameters:
+
+        // convert js parameter to cpp: on (bool)
+
+        bool a1_cpp;
+
+        a1_cpp = RJSHelper::js2cpp_bool(handler, a1);
+
+
+        // call function:
+
+        if (!hasWrapped()) {
             qWarning() << "wrapped is NULL";
             handler.trace();
             return QJSValue();
-          }
-
-          
-            // non-static member function:
-            // call function of wrapped object:
-            
-                // call function of C++ class:
-                QFileInfo* w = getWrapped();
-                
-                w->setCaching(
-                  a1_cpp
-    
-                );
-              
-            return QJSValue();
-          
-  }
-
-                  qWarning() << "no matching function variant found for setCaching";
-                  handler.trace();
-                  return QJSValue();
-                
-              }
-            
-
-  // member functions for static properties, forward to static function
-  
+        }
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
+        // non-static member function:
+        // call function of wrapped object:
+
+        // call function of C++ class:
+        QFileInfo* w = getWrapped();
+
+        w->setCaching(
+            a1_cpp
+
+        );
+
+        return QJSValue();
+
+    }
+
+    qWarning() << "no matching function variant found for setCaching";
+    handler.trace();
+    return QJSValue();
+
+}
+
+
+// member functions for static properties, forward to static function
+
+
+
+// protected overwritten functions / events and their public invokable counterparts:
+

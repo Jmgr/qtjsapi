@@ -1,2464 +1,2464 @@
 
-  // Auto generated
-  
-    #ifndef QXMLSTREAM_H_WRAPPER
-    #define QXMLSTREAM_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QXMLSTREAM_H_WRAPPER
+#define QXMLSTREAM_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QXmlStreamAttributes>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QXmlStreamAttribute>
-      
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QXmlStreamAttribute
-    class QTJSAPI_EXPORT QXmlStreamAttribute_Wrapper : public RJSWrapperObj {
+// include header:
+//#include "header_h.h"
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
+#include "../RJSHelper.h"
 
-    private:
-      // disable copy constructor:
-      QXmlStreamAttribute_Wrapper(const QXmlStreamAttribute_Wrapper&);
 
-    public:
-      // initialization of QXmlStreamAttribute:
-      static void init(RJSApi& handler);
+#include "RJSWrapperObj.h"
 
-      
-        static QXmlStreamAttribute* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+#include <QXmlStreamAttributes>
 
-          // hook for modules to cast from other types to base QXmlStreamAttribute:
-          for (int i=0; i<basecasters_QXmlStreamAttribute.length(); i++) {
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QXmlStreamAttribute>
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QXmlStreamAttribute
+class QTJSAPI_EXPORT QXmlStreamAttribute_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+
+private:
+    // disable copy constructor:
+    QXmlStreamAttribute_Wrapper(const QXmlStreamAttribute_Wrapper&);
+
+public:
+    // initialization of QXmlStreamAttribute:
+    static void init(RJSApi& handler);
+
+
+    static QXmlStreamAttribute* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QXmlStreamAttribute:
+        for (int i=0; i<basecasters_QXmlStreamAttribute.length(); i++) {
             RJSBasecaster_QXmlStreamAttribute* basecaster = basecasters_QXmlStreamAttribute[i];
             QXmlStreamAttribute* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QXmlStreamAttribute:
-          if (t==RJSType_QXmlStreamAttribute::getIdStatic()) {
+        // object is a pointer to base class QXmlStreamAttribute:
+        if (t==RJSType_QXmlStreamAttribute::getIdStatic()) {
             return (QXmlStreamAttribute*)vp;
-          }
-
-          qWarning() << "QXmlStreamAttribute_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QXmlStreamAttribute* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QXmlStreamAttribute*: wrapper wraps NULL";
-          }
+        qWarning() << "QXmlStreamAttribute_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QXmlStreamAttribute* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QXmlStreamAttribute*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QXmlStreamAttribute* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QXmlStreamAttribute*: wrapper wraps NULL";
         }
-      
+
+        QXmlStreamAttribute* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QXmlStreamAttribute*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QXmlStreamAttribute_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QXmlStreamAttribute_Wrapper(RJSApi& h, QXmlStreamAttribute* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QXmlStreamAttribute_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QXmlStreamAttribute_Wrapper(RJSApi& h, QXmlStreamAttribute* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QXmlStreamAttribute_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
 
     // non-static functions:
-    
+
     // Class: QXmlStreamAttribute
     // Function: isDefault
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isDefault
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isDefault
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamAttribute
     // Function: operator_equal
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  operator_equal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    operator_equal
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamAttribute
     // Function: operator_unequal
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  operator_unequal
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    operator_unequal
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QXmlStreamAttribute::getIdStatic();
+    )
+
+    const
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QXmlStreamAttribute* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QXmlStreamAttribute::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QXmlStreamAttribute* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QXmlStreamAttribute* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QXmlStreamAttribute* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QXmlStreamAttribute* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QXmlStreamAttribute*> basecasters_QXmlStreamAttribute;
 
-      public:
-        static void registerBasecaster_QXmlStreamAttribute(RJSBasecaster_QXmlStreamAttribute* bc) {
-          basecasters_QXmlStreamAttribute.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QXmlStreamAttribute* wrapped;
 
-    Q_DECLARE_METATYPE(QXmlStreamAttribute_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QXmlStreamAttribute_Wrapper, "org.qcad.QXmlStreamAttribute_Wrapper")
 
-  
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QXmlStreamAttributes>
-      
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QXmlStreamAttributes
-    class QTJSAPI_EXPORT QXmlStreamAttributes_Wrapper : public RJSWrapperObj {
+    bool wrappedCreated;
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QXmlStreamAttribute*> basecasters_QXmlStreamAttribute;
 
-    private:
-      // disable copy constructor:
-      QXmlStreamAttributes_Wrapper(const QXmlStreamAttributes_Wrapper&);
+public:
+    static void registerBasecaster_QXmlStreamAttribute(RJSBasecaster_QXmlStreamAttribute* bc) {
+        basecasters_QXmlStreamAttribute.append(bc);
+    }
 
-    public:
-      // initialization of QXmlStreamAttributes:
-      static void init(RJSApi& handler);
+};
 
-      
-        static QXmlStreamAttributes* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+Q_DECLARE_METATYPE(QXmlStreamAttribute_Wrapper*)
 
-          // hook for modules to cast from other types to base QXmlStreamAttributes:
-          for (int i=0; i<basecasters_QXmlStreamAttributes.length(); i++) {
+Q_DECLARE_INTERFACE(QXmlStreamAttribute_Wrapper, "org.qcad.QXmlStreamAttribute_Wrapper")
+
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QXmlStreamAttributes>
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QXmlStreamAttributes
+class QTJSAPI_EXPORT QXmlStreamAttributes_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+
+private:
+    // disable copy constructor:
+    QXmlStreamAttributes_Wrapper(const QXmlStreamAttributes_Wrapper&);
+
+public:
+    // initialization of QXmlStreamAttributes:
+    static void init(RJSApi& handler);
+
+
+    static QXmlStreamAttributes* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QXmlStreamAttributes:
+        for (int i=0; i<basecasters_QXmlStreamAttributes.length(); i++) {
             RJSBasecaster_QXmlStreamAttributes* basecaster = basecasters_QXmlStreamAttributes[i];
             QXmlStreamAttributes* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QXmlStreamAttributes:
-          if (t==RJSType_QXmlStreamAttributes::getIdStatic()) {
+        // object is a pointer to base class QXmlStreamAttributes:
+        if (t==RJSType_QXmlStreamAttributes::getIdStatic()) {
             return (QXmlStreamAttributes*)vp;
-          }
-
-          qWarning() << "QXmlStreamAttributes_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QXmlStreamAttributes* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QXmlStreamAttributes*: wrapper wraps NULL";
-          }
+        qWarning() << "QXmlStreamAttributes_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QXmlStreamAttributes* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QXmlStreamAttributes*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QXmlStreamAttributes* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QXmlStreamAttributes*: wrapper wraps NULL";
         }
-      
+
+        QXmlStreamAttributes* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QXmlStreamAttributes*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QXmlStreamAttributes_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QXmlStreamAttributes_Wrapper(RJSApi& h, QXmlStreamAttributes* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QXmlStreamAttributes_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QXmlStreamAttributes_Wrapper(RJSApi& h, QXmlStreamAttributes* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QXmlStreamAttributes_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QXmlStreamAttributes
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QXmlStreamAttributes_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QXmlStreamAttributes_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QXmlStreamAttributes
     // Function: append
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  append
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    append
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamAttributes
     // Function: hasAttribute
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    hasAttribute
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QXmlStreamAttributes::getIdStatic();
+    )
+
+    const
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return false;
-            
-        }
+    }
 
-        // get wrapped object:
-        QXmlStreamAttributes* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QXmlStreamAttributes::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return false;
+
+    }
+
+    // get wrapped object:
+    QXmlStreamAttributes* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QXmlStreamAttributes* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QXmlStreamAttributes* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QXmlStreamAttributes* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QXmlStreamAttributes*> basecasters_QXmlStreamAttributes;
 
-      public:
-        static void registerBasecaster_QXmlStreamAttributes(RJSBasecaster_QXmlStreamAttributes* bc) {
-          basecasters_QXmlStreamAttributes.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QXmlStreamAttributes* wrapped;
 
-    Q_DECLARE_METATYPE(QXmlStreamAttributes_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QXmlStreamAttributes_Wrapper, "org.qcad.QXmlStreamAttributes_Wrapper")
 
-  
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QXmlStreamReader>
-      
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QXmlStreamReader
-    class QTJSAPI_EXPORT QXmlStreamReader_Wrapper : public RJSWrapperObj {
+    bool wrappedCreated;
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QXmlStreamAttributes*> basecasters_QXmlStreamAttributes;
 
-    private:
-      // disable copy constructor:
-      QXmlStreamReader_Wrapper(const QXmlStreamReader_Wrapper&);
+public:
+    static void registerBasecaster_QXmlStreamAttributes(RJSBasecaster_QXmlStreamAttributes* bc) {
+        basecasters_QXmlStreamAttributes.append(bc);
+    }
 
-    public:
-      // initialization of QXmlStreamReader:
-      static void init(RJSApi& handler);
+};
 
-      
-        static QXmlStreamReader* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+Q_DECLARE_METATYPE(QXmlStreamAttributes_Wrapper*)
 
-          // hook for modules to cast from other types to base QXmlStreamReader:
-          for (int i=0; i<basecasters_QXmlStreamReader.length(); i++) {
+Q_DECLARE_INTERFACE(QXmlStreamAttributes_Wrapper, "org.qcad.QXmlStreamAttributes_Wrapper")
+
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QXmlStreamReader>
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QXmlStreamReader
+class QTJSAPI_EXPORT QXmlStreamReader_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+
+private:
+    // disable copy constructor:
+    QXmlStreamReader_Wrapper(const QXmlStreamReader_Wrapper&);
+
+public:
+    // initialization of QXmlStreamReader:
+    static void init(RJSApi& handler);
+
+
+    static QXmlStreamReader* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QXmlStreamReader:
+        for (int i=0; i<basecasters_QXmlStreamReader.length(); i++) {
             RJSBasecaster_QXmlStreamReader* basecaster = basecasters_QXmlStreamReader[i];
             QXmlStreamReader* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QXmlStreamReader:
-          if (t==RJSType_QXmlStreamReader::getIdStatic()) {
+        // object is a pointer to base class QXmlStreamReader:
+        if (t==RJSType_QXmlStreamReader::getIdStatic()) {
             return (QXmlStreamReader*)vp;
-          }
-
-          qWarning() << "QXmlStreamReader_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QXmlStreamReader* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QXmlStreamReader*: wrapper wraps NULL";
-          }
+        qWarning() << "QXmlStreamReader_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QXmlStreamReader* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QXmlStreamReader*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QXmlStreamReader* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QXmlStreamReader*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum TokenType {
-    NoToken = QXmlStreamReader::NoToken,
-Invalid = QXmlStreamReader::Invalid,
-StartDocument = QXmlStreamReader::StartDocument,
-EndDocument = QXmlStreamReader::EndDocument,
-StartElement = QXmlStreamReader::StartElement,
-EndElement = QXmlStreamReader::EndElement,
-Characters = QXmlStreamReader::Characters,
-Comment = QXmlStreamReader::Comment,
-DTD = QXmlStreamReader::DTD,
-EntityReference = QXmlStreamReader::EntityReference,
-ProcessingInstruction = QXmlStreamReader::ProcessingInstruction,
 
-  };
-  Q_ENUM(TokenType)
+        QXmlStreamReader* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QXmlStreamReader*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
 
-  enum ReadElementTextBehaviour {
-    ErrorOnUnexpectedElement = QXmlStreamReader::ErrorOnUnexpectedElement,
-IncludeChildElements = QXmlStreamReader::IncludeChildElements,
-SkipChildElements = QXmlStreamReader::SkipChildElements,
+    // enums:
 
-  };
-  Q_ENUM(ReadElementTextBehaviour)
+    enum TokenType {
+        NoToken = QXmlStreamReader::NoToken,
+        Invalid = QXmlStreamReader::Invalid,
+        StartDocument = QXmlStreamReader::StartDocument,
+        EndDocument = QXmlStreamReader::EndDocument,
+        StartElement = QXmlStreamReader::StartElement,
+        EndElement = QXmlStreamReader::EndElement,
+        Characters = QXmlStreamReader::Characters,
+        Comment = QXmlStreamReader::Comment,
+        DTD = QXmlStreamReader::DTD,
+        EntityReference = QXmlStreamReader::EntityReference,
+        ProcessingInstruction = QXmlStreamReader::ProcessingInstruction,
 
-  enum Error {
-    NoError = QXmlStreamReader::NoError,
-UnexpectedElementError = QXmlStreamReader::UnexpectedElementError,
-CustomError = QXmlStreamReader::CustomError,
-NotWellFormedError = QXmlStreamReader::NotWellFormedError,
-PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
+    };
+    Q_ENUM(TokenType)
 
-  };
-  Q_ENUM(Error)
+    enum ReadElementTextBehaviour {
+        ErrorOnUnexpectedElement = QXmlStreamReader::ErrorOnUnexpectedElement,
+        IncludeChildElements = QXmlStreamReader::IncludeChildElements,
+        SkipChildElements = QXmlStreamReader::SkipChildElements,
+
+    };
+    Q_ENUM(ReadElementTextBehaviour)
+
+    enum Error {
+        NoError = QXmlStreamReader::NoError,
+        UnexpectedElementError = QXmlStreamReader::UnexpectedElementError,
+        CustomError = QXmlStreamReader::CustomError,
+        NotWellFormedError = QXmlStreamReader::NotWellFormedError,
+        PrematureEndOfDocumentError = QXmlStreamReader::PrematureEndOfDocumentError,
+
+    };
+    Q_ENUM(Error)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QXmlStreamReader_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QXmlStreamReader_Wrapper(RJSApi& h, QXmlStreamReader* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QXmlStreamReader_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QXmlStreamReader_Wrapper(RJSApi& h, QXmlStreamReader* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QXmlStreamReader_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QXmlStreamReader
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QXmlStreamReader_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QXmlStreamReader_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QXmlStreamReader
     // Function: setDevice
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDevice
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDevice
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: device
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  device
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    device
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: addData
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  addData
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    addData
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: clear
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  clear
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    clear
+    (
+
+
+    )
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: atEnd
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  atEnd
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    atEnd
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: readNext
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  readNext
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    readNext
+    (
+
+
+    )
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: readNextStartElement
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  readNextStartElement
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    readNextStartElement
+    (
+
+
+    )
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: skipCurrentElement
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  skipCurrentElement
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    skipCurrentElement
+    (
+
+
+    )
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: tokenType
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tokenType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    tokenType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: tokenString
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  tokenString
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    tokenString
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: setNamespaceProcessing
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setNamespaceProcessing
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setNamespaceProcessing
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: namespaceProcessing
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  namespaceProcessing
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    namespaceProcessing
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isStartDocument
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isStartDocument
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isStartDocument
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isEndDocument
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEndDocument
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEndDocument
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isStartElement
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isStartElement
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isStartElement
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isEndElement
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEndElement
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEndElement
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isCharacters
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isCharacters
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isCharacters
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isWhitespace
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isWhitespace
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isWhitespace
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isCDATA
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isCDATA
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isCDATA
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isComment
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isComment
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isComment
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isDTD
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isDTD
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isDTD
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isEntityReference
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEntityReference
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEntityReference
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isProcessingInstruction
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isProcessingInstruction
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isProcessingInstruction
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: isStandaloneDocument
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isStandaloneDocument
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isStandaloneDocument
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: lineNumber
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  lineNumber
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    lineNumber
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: columnNumber
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  columnNumber
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    columnNumber
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: characterOffset
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  characterOffset
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    characterOffset
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: attributes
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  attributes
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    attributes
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: readElementText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  readElementText
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    readElementText
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: text
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  text
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    text
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: entityExpansionLimit
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  entityExpansionLimit
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    entityExpansionLimit
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: setEntityExpansionLimit
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setEntityExpansionLimit
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setEntityExpansionLimit
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: raiseError
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  raiseError
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    raiseError
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: errorString
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  errorString
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    errorString
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: error
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  error
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    error
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamReader
     // Function: hasError
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasError
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    hasError
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+    )
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QXmlStreamReader::getIdStatic();
+    const
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QXmlStreamReader* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QXmlStreamReader::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QXmlStreamReader* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QXmlStreamReader* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QXmlStreamReader* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QXmlStreamReader* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QXmlStreamReader*> basecasters_QXmlStreamReader;
 
-      public:
-        static void registerBasecaster_QXmlStreamReader(RJSBasecaster_QXmlStreamReader* bc) {
-          basecasters_QXmlStreamReader.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QXmlStreamReader* wrapped;
 
-    Q_DECLARE_METATYPE(QXmlStreamReader_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QXmlStreamReader_Wrapper, "org.qcad.QXmlStreamReader_Wrapper")
 
-  
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QXmlStreamWriter>
-      
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QXmlStreamWriter
-    class QTJSAPI_EXPORT QXmlStreamWriter_Wrapper : public RJSWrapperObj {
+    bool wrappedCreated;
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QXmlStreamReader*> basecasters_QXmlStreamReader;
 
-    private:
-      // disable copy constructor:
-      QXmlStreamWriter_Wrapper(const QXmlStreamWriter_Wrapper&);
+public:
+    static void registerBasecaster_QXmlStreamReader(RJSBasecaster_QXmlStreamReader* bc) {
+        basecasters_QXmlStreamReader.append(bc);
+    }
 
-    public:
-      // initialization of QXmlStreamWriter:
-      static void init(RJSApi& handler);
+};
 
-      
-        static QXmlStreamWriter* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+Q_DECLARE_METATYPE(QXmlStreamReader_Wrapper*)
 
-          // hook for modules to cast from other types to base QXmlStreamWriter:
-          for (int i=0; i<basecasters_QXmlStreamWriter.length(); i++) {
+Q_DECLARE_INTERFACE(QXmlStreamReader_Wrapper, "org.qcad.QXmlStreamReader_Wrapper")
+
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QXmlStreamWriter>
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QXmlStreamWriter
+class QTJSAPI_EXPORT QXmlStreamWriter_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+
+private:
+    // disable copy constructor:
+    QXmlStreamWriter_Wrapper(const QXmlStreamWriter_Wrapper&);
+
+public:
+    // initialization of QXmlStreamWriter:
+    static void init(RJSApi& handler);
+
+
+    static QXmlStreamWriter* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QXmlStreamWriter:
+        for (int i=0; i<basecasters_QXmlStreamWriter.length(); i++) {
             RJSBasecaster_QXmlStreamWriter* basecaster = basecasters_QXmlStreamWriter[i];
             QXmlStreamWriter* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QXmlStreamWriter:
-          if (t==RJSType_QXmlStreamWriter::getIdStatic()) {
+        // object is a pointer to base class QXmlStreamWriter:
+        if (t==RJSType_QXmlStreamWriter::getIdStatic()) {
             return (QXmlStreamWriter*)vp;
-          }
-
-          qWarning() << "QXmlStreamWriter_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QXmlStreamWriter* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QXmlStreamWriter*: wrapper wraps NULL";
-          }
+        qWarning() << "QXmlStreamWriter_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QXmlStreamWriter* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QXmlStreamWriter*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QXmlStreamWriter* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QXmlStreamWriter*: wrapper wraps NULL";
         }
-      
+
+        QXmlStreamWriter* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QXmlStreamWriter*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
+
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QXmlStreamWriter_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QXmlStreamWriter_Wrapper(RJSApi& h, QXmlStreamWriter* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QXmlStreamWriter_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QXmlStreamWriter_Wrapper(RJSApi& h, QXmlStreamWriter* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QXmlStreamWriter_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QXmlStreamWriter
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QXmlStreamWriter_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QXmlStreamWriter_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 #ifndef QT_NO_XMLSTREAMREADER
 
 #endif
 
 
     // non-static functions:
-    
+
     // Class: QXmlStreamWriter
     // Function: setDevice
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setDevice
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setDevice
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: device
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  device
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    device
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: setAutoFormatting
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoFormatting
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoFormatting
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: autoFormatting
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoFormatting
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoFormatting
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: setAutoFormattingIndent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setAutoFormattingIndent
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setAutoFormattingIndent
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: autoFormattingIndent
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  autoFormattingIndent
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    autoFormattingIndent
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeAttribute
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeAttribute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeAttribute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeAttributes
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeAttributes
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeAttributes
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeCDATA
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeCDATA
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeCDATA
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeCharacters
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeCharacters
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeCharacters
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeComment
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeComment
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeComment
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeDTD
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeDTD
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeDTD
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeEmptyElement
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeEmptyElement
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeEmptyElement
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeTextElement
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeTextElement
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeTextElement
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeEndDocument
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeEndDocument
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    writeEndDocument
+    (
+
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeEndElement
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeEndElement
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    writeEndElement
+    (
+
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeEntityReference
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeEntityReference
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeEntityReference
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeNamespace
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeNamespace
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeNamespace
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeDefaultNamespace
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeDefaultNamespace
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeDefaultNamespace
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeProcessingInstruction
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeProcessingInstruction
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeProcessingInstruction
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeStartDocument
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeStartDocument
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeStartDocument
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QXmlStreamWriter
     // Function: writeStartElement
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeStartElement
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeStartElement
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
 #ifndef QT_NO_XMLSTREAMREADER
 
     // Class: QXmlStreamWriter
     // Function: writeCurrentToken
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  writeCurrentToken
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    writeCurrentToken
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
 #endif
 
     // Class: QXmlStreamWriter
     // Function: hasError
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hasError
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    hasError
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+    )
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QXmlStreamWriter::getIdStatic();
+    const
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return true;
-            
-        }
+    }
 
-        // get wrapped object:
-        QXmlStreamWriter* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QXmlStreamWriter::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return true;
+
+    }
+
+    // get wrapped object:
+    QXmlStreamWriter* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QXmlStreamWriter* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QXmlStreamWriter* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QXmlStreamWriter* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QXmlStreamWriter*> basecasters_QXmlStreamWriter;
 
-      public:
-        static void registerBasecaster_QXmlStreamWriter(RJSBasecaster_QXmlStreamWriter* bc) {
-          basecasters_QXmlStreamWriter.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QXmlStreamWriter* wrapped;
 
-    Q_DECLARE_METATYPE(QXmlStreamWriter_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QXmlStreamWriter_Wrapper, "org.qcad.QXmlStreamWriter_Wrapper")
 
-  
-  #endif
-  
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QXmlStreamWriter*> basecasters_QXmlStreamWriter;
+
+public:
+    static void registerBasecaster_QXmlStreamWriter(RJSBasecaster_QXmlStreamWriter* bc) {
+        basecasters_QXmlStreamWriter.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QXmlStreamWriter_Wrapper*)
+
+Q_DECLARE_INTERFACE(QXmlStreamWriter_Wrapper, "org.qcad.QXmlStreamWriter_Wrapper")
+
+
+#endif
+

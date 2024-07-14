@@ -1,72 +1,71 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  // include header:
-  #include "qboxlayout_base.h"
-  //#include "qboxlayout_wrapper.h"
-  //#include "header_cpp.h"
-    
-    // Base class for QBoxLayout
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-    // constructors:
-    
-  // Class: QBoxLayout
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: -1
+// include header:
+#include "qboxlayout_base.h"
+//#include "qboxlayout_wrapper.h"
+//#include "header_cpp.h"
 
-      // protected overwritten functions / events and their public invokable counterparts:
-      
+// Base class for QBoxLayout
 
-      // public virtual overwritten functions / events:
-      
+// constructors:
 
-      // public pure-virtual functions:
-      
-    // Base class for QHBoxLayout
+// Class: QBoxLayout
+// Function:
+// Parameters: 2
+// preceding Parameters: -1
 
-    // constructors:
-    
-  // Class: QHBoxLayout
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: -1
+// protected overwritten functions / events and their public invokable counterparts:
 
-  // Class: QHBoxLayout
-  // Function: 
-  // Parameters: 0
-  // preceding Parameters: 1
 
-      // protected overwritten functions / events and their public invokable counterparts:
-      
+// public virtual overwritten functions / events:
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
-    // Base class for QVBoxLayout
+// public pure-virtual functions:
 
-    // constructors:
-    
-  // Class: QVBoxLayout
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: -1
+// Base class for QHBoxLayout
 
-  // Class: QVBoxLayout
-  // Function: 
-  // Parameters: 0
-  // preceding Parameters: 1
+// constructors:
 
-      // protected overwritten functions / events and their public invokable counterparts:
-      
+// Class: QHBoxLayout
+// Function:
+// Parameters: 1
+// preceding Parameters: -1
 
-      // public virtual overwritten functions / events:
-      
+// Class: QHBoxLayout
+// Function:
+// Parameters: 0
+// preceding Parameters: 1
 
-      // public pure-virtual functions:
-      
+// protected overwritten functions / events and their public invokable counterparts:
+
+
+// public virtual overwritten functions / events:
+
+
+// public pure-virtual functions:
+
+// Base class for QVBoxLayout
+
+// constructors:
+
+// Class: QVBoxLayout
+// Function:
+// Parameters: 1
+// preceding Parameters: -1
+
+// Class: QVBoxLayout
+// Function:
+// Parameters: 0
+// preceding Parameters: 1
+
+// protected overwritten functions / events and their public invokable counterparts:
+
+
+// public virtual overwritten functions / events:
+
+
+// public pure-virtual functions:

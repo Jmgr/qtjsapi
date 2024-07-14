@@ -1,1129 +1,1129 @@
 
-  // Auto generated
-  
-    #ifndef QPALETTE_H_WRAPPER
-    #define QPALETTE_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QPALETTE_H_WRAPPER
+#define QPALETTE_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QVariant>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QPalette>
-      
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QPalette
-    class QTJSAPI_EXPORT QPalette_Wrapper : public RJSWrapperObj {
+// include header:
+//#include "header_h.h"
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
+#include "../RJSHelper.h"
 
-    private:
-      // disable copy constructor:
-      QPalette_Wrapper(const QPalette_Wrapper&);
 
-    public:
-      // initialization of QPalette:
-      static void init(RJSApi& handler);
+#include "RJSWrapperObj.h"
 
-      
-        static QPalette* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+#include <QVariant>
 
-          // hook for modules to cast from other types to base QPalette:
-          for (int i=0; i<basecasters_QPalette.length(); i++) {
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QPalette>
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QPalette
+class QTJSAPI_EXPORT QPalette_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+
+private:
+    // disable copy constructor:
+    QPalette_Wrapper(const QPalette_Wrapper&);
+
+public:
+    // initialization of QPalette:
+    static void init(RJSApi& handler);
+
+
+    static QPalette* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QPalette:
+        for (int i=0; i<basecasters_QPalette.length(); i++) {
             RJSBasecaster_QPalette* basecaster = basecasters_QPalette[i];
             QPalette* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QPalette:
-          if (t==RJSType_QPalette::getIdStatic()) {
+        // object is a pointer to base class QPalette:
+        if (t==RJSType_QPalette::getIdStatic()) {
             return (QPalette*)vp;
-          }
-
-          qWarning() << "QPalette_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QPalette* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QPalette*: wrapper wraps NULL";
-          }
+        qWarning() << "QPalette_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QPalette* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QPalette*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QPalette* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QPalette*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum ColorGroup {
-    Active = QPalette::Active,
-Disabled = QPalette::Disabled,
-Inactive = QPalette::Inactive,
-NColorGroups = QPalette::NColorGroups,
-Current = QPalette::Current,
-All = QPalette::All,
-Normal = QPalette::Normal,
 
-  };
-  Q_ENUM(ColorGroup)
+        QPalette* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QPalette*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
 
-  enum ColorRole {
-    WindowText = QPalette::WindowText,
-Button = QPalette::Button,
-Light = QPalette::Light,
-Midlight = QPalette::Midlight,
-Dark = QPalette::Dark,
-Mid = QPalette::Mid,
-Text = QPalette::Text,
-BrightText = QPalette::BrightText,
-ButtonText = QPalette::ButtonText,
-Base = QPalette::Base,
-Window = QPalette::Window,
-Shadow = QPalette::Shadow,
-Highlight = QPalette::Highlight,
-HighlightedText = QPalette::HighlightedText,
-Link = QPalette::Link,
-LinkVisited = QPalette::LinkVisited,
-AlternateBase = QPalette::AlternateBase,
-NoRole = QPalette::NoRole,
-ToolTipBase = QPalette::ToolTipBase,
-ToolTipText = QPalette::ToolTipText,
-PlaceholderText = QPalette::PlaceholderText,
-NColorRoles = QPalette::NColorRoles,
+    // enums:
 
-  };
-  Q_ENUM(ColorRole)
+    enum ColorGroup {
+        Active = QPalette::Active,
+        Disabled = QPalette::Disabled,
+        Inactive = QPalette::Inactive,
+        NColorGroups = QPalette::NColorGroups,
+        Current = QPalette::Current,
+        All = QPalette::All,
+        Normal = QPalette::Normal,
+
+    };
+    Q_ENUM(ColorGroup)
+
+    enum ColorRole {
+        WindowText = QPalette::WindowText,
+        Button = QPalette::Button,
+        Light = QPalette::Light,
+        Midlight = QPalette::Midlight,
+        Dark = QPalette::Dark,
+        Mid = QPalette::Mid,
+        Text = QPalette::Text,
+        BrightText = QPalette::BrightText,
+        ButtonText = QPalette::ButtonText,
+        Base = QPalette::Base,
+        Window = QPalette::Window,
+        Shadow = QPalette::Shadow,
+        Highlight = QPalette::Highlight,
+        HighlightedText = QPalette::HighlightedText,
+        Link = QPalette::Link,
+        LinkVisited = QPalette::LinkVisited,
+        AlternateBase = QPalette::AlternateBase,
+        NoRole = QPalette::NoRole,
+        ToolTipBase = QPalette::ToolTipBase,
+        ToolTipText = QPalette::ToolTipText,
+        PlaceholderText = QPalette::PlaceholderText,
+        NColorRoles = QPalette::NColorRoles,
+
+    };
+    Q_ENUM(ColorRole)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QPalette_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QPalette_Wrapper(RJSApi& h, QPalette* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QPalette_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QPalette_Wrapper(RJSApi& h, QPalette* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QPalette_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QPalette
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 9
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QPalette_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QPalette_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a5
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a6
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a7
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a8
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a9
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+          ,
+        const QJSValue&
+        a5
+        = QJSValue()
+          ,
+        const QJSValue&
+        a6
+        = QJSValue()
+          ,
+        const QJSValue&
+        a7
+        = QJSValue()
+          ,
+        const QJSValue&
+        a8
+        = QJSValue()
+          ,
+        const QJSValue&
+        a9
+        = QJSValue()
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QPalette
     // Function: swap
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  swap
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    swap
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPalette
     // Function: currentColorGroup
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  currentColorGroup
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    currentColorGroup
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: setCurrentColorGroup
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCurrentColorGroup
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCurrentColorGroup
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPalette
     // Function: color
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  color
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    color
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: brush
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  brush
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    brush
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: setColor
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setColor
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setColor
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPalette
     // Function: setBrush
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 3
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBrush
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBrush
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPalette
     // Function: isBrushSet
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isBrushSet
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isBrushSet
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: setColorGroup
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 10
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setColorGroup
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a5
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a6
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a7
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a8
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a9
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a10
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setColorGroup
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+          ,
+        const QJSValue&
+        a5
+        = QJSValue()
+          ,
+        const QJSValue&
+        a6
+        = QJSValue()
+          ,
+        const QJSValue&
+        a7
+        = QJSValue()
+          ,
+        const QJSValue&
+        a8
+        = QJSValue()
+          ,
+        const QJSValue&
+        a9
+        = QJSValue()
+          ,
+        const QJSValue&
+        a10
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QPalette
     // Function: isEqual
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isEqual
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isEqual
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: windowText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  windowText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    windowText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: button
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  button
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    button
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: light
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  light
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    light
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: dark
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  dark
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    dark
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: mid
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  mid
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    mid
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: text
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  text
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    text
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: base
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  base
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    base
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: alternateBase
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  alternateBase
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    alternateBase
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: toolTipBase
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTipBase
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTipBase
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: toolTipText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  toolTipText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    toolTipText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: window
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  window
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    window
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: midlight
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  midlight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    midlight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: brightText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  brightText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    brightText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: buttonText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  buttonText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    buttonText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: shadow
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  shadow
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    shadow
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: highlight
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  highlight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    highlight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: highlightedText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  highlightedText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    highlightedText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: link
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  link
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    link
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: linkVisited
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  linkVisited
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    linkVisited
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: placeholderText
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  placeholderText
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    placeholderText
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: isCopyOf
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isCopyOf
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isCopyOf
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: cacheKey
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cacheKey
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    cacheKey
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QPalette
     // Function: resolve
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resolve
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    resolve
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QPalette::getIdStatic();
+    )
+
+    const
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return false;
-            
-        }
+    }
 
-        // get wrapped object:
-        QPalette* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QPalette::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return false;
+
+    }
+
+    // get wrapped object:
+    QPalette* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QPalette* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QPalette* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QPalette* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QPalette*> basecasters_QPalette;
 
-      public:
-        static void registerBasecaster_QPalette(RJSBasecaster_QPalette* bc) {
-          basecasters_QPalette.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QPalette* wrapped;
 
-    Q_DECLARE_METATYPE(QPalette_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QPalette_Wrapper, "org.qcad.QPalette_Wrapper")
 
-  
-  #endif
-  
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QPalette*> basecasters_QPalette;
+
+public:
+    static void registerBasecaster_QPalette(RJSBasecaster_QPalette* bc) {
+        basecasters_QPalette.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QPalette_Wrapper*)
+
+Q_DECLARE_INTERFACE(QPalette_Wrapper, "org.qcad.QPalette_Wrapper")
+
+
+#endif
+

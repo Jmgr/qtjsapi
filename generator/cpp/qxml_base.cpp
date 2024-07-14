@@ -1,56 +1,56 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  // include header:
-  #include "qxml_base.h"
-  //#include "qxml_wrapper.h"
-  //#include "header_cpp.h"
-    
-    // Base class for QXmlDefaultHandler
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-    // constructors:
-    
-  // Class: QXmlDefaultHandler
-  // Function: 
-  // Parameters: 0
-  // preceding Parameters: -1
+// include header:
+#include "qxml_base.h"
+//#include "qxml_wrapper.h"
+//#include "header_cpp.h"
 
-      // protected overwritten functions / events and their public invokable counterparts:
-      
+// Base class for QXmlDefaultHandler
 
-      // public virtual overwritten functions / events:
-      void QXmlDefaultHandler_Base::setDocumentLocator(
-      QXmlLocator* locator
-    ) 
-    
-    {
+// constructors:
 
-      //qDebug() << "QXmlDefaultHandler_Base::setDocumentLocator()";
+// Class: QXmlDefaultHandler
+// Function:
+// Parameters: 0
+// preceding Parameters: -1
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+// protected overwritten functions / events and their public invokable counterparts:
 
-      QJSEngine* engine = handler.getEngine();
 
-      //QJSValue f = self.prototype().property("setDocumentLocator");
-      QJSValue f = self.property("setDocumentLocator");
-      if (f.isCallable() /*&& !recFlag*/) {
+// public virtual overwritten functions / events:
+void QXmlDefaultHandler_Base::setDocumentLocator(
+    QXmlLocator* locator
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::setDocumentLocator()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("setDocumentLocator");
+    QJSValue f = self.property("setDocumentLocator");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
 
-  args << RJSHelper::cpp2js_QXmlLocator(
-    handler, 
-    // non-copyable: false
-locator
-  );
+
+        args << RJSHelper::cpp2js_QXmlLocator(
+                 handler,
+                 // non-copyable: false
+                 locator
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -60,10 +60,10 @@ locator
         QJSValue res = engine->evaluate("__self__.setDocumentLocator.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -73,47 +73,47 @@ locator
         //  engine->throwError("exception in: QXmlDefaultHandler::setDocumentLocator:" + res.toString());
         //}
 
-        
-            // void:
-            return;
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::setDocumentLocator"));
-      //}
+        // void:
+        return;
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::setDocumentLocator(
-            locator
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::startDocument(
-      
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::setDocumentLocator"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::startDocument()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::setDocumentLocator(
+               locator
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("startDocument");
-      QJSValue f = self.property("startDocument");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::startDocument(
+
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::startDocument()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("startDocument");
+    QJSValue f = self.property("startDocument");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
+
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -123,10 +123,10 @@ locator
         QJSValue res = engine->evaluate("__self__.startDocument.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -136,46 +136,46 @@ locator
         //  engine->throwError("exception in: QXmlDefaultHandler::startDocument:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startDocument"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::startDocument(
-            
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::endDocument(
-      
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startDocument"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::endDocument()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::startDocument(
 
-      QJSEngine* engine = handler.getEngine();
+           );
 
-      //QJSValue f = self.prototype().property("endDocument");
-      QJSValue f = self.property("endDocument");
-      if (f.isCallable() /*&& !recFlag*/) {
+}
+
+bool QXmlDefaultHandler_Base::endDocument(
+
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::endDocument()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("endDocument");
+    QJSValue f = self.property("endDocument");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
+
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -185,10 +185,10 @@ locator
         QJSValue res = engine->evaluate("__self__.endDocument.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -198,60 +198,60 @@ locator
         //  engine->throwError("exception in: QXmlDefaultHandler::endDocument:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endDocument"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::endDocument(
-            
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::startPrefixMapping(
-      const QString& prefix, const QString& uri
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endDocument"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::startPrefixMapping()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::endDocument(
 
-      QJSEngine* engine = handler.getEngine();
+           );
 
-      //QJSValue f = self.prototype().property("startPrefixMapping");
-      QJSValue f = self.property("startPrefixMapping");
-      if (f.isCallable() /*&& !recFlag*/) {
+}
+
+bool QXmlDefaultHandler_Base::startPrefixMapping(
+    const QString& prefix, const QString& uri
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::startPrefixMapping()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("startPrefixMapping");
+    QJSValue f = self.property("startPrefixMapping");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-prefix
-  );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-uri
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 prefix
+             );
+
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 uri
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -261,10 +261,10 @@ uri
         QJSValue res = engine->evaluate("__self__.startPrefixMapping.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -274,53 +274,53 @@ uri
         //  engine->throwError("exception in: QXmlDefaultHandler::startPrefixMapping:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startPrefixMapping"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::startPrefixMapping(
-            prefix, uri
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::endPrefixMapping(
-      const QString& prefix
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startPrefixMapping"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::endPrefixMapping()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::startPrefixMapping(
+               prefix, uri
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("endPrefixMapping");
-      QJSValue f = self.property("endPrefixMapping");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::endPrefixMapping(
+    const QString& prefix
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::endPrefixMapping()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("endPrefixMapping");
+    QJSValue f = self.property("endPrefixMapping");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-prefix
-  );
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 prefix
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -330,10 +330,10 @@ prefix
         QJSValue res = engine->evaluate("__self__.endPrefixMapping.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -343,74 +343,74 @@ prefix
         //  engine->throwError("exception in: QXmlDefaultHandler::endPrefixMapping:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endPrefixMapping"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::endPrefixMapping(
-            prefix
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::startElement(
-      const QString& namespaceURI, const QString& localName, const QString& qName, const QXmlAttributes& atts
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endPrefixMapping"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::startElement()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::endPrefixMapping(
+               prefix
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("startElement");
-      QJSValue f = self.property("startElement");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::startElement(
+    const QString& namespaceURI, const QString& localName, const QString& qName, const QXmlAttributes& atts
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::startElement()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("startElement");
+    QJSValue f = self.property("startElement");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-namespaceURI
-  );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-localName
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 namespaceURI
+             );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-qName
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 localName
+             );
 
 
-  args << RJSHelper::cpp2js_QXmlAttributes(
-    handler, 
-    // non-copyable: false
-atts
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 qName
+             );
+
+
+        args << RJSHelper::cpp2js_QXmlAttributes(
+                 handler,
+                 // non-copyable: false
+                 atts
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -420,10 +420,10 @@ atts
         QJSValue res = engine->evaluate("__self__.startElement.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -433,67 +433,67 @@ atts
         //  engine->throwError("exception in: QXmlDefaultHandler::startElement:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startElement"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::startElement(
-            namespaceURI, localName, qName, atts
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::endElement(
-      const QString& namespaceURI, const QString& localName, const QString& qName
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startElement"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::endElement()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::startElement(
+               namespaceURI, localName, qName, atts
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("endElement");
-      QJSValue f = self.property("endElement");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::endElement(
+    const QString& namespaceURI, const QString& localName, const QString& qName
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::endElement()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("endElement");
+    QJSValue f = self.property("endElement");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-namespaceURI
-  );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-localName
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 namespaceURI
+             );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-qName
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 localName
+             );
+
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 qName
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -503,10 +503,10 @@ qName
         QJSValue res = engine->evaluate("__self__.endElement.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -516,53 +516,53 @@ qName
         //  engine->throwError("exception in: QXmlDefaultHandler::endElement:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endElement"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::endElement(
-            namespaceURI, localName, qName
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::characters(
-      const QString& ch
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endElement"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::characters()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::endElement(
+               namespaceURI, localName, qName
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("characters");
-      QJSValue f = self.property("characters");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::characters(
+    const QString& ch
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::characters()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("characters");
+    QJSValue f = self.property("characters");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-ch
-  );
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 ch
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -572,10 +572,10 @@ ch
         QJSValue res = engine->evaluate("__self__.characters.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -585,53 +585,53 @@ ch
         //  engine->throwError("exception in: QXmlDefaultHandler::characters:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::characters"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::characters(
-            ch
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::ignorableWhitespace(
-      const QString& ch
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::characters"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::ignorableWhitespace()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::characters(
+               ch
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("ignorableWhitespace");
-      QJSValue f = self.property("ignorableWhitespace");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::ignorableWhitespace(
+    const QString& ch
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::ignorableWhitespace()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("ignorableWhitespace");
+    QJSValue f = self.property("ignorableWhitespace");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-ch
-  );
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 ch
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -641,10 +641,10 @@ ch
         QJSValue res = engine->evaluate("__self__.ignorableWhitespace.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -654,60 +654,60 @@ ch
         //  engine->throwError("exception in: QXmlDefaultHandler::ignorableWhitespace:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::ignorableWhitespace"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::ignorableWhitespace(
-            ch
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::processingInstruction(
-      const QString& target, const QString& data
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::ignorableWhitespace"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::processingInstruction()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::ignorableWhitespace(
+               ch
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("processingInstruction");
-      QJSValue f = self.property("processingInstruction");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::processingInstruction(
+    const QString& target, const QString& data
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::processingInstruction()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("processingInstruction");
+    QJSValue f = self.property("processingInstruction");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-target
-  );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-data
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 target
+             );
+
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 data
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -717,10 +717,10 @@ data
         QJSValue res = engine->evaluate("__self__.processingInstruction.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -730,53 +730,53 @@ data
         //  engine->throwError("exception in: QXmlDefaultHandler::processingInstruction:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::processingInstruction"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::processingInstruction(
-            target, data
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::skippedEntity(
-      const QString& name
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::processingInstruction"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::skippedEntity()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::processingInstruction(
+               target, data
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("skippedEntity");
-      QJSValue f = self.property("skippedEntity");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::skippedEntity(
+    const QString& name
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::skippedEntity()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("skippedEntity");
+    QJSValue f = self.property("skippedEntity");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-name
-  );
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 name
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -786,10 +786,10 @@ name
         QJSValue res = engine->evaluate("__self__.skippedEntity.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -799,67 +799,67 @@ name
         //  engine->throwError("exception in: QXmlDefaultHandler::skippedEntity:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::skippedEntity"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::skippedEntity(
-            name
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::notationDecl(
-      const QString& name, const QString& publicId, const QString& systemId
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::skippedEntity"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::notationDecl()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::skippedEntity(
+               name
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("notationDecl");
-      QJSValue f = self.property("notationDecl");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::notationDecl(
+    const QString& name, const QString& publicId, const QString& systemId
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::notationDecl()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("notationDecl");
+    QJSValue f = self.property("notationDecl");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-name
-  );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-publicId
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 name
+             );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-systemId
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 publicId
+             );
+
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 systemId
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -869,10 +869,10 @@ systemId
         QJSValue res = engine->evaluate("__self__.notationDecl.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -882,74 +882,74 @@ systemId
         //  engine->throwError("exception in: QXmlDefaultHandler::notationDecl:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::notationDecl"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::notationDecl(
-            name, publicId, systemId
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::unparsedEntityDecl(
-      const QString& name, const QString& publicId, const QString& systemId, const QString& notationName
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::notationDecl"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::unparsedEntityDecl()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::notationDecl(
+               name, publicId, systemId
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("unparsedEntityDecl");
-      QJSValue f = self.property("unparsedEntityDecl");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::unparsedEntityDecl(
+    const QString& name, const QString& publicId, const QString& systemId, const QString& notationName
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::unparsedEntityDecl()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("unparsedEntityDecl");
+    QJSValue f = self.property("unparsedEntityDecl");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-name
-  );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-publicId
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 name
+             );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-systemId
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 publicId
+             );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-notationName
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 systemId
+             );
+
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 notationName
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -959,10 +959,10 @@ notationName
         QJSValue res = engine->evaluate("__self__.unparsedEntityDecl.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -972,67 +972,67 @@ notationName
         //  engine->throwError("exception in: QXmlDefaultHandler::unparsedEntityDecl:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::unparsedEntityDecl"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::unparsedEntityDecl(
-            name, publicId, systemId, notationName
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::startDTD(
-      const QString& name, const QString& publicId, const QString& systemId
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::unparsedEntityDecl"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::startDTD()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::unparsedEntityDecl(
+               name, publicId, systemId, notationName
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("startDTD");
-      QJSValue f = self.property("startDTD");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::startDTD(
+    const QString& name, const QString& publicId, const QString& systemId
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::startDTD()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("startDTD");
+    QJSValue f = self.property("startDTD");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-name
-  );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-publicId
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 name
+             );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-systemId
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 publicId
+             );
+
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 systemId
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -1042,10 +1042,10 @@ systemId
         QJSValue res = engine->evaluate("__self__.startDTD.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -1055,46 +1055,46 @@ systemId
         //  engine->throwError("exception in: QXmlDefaultHandler::startDTD:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startDTD"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::startDTD(
-            name, publicId, systemId
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::endDTD(
-      
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startDTD"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::endDTD()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::startDTD(
+               name, publicId, systemId
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("endDTD");
-      QJSValue f = self.property("endDTD");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::endDTD(
+
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::endDTD()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("endDTD");
+    QJSValue f = self.property("endDTD");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
+
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -1104,10 +1104,10 @@ systemId
         QJSValue res = engine->evaluate("__self__.endDTD.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -1117,53 +1117,53 @@ systemId
         //  engine->throwError("exception in: QXmlDefaultHandler::endDTD:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endDTD"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::endDTD(
-            
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::startEntity(
-      const QString& name
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endDTD"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::startEntity()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::endDTD(
 
-      QJSEngine* engine = handler.getEngine();
+           );
 
-      //QJSValue f = self.prototype().property("startEntity");
-      QJSValue f = self.property("startEntity");
-      if (f.isCallable() /*&& !recFlag*/) {
+}
+
+bool QXmlDefaultHandler_Base::startEntity(
+    const QString& name
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::startEntity()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("startEntity");
+    QJSValue f = self.property("startEntity");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-name
-  );
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 name
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -1173,10 +1173,10 @@ name
         QJSValue res = engine->evaluate("__self__.startEntity.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -1186,53 +1186,53 @@ name
         //  engine->throwError("exception in: QXmlDefaultHandler::startEntity:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startEntity"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::startEntity(
-            name
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::endEntity(
-      const QString& name
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startEntity"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::endEntity()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::startEntity(
+               name
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("endEntity");
-      QJSValue f = self.property("endEntity");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::endEntity(
+    const QString& name
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::endEntity()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("endEntity");
+    QJSValue f = self.property("endEntity");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-name
-  );
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 name
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -1242,10 +1242,10 @@ name
         QJSValue res = engine->evaluate("__self__.endEntity.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -1255,46 +1255,46 @@ name
         //  engine->throwError("exception in: QXmlDefaultHandler::endEntity:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endEntity"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::endEntity(
-            name
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::startCDATA(
-      
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endEntity"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::startCDATA()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::endEntity(
+               name
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("startCDATA");
-      QJSValue f = self.property("startCDATA");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::startCDATA(
+
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::startCDATA()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("startCDATA");
+    QJSValue f = self.property("startCDATA");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
+
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -1304,10 +1304,10 @@ name
         QJSValue res = engine->evaluate("__self__.startCDATA.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -1317,46 +1317,46 @@ name
         //  engine->throwError("exception in: QXmlDefaultHandler::startCDATA:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startCDATA"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::startCDATA(
-            
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::endCDATA(
-      
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::startCDATA"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::endCDATA()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::startCDATA(
 
-      QJSEngine* engine = handler.getEngine();
+           );
 
-      //QJSValue f = self.prototype().property("endCDATA");
-      QJSValue f = self.property("endCDATA");
-      if (f.isCallable() /*&& !recFlag*/) {
+}
+
+bool QXmlDefaultHandler_Base::endCDATA(
+
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::endCDATA()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("endCDATA");
+    QJSValue f = self.property("endCDATA");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
+
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -1366,10 +1366,10 @@ name
         QJSValue res = engine->evaluate("__self__.endCDATA.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -1379,53 +1379,53 @@ name
         //  engine->throwError("exception in: QXmlDefaultHandler::endCDATA:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endCDATA"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::endCDATA(
-            
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::comment(
-      const QString& ch
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::endCDATA"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::comment()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::endCDATA(
 
-      QJSEngine* engine = handler.getEngine();
+           );
 
-      //QJSValue f = self.prototype().property("comment");
-      QJSValue f = self.property("comment");
-      if (f.isCallable() /*&& !recFlag*/) {
+}
+
+bool QXmlDefaultHandler_Base::comment(
+    const QString& ch
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::comment()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("comment");
+    QJSValue f = self.property("comment");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-ch
-  );
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 ch
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -1435,10 +1435,10 @@ ch
         QJSValue res = engine->evaluate("__self__.comment.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -1448,81 +1448,81 @@ ch
         //  engine->throwError("exception in: QXmlDefaultHandler::comment:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::comment"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::comment(
-            ch
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::attributeDecl(
-      const QString& eName, const QString& aName, const QString& type, const QString& valueDefault, const QString& value
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::comment"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::attributeDecl()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::comment(
+               ch
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("attributeDecl");
-      QJSValue f = self.property("attributeDecl");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::attributeDecl(
+    const QString& eName, const QString& aName, const QString& type, const QString& valueDefault, const QString& value
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::attributeDecl()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("attributeDecl");
+    QJSValue f = self.property("attributeDecl");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-eName
-  );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-aName
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 eName
+             );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-type
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 aName
+             );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-valueDefault
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 type
+             );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-value
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 valueDefault
+             );
+
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 value
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -1532,10 +1532,10 @@ value
         QJSValue res = engine->evaluate("__self__.attributeDecl.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -1545,60 +1545,60 @@ value
         //  engine->throwError("exception in: QXmlDefaultHandler::attributeDecl:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::attributeDecl"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::attributeDecl(
-            eName, aName, type, valueDefault, value
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::internalEntityDecl(
-      const QString& name, const QString& value
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::attributeDecl"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::internalEntityDecl()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::attributeDecl(
+               eName, aName, type, valueDefault, value
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("internalEntityDecl");
-      QJSValue f = self.property("internalEntityDecl");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::internalEntityDecl(
+    const QString& name, const QString& value
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::internalEntityDecl()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("internalEntityDecl");
+    QJSValue f = self.property("internalEntityDecl");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-name
-  );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-value
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 name
+             );
+
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 value
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -1608,10 +1608,10 @@ value
         QJSValue res = engine->evaluate("__self__.internalEntityDecl.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -1621,67 +1621,67 @@ value
         //  engine->throwError("exception in: QXmlDefaultHandler::internalEntityDecl:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::internalEntityDecl"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::internalEntityDecl(
-            name, value
-          );
-        
     }
 
-  bool QXmlDefaultHandler_Base::externalEntityDecl(
-      const QString& name, const QString& publicId, const QString& systemId
-    ) 
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::internalEntityDecl"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::externalEntityDecl()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::internalEntityDecl(
+               name, value
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("externalEntityDecl");
-      QJSValue f = self.property("externalEntityDecl");
-      if (f.isCallable() /*&& !recFlag*/) {
+bool QXmlDefaultHandler_Base::externalEntityDecl(
+    const QString& name, const QString& publicId, const QString& systemId
+)
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::externalEntityDecl()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("externalEntityDecl");
+    QJSValue f = self.property("externalEntityDecl");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
-
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-name
-  );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-publicId
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 name
+             );
 
 
-  args << RJSHelper::cpp2js_QString(
-    handler, 
-    // non-copyable: false
-systemId
-  );
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 publicId
+             );
+
+
+        args << RJSHelper::cpp2js_QString(
+                 handler,
+                 // non-copyable: false
+                 systemId
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -1691,10 +1691,10 @@ systemId
         QJSValue res = engine->evaluate("__self__.externalEntityDecl.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -1704,48 +1704,48 @@ systemId
         //  engine->throwError("exception in: QXmlDefaultHandler::externalEntityDecl:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_bool(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::externalEntityDecl"));
-      //}
+        return RJSHelper::js2cpp_bool(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::externalEntityDecl(
-            name, publicId, systemId
-          );
-        
     }
 
-  QString QXmlDefaultHandler_Base::errorString(
-      
-    ) 
-    
-      const
-    
-    {
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::externalEntityDecl"));
+    //}
 
-      //qDebug() << "QXmlDefaultHandler_Base::errorString()";
 
-      // make sure we don't call same function (recursion):
-      // only call JS function implementation
+    // call implementation of original class:
+    return QXmlDefaultHandler::externalEntityDecl(
+               name, publicId, systemId
+           );
 
-      QJSEngine* engine = handler.getEngine();
+}
 
-      //QJSValue f = self.prototype().property("errorString");
-      QJSValue f = self.property("errorString");
-      if (f.isCallable() /*&& !recFlag*/) {
+QString QXmlDefaultHandler_Base::errorString(
+
+)
+
+const
+
+{
+
+    //qDebug() << "QXmlDefaultHandler_Base::errorString()";
+
+    // make sure we don't call same function (recursion):
+    // only call JS function implementation
+
+    QJSEngine* engine = handler.getEngine();
+
+    //QJSValue f = self.prototype().property("errorString");
+    QJSValue f = self.property("errorString");
+    if (f.isCallable() /*&& !recFlag*/) {
         QJSValueList args;
-        
+
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -1755,10 +1755,10 @@ systemId
         QJSValue res = engine->evaluate("__self__.errorString.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
         // does not provide back trace in case of error:
@@ -1768,31 +1768,30 @@ systemId
         //  engine->throwError("exception in: QXmlDefaultHandler::errorString:" + res.toString());
         //}
 
-        
-            return RJSHelper::js2cpp_QString(handler, res);
-          
-      }
 
-      //if (!recFlag) {
-        // function not implemented in JS: exception
-        engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::errorString"));
-      //}
+        return RJSHelper::js2cpp_QString(handler, res);
 
-      
-          // call implementation of original class:
-          return QXmlDefaultHandler::errorString(
-            
-          );
-        
     }
 
-  
+    //if (!recFlag) {
+    // function not implemented in JS: exception
+    engine->throwError(QString("function not implemented in JS class: QXmlDefaultHandler::errorString"));
+    //}
 
-      // public pure-virtual functions:
-      
-  // TODO: fix (warning)
-  
-  // TODO: fix (error)
-  
-  // TODO: fix (fatalError)
-  
+
+    // call implementation of original class:
+    return QXmlDefaultHandler::errorString(
+
+           );
+
+}
+
+
+
+// public pure-virtual functions:
+
+// TODO: fix (warning)
+
+// TODO: fix (error)
+
+// TODO: fix (fatalError)

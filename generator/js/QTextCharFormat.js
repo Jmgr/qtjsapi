@@ -1,131 +1,129 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QTextCharFormat() {
-        
+// class constructor:
+function QTextCharFormat() {
 
-        // should be QTextCharFormat_BaseJs.call(this, engine):
-        //QTextCharFormat.prototype = new QTextCharFormat_BaseJs(engine);
 
-        var wrapper;
+    // should be QTextCharFormat_BaseJs.call(this, engine):
+    //QTextCharFormat.prototype = new QTextCharFormat_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QTextCharFormat.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QTextCharFormat.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextCharFormat);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QTextCharFormat);
             //}
-          }
-          else {
+        } else {
             qWarning("QTextCharFormat.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 0) {
-    
+
+    } else {
+
+        if (arguments.length == 0) {
+
             self = this;
             wrapper = new QTextCharFormat_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QTextCharFormat);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QTextCharFormat);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QTextCharFormat);
-  }
 
-  
-  else {
-    
-        print("QTextCharFormat(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QTextCharFormat);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QTextCharFormat(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QTextCharFormat.prototype = new QTextCharFormat_BaseJs(engine);
-      //QTextCharFormat.prototype = new QTextCharFormat_Wrapper(engine);
-      QTextCharFormat.prototype = new Object();
-
-      QTextCharFormat.prototype.toString = function() {
-          //return "QTextCharFormat [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QTextCharFormat [JS]";
-        };
-      QTextCharFormat.getObjectType = function() {
-        return RJSType_QTextCharFormat.getIdStatic();
-      };
-
-      QTextCharFormat.prototype.getObjectType = function() {
-        return RJSType_QTextCharFormat.getIdStatic();
-      };
-
-      QTextCharFormat.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QTextCharFormat.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QTextFormat.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: FormatType
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QTextCharFormat.prototype = new QTextCharFormat_BaseJs(engine);
+//QTextCharFormat.prototype = new QTextCharFormat_Wrapper(engine);
+QTextCharFormat.prototype = new Object();
+
+QTextCharFormat.prototype.toString = function() {
+    //return "QTextCharFormat [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QTextCharFormat [JS]";
+};
+QTextCharFormat.getObjectType = function() {
+    return RJSType_QTextCharFormat.getIdStatic();
+};
+
+QTextCharFormat.prototype.getObjectType = function() {
+    return RJSType_QTextCharFormat.getIdStatic();
+};
+
+QTextCharFormat.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QTextCharFormat.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QTextFormat.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: FormatType
 QTextCharFormat.InvalidFormat = QTextCharFormat_Wrapper.InvalidFormat;
 QTextCharFormat.BlockFormat = QTextCharFormat_Wrapper.BlockFormat;
 QTextCharFormat.CharFormat = QTextCharFormat_Wrapper.CharFormat;
@@ -133,7 +131,7 @@ QTextCharFormat.ListFormat = QTextCharFormat_Wrapper.ListFormat;
 QTextCharFormat.FrameFormat = QTextCharFormat_Wrapper.FrameFormat;
 QTextCharFormat.UserFormat = QTextCharFormat_Wrapper.UserFormat;
 
-  // enum: Property
+// enum: Property
 QTextCharFormat.ObjectIndex = QTextCharFormat_Wrapper.ObjectIndex;
 QTextCharFormat.CssFloat = QTextCharFormat_Wrapper.CssFloat;
 QTextCharFormat.LayoutDirection = QTextCharFormat_Wrapper.LayoutDirection;
@@ -245,19 +243,19 @@ QTextCharFormat.FullWidthSelection = QTextCharFormat_Wrapper.FullWidthSelection;
 QTextCharFormat.PageBreakPolicy = QTextCharFormat_Wrapper.PageBreakPolicy;
 QTextCharFormat.UserProperty = QTextCharFormat_Wrapper.UserProperty;
 
-  // enum: ObjectTypes
+// enum: ObjectTypes
 QTextCharFormat.NoObject = QTextCharFormat_Wrapper.NoObject;
 QTextCharFormat.ImageObject = QTextCharFormat_Wrapper.ImageObject;
 QTextCharFormat.TableObject = QTextCharFormat_Wrapper.TableObject;
 QTextCharFormat.TableCellObject = QTextCharFormat_Wrapper.TableCellObject;
 QTextCharFormat.UserObject = QTextCharFormat_Wrapper.UserObject;
 
-  // enum: PageBreakFlag
+// enum: PageBreakFlag
 QTextCharFormat.PageBreak_Auto = QTextCharFormat_Wrapper.PageBreak_Auto;
 QTextCharFormat.PageBreak_AlwaysBefore = QTextCharFormat_Wrapper.PageBreak_AlwaysBefore;
 QTextCharFormat.PageBreak_AlwaysAfter = QTextCharFormat_Wrapper.PageBreak_AlwaysAfter;
 
-  // enum: VerticalAlignment
+// enum: VerticalAlignment
 QTextCharFormat.AlignNormal = QTextCharFormat_Wrapper.AlignNormal;
 QTextCharFormat.AlignSuperScript = QTextCharFormat_Wrapper.AlignSuperScript;
 QTextCharFormat.AlignSubScript = QTextCharFormat_Wrapper.AlignSubScript;
@@ -266,7 +264,7 @@ QTextCharFormat.AlignTop = QTextCharFormat_Wrapper.AlignTop;
 QTextCharFormat.AlignBottom = QTextCharFormat_Wrapper.AlignBottom;
 QTextCharFormat.AlignBaseline = QTextCharFormat_Wrapper.AlignBaseline;
 
-  // enum: UnderlineStyle
+// enum: UnderlineStyle
 QTextCharFormat.NoUnderline = QTextCharFormat_Wrapper.NoUnderline;
 QTextCharFormat.SingleUnderline = QTextCharFormat_Wrapper.SingleUnderline;
 QTextCharFormat.DashUnderline = QTextCharFormat_Wrapper.DashUnderline;
@@ -276,30 +274,29 @@ QTextCharFormat.DashDotDotLine = QTextCharFormat_Wrapper.DashDotDotLine;
 QTextCharFormat.WaveUnderline = QTextCharFormat_Wrapper.WaveUnderline;
 QTextCharFormat.SpellCheckUnderline = QTextCharFormat_Wrapper.SpellCheckUnderline;
 
-  // enum: FontPropertiesInheritanceBehavior
+// enum: FontPropertiesInheritanceBehavior
 QTextCharFormat.FontPropertiesSpecifiedOnly = QTextCharFormat_Wrapper.FontPropertiesSpecifiedOnly;
 QTextCharFormat.FontPropertiesAll = QTextCharFormat_Wrapper.FontPropertiesAll;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QTextCharFormat.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QTextCharFormat.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QTextCharFormat.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QTextCharFormat.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

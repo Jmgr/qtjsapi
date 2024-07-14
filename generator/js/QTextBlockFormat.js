@@ -1,131 +1,129 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QTextBlockFormat() {
-        
+// class constructor:
+function QTextBlockFormat() {
 
-        // should be QTextBlockFormat_BaseJs.call(this, engine):
-        //QTextBlockFormat.prototype = new QTextBlockFormat_BaseJs(engine);
 
-        var wrapper;
+    // should be QTextBlockFormat_BaseJs.call(this, engine):
+    //QTextBlockFormat.prototype = new QTextBlockFormat_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QTextBlockFormat.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QTextBlockFormat.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextBlockFormat);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QTextBlockFormat);
             //}
-          }
-          else {
+        } else {
             qWarning("QTextBlockFormat.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 0) {
-    
+
+    } else {
+
+        if (arguments.length == 0) {
+
             self = this;
             wrapper = new QTextBlockFormat_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QTextBlockFormat);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QTextBlockFormat);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QTextBlockFormat);
-  }
 
-  
-  else {
-    
-        print("QTextBlockFormat(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QTextBlockFormat);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QTextBlockFormat(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QTextBlockFormat.prototype = new QTextBlockFormat_BaseJs(engine);
-      //QTextBlockFormat.prototype = new QTextBlockFormat_Wrapper(engine);
-      QTextBlockFormat.prototype = new Object();
-
-      QTextBlockFormat.prototype.toString = function() {
-          //return "QTextBlockFormat [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QTextBlockFormat [JS]";
-        };
-      QTextBlockFormat.getObjectType = function() {
-        return RJSType_QTextBlockFormat.getIdStatic();
-      };
-
-      QTextBlockFormat.prototype.getObjectType = function() {
-        return RJSType_QTextBlockFormat.getIdStatic();
-      };
-
-      QTextBlockFormat.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QTextBlockFormat.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QTextFormat.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: FormatType
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QTextBlockFormat.prototype = new QTextBlockFormat_BaseJs(engine);
+//QTextBlockFormat.prototype = new QTextBlockFormat_Wrapper(engine);
+QTextBlockFormat.prototype = new Object();
+
+QTextBlockFormat.prototype.toString = function() {
+    //return "QTextBlockFormat [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QTextBlockFormat [JS]";
+};
+QTextBlockFormat.getObjectType = function() {
+    return RJSType_QTextBlockFormat.getIdStatic();
+};
+
+QTextBlockFormat.prototype.getObjectType = function() {
+    return RJSType_QTextBlockFormat.getIdStatic();
+};
+
+QTextBlockFormat.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QTextBlockFormat.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QTextFormat.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: FormatType
 QTextBlockFormat.InvalidFormat = QTextBlockFormat_Wrapper.InvalidFormat;
 QTextBlockFormat.BlockFormat = QTextBlockFormat_Wrapper.BlockFormat;
 QTextBlockFormat.CharFormat = QTextBlockFormat_Wrapper.CharFormat;
@@ -133,7 +131,7 @@ QTextBlockFormat.ListFormat = QTextBlockFormat_Wrapper.ListFormat;
 QTextBlockFormat.FrameFormat = QTextBlockFormat_Wrapper.FrameFormat;
 QTextBlockFormat.UserFormat = QTextBlockFormat_Wrapper.UserFormat;
 
-  // enum: Property
+// enum: Property
 QTextBlockFormat.ObjectIndex = QTextBlockFormat_Wrapper.ObjectIndex;
 QTextBlockFormat.CssFloat = QTextBlockFormat_Wrapper.CssFloat;
 QTextBlockFormat.LayoutDirection = QTextBlockFormat_Wrapper.LayoutDirection;
@@ -245,19 +243,19 @@ QTextBlockFormat.FullWidthSelection = QTextBlockFormat_Wrapper.FullWidthSelectio
 QTextBlockFormat.PageBreakPolicy = QTextBlockFormat_Wrapper.PageBreakPolicy;
 QTextBlockFormat.UserProperty = QTextBlockFormat_Wrapper.UserProperty;
 
-  // enum: ObjectTypes
+// enum: ObjectTypes
 QTextBlockFormat.NoObject = QTextBlockFormat_Wrapper.NoObject;
 QTextBlockFormat.ImageObject = QTextBlockFormat_Wrapper.ImageObject;
 QTextBlockFormat.TableObject = QTextBlockFormat_Wrapper.TableObject;
 QTextBlockFormat.TableCellObject = QTextBlockFormat_Wrapper.TableCellObject;
 QTextBlockFormat.UserObject = QTextBlockFormat_Wrapper.UserObject;
 
-  // enum: PageBreakFlag
+// enum: PageBreakFlag
 QTextBlockFormat.PageBreak_Auto = QTextBlockFormat_Wrapper.PageBreak_Auto;
 QTextBlockFormat.PageBreak_AlwaysBefore = QTextBlockFormat_Wrapper.PageBreak_AlwaysBefore;
 QTextBlockFormat.PageBreak_AlwaysAfter = QTextBlockFormat_Wrapper.PageBreak_AlwaysAfter;
 
-  // enum: LineHeightTypes
+// enum: LineHeightTypes
 QTextBlockFormat.SingleHeight = QTextBlockFormat_Wrapper.SingleHeight;
 QTextBlockFormat.ProportionalHeight = QTextBlockFormat_Wrapper.ProportionalHeight;
 QTextBlockFormat.FixedHeight = QTextBlockFormat_Wrapper.FixedHeight;
@@ -265,25 +263,24 @@ QTextBlockFormat.MinimumHeight = QTextBlockFormat_Wrapper.MinimumHeight;
 QTextBlockFormat.LineDistanceHeight = QTextBlockFormat_Wrapper.LineDistanceHeight;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QTextBlockFormat.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QTextBlockFormat.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QTextBlockFormat.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QTextBlockFormat.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

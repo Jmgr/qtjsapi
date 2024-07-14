@@ -3,7 +3,6 @@
   <class_decl name="QTextDocument" />
   <class_decl name="QMenu" />
   <class_decl name="QMimeData" />
-  <class_decl name="QPagedPaintDevice" />
   <class_decl name="QRegularExpression" />
   <class name="QPlainTextEdit">
     <super_list>
@@ -356,13 +355,6 @@
     <function name="canPaste">
       <variant return-type="bool" const="true" access="public">
         <parameters />
-      </variant>
-    </function>
-    <function name="print">
-      <variant return-type="void" const="true" access="public">
-        <parameters>
-          <parameter const="false" type="QPagedPaintDevice" modifier="*" name="printer" />
-        </parameters>
       </variant>
     </function>
     <function name="blockCount">

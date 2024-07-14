@@ -1,234 +1,232 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QFont() {
-        
+// class constructor:
+function QFont() {
 
-        // should be QFont_BaseJs.call(this, engine):
-        //QFont.prototype = new QFont_BaseJs(engine);
 
-        var wrapper;
+    // should be QFont_BaseJs.call(this, engine):
+    //QFont.prototype = new QFont_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QFont.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QFont.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QFont);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QFont);
             //}
-          }
-          else {
+        } else {
             qWarning("QFont.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 4) {
-    
+
+    } else {
+
+        if (arguments.length >= 1 &&
+                arguments.length <= 4) {
+
             self = this;
             wrapper = new QFont_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2], arguments[3]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QFont);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QFont);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QFont);
-  }
 
-  
-  else 
-  
-      if (arguments.length >= 1 &&
-          arguments.length <= 4) {
-    
-            self = this;
-            wrapper = new QFont_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QFont);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QFont);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 2) {
-    
-            self = this;
-            wrapper = new QFont_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QFont);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QFont);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QFont_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QFont);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QFont);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QFont_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QFont);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QFont);
-  }
-
-  
-  else {
-    
-        print("QFont(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QFont);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length >= 1 &&
+                    arguments.length <= 4) {
+
+                self = this;
+                wrapper = new QFont_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0], arguments[1], arguments[2], arguments[3]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QFont);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QFont);
+            }
+
+
+            else
+
+                if (arguments.length == 2) {
+
+                    self = this;
+                    wrapper = new QFont_Wrapper(
+                        // RJSApi:
+                        handler
+                        , arguments[0], arguments[1]
+                        ////this.setWrapper(this.wrapper);
+                        //Object.setPrototypeOf(this, wrapper);
+                    );
+                    //wrapper.__WRAPPER__ = true;
+                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                    copyProperties(this, wrapper, QFont);
+
+                    //this.setWrapper(this.wrapper);
+
+
+
+                    //copyProperties(this, wrapper, QFont);
+                }
+
+
+                else
+
+                    if (arguments.length == 1) {
+
+                        self = this;
+                        wrapper = new QFont_Wrapper(
+                            // RJSApi:
+                            handler
+                            , arguments[0]
+                            ////this.setWrapper(this.wrapper);
+                            //Object.setPrototypeOf(this, wrapper);
+                        );
+                        //wrapper.__WRAPPER__ = true;
+                        Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                        copyProperties(this, wrapper, QFont);
+
+                        //this.setWrapper(this.wrapper);
+
+
+
+                        //copyProperties(this, wrapper, QFont);
+                    }
+
+
+                    else
+
+                        if (arguments.length == 0) {
+
+                            self = this;
+                            wrapper = new QFont_Wrapper(
+                                // RJSApi:
+                                handler
+
+                                ////this.setWrapper(this.wrapper);
+                                //Object.setPrototypeOf(this, wrapper);
+                            );
+                            //wrapper.__WRAPPER__ = true;
+                            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                            copyProperties(this, wrapper, QFont);
+
+                            //this.setWrapper(this.wrapper);
+
+
+
+                            //copyProperties(this, wrapper, QFont);
+                        }
+
+
+                        else {
+
+                            print("QFont(): wrong number / type of arguments");
+
+                            console.trace();
+                        }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QFont.prototype = new QFont_BaseJs(engine);
-      //QFont.prototype = new QFont_Wrapper(engine);
-      QFont.prototype = new Object();
-
-      
-        // function with alias name in CPP wrapper:
-        QFont.prototype.toString = function() {
-          return this.toStr.apply(this, arguments);
-        }
-      QFont.getObjectType = function() {
-        return RJSType_QFont.getIdStatic();
-      };
-
-      QFont.prototype.getObjectType = function() {
-        return RJSType_QFont.getIdStatic();
-      };
-
-      QFont.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QFont.getIdStatic()) {
-          return true;
-        }
-
-        
-
-        return false;
+//QFont.prototype = new QFont_BaseJs(engine);
+//QFont.prototype = new QFont_Wrapper(engine);
+QFont.prototype = new Object();
 
 
-        
-      };
+// function with alias name in CPP wrapper:
+QFont.prototype.toString = function() {
+    return this.toStr.apply(this, arguments);
+}
+QFont.getObjectType = function() {
+    return RJSType_QFont.getIdStatic();
+};
 
-      // enum values:
-      
-  // enum: StyleHint
+QFont.prototype.getObjectType = function() {
+    return RJSType_QFont.getIdStatic();
+};
+
+QFont.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QFont.getIdStatic()) {
+        return true;
+    }
+
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: StyleHint
 QFont.Helvetica = QFont_Wrapper.Helvetica;
 QFont.SansSerif = QFont_Wrapper.SansSerif;
 QFont.Times = QFont_Wrapper.Times;
@@ -243,7 +241,7 @@ QFont.Cursive = QFont_Wrapper.Cursive;
 QFont.Monospace = QFont_Wrapper.Monospace;
 QFont.Fantasy = QFont_Wrapper.Fantasy;
 
-  // enum: StyleStrategy
+// enum: StyleStrategy
 QFont.PreferDefault = QFont_Wrapper.PreferDefault;
 QFont.PreferBitmap = QFont_Wrapper.PreferBitmap;
 QFont.PreferDevice = QFont_Wrapper.PreferDevice;
@@ -257,13 +255,13 @@ QFont.NoSubpixelAntialias = QFont_Wrapper.NoSubpixelAntialias;
 QFont.PreferNoShaping = QFont_Wrapper.PreferNoShaping;
 QFont.NoFontMerging = QFont_Wrapper.NoFontMerging;
 
-  // enum: HintingPreference
+// enum: HintingPreference
 QFont.PreferDefaultHinting = QFont_Wrapper.PreferDefaultHinting;
 QFont.PreferNoHinting = QFont_Wrapper.PreferNoHinting;
 QFont.PreferVerticalHinting = QFont_Wrapper.PreferVerticalHinting;
 QFont.PreferFullHinting = QFont_Wrapper.PreferFullHinting;
 
-  // enum: Weight
+// enum: Weight
 QFont.Thin = QFont_Wrapper.Thin;
 QFont.ExtraLight = QFont_Wrapper.ExtraLight;
 QFont.Light = QFont_Wrapper.Light;
@@ -274,12 +272,12 @@ QFont.Bold = QFont_Wrapper.Bold;
 QFont.ExtraBold = QFont_Wrapper.ExtraBold;
 QFont.Black = QFont_Wrapper.Black;
 
-  // enum: Style
+// enum: Style
 QFont.StyleNormal = QFont_Wrapper.StyleNormal;
 QFont.StyleItalic = QFont_Wrapper.StyleItalic;
 QFont.StyleOblique = QFont_Wrapper.StyleOblique;
 
-  // enum: Stretch
+// enum: Stretch
 QFont.AnyStretch = QFont_Wrapper.AnyStretch;
 QFont.UltraCondensed = QFont_Wrapper.UltraCondensed;
 QFont.ExtraCondensed = QFont_Wrapper.ExtraCondensed;
@@ -291,18 +289,18 @@ QFont.Expanded = QFont_Wrapper.Expanded;
 QFont.ExtraExpanded = QFont_Wrapper.ExtraExpanded;
 QFont.UltraExpanded = QFont_Wrapper.UltraExpanded;
 
-  // enum: Capitalization
+// enum: Capitalization
 QFont.MixedCase = QFont_Wrapper.MixedCase;
 QFont.AllUppercase = QFont_Wrapper.AllUppercase;
 QFont.AllLowercase = QFont_Wrapper.AllLowercase;
 QFont.SmallCaps = QFont_Wrapper.SmallCaps;
 QFont.Capitalize = QFont_Wrapper.Capitalize;
 
-  // enum: SpacingType
+// enum: SpacingType
 QFont.PercentageSpacing = QFont_Wrapper.PercentageSpacing;
 QFont.AbsoluteSpacing = QFont_Wrapper.AbsoluteSpacing;
 
-  // enum: ResolveProperties
+// enum: ResolveProperties
 QFont.NoPropertiesResolved = QFont_Wrapper.NoPropertiesResolved;
 QFont.FamilyResolved = QFont_Wrapper.FamilyResolved;
 QFont.SizeResolved = QFont_Wrapper.SizeResolved;
@@ -325,277 +323,276 @@ QFont.FamiliesResolved = QFont_Wrapper.FamiliesResolved;
 QFont.AllPropertiesResolved = QFont_Wrapper.AllPropertiesResolved;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QFont.substitute = function() 
-          
-        {
-          //print("JS: QFont.substitute");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QFont_WrapperSingletonInstance.substitute(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QFont.substitute = function()
+
+{
+    //print("JS: QFont.substitute");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QFont_WrapperSingletonInstance.substitute(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QFont);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFont.substitute(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QFont.substitutes = function() 
-          
-        {
-          //print("JS: QFont.substitutes");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QFont_WrapperSingletonInstance.substitutes(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QFont.substitutes = function()
+
+{
+    //print("JS: QFont.substitutes");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QFont_WrapperSingletonInstance.substitutes(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QFont);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFont.substitutes(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QFont.substitutions = function() 
-          
-        {
-          //print("JS: QFont.substitutions");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFont_WrapperSingletonInstance.substitutions(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QFont.substitutions = function()
+
+{
+    //print("JS: QFont.substitutions");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QFont_WrapperSingletonInstance.substitutions(
+
+               );
+
 
         //copyProperties(this, wrapper, QFont);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFont.substitutions(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QFont.insertSubstitution = function() 
-          
-        {
-          //print("JS: QFont.insertSubstitution");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QFont_WrapperSingletonInstance.insertSubstitution(
-                  arguments[0], arguments[1]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QFont.insertSubstitution = function()
+
+{
+    //print("JS: QFont.insertSubstitution");
+
+    if (arguments.length == 2) {
+
+        // calling static wrapper:
+        return QFont_WrapperSingletonInstance.insertSubstitution(
+                   arguments[0], arguments[1]
+               );
+
 
         //copyProperties(this, wrapper, QFont);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFont.insertSubstitution(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QFont.insertSubstitutions = function() 
-          
-        {
-          //print("JS: QFont.insertSubstitutions");
-          
-      if (arguments.length == 2) {
-    
-                // calling static wrapper:
-                return QFont_WrapperSingletonInstance.insertSubstitutions(
-                  arguments[0], arguments[1]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QFont.insertSubstitutions = function()
+
+{
+    //print("JS: QFont.insertSubstitutions");
+
+    if (arguments.length == 2) {
+
+        // calling static wrapper:
+        return QFont_WrapperSingletonInstance.insertSubstitutions(
+                   arguments[0], arguments[1]
+               );
+
 
         //copyProperties(this, wrapper, QFont);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFont.insertSubstitutions(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QFont.removeSubstitutions = function() 
-          
-        {
-          //print("JS: QFont.removeSubstitutions");
-          
-      if (arguments.length == 1) {
-    
-                // calling static wrapper:
-                return QFont_WrapperSingletonInstance.removeSubstitutions(
-                  arguments[0]
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QFont.removeSubstitutions = function()
+
+{
+    //print("JS: QFont.removeSubstitutions");
+
+    if (arguments.length == 1) {
+
+        // calling static wrapper:
+        return QFont_WrapperSingletonInstance.removeSubstitutions(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QFont);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFont.removeSubstitutions(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QFont.initialize = function() 
-          
-        {
-          //print("JS: QFont.initialize");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFont_WrapperSingletonInstance.initialize(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QFont.initialize = function()
+
+{
+    //print("JS: QFont.initialize");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QFont_WrapperSingletonInstance.initialize(
+
+               );
+
 
         //copyProperties(this, wrapper, QFont);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFont.initialize(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QFont.cleanup = function() 
-          
-        {
-          //print("JS: QFont.cleanup");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFont_WrapperSingletonInstance.cleanup(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QFont.cleanup = function()
+
+{
+    //print("JS: QFont.cleanup");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QFont_WrapperSingletonInstance.cleanup(
+
+               );
+
 
         //copyProperties(this, wrapper, QFont);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFont.cleanup(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-        // static function 
-        QFont.cacheStatistics = function() 
-          
-        {
-          //print("JS: QFont.cacheStatistics");
-          
-      if (arguments.length == 0) {
-    
-                // calling static wrapper:
-                return QFont_WrapperSingletonInstance.cacheStatistics(
-                  
-                );
-              
+        console.trace();
+    }
+
+};
+
+
+// static function
+QFont.cacheStatistics = function()
+
+{
+    //print("JS: QFont.cacheStatistics");
+
+    if (arguments.length == 0) {
+
+        // calling static wrapper:
+        return QFont_WrapperSingletonInstance.cacheStatistics(
+
+               );
+
 
         //copyProperties(this, wrapper, QFont);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QFont.cacheStatistics(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QFont.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QFont.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QFont.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QFont.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

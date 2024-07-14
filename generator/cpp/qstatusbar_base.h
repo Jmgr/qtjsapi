@@ -1,147 +1,146 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QSTATUSBAR_H_BASE
-  #define QSTATUSBAR_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QQmlEngine>
+#ifndef QSTATUSBAR_H_BASE
+#define QSTATUSBAR_H_BASE
 
-    
-        #include <QStatusBar>
-      
-    // Base class for QStatusBar
-      class QStatusBar_Base : public QStatusBar {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QQmlEngine>
+
+
+#include <QStatusBar>
+
+// Base class for QStatusBar
+class QStatusBar_Base : public QStatusBar {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QStatusBar
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: -1
-QStatusBar_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr
-      )
-      
+    // Class: QStatusBar
+    // Function:
+    // Parameters: 1
+    // preceding Parameters: -1
+    QStatusBar_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr
+    )
+
         : QStatusBar(
-          parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QStatusBar_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void paintEvent(
-      QPaintEvent* event
+        QPaintEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void paintEventPublic(
-      QPaintEvent* event
+        QPaintEvent* event
     ) {
-      //qDebug() << "QStatusBar_Base::paintEventPublic()";
-      QStatusBar::paintEvent(
-        event
-      );
+        //qDebug() << "QStatusBar_Base::paintEventPublic()";
+        QStatusBar::paintEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void mouseMoveEvent(
-      QMouseEvent* event
+        QMouseEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void mouseMoveEventPublic(
-      QMouseEvent* event
+        QMouseEvent* event
     ) {
-      //qDebug() << "QStatusBar_Base::mouseMoveEventPublic()";
-      QStatusBar::mouseMoveEvent(
-        event
-      );
+        //qDebug() << "QStatusBar_Base::mouseMoveEventPublic()";
+        QStatusBar::mouseMoveEvent(
+            event
+        );
     }
-  
-    protected:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     virtual void resizeEvent(
-      QResizeEvent* event
+        QResizeEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE virtual void resizeEventPublic(
-      QResizeEvent* event
+        QResizeEvent* event
     ) {
-      //qDebug() << "QStatusBar_Base::resizeEventPublic()";
-      QStatusBar::resizeEvent(
-        event
-      );
+        //qDebug() << "QStatusBar_Base::resizeEventPublic()";
+        QStatusBar::resizeEvent(
+            event
+        );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-  #endif
-  
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

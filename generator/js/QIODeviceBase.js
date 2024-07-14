@@ -1,127 +1,125 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QIODeviceBase() {
-        
+// class constructor:
+function QIODeviceBase() {
 
-        // should be QIODeviceBase_BaseJs.call(this, engine):
-        //QIODeviceBase.prototype = new QIODeviceBase_BaseJs(engine);
 
-        var wrapper;
+    // should be QIODeviceBase_BaseJs.call(this, engine):
+    //QIODeviceBase.prototype = new QIODeviceBase_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QIODeviceBase.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QIODeviceBase.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QIODeviceBase);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QIODeviceBase);
             //}
-          }
-          else {
+        } else {
             qWarning("QIODeviceBase.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 0) {
-    
+
+    } else {
+
+        if (arguments.length == 0) {
+
             self = this;
             wrapper = new QIODeviceBase_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QIODeviceBase);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QIODeviceBase);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QIODeviceBase);
-  }
 
-  
-  else {
-    
-        print("QIODeviceBase(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QIODeviceBase);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QIODeviceBase(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QIODeviceBase.prototype = new QIODeviceBase_BaseJs(engine);
-      //QIODeviceBase.prototype = new QIODeviceBase_Wrapper(engine);
-      QIODeviceBase.prototype = new Object();
-
-      QIODeviceBase.prototype.toString = function() {
-          //return "QIODeviceBase [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QIODeviceBase [JS]";
-        };
-      QIODeviceBase.getObjectType = function() {
-        return RJSType_QIODeviceBase.getIdStatic();
-      };
-
-      QIODeviceBase.prototype.getObjectType = function() {
-        return RJSType_QIODeviceBase.getIdStatic();
-      };
-
-      QIODeviceBase.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QIODeviceBase.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: OpenModeFlag
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QIODeviceBase.prototype = new QIODeviceBase_BaseJs(engine);
+//QIODeviceBase.prototype = new QIODeviceBase_Wrapper(engine);
+QIODeviceBase.prototype = new Object();
+
+QIODeviceBase.prototype.toString = function() {
+    //return "QIODeviceBase [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QIODeviceBase [JS]";
+};
+QIODeviceBase.getObjectType = function() {
+    return RJSType_QIODeviceBase.getIdStatic();
+};
+
+QIODeviceBase.prototype.getObjectType = function() {
+    return RJSType_QIODeviceBase.getIdStatic();
+};
+
+QIODeviceBase.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QIODeviceBase.getIdStatic()) {
+        return true;
+    }
+
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: OpenModeFlag
 QIODeviceBase.NotOpen = QIODeviceBase_Wrapper.NotOpen;
 QIODeviceBase.ReadOnly = QIODeviceBase_Wrapper.ReadOnly;
 QIODeviceBase.WriteOnly = QIODeviceBase_Wrapper.WriteOnly;
@@ -134,25 +132,24 @@ QIODeviceBase.NewOnly = QIODeviceBase_Wrapper.NewOnly;
 QIODeviceBase.ExistingOnly = QIODeviceBase_Wrapper.ExistingOnly;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QIODeviceBase.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QIODeviceBase.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QIODeviceBase.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QIODeviceBase.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

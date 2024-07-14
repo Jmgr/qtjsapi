@@ -1,131 +1,129 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QDragLeaveEvent() {
-        
+// class constructor:
+function QDragLeaveEvent() {
 
-        // should be QDragLeaveEvent_BaseJs.call(this, engine):
-        //QDragLeaveEvent.prototype = new QDragLeaveEvent_BaseJs(engine);
 
-        var wrapper;
+    // should be QDragLeaveEvent_BaseJs.call(this, engine):
+    //QDragLeaveEvent.prototype = new QDragLeaveEvent_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QDragLeaveEvent.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QDragLeaveEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDragLeaveEvent);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QDragLeaveEvent);
             //}
-          }
-          else {
+        } else {
             qWarning("QDragLeaveEvent.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 0) {
-    
+
+    } else {
+
+        if (arguments.length == 0) {
+
             self = this;
             wrapper = new QDragLeaveEvent_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QDragLeaveEvent);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QDragLeaveEvent);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QDragLeaveEvent);
-  }
 
-  
-  else {
-    
-        print("QDragLeaveEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QDragLeaveEvent);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QDragLeaveEvent(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QDragLeaveEvent.prototype = new QDragLeaveEvent_BaseJs(engine);
-      //QDragLeaveEvent.prototype = new QDragLeaveEvent_Wrapper(engine);
-      QDragLeaveEvent.prototype = new Object();
-
-      QDragLeaveEvent.prototype.toString = function() {
-          //return "QDragLeaveEvent [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QDragLeaveEvent [JS]";
-        };
-      QDragLeaveEvent.getObjectType = function() {
-        return RJSType_QDragLeaveEvent.getIdStatic();
-      };
-
-      QDragLeaveEvent.prototype.getObjectType = function() {
-        return RJSType_QDragLeaveEvent.getIdStatic();
-      };
-
-      QDragLeaveEvent.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QDragLeaveEvent.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QEvent.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: Type
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QDragLeaveEvent.prototype = new QDragLeaveEvent_BaseJs(engine);
+//QDragLeaveEvent.prototype = new QDragLeaveEvent_Wrapper(engine);
+QDragLeaveEvent.prototype = new Object();
+
+QDragLeaveEvent.prototype.toString = function() {
+    //return "QDragLeaveEvent [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QDragLeaveEvent [JS]";
+};
+QDragLeaveEvent.getObjectType = function() {
+    return RJSType_QDragLeaveEvent.getIdStatic();
+};
+
+QDragLeaveEvent.prototype.getObjectType = function() {
+    return RJSType_QDragLeaveEvent.getIdStatic();
+};
+
+QDragLeaveEvent.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QDragLeaveEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QDragLeaveEvent.None = QDragLeaveEvent_Wrapper.None;
 QDragLeaveEvent.Timer = QDragLeaveEvent_Wrapper.Timer;
 QDragLeaveEvent.MouseButtonPress = QDragLeaveEvent_Wrapper.MouseButtonPress;
@@ -300,54 +298,53 @@ QDragLeaveEvent.User = QDragLeaveEvent_Wrapper.User;
 QDragLeaveEvent.MaxUser = QDragLeaveEvent_Wrapper.MaxUser;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QDragLeaveEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QDragLeaveEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QDragLeaveEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QDragLeaveEvent.registerEventType = function()
+
+{
+    //print("JS: QDragLeaveEvent.registerEventType");
+
+    if (arguments.length >= 0 &&
+            arguments.length <= 1) {
+
+        // calling static wrapper:
+        return QDragLeaveEvent_WrapperSingletonInstance.registerEventType(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QDragLeaveEvent);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QDragLeaveEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QDragLeaveEvent.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QDragLeaveEvent.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QDragLeaveEvent.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QDragLeaveEvent.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

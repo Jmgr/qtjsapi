@@ -70,7 +70,6 @@
   <class name="QPinchGesture" />
   <class name="QPlainTextEdit" />
   <class name="QPointerEvent" />
-  <class name="QPrinter" />
   <class name="QProcess" />
   <class name="QPushButton" />
   <class name="QRadioButton" />

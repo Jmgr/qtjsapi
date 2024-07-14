@@ -6,7 +6,6 @@
   <class_decl name="QTextListFormat" />
   <class_decl name="QRect" />
   <class_decl name="QPainter" />
-  <class_decl name="QPagedPaintDevice" />
   <class_decl name="QAbstractTextDocumentLayout" />
   <class_decl name="QPoint" />
   <class_decl name="QTextObject" />
@@ -419,15 +418,6 @@
         <parameters />
       </variant>
     </function>
-    <preproc plain="#ifndef QT_NO_PRINTER" />
-    <function name="print">
-      <variant return-type="void" const="true" access="public">
-        <parameters>
-          <parameter const="false" type="QPagedPaintDevice" modifier="*" name="printer" />
-        </parameters>
-      </variant>
-    </function>
-    <preproc plain="#endif" />
     <enum name="ResourceType">
       <key>UnknownResource</key>
       <key>HtmlResource</key>

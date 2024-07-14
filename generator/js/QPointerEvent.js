@@ -1,106 +1,104 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QPointerEvent() {
-        
+// class constructor:
+function QPointerEvent() {
 
-        // should be QPointerEvent_BaseJs.call(this, engine):
-        //QPointerEvent.prototype = new QPointerEvent_BaseJs(engine);
 
-        var wrapper;
+    // should be QPointerEvent_BaseJs.call(this, engine):
+    //QPointerEvent.prototype = new QPointerEvent_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QPointerEvent.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QPointerEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QPointerEvent);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QPointerEvent);
             //}
-          }
-          else {
+        } else {
             qWarning("QPointerEvent.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
-        }
-        else {
-          
-              qWarning("QPointerEvent.js: No constructor found for class QPointerEvent");
-            
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+    } else {
+
+        qWarning("QPointerEvent.js: No constructor found for class QPointerEvent");
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QPointerEvent.prototype = new QPointerEvent_BaseJs(engine);
-      //QPointerEvent.prototype = new QPointerEvent_Wrapper(engine);
-      QPointerEvent.prototype = new Object();
+//QPointerEvent.prototype = new QPointerEvent_BaseJs(engine);
+//QPointerEvent.prototype = new QPointerEvent_Wrapper(engine);
+QPointerEvent.prototype = new Object();
 
-      QPointerEvent.prototype.toString = function() {
-          //return "QPointerEvent [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QPointerEvent [JS]";
-        };
-      QPointerEvent.getObjectType = function() {
-        return RJSType_QPointerEvent.getIdStatic();
-      };
+QPointerEvent.prototype.toString = function() {
+    //return "QPointerEvent [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QPointerEvent [JS]";
+};
+QPointerEvent.getObjectType = function() {
+    return RJSType_QPointerEvent.getIdStatic();
+};
 
-      QPointerEvent.prototype.getObjectType = function() {
-        return RJSType_QPointerEvent.getIdStatic();
-      };
+QPointerEvent.prototype.getObjectType = function() {
+    return RJSType_QPointerEvent.getIdStatic();
+};
 
-      QPointerEvent.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QPointerEvent.getIdStatic()) {
-          return true;
-        }
-
-        
-          if (t===RJSType_QEvent.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QInputEvent.getIdStatic()) {
-            return true;
-          }
-        
-
-        return false;
+QPointerEvent.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QPointerEvent.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
+    if (t===RJSType_QEvent.getIdStatic()) {
+        return true;
+    }
 
-      // enum values:
-      
-  // enum: Type
+    if (t===RJSType_QInputEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QPointerEvent.None = QPointerEvent_Wrapper.None;
 QPointerEvent.Timer = QPointerEvent_Wrapper.Timer;
 QPointerEvent.MouseButtonPress = QPointerEvent_Wrapper.MouseButtonPress;
@@ -275,54 +273,53 @@ QPointerEvent.User = QPointerEvent_Wrapper.User;
 QPointerEvent.MaxUser = QPointerEvent_Wrapper.MaxUser;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QPointerEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QPointerEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QPointerEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QPointerEvent.registerEventType = function()
+
+{
+    //print("JS: QPointerEvent.registerEventType");
+
+    if (arguments.length >= 0 &&
+            arguments.length <= 1) {
+
+        // calling static wrapper:
+        return QPointerEvent_WrapperSingletonInstance.registerEventType(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QPointerEvent);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QPointerEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QPointerEvent.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QPointerEvent.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QPointerEvent.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QPointerEvent.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

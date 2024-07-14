@@ -1,172 +1,169 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QItemSelection() {
-        
+// class constructor:
+function QItemSelection() {
 
-        // should be QItemSelection_BaseJs.call(this, engine):
-        //QItemSelection.prototype = new QItemSelection_BaseJs(engine);
 
-        var wrapper;
+    // should be QItemSelection_BaseJs.call(this, engine):
+    //QItemSelection.prototype = new QItemSelection_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QItemSelection.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QItemSelection.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QItemSelection);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QItemSelection);
             //}
-          }
-          else {
+        } else {
             qWarning("QItemSelection.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 2) {
-    
+
+    } else {
+
+        if (arguments.length == 2) {
+
             self = this;
             wrapper = new QItemSelection_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QItemSelection);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QItemSelection);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QItemSelection);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QItemSelection_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QItemSelection);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QItemSelection);
-  }
-
-  
-  else {
-    
-        print("QItemSelection(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QItemSelection);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length == 0) {
+
+                self = this;
+                wrapper = new QItemSelection_Wrapper(
+                    // RJSApi:
+                    handler
+
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QItemSelection);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QItemSelection);
+            }
+
+
+            else {
+
+                print("QItemSelection(): wrong number / type of arguments");
+
+                console.trace();
+            }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QItemSelection.prototype = new QItemSelection_BaseJs(engine);
-      //QItemSelection.prototype = new QItemSelection_Wrapper(engine);
-      QItemSelection.prototype = new Object();
+//QItemSelection.prototype = new QItemSelection_BaseJs(engine);
+//QItemSelection.prototype = new QItemSelection_Wrapper(engine);
+QItemSelection.prototype = new Object();
 
-      QItemSelection.prototype.toString = function() {
-          //return "QItemSelection [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QItemSelection [JS]";
-        };
-      QItemSelection.getObjectType = function() {
-        return RJSType_QItemSelection.getIdStatic();
-      };
+QItemSelection.prototype.toString = function() {
+    //return "QItemSelection [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QItemSelection [JS]";
+};
+QItemSelection.getObjectType = function() {
+    return RJSType_QItemSelection.getIdStatic();
+};
 
-      QItemSelection.prototype.getObjectType = function() {
-        return RJSType_QItemSelection.getIdStatic();
-      };
+QItemSelection.prototype.getObjectType = function() {
+    return RJSType_QItemSelection.getIdStatic();
+};
 
-      QItemSelection.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QItemSelection.getIdStatic()) {
-          return true;
-        }
-
-        
-
-        return false;
+QItemSelection.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QItemSelection.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
 
-      // enum values:
-      
+    return false;
 
-      // functions:
-      
 
-      // static functions:
-      
 
-      // constants:
-      
+};
 
-      // public static properties without access function:
-      
+// enum values:
 
-      // copy function:
-      //QItemSelection.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QItemSelection.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// functions:
+
+
+// static functions:
+
+
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QItemSelection.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QItemSelection.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

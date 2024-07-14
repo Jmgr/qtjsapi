@@ -1,16 +1,16 @@
 
-    // auto generated
-    //var self;
+// auto generated
+//var self;
 
-    // class constructor:
-    function Qt() {
-    }
+// class constructor:
+function Qt() {
+}
 
-    Qt.prototype = Object();
+Qt.prototype = Object();
 
-    // enum values:
-    
-  // enum: GlobalColor
+// enum values:
+
+// enum: GlobalColor
 Qt.color0 = Qt_Wrapper.color0;
 Qt.color1 = Qt_Wrapper.color1;
 Qt.black = Qt_Wrapper.black;
@@ -32,13 +32,13 @@ Qt.darkMagenta = Qt_Wrapper.darkMagenta;
 Qt.darkYellow = Qt_Wrapper.darkYellow;
 Qt.transparent = Qt_Wrapper.transparent;
 
-  // enum: ApplicationState
+// enum: ApplicationState
 Qt.ApplicationSuspended = Qt_Wrapper.ApplicationSuspended;
 Qt.ApplicationHidden = Qt_Wrapper.ApplicationHidden;
 Qt.ApplicationInactive = Qt_Wrapper.ApplicationInactive;
 Qt.ApplicationActive = Qt_Wrapper.ApplicationActive;
 
-  // enum: MouseButton
+// enum: MouseButton
 Qt.NoButton = Qt_Wrapper.NoButton;
 Qt.LeftButton = Qt_Wrapper.LeftButton;
 Qt.RightButton = Qt_Wrapper.RightButton;
@@ -76,21 +76,21 @@ Qt.AllButtons = Qt_Wrapper.AllButtons;
 Qt.MaxMouseButton = Qt_Wrapper.MaxMouseButton;
 Qt.MouseButtonMask = Qt_Wrapper.MouseButtonMask;
 
-  // enum: TabFocusBehavior
+// enum: TabFocusBehavior
 Qt.NoTabFocus = Qt_Wrapper.NoTabFocus;
 Qt.TabFocusTextControls = Qt_Wrapper.TabFocusTextControls;
 Qt.TabFocusListControls = Qt_Wrapper.TabFocusListControls;
 Qt.TabFocusAllControls = Qt_Wrapper.TabFocusAllControls;
 
-  // enum: SortOrder
+// enum: SortOrder
 Qt.AscendingOrder = Qt_Wrapper.AscendingOrder;
 Qt.DescendingOrder = Qt_Wrapper.DescendingOrder;
 
-  // enum: SplitBehaviorFlags
+// enum: SplitBehaviorFlags
 Qt.KeepEmptyParts = Qt_Wrapper.KeepEmptyParts;
 Qt.SkipEmptyParts = Qt_Wrapper.SkipEmptyParts;
 
-  // enum: AlignmentFlag
+// enum: AlignmentFlag
 Qt.AlignLeft = Qt_Wrapper.AlignLeft;
 Qt.AlignLeading = Qt_Wrapper.AlignLeading;
 Qt.AlignRight = Qt_Wrapper.AlignRight;
@@ -106,23 +106,23 @@ Qt.AlignBaseline = Qt_Wrapper.AlignBaseline;
 Qt.AlignVertical_Mask = Qt_Wrapper.AlignVertical_Mask;
 Qt.AlignCenter = Qt_Wrapper.AlignCenter;
 
-  // enum: TextElideMode
+// enum: TextElideMode
 Qt.ElideLeft = Qt_Wrapper.ElideLeft;
 Qt.ElideRight = Qt_Wrapper.ElideRight;
 Qt.ElideMiddle = Qt_Wrapper.ElideMiddle;
 Qt.ElideNone = Qt_Wrapper.ElideNone;
 
-  // enum: WhiteSpaceMode
+// enum: WhiteSpaceMode
 Qt.WhiteSpaceNormal = Qt_Wrapper.WhiteSpaceNormal;
 Qt.WhiteSpacePre = Qt_Wrapper.WhiteSpacePre;
 Qt.WhiteSpaceNoWrap = Qt_Wrapper.WhiteSpaceNoWrap;
 Qt.WhiteSpaceModeUndefined = Qt_Wrapper.WhiteSpaceModeUndefined;
 
-  // enum: HitTestAccuracy
+// enum: HitTestAccuracy
 Qt.ExactHit = Qt_Wrapper.ExactHit;
 Qt.FuzzyHit = Qt_Wrapper.FuzzyHit;
 
-  // enum: WindowType
+// enum: WindowType
 Qt.Widget = Qt_Wrapper.Widget;
 Qt.Window = Qt_Wrapper.Window;
 Qt.Dialog = Qt_Wrapper.Dialog;
@@ -162,7 +162,7 @@ Qt.BypassGraphicsProxyWidget = Qt_Wrapper.BypassGraphicsProxyWidget;
 Qt.NoDropShadowWindowHint = Qt_Wrapper.NoDropShadowWindowHint;
 Qt.WindowFullscreenButtonHint = Qt_Wrapper.WindowFullscreenButtonHint;
 
-  // enum: ApplicationAttribute
+// enum: ApplicationAttribute
 Qt.AA_DontShowIconsInMenus = Qt_Wrapper.AA_DontShowIconsInMenus;
 Qt.AA_NativeWindows = Qt_Wrapper.AA_NativeWindows;
 Qt.AA_DontCreateNativeWidgetSiblings = Qt_Wrapper.AA_DontCreateNativeWidgetSiblings;
@@ -190,7 +190,7 @@ Qt.AA_CompressTabletEvents = Qt_Wrapper.AA_CompressTabletEvents;
 Qt.AA_DisableSessionManager = Qt_Wrapper.AA_DisableSessionManager;
 Qt.AA_AttributeCount = Qt_Wrapper.AA_AttributeCount;
 
-  // enum: ImageConversionFlag
+// enum: ImageConversionFlag
 Qt.ColorMode_Mask = Qt_Wrapper.ColorMode_Mask;
 Qt.AutoColor = Qt_Wrapper.AutoColor;
 Qt.ColorOnly = Qt_Wrapper.ColorOnly;
@@ -211,7 +211,7 @@ Qt.AvoidDither = Qt_Wrapper.AvoidDither;
 Qt.NoOpaqueDetection = Qt_Wrapper.NoOpaqueDetection;
 Qt.NoFormatConversion = Qt_Wrapper.NoFormatConversion;
 
-  // enum: Key
+// enum: Key
 Qt.Key_Space = Qt_Wrapper.Key_Space;
 Qt.Key_Any = Qt_Wrapper.Key_Any;
 Qt.Key_Exclam = Qt_Wrapper.Key_Exclam;
@@ -682,7 +682,7 @@ Qt.Key_Camera = Qt_Wrapper.Key_Camera;
 Qt.Key_CameraFocus = Qt_Wrapper.Key_CameraFocus;
 Qt.Key_unknown = Qt_Wrapper.Key_unknown;
 
-  // enum: KeyboardModifier
+// enum: KeyboardModifier
 Qt.NoModifier = Qt_Wrapper.NoModifier;
 Qt.ShiftModifier = Qt_Wrapper.ShiftModifier;
 Qt.ControlModifier = Qt_Wrapper.ControlModifier;
@@ -692,7 +692,7 @@ Qt.KeypadModifier = Qt_Wrapper.KeypadModifier;
 Qt.GroupSwitchModifier = Qt_Wrapper.GroupSwitchModifier;
 Qt.KeyboardModifierMask = Qt_Wrapper.KeyboardModifierMask;
 
-  // enum: PenStyle
+// enum: PenStyle
 Qt.NoPen = Qt_Wrapper.NoPen;
 Qt.SolidLine = Qt_Wrapper.SolidLine;
 Qt.DashLine = Qt_Wrapper.DashLine;
@@ -702,20 +702,20 @@ Qt.DashDotDotLine = Qt_Wrapper.DashDotDotLine;
 Qt.CustomDashLine = Qt_Wrapper.CustomDashLine;
 Qt.MPenStyle = Qt_Wrapper.MPenStyle;
 
-  // enum: PenCapStyle
+// enum: PenCapStyle
 Qt.FlatCap = Qt_Wrapper.FlatCap;
 Qt.SquareCap = Qt_Wrapper.SquareCap;
 Qt.RoundCap = Qt_Wrapper.RoundCap;
 Qt.MPenCapStyle = Qt_Wrapper.MPenCapStyle;
 
-  // enum: PenJoinStyle
+// enum: PenJoinStyle
 Qt.MiterJoin = Qt_Wrapper.MiterJoin;
 Qt.BevelJoin = Qt_Wrapper.BevelJoin;
 Qt.RoundJoin = Qt_Wrapper.RoundJoin;
 Qt.SvgMiterJoin = Qt_Wrapper.SvgMiterJoin;
 Qt.MPenJoinStyle = Qt_Wrapper.MPenJoinStyle;
 
-  // enum: BrushStyle
+// enum: BrushStyle
 Qt.NoBrush = Qt_Wrapper.NoBrush;
 Qt.SolidPattern = Qt_Wrapper.SolidPattern;
 Qt.Dense1Pattern = Qt_Wrapper.Dense1Pattern;
@@ -736,11 +736,11 @@ Qt.RadialGradientPattern = Qt_Wrapper.RadialGradientPattern;
 Qt.ConicalGradientPattern = Qt_Wrapper.ConicalGradientPattern;
 Qt.TexturePattern = Qt_Wrapper.TexturePattern;
 
-  // enum: SizeMode
+// enum: SizeMode
 Qt.AbsoluteSize = Qt_Wrapper.AbsoluteSize;
 Qt.RelativeSize = Qt_Wrapper.RelativeSize;
 
-  // enum: UIEffect
+// enum: UIEffect
 Qt.UI_General = Qt_Wrapper.UI_General;
 Qt.UI_AnimateMenu = Qt_Wrapper.UI_AnimateMenu;
 Qt.UI_FadeMenu = Qt_Wrapper.UI_FadeMenu;
@@ -749,7 +749,7 @@ Qt.UI_AnimateTooltip = Qt_Wrapper.UI_AnimateTooltip;
 Qt.UI_FadeTooltip = Qt_Wrapper.UI_FadeTooltip;
 Qt.UI_AnimateToolBox = Qt_Wrapper.UI_AnimateToolBox;
 
-  // enum: CursorShape
+// enum: CursorShape
 Qt.ArrowCursor = Qt_Wrapper.ArrowCursor;
 Qt.UpArrowCursor = Qt_Wrapper.UpArrowCursor;
 Qt.CrossCursor = Qt_Wrapper.CrossCursor;
@@ -776,18 +776,18 @@ Qt.LastCursor = Qt_Wrapper.LastCursor;
 Qt.BitmapCursor = Qt_Wrapper.BitmapCursor;
 Qt.CustomCursor = Qt_Wrapper.CustomCursor;
 
-  // enum: TextFormat
+// enum: TextFormat
 Qt.PlainText = Qt_Wrapper.PlainText;
 Qt.RichText = Qt_Wrapper.RichText;
 Qt.AutoText = Qt_Wrapper.AutoText;
 Qt.MarkdownText = Qt_Wrapper.MarkdownText;
 
-  // enum: AspectRatioMode
+// enum: AspectRatioMode
 Qt.IgnoreAspectRatio = Qt_Wrapper.IgnoreAspectRatio;
 Qt.KeepAspectRatio = Qt_Wrapper.KeepAspectRatio;
 Qt.KeepAspectRatioByExpanding = Qt_Wrapper.KeepAspectRatioByExpanding;
 
-  // enum: DockWidgetArea
+// enum: DockWidgetArea
 Qt.LeftDockWidgetArea = Qt_Wrapper.LeftDockWidgetArea;
 Qt.RightDockWidgetArea = Qt_Wrapper.RightDockWidgetArea;
 Qt.TopDockWidgetArea = Qt_Wrapper.TopDockWidgetArea;
@@ -796,19 +796,19 @@ Qt.DockWidgetArea_Mask = Qt_Wrapper.DockWidgetArea_Mask;
 Qt.AllDockWidgetAreas = Qt_Wrapper.AllDockWidgetAreas;
 Qt.NoDockWidgetArea = Qt_Wrapper.NoDockWidgetArea;
 
-  // enum: DockWidgetAreaSizes
+// enum: DockWidgetAreaSizes
 Qt.NDockWidgetAreas = Qt_Wrapper.NDockWidgetAreas;
 
-  // enum: ToolBarAreaSizes
+// enum: ToolBarAreaSizes
 Qt.NToolBarAreas = Qt_Wrapper.NToolBarAreas;
 
-  // enum: TimeSpec
+// enum: TimeSpec
 Qt.LocalTime = Qt_Wrapper.LocalTime;
 Qt.UTC = Qt_Wrapper.UTC;
 Qt.OffsetFromUTC = Qt_Wrapper.OffsetFromUTC;
 Qt.TimeZone = Qt_Wrapper.TimeZone;
 
-  // enum: DayOfWeek
+// enum: DayOfWeek
 Qt.Monday = Qt_Wrapper.Monday;
 Qt.Tuesday = Qt_Wrapper.Tuesday;
 Qt.Wednesday = Qt_Wrapper.Wednesday;
@@ -817,66 +817,66 @@ Qt.Friday = Qt_Wrapper.Friday;
 Qt.Saturday = Qt_Wrapper.Saturday;
 Qt.Sunday = Qt_Wrapper.Sunday;
 
-  // enum: ScrollBarPolicy
+// enum: ScrollBarPolicy
 Qt.ScrollBarAsNeeded = Qt_Wrapper.ScrollBarAsNeeded;
 Qt.ScrollBarAlwaysOff = Qt_Wrapper.ScrollBarAlwaysOff;
 Qt.ScrollBarAlwaysOn = Qt_Wrapper.ScrollBarAlwaysOn;
 
-  // enum: CaseSensitivity
+// enum: CaseSensitivity
 Qt.CaseInsensitive = Qt_Wrapper.CaseInsensitive;
 Qt.CaseSensitive = Qt_Wrapper.CaseSensitive;
 
-  // enum: Corner
+// enum: Corner
 Qt.TopLeftCorner = Qt_Wrapper.TopLeftCorner;
 Qt.TopRightCorner = Qt_Wrapper.TopRightCorner;
 Qt.BottomLeftCorner = Qt_Wrapper.BottomLeftCorner;
 Qt.BottomRightCorner = Qt_Wrapper.BottomRightCorner;
 
-  // enum: Edge
+// enum: Edge
 Qt.TopEdge = Qt_Wrapper.TopEdge;
 Qt.LeftEdge = Qt_Wrapper.LeftEdge;
 Qt.RightEdge = Qt_Wrapper.RightEdge;
 Qt.BottomEdge = Qt_Wrapper.BottomEdge;
 
-  // enum: ShortcutContext
+// enum: ShortcutContext
 Qt.WidgetShortcut = Qt_Wrapper.WidgetShortcut;
 Qt.WindowShortcut = Qt_Wrapper.WindowShortcut;
 Qt.ApplicationShortcut = Qt_Wrapper.ApplicationShortcut;
 Qt.WidgetWithChildrenShortcut = Qt_Wrapper.WidgetWithChildrenShortcut;
 
-  // enum: FillRule
+// enum: FillRule
 Qt.OddEvenFill = Qt_Wrapper.OddEvenFill;
 Qt.WindingFill = Qt_Wrapper.WindingFill;
 
-  // enum: MaskMode
+// enum: MaskMode
 Qt.MaskInColor = Qt_Wrapper.MaskInColor;
 Qt.MaskOutColor = Qt_Wrapper.MaskOutColor;
 
-  // enum: ClipOperation
+// enum: ClipOperation
 Qt.NoClip = Qt_Wrapper.NoClip;
 Qt.ReplaceClip = Qt_Wrapper.ReplaceClip;
 Qt.IntersectClip = Qt_Wrapper.IntersectClip;
 
-  // enum: ItemSelectionMode
+// enum: ItemSelectionMode
 Qt.ContainsItemShape = Qt_Wrapper.ContainsItemShape;
 Qt.IntersectsItemShape = Qt_Wrapper.IntersectsItemShape;
 Qt.ContainsItemBoundingRect = Qt_Wrapper.ContainsItemBoundingRect;
 Qt.IntersectsItemBoundingRect = Qt_Wrapper.IntersectsItemBoundingRect;
 
-  // enum: ItemSelectionOperation
+// enum: ItemSelectionOperation
 Qt.ReplaceSelection = Qt_Wrapper.ReplaceSelection;
 Qt.AddToSelection = Qt_Wrapper.AddToSelection;
 
-  // enum: TransformationMode
+// enum: TransformationMode
 Qt.FastTransformation = Qt_Wrapper.FastTransformation;
 Qt.SmoothTransformation = Qt_Wrapper.SmoothTransformation;
 
-  // enum: Axis
+// enum: Axis
 Qt.XAxis = Qt_Wrapper.XAxis;
 Qt.YAxis = Qt_Wrapper.YAxis;
 Qt.ZAxis = Qt_Wrapper.ZAxis;
 
-  // enum: FocusReason
+// enum: FocusReason
 Qt.MouseFocusReason = Qt_Wrapper.MouseFocusReason;
 Qt.TabFocusReason = Qt_Wrapper.TabFocusReason;
 Qt.BacktabFocusReason = Qt_Wrapper.BacktabFocusReason;
@@ -887,14 +887,14 @@ Qt.MenuBarFocusReason = Qt_Wrapper.MenuBarFocusReason;
 Qt.OtherFocusReason = Qt_Wrapper.OtherFocusReason;
 Qt.NoFocusReason = Qt_Wrapper.NoFocusReason;
 
-  // enum: ContextMenuPolicy
+// enum: ContextMenuPolicy
 Qt.NoContextMenu = Qt_Wrapper.NoContextMenu;
 Qt.DefaultContextMenu = Qt_Wrapper.DefaultContextMenu;
 Qt.ActionsContextMenu = Qt_Wrapper.ActionsContextMenu;
 Qt.CustomContextMenu = Qt_Wrapper.CustomContextMenu;
 Qt.PreventContextMenu = Qt_Wrapper.PreventContextMenu;
 
-  // enum: InputMethodQuery
+// enum: InputMethodQuery
 Qt.ImEnabled = Qt_Wrapper.ImEnabled;
 Qt.ImCursorRectangle = Qt_Wrapper.ImCursorRectangle;
 Qt.ImFont = Qt_Wrapper.ImFont;
@@ -916,7 +916,7 @@ Qt.ImPlatformData = Qt_Wrapper.ImPlatformData;
 Qt.ImQueryInput = Qt_Wrapper.ImQueryInput;
 Qt.ImQueryAll = Qt_Wrapper.ImQueryAll;
 
-  // enum: ToolBarArea
+// enum: ToolBarArea
 Qt.LeftToolBarArea = Qt_Wrapper.LeftToolBarArea;
 Qt.RightToolBarArea = Qt_Wrapper.RightToolBarArea;
 Qt.TopToolBarArea = Qt_Wrapper.TopToolBarArea;
@@ -924,19 +924,19 @@ Qt.BottomToolBarArea = Qt_Wrapper.BottomToolBarArea;
 Qt.AllToolBarAreas = Qt_Wrapper.AllToolBarAreas;
 Qt.NoToolBarArea = Qt_Wrapper.NoToolBarArea;
 
-  // enum: ToolButtonStyle
+// enum: ToolButtonStyle
 Qt.ToolButtonIconOnly = Qt_Wrapper.ToolButtonIconOnly;
 Qt.ToolButtonTextOnly = Qt_Wrapper.ToolButtonTextOnly;
 Qt.ToolButtonTextBesideIcon = Qt_Wrapper.ToolButtonTextBesideIcon;
 Qt.ToolButtonTextUnderIcon = Qt_Wrapper.ToolButtonTextUnderIcon;
 Qt.ToolButtonFollowStyle = Qt_Wrapper.ToolButtonFollowStyle;
 
-  // enum: LayoutDirection
+// enum: LayoutDirection
 Qt.LeftToRight = Qt_Wrapper.LeftToRight;
 Qt.RightToLeft = Qt_Wrapper.RightToLeft;
 Qt.LayoutDirectionAuto = Qt_Wrapper.LayoutDirectionAuto;
 
-  // enum: AnchorPoint
+// enum: AnchorPoint
 Qt.AnchorLeft = Qt_Wrapper.AnchorLeft;
 Qt.AnchorHorizontalCenter = Qt_Wrapper.AnchorHorizontalCenter;
 Qt.AnchorRight = Qt_Wrapper.AnchorRight;
@@ -944,23 +944,23 @@ Qt.AnchorTop = Qt_Wrapper.AnchorTop;
 Qt.AnchorVerticalCenter = Qt_Wrapper.AnchorVerticalCenter;
 Qt.AnchorBottom = Qt_Wrapper.AnchorBottom;
 
-  // enum: FindChildOption
+// enum: FindChildOption
 Qt.FindDirectChildrenOnly = Qt_Wrapper.FindDirectChildrenOnly;
 Qt.FindChildrenRecursively = Qt_Wrapper.FindChildrenRecursively;
 
-  // enum: FocusPolicy
+// enum: FocusPolicy
 Qt.TabFocus = Qt_Wrapper.TabFocus;
 Qt.ClickFocus = Qt_Wrapper.ClickFocus;
 Qt.StrongFocus = Qt_Wrapper.StrongFocus;
 Qt.WheelFocus = Qt_Wrapper.WheelFocus;
 Qt.NoFocus = Qt_Wrapper.NoFocus;
 
-  // enum: CheckState
+// enum: CheckState
 Qt.Unchecked = Qt_Wrapper.Unchecked;
 Qt.PartiallyChecked = Qt_Wrapper.PartiallyChecked;
 Qt.Checked = Qt_Wrapper.Checked;
 
-  // enum: ItemDataRole
+// enum: ItemDataRole
 Qt.DisplayRole = Qt_Wrapper.DisplayRole;
 Qt.DecorationRole = Qt_Wrapper.DecorationRole;
 Qt.EditRole = Qt_Wrapper.EditRole;
@@ -983,7 +983,7 @@ Qt.StatusTipPropertyRole = Qt_Wrapper.StatusTipPropertyRole;
 Qt.WhatsThisPropertyRole = Qt_Wrapper.WhatsThisPropertyRole;
 Qt.UserRole = Qt_Wrapper.UserRole;
 
-  // enum: ItemFlag
+// enum: ItemFlag
 Qt.NoItemFlags = Qt_Wrapper.NoItemFlags;
 Qt.ItemIsSelectable = Qt_Wrapper.ItemIsSelectable;
 Qt.ItemIsEditable = Qt_Wrapper.ItemIsEditable;
@@ -995,7 +995,7 @@ Qt.ItemIsAutoTristate = Qt_Wrapper.ItemIsAutoTristate;
 Qt.ItemNeverHasChildren = Qt_Wrapper.ItemNeverHasChildren;
 Qt.ItemIsUserTristate = Qt_Wrapper.ItemIsUserTristate;
 
-  // enum: MatchFlag
+// enum: MatchFlag
 Qt.MatchExactly = Qt_Wrapper.MatchExactly;
 Qt.MatchContains = Qt_Wrapper.MatchContains;
 Qt.MatchStartsWith = Qt_Wrapper.MatchStartsWith;
@@ -1008,12 +1008,12 @@ Qt.MatchCaseSensitive = Qt_Wrapper.MatchCaseSensitive;
 Qt.MatchWrap = Qt_Wrapper.MatchWrap;
 Qt.MatchRecursive = Qt_Wrapper.MatchRecursive;
 
-  // enum: WindowModality
+// enum: WindowModality
 Qt.NonModal = Qt_Wrapper.NonModal;
 Qt.WindowModal = Qt_Wrapper.WindowModal;
 Qt.ApplicationModal = Qt_Wrapper.ApplicationModal;
 
-  // enum: TextInteractionFlag
+// enum: TextInteractionFlag
 Qt.NoTextInteraction = Qt_Wrapper.NoTextInteraction;
 Qt.TextSelectableByMouse = Qt_Wrapper.TextSelectableByMouse;
 Qt.TextSelectableByKeyboard = Qt_Wrapper.TextSelectableByKeyboard;
@@ -1023,14 +1023,14 @@ Qt.TextEditable = Qt_Wrapper.TextEditable;
 Qt.TextEditorInteraction = Qt_Wrapper.TextEditorInteraction;
 Qt.TextBrowserInteraction = Qt_Wrapper.TextBrowserInteraction;
 
-  // enum: SizeHint
+// enum: SizeHint
 Qt.MinimumSize = Qt_Wrapper.MinimumSize;
 Qt.PreferredSize = Qt_Wrapper.PreferredSize;
 Qt.MaximumSize = Qt_Wrapper.MaximumSize;
 Qt.MinimumDescent = Qt_Wrapper.MinimumDescent;
 Qt.NSizeHints = Qt_Wrapper.NSizeHints;
 
-  // enum: WidgetAttribute
+// enum: WidgetAttribute
 Qt.WA_AcceptDrops = Qt_Wrapper.WA_AcceptDrops;
 Qt.WA_AlwaysShowToolTips = Qt_Wrapper.WA_AlwaysShowToolTips;
 Qt.WA_CustomWhatsThis = Qt_Wrapper.WA_CustomWhatsThis;
@@ -1108,7 +1108,7 @@ Qt.WA_X11DoNotAcceptFocus = Qt_Wrapper.WA_X11DoNotAcceptFocus;
 Qt.WA_AlwaysStackOnTop = Qt_Wrapper.WA_AlwaysStackOnTop;
 Qt.WA_ContentsMarginsRespectsSafeArea = Qt_Wrapper.WA_ContentsMarginsRespectsSafeArea;
 
-  // enum: WindowFrameSection
+// enum: WindowFrameSection
 Qt.NoSection = Qt_Wrapper.NoSection;
 Qt.LeftSection = Qt_Wrapper.LeftSection;
 Qt.TopLeftSection = Qt_Wrapper.TopLeftSection;
@@ -1120,25 +1120,25 @@ Qt.BottomSection = Qt_Wrapper.BottomSection;
 Qt.BottomLeftSection = Qt_Wrapper.BottomLeftSection;
 Qt.TitleBarArea = Qt_Wrapper.TitleBarArea;
 
-  // enum: CoordinateSystem
+// enum: CoordinateSystem
 Qt.DeviceCoordinates = Qt_Wrapper.DeviceCoordinates;
 Qt.LogicalCoordinates = Qt_Wrapper.LogicalCoordinates;
 
-  // enum: TouchPointState
+// enum: TouchPointState
 Qt.TouchPointUnknownState = Qt_Wrapper.TouchPointUnknownState;
 Qt.TouchPointPressed = Qt_Wrapper.TouchPointPressed;
 Qt.TouchPointMoved = Qt_Wrapper.TouchPointMoved;
 Qt.TouchPointStationary = Qt_Wrapper.TouchPointStationary;
 Qt.TouchPointReleased = Qt_Wrapper.TouchPointReleased;
 
-  // enum: GestureState
+// enum: GestureState
 Qt.NoGesture = Qt_Wrapper.NoGesture;
 Qt.GestureStarted = Qt_Wrapper.GestureStarted;
 Qt.GestureUpdated = Qt_Wrapper.GestureUpdated;
 Qt.GestureFinished = Qt_Wrapper.GestureFinished;
 Qt.GestureCanceled = Qt_Wrapper.GestureCanceled;
 
-  // enum: GestureType
+// enum: GestureType
 Qt.TapGesture = Qt_Wrapper.TapGesture;
 Qt.TapAndHoldGesture = Qt_Wrapper.TapAndHoldGesture;
 Qt.PanGesture = Qt_Wrapper.PanGesture;
@@ -1147,48 +1147,48 @@ Qt.SwipeGesture = Qt_Wrapper.SwipeGesture;
 Qt.CustomGesture = Qt_Wrapper.CustomGesture;
 Qt.LastGestureType = Qt_Wrapper.LastGestureType;
 
-  // enum: GestureFlag
+// enum: GestureFlag
 Qt.DontStartGestureOnChildren = Qt_Wrapper.DontStartGestureOnChildren;
 Qt.ReceivePartialGestures = Qt_Wrapper.ReceivePartialGestures;
 Qt.IgnoredGesturesPropagateToParent = Qt_Wrapper.IgnoredGesturesPropagateToParent;
 
-  // enum: NavigationMode
+// enum: NavigationMode
 Qt.NavigationModeNone = Qt_Wrapper.NavigationModeNone;
 Qt.NavigationModeKeypadTabOrder = Qt_Wrapper.NavigationModeKeypadTabOrder;
 Qt.NavigationModeKeypadDirectional = Qt_Wrapper.NavigationModeKeypadDirectional;
 Qt.NavigationModeCursorAuto = Qt_Wrapper.NavigationModeCursorAuto;
 Qt.NavigationModeCursorForceVisible = Qt_Wrapper.NavigationModeCursorForceVisible;
 
-  // enum: Orientation
+// enum: Orientation
 Qt.Horizontal = Qt_Wrapper.Horizontal;
 Qt.Vertical = Qt_Wrapper.Vertical;
 
-  // enum: CursorMoveStyle
+// enum: CursorMoveStyle
 Qt.LogicalMoveStyle = Qt_Wrapper.LogicalMoveStyle;
 Qt.VisualMoveStyle = Qt_Wrapper.VisualMoveStyle;
 
-  // enum: TimerType
+// enum: TimerType
 Qt.PreciseTimer = Qt_Wrapper.PreciseTimer;
 Qt.CoarseTimer = Qt_Wrapper.CoarseTimer;
 Qt.VeryCoarseTimer = Qt_Wrapper.VeryCoarseTimer;
 
-  // enum: ScrollPhase
+// enum: ScrollPhase
 Qt.NoScrollPhase = Qt_Wrapper.NoScrollPhase;
 Qt.ScrollBegin = Qt_Wrapper.ScrollBegin;
 Qt.ScrollUpdate = Qt_Wrapper.ScrollUpdate;
 Qt.ScrollEnd = Qt_Wrapper.ScrollEnd;
 Qt.ScrollMomentum = Qt_Wrapper.ScrollMomentum;
 
-  // enum: MouseEventSource
+// enum: MouseEventSource
 Qt.MouseEventNotSynthesized = Qt_Wrapper.MouseEventNotSynthesized;
 Qt.MouseEventSynthesizedBySystem = Qt_Wrapper.MouseEventSynthesizedBySystem;
 Qt.MouseEventSynthesizedByQt = Qt_Wrapper.MouseEventSynthesizedByQt;
 Qt.MouseEventSynthesizedByApplication = Qt_Wrapper.MouseEventSynthesizedByApplication;
 
-  // enum: MouseEventFlag
+// enum: MouseEventFlag
 Qt.NoMouseEventFlag = Qt_Wrapper.NoMouseEventFlag;
 Qt.MouseEventCreatedDoubleClick = Qt_Wrapper.MouseEventCreatedDoubleClick;
 Qt.MouseEventFlagMask = Qt_Wrapper.MouseEventFlagMask;
 
-  // enum: ReturnByValueConstant
+// enum: ReturnByValueConstant
 Qt.ReturnByValue = Qt_Wrapper.ReturnByValue;

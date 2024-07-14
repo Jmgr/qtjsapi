@@ -1,90 +1,90 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QMESSAGEBOX_H_BASE
-  #define QMESSAGEBOX_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QLabel>
-  
-    #include <QAbstractButton>
-  
-    #include <QCheckBox>
-  
-    #include <QQmlEngine>
+#ifndef QMESSAGEBOX_H_BASE
+#define QMESSAGEBOX_H_BASE
 
-    
-        #include <QMessageBox>
-      
-    // Base class for QMessageBox
-      class QMessageBox_Base : public QMessageBox {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QLabel>
+
+#include <QAbstractButton>
+
+#include <QCheckBox>
+
+#include <QQmlEngine>
+
+
+#include <QMessageBox>
+
+// Base class for QMessageBox
+class QMessageBox_Base : public QMessageBox {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
+
 #if QT_CONFIG(textedit)
 
 #endif
 
-  // Class: QMessageBox
-  // Function: 
-  // Parameters: 6
-  // preceding Parameters: -1
-QMessageBox_Base
-        
-      (
+    // Class: QMessageBox
+    // Function:
+    // Parameters: 6
+    // preceding Parameters: -1
+    QMessageBox_Base
 
-        
-          RJSApi& _h
-          
-            ,
-          QMessageBox::Icon icon, const QString& title, const QString& text, QMessageBox::StandardButtons buttons=QMessageBox::NoButton, QWidget* parent=nullptr, Qt::WindowFlags flags=Qt::Dialog|Qt::MSWindowsFixedSizeDialogHint
-      )
-      
-        : QMessageBox(
-          icon, title, text, buttons, parent, flags
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
-  // Class: QMessageBox
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: 6
-QMessageBox_Base
-        
-      (
+    (
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent=nullptr
-      )
-      
+
+        RJSApi& _h
+
+        ,
+        QMessageBox::Icon icon, const QString& title, const QString& text, QMessageBox::StandardButtons buttons=QMessageBox::NoButton, QWidget* parent=nullptr, Qt::WindowFlags flags=Qt::Dialog|Qt::MSWindowsFixedSizeDialogHint
+    )
+
         : QMessageBox(
-          parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              icon, title, text, buttons, parent, flags
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
+    // Class: QMessageBox
+    // Function:
+    // Parameters: 1
+    // preceding Parameters: 6
+    QMessageBox_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent=nullptr
+    )
+
+        : QMessageBox(
+              parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
 #if QT_VERSION<QT_VERSION_CHECK(7,0,0)
 
 #endif
@@ -104,55 +104,54 @@ QMessageBox_Base
     // destructor:
     virtual ~QMessageBox_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
-    protected:
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+protected:
     // implementation of protected function
     // calls JS implementation if available
     void resizeEvent(
-      QResizeEvent* event
+        QResizeEvent* event
     );
-  
-    public:
+
+public:
     // this can be called from JS to call the parent implementation (e.g. Parent.prototype.call(this, ...)):
     // TODO: convert arguments to QJSValue:
     Q_INVOKABLE void resizeEventPublic(
-      QResizeEvent* event
+        QResizeEvent* event
     ) {
-      //qDebug() << "QMessageBox_Base::resizeEventPublic()";
-      QMessageBox::resizeEvent(
-        event
-      );
+        //qDebug() << "QMessageBox_Base::resizeEventPublic()";
+        QMessageBox::resizeEvent(
+            event
+        );
     }
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+    // public virtual overwritten functions / events:
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
 
-    public:
-      QJSValue self;
+    // public pure-virtual functions:
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
 
-    };
-    
-  #endif
-  
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

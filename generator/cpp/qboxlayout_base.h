@@ -1,280 +1,279 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QBOXLAYOUT_H_BASE
-  #define QBOXLAYOUT_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QQmlEngine>
+#ifndef QBOXLAYOUT_H_BASE
+#define QBOXLAYOUT_H_BASE
 
-    
-        #include <QBoxLayout>
-      
-    // Base class for QBoxLayout
-      class QBoxLayout_Base : public QBoxLayout {
+// include header:
+//#include "header_h.h"
 
-      
-        //Q_OBJECT
-      
+#include "../RJSHelper.h"
 
-      public:
-    
+#include <QQmlEngine>
+
+
+#include <QBoxLayout>
+
+// Base class for QBoxLayout
+class QBoxLayout_Base : public QBoxLayout {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QBoxLayout
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: -1
-QBoxLayout_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          QBoxLayout::Direction a1, QWidget* parent=nullptr
-      )
-      
+    // Class: QBoxLayout
+    // Function:
+    // Parameters: 2
+    // preceding Parameters: -1
+    QBoxLayout_Base
+
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QBoxLayout::Direction a1, QWidget* parent=nullptr
+    )
+
         : QBoxLayout(
-          a1, parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              a1, parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QBoxLayout_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
 
-      // public virtual overwritten functions / events:
-      
+    // protected overwritten functions / events and their public invokable counterparts:
 
-      // public pure-virtual functions:
-      
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
+    // public virtual overwritten functions / events:
 
-    public:
-      QJSValue self;
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
+    // public pure-virtual functions:
 
-    };
-    
-    #include <QQmlEngine>
 
-    
-        #include <QHBoxLayout>
-      
-    // Base class for QHBoxLayout
-      class QHBoxLayout_Base : public QHBoxLayout {
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
 
-      
-        //Q_OBJECT
-      
+public:
+    QJSValue self;
 
-      public:
-    
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#include <QQmlEngine>
+
+
+#include <QHBoxLayout>
+
+// Base class for QHBoxLayout
+class QHBoxLayout_Base : public QHBoxLayout {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QHBoxLayout
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: -1
-QHBoxLayout_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent
-      )
-      
-        : QHBoxLayout(
-          parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
-  // Class: QHBoxLayout
-  // Function: 
-  // Parameters: 0
-  // preceding Parameters: 1
-QHBoxLayout_Base
-        
-      (
+    // Class: QHBoxLayout
+    // Function:
+    // Parameters: 1
+    // preceding Parameters: -1
+    QHBoxLayout_Base
 
-        
-          RJSApi& _h
-          
-      )
-      
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent
+    )
+
         : QHBoxLayout(
-          
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
+    // Class: QHBoxLayout
+    // Function:
+    // Parameters: 0
+    // preceding Parameters: 1
+    QHBoxLayout_Base
+
+    (
+
+
+        RJSApi& _h
+
+    )
+
+        : QHBoxLayout(
+
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QHBoxLayout_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
 
-      // public virtual overwritten functions / events:
-      
+    // protected overwritten functions / events and their public invokable counterparts:
 
-      // public pure-virtual functions:
-      
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
+    // public virtual overwritten functions / events:
 
-    public:
-      QJSValue self;
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
+    // public pure-virtual functions:
 
-    };
-    
-    #include <QQmlEngine>
 
-    
-        #include <QVBoxLayout>
-      
-    // Base class for QVBoxLayout
-      class QVBoxLayout_Base : public QVBoxLayout {
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
 
-      
-        //Q_OBJECT
-      
+public:
+    QJSValue self;
 
-      public:
-    
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#include <QQmlEngine>
+
+
+#include <QVBoxLayout>
+
+// Base class for QVBoxLayout
+class QVBoxLayout_Base : public QVBoxLayout {
+
+
+    //Q_OBJECT
+
+
+public:
+
 
     // constructors:
-    
-  // Class: QVBoxLayout
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: -1
-QVBoxLayout_Base
-        
-      (
 
-        
-          RJSApi& _h
-          
-            ,
-          QWidget* parent
-      )
-      
-        : QVBoxLayout(
-          parent
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
-  // Class: QVBoxLayout
-  // Function: 
-  // Parameters: 0
-  // preceding Parameters: 1
-QVBoxLayout_Base
-        
-      (
+    // Class: QVBoxLayout
+    // Function:
+    // Parameters: 1
+    // preceding Parameters: -1
+    QVBoxLayout_Base
 
-        
-          RJSApi& _h
-          
-      )
-      
+    (
+
+
+        RJSApi& _h
+
+        ,
+        QWidget* parent
+    )
+
         : QVBoxLayout(
-          
-        ) 
-        
-          , handler(_h) /*, recFlag(false)*/
-        
-        {}
-      
+              parent
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
+    // Class: QVBoxLayout
+    // Function:
+    // Parameters: 0
+    // preceding Parameters: 1
+    QVBoxLayout_Base
+
+    (
+
+
+        RJSApi& _h
+
+    )
+
+        : QVBoxLayout(
+
+          )
+
+        , handler(_h) /*, recFlag(false)*/
+
+    {}
+
     // destructor:
     virtual ~QVBoxLayout_Base() { }
 
-    public:
-      // set handler:
-      //void setHandler(RJSApi* h) {
-      //  handler = h;
-      //}
-    
-      // protected overwritten functions / events and their public invokable counterparts:
-      
+public:
+    // set handler:
+    //void setHandler(RJSApi* h) {
+    //  handler = h;
+    //}
 
-      // public virtual overwritten functions / events:
-      
+    // protected overwritten functions / events and their public invokable counterparts:
 
-      // public pure-virtual functions:
-      
 
-    public:
-      //void setRecFlag(bool on) {
-      //  recFlag = on;
-      //}
+    // public virtual overwritten functions / events:
 
-    public:
-      QJSValue self;
 
-    private:
-      
-        RJSApi& handler;
-      
-      //bool recFlag;
+    // public pure-virtual functions:
 
-    };
-    
-  #endif
-  
+
+public:
+    //void setRecFlag(bool on) {
+    //  recFlag = on;
+    //}
+
+public:
+    QJSValue self;
+
+private:
+
+    RJSApi& handler;
+
+    //bool recFlag;
+
+};
+
+#endif

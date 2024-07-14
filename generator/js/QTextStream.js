@@ -1,184 +1,182 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QTextStream() {
-        
+// class constructor:
+function QTextStream() {
 
-        // should be QTextStream_BaseJs.call(this, engine):
-        //QTextStream.prototype = new QTextStream_BaseJs(engine);
 
-        var wrapper;
+    // should be QTextStream_BaseJs.call(this, engine):
+    //QTextStream.prototype = new QTextStream_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QTextStream.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QTextStream.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QTextStream);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QTextStream);
             //}
-          }
-          else {
+        } else {
             qWarning("QTextStream.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 2) {
-    
+
+    } else {
+
+        if (arguments.length >= 1 &&
+                arguments.length <= 2) {
+
             self = this;
             wrapper = new QTextStream_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QTextStream);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QTextStream);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QTextStream);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 1) {
-    
-            self = this;
-            wrapper = new QTextStream_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QTextStream);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QTextStream);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QTextStream_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QTextStream);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QTextStream);
-  }
-
-  
-  else {
-    
-        print("QTextStream(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QTextStream);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length == 1) {
+
+                self = this;
+                wrapper = new QTextStream_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QTextStream);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QTextStream);
+            }
+
+
+            else
+
+                if (arguments.length == 0) {
+
+                    self = this;
+                    wrapper = new QTextStream_Wrapper(
+                        // RJSApi:
+                        handler
+
+                        ////this.setWrapper(this.wrapper);
+                        //Object.setPrototypeOf(this, wrapper);
+                    );
+                    //wrapper.__WRAPPER__ = true;
+                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                    copyProperties(this, wrapper, QTextStream);
+
+                    //this.setWrapper(this.wrapper);
+
+
+
+                    //copyProperties(this, wrapper, QTextStream);
+                }
+
+
+                else {
+
+                    print("QTextStream(): wrong number / type of arguments");
+
+                    console.trace();
+                }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QTextStream.prototype = new QTextStream_BaseJs(engine);
-      //QTextStream.prototype = new QTextStream_Wrapper(engine);
-      QTextStream.prototype = new Object();
+//QTextStream.prototype = new QTextStream_BaseJs(engine);
+//QTextStream.prototype = new QTextStream_Wrapper(engine);
+QTextStream.prototype = new Object();
 
-      QTextStream.prototype.toString = function() {
-          //return "QTextStream [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QTextStream [JS]";
-        };
-      QTextStream.getObjectType = function() {
-        return RJSType_QTextStream.getIdStatic();
-      };
+QTextStream.prototype.toString = function() {
+    //return "QTextStream [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QTextStream [JS]";
+};
+QTextStream.getObjectType = function() {
+    return RJSType_QTextStream.getIdStatic();
+};
 
-      QTextStream.prototype.getObjectType = function() {
-        return RJSType_QTextStream.getIdStatic();
-      };
+QTextStream.prototype.getObjectType = function() {
+    return RJSType_QTextStream.getIdStatic();
+};
 
-      QTextStream.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QTextStream.getIdStatic()) {
-          return true;
-        }
-
-        
-          if (t===RJSType_QIODeviceBase.getIdStatic()) {
-            return true;
-          }
-        
-
-        return false;
+QTextStream.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QTextStream.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
+    if (t===RJSType_QIODeviceBase.getIdStatic()) {
+        return true;
+    }
 
-      // enum values:
-      
-  // enum: OpenModeFlag
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: OpenModeFlag
 QTextStream.NotOpen = QTextStream_Wrapper.NotOpen;
 QTextStream.ReadOnly = QTextStream_Wrapper.ReadOnly;
 QTextStream.WriteOnly = QTextStream_Wrapper.WriteOnly;
@@ -190,24 +188,24 @@ QTextStream.Unbuffered = QTextStream_Wrapper.Unbuffered;
 QTextStream.NewOnly = QTextStream_Wrapper.NewOnly;
 QTextStream.ExistingOnly = QTextStream_Wrapper.ExistingOnly;
 
-  // enum: RealNumberNotation
+// enum: RealNumberNotation
 QTextStream.SmartNotation = QTextStream_Wrapper.SmartNotation;
 QTextStream.FixedNotation = QTextStream_Wrapper.FixedNotation;
 QTextStream.ScientificNotation = QTextStream_Wrapper.ScientificNotation;
 
-  // enum: FieldAlignment
+// enum: FieldAlignment
 QTextStream.AlignLeft = QTextStream_Wrapper.AlignLeft;
 QTextStream.AlignRight = QTextStream_Wrapper.AlignRight;
 QTextStream.AlignCenter = QTextStream_Wrapper.AlignCenter;
 QTextStream.AlignAccountingStyle = QTextStream_Wrapper.AlignAccountingStyle;
 
-  // enum: Status
+// enum: Status
 QTextStream.Ok = QTextStream_Wrapper.Ok;
 QTextStream.ReadPastEnd = QTextStream_Wrapper.ReadPastEnd;
 QTextStream.ReadCorruptData = QTextStream_Wrapper.ReadCorruptData;
 QTextStream.WriteFailed = QTextStream_Wrapper.WriteFailed;
 
-  // enum: NumberFlag
+// enum: NumberFlag
 QTextStream.ShowBase = QTextStream_Wrapper.ShowBase;
 QTextStream.ForcePoint = QTextStream_Wrapper.ForcePoint;
 QTextStream.ForceSign = QTextStream_Wrapper.ForceSign;
@@ -215,25 +213,24 @@ QTextStream.UppercaseBase = QTextStream_Wrapper.UppercaseBase;
 QTextStream.UppercaseDigits = QTextStream_Wrapper.UppercaseDigits;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QTextStream.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QTextStream.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QTextStream.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QTextStream.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

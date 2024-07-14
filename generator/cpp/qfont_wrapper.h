@@ -1,1852 +1,1852 @@
 
-  // Auto generated
-  
-    #ifndef QFONT_H_WRAPPER
-    #define QFONT_H_WRAPPER
+// Auto generated
 
-    // include header:
-    //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
+#ifndef QFONT_H_WRAPPER
+#define QFONT_H_WRAPPER
 
-    #include "RJSWrapperObj.h"
-  
-        #include <QVariant>
-      
-    #include <QQmlEngine>
-    
-        #include "RJSType.h"
-      
-        #include <QFont>
-      
-      // singleton class wrapper for static functions:
-      class QTJSAPI_EXPORT QFont_WrapperSingleton: public QObject {
-      Q_OBJECT
-      QML_INTERFACE
+// include header:
+//#include "header_h.h"
 
-      // constants:
-      
+#include "../RJSHelper.h"
 
-      // static properties:
-      
 
-      public:
-      //Q_INVOKABLE 
-      QFont_WrapperSingleton(RJSApi& h) 
-        : QObject(), 
+#include "RJSWrapperObj.h"
+
+#include <QVariant>
+
+#include <QQmlEngine>
+
+#include "RJSType.h"
+
+#include <QFont>
+
+// singleton class wrapper for static functions:
+class QTJSAPI_EXPORT QFont_WrapperSingleton: public QObject {
+    Q_OBJECT
+    QML_INTERFACE
+
+    // constants:
+
+
+    // static properties:
+
+
+public:
+    //Q_INVOKABLE
+    QFont_WrapperSingleton(RJSApi& h)
+        : QObject(),
           handler(h)
-          
-          {}
 
-      
+    {}
 
-      // static functions:
-      
+
+
+    // static functions:
+
     // Class: QFont
     // Function: substitute
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  substitute
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    substitute
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: substitutes
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  substitutes
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    substitutes
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: substitutions
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  substitutions
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    substitutions
+    (
+
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: insertSubstitution
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertSubstitution
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertSubstitution
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: insertSubstitutions
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  insertSubstitutions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    insertSubstitutions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: removeSubstitutions
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  removeSubstitutions
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    removeSubstitutions
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: initialize
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  initialize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    initialize
+    (
+
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: cleanup
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cleanup
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    cleanup
+    (
+
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: cacheStatistics
-    // Source: 
+    // Source:
     // Static: true
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  cacheStatistics
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-              ;
-            
+    QJSValue
+    cacheStatistics
+    (
 
-      private:
-          RJSApi& handler;
-          //static QFont_WrapperSingleton* _singleInstance;
 
-          // constants:
-          
-      };
-    
-    // static functions implementation in singleton wrapper:
-    
-    // wrapper class for QFont
-    class QTJSAPI_EXPORT QFont_Wrapper : public RJSWrapperObj {
+    )
 
-    
-      Q_OBJECT
-      QML_INTERFACE
-    
+    ;
 
-    private:
-      // disable copy constructor:
-      QFont_Wrapper(const QFont_Wrapper&);
 
-    public:
-      // initialization of QFont:
-      static void init(RJSApi& handler);
+private:
+    RJSApi& handler;
+    //static QFont_WrapperSingleton* _singleInstance;
 
-      
-        static QFont* castToBase(void* vp, /*RJSType ID*/ int t) {
-          
-            // check if pointer points to derrived type:
-            
+    // constants:
 
-          // hook for modules to cast from other types to base QFont:
-          for (int i=0; i<basecasters_QFont.length(); i++) {
+};
+
+// static functions implementation in singleton wrapper:
+
+// wrapper class for QFont
+class QTJSAPI_EXPORT QFont_Wrapper : public RJSWrapperObj {
+
+
+    Q_OBJECT
+    QML_INTERFACE
+
+
+private:
+    // disable copy constructor:
+    QFont_Wrapper(const QFont_Wrapper&);
+
+public:
+    // initialization of QFont:
+    static void init(RJSApi& handler);
+
+
+    static QFont* castToBase(void* vp, /*RJSType ID*/ int t) {
+
+        // check if pointer points to derrived type:
+
+
+        // hook for modules to cast from other types to base QFont:
+        for (int i=0; i<basecasters_QFont.length(); i++) {
             RJSBasecaster_QFont* basecaster = basecasters_QFont[i];
             QFont* ret = basecaster->castToBase(t, vp);
             if (ret!=nullptr) {
-              return ret;
+                return ret;
             }
-          }
+        }
 
-          // object is a pointer to base class QFont:
-          if (t==RJSType_QFont::getIdStatic()) {
+        // object is a pointer to base class QFont:
+        if (t==RJSType_QFont::getIdStatic()) {
             return (QFont*)vp;
-          }
-
-          qWarning() << "QFont_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
-
-          return nullptr;
-          
         }
 
-        static QFont* getWrappedBase(RJSWrapper* wrapper) {
-          int t = wrapper->getWrappedType();
-          void* vp = wrapper->getWrappedVoid();
-          if (vp==nullptr) {
-              //qWarning() << "getWrapped_QFont*: wrapper wraps NULL";
-          }
+        qWarning() << "QFont_Wrapper::castToBase: type not found: " << RJSHelper::getTypeName(t);
 
-          QFont* ret = castToBase(vp, t);
-          if (ret==nullptr && vp!=nullptr) {
-              qWarning() << "QFont*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
-          }
-          return ret;
+        return nullptr;
+
+    }
+
+    static QFont* getWrappedBase(RJSWrapper* wrapper) {
+        int t = wrapper->getWrappedType();
+        void* vp = wrapper->getWrappedVoid();
+        if (vp==nullptr) {
+            //qWarning() << "getWrapped_QFont*: wrapper wraps NULL";
         }
-      
-        // enums:
-        
-  enum StyleHint {
-    Helvetica = QFont::Helvetica,
-SansSerif = QFont::SansSerif,
-Times = QFont::Times,
-Serif = QFont::Serif,
-Courier = QFont::Courier,
-TypeWriter = QFont::TypeWriter,
-OldEnglish = QFont::OldEnglish,
-Decorative = QFont::Decorative,
-System = QFont::System,
-AnyStyle = QFont::AnyStyle,
-Cursive = QFont::Cursive,
-Monospace = QFont::Monospace,
-Fantasy = QFont::Fantasy,
 
-  };
-  Q_ENUM(StyleHint)
+        QFont* ret = castToBase(vp, t);
+        if (ret==nullptr && vp!=nullptr) {
+            qWarning() << "QFont*_Wrapper::getWrappedBase: extracted type " << t << "from wrapper is NULL";
+        }
+        return ret;
+    }
 
-  enum StyleStrategy {
-    PreferDefault = QFont::PreferDefault,
-PreferBitmap = QFont::PreferBitmap,
-PreferDevice = QFont::PreferDevice,
-PreferOutline = QFont::PreferOutline,
-ForceOutline = QFont::ForceOutline,
-PreferMatch = QFont::PreferMatch,
-PreferQuality = QFont::PreferQuality,
-PreferAntialias = QFont::PreferAntialias,
-NoAntialias = QFont::NoAntialias,
-NoSubpixelAntialias = QFont::NoSubpixelAntialias,
-PreferNoShaping = QFont::PreferNoShaping,
-NoFontMerging = QFont::NoFontMerging,
+    // enums:
 
-  };
-  Q_ENUM(StyleStrategy)
+    enum StyleHint {
+        Helvetica = QFont::Helvetica,
+        SansSerif = QFont::SansSerif,
+        Times = QFont::Times,
+        Serif = QFont::Serif,
+        Courier = QFont::Courier,
+        TypeWriter = QFont::TypeWriter,
+        OldEnglish = QFont::OldEnglish,
+        Decorative = QFont::Decorative,
+        System = QFont::System,
+        AnyStyle = QFont::AnyStyle,
+        Cursive = QFont::Cursive,
+        Monospace = QFont::Monospace,
+        Fantasy = QFont::Fantasy,
 
-  enum HintingPreference {
-    PreferDefaultHinting = QFont::PreferDefaultHinting,
-PreferNoHinting = QFont::PreferNoHinting,
-PreferVerticalHinting = QFont::PreferVerticalHinting,
-PreferFullHinting = QFont::PreferFullHinting,
+    };
+    Q_ENUM(StyleHint)
 
-  };
-  Q_ENUM(HintingPreference)
+    enum StyleStrategy {
+        PreferDefault = QFont::PreferDefault,
+        PreferBitmap = QFont::PreferBitmap,
+        PreferDevice = QFont::PreferDevice,
+        PreferOutline = QFont::PreferOutline,
+        ForceOutline = QFont::ForceOutline,
+        PreferMatch = QFont::PreferMatch,
+        PreferQuality = QFont::PreferQuality,
+        PreferAntialias = QFont::PreferAntialias,
+        NoAntialias = QFont::NoAntialias,
+        NoSubpixelAntialias = QFont::NoSubpixelAntialias,
+        PreferNoShaping = QFont::PreferNoShaping,
+        NoFontMerging = QFont::NoFontMerging,
 
-  enum Weight {
-    Thin = QFont::Thin,
-ExtraLight = QFont::ExtraLight,
-Light = QFont::Light,
-Normal = QFont::Normal,
-Medium = QFont::Medium,
-DemiBold = QFont::DemiBold,
-Bold = QFont::Bold,
-ExtraBold = QFont::ExtraBold,
-Black = QFont::Black,
+    };
+    Q_ENUM(StyleStrategy)
 
-  };
-  Q_ENUM(Weight)
+    enum HintingPreference {
+        PreferDefaultHinting = QFont::PreferDefaultHinting,
+        PreferNoHinting = QFont::PreferNoHinting,
+        PreferVerticalHinting = QFont::PreferVerticalHinting,
+        PreferFullHinting = QFont::PreferFullHinting,
 
-  enum Style {
-    StyleNormal = QFont::StyleNormal,
-StyleItalic = QFont::StyleItalic,
-StyleOblique = QFont::StyleOblique,
+    };
+    Q_ENUM(HintingPreference)
 
-  };
-  Q_ENUM(Style)
+    enum Weight {
+        Thin = QFont::Thin,
+        ExtraLight = QFont::ExtraLight,
+        Light = QFont::Light,
+        Normal = QFont::Normal,
+        Medium = QFont::Medium,
+        DemiBold = QFont::DemiBold,
+        Bold = QFont::Bold,
+        ExtraBold = QFont::ExtraBold,
+        Black = QFont::Black,
 
-  enum Stretch {
-    AnyStretch = QFont::AnyStretch,
-UltraCondensed = QFont::UltraCondensed,
-ExtraCondensed = QFont::ExtraCondensed,
-Condensed = QFont::Condensed,
-SemiCondensed = QFont::SemiCondensed,
-Unstretched = QFont::Unstretched,
-SemiExpanded = QFont::SemiExpanded,
-Expanded = QFont::Expanded,
-ExtraExpanded = QFont::ExtraExpanded,
-UltraExpanded = QFont::UltraExpanded,
+    };
+    Q_ENUM(Weight)
 
-  };
-  Q_ENUM(Stretch)
+    enum Style {
+        StyleNormal = QFont::StyleNormal,
+        StyleItalic = QFont::StyleItalic,
+        StyleOblique = QFont::StyleOblique,
 
-  enum Capitalization {
-    MixedCase = QFont::MixedCase,
-AllUppercase = QFont::AllUppercase,
-AllLowercase = QFont::AllLowercase,
-SmallCaps = QFont::SmallCaps,
-Capitalize = QFont::Capitalize,
+    };
+    Q_ENUM(Style)
 
-  };
-  Q_ENUM(Capitalization)
+    enum Stretch {
+        AnyStretch = QFont::AnyStretch,
+        UltraCondensed = QFont::UltraCondensed,
+        ExtraCondensed = QFont::ExtraCondensed,
+        Condensed = QFont::Condensed,
+        SemiCondensed = QFont::SemiCondensed,
+        Unstretched = QFont::Unstretched,
+        SemiExpanded = QFont::SemiExpanded,
+        Expanded = QFont::Expanded,
+        ExtraExpanded = QFont::ExtraExpanded,
+        UltraExpanded = QFont::UltraExpanded,
 
-  enum SpacingType {
-    PercentageSpacing = QFont::PercentageSpacing,
-AbsoluteSpacing = QFont::AbsoluteSpacing,
+    };
+    Q_ENUM(Stretch)
 
-  };
-  Q_ENUM(SpacingType)
+    enum Capitalization {
+        MixedCase = QFont::MixedCase,
+        AllUppercase = QFont::AllUppercase,
+        AllLowercase = QFont::AllLowercase,
+        SmallCaps = QFont::SmallCaps,
+        Capitalize = QFont::Capitalize,
 
-  enum ResolveProperties {
-    NoPropertiesResolved = QFont::NoPropertiesResolved,
-FamilyResolved = QFont::FamilyResolved,
-SizeResolved = QFont::SizeResolved,
-StyleHintResolved = QFont::StyleHintResolved,
-StyleStrategyResolved = QFont::StyleStrategyResolved,
-WeightResolved = QFont::WeightResolved,
-StyleResolved = QFont::StyleResolved,
-UnderlineResolved = QFont::UnderlineResolved,
-OverlineResolved = QFont::OverlineResolved,
-StrikeOutResolved = QFont::StrikeOutResolved,
-FixedPitchResolved = QFont::FixedPitchResolved,
-StretchResolved = QFont::StretchResolved,
-KerningResolved = QFont::KerningResolved,
-CapitalizationResolved = QFont::CapitalizationResolved,
-LetterSpacingResolved = QFont::LetterSpacingResolved,
-WordSpacingResolved = QFont::WordSpacingResolved,
-HintingPreferenceResolved = QFont::HintingPreferenceResolved,
-StyleNameResolved = QFont::StyleNameResolved,
-FamiliesResolved = QFont::FamiliesResolved,
-AllPropertiesResolved = QFont::AllPropertiesResolved,
+    };
+    Q_ENUM(Capitalization)
 
-  };
-  Q_ENUM(ResolveProperties)
+    enum SpacingType {
+        PercentageSpacing = QFont::PercentageSpacing,
+        AbsoluteSpacing = QFont::AbsoluteSpacing,
+
+    };
+    Q_ENUM(SpacingType)
+
+    enum ResolveProperties {
+        NoPropertiesResolved = QFont::NoPropertiesResolved,
+        FamilyResolved = QFont::FamilyResolved,
+        SizeResolved = QFont::SizeResolved,
+        StyleHintResolved = QFont::StyleHintResolved,
+        StyleStrategyResolved = QFont::StyleStrategyResolved,
+        WeightResolved = QFont::WeightResolved,
+        StyleResolved = QFont::StyleResolved,
+        UnderlineResolved = QFont::UnderlineResolved,
+        OverlineResolved = QFont::OverlineResolved,
+        StrikeOutResolved = QFont::StrikeOutResolved,
+        FixedPitchResolved = QFont::FixedPitchResolved,
+        StretchResolved = QFont::StretchResolved,
+        KerningResolved = QFont::KerningResolved,
+        CapitalizationResolved = QFont::CapitalizationResolved,
+        LetterSpacingResolved = QFont::LetterSpacingResolved,
+        WordSpacingResolved = QFont::WordSpacingResolved,
+        HintingPreferenceResolved = QFont::HintingPreferenceResolved,
+        StyleNameResolved = QFont::StyleNameResolved,
+        FamiliesResolved = QFont::FamiliesResolved,
+        AllPropertiesResolved = QFont::AllPropertiesResolved,
+
+    };
+    Q_ENUM(ResolveProperties)
 
     /*
     // special constructor used as prototype:
-    
-          Q_INVOKABLE 
+
+          Q_INVOKABLE
           QFont_Wrapper(QJSEngine* e);
-        
+
     */
 
-    
-      // special constructor to wrap existing object:
-      
-            //Q_INVOKABLE 
-            QFont_Wrapper(RJSApi& h, QFont* o, bool wrappedCreated);
-          
 
-      // destructor:
-      
-          virtual ~QFont_Wrapper();
-        
+    // special constructor to wrap existing object:
+
+    //Q_INVOKABLE
+    QFont_Wrapper(RJSApi& h, QFont* o, bool wrappedCreated);
+
+
+    // destructor:
+
+    virtual ~QFont_Wrapper();
+
     // initialization of signal forwarding
-    
-        void initConnections();
-      
 
-  // constructors:
-  
+    void initConnections();
+
+
+    // constructors:
+
     // Class: QFont
-    // Function: 
-    // Source: 
+    // Function:
+    // Source:
     // Static: false
     // Parameters: 4
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              QFont_Wrapper
-                
-              (
+public:
+    Q_INVOKABLE
+    QFont_Wrapper
 
-                
-                  // RJSApi:
-                  QObject* h
-                  
-                  ,
-                  
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a3
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a4
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    (
+
+
+        // RJSApi:
+        QObject* h
+
+        ,
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+          ,
+        const QJSValue&
+        a3
+        = QJSValue()
+          ,
+        const QJSValue&
+        a4
+        = QJSValue()
+
+    )
+
+    ;
+
 
     // non-static functions:
-    
+
     // Class: QFont
     // Function: swap
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  swap
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    swap
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: family
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  family
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    family
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setFamily
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFamily
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFamily
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: families
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  families
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    families
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setFamilies
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFamilies
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFamilies
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: styleName
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  styleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    styleName
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setStyleName
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStyleName
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStyleName
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: pointSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pointSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pointSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setPointSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPointSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPointSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: pointSizeF
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pointSizeF
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pointSizeF
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setPointSizeF
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPointSizeF
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPointSizeF
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: pixelSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  pixelSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    pixelSize
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setPixelSize
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setPixelSize
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setPixelSize
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: weight
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  weight
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    weight
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setWeight
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWeight
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWeight
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: bold
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  bold
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    bold
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setBold
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setBold
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setBold
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: setStyle
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStyle
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStyle
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: style
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  style
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    style
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: italic
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  italic
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    italic
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setItalic
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setItalic
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setItalic
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: underline
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  underline
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    underline
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setUnderline
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setUnderline
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setUnderline
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: overline
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  overline
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    overline
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setOverline
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setOverline
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setOverline
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: strikeOut
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  strikeOut
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    strikeOut
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setStrikeOut
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStrikeOut
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStrikeOut
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: fixedPitch
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fixedPitch
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    fixedPitch
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setFixedPitch
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setFixedPitch
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setFixedPitch
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: kerning
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  kerning
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    kerning
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setKerning
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setKerning
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setKerning
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: styleHint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  styleHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    styleHint
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: styleStrategy
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  styleStrategy
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    styleStrategy
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setStyleHint
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStyleHint
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStyleHint
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: setStyleStrategy
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStyleStrategy
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStyleStrategy
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: stretch
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  stretch
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    stretch
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setStretch
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setStretch
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setStretch
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: letterSpacing
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  letterSpacing
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    letterSpacing
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: letterSpacingType
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  letterSpacingType
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    letterSpacingType
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setLetterSpacing
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 2
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setLetterSpacing
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    , 
-  const QJSValue& 
-  a2
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setLetterSpacing
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+          ,
+        const QJSValue&
+        a2
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: wordSpacing
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  wordSpacing
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    wordSpacing
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setWordSpacing
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setWordSpacing
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setWordSpacing
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: setCapitalization
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setCapitalization
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setCapitalization
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: capitalization
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  capitalization
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    capitalization
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setHintingPreference
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setHintingPreference
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    setHintingPreference
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: hintingPreference
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  hintingPreference
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    hintingPreference
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: exactMatch
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  exactMatch
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    exactMatch
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: isCopyOf
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  isCopyOf
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    isCopyOf
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: key
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  key
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    key
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: toString
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  
-                          // special function name for JS wrapper:
-                          toStr
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+
+    // special function name for JS wrapper:
+    toStr
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: fromString
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  fromString
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
+    QJSValue
+    fromString
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    ;
+
     // Class: QFont
     // Function: defaultFamily
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  defaultFamily
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    defaultFamily
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: resolve
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resolve
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    resolve
+    (
+
+
+        const QJSValue&
+        a1
+        = QJSValue()
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: resolveMask
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 0
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  resolveMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-              )
-              
-                const
-              
-              ;
-            
+    QJSValue
+    resolveMask
+    (
+
+
+    )
+
+    const
+
+    ;
+
     // Class: QFont
     // Function: setResolveMask
-    // Source: 
+    // Source:
     // Static: false
     // Parameters: 1
     // preceding Parameters: -1
 
-              public:
-              Q_INVOKABLE 
-              
-                  QJSValue 
-                  setResolveMask
-              (
+public:
+    Q_INVOKABLE
 
-                
-  const QJSValue& 
-  a1
-      = QJSValue()
-    
-              )
-              
-              ;
-            
-          // destroy function for non-copyable objects:
-          Q_INVOKABLE void destr() {
-            if (wrapped!=nullptr) {
-              
-                  delete wrapped;
-                
-              wrapped = nullptr;
-            }
-            
-          }
-        
-
-        //public:
-        // set engine:
-        //Q_INVOKABLE void setHandler(RJSApi* h) {
-        //  RJSWrapperObj::setHandler(h);
-        //}
-      
-
-  // member functions for static properties, forward to static function
-  
+    QJSValue
+    setResolveMask
+    (
 
 
-  // protected overwritten functions / events and their public invokable counterparts:
-  
-        public:
+        const QJSValue&
+        a1
+        = QJSValue()
 
-        // get type of wrapped object:
-        Q_INVOKABLE
-        virtual /*RJSType ID*/ int getWrappedType() const {
-          return RJSType_QFont::getIdStatic();
+    )
+
+    ;
+
+    // destroy function for non-copyable objects:
+    Q_INVOKABLE void destr() {
+        if (wrapped!=nullptr) {
+
+            delete wrapped;
+
+            wrapped = nullptr;
         }
 
-        // return true if wrapped object is owned by C++ (not deleted):
-        Q_INVOKABLE
-        virtual bool isCppOwnership() const {
-          
-              return false;
-            
-        }
+    }
 
-        // get wrapped object:
-        QFont* getWrapped() {
-          if (wrapped!=nullptr) {
+
+    //public:
+    // set engine:
+    //Q_INVOKABLE void setHandler(RJSApi* h) {
+    //  RJSWrapperObj::setHandler(h);
+    //}
+
+
+    // member functions for static properties, forward to static function
+
+
+
+    // protected overwritten functions / events and their public invokable counterparts:
+
+public:
+
+    // get type of wrapped object:
+    Q_INVOKABLE
+    virtual /*RJSType ID*/ int getWrappedType() const {
+        return RJSType_QFont::getIdStatic();
+    }
+
+    // return true if wrapped object is owned by C++ (not deleted):
+    Q_INVOKABLE
+    virtual bool isCppOwnership() const {
+
+        return false;
+
+    }
+
+    // get wrapped object:
+    QFont* getWrapped() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object (const):
-        QFont* getWrapped() const {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object (const):
+    QFont* getWrapped() const {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        // get wrapped object as void*:
-        virtual void* getWrappedVoid() {
-          if (wrapped!=nullptr) {
+        return nullptr;
+    }
+
+    // get wrapped object as void*:
+    virtual void* getWrappedVoid() {
+        if (wrapped!=nullptr) {
             return wrapped;
-          }
-          
-          return nullptr;
         }
 
-        
+        return nullptr;
+    }
 
-        bool hasWrapped() const {
-          return wrapped!=nullptr 
-          
-          ;
-        }
 
-        Q_INVOKABLE
-        bool isNullWrapper() const {
-          return !hasWrapped();
-        }
 
-        Q_INVOKABLE
-        unsigned long long int getAddress() const {
-          if (wrapped!=nullptr) {
+    bool hasWrapped() const {
+        return wrapped!=nullptr
+
+               ;
+    }
+
+    Q_INVOKABLE
+    bool isNullWrapper() const {
+        return !hasWrapped();
+    }
+
+    Q_INVOKABLE
+    unsigned long long int getAddress() const {
+        if (wrapped!=nullptr) {
             return (unsigned long long int)wrapped;
-          }
-          
-          return (unsigned long long int)0;
         }
 
-        
+        return (unsigned long long int)0;
+    }
 
-        //public slots:
-          //void slotDestroyed(QObject* obj) {
-          //  qDebug() << "destroying QObject:" << (long int)obj;
-          //}
 
-        
 
-        private:
-        // wrapped object:
-        QFont* wrapped;
+    //public slots:
+    //void slotDestroyed(QObject* obj) {
+    //  qDebug() << "destroying QObject:" << (long int)obj;
+    //}
 
-        
 
-        bool wrappedCreated;
-      
-      private:
-        // list of registered base casters for this wrapper class:
-        static QList<RJSBasecaster_QFont*> basecasters_QFont;
 
-      public:
-        static void registerBasecaster_QFont(RJSBasecaster_QFont* bc) {
-          basecasters_QFont.append(bc);
-        }
-      
-    };
+private:
+    // wrapped object:
+    QFont* wrapped;
 
-    Q_DECLARE_METATYPE(QFont_Wrapper*)
 
-    Q_DECLARE_INTERFACE(QFont_Wrapper, "org.qcad.QFont_Wrapper")
 
-  
-  #endif
-  
+    bool wrappedCreated;
+
+private:
+    // list of registered base casters for this wrapper class:
+    static QList<RJSBasecaster_QFont*> basecasters_QFont;
+
+public:
+    static void registerBasecaster_QFont(RJSBasecaster_QFont* bc) {
+        basecasters_QFont.append(bc);
+    }
+
+};
+
+Q_DECLARE_METATYPE(QFont_Wrapper*)
+
+Q_DECLARE_INTERFACE(QFont_Wrapper, "org.qcad.QFont_Wrapper")
+
+
+#endif
+

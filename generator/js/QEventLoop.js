@@ -1,132 +1,130 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QEventLoop() {
-        
+// class constructor:
+function QEventLoop() {
 
-        // should be QEventLoop_BaseJs.call(this, engine):
-        //QEventLoop.prototype = new QEventLoop_BaseJs(engine);
 
-        var wrapper;
+    // should be QEventLoop_BaseJs.call(this, engine):
+    //QEventLoop.prototype = new QEventLoop_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QEventLoop.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QEventLoop.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QEventLoop);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QEventLoop);
             //}
-          }
-          else {
+        } else {
             qWarning("QEventLoop.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
+
+    } else {
+
+        if (arguments.length >= 0 &&
+                arguments.length <= 1) {
+
             self = this;
             wrapper = new QEventLoop_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QEventLoop);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QEventLoop);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QEventLoop);
-  }
 
-  
-  else {
-    
-        print("QEventLoop(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QEventLoop);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QEventLoop(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QEventLoop.prototype = new QEventLoop_BaseJs(engine);
-      //QEventLoop.prototype = new QEventLoop_Wrapper(engine);
-      QEventLoop.prototype = new Object();
-
-      QEventLoop.prototype.toString = function() {
-          //return "QEventLoop [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QEventLoop [JS]";
-        };
-      QEventLoop.getObjectType = function() {
-        return RJSType_QEventLoop.getIdStatic();
-      };
-
-      QEventLoop.prototype.getObjectType = function() {
-        return RJSType_QEventLoop.getIdStatic();
-      };
-
-      QEventLoop.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QEventLoop.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QObject.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: ProcessEventsFlag
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QEventLoop.prototype = new QEventLoop_BaseJs(engine);
+//QEventLoop.prototype = new QEventLoop_Wrapper(engine);
+QEventLoop.prototype = new Object();
+
+QEventLoop.prototype.toString = function() {
+    //return "QEventLoop [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QEventLoop [JS]";
+};
+QEventLoop.getObjectType = function() {
+    return RJSType_QEventLoop.getIdStatic();
+};
+
+QEventLoop.prototype.getObjectType = function() {
+    return RJSType_QEventLoop.getIdStatic();
+};
+
+QEventLoop.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QEventLoop.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QObject.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: ProcessEventsFlag
 QEventLoop.AllEvents = QEventLoop_Wrapper.AllEvents;
 QEventLoop.ExcludeUserInputEvents = QEventLoop_Wrapper.ExcludeUserInputEvents;
 QEventLoop.ExcludeSocketNotifiers = QEventLoop_Wrapper.ExcludeSocketNotifiers;
@@ -137,54 +135,53 @@ QEventLoop.DialogExec = QEventLoop_Wrapper.DialogExec;
 QEventLoop.ApplicationExec = QEventLoop_Wrapper.ApplicationExec;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QEventLoop.tr = function() 
-          
-        {
-          //print("JS: QEventLoop.tr");
-          
-      if (arguments.length >= 1 &&
-          arguments.length <= 3) {
-    
-                // calling static wrapper:
-                return QEventLoop_WrapperSingletonInstance.tr(
-                  arguments[0], arguments[1], arguments[2]
-                );
-              
+// static functions:
+
+
+// static function
+QEventLoop.tr = function()
+
+{
+    //print("JS: QEventLoop.tr");
+
+    if (arguments.length >= 1 &&
+            arguments.length <= 3) {
+
+        // calling static wrapper:
+        return QEventLoop_WrapperSingletonInstance.tr(
+                   arguments[0], arguments[1], arguments[2]
+               );
+
 
         //copyProperties(this, wrapper, QEventLoop);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QEventLoop.tr(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QEventLoop.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QEventLoop.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QEventLoop.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QEventLoop.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

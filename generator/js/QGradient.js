@@ -1,174 +1,172 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QGradient() {
-        
+// class constructor:
+function QGradient() {
 
-        // should be QGradient_BaseJs.call(this, engine):
-        //QGradient.prototype = new QGradient_BaseJs(engine);
 
-        var wrapper;
+    // should be QGradient_BaseJs.call(this, engine):
+    //QGradient.prototype = new QGradient_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QGradient.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QGradient.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QGradient);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QGradient);
             //}
-          }
-          else {
+        } else {
             qWarning("QGradient.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 1) {
-    
+
+    } else {
+
+        if (arguments.length == 1) {
+
             self = this;
             wrapper = new QGradient_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QGradient);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QGradient);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QGradient);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QGradient_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QGradient);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QGradient);
-  }
-
-  
-  else {
-    
-        print("QGradient(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QGradient);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length == 0) {
+
+                self = this;
+                wrapper = new QGradient_Wrapper(
+                    // RJSApi:
+                    handler
+
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QGradient);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QGradient);
+            }
+
+
+            else {
+
+                print("QGradient(): wrong number / type of arguments");
+
+                console.trace();
+            }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QGradient.prototype = new QGradient_BaseJs(engine);
-      //QGradient.prototype = new QGradient_Wrapper(engine);
-      QGradient.prototype = new Object();
+//QGradient.prototype = new QGradient_BaseJs(engine);
+//QGradient.prototype = new QGradient_Wrapper(engine);
+QGradient.prototype = new Object();
 
-      QGradient.prototype.toString = function() {
-          //return "QGradient [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QGradient [JS]";
-        };
-      QGradient.getObjectType = function() {
-        return RJSType_QGradient.getIdStatic();
-      };
+QGradient.prototype.toString = function() {
+    //return "QGradient [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QGradient [JS]";
+};
+QGradient.getObjectType = function() {
+    return RJSType_QGradient.getIdStatic();
+};
 
-      QGradient.prototype.getObjectType = function() {
-        return RJSType_QGradient.getIdStatic();
-      };
+QGradient.prototype.getObjectType = function() {
+    return RJSType_QGradient.getIdStatic();
+};
 
-      QGradient.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QGradient.getIdStatic()) {
-          return true;
-        }
-
-        
-
-        return false;
+QGradient.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QGradient.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
 
-      // enum values:
-      
-  // enum: Type
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QGradient.LinearGradient = QGradient_Wrapper.LinearGradient;
 QGradient.RadialGradient = QGradient_Wrapper.RadialGradient;
 QGradient.ConicalGradient = QGradient_Wrapper.ConicalGradient;
 QGradient.NoGradient = QGradient_Wrapper.NoGradient;
 
-  // enum: Spread
+// enum: Spread
 QGradient.PadSpread = QGradient_Wrapper.PadSpread;
 QGradient.ReflectSpread = QGradient_Wrapper.ReflectSpread;
 QGradient.RepeatSpread = QGradient_Wrapper.RepeatSpread;
 
-  // enum: CoordinateMode
+// enum: CoordinateMode
 QGradient.LogicalMode = QGradient_Wrapper.LogicalMode;
 QGradient.StretchToDeviceMode = QGradient_Wrapper.StretchToDeviceMode;
 QGradient.ObjectBoundingMode = QGradient_Wrapper.ObjectBoundingMode;
 QGradient.ObjectMode = QGradient_Wrapper.ObjectMode;
 
-  // enum: InterpolationMode
+// enum: InterpolationMode
 QGradient.ColorInterpolation = QGradient_Wrapper.ColorInterpolation;
 QGradient.ComponentInterpolation = QGradient_Wrapper.ComponentInterpolation;
 
-  // enum: Preset
+// enum: Preset
 QGradient.WarmFlame = QGradient_Wrapper.WarmFlame;
 QGradient.NightFade = QGradient_Wrapper.NightFade;
 QGradient.SpringWarmth = QGradient_Wrapper.SpringWarmth;
@@ -340,25 +338,24 @@ QGradient.PerfectBlue = QGradient_Wrapper.PerfectBlue;
 QGradient.NumPresets = QGradient_Wrapper.NumPresets;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QGradient.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QGradient.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QGradient.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QGradient.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

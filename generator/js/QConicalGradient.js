@@ -1,204 +1,202 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QConicalGradient() {
-        
+// class constructor:
+function QConicalGradient() {
 
-        // should be QConicalGradient_BaseJs.call(this, engine):
-        //QConicalGradient.prototype = new QConicalGradient_BaseJs(engine);
 
-        var wrapper;
+    // should be QConicalGradient_BaseJs.call(this, engine):
+    //QConicalGradient.prototype = new QConicalGradient_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QConicalGradient.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QConicalGradient.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QConicalGradient);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QConicalGradient);
             //}
-          }
-          else {
+        } else {
             qWarning("QConicalGradient.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 3) {
-    
+
+    } else {
+
+        if (arguments.length == 3) {
+
             self = this;
             wrapper = new QConicalGradient_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QConicalGradient);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QConicalGradient);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QConicalGradient);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 2) {
-    
-            self = this;
-            wrapper = new QConicalGradient_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QConicalGradient);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QConicalGradient);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QConicalGradient_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QConicalGradient);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QConicalGradient);
-  }
-
-  
-  else {
-    
-        print("QConicalGradient(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QConicalGradient);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length == 2) {
+
+                self = this;
+                wrapper = new QConicalGradient_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0], arguments[1]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QConicalGradient);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QConicalGradient);
+            }
+
+
+            else
+
+                if (arguments.length == 0) {
+
+                    self = this;
+                    wrapper = new QConicalGradient_Wrapper(
+                        // RJSApi:
+                        handler
+
+                        ////this.setWrapper(this.wrapper);
+                        //Object.setPrototypeOf(this, wrapper);
+                    );
+                    //wrapper.__WRAPPER__ = true;
+                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                    copyProperties(this, wrapper, QConicalGradient);
+
+                    //this.setWrapper(this.wrapper);
+
+
+
+                    //copyProperties(this, wrapper, QConicalGradient);
+                }
+
+
+                else {
+
+                    print("QConicalGradient(): wrong number / type of arguments");
+
+                    console.trace();
+                }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QConicalGradient.prototype = new QConicalGradient_BaseJs(engine);
-      //QConicalGradient.prototype = new QConicalGradient_Wrapper(engine);
-      QConicalGradient.prototype = new Object();
+//QConicalGradient.prototype = new QConicalGradient_BaseJs(engine);
+//QConicalGradient.prototype = new QConicalGradient_Wrapper(engine);
+QConicalGradient.prototype = new Object();
 
-      QConicalGradient.prototype.toString = function() {
-          //return "QConicalGradient [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QConicalGradient [JS]";
-        };
-      QConicalGradient.getObjectType = function() {
-        return RJSType_QConicalGradient.getIdStatic();
-      };
+QConicalGradient.prototype.toString = function() {
+    //return "QConicalGradient [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QConicalGradient [JS]";
+};
+QConicalGradient.getObjectType = function() {
+    return RJSType_QConicalGradient.getIdStatic();
+};
 
-      QConicalGradient.prototype.getObjectType = function() {
-        return RJSType_QConicalGradient.getIdStatic();
-      };
+QConicalGradient.prototype.getObjectType = function() {
+    return RJSType_QConicalGradient.getIdStatic();
+};
 
-      QConicalGradient.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QConicalGradient.getIdStatic()) {
-          return true;
-        }
-
-        
-          if (t===RJSType_QGradient.getIdStatic()) {
-            return true;
-          }
-        
-
-        return false;
+QConicalGradient.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QConicalGradient.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
+    if (t===RJSType_QGradient.getIdStatic()) {
+        return true;
+    }
 
-      // enum values:
-      
-  // enum: Type
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QConicalGradient.LinearGradient = QConicalGradient_Wrapper.LinearGradient;
 QConicalGradient.RadialGradient = QConicalGradient_Wrapper.RadialGradient;
 QConicalGradient.ConicalGradient = QConicalGradient_Wrapper.ConicalGradient;
 QConicalGradient.NoGradient = QConicalGradient_Wrapper.NoGradient;
 
-  // enum: Spread
+// enum: Spread
 QConicalGradient.PadSpread = QConicalGradient_Wrapper.PadSpread;
 QConicalGradient.ReflectSpread = QConicalGradient_Wrapper.ReflectSpread;
 QConicalGradient.RepeatSpread = QConicalGradient_Wrapper.RepeatSpread;
 
-  // enum: CoordinateMode
+// enum: CoordinateMode
 QConicalGradient.LogicalMode = QConicalGradient_Wrapper.LogicalMode;
 QConicalGradient.StretchToDeviceMode = QConicalGradient_Wrapper.StretchToDeviceMode;
 QConicalGradient.ObjectBoundingMode = QConicalGradient_Wrapper.ObjectBoundingMode;
 QConicalGradient.ObjectMode = QConicalGradient_Wrapper.ObjectMode;
 
-  // enum: InterpolationMode
+// enum: InterpolationMode
 QConicalGradient.ColorInterpolation = QConicalGradient_Wrapper.ColorInterpolation;
 QConicalGradient.ComponentInterpolation = QConicalGradient_Wrapper.ComponentInterpolation;
 
-  // enum: Preset
+// enum: Preset
 QConicalGradient.WarmFlame = QConicalGradient_Wrapper.WarmFlame;
 QConicalGradient.NightFade = QConicalGradient_Wrapper.NightFade;
 QConicalGradient.SpringWarmth = QConicalGradient_Wrapper.SpringWarmth;
@@ -370,25 +368,24 @@ QConicalGradient.PerfectBlue = QConicalGradient_Wrapper.PerfectBlue;
 QConicalGradient.NumPresets = QConicalGradient_Wrapper.NumPresets;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QConicalGradient.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QConicalGradient.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QConicalGradient.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QConicalGradient.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

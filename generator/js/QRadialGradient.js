@@ -1,308 +1,306 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QRadialGradient() {
-        
+// class constructor:
+function QRadialGradient() {
 
-        // should be QRadialGradient_BaseJs.call(this, engine):
-        //QRadialGradient.prototype = new QRadialGradient_BaseJs(engine);
 
-        var wrapper;
+    // should be QRadialGradient_BaseJs.call(this, engine):
+    //QRadialGradient.prototype = new QRadialGradient_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QRadialGradient.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QRadialGradient.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QRadialGradient);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QRadialGradient);
             //}
-          }
-          else {
+        } else {
             qWarning("QRadialGradient.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
-        }
-        else {
-          
-      if (arguments.length == 6) {
-    
-            self = this;
-            wrapper = new QRadialGradient_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QRadialGradient);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QRadialGradient);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 5) {
-    
-            self = this;
-            wrapper = new QRadialGradient_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QRadialGradient);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QRadialGradient);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 4) {
-    
-            self = this;
-            wrapper = new QRadialGradient_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QRadialGradient);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QRadialGradient);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 3) {
-    
-            self = this;
-            wrapper = new QRadialGradient_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QRadialGradient);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QRadialGradient);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 3) {
-    
-            self = this;
-            wrapper = new QRadialGradient_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QRadialGradient);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QRadialGradient);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 2) {
-    
-            self = this;
-            wrapper = new QRadialGradient_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QRadialGradient);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QRadialGradient);
-  }
-
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QRadialGradient_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
-
-        copyProperties(this, wrapper, QRadialGradient);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QRadialGradient);
-  }
-
-  
-  else {
-    
-        print("QRadialGradient(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+    } else {
+
+        if (arguments.length == 6) {
+
+            self = this;
+            wrapper = new QRadialGradient_Wrapper(
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4], arguments[5]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
+            );
+            //wrapper.__WRAPPER__ = true;
+            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            copyProperties(this, wrapper, QRadialGradient);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
+            //this.setWrapper(this.wrapper);
 
-      //QRadialGradient.prototype = new QRadialGradient_BaseJs(engine);
-      //QRadialGradient.prototype = new QRadialGradient_Wrapper(engine);
-      QRadialGradient.prototype = new Object();
 
-      QRadialGradient.prototype.toString = function() {
-          //return "QRadialGradient [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QRadialGradient [JS]";
-        };
-      QRadialGradient.getObjectType = function() {
-        return RJSType_QRadialGradient.getIdStatic();
-      };
 
-      QRadialGradient.prototype.getObjectType = function() {
-        return RJSType_QRadialGradient.getIdStatic();
-      };
-
-      QRadialGradient.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QRadialGradient.getIdStatic()) {
-          return true;
+            //copyProperties(this, wrapper, QRadialGradient);
         }
 
-        
-          if (t===RJSType_QGradient.getIdStatic()) {
-            return true;
-          }
-        
 
-        return false;
+        else
+
+            if (arguments.length == 5) {
+
+                self = this;
+                wrapper = new QRadialGradient_Wrapper(
+                    // RJSApi:
+                    handler
+                    , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        
-      };
+                copyProperties(this, wrapper, QRadialGradient);
 
-      // enum values:
-      
-  // enum: Type
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QRadialGradient);
+            }
+
+
+            else
+
+                if (arguments.length == 4) {
+
+                    self = this;
+                    wrapper = new QRadialGradient_Wrapper(
+                        // RJSApi:
+                        handler
+                        , arguments[0], arguments[1], arguments[2], arguments[3]
+                        ////this.setWrapper(this.wrapper);
+                        //Object.setPrototypeOf(this, wrapper);
+                    );
+                    //wrapper.__WRAPPER__ = true;
+                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                    copyProperties(this, wrapper, QRadialGradient);
+
+                    //this.setWrapper(this.wrapper);
+
+
+
+                    //copyProperties(this, wrapper, QRadialGradient);
+                }
+
+
+                else
+
+                    if (arguments.length == 3) {
+
+                        self = this;
+                        wrapper = new QRadialGradient_Wrapper(
+                            // RJSApi:
+                            handler
+                            , arguments[0], arguments[1], arguments[2]
+                            ////this.setWrapper(this.wrapper);
+                            //Object.setPrototypeOf(this, wrapper);
+                        );
+                        //wrapper.__WRAPPER__ = true;
+                        Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                        copyProperties(this, wrapper, QRadialGradient);
+
+                        //this.setWrapper(this.wrapper);
+
+
+
+                        //copyProperties(this, wrapper, QRadialGradient);
+                    }
+
+
+                    else
+
+                        if (arguments.length == 3) {
+
+                            self = this;
+                            wrapper = new QRadialGradient_Wrapper(
+                                // RJSApi:
+                                handler
+                                , arguments[0], arguments[1], arguments[2]
+                                ////this.setWrapper(this.wrapper);
+                                //Object.setPrototypeOf(this, wrapper);
+                            );
+                            //wrapper.__WRAPPER__ = true;
+                            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                            copyProperties(this, wrapper, QRadialGradient);
+
+                            //this.setWrapper(this.wrapper);
+
+
+
+                            //copyProperties(this, wrapper, QRadialGradient);
+                        }
+
+
+                        else
+
+                            if (arguments.length == 2) {
+
+                                self = this;
+                                wrapper = new QRadialGradient_Wrapper(
+                                    // RJSApi:
+                                    handler
+                                    , arguments[0], arguments[1]
+                                    ////this.setWrapper(this.wrapper);
+                                    //Object.setPrototypeOf(this, wrapper);
+                                );
+                                //wrapper.__WRAPPER__ = true;
+                                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                                copyProperties(this, wrapper, QRadialGradient);
+
+                                //this.setWrapper(this.wrapper);
+
+
+
+                                //copyProperties(this, wrapper, QRadialGradient);
+                            }
+
+
+                            else
+
+                                if (arguments.length == 0) {
+
+                                    self = this;
+                                    wrapper = new QRadialGradient_Wrapper(
+                                        // RJSApi:
+                                        handler
+
+                                        ////this.setWrapper(this.wrapper);
+                                        //Object.setPrototypeOf(this, wrapper);
+                                    );
+                                    //wrapper.__WRAPPER__ = true;
+                                    Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+
+
+                                    copyProperties(this, wrapper, QRadialGradient);
+
+                                    //this.setWrapper(this.wrapper);
+
+
+
+                                    //copyProperties(this, wrapper, QRadialGradient);
+                                }
+
+
+                                else {
+
+                                    print("QRadialGradient(): wrong number / type of arguments");
+
+                                    console.trace();
+                                }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QRadialGradient.prototype = new QRadialGradient_BaseJs(engine);
+//QRadialGradient.prototype = new QRadialGradient_Wrapper(engine);
+QRadialGradient.prototype = new Object();
+
+QRadialGradient.prototype.toString = function() {
+    //return "QRadialGradient [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QRadialGradient [JS]";
+};
+QRadialGradient.getObjectType = function() {
+    return RJSType_QRadialGradient.getIdStatic();
+};
+
+QRadialGradient.prototype.getObjectType = function() {
+    return RJSType_QRadialGradient.getIdStatic();
+};
+
+QRadialGradient.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QRadialGradient.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QGradient.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QRadialGradient.LinearGradient = QRadialGradient_Wrapper.LinearGradient;
 QRadialGradient.RadialGradient = QRadialGradient_Wrapper.RadialGradient;
 QRadialGradient.ConicalGradient = QRadialGradient_Wrapper.ConicalGradient;
 QRadialGradient.NoGradient = QRadialGradient_Wrapper.NoGradient;
 
-  // enum: Spread
+// enum: Spread
 QRadialGradient.PadSpread = QRadialGradient_Wrapper.PadSpread;
 QRadialGradient.ReflectSpread = QRadialGradient_Wrapper.ReflectSpread;
 QRadialGradient.RepeatSpread = QRadialGradient_Wrapper.RepeatSpread;
 
-  // enum: CoordinateMode
+// enum: CoordinateMode
 QRadialGradient.LogicalMode = QRadialGradient_Wrapper.LogicalMode;
 QRadialGradient.StretchToDeviceMode = QRadialGradient_Wrapper.StretchToDeviceMode;
 QRadialGradient.ObjectBoundingMode = QRadialGradient_Wrapper.ObjectBoundingMode;
 QRadialGradient.ObjectMode = QRadialGradient_Wrapper.ObjectMode;
 
-  // enum: InterpolationMode
+// enum: InterpolationMode
 QRadialGradient.ColorInterpolation = QRadialGradient_Wrapper.ColorInterpolation;
 QRadialGradient.ComponentInterpolation = QRadialGradient_Wrapper.ComponentInterpolation;
 
-  // enum: Preset
+// enum: Preset
 QRadialGradient.WarmFlame = QRadialGradient_Wrapper.WarmFlame;
 QRadialGradient.NightFade = QRadialGradient_Wrapper.NightFade;
 QRadialGradient.SpringWarmth = QRadialGradient_Wrapper.SpringWarmth;
@@ -474,25 +472,24 @@ QRadialGradient.PerfectBlue = QRadialGradient_Wrapper.PerfectBlue;
 QRadialGradient.NumPresets = QRadialGradient_Wrapper.NumPresets;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QRadialGradient.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QRadialGradient.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QRadialGradient.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QRadialGradient.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

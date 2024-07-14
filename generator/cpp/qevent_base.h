@@ -1,104 +1,103 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  #ifndef QEVENT_H_BASE
-  #define QEVENT_H_BASE
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-  // include header:
-  //#include "header_h.h"
-    
-        #include "../RJSHelper.h"
-      
-    #include <QAction>
-  
-    #include <QGesture>
-  
-    #include <QScreen>
-  
-    #include <QMimeData>
-  
-    #include <QQmlEngine>
+#ifndef QEVENT_H_BASE
+#define QEVENT_H_BASE
 
-    
-        #include <QInputEvent>
-      
-    #include <QQmlEngine>
+// include header:
+//#include "header_h.h"
 
-    
-        #include <QPointerEvent>
-      
-    #include <QQmlEngine>
+#include "../RJSHelper.h"
 
-    
-        #include <QSinglePointEvent>
-      
-    #include <QQmlEngine>
+#include <QAction>
 
-    
-        #include <QMouseEvent>
-      
-    #include <QQmlEngine>
+#include <QGesture>
 
-    
-        #include <QWheelEvent>
-      
-    #include <QQmlEngine>
+#include <QScreen>
 
-    
-        #include <QKeyEvent>
-      
-    #include <QQmlEngine>
+#include <QMimeData>
 
-    
-        #include <QFocusEvent>
-      
-    #include <QQmlEngine>
+#include <QQmlEngine>
 
-    
-        #include <QPaintEvent>
-      
-    #include <QQmlEngine>
 
-    
-        #include <QResizeEvent>
-      
-    #include <QQmlEngine>
+#include <QInputEvent>
 
-    
-        #include <QDragEnterEvent>
-      
-    #include <QQmlEngine>
+#include <QQmlEngine>
 
-    
-        #include <QDropEvent>
-      
-    #include <QQmlEngine>
 
-    
-        #include <QContextMenuEvent>
-      
-    #include <QQmlEngine>
+#include <QPointerEvent>
 
-    
-        #include <QDragMoveEvent>
-      
-    #include <QQmlEngine>
+#include <QQmlEngine>
 
-    
-        #include <QDragLeaveEvent>
-      
-    #include <QQmlEngine>
 
-    
-        #include <QHelpEvent>
-      
-    #include <QQmlEngine>
+#include <QSinglePointEvent>
 
-    
-        #include <QActionEvent>
-      
-  #endif
-  
+#include <QQmlEngine>
+
+
+#include <QMouseEvent>
+
+#include <QQmlEngine>
+
+
+#include <QWheelEvent>
+
+#include <QQmlEngine>
+
+
+#include <QKeyEvent>
+
+#include <QQmlEngine>
+
+
+#include <QFocusEvent>
+
+#include <QQmlEngine>
+
+
+#include <QPaintEvent>
+
+#include <QQmlEngine>
+
+
+#include <QResizeEvent>
+
+#include <QQmlEngine>
+
+
+#include <QDragEnterEvent>
+
+#include <QQmlEngine>
+
+
+#include <QDropEvent>
+
+#include <QQmlEngine>
+
+
+#include <QContextMenuEvent>
+
+#include <QQmlEngine>
+
+
+#include <QDragMoveEvent>
+
+#include <QQmlEngine>
+
+
+#include <QDragLeaveEvent>
+
+#include <QQmlEngine>
+
+
+#include <QHelpEvent>
+
+#include <QQmlEngine>
+
+
+#include <QActionEvent>
+
+#endif

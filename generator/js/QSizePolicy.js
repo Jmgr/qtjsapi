@@ -1,160 +1,158 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QSizePolicy() {
-        
+// class constructor:
+function QSizePolicy() {
 
-        // should be QSizePolicy_BaseJs.call(this, engine):
-        //QSizePolicy.prototype = new QSizePolicy_BaseJs(engine);
 
-        var wrapper;
+    // should be QSizePolicy_BaseJs.call(this, engine):
+    //QSizePolicy.prototype = new QSizePolicy_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QSizePolicy.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QSizePolicy.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QSizePolicy);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QSizePolicy);
             //}
-          }
-          else {
+        } else {
             qWarning("QSizePolicy.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length >= 2 &&
-          arguments.length <= 3) {
-    
+
+    } else {
+
+        if (arguments.length >= 2 &&
+                arguments.length <= 3) {
+
             self = this;
             wrapper = new QSizePolicy_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QSizePolicy);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QSizePolicy);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QSizePolicy);
-  }
 
-  
-  else 
-  
-      if (arguments.length == 0) {
-    
-            self = this;
-            wrapper = new QSizePolicy_Wrapper(
-              // RJSApi:
-              handler
-              
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
-            );
-            //wrapper.__WRAPPER__ = true;
-            Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QSizePolicy);
-
-        //this.setWrapper(this.wrapper);
-
-      
-
-        //copyProperties(this, wrapper, QSizePolicy);
-  }
-
-  
-  else {
-    
-        print("QSizePolicy(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+            //copyProperties(this, wrapper, QSizePolicy);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
+
+        else
+
+            if (arguments.length == 0) {
+
+                self = this;
+                wrapper = new QSizePolicy_Wrapper(
+                    // RJSApi:
+                    handler
+
+                    ////this.setWrapper(this.wrapper);
+                    //Object.setPrototypeOf(this, wrapper);
+                );
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
 
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+                copyProperties(this, wrapper, QSizePolicy);
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
+                //this.setWrapper(this.wrapper);
+
+
+
+                //copyProperties(this, wrapper, QSizePolicy);
+            }
+
+
+            else {
+
+                print("QSizePolicy(): wrong number / type of arguments");
+
+                console.trace();
+            }
+
+    }
+
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
+
+
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
+
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
         }
-      }
+    }
+}
 
-      //QSizePolicy.prototype = new QSizePolicy_BaseJs(engine);
-      //QSizePolicy.prototype = new QSizePolicy_Wrapper(engine);
-      QSizePolicy.prototype = new Object();
+//QSizePolicy.prototype = new QSizePolicy_BaseJs(engine);
+//QSizePolicy.prototype = new QSizePolicy_Wrapper(engine);
+QSizePolicy.prototype = new Object();
 
-      QSizePolicy.prototype.toString = function() {
-          //return "QSizePolicy [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QSizePolicy [JS]";
-        };
-      QSizePolicy.getObjectType = function() {
-        return RJSType_QSizePolicy.getIdStatic();
-      };
+QSizePolicy.prototype.toString = function() {
+    //return "QSizePolicy [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QSizePolicy [JS]";
+};
+QSizePolicy.getObjectType = function() {
+    return RJSType_QSizePolicy.getIdStatic();
+};
 
-      QSizePolicy.prototype.getObjectType = function() {
-        return RJSType_QSizePolicy.getIdStatic();
-      };
+QSizePolicy.prototype.getObjectType = function() {
+    return RJSType_QSizePolicy.getIdStatic();
+};
 
-      QSizePolicy.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QSizePolicy.getIdStatic()) {
-          return true;
-        }
-
-        
-
-        return false;
+QSizePolicy.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QSizePolicy.getIdStatic()) {
+        return true;
+    }
 
 
-        
-      };
 
-      // enum values:
-      
-  // enum: PolicyFlag
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: PolicyFlag
 QSizePolicy.GrowFlag = QSizePolicy_Wrapper.GrowFlag;
 QSizePolicy.ExpandFlag = QSizePolicy_Wrapper.ExpandFlag;
 QSizePolicy.ShrinkFlag = QSizePolicy_Wrapper.ShrinkFlag;
 QSizePolicy.IgnoreFlag = QSizePolicy_Wrapper.IgnoreFlag;
 
-  // enum: Policy
+// enum: Policy
 QSizePolicy.Fixed = QSizePolicy_Wrapper.Fixed;
 QSizePolicy.Minimum = QSizePolicy_Wrapper.Minimum;
 QSizePolicy.Maximum = QSizePolicy_Wrapper.Maximum;
@@ -163,7 +161,7 @@ QSizePolicy.MinimumExpanding = QSizePolicy_Wrapper.MinimumExpanding;
 QSizePolicy.Expanding = QSizePolicy_Wrapper.Expanding;
 QSizePolicy.Ignored = QSizePolicy_Wrapper.Ignored;
 
-  // enum: ControlType
+// enum: ControlType
 QSizePolicy.DefaultType = QSizePolicy_Wrapper.DefaultType;
 QSizePolicy.ButtonBox = QSizePolicy_Wrapper.ButtonBox;
 QSizePolicy.CheckBox = QSizePolicy_Wrapper.CheckBox;
@@ -181,25 +179,24 @@ QSizePolicy.TabWidget = QSizePolicy_Wrapper.TabWidget;
 QSizePolicy.ToolButton = QSizePolicy_Wrapper.ToolButton;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-      // constants:
-      
+// static functions:
 
-      // public static properties without access function:
-      
 
-      // copy function:
-      //QSizePolicy.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
+// constants:
 
-      // destroy function:
-      //QSizePolicy.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+
+// public static properties without access function:
+
+
+// copy function:
+//QSizePolicy.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QSizePolicy.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

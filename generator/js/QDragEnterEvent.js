@@ -1,139 +1,137 @@
 
-      // auto generated
-      //var self;
+// auto generated
+//var self;
 
-      // class constructor:
-      function QDragEnterEvent() {
-        
+// class constructor:
+function QDragEnterEvent() {
 
-        // should be QDragEnterEvent_BaseJs.call(this, engine):
-        //QDragEnterEvent.prototype = new QDragEnterEvent_BaseJs(engine);
 
-        var wrapper;
+    // should be QDragEnterEvent_BaseJs.call(this, engine):
+    //QDragEnterEvent.prototype = new QDragEnterEvent_BaseJs(engine);
 
-        // creating JS class for existing wrapper:
-        if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+    var wrapper;
 
-          if (arguments[2]!==undefined 
-            && (arguments[2]===null || 
-            (typeof(arguments[2].getWrappedType)==="function" && 
-            arguments[2].getWrappedType()===RJSType_QDragEnterEvent.getIdStatic()))) {
+    // creating JS class for existing wrapper:
+    if (arguments.length===3 && arguments[0]==="__GOT_WRAPPER__") {
+
+        if (arguments[2]!==undefined
+                           && (arguments[2]===null ||
+                                              (typeof(arguments[2].getWrappedType)==="function" &&
+                                                      arguments[2].getWrappedType()===RJSType_QDragEnterEvent.getIdStatic()))) {
 
             wrapper = arguments[2];
             if (wrapper!=null) {
-              //wrapper.__WRAPPER__ = true;
-              Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
+                //wrapper.__WRAPPER__ = true;
+                Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
             }
             //if (arguments[1]!==true) {
-              // only copy properties if this is not an existing wrapper:
-              copyProperties(this, wrapper, QDragEnterEvent);
+            // only copy properties if this is not an existing wrapper:
+            copyProperties(this, wrapper, QDragEnterEvent);
             //}
-          }
-          else {
+        } else {
             qWarning("QDragEnterEvent.js: Constructor called with __GOT_WRAPPER__, but no valid wrapper provided: " + arguments[2]);
             console.trace();
-          }
-
         }
-        else {
-          
-      if (arguments.length == 5) {
-    
+
+    } else {
+
+        if (arguments.length == 5) {
+
             self = this;
             wrapper = new QDragEnterEvent_Wrapper(
-              // RJSApi:
-              handler
-              , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
-              ////this.setWrapper(this.wrapper);
-              //Object.setPrototypeOf(this, wrapper);
+                // RJSApi:
+                handler
+                , arguments[0], arguments[1], arguments[2], arguments[3], arguments[4]
+                ////this.setWrapper(this.wrapper);
+                //Object.setPrototypeOf(this, wrapper);
             );
             //wrapper.__WRAPPER__ = true;
             Object.defineProperty(wrapper, "__WRAPPER__", { configurable: true, writable: true, value: true });
-          
 
-        copyProperties(this, wrapper, QDragEnterEvent);
 
-        //this.setWrapper(this.wrapper);
+            copyProperties(this, wrapper, QDragEnterEvent);
 
-      
+            //this.setWrapper(this.wrapper);
 
-        //copyProperties(this, wrapper, QDragEnterEvent);
-  }
 
-  
-  else {
-    
-        print("QDragEnterEvent(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
+
+            //copyProperties(this, wrapper, QDragEnterEvent);
         }
 
-        //self = this;
-        //if (typeof(this.wrapper)!=="undefined") {
-        //  this.wrapper.setEngine(engine);
-        //}
 
+        else {
 
-        if (typeof(wrapper)!=="undefined") {
-          //var localSelf = this;
-          //print("QAction self:", localSelf);
-          // TODO:
-          //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
-          
+            print("QDragEnterEvent(): wrong number / type of arguments");
 
-          // signal aliases:
-          if (Object.getPrototypeOf(this)!=null) {
-            
-          }
-        }
-      }
-
-      //QDragEnterEvent.prototype = new QDragEnterEvent_BaseJs(engine);
-      //QDragEnterEvent.prototype = new QDragEnterEvent_Wrapper(engine);
-      QDragEnterEvent.prototype = new Object();
-
-      QDragEnterEvent.prototype.toString = function() {
-          //return "QDragEnterEvent [JS] [0x" + this.getAddress().toString(16) + "]";
-          return "QDragEnterEvent [JS]";
-        };
-      QDragEnterEvent.getObjectType = function() {
-        return RJSType_QDragEnterEvent.getIdStatic();
-      };
-
-      QDragEnterEvent.prototype.getObjectType = function() {
-        return RJSType_QDragEnterEvent.getIdStatic();
-      };
-
-      QDragEnterEvent.prototype.isOfObjectType = function(t) {
-        if (t===RJSType_QDragEnterEvent.getIdStatic()) {
-          return true;
+            console.trace();
         }
 
-        
-          if (t===RJSType_QEvent.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QDropEvent.getIdStatic()) {
-            return true;
-          }
-        
-          if (t===RJSType_QDragMoveEvent.getIdStatic()) {
-            return true;
-          }
-        
+    }
 
-        return false;
+    //self = this;
+    //if (typeof(this.wrapper)!=="undefined") {
+    //  this.wrapper.setEngine(engine);
+    //}
 
 
-        
-      };
+    if (typeof(wrapper)!=="undefined") {
+        //var localSelf = this;
+        //print("QAction self:", localSelf);
+        // TODO:
+        //this.wrapper.triggered.connect(function(checked) { print("action triggered. self:", localSelf); localSelf.triggeredEmitter(checked); });
 
-      // enum values:
-      
-  // enum: Type
+
+        // signal aliases:
+        if (Object.getPrototypeOf(this)!=null) {
+
+        }
+    }
+}
+
+//QDragEnterEvent.prototype = new QDragEnterEvent_BaseJs(engine);
+//QDragEnterEvent.prototype = new QDragEnterEvent_Wrapper(engine);
+QDragEnterEvent.prototype = new Object();
+
+QDragEnterEvent.prototype.toString = function() {
+    //return "QDragEnterEvent [JS] [0x" + this.getAddress().toString(16) + "]";
+    return "QDragEnterEvent [JS]";
+};
+QDragEnterEvent.getObjectType = function() {
+    return RJSType_QDragEnterEvent.getIdStatic();
+};
+
+QDragEnterEvent.prototype.getObjectType = function() {
+    return RJSType_QDragEnterEvent.getIdStatic();
+};
+
+QDragEnterEvent.prototype.isOfObjectType = function(t) {
+    if (t===RJSType_QDragEnterEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    if (t===RJSType_QEvent.getIdStatic()) {
+        return true;
+    }
+
+    if (t===RJSType_QDropEvent.getIdStatic()) {
+        return true;
+    }
+
+    if (t===RJSType_QDragMoveEvent.getIdStatic()) {
+        return true;
+    }
+
+
+    return false;
+
+
+
+};
+
+// enum values:
+
+// enum: Type
 QDragEnterEvent.None = QDragEnterEvent_Wrapper.None;
 QDragEnterEvent.Timer = QDragEnterEvent_Wrapper.Timer;
 QDragEnterEvent.MouseButtonPress = QDragEnterEvent_Wrapper.MouseButtonPress;
@@ -308,54 +306,53 @@ QDragEnterEvent.User = QDragEnterEvent_Wrapper.User;
 QDragEnterEvent.MaxUser = QDragEnterEvent_Wrapper.MaxUser;
 
 
-      // functions:
-      
+// functions:
 
-      // static functions:
-      
 
-        // static function 
-        QDragEnterEvent.registerEventType = function() 
-          
-        {
-          //print("JS: QDragEnterEvent.registerEventType");
-          
-      if (arguments.length >= 0 &&
-          arguments.length <= 1) {
-    
-                // calling static wrapper:
-                return QDragEnterEvent_WrapperSingletonInstance.registerEventType(
-                  arguments[0]
-                );
-              
+// static functions:
+
+
+// static function
+QDragEnterEvent.registerEventType = function()
+
+{
+    //print("JS: QDragEnterEvent.registerEventType");
+
+    if (arguments.length >= 0 &&
+            arguments.length <= 1) {
+
+        // calling static wrapper:
+        return QDragEnterEvent_WrapperSingletonInstance.registerEventType(
+                   arguments[0]
+               );
+
 
         //copyProperties(this, wrapper, QDragEnterEvent);
-  }
+    }
 
-  
-  else {
-    
+
+    else {
+
         print("QDragEnterEvent.registerEventType(): wrong number / type of arguments");
-      
-    console.trace();
-  }
-  
-        };
-      
 
-      // constants:
-      
+        console.trace();
+    }
 
-      // public static properties without access function:
-      
+};
 
-      // copy function:
-      //QDragEnterEvent.prototype.copy = function() {
-      //  return this.wrapper.copy();
-      //};
 
-      // destroy function:
-      //QDragEnterEvent.prototype.destr = function() {
-      //  return this.wrapper.destr();
-      //};
-    
+// constants:
+
+
+// public static properties without access function:
+
+
+// copy function:
+//QDragEnterEvent.prototype.copy = function() {
+//  return this.wrapper.copy();
+//};
+
+// destroy function:
+//QDragEnterEvent.prototype.destr = function() {
+//  return this.wrapper.destr();
+//};

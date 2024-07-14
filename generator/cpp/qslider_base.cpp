@@ -1,56 +1,56 @@
 
 
-  // Auto generated
-  // Adds public versions for event handlers to be called from 
-  // JS implementation of these event handlers.
-  
-  // include header:
-  #include "qslider_base.h"
-  //#include "qslider_wrapper.h"
-  //#include "header_cpp.h"
-    
-    // Base class for QSlider
+// Auto generated
+// Adds public versions for event handlers to be called from
+// JS implementation of these event handlers.
 
-    // constructors:
-    
-  // Class: QSlider
-  // Function: 
-  // Parameters: 2
-  // preceding Parameters: -1
+// include header:
+#include "qslider_base.h"
+//#include "qslider_wrapper.h"
+//#include "header_cpp.h"
 
-  // Class: QSlider
-  // Function: 
-  // Parameters: 1
-  // preceding Parameters: 2
+// Base class for QSlider
 
-      // protected overwritten functions / events and their public invokable counterparts:
-      void QSlider_Base::paintEvent(
-      QPaintEvent* ev
-    ) {
+// constructors:
 
-      //qDebug() << "QSlider_Base::paintEvent()";
+// Class: QSlider
+// Function:
+// Parameters: 2
+// preceding Parameters: -1
 
-      //QJSValue f = self.prototype().property("paintEvent");
-      QJSValue f = self.property("paintEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
-        
+// Class: QSlider
+// Function:
+// Parameters: 1
+// preceding Parameters: 2
+
+// protected overwritten functions / events and their public invokable counterparts:
+void QSlider_Base::paintEvent(
+    QPaintEvent* ev
+) {
+
+    //qDebug() << "QSlider_Base::paintEvent()";
+
+    //QJSValue f = self.prototype().property("paintEvent");
+    QJSValue f = self.property("paintEvent");
+    if (f.isCallable() /*&& !recFlag*/) {
+
 
 
         QJSEngine* engine = handler.getEngine();
 
         QJSValueList args;
-        
 
-  args << RJSHelper::cpp2js_QPaintEvent(
-    handler, 
-    // non-copyable: true
-ev
-  );
+
+        args << RJSHelper::cpp2js_QPaintEvent(
+                 handler,
+                 // non-copyable: true
+                 ev
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -59,51 +59,51 @@ ev
         QJSValue res = engine->evaluate("__self__.paintEvent.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
 
-        
-            return;
-          
-      }
-      else {
-        QSlider::paintEvent(
-          ev
-        );
-      }
+
+        return;
+
     }
+    else {
+        QSlider::paintEvent(
+            ev
+        );
+    }
+}
 
-  void QSlider_Base::mouseMoveEvent(
-      QMouseEvent* ev
-    ) {
+void QSlider_Base::mouseMoveEvent(
+    QMouseEvent* ev
+) {
 
-      //qDebug() << "QSlider_Base::mouseMoveEvent()";
+    //qDebug() << "QSlider_Base::mouseMoveEvent()";
 
-      //QJSValue f = self.prototype().property("mouseMoveEvent");
-      QJSValue f = self.property("mouseMoveEvent");
-      if (f.isCallable() /*&& !recFlag*/) {
-        
+    //QJSValue f = self.prototype().property("mouseMoveEvent");
+    QJSValue f = self.property("mouseMoveEvent");
+    if (f.isCallable() /*&& !recFlag*/) {
+
 
 
         QJSEngine* engine = handler.getEngine();
 
         QJSValueList args;
-        
 
-  args << RJSHelper::cpp2js_QMouseEvent(
-    handler, 
-    // non-copyable: true
-ev
-  );
+
+        args << RJSHelper::cpp2js_QMouseEvent(
+                 handler,
+                 // non-copyable: true
+                 ev
+             );
 
 
         QJSValue argsValue = engine->newArray(args.length());
         for (int i=0; i<args.length(); i++) {
-          argsValue.setProperty(i, args[i]);
+            argsValue.setProperty(i, args[i]);
         }
 
         engine->globalObject().setProperty("__self__", self);
@@ -112,28 +112,27 @@ ev
         QJSValue res = engine->evaluate("__self__.mouseMoveEvent.apply(__self__, __args__);", "", 1, &trace);
 
         if (res.isError()) {
-          qWarning() << "exception: " << res.toString();
-          for (int i=0; i<trace.length(); i++) {
-            qWarning() << trace[i];
-          }
+            qWarning() << "exception: " << res.toString();
+            for (int i=0; i<trace.length(); i++) {
+                qWarning() << trace[i];
+            }
         }
 
 
-        
-            return;
-          
-      }
-      else {
-        QSlider::mouseMoveEvent(
-          ev
-        );
-      }
+
+        return;
+
     }
+    else {
+        QSlider::mouseMoveEvent(
+            ev
+        );
+    }
+}
 
-  
 
-      // public virtual overwritten functions / events:
-      
 
-      // public pure-virtual functions:
-      
+// public virtual overwritten functions / events:
+
+
+// public pure-virtual functions:
