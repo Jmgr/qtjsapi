@@ -510,10 +510,7 @@ const
         QEasingCurve* w = getWrapped();
         bool res =
 
-            w->operator==(
-                a1_cpp
-
-            );
+            *w == a1_cpp;
 
         // return type: bool
 
@@ -584,10 +581,7 @@ const
         QEasingCurve* w = getWrapped();
         bool res =
 
-            w->operator!=(
-                a1_cpp
-
-            );
+            *w != a1_cpp;
 
         // return type: bool
 

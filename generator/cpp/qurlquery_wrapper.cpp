@@ -445,10 +445,7 @@ const
         QUrlQuery* w = getWrapped();
         bool res =
 
-            w->operator==(
-                a1_cpp
-
-            );
+            *w == a1_cpp;
 
         // return type: bool
 
@@ -519,10 +516,7 @@ const
         QUrlQuery* w = getWrapped();
         bool res =
 
-            w->operator!=(
-                a1_cpp
-
-            );
+            *w != a1_cpp;
 
         // return type: bool
 
