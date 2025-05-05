@@ -13,18 +13,6 @@ if(MSVC)
     set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /bigobj")
 endif()
 
-if(EXISTS ${CMAKE_CURRENT_SOURCE_DIR}/../qcad)
-    # build for QCAD:
-    if(CMAKE_BUILD_TYPE STREQUAL "Release")
-        link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/release)
-    else()
-        link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/debug)
-    endif()
-    link_directories(${CMAKE_CURRENT_SOURCE_DIR}/../qcad/plugins)
-else()
-    link_directories(out)
-endif()
-
 qt_add_library(qtjsapi SHARED
     RJSWrapper.cpp RJSWrapper.h
     RJSTools.cpp RJSTools.h
