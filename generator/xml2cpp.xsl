@@ -444,7 +444,6 @@
       QString contents = stream.readAll();
       scriptFile.close();
 
-      qDebug() &lt;&lt; "Evaluating file: " &lt;&lt; fileName;
       QJSValue result = engine-&gt;evaluate(contents, fileName);
       if (result.isError()) {
           qWarning()

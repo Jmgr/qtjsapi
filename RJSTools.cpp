@@ -359,12 +359,13 @@ void RJSTools::print(const QJSValue &args)
 
 void RJSTools::debug(const QJSValue &args)
 {
+#ifndef QT_NO_DEBUG_OUTPUT
     QDebug deb = qDebug();
     for (int i = 0; i < args.property("length").toInt(); i++)
     {
         deb << args.property(i).toString();
-        // qDebug() << args.property(i).toString();
     }
+#endif
 }
 
 void RJSTools::warning(const QJSValue &args)
